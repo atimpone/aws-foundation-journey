@@ -19,7 +19,7 @@ Log in as the Administrator IAM user that you created in the last section before
 Before using AWS Control Tower to create an initial landing zone, ensure that you review these considerations:
 
 * Since you’ve just created a new master AWS account, the pre-launch check considerations should already be met.
-* Ensure that you **select the proper AWS region** in the upper right hand side of the AWS Management Console before set up the landing zone.
+* Ensure that you **select the proper AWS region** in the upper right hand side of the AWS Management Console before set up the landing zone. The AWS region you select should be the AWS region in which you expect do perform the majority of your work with AWS and from which you will maintain your foundation.
 * Reuse the email distribution lists that you identified earlier for the Log archive and Audi accounts.
 
 Follow the steps in [Getting Started with AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/getting-started-with-control-tower.html) to set up your landing zone. 
