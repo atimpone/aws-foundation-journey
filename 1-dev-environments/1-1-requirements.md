@@ -12,7 +12,7 @@ A separate document addresses a series of [fast follow-on requirements](../2-fas
 
 ## Cloud Adoption Framework Perspectives
 
-The requirements are organized based on a series of perspectives defined in the[AWS Cloud Adoption Framework](https://aws.amazon.com/professional-services/CAF/). For example, at a high-level, requirements are broken into business and technical areas. Within each of these areas, requirements are further broken into a series of perspectives.
+The requirements are organized based on a series of perspectives defined in the [AWS Cloud Adoption Framework](https://aws.amazon.com/professional-services/CAF/). Requirements are broken into a series of business and technical perspectives.
 
 ## Business Perspectives
 
