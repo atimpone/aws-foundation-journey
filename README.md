@@ -20,7 +20,7 @@ Although there are many resources available to help organizations understand par
 
 These guides strive to avoid duplicating existing AWS documentation and other resources by deferring to existing AWS documentation and other resources for much of the background and detailed information. 
 
-Over time, these guides could potentially become incorpotated into formal AWS documentation.
+Over time, these guides could potentially become incorporated into formal AWS documentation.
 
 ## Stages of Cloud Adoption
 
