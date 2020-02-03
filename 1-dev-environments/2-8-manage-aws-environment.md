@@ -15,3 +15,7 @@ Security Administrators
 * Modifying access permissions via AWS SSO Permission Sets.
 * Performing periodic audits of your AWS security configuration.
     * Although some of the detective guardrails deployed through AWS Control Tower help continuously monitor and audit aspects of your AWS environment, it’s a best practice to periodically audit your security configuration to make sure that it meets your current business needs. See AWS [Security Audit Guidelines](https://docs.aws.amazon.com/general/latest/gr/aws-security-audit-guide.html) for best practices.
+    
+## Next Steps
+
+Return to the [main documentation](../README.md) to review the other guides including Establishing Fast Follow-on Capabilities and Establishing Initial Test and Production Environments.
