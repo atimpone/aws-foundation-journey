@@ -50,7 +50,7 @@ For example: [aws-account1+master@acme.com](mailto:aws-account1+master@acme.com)
 **Controlling Access to Root User Email Accounts**
 Since the email address associated with an AWS account is used as the [root user login for the account](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html), anyone with access to that email account will have access to password reset process for the account.  
 
-## 2. Create a new AWS Master Account
+## 2. Create a New AWS Master Account
 
 Visit https://aws.amazon.com/ and click “Create AWS Account” and enter the the required information on the following page.  For this account, use the master account email address you already established. 
 
@@ -103,3 +103,7 @@ Once the user has been created, sign into the AWS Management Console as the user
 Once you’ve set up your bootstrap administrative IAM user, log in as that user and set the Alternate Contacts for your account so that notifications of billing, operations, and security events are routed to the proper teams.  As a best practice, you can use email distribution lists so that notifications are set to multiple people in the same team.
 
 Access [Account  Settings](https://console.aws.amazon.com/billing/home?#/account) in the AWS Management Console to set the Alternate Contacts.
+
+## Next Steps
+
+Proceed to [Setting Up an Initial Landing Zone Using AWS Control Tower](1-dev-environments/2-3-set-up-landing-zone.md)
