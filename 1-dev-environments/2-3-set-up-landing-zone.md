@@ -99,3 +99,7 @@ As part of the landing zone established by AWS Control Tower, an “AWS Control 
 
 **Regions for VPC creation**
  Select only the single AWS region in which your organization expects to do most of its initial work. You’ll likely want to choose the same AWS region as you selected for the AWS Control Tower home region.
+ 
+ ## Next Steps
+ 
+ Proceed to [4. Set Up Initial AWS Platform Access Controls](2-4-set-up-aws-platform-access-controls.md)
