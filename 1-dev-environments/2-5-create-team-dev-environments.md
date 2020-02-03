@@ -52,3 +52,7 @@ Finally, you can inform newly added users that they should configure MFA for the
 [AWS SSO - Enable Multi-Factor Authentication](https://docs.aws.amazon.com/singlesignon/latest/userguide/enable-mfa.html)
 
 For a more prescriptive approach on how to onboard team members into their new AWS environment, see Appendix A
+
+## Next Steps
+
+Proceed to [6. Establishing Initial AWS Platform Monitoring Practices](2-6-initial-aws-platform-monitoring.md)
