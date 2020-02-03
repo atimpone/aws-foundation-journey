@@ -49,7 +49,7 @@ By following this guide, in as little as a few hours, your organization can esta
 
 #### Build Out the Environment
 
-1. [Map People to Foundation Roles](1-dev-environments/2-1-map-people-to-foundation-roles.md)
+1. [Map People to Foundation Functional Roles](1-dev-environments/2-1-map-people-to-foundation-roles.md)
 2. [Create a New Master AWS Account](1-dev-environments/2-2-create-master-aws-account.md)
 3. [Set Up an Initial Landing Zone Using AWS Control Tower](1-dev-environments/2-3-set-up-landing-zone.md)
 4. [Set Up Initial AWS Platform Access Controls](1-dev-environments/2-4-set-up-aws-platform-access-controls.md)
