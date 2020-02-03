@@ -4,13 +4,13 @@ In this step your Cloud Administrators will use the standard AWS new account cre
 
 This step should take about 20 minutes.
 
-## Introduction to AWS Accounts
+## Benefits of Using Multiple AWS Accounts
 
 AWS accounts are coarse grained resource containers that help you isolate and secure different collections of cloud resources and data. Use of multiple AWS accounts can make your use of cloud more secure by providing clear ownership and control boundaries and lowering the blast radius of any particular set of cloud resources. 
 
-An AWS best practice is for customers to establish multiple AWS accounts for different purposes.  In support of your initial need for development environments, through this guide you will create an initial set of foundation AWS accounts and development team-specific AWS accounts.  Before you promote the initial set of either application or data services to formal test and production stages of the lifecycle, you will eventually create a series of test and production AWS accounts to isolate the formal test and production environments from development environments.
+In support of your initial need for development environments, this guide leads you through the process to create an initial set of foundation AWS accounts and development team-specific AWS accounts.  In the future, you will create a series of test and production AWS accounts to isolate the formal test and production environments from development environments.
 
-Over the course of your cloud adoption journey, you will likely end up with a number of accounts ranging from perhaps 10 to hundreds depending on the size of your application and data services portfolio and the granularity by which you choose to isolate the associated cloud resources and data across the software development lifecycle (SDLC).
+Over the course of your cloud adoption journey, you will likely end up with a number of accounts ranging from a dozen or so to hundreds depending on the size of your application and data services portfolio and the granularity by which you choose to isolate the associated cloud resources and data across your organization and across the software development lifecycle (SDLC).
 
 ## Starting With a New Master AWS Account
 
@@ -18,24 +18,26 @@ The initial AWS account that you create will be configured as a new “master”
 
 Even if you have an existing AWS account, we strongly recommend that you establish a new AWS account as the basis of your cloud foundation and adoption for several reasons:
 
-1. Given the early stage in your cloud adoption journey, your existing AWS accounts may not be configured according to AWS best practices.
-2. Later in this guide, you will be using the AWS Control Tower service to establish an initial set of security guardrails and other capabilities as part of your cloud foundation. Currently, AWS Control Tower can only be applied to a master AWS account that has minimal set of AWS resources already configured in it.
+1. **AWS Control Tower currently requires a new master AWS account.** Later in this guide, you will be using the AWS Control Tower service to establish an initial set of security guardrails and other capabilities as part of your cloud foundation.
+2. **Your existing AWS accounts might not be aligned with AWS best practices.**
 
-After you create your new master AWS account, you can make use of a standard process to move any existing AWS accounts into your new master AWS account so that you can easily consolidate billing and day-to-day management of the accounts.
+After you create your new master AWS account, you can make use of a standard process to move any existing AWS accounts into your new master AWS account so that you can easily consolidate billing and day-to-day management of all of your AWS accounts.
 
 ## 1. Prepare Email Distribution Lists for New AWS Accounts
 
-Prepare a set of email distribution lists to represent the root user of each of the new AWS accounts that will be created. The following table includes the minimum set of distribution lists to get started. Each AWS account must have a globally unique email address. 
+Prepare a set of email distribution lists to represent the root user of each of the new AWS accounts that will be created. In this step you'll be referring to only the email distribution list for the master AWS account. In later steps, when you create other AWS accounts, you'll be entering the email distribution lists for those other AWS accounts.
+
+The following table includes the minimum set of distribution lists to get started. Each AWS account must have a globally unique email address. 
 
 If your organization already has a naming standard for mail addresses associated with services, you should use that standard format and include references to at least "aws" and and an abbreviation of the unique role or purpose of each account.
 
-|AWS Account	|Example Root User Email Distribution List	|Example with "+" Style Email Address	|
-|---	|---	|---	|
-|Master	|aws-account-master@acme.com	|aws-account+master@acme.com	|
-|Audit	|aws-account-audit@acme.com	|aws-account+audit@acme.com	|
-|Log Archive	|aws-account-log-archive@acme.com	|aws-account+log-archive@acme.com	|
-|Cloud Platform Team Development	|aws-account-cloud-platform-dev@acme.com	|aws-account+cloud-platform-dev@acme.com	|
-|Team 1 Development	|aws-account-team-a-dev@acme.com	|aws-account+team-a-dev@acme.com	|
+|AWS Account	|Example Root User Email Distribution List|Example with "+" Style Email Address|
+|---|---|---|
+|Master|aws-account-master@acme.com|aws-account+master@acme.com|
+|Audit|aws-account-audit@acme.com|aws-account+audit@acme.com|
+|Log Archive|aws-account-log-archive@acme.com|aws-account+log-archive@acme.com|
+|Cloud Platform Team Development|aws-account-cloud-platform-dev@acme.com	|aws-account+cloud-platform-dev@acme.com|
+|Team 1 Development|aws-account-team-a-dev@acme.com|aws-account+team-a-dev@acme.com|
 
 **Use of “+” Style Email Addresses**
 If your organization’s email system supports the use of “+” style email addresses in which email multiple email addresses are aliased to the same email account, then you might find it beneficial to use this form to consolidate the root user email addresses for either all or collections of AWS accounts to either one or a few actual email accounts.
