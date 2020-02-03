@@ -21,7 +21,7 @@ See [The AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide
 
 **AWS Accounts:** Each AWS account.
 
-**Username:** Email addresss associated with the AWS account.
+**Username:** Email address associated with the AWS account.
 
 **Permissions:** Full administrative access. Also see [AWS Tasks That Require AWS Account Root User Credentials](https://docs.aws.amazon.com/general/latest/gr/aws_tasks-that-require-root.html).
 
@@ -51,7 +51,7 @@ Once human Cloud Administtrators are granted access to the master account via th
 
 **AWS Accounts:** Each AWS master and member account under management of AWS Control Tower.
 
-**Username:** Email addresss associated with the AWS account's root user.
+**Username:** Email address associated with the AWS account's root user.
 
 **Permissions:** In the master AWS account: [AdministratorAccess](https://console.aws.amazon.com/iam/home#/policies/arn%3Aaws%3Aiam%3A%3Aaws%3Apolicy%2FAdministratorAccess)
 
