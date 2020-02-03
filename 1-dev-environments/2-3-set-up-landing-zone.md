@@ -24,7 +24,7 @@ Follow the steps in [Getting Started with AWS Control Tower](https://docs.aws.am
 
 The set up process can take 20-60 minutes to complete.
 
-## Log In as Root User in Each NEW Account, Set Password, and Enable MFA
+## Set AWS Account Root User Password and Enable MFA
 
 Since AWS Control Tower creates two new member accounts while setting up the initial landing zone, you should follow AWS security best practices by setting the password and enabling MFA for the root user of each of the following accounts:
 
@@ -35,7 +35,7 @@ See [Log In as Root User](https://docs.aws.amazon.com/controltower/latest/usergu
 
 See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user_manage_mfa) for instructions to enable MFA.
 
-## Enable MFA via AWS SSO for the admin user created via Control Tower
+## Enable MFA via AWS SSO for the Admin User Created via Control Tower
 
 As part of the landing zone set up, AWS Control Tower creates a Control Tower Administrator user in the AWS Single-Sign On ( AWS SSO) service in your master account.  As a best practice, you should enable MFA for this user.
 
@@ -60,7 +60,6 @@ As part of the landing zone established by AWS Control Tower, an “AWS Control 
 
  At this stage, your Cloud Administrators should make a decision as to whether:
 
-
 1. An initial set of AWS Virtual Private Cloud (VPC) networks will be created via the Account Factory when each development account is created or 
 2. Your Cloud Administrators will create a VPC after each account is created.
 
@@ -69,7 +68,6 @@ As part of the landing zone established by AWS Control Tower, an “AWS Control 
  As your networking requirements evolve, you will likely end up replacing the initial VPC you provision for each development account with VPCs that are built using infrastructure as code tools such as AWS CloudFormation and Hashicorp’s Terraform. 
 
  Key considerations when using the VPC creation feature of Account Factory:
-
 
 * One set of VPC specifications will be used for all accounts. This means that your initial set of VPCs will have overlapping IP address (CIDR) ranges that make inter-VPC and VPC to on-premises network connectivity difficult.
 * Limited flexibility in terms of the VPC subnet topology including the number and role of subnets.
@@ -85,6 +83,7 @@ As part of the landing zone established by AWS Control Tower, an “AWS Control 
  To review and modify the VPC settings used by the Account Factory, in the AWS Management Console access AWS Control Tower → Account factory.
 
 [Image: Screen Shot 2020-02-02 at 9.45.20 AM.png]
+
 *Internet-accessible subnet*
  Assuming that your development teams’ AWS accounts need access to resources on the Internet, you would enable the “Internet-accessible subnet” option.
 
