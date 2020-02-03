@@ -1,6 +1,8 @@
 # Initial Development Environment Solution Overview
 
-The following diagram represents a typical team development environment as a distinct AWS account supported by an initial set of foundation capabilities managed via a set of shared AWS accounts to meet the typical requirements outlined above. Since your specific requirements may include some or all of the Fast Follow-On Requirements listed above, some aspects of the initial solution will be different than shown in this diagram.
+The following diagram represents a typical team development environment as a distinct AWS account supported by an initial set of foundation capabilities managed via a set of shared AWS accounts to meet the typical requirements outlined above. 
+
+Since your specific requirements may include some of the optional [Fast Follow-On Requirements](../2-fast-follow-on/1-1-requirements.md), aspects of your initial solution may be different than shown in this diagram.
 
 <img src="../images/dev-initial.png" alt="Initial Development Environment" width="800"/>
 
@@ -12,7 +14,7 @@ The initial development team, your designated cloud administrators, security and
 
 ## Team Development AWS Accounts
 
-Each development team is allocated a distinct AWS account to act as a resource container for the AWS resources a team creates and manages on their own.  Since AWS service costs are automatically reported for each AWS account, using a distinct AWS account for each team’s development needs is a convenient way to make costs visible and attributable to each team.
+Each development team is allocated a distinct AWS account to act as a resource container for the AWS resources a team creates and manages on its own.  Since AWS service costs are automatically reported for each AWS account, using a distinct AWS account for each team’s development needs is a convenient way to make costs visible and attributable to each team.
 
 In addition to your initial application and data engineering development teams that need access to the AWS platform, you should view your initial cloud platform engineers and administrators as a development team in its own right that should have its own AWS account for its own work to iterate on, develop, and perform early testing of changes to the foundation and experimentation with new data and application services.
 
