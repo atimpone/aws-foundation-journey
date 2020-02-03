@@ -59,3 +59,7 @@ Automatically created AWS SSO Groups:
 [Image: image.png]Question: How does the customer enforce that MFA via AWS SSO has been configured for all users? i.e. to enable self-service, presumably we’d allow users to sign in without MFA so that they can set up their MFA. But what mechanism can be used to ensure that users eventually set up MFA?
 
 [How to setup MFA](https://docs.aws.amazon.com/singlesignon/latest/userguide//enable-mfa.html)
+
+## Next Steps
+
+Proceed to [5. Creating the Initial Team Development Environments](2-5-create-team-dev-environments.md)
