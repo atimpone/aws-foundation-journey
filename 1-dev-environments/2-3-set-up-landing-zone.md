@@ -102,4 +102,4 @@ As part of the landing zone established by AWS Control Tower, an “AWS Control 
  
  ## Next Steps
  
- Proceed to [4. Set Up Initial AWS Platform Access Controls](2-4-set-up-aws-platform-access-controls.md)
+ Proceed to [4. Setting Up Initial AWS Platform Access Controls](2-4-set-up-aws-platform-access-controls.md)
