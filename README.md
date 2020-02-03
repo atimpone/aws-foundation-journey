@@ -7,23 +7,12 @@ This repository contains a set of guides to help organizations better understand
 ---
 > ***The current focus of this project is to complete the first guide, "Establish Initial Development Environments". As the authors encounter best practices and resources associated with the subjects of the other guides outlined below, they will continue to add notes and links in those remaining guides.***
 ---
-* [Purpose of These Guides](#purpose-of-these-guides)
 * [Stages of Cloud Adoption](#stages-of-cloud-adoption)
 * [Cloud Foundation](#cloud-foundation)
 * Guides
   * [Establish Initial Development Environments](#establish-initial-development-environments)
   * [Establish Fast Follow-On Capabilities](#establish-fast-follow-on-capabilities)
   * [Establish Initial Test and Production Environments](#establish-initial-test-and-production-environments)
-
-## Purpose of These Guides
-
-The authors of these guides often work with organizations who are new to the AWS platform and need guidance on getting started with their formal work on the platform using up-to-date best practices, AWS services, and features. 
-
-Although there are is a variety of resources available to help organizations understand particular facets of this stage of the cloud adoption journey and extensive guidance and consulting resources for organizations beyond the intitial porject phase of adopting the cloud, the authors found that there was little in the way of prescriptive documented steps that help organiztions quickly get started with their initial formal project level work in AWS.
-
-These guides strive to avoid duplicating existing AWS documentation and other resources by deferring to existing AWS documentation and other resources for much of the background and detailed information. 
-
-Over time, these guides could potentially become incorporated into formal AWS documentation.
 
 ## Stages of Cloud Adoption
 
