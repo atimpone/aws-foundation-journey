@@ -4,19 +4,7 @@ Depending on your organizations needs, you may need some of the following requir
 
 ***Add table of contents***
 
-## Development Team Requirements
-
-* Integration with and connectivity to defined on-premises applications, data, and shared infrastructure services. For example:
-    * Cloud client access to defined  non-prod application and data services.
-    * On-premises source code management access.
-    * Hybrid DNS resolution.
-* Onboarding of additional teams with their own isolated development environments.
-
-## Foundation Requirements
-
-Broken down by the perspectives defined in the[AWS Cloud Adoption Framework](https://aws.amazon.com/professional-services/CAF/):
-
-### Business
+### Business Perspectives
 
 # Business
 * Transition from credit card to invoice based billing and payment for AWS services.
@@ -24,10 +12,18 @@ Broken down by the perspectives defined in the[AWS Cloud Adoption Framework](htt
 # People
 * Begin longer terms learning paths for Infrastructure as Code techniques.
 
-### Technical
+# Governance
+* TBD
+
+### Technical Perspectives
 
 # Platform
-* See the development team requirements listed above.
+* Development Team Requirements
+  * Integration with and connectivity to defined on-premises applications, data, and shared infrastructure services. For example:
+      * Cloud client access to defined  non-prod application and data services.
+      * On-premises source code management access.
+      * Hybrid DNS resolution.
+* Onboarding of additional teams with their own isolated development environments.
 
 # Security
 * Enable custom security guardrails across multiple AWS accounts.

@@ -14,20 +14,7 @@ A separate document addresses a series of [fast follow-on requirements](../2-fas
 
 The requirements are organized based on a series of perspectives defined in the[AWS Cloud Adoption Framework](https://aws.amazon.com/professional-services/CAF/). For example, at a high-level, requirements are broken into business and technical areas. Within each of these areas, requirements are further broken into a series of perspectives.
 
-## Development Team Requirements
-
-* An isolated environment for each team to carry out initial experiments and formal development work.
-* Access from corporate desktops to AWS services and AWS-hosted workloads.
-* Access to a broad set of AWS services to enable experimentation and development.
-    * Including broad access to create and manage application-oriented AWS IAM resources in support of experimenting and developing application and data services.
-* Access to an AWS network environment in support of those AWS services for which networking is either required or desirable.
-* Access to Internet-hosted code and package repositories so that 3rd party packages and code can be downloaded to VMs hosted in AWS.
-* Use of corporate source code management services to manage code used in support of experiments and development.
-* Insight into the costs of AWS services consumed in their development environments so that teams can make informed decisions.
-
-## Foundation Requirements
-
-### Business
+### Business Perspectives
 
 #### Business
 * Use of company authorized payment instrument, e.g. corporate credit card, by centralized cloud owner to pay for AWS cloud resources.
@@ -39,10 +26,18 @@ The requirements are organized based on a series of perspectives defined in the[
 #### Governance
 * Cross-functional organizations such as Security, Compliance, Operations, and Finance are key stakeholders in the use of the AWS platform even in these early stages and must be part of the initial planning, design, and implementation effort.
 
-### Technical
+### Technical Perspectives
 
 #### Platform
-* See the development team requirements listed above.
+* Development Team Requirements
+  * An isolated environment for each team to carry out initial experiments and formal development work.
+  * Access from corporate desktops to AWS services and AWS-hosted workloads.
+  * Access to a broad set of AWS services to enable experimentation and development.
+      * Including broad access to create and manage application-oriented AWS IAM resources in support of experimenting and developing application and data services.
+  * Access to an AWS network environment in support of those AWS services for which networking is either required or desirable.
+  * Access to Internet-hosted code and package repositories so that 3rd party packages and code can be downloaded to VMs hosted in AWS.
+  * Use of corporate source code management services to manage code used in support of experiments and development.
+  * Insight into the costs of AWS services consumed in their development environments so that teams can make informed decisions.
 * The initial cloud platform team needs an isolated environment in which they can develop and test foundation capabilities.
 
 #### Security
