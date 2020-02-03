@@ -113,3 +113,7 @@ More specifically, you can do the following with AWS Config:
 * View relationships between resources. For example, you might want to find all resources that use a particular security group. 
 
 Once you have resources deployed in your account, consider [Getting Started with AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/getting-started.html).
+
+## Next Steps
+
+Proceed to [7. Onboarding the Initial Development Teams](2-7-onboard-dev-teams.md)
