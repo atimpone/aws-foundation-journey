@@ -48,12 +48,12 @@ Since requirements vary across organizations, a series of supplemental guides ad
 
 By following this guide, in as little as a few hours, your organization can establish an initial secure foundation and development environment in AWS.
 
-#### Requirements and Solution Design
+#### Review and Refine Requirements and Solution Design
 
-* [Review and Refine Initial Development Environment Requirements](1-dev-environments/1-1-requirements.md)
-* [Review and Refine Initial Development Environment Solution Overview](1-dev-environments/1-2-solution.md)
+1. [Review and Refine Initial Development Environment Requirements](1-dev-environments/1-1-requirements.md)
+2. [Review and Refine Initial Development Environment Solution Overview](1-dev-environments/1-2-solution.md)
 
-#### Build Out Steps
+#### Build Out the Environment
 
 1. [Map People to Foundation Roles](1-dev-environments/2-1-map-people-to-foundation-roles.md)
 2. [Create a New Master AWS Account](1-dev-environments/2-2-create-master-aws-account.md)
@@ -74,28 +74,28 @@ Depending on your organizations needs, the following capabilities may be require
 
 Initially, the following sections will contain rough notes on current best practices and links to existing resources.
 
-#### Requirements and Solution Design
+#### Review and Refine Requirements and Solution Design
 
 * [Review and Refine Initial Development Environment Fast Follow-On Requirements](2-fast-follow-on/1-1-requirements.md)
 * [Review and Refine Initial Development Environment Fast Follow-On Solution Overview](2-fast-follow-on/1-2-solution.md)
 
-#### Capabilities
+#### Build Out the Capabilities
 
-* [Federated Access to Your AWS Environment](2-fast-follow-on/2-1-federated-access-to-aws.md)
-* [On-Premises Network Integration](2-fast-follow-on/2-2-on-premises-network-integration.md)
-* [Custom AWS Account Baselines](2-fast-follow-on/2-3-custom-account-baselines.md)
-* [Secure Internet Integration](2-fast-follow-on/2-4-secure-internet-integration.md)
-* [Security Information and Event Management (SIEM) Integration](2-fast-follow-on/2-5-siem-integration.md)
+* [Establish Federated Access to Your AWS Environment](2-fast-follow-on/2-1-federated-access-to-aws.md)
+* [Set Up On-Premises Network Integration](2-fast-follow-on/2-2-on-premises-network-integration.md)
+* [Enable Custom AWS Account Baselines](2-fast-follow-on/2-3-custom-account-baselines.md)
+* [Establish Secure Internet Integration](2-fast-follow-on/2-4-secure-internet-integration.md)
+* [Integrate with Security Information and Event Management (SIEM) Solution](2-fast-follow-on/2-5-siem-integration.md)
 
 ### Establish Initial Test and Production Environments
 
 The next guide that is under development helps you extend your foundation by introducting a set of capabilities organizations typically require before moving any workload into production.
 
-#### Requirements and Solution Design
+#### Review and Refine Requirements and Solution Design
 
 * [Initial Test and Production Environment Requirements](3-test-production/1-1-requirements.md)
 * [Initial Test and Production Environment Solution Overview](3-test-production/1-2-solution.md)
 
-#### Build Out Steps
+#### Build Out the Environments
 
 * TBD
