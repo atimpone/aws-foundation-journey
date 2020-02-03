@@ -74,7 +74,7 @@ See [AWS Support Plans](https://aws.amazon.com/premiumsupport/plans/) for a desc
 
 In a few minutes your account should be fully activated and you’ll receive a confirmation email.  If you don’t, review the troubleshooting steps from the [Create and Activate an AWS Account support page](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
 
-## 3. Secure your AWS Account Root User
+## 3. Secure Your AWS Account Root User
 
 It’s strongly recommended and an AWS security best practice to enable multi-factor authentication (MFA) to the AWS account root user and to avoid using the root user, even for administrative tasks, from this point forward.
 
