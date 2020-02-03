@@ -48,20 +48,25 @@ Since requirements vary across organizations, a series of supplemental guides ad
 
 By following this guide, in as little as a few hours, your organization can establish an initial secure foundation and development environment in AWS.
 
-* [Initial Development Environment Requirements](1-dev-environments/1-1-requirements.md)
-* [Initial Development Environment Solution Overview](1-dev-environments/1-2-solution.md)
-* Build Out Steps
-  1. [Map People to Foundation Roles](1-dev-environments/2-1-map-people-to-foundation-roles.md)
-  2. [Create a New Master AWS Account](1-dev-environments/2-2-create-master-aws-account.md)
-  3. [Set Up an Initial Landing Zone Using AWS Control Tower](1-dev-environments/2-3-set-up-landing-zone.md)
-  4. [Set Up Initial AWS Platform Access Controls](1-dev-environments/2-4-set-up-aws-platform-access-controls.md)
-  5. [Create the Initial Team Development Environments](1-dev-environments/2-5-create-team-dev-environments.md)
-  6. [Establish Initial AWS Platform Monitoring Practices](1-dev-environments/2-6-initial-aws-platform-monitoring.md)
-  7. [Onboard the Initial Development Teams](1-dev-environments/2-7-onboard-dev-teams.md)
-  8. [Manage Your AWS Environment Going Forward](1-dev-environments/2-8-manage-aws-environment.md)
-* Reference
-  * [Cloud Platform System AWS Users](1-dev-environments/3-1-cloud-platform-system-users.md)
+#### Requirements and Solution Design
 
+* [Review and Refine Initial Development Environment Requirements](1-dev-environments/1-1-requirements.md)
+* [Review and Refine Initial Development Environment Solution Overview](1-dev-environments/1-2-solution.md)
+
+#### Build Out Steps
+
+1. [Map People to Foundation Roles](1-dev-environments/2-1-map-people-to-foundation-roles.md)
+2. [Create a New Master AWS Account](1-dev-environments/2-2-create-master-aws-account.md)
+3. [Set Up an Initial Landing Zone Using AWS Control Tower](1-dev-environments/2-3-set-up-landing-zone.md)
+4. [Set Up Initial AWS Platform Access Controls](1-dev-environments/2-4-set-up-aws-platform-access-controls.md)
+5. [Create the Initial Team Development Environments](1-dev-environments/2-5-create-team-dev-environments.md)
+6. [Establish Initial AWS Platform Monitoring Practices](1-dev-environments/2-6-initial-aws-platform-monitoring.md)
+7. [Onboard the Initial Development Teams](1-dev-environments/2-7-onboard-dev-teams.md)
+8. [Manage Your AWS Environment Going Forward](1-dev-environments/2-8-manage-aws-environment.md)
+
+#### Reference
+
+* [Cloud Platform System AWS Users](1-dev-environments/3-1-cloud-platform-system-users.md)
 
 ### Establish Fast Follow-On Capabilities
 
@@ -69,20 +74,28 @@ Depending on your organizations needs, the following capabilities may be require
 
 Initially, the following sections will contain rough notes on current best practices and links to existing resources.
 
-* [Initial Development Environment Fast Follow-On Requirements](2-fast-follow-on/1-1-requirements.md)
-* [Initial Development Environment Fast Follow-On Solution Overview](2-fast-follow-on/1-2-solution.md)
-* Capabilities
-  * [Federated Access to Your AWS Environment](2-fast-follow-on/2-1-federated-access-to-aws.md)
-  * [On-Premises Network Integration](2-fast-follow-on/2-2-on-premises-network-integration.md)
-  * [Custom AWS Account Baselines](2-fast-follow-on/2-3-custom-account-baselines.md)
-  * [Secure Internet Integration](2-fast-follow-on/2-4-secure-internet-integration.md)
-  * [Security Information and Event Management (SIEM) Integration](2-fast-follow-on/2-5-siem-integration.md)
+#### Requirements and Solution Design
+
+* [Review and Refine Initial Development Environment Fast Follow-On Requirements](2-fast-follow-on/1-1-requirements.md)
+* [Review and Refine Initial Development Environment Fast Follow-On Solution Overview](2-fast-follow-on/1-2-solution.md)
+
+#### Capabilities
+
+* [Federated Access to Your AWS Environment](2-fast-follow-on/2-1-federated-access-to-aws.md)
+* [On-Premises Network Integration](2-fast-follow-on/2-2-on-premises-network-integration.md)
+* [Custom AWS Account Baselines](2-fast-follow-on/2-3-custom-account-baselines.md)
+* [Secure Internet Integration](2-fast-follow-on/2-4-secure-internet-integration.md)
+* [Security Information and Event Management (SIEM) Integration](2-fast-follow-on/2-5-siem-integration.md)
 
 ### Establish Initial Test and Production Environments
 
 The next guide that is under development helps you extend your foundation by introducting a set of capabilities organizations typically require before moving any workload into production.
 
+#### Requirements and Solution Design
+
 * [Initial Test and Production Environment Requirements](3-test-production/1-1-requirements.md)
 * [Initial Test and Production Environment Solution Overview](3-test-production/1-2-solution.md)
-* Build Out Steps
-  * TBD
+
+#### Build Out Steps
+
+* TBD
