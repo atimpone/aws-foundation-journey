@@ -70,9 +70,7 @@ By following this guide, in as little as a few hours, your organization can esta
 
 ### Establish Fast Follow-On Capabilities
 
-Depending on your organizations needs, the following capabilities may be required relatively early in your cloud adoption journey.
-
-Initially, the following sections will contain rough notes on current best practices and links to existing resources.
+Depending on your organizations needs, the following capabilities may be required either as part of your initial buidl out of development environments or shortly thereafter.
 
 #### Review and Refine Requirements and Solution Design
 
@@ -80,6 +78,8 @@ Initially, the following sections will contain rough notes on current best pract
 * [Review and Refine Initial Development Environment Fast Follow-On Solution Overview](2-fast-follow-on/1-2-solution.md)
 
 #### Build Out the Capabilities
+
+> *The following section have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.*
 
 * [Establish Federated Access to Your AWS Environment](2-fast-follow-on/2-1-federated-access-to-aws.md)
 * [Set Up On-Premises Network Integration](2-fast-follow-on/2-2-on-premises-network-integration.md)
