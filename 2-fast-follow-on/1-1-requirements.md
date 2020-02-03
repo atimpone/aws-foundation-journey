@@ -4,20 +4,20 @@ Depending on your organizations needs, you may need some of the following requir
 
 ***Add table of contents***
 
-### Business Perspectives
+## Business Perspectives
 
-# Business
+### Business
 * Transition from credit card to invoice based billing and payment for AWS services.
 
-# People
+### People
 * Begin longer terms learning paths for Infrastructure as Code techniques.
 
-# Governance
+### Governance
 * TBD
 
-### Technical Perspectives
+## Technical Perspectives
 
-# Platform
+### Platform
 * Development Team Requirements
   * Integration with and connectivity to defined on-premises applications, data, and shared infrastructure services. For example:
       * Cloud client access to defined  non-prod application and data services.
@@ -25,7 +25,7 @@ Depending on your organizations needs, you may need some of the following requir
       * Hybrid DNS resolution.
 * Onboarding of additional teams with their own isolated development environments.
 
-# Security
+### Security
 * Enable custom security guardrails across multiple AWS accounts.
 * Constrain which AWS services can be accessed in development environments.
 * Constrain which AWS regions can be used in development environments.
@@ -37,7 +37,7 @@ Depending on your organizations needs, you may need some of the following requir
     * AWS Resource Configuration changes (e.g. AWS Config)
     * Network traffic monitoring (e.g. partly based on capture of VPC Flow Logs)
 
-# Operations
+### Operations
 * Enable centralized management and distribution of foundation baseline configurations across AWS accounts.
 * Establish network integration between on-premises and AWS:
     * Secure private network connectivity between on-premises and AWS to support initial on-premises and  AWS integration scenarios. 

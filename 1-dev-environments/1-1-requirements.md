@@ -14,21 +14,21 @@ A separate document addresses a series of [fast follow-on requirements](../2-fas
 
 The requirements are organized based on a series of perspectives defined in the[AWS Cloud Adoption Framework](https://aws.amazon.com/professional-services/CAF/). For example, at a high-level, requirements are broken into business and technical areas. Within each of these areas, requirements are further broken into a series of perspectives.
 
-### Business Perspectives
+## Business Perspectives
 
-#### Business
+### Business
 * Use of company authorized payment instrument, e.g. corporate credit card, by centralized cloud owner to pay for AWS cloud resources.
 * Transparent and frequent cost reporting with alerts for greater than expected consumption.
 
-#### People
+### People
 * The customer must have at least several technologists who are assigned to and capable of configuring and managing the initial phases of the enterprise’s use of AWS.
 
-#### Governance
+### Governance
 * Cross-functional organizations such as Security, Compliance, Operations, and Finance are key stakeholders in the use of the AWS platform even in these early stages and must be part of the initial planning, design, and implementation effort.
 
-### Technical Perspectives
+## Technical Perspectives
 
-#### Platform
+### Platform
 * Development Team Requirements
   * An isolated environment for each team to carry out initial experiments and formal development work.
   * Access from corporate desktops to AWS services and AWS-hosted workloads.
@@ -40,12 +40,12 @@ The requirements are organized based on a series of perspectives defined in the[
   * Insight into the costs of AWS services consumed in their development environments so that teams can make informed decisions.
 * The initial cloud platform team needs an isolated environment in which they can develop and test foundation capabilities.
 
-#### Security
+### Security
 * Sufficient isolation between cloud development environments and existing corporate resources.
 * Sufficient auditing of cloud access and activity.
 * Use of per user identities to separate access and ensure sufficient auditing.
 * Use of Multi-Factor Authentication for all human user access to the AWS platform.
 
-#### Operations
+### Operations
 * Clearly defined roles and responsibilities for managing the use of AWS.
 * A sufficient set of runbooks and playbooks to support common operational needs and scenarios.

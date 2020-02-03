@@ -4,65 +4,24 @@ This document lists the typical requirements for your inital formal test and dev
 
 ***Add table of contents***
 
-## Initial Requirements
+## Business Perspectives
 
-Based on AWS’ extensive experience with customers progressing on their journey to the cloud, customers typically require the following capabilities when establishing their initial formal test and development environments.
-
-These are the typical bare minimum requirements to address when setting up formally managed test and production environments.
-
-### Development Team Requirements
-
+### Business
 * ...
 
-### Foundation Requirements
-
-#### Business
-
-Business
+### People
 * ...
 
-People
+### Governance
 * ...
 
-Governance
+## Technical Perspectives
+
+### Platform
 * ...
 
-#### Technical
-
-Platform
+### Security
 * ...
 
-Security
-* ...
-
-Operations
-* ...
-
-## Typical Fast Follow-on Requirements
-
-Depending on your organizations needs, you may need some of the following requirements addressed in the build out of your initial test and production environments.  Although addressing these requirements will add time to the overall initial build out, AWS provides additional guides and best practices to help you quickly meet those requirements. References to these additional guides are included in the build out steps later in this guide.
-
-### Development Team Requirements
-
-* ...
-
-### Foundation Requirements
-
-#### Business
-
-Business
-* ...
-
-People
-* ...
-
-#### Technical
-
-Platform
-* ...
-
-Security
-* ...
-
-Operations
+### Operations
 * ...
