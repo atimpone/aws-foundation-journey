@@ -50,13 +50,13 @@ By following this guide, in as little as a few hours, your organization can esta
 * [Initial Development Environment Solution Overview](1-dev-environments/1-2-solution.md)
 * Build Out Steps
   1. [Map People to Foundation Roles](1-dev-environments/2-1-map-people-to-foundation-roles.md)
-  1. [Create a New Master AWS Account](1-dev-environments/2-2-create-master-aws-account.md)
-  1. [Set Up an Initial Landing Zone Using AWS Control Tower](1-dev-environments/2-3-set-up-landing-zone.md)
-  1. [Set Up Initial AWS Platform Access Controls](1-dev-environments/2-4-set-up-aws-platform-access-controls.md)
-  1. [Create the Initial Team Development Environments](1-dev-environments/2-5-create-team-dev-environments.md)
-  1. [Establish Initial AWS Platform Monitoring Practices](1-dev-environments/2-6-initial-aws-platform-monitoring.md)
-  1. [Onboard the Initial Development Teams](1-dev-environments/2-7-onboard-dev-teams.md)
-  1. [Manage Your AWS Environment Going Forward](1-dev-environments/2-8-manage-aws-environment.md)
+  2. [Create a New Master AWS Account](1-dev-environments/2-2-create-master-aws-account.md)
+  3. [Set Up an Initial Landing Zone Using AWS Control Tower](1-dev-environments/2-3-set-up-landing-zone.md)
+  4. [Set Up Initial AWS Platform Access Controls](1-dev-environments/2-4-set-up-aws-platform-access-controls.md)
+  5. [Create the Initial Team Development Environments](1-dev-environments/2-5-create-team-dev-environments.md)
+  6. [Establish Initial AWS Platform Monitoring Practices](1-dev-environments/2-6-initial-aws-platform-monitoring.md)
+  7. [Onboard the Initial Development Teams](1-dev-environments/2-7-onboard-dev-teams.md)
+  8. [Manage Your AWS Environment Going Forward](1-dev-environments/2-8-manage-aws-environment.md)
 * Reference
   * [Cloud Platform System AWS Users](1-dev-environments/3-1-cloud-platform-system-users.md)
 
