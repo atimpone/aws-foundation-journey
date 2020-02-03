@@ -1,0 +1,56 @@
+# Initial Development Environment Requirements
+
+This document lists the typical requirements for your inital formal development environments and the supporting foundation.
+
+Based on AWS’ extensive experience with customers progressing on their journey to the cloud, customers typically require the following capabilities when establishing their initial formal development environments.
+
+These are the typical bare minimum requirements to address when setting up formally managed development environments.
+
+A separate document addresses a series of [fast follow-on requirements](../2-fast-follow-on/1-1-requirements.md) that might be required up front depending on your organization's needs.
+
+***Add table of contents***
+
+## Cloud Adoption Framework Perspectives
+
+The requirements are organized based on a series of perspectives defined in the[AWS Cloud Adoption Framework](https://aws.amazon.com/professional-services/CAF/). For example, at a high-level, requirements are broken into business and technical areas. Within each of these areas, requirements are further broken into a series of perspectives.
+
+## Development Team Requirements
+
+* An isolated environment for each team to carry out initial experiments and formal development work.
+* Access from corporate desktops to AWS services and AWS-hosted workloads.
+* Access to a broad set of AWS services to enable experimentation and development.
+    * Including broad access to create and manage application-oriented AWS IAM resources in support of experimenting and developing application and data services.
+* Access to an AWS network environment in support of those AWS services for which networking is either required or desirable.
+* Access to Internet-hosted code and package repositories so that 3rd party packages and code can be downloaded to VMs hosted in AWS.
+* Use of corporate source code management services to manage code used in support of experiments and development.
+* Insight into the costs of AWS services consumed in their development environments so that teams can make informed decisions.
+
+## Foundation Requirements
+
+### Business
+
+#### Business
+* Use of company authorized payment instrument, e.g. corporate credit card, by centralized cloud owner to pay for AWS cloud resources.
+* Transparent and frequent cost reporting with alerts for greater than expected consumption.
+
+#### People
+* The customer must have at least several technologists who are assigned to and capable of configuring and managing the initial phases of the enterprise’s use of AWS.
+
+#### Governance
+* Cross-functional organizations such as Security, Compliance, Operations, and Finance are key stakeholders in the use of the AWS platform even in these early stages and must be part of the initial planning, design, and implementation effort.
+
+### Technical
+
+#### Platform
+* See the development team requirements listed above.
+* The initial cloud platform team needs an isolated environment in which they can develop and test foundation capabilities.
+
+#### Security
+* Sufficient isolation between cloud development environments and existing corporate resources.
+* Sufficient auditing of cloud access and activity.
+* Use of per user identities to separate access and ensure sufficient auditing.
+* Use of Multi-Factor Authentication for all human user access to the AWS platform.
+
+#### Operations
+* Clearly defined roles and responsibilities for managing the use of AWS.
+* A sufficient set of runbooks and playbooks to support common operational needs and scenarios.
