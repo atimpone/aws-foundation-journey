@@ -1,8 +1,8 @@
 # AWS Foundation Journey - Early Stages
 
-***Does your organization need to quickly access a secure environment in which teams can start collaborating on and experimenting with new ideas with the expectation that some of the results will need to move rapidly from development to test and production?***
+Our custmers have expressed their need to have a perscriptive guide to help organizations better understand how they can get started with the Amazon Web Services (AWS) platform when they are ready to move from the informal stage of using personal AWS accounts to the next stage of performing more formal collaborative experiments, initial development, and testing work that will likely result in an initial set of application and/or data services being deployed to production. 
 
-This repository contains a set of guides to help organizations better understand how they can get started with the Amazon Web Services (AWS) platform when they are ready to move from the informal stage of using personal AWS accounts to the next stage of performing more formal collaborative experiments, initial development, and testing work that will likely result in an initial set of application and/or data services being deployed to production. 
+The documents provided in this repository are part of an ongoing project to share AWS foundational architecture best practices which will enable the quick deployment a secure environment in which teams can start collaborating on and experimenting with new ideas with the expectation that some of the results will need to move rapidly from development to test and production.
 
 ---
 > ***The current focus of this project is to complete the first guide, "Establish Initial Development Environments". As the authors encounter best practices and resources associated with the subjects of the other guides outlined below, they will continue to add notes and links in those remaining guides.***
