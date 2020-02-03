@@ -16,7 +16,7 @@ This repository contains a set of guides to help organizations better understand
 
 The authors of these guides work with organizations who are new to the AWS platform and need guidance on getting started with their formal work with the platform using up-to-date best practices, AWS services, and features. 
 
-Although there are many resources available to help organizations understand particular facets of this stage of the cloud adoption journey, the authors found that there was little im the way of prescriptive steps that help organiztions quickly get started with their formal build outs in AWS.
+Although there are many resources available to help organizations understand particular facets of this stage of the cloud adoption journey, the authors found that there was little in the way of prescriptive steps that could help organiztions quickly get started with their formal build outs in AWS.
 
 These guides strive to avoid duplicating existing AWS documentation and other resources by deferring to existing AWS documentation and other resources for much of the background and detailed information. 
 
