@@ -8,19 +8,10 @@ The following table lists a typical set of minimal roles to own and manage your 
 
 |Role	|Description	|Responsibilities	|
 |---	|---	|---	|
-|Cloud Administration	|Write access to cloud foundation resources.	|* Create and manage shared cloud infrastructure. For example:
-    * AWS accounts
-    * Shared networking resources.
-* Onboard new development teams on usage of their cloud development environments.	|
-|Security Administration	|Write access to cloud foundation security resources.	|* Create and manage baseline security policies in AWS.
-* Monitor and respond to AWS usage security events.
-* Learn and promote cloud security best practices.	|
-|Cost Management	|Write access to cost budgets and reporting.	|* Monitor overall clound spend.
-* Create, manage, and ensure access to cost and budget reports.
-* Learn and apply fundamentals of cloud cost optimization practices.	|
+|Cloud Administration	|Write access to cloud foundation resources.	|<p>* Create and manage shared cloud infrastructure. For example, AWS accounts and shared networking resources.<br>* Onboard new development teams on usage of their cloud development environments.</p>|
+|Security Administration	|Write access to cloud foundation security resources.	|<p>* Create and manage baseline security policies in AWS.<br>* Monitor and respond to AWS usage security events.<br>* Learn and promote cloud security best practices.</p>|
+|Cost Management	|Write access to cost budgets and reporting.	|<p>* Monitor overall clound spend.<br>* Create, manage, and ensure access to cost and budget reports.<br>* Learn and apply fundamentals of cloud cost optimization practices.|
 |Audit	|Read only access to all AWS resources.	|Periodically review data hosted in AWS for compliance.	|
-|	|	|	|
-|	|	|	|
 
 ## Start With a Small Foundation Team
 
