@@ -4,6 +4,8 @@
 
 This repository contains a set of guides to help organizations better understand how they can get started with the Amazon Web Services (AWS) platform when they are ready to move from the informal stage of using personal AWS accounts to the next stage of performing more formal collaborative experiments, initial development, and testing work that will likely result in an initial set of application and/or data services being deployed to production. 
 
+> ***The current focus of this project is to complete the first guide, "Establish Initial Development Environments". As the authors encounter best practices and resources associated with the subjects of the other guides outlined below, they will continue to add notes and links in those remaining guides.***
+
 * [Purpose of These Guides](#purpose-of-these-guides)
 * [Stages of Cloud Adoption](#stages-of-cloud-adoption)
 * [Cloud Foundation](#cloud-foundation)
@@ -79,7 +81,7 @@ Depending on your organizations needs, the following capabilities may be require
 
 #### Build Out the Capabilities
 
-> *The following section have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.*
+> *The following sections have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.*
 
 * [Establish Federated Access to Your AWS Environment](2-fast-follow-on/2-1-federated-access-to-aws.md)
 * [Set Up On-Premises Network Integration](2-fast-follow-on/2-2-on-premises-network-integration.md)
@@ -88,6 +90,8 @@ Depending on your organizations needs, the following capabilities may be require
 * [Integrate with Security Information and Event Management (SIEM) Solution](2-fast-follow-on/2-5-siem-integration.md)
 
 ### Establish Initial Test and Production Environments
+
+> *Other than the inclusion in the Solution Overview section of a rough diagram of a typical layout of the foundation including the addition of test and production environments, the sections for this guide have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.*
 
 The next guide that is under development helps you extend your foundation by introducting a set of capabilities organizations typically require before moving any workload into production.
 
