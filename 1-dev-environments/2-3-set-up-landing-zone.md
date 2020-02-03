@@ -82,18 +82,18 @@ As part of the landing zone established by AWS Control Tower, an “AWS Control 
 
  To review and modify the VPC settings used by the Account Factory, in the AWS Management Console access AWS Control Tower → Account factory.
 
-[Image: Screen Shot 2020-02-02 at 9.45.20 AM.png]
+<img src="../images/control-tower-account-factory-network-settings.png" alt="AWS Control Tower Account Factory Network Settings" width="400"/>
 
-*Internet-accessible subnet*
+**Internet-accessible subnet**
  Assuming that your development teams’ AWS accounts need access to resources on the Internet, you would enable the “Internet-accessible subnet” option.
 
-*Maximum number of private subnets*
+**Maximum number of private subnets**
  To enable your developers to develop and testing using multiple AWS Availability Zones (AZs), you should select “2” for the “Maximum number of private subnets”.
 
-*Address range*
+**Address range**
  If you don’t expect that your initial VPCs will need to have connectivity with your on-premises networks, you can select any valid network. See [VPC and Subnet Sizing for IPv4](https://docs.aws.amazon.com/vpc/latest/userguide//VPC_Subnets.html#vpc-sizing-ipv4) in the Amazon Virtual Private Cloud documentation for recommendations on IP address ranges and sizes. 
 
  Note that the VPC created in each development team AWS account will be assigned the same IP address range. This overlap might be acceptable to you in the early stages of your use of AWS, but will likely become a barrier as your foundation needs expand.
 
-*Regions for VPC creation*
+**Regions for VPC creation**
  Select only the single AWS region in which your organization expects to do most of its initial work. You’ll likely want to choose the same AWS region as you selected for the AWS Control Tower home region.
