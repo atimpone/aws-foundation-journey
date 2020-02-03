@@ -12,7 +12,7 @@ Although addressing these requirements will add time to the overall initial buil
 * Transition from credit card to invoice based billing and payment for AWS services.
 
 ### People
-* Begin longer terms learning paths for Infrastructure as Code techniques.
+* Begin longer term learning paths for Infrastructure as Code (Iac) techniques.
 
 ### Governance
 * TBD
