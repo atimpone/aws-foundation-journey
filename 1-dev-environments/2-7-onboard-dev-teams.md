@@ -8,3 +8,7 @@ This step should take about an hour to complete.
     * Create users and associate them with groups in AWS SSO as necessary to onboard the initial small set of users.
     * Assign the relevant groups to the new AWS account.
 * Train the users on how to access the new team development account.
+
+## Next Steps
+
+Proceed to [8. Managing Your AWS Environment Going Forward](2-8-manage-aws-environment.md)
