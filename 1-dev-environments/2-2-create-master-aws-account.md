@@ -106,4 +106,4 @@ Access [Account  Settings](https://console.aws.amazon.com/billing/home?#/account
 
 ## Next Steps
 
-Proceed to [Setting Up an Initial Landing Zone Using AWS Control Tower](1-dev-environments/2-3-set-up-landing-zone.md)
+Proceed to [3. Setting Up an Initial Landing Zone Using AWS Control Tower](2-3-set-up-landing-zone.md)
