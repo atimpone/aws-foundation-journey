@@ -93,8 +93,8 @@ The next guide that is under development helps you extend your foundation by int
 
 #### Review and Refine Requirements and Solution Design
 
-* [Initial Test and Production Environment Requirements](3-test-production/1-1-requirements.md)
-* [Initial Test and Production Environment Solution Overview](3-test-production/1-2-solution.md)
+* [Review and Refine Initial Test and Production Environment Requirements](3-test-production/1-1-requirements.md)
+* [Review and Refine Initial Test and Production Environment Solution Overview](3-test-production/1-2-solution.md)
 
 #### Build Out the Environments
 
