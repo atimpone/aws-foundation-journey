@@ -20,17 +20,19 @@ Based on years of experience in helping customers obtain business benefits of cl
 
 <img src="images/cloud-adoption-framework.png" alt="Cloud Adoption Framework" width="400"/>
 
-Organizations leveraging these guides are typically in the “Project” phase of adoption during which they are starting with a few projects to begin to understand how they can leverage the cloud to meet a business need. 
+Organizations leveraging these guides are typically in the “Project” phase of adoption during which they are starting with a few projects to begin to understand how they can leverage the cloud to meet a business need.
 
 Once an enterprise has gained some benefit from the cloud by taking a few projects to production, an organization tends to move toward a "Foundation" phase in which the organization makes more extensive investments in its cloud foundation in support of scaling cloud adoption across the organization with the goal of gaining more extensive business benefits. 
 
-## Cloud Foundation
+Even in the initial project phase of adoption, AWS recommends that an initial cloud foundation be established that can be extended over time as organizations transition into the foundation phase to prepare for larger scale cloud adotpion. These guides help organizatins establish the beginning of their foundation on AWS in support of their initial few projects.
+
+## Initial Form of Cloud Foundation
 
 A key element of making the transition from the use of invididual user AWS accounts for early experiments to more formal initial work with the cloud is to ensure that your organization establishes a sufficiently secured and maintained initial form of your AWS cloud foundation.
 
 In support of your first few formal projects, these guides start with getting an initial foundation and several development environments in place before address how to extend your foundation to support deploying your first few workloads to test and production environments. 
 
-Since requirements vary across organizations, a series of supplemental guides address optional capabilities that often provide value even in this early stage of cloud adoption.
+Later, when your organization has demonstrated success with the initial few projects, you will likely make a larger investment in your cloud foundation to support cloud adopton at scale.
 
 <img src="images/foundation.png" alt="Cloud Foundation" width="700"/>
 
