@@ -1,6 +1,8 @@
 # Fast Follow-On Requirements
 
-Depending on your organizations needs, you may need some of the following requirements addressed in the build out of your initial foundation and development environment.  Although addressing these requirements will add time to the overall initial build out, AWS provides additional guides and best practices to help you quickly meet those requirements. References to these additional guides are included in the build out steps later in this guide.
+Depending on your organizations needs, you may require that some or all of the following capabilities be addressed in the build out of your initial foundation and development environment.  
+
+Although addressing these requirements will add time to the overall initial build out, AWS provides additional guides and best practices to help you quickly meet these requirements. References to these additional guides are included in the build out steps later in this guide.
 
 ***Add table of contents***
 
