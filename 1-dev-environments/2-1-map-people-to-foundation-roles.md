@@ -42,4 +42,4 @@ People playing foundation functional roles will also be granted access to develo
 
 ## Next Steps
 
-Proceed to [Create a New Master AWS Account](1-dev-environments/2-2-create-master-aws-account.md).
+Proceed to [Creating a New Master AWS Account](1-dev-environments/2-2-create-master-aws-account.md).
