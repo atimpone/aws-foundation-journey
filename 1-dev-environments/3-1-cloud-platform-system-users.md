@@ -11,17 +11,11 @@ To do: Provide a diagram of the system users.
 
 ## AWS Account Root User
 
-It is strongly recommended that AWS account root users not be used for every day administrative tasks. See [The AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) for more specific guidance.
+It is strongly recommended that AWS account root users not be used for day-to-day administrative tasks. See [The AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) for more specific guidance.
 
-***Master Account Root User***
+In your master AWS account, the only initial purpose of the AWS account root user is for you to perform initial configuration of several AWS account settings and to create an administrative bootstrap user in the IAM service. 
 
-The only initial purpose of the master AWS account root user is for you to perform initial configuration of several AWS account settings and to create an administrative bootstrap user in the IAM service. 
-
-Moving forward, your Cloud Administrators will only need to use the master AWS account root user for carrying out infrequent tasks described in [AWS Tasks That Require AWS Account Root User Credentials](https://docs.aws.amazon.com/general/latest/gr/aws_tasks-that-require-root.html).
-
-***Member Account Root Users***
-
-Although the AWS account root user is created for every account, as a best practice, you need not set an initial password for this user.  You would only set the password for the root user in member accounts if you needed to perform one of the [AWS Tasks That Require AWS Account Root User Credentials](https://docs.aws.amazon.com/general/latest/gr/aws_tasks-that-require-root.html). For example, changing the AWS Support level associated with a member AWS account.
+Your Cloud Administrators will only need to use the AWS account root user for carrying out infrequent tasks described in [AWS Tasks That Require AWS Account Root User Credentials](https://docs.aws.amazon.com/general/latest/gr/aws_tasks-that-require-root.html).
 
 **Creation:** Automatically created whenever an AWS account is created.
 
