@@ -45,7 +45,7 @@ Control Tower created AWS SSO Permissions Assignments:
 * AWSAuditAccountAdmins
     * Assumes Role: AdministratorAccess in the AWS Audit Account
 
-Additional Groups beyond what Control Tower Creates may be required.  Billing only permissions for example are not created with Control Tower so this must be created manually.  Repeat the steps below for other Functional Group needs.
+Additional Groups beyond what Control Tower Creates may be required.  Billing only permissions for example are not created with Control Tower so this must be created manually.  AWS SSO has many permission sets built for common functional group needs.  Use prebuilt permission sets as much as possible.  Repeat the steps below for other Functional Group needs.
 
 [AWS SSO Documentation](https://docs.aws.amazon.com/singlesignon/index.html)
 
