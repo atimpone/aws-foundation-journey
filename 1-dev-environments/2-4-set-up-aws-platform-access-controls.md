@@ -50,19 +50,29 @@ Additional Groups beyond what Control Tower Creates may be required.  Billing on
 [AWS SSO Documentation](https://docs.aws.amazon.com/singlesignon/index.html)
 
 **CREATE INITIAL SET OF USERS**
+
 [How to add a user in AWS SSO](https://docs.aws.amazon.com/singlesignon/latest/userguide/addusers.html)
 
 **CREATE FUNCTIONAL GROUPS**
+
 [How to add groups in AWS SSO](https://docs.aws.amazon.com/singlesignon/latest/userguide/addgroups.html)
 
 **ADD USERS TO BUILD IN CONTROL TOWER GROUPS AND FUNCTIONAL GROUPS**
+
 [How to add users to AWS SSO groups](https://docs.aws.amazon.com/singlesignon/latest/userguide/adduserstogroups.html)
 
 **ADD PERMISSION SETS TO EACH AWS ACCOUNTS**
+
 [How to add permission sets to AWS accounts](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html)
 
 **ADD GROUPS TO EACH AWS ACCOUNT PERMISSION SETS**
-[How to add permission sets to AWS accounts]
+
+1. From the AWS Console home screen navigate to "Accounts"
+2. Select the account to assign a group to a permission set
+3. Select "Assign Users"
+4. Select the "Groups" tab
+5. Select the Group and press "Next"
+6. Select the Permission Set to add the Group to and press "Finish"
 
 ## Enable Multi-Factor Authentication (MFA)
 
