@@ -60,7 +60,7 @@ Once human Cloud Administtrators are granted access to the master account via th
 In each member AWS account: [AWSOrganizationsFullAccess](https://console.aws.amazon.com/iam/home?#/policies/arn%3Aaws%3Aiam%3A%3Aaws%3Apolicy%2FAWSOrganizationsFullAccess)
 
 ## AWS Account Adminstrator
-Once the human Cloud Administtrators are granted access to the AWS accounts via their own individual user accounts and are granted at least equivalent permissions to this user, this user will no longer be used.
+Once the human Cloud Administrators are granted access to the AWS accounts via their own individual user accounts and are granted at least equivalent permissions to this user, this user will no longer be used.
 
 **Creation:** Automatically created when you create a new member AWS account via AWS Control Tower's Account Factory.
 
