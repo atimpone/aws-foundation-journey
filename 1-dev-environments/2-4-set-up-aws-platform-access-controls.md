@@ -50,24 +50,18 @@ Additional Groups beyond what Control Tower Creates may be required.  Billing on
 [AWS SSO Documentation](https://docs.aws.amazon.com/singlesignon/index.html)
 
 **CREATE INITIAL SET OF USERS**
-
-[AWS SSO User Guide](https://docs.aws.amazon.com/controltower/latest/userguide/sso.html)
 [How to add a user in AWS SSO](https://docs.aws.amazon.com/singlesignon/latest/userguide/addusers.html)
 
 **CREATE FUNCTIONAL GROUPS**
-
 [How to add groups in AWS SSO](https://docs.aws.amazon.com/singlesignon/latest/userguide/addgroups.html)
 
 **ADD USERS TO BUILD IN CONTROL TOWER GROUPS AND FUNCTIONAL GROUPS**
-
 [How to add users to AWS SSO groups](https://docs.aws.amazon.com/singlesignon/latest/userguide/adduserstogroups.html)
 
 **ADD PERMISSION SETS TO EACH AWS ACCOUNTS**
-
 [How to add permission sets to AWS accounts](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html)
 
 **ADD GROUPS TO EACH AWS ACCOUNT PERMISSION SETS**
-
 [How to add permission sets to AWS accounts]
 
 ## Enable Multi-Factor Authentication (MFA)
