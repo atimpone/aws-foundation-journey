@@ -23,9 +23,9 @@ Although the AWS IAM service supports management of locally defined users and gr
 
 ## Review Automatically Configured Access Controls
 
-...is this review necessary? Should we instead just highlight already configured AWS SSO groups only when they actually come into play within the context of our guidance?
+Deploying the Control Tower Landing Zone solution will create SSO Groups, Permission sets and Account Assignments.  Depending on the functional Groups that were defined in Section 1 of this guide some of these CT Groups can be used to assign permissions.
 
-Automatically created AWS SSO Groups:
+Control Tower created AWS SSO Permissions Assignments:
 
 * AWSAccountFactory
     * Assumes Role: Service Catalog End User Access in the AWS Master Account
@@ -45,13 +45,25 @@ Automatically created AWS SSO Groups:
 * AWSAuditAccountAdmins
     * Assumes Role: AdministratorAccess in the AWS Audit Account
 
+Additional Groups beyond what Control Tower Creates may be required.  Billing only permissions for example are not created with Control Tower so this must be created manually.  Repeat the steps below for other Functional Group needs.
+
+[AWS SSO Documentation](https://docs.aws.amazon.com/singlesignon/index.html)
 
 **CREATE INITIAL SET OF USERS**
 [AWS SSO User Guide](https://docs.aws.amazon.com/controltower/latest/userguide/sso.html)
 [How to add a user in AWS SSO](https://docs.aws.amazon.com/singlesignon/latest/userguide/addusers.html)
 
-**ADD USERS TO BUILD IN CONTROL TOWER GROUPS**
-[How to add users to groups](https://docs.aws.amazon.com/singlesignon/latest/userguide/adduserstogroups.html)
+**CREATE FUNCTIONAL GROUPS**
+[How to add groups in AWS SSO](https://docs.aws.amazon.com/singlesignon/latest/userguide/addgroups.html)
+
+**ADD USERS TO BUILD IN CONTROL TOWER GROUPS AND FUNCTIONAL GROUPS**
+[How to add users to AWS SSO groups](https://docs.aws.amazon.com/singlesignon/latest/userguide/adduserstogroups.html)
+
+**ADD PERMISSION SETS TO EACH AWS ACCOUNTS**
+[How to add permission sets to AWS accounts](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html)
+
+**ADD GROUPS TO EACH AWS ACCOUNT PERMISSION SETS**
+[How to add permission sets to AWS accounts]
 
 ## Enable Multi-Factor Authentication (MFA)
 
