@@ -12,15 +12,15 @@ Since AWS Control Tower will establish a set of management resources in a “hom
 
 ## Log In as Administrator IAM User
 
-Log in as the Administrator IAM user that you created in the last section before you use AWS Control Tower to set up your initial landing zone. crea
+Log in as the Administrator IAM user that you created in the last section before you use AWS Control Tower to set up your initial landing zone.
 
 ## Create Landing Zone Using AWS Control Tower
 
 Before using AWS Control Tower to create an initial landing zone, ensure that you review these considerations:
 
-* Since you’ve just created a new master AWS account, the pre-launch check considerations should already be met.
-* Ensure that you **select the proper AWS region** in the upper right hand side of the AWS Management Console before set up the landing zone. The AWS region you select should be the AWS region in which you expect do perform the majority of your work with AWS and from which you will maintain your foundation.
-* Reuse the email distribution lists that you identified earlier for the Log archive and Audi accounts.
+* **Desired Home AWS Region** - Ensure that you select the proper AWS region in the upper right hand side of the AWS Management Console before set up the landing zone. The AWS region you select should be the AWS region in which you expect do perform the majority of your work with AWS and from which you will maintain your foundation.
+* **Email Distribution Lists** - Reuse the email distribution lists that you identified earlier for the Log archive and Audi accounts.
+* **Pre-Launch Checks** - Since you’ve just created a new master AWS account, the pre-launch check considerations for creating your landing zone should already be met.
 
 Follow the steps in [Getting Started with AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/getting-started-with-control-tower.html) to set up your landing zone. 
 
@@ -42,9 +42,13 @@ See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/la
 As part of the landing zone set up, AWS Control Tower creates a Control Tower Administrator user in the AWS Single-Sign On ( AWS SSO) service in your master account.  As a best practice, you should enable MFA for this user.
 
 **Accept Invitation for this User**
+
 The email address associated with the AWS master account’s root user will receive an email containing an invite to activate this user account.  Review the invitation and accept it.
+
 [Image: ct-aws-sso-user-admin.png]
+
 **Activate MFA for the User**
+
 Next, using the user portal URL and provided username, log in to this user. Follow the instruction in [How to Register a Device for Use with Multi-Factor Authentication](https://docs.aws.amazon.com/singlesignon/latest/userguide/user-device-registration.html).
 
 ## Review AWS Control Tower Best Practices for Administrators
@@ -53,8 +57,8 @@ Now that you've set up your initial landing zone, take a few minutes to review [
 
 For example:
 
-* AWS Control Tower currently supports only a single level of AWS Organizations Organizational Units (OUs) and creation of OUs to be used with AWS accounts managed by AWS Control Tower must be performed via AWS Control Tower and not via AWS Organizations.
-* AWS Control Tower does not currently support self-service modification of the email addresses associated with the root user of each AWS account.  You currently need to contact AWS Support to have these email addresses changed.
+* **Managing Organizational Units (OUs)** - AWS Control Tower currently supports only a single level of AWS Organizations Organizational Units (OUs) and creation of OUs to be used with AWS accounts managed by AWS Control Tower must be performed via AWS Control Tower and not via AWS Organizations.
+* **Modification of AWS Account Root User Email Addresses** - AWS Control Tower does not currently support self-service modification of the email addresses associated with the root user of each AWS account.  You currently need to contact AWS Support to have these email addresses changed.
 
 ## Determine Initial Approach to Virtual Private Cloud (VPC) Configuration
 
