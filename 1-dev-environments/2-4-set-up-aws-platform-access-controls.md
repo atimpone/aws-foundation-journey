@@ -61,9 +61,9 @@ Additional Groups beyond what Control Tower Creates may be required.  Billing on
 
 [How to add users to AWS SSO groups](https://docs.aws.amazon.com/singlesignon/latest/userguide/adduserstogroups.html)
 
-**ADD PERMISSION SETS TO EACH AWS ACCOUNTS**
+**ADD SSO PERMISSION SETS**
 
-[How to add permission sets to AWS accounts](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html)
+[How to add permission sets to AWS SSO](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html)
 
 **ADD GROUPS TO EACH AWS ACCOUNT PERMISSION SETS**
 
