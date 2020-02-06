@@ -45,7 +45,7 @@ As part of the landing zone set up, AWS Control Tower creates a Control Tower Ad
 
 The email address associated with the AWS master account’s root user will receive an email containing an invite to activate this user account.  Review the invitation and accept it.
 
-[Image: ct-aws-sso-user-admin.png]
+<img src="../images/accept-aws-sso-invitation.png" alt="Accept SSO Invitation" width="400"/>
 
 **Activate MFA for the User**
 
