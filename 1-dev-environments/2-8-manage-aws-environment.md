@@ -18,4 +18,4 @@ Security Administrators
     
 ## Next Steps
 
-Return to the [main documentation](../README.md) to review the other guides including Establishing Fast Follow-on Capabilities and Establishing Initial Test and Production Environments.
+Review the other guides including Establishing Fast Follow-on Capabilities and Establishing Initial Test and Production Environments in the [main documentation](../README.md)
