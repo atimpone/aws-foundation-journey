@@ -55,4 +55,4 @@ For a more prescriptive approach on how to onboard team members into their new A
 
 ## Next Steps
 
-Proceed to [6. Establishing Initial AWS Platform Monitoring Practices](2-6-initial-aws-platform-monitoring.md)
+[6. Establish Initial AWS Platform Monitoring Practices](2-6-initial-aws-platform-monitoring.md)
