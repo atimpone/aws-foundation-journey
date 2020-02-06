@@ -1,25 +1,29 @@
 # 5. Create the Initial Team Development Environments
 
-In this step your Cloud Administrators will use their cloud administrator access to create several new team development AWS accounts via the built-in account factory of the AWS Control Tower service.
+In this step your Cloud Administrators will create several new team development AWS accounts via AWS Control Tower's Account Factory.
 
 This step should take about 30 minutes to complete.
 
 ## 1. Several Development Accounts from the Start
 
-As highlighted previously, an AWS best practice is to isolate the work of distinct development teams by assigning a different AWS account for each team.
+As highlighted previously, an AWS best practice is to isolate the work of distinct development teams by assigning a different AWS account for each team. Benefits of this approach include:
+* Costs for each team will automatically be visible given that costs are attributable for each AWS account. You don't need to force teams to use cost allocation tags on their resources.
+* More sophisticated AWS Identity and Access Management (IAM) configurations are not needed to ensure that development teams don't inadvertently impact each other's cloud resources.
 
-Initially, you will likely need at least two distinct development environments and corresponding AWS accounts:
+Initially, you will likely need at least two AWS accounts for the following development team:
 
 1. A development AWS account for the initial application or data services development team.
-2. A development AWS account for the initial few cloud platform engineers to experiment, develop, and perform early testing of changes to the foundation.
+2. A development AWS account for the initial few cloud platform administrators to experiment, develop, and perform early testing of changes to the foundation.
 
 ## 2. Create the Development Organizational Unit
 
-At some point, now or in the future, your company may want to apply particular policies or guardrails that apply to ALL AWS development environments within your enterprise.  To futureproof ourselves, we’re going to create a new AWS Organization that will enable that capability.
+Moving forward, your company will likely want to apply particular policies or guardrails that apply to all AWS development accounts within your enterprise.  To enable you to easily target such policies across all development AWS accounts, it's recommended that you create a new Organizational Unit (OU) to represent development AWS accounts.
 
-From the Control Tower dashboard select “Add organizational units”.  Proceed to follow the prompts to create a new OU named “Development”
+Within the AWS Control Tower dashboard select “Add organizational units”.  Proceed to follow the prompts to create a new OU named “development”.
 
-Further reading about [AWS Organizations in Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/organizations.html).
+In the next section when you create the new development AWS accounts, you'll specify this new OU.
+
+You can learn more about [AWS Organizations in Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/organizations.html).
 
 ## 3. Create Development Account
 
