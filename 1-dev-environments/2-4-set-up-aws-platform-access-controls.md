@@ -83,4 +83,4 @@ Additional Groups beyond what Control Tower Creates may be required.  Billing on
 
 ## Next Steps
 
-Proceed to [5. Creating the Initial Team Development Environments](2-5-create-team-dev-environments.md)
+[5. Create the Initial Team Development Environments](2-5-create-team-dev-environments.md)
