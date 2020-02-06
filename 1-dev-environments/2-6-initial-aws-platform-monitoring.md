@@ -116,4 +116,4 @@ Once you have resources deployed in your account, consider [Getting Started with
 
 ## Next Steps
 
-Proceed to [7. Onboarding the Initial Development Teams](2-7-onboard-dev-teams.md)
+[7. Onboard the Initial Development Teams](2-7-onboard-dev-teams.md)
