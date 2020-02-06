@@ -1,6 +1,6 @@
 # Initial Development Environment Requirements
 
-This document lists the typical requirements for your inital formal development environments and the supporting foundation.
+This document introduces the typical requirements for your inital formal development environments and the supporting foundation.
 
 Based on AWS’ extensive experience with customers progressing on their journey to the cloud, customers typically require the following capabilities when establishing their initial formal development environments.
 
