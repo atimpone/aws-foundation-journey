@@ -6,15 +6,15 @@ This step should take about 90 minutes to complete.
 
 Note: Review the ControlTower lab/workshop for any potential key guidance to consider in the CT related sections below: https://controltower.aws-management.tools/required/accountfactory/
 
-## Identify Your Preferred AWS Region
+## 1. Identify Your Preferred AWS Region
 
 Since AWS Control Tower will establish a set of management resources in a “home” AWS region, you need to identify which AWS region you expect to host most of your AWS management resources. You will select this region in the next step.
 
-## Log In as Administrator IAM User
+## 2. Log In as Administrator IAM User
 
 Log in as the Administrator IAM user that you created in the last section before you use AWS Control Tower to set up your initial landing zone.
 
-## Create Landing Zone Using AWS Control Tower
+## 3. Create Landing Zone Using AWS Control Tower
 
 Before using AWS Control Tower to create an initial landing zone, ensure that you review these considerations:
 
@@ -26,7 +26,7 @@ Follow the steps in [Getting Started with AWS Control Tower](https://docs.aws.am
 
 The set up process can take 20-60 minutes to complete.
 
-## Set AWS Account Root User Password and Enable MFA
+## 4. Set AWS Account Root User Password and Enable MFA
 
 Since AWS Control Tower creates two new member accounts while setting up the initial landing zone, you should follow AWS security best practices by setting the password and enabling MFA for the root user of each of the following accounts:
 
@@ -37,7 +37,7 @@ See [Log In as Root User](https://docs.aws.amazon.com/controltower/latest/usergu
 
 See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user_manage_mfa) for instructions to enable MFA.
 
-## Enable MFA via AWS SSO for the Admin User Created via Control Tower
+## 5. Enable MFA via AWS SSO for the Admin User Created via Control Tower
 
 As part of the landing zone set up, AWS Control Tower creates a Control Tower Administrator user in the AWS Single-Sign On ( AWS SSO) service in your master account.  As a best practice, you should enable MFA for this user.
 
@@ -51,7 +51,7 @@ The email address associated with the AWS master account’s root user will rece
 
 Next, using the user portal URL and provided username, log in to this user. Follow the instruction in [How to Register a Device for Use with Multi-Factor Authentication](https://docs.aws.amazon.com/singlesignon/latest/userguide/user-device-registration.html).
 
-## Review AWS Control Tower Best Practices for Administrators
+## 6. Review AWS Control Tower Best Practices for Administrators
 
 Now that you've set up your initial landing zone, take a few minutes to review [Best Practicers for Account Administrators](https://docs.aws.amazon.com/controltower/latest/userguide/best-practices.html#tips-for-admin-maint) so that you understand temporary limitations and other considerations when working with AWS Control Tower.
 
@@ -60,7 +60,7 @@ For example:
 * **Managing Organizational Units (OUs)** - AWS Control Tower currently supports only a single level of AWS Organizations Organizational Units (OUs) and creation of OUs to be used with AWS accounts managed by AWS Control Tower must be performed via AWS Control Tower and not via AWS Organizations.
 * **Modification of AWS Account Root User Email Addresses** - AWS Control Tower does not currently support self-service modification of the email addresses associated with the root user of each AWS account.  You currently need to contact AWS Support to have these email addresses changed.
 
-## Determine Initial Approach to Virtual Private Cloud (VPC) Configuration
+## 7. Determine Initial Approach to Virtual Private Cloud (VPC) Configuration
 
 As part of the landing zone established by AWS Control Tower, an “AWS Control Tower Account Factory” product is deployed to AWS Service Catalog in your master account. In a later step in this guide, your Cloud Administrators will use this product to easily create a new AWS member account for each development team. The Account Factory has the ability to provision a basic AWS Virtual Private Cloud (VPC) when it creates a new AWS account.
 
