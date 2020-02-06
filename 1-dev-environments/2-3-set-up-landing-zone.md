@@ -4,8 +4,6 @@ In this step your Cloud Administrators will use the AWS Control Tower service in
 
 This step should take about 90 minutes to complete.
 
-Note: Review the ControlTower lab/workshop for any potential key guidance to consider in the CT related sections below: https://controltower.aws-management.tools/required/accountfactory/
-
 ## 1. Identify Your Preferred AWS Region
 
 Since AWS Control Tower will establish a set of management resources in a “home” AWS region, you need to identify which AWS region you expect to host most of your AWS management resources. You will select this region in the next step.
@@ -41,15 +39,27 @@ See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/la
 
 As part of the landing zone set up, AWS Control Tower creates a Control Tower Administrator user in the AWS Single-Sign On ( AWS SSO) service in your master account.  As a best practice, you should enable MFA for this user.
 
-**Accept Invitation for this User**
+### Accept Invitation for this User
 
-The email address associated with the AWS master account’s root user will receive an email containing an invite to activate this user account.  Review the invitation and accept it.
+The email address associated with the AWS master account’s root user will receive an email message containing an invite to activate this user account.  Review the invitation and accept it.
 
 <img src="../images/accept-aws-sso-invitation.png" alt="Accept SSO Invitation" width="400"/>
 
-**Activate MFA for the User**
+The email message you recieved also contains a User portal URL that you should bookmar given that it represents the URL to use SSO to access your new AWS environment., we will use it to access the AWS environment throughout the labs.
 
-Next, using the user portal URL and provided username, log in to this user. Follow the instruction in [How to Register a Device for Use with Multi-Factor Authentication](https://docs.aws.amazon.com/singlesignon/latest/userguide/user-device-registration.html).
+### Set Password and Activate MFA for the User
+
+On selecting Accept Invitation, you will be redirected to the AWS Single Sign-On page and from where you could set New Password to your master account. Repeat Password and Update User to proceed.
+
+Follow the instruction in [How to Register a Device for Use with Multi-Factor Authentication](https://docs.aws.amazon.com/singlesignon/latest/userguide/user-device-registration.html).
+
+### Receive and Process AWS Organizations Email Message
+
+You will receive one more email with subject AWS Organizations email verification request to the master account email address. Click on Verify your email address to continue with inviting newly created accounts into AWS Organization.
+
+### Receive and Process AWS Notification Email Messages for Each Region
+
+The email address you provided for the audit account will receive AWS Notification - Subscription Confirmation emails from every AWS Region supported by AWS Control Tower. To receive compliance emails in your audit account, you must choose the Confirm subscription link within each email from each AWS Region supported by AWS Control Tower.
 
 ## 6. Review AWS Control Tower Best Practices for Administrators
 
