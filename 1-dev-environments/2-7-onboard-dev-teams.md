@@ -11,4 +11,4 @@ This step should take about an hour to complete.
 
 ## Next Steps
 
-Proceed to [8. Managing Your AWS Environment Going Forward](2-8-manage-aws-environment.md)
+[8. Manage Your AWS Environment Going Forward](2-8-manage-aws-environment.md)
