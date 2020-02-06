@@ -7,13 +7,15 @@ This step should take about 30 minutes to complete.
 ## 1. Several Development Accounts from the Start
 
 As highlighted previously, an AWS best practice is to isolate the work of distinct development teams by assigning a different AWS account for each team. Benefits of this approach include:
-* Costs for each team will automatically be visible given that costs are attributable for each AWS account. You don't need to force teams to use cost allocation tags on their resources.
-* More sophisticated AWS Identity and Access Management (IAM) configurations are not needed to ensure that development teams don't inadvertently impact each other's cloud resources.
+* Since AWS resource costs are, by default, attributable to each AWS account in which the resources are provisioned, at this early stage in your adoption, you don't need to force development teams to use cost allocation tags on their resources.
 
-Initially, you will likely need at least two AWS accounts for the following development team:
+* Since cloud resources managed by development teams using different AWS accounts are, by default, completely isolated from each other, complicated AWS Identity and Access Management (IAM) configurations are not needed to ensure that development teams don't inadvertently impact each other's cloud resources.
 
-1. A development AWS account for the initial application or data services development team.
-2. A development AWS account for the initial few cloud platform administrators to experiment, develop, and perform early testing of changes to the foundation.
+Initially, you will likely need at least two AWS accounts for the following teams:
+
+1. **Business Application Development Team** - A development AWS account for the initial application or data services development team.
+
+2. **Cloud Administrator Team** - A development AWS account for the initial few cloud administrators to experiment, develop, and perform early testing of changes to the foundation.
 
 ## 2. Create the Development Organizational Unit
 
