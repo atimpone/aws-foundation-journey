@@ -14,9 +14,9 @@ Over the course of your cloud adoption journey, you will likely end up with a nu
 
 ## Starting With a New Master AWS Account
 
-The initial AWS account that you create will be configured as a new “master” AWS account through which your AWS billing details will be managed, billing for AWS services will be consolidated, and the means through which your Cloud Administrators will provision new “member” AWS accounts for development teams.
+The initial AWS account that you create will be configured as a new “master” AWS account in which billing for AWS services consumed across accounts will be consolidated and your Cloud Administrators will provision new “member” AWS accounts for development teams.
 
-Even if you have an existing AWS account, we strongly recommend that you establish a new AWS account as the basis of your cloud foundation and adoption for several reasons:
+Even if you have an existing AWS account, we strongly recommend that you establish a new AWS account as the basis of your formal cloud foundation and adoption for several reasons:
 
 1. **AWS Control Tower currently requires a new master AWS account.** Later in this guide, you will be using the AWS Control Tower service to establish an initial set of security guardrails and other capabilities as part of your cloud foundation.
 2. **Your existing AWS accounts might not be aligned with AWS best practices.**
