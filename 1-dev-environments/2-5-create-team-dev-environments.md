@@ -27,7 +27,7 @@ In the next section when you create the new development AWS accounts, you'll spe
 
 You can learn more about [AWS Organizations in Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/organizations.html).
 
-## 3. Create Development Account
+## 3. Create Development Team AWS Accounts
 
 In AWS Control Tower, provision an initial AWS team development account for early experimentation, development, and testing.  You may need to repeat this step, and the following related permissions steps in order to complete the provisioning of all your accounts.
 
