@@ -13,7 +13,7 @@ As highlighted previously, an AWS best practice is to isolate the work of distin
 
 Initially, you will likely need at least two AWS accounts for the following teams:
 
-1. **Business Application Development Team** - A development AWS account for the initial application or data services development team.
+1. **Application Development Team** - A development AWS account for the initial application or data services development team.
 
 2. **Cloud Administrator Team** - A development AWS account for the initial few cloud administrators to experiment, develop, and perform early testing of changes to the foundation.
 
