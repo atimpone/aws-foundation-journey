@@ -48,3 +48,7 @@ AWS Control Tower sets up a Log Archive account to secure store AWS platform-wid
 ## Standard AWS Control Tower Guardrails
 
 By using AWS Control Tower, your organization automatically benefits from the set of [built-in guardrails](https://docs.aws.amazon.com/controltower/latest/userguide/guardrails.html) that represent common preventative and detective security controls. AWS Control Tower includes mandatory, strongly recommended, and elective guardrails.
+
+## Next Steps
+
+[1, Map People to Foundation Functional Roles](2-1-map-people-to-foundation-roles.md)
