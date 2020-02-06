@@ -45,7 +45,7 @@ By following this guide, in as little as a few hours, your organization can esta
 #### Review and Refine Requirements and Solution Design
 
 1. [Review and Refine Initial Development Environment Requirements](1-dev-environments/1-1-requirements.md)
-2. [Review and Refine Initial Development Environment Solution Overview](1-dev-environments/1-2-solution.md)
+2. [Review and Refine Initial Development Environment Solution](1-dev-environments/1-2-solution.md)
 
 #### Build Out the Environment
 
@@ -69,7 +69,7 @@ Depending on your organizations needs, the following capabilities may be require
 #### Review and Refine Requirements and Solution Design
 
 * [Review and Refine Initial Development Environment Fast Follow-On Requirements](2-fast-follow-on/1-1-requirements.md)
-* [Review and Refine Initial Development Environment Fast Follow-On Solution Overview](2-fast-follow-on/1-2-solution.md)
+* [Review and Refine Initial Development Environment Fast Follow-On Solution](2-fast-follow-on/1-2-solution.md)
 
 #### Build Out the Capabilities
 ---
@@ -90,7 +90,7 @@ The next guide that is under development helps you extend your foundation by int
 #### Review and Refine Requirements and Solution Design
 
 * [Review and Refine Initial Test and Production Environment Requirements](3-test-production/1-1-requirements.md)
-* [Review and Refine Initial Test and Production Environment Solution Overview](3-test-production/1-2-solution.md)
+* [Review and Refine Initial Test and Production Environment Solution](3-test-production/1-2-solution.md)
 
 #### Build Out the Environments
 
