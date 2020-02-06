@@ -66,19 +66,26 @@ At this point, you’ll have an account created and you’ll get a confirmation 
 Add a payment method and contact information for the billing method.  You’ll go through a brief account verification process via a mobile device so enter a phone number you have current access to.
 
 ### Select a Support Plan
-On the Select a Support Plan page, choose one of the available support plans.  Sine your organization is going to be using AWS for formal development and eventually production purposes, we recommend that you select “Developer” support.  Before you transition any applications or data services to production, we strongly recommend upgrading to Business support.  Once you are preparing to host business critical workloads and data in the cloud, you should consider upgrading to Enterprise support. 
+
+On the Select a Support Plan page, choose one of the available support plans.  Since your organization is going to be using AWS for formal development and eventually production purposes, we recommend that you start by selecting “Developer” support.  
+
+Before you transition any applications or data services to production, we strongly recommend upgrading to Business support.  
+
+Once you are preparing to host business critical workloads and data in the cloud, you should consider upgrading to Enterprise support levels. 
 
 See [AWS Support Plans](https://aws.amazon.com/premiumsupport/plans/) for a description of features and benefits of each level of support.
 
+## 3. Receive Confirmation Email
+
 In a few minutes your account should be fully activated and you’ll receive a confirmation email.  If you don’t, review the troubleshooting steps from the [Create and Activate an AWS Account support page](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
 
-## 3. Secure Your AWS Account Root User
+## 4. Secure Your AWS Account Root User
 
 It’s strongly recommended and an AWS security best practice to enable multi-factor authentication (MFA) to the AWS account root user and to avoid using the root user, even for administrative tasks, from this point forward.
 
 See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user_manage_mfa) for instructions.
 
-## 4. Create an IAM user for Administrative Bootstrap Purposes
+## 5. Create an IAM user for Administrative Bootstrap Purposes
 
 Although you will be provisioning cloud administrator and developer user accounts via the AWS Single Sign-on (SSO) service later in this guide, it is required that you first create an administrative bootstrap user account via the AWS Identity and Access Management (IAM) service and switch to that user to set up the next parts of your initial foundation.
 
@@ -90,11 +97,12 @@ This administrative user should be only used to complete your initial foundation
 * Enable “AWS Management Console access” only for this user. “Programmatic access” should not be necessary for this user.
 
 ### Create the Administrative Bootstrap User
+
 While logged in as the root user, follow the instructions in [Create an IAM user](https://docs.aws.amazon.com/controltower/latest/userguide/setting-up.html#setting-up-iam) to create this administrative user.
 
 Once the user has been created, sign into the AWS Management Console as the user and enable MFA to help secure the account. See [Enable a Virtual MFA Device fo an IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html#enable-virt-mfa-for-iam-user).
 
-## 5. Set Alternate Contacts
+## 6. Set Alternate Contacts
 
 Once you’ve set up your bootstrap administrative IAM user, log in as that user and set the Alternate Contacts for your account so that notifications of billing, operations, and security events are routed to the proper teams.  As a best practice, you can use email distribution lists so that notifications are set to multiple people in the same team.
 
