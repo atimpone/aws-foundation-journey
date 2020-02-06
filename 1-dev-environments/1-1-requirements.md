@@ -8,8 +8,6 @@ These are the typical bare minimum requirements to address when setting up forma
 
 A separate document addresses a series of [fast follow-on requirements](../2-fast-follow-on/1-1-requirements.md) that might be required up front depending on your organization's needs.
 
-***Add table of contents***
-
 ## Cloud Adoption Framework Perspectives
 
 The following requirements are organized based on a series of perspectives defined in the [AWS Cloud Adoption Framework](https://aws.amazon.com/professional-services/CAF/).
@@ -49,3 +47,7 @@ The following requirements are organized based on a series of perspectives defin
 ### Operations
 * Clearly defined roles and responsibilities for managing the use of AWS.
 * A sufficient set of runbooks and playbooks to support common operational needs and scenarios.
+
+## Next Steps
+
+[Reviewing and Refining the Initial Development Environment Solution](1-2-solution.md)
