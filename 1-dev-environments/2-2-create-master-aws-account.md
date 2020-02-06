@@ -39,37 +39,40 @@ If your organization already has a naming standard for mail addresses associated
 |Cloud Platform Team Development|aws-account-cloud-platform-dev@acme.com	|aws-account+cloud-platform-dev@acme.com|
 |Team 1 Development|aws-account-team-a-dev@acme.com|aws-account+team-a-dev@acme.com|
 
-**Use of “+” Style Email Addresses**
+### Use of “+” Style Email Addresses
 If your organization’s email system supports the use of “+” style email addresses in which email multiple email addresses are aliased to the same email account, then you might find it beneficial to use this form to consolidate the root user email addresses for either all or collections of AWS accounts to either one or a few actual email accounts.
 
 For example: [aws-account1+master@acme.com](mailto:aws-account1+master@acme.com) and [aws-account1+audit@acme.com](mailto:aws-account1+audit@acme.com) will be treated as unique addresses in AWS but your mail system may deliver the mail to the same [aws-account1@acme.com](mailto:aws-account1@acme.com) email address.
 
-**Role of the AWS Account Root User Email Addresses**
+### Role of the AWS Account Root User Email Addresses
 ...To Do - state the role of the email addresses... i.e. are notifications sent to them? root access is covered int he next section...
 
-**Controlling Access to Root User Email Accounts**
+### Controlling Access to Root User Email Accounts
 Since the email address associated with an AWS account is used as the [root user login for the account](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html), anyone with access to that email account will have access to password reset process for the account.  
 
 ## 2. Create a New AWS Master Account
 
 Visit https://aws.amazon.com/ and click “Create AWS Account” and enter the the required information on the following page.  For this account, use the master account email address you already established. 
 
-**Provide Account Root User’s Email Address**
+### Provide Account Root User’s Email Address
+
 Since the email address is used to initially access your AWS account, be very careful that you enter the correct email address and that you have access to that email account.
 
 Note: Since AWS Control Tower will be used to establish part of your foundation in a later step and AWS Control Tower currently has limitations on how email addresses for AWS accounts can be changed, you will need to contact AWS Support to change an account’s email address.
 
-**Set Personal or Professional**
+### Set Personal or Professional
+
 Set your account to either personal or professional.  Both types of accounts have the same functionality and features.  Enter your personal or professional information and then read and accept the [AWS Customer Agreement](https://aws.amazon.com/agreement/).
 
-**Provide Billing Information**
+### Provide Billing Information
+
 At this point, you’ll have an account created and you’ll get a confirmation email.  However, you’ll need to enter billing information before you can continue.
 
 Add a payment method and contact information for the billing method.  You’ll go through a brief account verification process via a mobile device so enter a phone number you have current access to.
 
 *Future consideration:* _Switch your account to invoicing instead of credit card based billing_
 
-**Select a Support Plan**
+### Select a Support Plan
 On the Select a Support Plan page, choose one of the available support plans.  Sine your organization is going to be using AWS for formal development and eventually production purposes, we recommend that you select “Developer” support.  Before you transition any applications or data services to production, we strongly recommend upgrading to Business support.  Once you are preparing to host business critical workloads and data in the cloud, you should consider upgrading to Enterprise support. 
 
 See [AWS Support Plans](https://aws.amazon.com/premiumsupport/plans/) for a description of features and benefits of each level of support.
@@ -88,12 +91,12 @@ Although you will be provisioning cloud administrator and developer user account
 
 This administrative user should be only used to complete your initial foundation setup and act as a “break glass” user in case access via AWS SSO user accounts encounters an issue.
 
-**Recommendations for Administrative Bootstrap User**
+### Recommendations for Administrative Bootstrap User
 
 * Since this account will only be used for break glass purposes after your foundation has been established, you don’t need to associate the user with a human user. Instead, you can use a name such as “Administrator”.
 * Enable “AWS Management Console access” only for this user. “Programmatic access” should not be necessary for this user.
 
-**Create the Administrative Bootstrap User**
+### Create the Administrative Bootstrap User
 While logged in as the root user, follow the instructions in [Create an IAM user](https://docs.aws.amazon.com/controltower/latest/userguide/setting-up.html#setting-up-iam) to create this administrative user.
 
 Once the user has been created, sign into the AWS Management Console as the user and enable MFA to help secure the account. See [Enable a Virtual MFA Device fo an IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html#enable-virt-mfa-for-iam-user).
