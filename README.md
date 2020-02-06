@@ -64,7 +64,7 @@ By following this guide, in as little as a few hours, your organization can esta
 
 ### Establish Fast Follow-On Capabilities
 
-Depending on your organizations needs, the following capabilities may be required either as part of your initial buidl out of development environments or shortly thereafter.
+Depending on your organizations needs, some additional capabilities may be required either as part of your initial build out of development environments or shortly thereafter. This guide highlights the most common "fast follow-on" capabilities and provide references to current best practices to establish the capabilities.
 
 #### Review and Refine Requirements and Solution Design
 
