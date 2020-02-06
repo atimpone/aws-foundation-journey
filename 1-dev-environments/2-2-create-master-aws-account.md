@@ -44,9 +44,6 @@ If your organization’s email system supports the use of “+” style email ad
 
 For example: [aws-account1+master@acme.com](mailto:aws-account1+master@acme.com) and [aws-account1+audit@acme.com](mailto:aws-account1+audit@acme.com) will be treated as unique addresses in AWS but your mail system may deliver the mail to the same [aws-account1@acme.com](mailto:aws-account1@acme.com) email address.
 
-### Role of the AWS Account Root User Email Addresses
-...To Do - state the role of the email addresses... i.e. are notifications sent to them? root access is covered int he next section...
-
 ### Controlling Access to Root User Email Accounts
 Since the email address associated with an AWS account is used as the [root user login for the account](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html), anyone with access to that email account will have access to password reset process for the account.  
 
@@ -58,8 +55,6 @@ Visit https://aws.amazon.com/ and click “Create AWS Account” and enter the t
 
 Since the email address is used to initially access your AWS account, be very careful that you enter the correct email address and that you have access to that email account.
 
-Note: Since AWS Control Tower will be used to establish part of your foundation in a later step and AWS Control Tower currently has limitations on how email addresses for AWS accounts can be changed, you will need to contact AWS Support to change an account’s email address.
-
 ### Set Personal or Professional
 
 Set your account to either personal or professional.  Both types of accounts have the same functionality and features.  Enter your personal or professional information and then read and accept the [AWS Customer Agreement](https://aws.amazon.com/agreement/).
@@ -69,8 +64,6 @@ Set your account to either personal or professional.  Both types of accounts hav
 At this point, you’ll have an account created and you’ll get a confirmation email.  However, you’ll need to enter billing information before you can continue.
 
 Add a payment method and contact information for the billing method.  You’ll go through a brief account verification process via a mobile device so enter a phone number you have current access to.
-
-*Future consideration:* _Switch your account to invoicing instead of credit card based billing_
 
 ### Select a Support Plan
 On the Select a Support Plan page, choose one of the available support plans.  Sine your organization is going to be using AWS for formal development and eventually production purposes, we recommend that you select “Developer” support.  Before you transition any applications or data services to production, we strongly recommend upgrading to Business support.  Once you are preparing to host business critical workloads and data in the cloud, you should consider upgrading to Enterprise support. 
