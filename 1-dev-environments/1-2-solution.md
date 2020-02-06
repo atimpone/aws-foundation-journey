@@ -51,4 +51,4 @@ By using AWS Control Tower, your organization automatically benefits from the se
 
 ## Next Steps
 
-[1, Map People to Foundation Functional Roles](2-1-map-people-to-foundation-roles.md)
+[1. Map People to Foundation Functional Roles](2-1-map-people-to-foundation-roles.md)
