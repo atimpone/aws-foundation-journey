@@ -40,9 +40,9 @@ This step should take about 60 minutes to complete.
 * *Highlight who has access to billing and cost information.*
 * *Does anything special need to be done to enable development teams to gain access to cost information?*
 
-AWS Cost Management tools give you visibility into your AWS costs and usage. There are a range of AWS Cost Management tools to help you access, organize, understand, control, and optimize your costs.
+AWS Cost Management tools give you and your team visibility into AWS account costs and usage. Each account you create will have access to view their individual account costs and useage. The Master account can see the total organizatonal cost and usage rollup.
 
-You start to access detailed information about your AWS costs and usage using the built-in dashboard in the Billing and Management area of the AWS Management. Console. 
+There are a range of AWS Cost Management tools to help you access, organize, understand, control, and optimize your costs. You start to access detailed information about your AWS costs and usage using the built-in dashboard in the Billing and Management area of the AWS Management. Console. 
 
 Additionally, more detailed cost information (updated once every 24 hours) is available by enabling the Cost Explorer:
 
