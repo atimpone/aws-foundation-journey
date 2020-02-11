@@ -35,7 +35,7 @@ For more proactive management of your AWS costs, set up budgets within the Billi
 * See where your usage is within free tier limits and limits you set.
 * Estimate your usage each month based on consumption of the budget
 * Make decisions on frequently updated usage and cost data. Budget data is updated three times each day to give you the most accurate information.
-* Create alerts based on a budget to notify you or others as budget thresholds are reached.
+* Create alerts based on a budget to notify you or others as budget thresholds are reached. Each budget alert notification can be sent to up to 10 email addresses and 1 SNS topic for subscribers.
 
 Take a few minutes and create an initial basic budget by following this guide [Create your first Budget](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-create.html).
 
