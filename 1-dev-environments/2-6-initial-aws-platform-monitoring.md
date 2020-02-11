@@ -8,7 +8,7 @@ In this step your Cloud Admins, Security Admins, and Cost Managers will become f
 * Resource configuration state
 
  
-This step should take about 60 minutes to complete.
+This step should take about 30 minutes to complete.
 
 ## Monitor and Manage Costs
 
@@ -31,7 +31,7 @@ To see more detailed cost information for your account, you will want to enable 
 
 ### 3. Create a Budget
 
-For more proactive management of your AWS costs, consider setting up budgets within the Billing and Management console. Budgets allow you to:
+For more proactive management of your AWS costs, set up budgets within the Billing and Management console. Budgets allow you to:
 
 * View your usage against a planned/budgeted amount.
 * See where your usage is within free tier limits and limits you set.
@@ -53,7 +53,8 @@ At this point in your journey to establish your first secure AWS development env
 * Secured your root account with multi-factor authentication (MFA)
 * Setup basic AWS platform access management
 
- 
+### 1. Review and Enable Founational Security Services
+
 While security is weaved within all AWS services and capabilities, a few explicit AWS Security, Identity, & Compliance services you should be aware of at this point in your journey are: 
 **** ****
 ****[Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html)**** is our threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts and workloads. To use GuardDuty, it is a service that needs to be enabled. We recommend [enabling](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_settingup.html) the service for the 30-day free trial and see the visibility and value it brings to your security practice.
@@ -71,8 +72,9 @@ While security is weaved within all AWS services and capabilities, a few explici
     * RDS Public Snapshots
 * ****Service Limits****
 
+### 2. Security Checklist Validation
 
-Finally, once you have deployed resources in your account, a good checklist to review for security best practices can be found in the [AWS Security Checklist (PDF)](https://d1.awsstatic.com/whitepapers/Security/AWS_Security_Checklist.pdf).
+Finally, once you have deployed resources in your account, a good checklist to review for security best practices can be found in the [AWS Security Checklist (PDF)](https://d1.awsstatic.com/whitepapers/Security/AWS_Security_Checklist.pdf). Become familiar with the checklist items and periodically review your account against it's guidelines.
  
 
 ## Monitor and Manage Resource Configuration State
