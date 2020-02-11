@@ -1,28 +1,5 @@
 # 6. Establish Initial AWS Platform Monitoring Practices
 
-*Think about what the cloud admins, security, and finance teams will be most concerned with in terms of monitoring the overall environment. For example:*
-
-* *Cost*
-* *Security*
-    * *AWS Control Tower Guardrails*
-        * *Are there any optional guardrails that should be enabled at this time?*
-    * *Amazon GuardDuty*
-* *Overall AWS Environment Monitoring*
-    * *AWS Trusted Advisor is a good example.*
-
-*In support of each of the perspectives above: *
-
-* *Introduce a capability and supporting AWS service that is useful and easy to enable at this stage.*
-    * *Highlight what the capability is and the value it provides.*
-* *Highlight what has to be done to enable the capability if it’s not already enabled. *
-    * *Link to existing docs for details.*
-* *Highlight the typical for enabling the capability given several development accounts + core accounts and a typical set of development and testing activities across the two dev accounts.*
-* *Highlight how the capability can be leveraged on an ongoing basis.*
-    * *For example:*
-        * *Will alerts or reports be automatically sent to email addresses/distribution lists?*
-        * *Does it entail periodic review?*
-    * *Link to existing docs for detailed set up instructions.*
-
 * * *
 In this step your Cloud Admins, Security Admins, and Cost Managers will become familiar with the basic monitoring and management capabilities for your new AWS environment including:
 
@@ -33,18 +10,18 @@ In this step your Cloud Admins, Security Admins, and Cost Managers will become f
  
 This step should take about 60 minutes to complete.
 
-# Monitor and Manage Costs
+## Monitor and Manage Costs
 
 AWS Cost Management tools give you and your team visibility into AWS account costs and usage. Each account you create will have access to view their individual account costs and useage. The Master account can see the total organizatonal cost and usage rollup.
 
-## 1. Access the Billing and Cost Management Dashboard
+### 1. Access the Billing and Cost Management Dashboard
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console.aws.amazon.com/billing/home#/](https://console.aws.amazon.com/billing/home)
 2. 
 
 There are a range of AWS Cost Management tools to help you access, organize, understand, control, and optimize your costs. You start to access detailed information about your AWS costs and usage using the built-in dashboard in the Billing and Management area of the AWS Management Console. 
 
-## 2. Enable Cost Explorer
+### 2. Enable Cost Explorer
 
 To see more detailed cost information for your account, you will want to enable the Cost Explorer:
 
@@ -52,7 +29,7 @@ To see more detailed cost information for your account, you will want to enable 
 2. On the navigation pane, choose **Cost Explorer**. 
 3. On the **Welcome to Cost Explorer** page, choose **Enable Cost Explorer**. 
 
-## 3. Create a Budget
+### 3. Create a Budget
 
 For more proactive management of your AWS costs, consider setting up budgets within the Billing and Management console. Budgets allow you to:
 
