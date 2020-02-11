@@ -77,7 +77,7 @@ AWS CloudTrail is an AWS service that helps you enable governance, compliance, a
 1. Sign in to the AWS Management Console and open the CloudTrail console at https://console.aws.amazon.com/cloudtrail/home/.
 2. Review the information in your dashboard about the most recent events that have occurred in your AWS account. One of these events should be a ConsoleSignin event, showing that you just signed in to the AWS Management Console.
 3. Expand the event to see additional information.
-4. Additional capabilities like search, filtering, and exporting the CloudTrail data.
+4. As your usage of the platform grows you will find value in additional capabilities like search, filtering, and exporting the CloudTrail data.
 
 ### 3. Access CloudWatch
 
