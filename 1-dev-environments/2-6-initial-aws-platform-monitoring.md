@@ -33,7 +33,7 @@ In this step your Cloud Admins, Security Admins, and Cost Managers will become f
  
 This step should take about 60 minutes to complete.
 
-### Monitor and Manage Costs
+# Monitor and Manage Costs
 
 AWS Cost Management tools give you and your team visibility into AWS account costs and usage. Each account you create will have access to view their individual account costs and useage. The Master account can see the total organizatonal cost and usage rollup.
 
@@ -66,7 +66,7 @@ Take a few minutes and create an initial basic budget by following this guide [C
 
 
 
-### Monitor and Manage Security
+## Monitor and Manage Security
 
 At this point in your journey to establish your first secure AWS development environment we have already established an excellent foundation for security. We have:
 
@@ -98,7 +98,7 @@ While security is weaved within all AWS services and capabilities, a few explici
 Finally, once you have deployed resources in your account, a good checklist to review for security best practices can be found in the [AWS Security Checklist (PDF)](https://d1.awsstatic.com/whitepapers/Security/AWS_Security_Checklist.pdf).
  
 
-### Monitor and Manage Resource Configuration State
+## Monitor and Manage Resource Configuration State
 
 As resources are deployed in your account, managing the growing inventory of resources and ensuring that they are deployed consistently and maintained consistently can become a challenge. **[AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html)** is a Management and Governance tool available to help you with:
 
