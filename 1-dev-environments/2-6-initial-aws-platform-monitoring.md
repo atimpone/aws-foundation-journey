@@ -53,7 +53,7 @@ At this point in your journey to establish your first secure AWS development env
 * Secured your root account with multi-factor authentication (MFA)
 * Setup basic AWS platform access management
 
-### 1. Review and Enable Founational Security Services
+### 1. Review and Enable Foundational Security Services
 
 While security is weaved within all AWS services and capabilities, a few explicit AWS Security, Identity, & Compliance services you should be aware of at this point in your journey are: 
 **** ****
@@ -75,7 +75,6 @@ While security is weaved within all AWS services and capabilities, a few explici
 ### 2. Security Checklist Validation
 
 Finally, once you have deployed resources in your account, a good checklist to review for security best practices can be found in the [AWS Security Checklist (PDF)](https://d1.awsstatic.com/whitepapers/Security/AWS_Security_Checklist.pdf). Become familiar with the checklist items and periodically review your account against it's guidelines.
- 
 
 ## Monitor and Manage Resource Configuration State
 
