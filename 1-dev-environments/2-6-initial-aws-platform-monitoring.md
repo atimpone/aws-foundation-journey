@@ -6,7 +6,6 @@ In this step your Cloud Admins, Security Admins, and Cost Managers will become f
 * Security
 * Resource configuration state
 
- 
 This step should take about 30 minutes to complete.
 
 ## Monitor and Manage Costs
@@ -38,8 +37,6 @@ For more proactive management of your AWS costs, set up budgets within the Billi
 * Create alerts based on a budget to notify you or others as budget thresholds are reached. Each budget alert notification can be sent to up to 10 email addresses and 1 SNS topic for subscribers.
 
 Take a few minutes and create an initial basic budget by following this guide [Create your first Budget](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-create.html).
-
-
 
 ## Monitor and Manage Security
 
@@ -81,13 +78,22 @@ AWS CloudTrail is an AWS service that helps you enable governance, compliance, a
 
 ### 3. Access CloudWatch
 
+Amazon CloudWatch monitors your Amazon Web Services (AWS) resources and the applications you run on AWS in real time. You can use CloudWatch to collect and track metrics, which are variables you can measure for your resources and applications.
+The CloudWatch home page automatically displays metrics about every AWS service you use. You can additionally create custom dashboards to display metrics about your custom applications, and display custom collections of metrics that you choose.
+
+1. Open the CloudWatch console at https://console.aws.amazon.com/cloudwatch/
+2. Notice that you can use the navigation bar to change the region to the region where you have your AWS resources. As you build out your environment, take note of the regions you use and be sure to leverage CloudWatch to monitor the resourcesk in each.
+
+At this stage without any workloads deployed, your CloudWatch data will be sparse. Once you are ready to configure monitoring, follow the [Getting Started with Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/GettingStarted.html) guidance.
+
+
 ### 4. Security Checklist Validation
 
 Finally, once you have deployed resources in your account, a good checklist to review for security best practices can be found in the [AWS Security Checklist (PDF)](https://d1.awsstatic.com/whitepapers/Security/AWS_Security_Checklist.pdf). Become familiar with the checklist items and periodically review your account against it's guidelines.
 
 ## Monitor and Manage Resource Configuration State
 
-As resources are deployed in your account, managing the growing inventory of resources and ensuring that they are deployed consistently and maintained consistently can become a challenge. **[AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html)** is a Management and Governance tool available to help you with:
+As resources are deployed in your account, managing the growing inventory of resources and ensuring that they are deployed consistently and maintained consistently can become a challenge. [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html) is a Management and Governance tool available to help you with:
 
 * Resource Administration and Governance
 * Auditing and Compliance
