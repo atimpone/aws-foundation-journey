@@ -47,7 +47,7 @@ At this point in your journey to establish your first secure AWS development env
 
 * Leveraged AWS Control Tower to set up and govern a secure, compliant, multi-account AWS environment based on best practices established by working with thousands of enterprises.
 * Established mandatory [Guardrails](https://docs.aws.amazon.com/controltower/latest/userguide/guardrails.html) to provide ongoing governance for your overall AWS environment. Many more recommended guardrails are available and should be reviewed by your security administrator and team.
-* Established **[AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) **logging to capture all actions taken by users, roles and services within your AWS accounts.
+* Established [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) logging to capture all actions taken by users, roles and services within your AWS accounts.
 * Secured your root account with multi-factor authentication (MFA)
 * Setup basic AWS platform access management
 
@@ -70,7 +70,18 @@ While security is weaved within all AWS services and capabilities, a few explici
     * RDS Public Snapshots
 * ****Service Limits****
 
-### 2. Security Checklist Validation
+### 2. Access CloudTrail
+
+AWS CloudTrail is an AWS service that helps you enable governance, compliance, and operational and risk auditing of your AWS account. Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail. Events include actions taken in the AWS Management Console, AWS Command Line Interface, and AWS SDKs and APIs.
+
+1. Sign in to the AWS Management Console and open the CloudTrail console at https://console.aws.amazon.com/cloudtrail/home/.
+2. Review the information in your dashboard about the most recent events that have occurred in your AWS account. One of these events should be a ConsoleSignin event, showing that you just signed in to the AWS Management Console.
+3. Expand the event to see additional information.
+4. Additional capabilities like search, filtering, and exporting the CloudTrail data.
+
+### 3. Access CloudWatch
+
+### 4. Security Checklist Validation
 
 Finally, once you have deployed resources in your account, a good checklist to review for security best practices can be found in the [AWS Security Checklist (PDF)](https://d1.awsstatic.com/whitepapers/Security/AWS_Security_Checklist.pdf). Become familiar with the checklist items and periodically review your account against it's guidelines.
 
