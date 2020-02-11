@@ -35,20 +35,24 @@ This step should take about 60 minutes to complete.
 
 ### Monitor and Manage Costs
 
-*Comments:*
-
-* *Highlight who has access to billing and cost information.*
-* *Does anything special need to be done to enable development teams to gain access to cost information?*
-
 AWS Cost Management tools give you and your team visibility into AWS account costs and usage. Each account you create will have access to view their individual account costs and useage. The Master account can see the total organizatonal cost and usage rollup.
 
-There are a range of AWS Cost Management tools to help you access, organize, understand, control, and optimize your costs. You start to access detailed information about your AWS costs and usage using the built-in dashboard in the Billing and Management area of the AWS Management. Console. 
+## 1. Access the Billing and Cost Management Dashboard
 
-Additionally, more detailed cost information (updated once every 24 hours) is available by enabling the Cost Explorer:
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console.aws.amazon.com/billing/home#/](https://console.aws.amazon.com/billing/home)
+2. 
+
+There are a range of AWS Cost Management tools to help you access, organize, understand, control, and optimize your costs. You start to access detailed information about your AWS costs and usage using the built-in dashboard in the Billing and Management area of the AWS Management Console. 
+
+## 2. Enable Cost Explorer
+
+To see more detailed cost information for your account, you will want to enable the Cost Explorer:
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console.aws.amazon.com/billing/home#/](https://console.aws.amazon.com/billing/home)
 2. On the navigation pane, choose **Cost Explorer**. 
 3. On the **Welcome to Cost Explorer** page, choose **Enable Cost Explorer**. 
+
+## 3. Create a Budget
 
 For more proactive management of your AWS costs, consider setting up budgets within the Billing and Management console. Budgets allow you to:
 
