@@ -1,6 +1,5 @@
 # 6. Establish Initial AWS Platform Monitoring Practices
 
-* * *
 In this step your Cloud Admins, Security Admins, and Cost Managers will become familiar with the basic monitoring and management capabilities for your new AWS environment including:
 
 * Costs
