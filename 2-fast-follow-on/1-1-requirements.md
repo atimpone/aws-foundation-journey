@@ -28,7 +28,7 @@ Although addressing these requirements will add time to the overall initial buil
 ### Security
 * Enable custom security guardrails across multiple AWS accounts.
 * Expand security baselines:
-  * Expunge defasult VPCs from all AWS accounts and AWS regions in those accounts.
+  * Expunge default VPCs from all AWS accounts and AWS regions in those accounts.
   * Constrain which AWS services can be accessed in development environments.
   * Constrain which AWS regions can be used in development environments.
 * Integrate existing centrally managed identity management services to control access to the AWS platform.
