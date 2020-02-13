@@ -4,8 +4,6 @@ Depending on your organizations needs, you may require that some or all of the f
 
 Although addressing these requirements will add time to the overall initial build out, AWS provides additional guides and best practices to help you quickly meet these requirements. References to these additional guides are included in the build out steps later in this guide.
 
-***Add table of contents***
-
 ## Business Perspectives
 
 ### Business
@@ -46,3 +44,7 @@ Although addressing these requirements will add time to the overall initial buil
 * Establish network integration between on-premises and AWS:
     * Secure private network connectivity between on-premises and AWS to support initial on-premises and  AWS integration scenarios. 
     * Non-overlapping allocation of IP address ranges for use by development environments.
+    
+## Next Steps
+
+[Reviewing and Refining the Fast Follow-on Solution](1-2-solution.md)
