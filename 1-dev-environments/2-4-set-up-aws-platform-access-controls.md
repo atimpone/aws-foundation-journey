@@ -4,6 +4,8 @@ In this step your Security and Cloud Administrators will decide on and implement
 
 This step should take about 30 minutes to complete.
 
+To Do: Insert table of contents so that a summary of steps are shown...
+
 ## 1. Temporarily Use AWS SSO Locally Managed Users and Groups
 
 If your team needs to move very quickly in a matter of 1-2 days to establish an initial development environment and does not have an immediate requirement to integrate your existing enterprise identity management system to help control access to the AWS platform, then it’s recommended that:
