@@ -171,6 +171,10 @@ Their initial sign on experience will consist of:
 
 Inform the foundation team members of [how to register an MFA device](https://docs.aws.amazon.com/singlesignon/latest/userguide/how-to-register-device.html) via the AWS SSO service.
 
+## 7. Stop Using the AWS Control Tower Administrative User
+
+Since you've onboarded foundation team members with the appropriate permissions, as a security and compliance best practice, there's no longer any reason for your Cloud Administrators to use the AWS Control Tower Administrator user. From this point forward, the vast majority of your work to administer and manage your AWS environment should be done via your personal users that are defined in AWS SSO.  By using personal users, all operations will be auditable and tied to specific individuals.
+
 ## Next Steps
 
 [5. Create the Initial Team Development Environments](2-5-create-team-dev-environments.md)
