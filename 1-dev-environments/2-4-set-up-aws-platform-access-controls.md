@@ -1,8 +1,6 @@
 # 4. Set Up Initial AWS Platform Access
 
-In this step your Security and Cloud Administrators will decide on and implement the initial approach to controlling access to the AWS platform for use by users who are responsible for your cloud foundation and are members of development teams.
-
-This initial set of access controls will evolve as your use of the AWS platform expands.
+In this step your Security and Cloud Administrators will decide on and implement the initial approach to controlling access to the AWS platform and onboard the foundation team members so that they can begin to access your AWS environment.
 
 This step should take about 30 minutes to complete.
 
