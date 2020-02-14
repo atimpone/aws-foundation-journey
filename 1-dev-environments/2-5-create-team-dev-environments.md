@@ -91,11 +91,11 @@ When a new AWS account has been created via the Account Factory, a user for the 
 2. Within the email message "Invitation to join AWS Single Sign-On", select `Accept invitation`.
 3. Follow the process to set the initial password for this user.
 
-Follow the same steps in [Enable MFA for User Created by Control Tower](2-3-set-up-landing-zone.md#5-enable-mfa-via-aws-sso-for-the-admin-user-created-via-control-tower) to enable MFA for this AWS account's new SSO user.
+Follow the steps in [Enable MFA for User Created by Control Tower](2-3-set-up-landing-zone.md#5-enable-mfa-via-aws-sso-for-the-admin-user-created-via-control-tower) to enable MFA for this AWS account's new SSO user.
 
 ### Initialize the New AWS Account's Root User
 
-In addition to a new AWS SSO user being created for the AWS account, the new AWS account has a built-in root user.  Follow the same steps as described in [Set AWS Account Root User Password and Enable MFA](2-3-set-up-landing-zone.md#4-set-aws-account-root-user-password-and-enable-mfa) to align with security best practices.
+In addition to a new AWS SSO user being created for the AWS account, the new AWS account has a built-in root user.  Follow the steps as described in [Set AWS Account Root User Password and Enable MFA](2-3-set-up-landing-zone.md#4-set-aws-account-root-user-password-and-enable-mfa) to align with security best practices.
 
 ## 5. Set Up Baseline Access Permissions
 
