@@ -65,7 +65,7 @@ The email address you provided for the audit account will receive AWS Notificati
 
 ## 6. Review AWS Control Tower Best Practices for Administrators
 
-Now that you've set up your initial landing zone, take a few minutes to review [Best Practicers for Account Administrators](https://docs.aws.amazon.com/controltower/latest/userguide/best-practices.html#tips-for-admin-maint) so that you understand temporary limitations and other considerations when working with AWS Control Tower.
+Now that you've set up your initial landing zone, take a few minutes to review [Best Practices for Account Administrators](https://docs.aws.amazon.com/controltower/latest/userguide/best-practices.html#tips-for-admin-maint) so that you understand temporary limitations and other considerations when working with AWS Control Tower.
 
 For example:
 
