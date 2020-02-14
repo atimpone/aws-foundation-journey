@@ -44,7 +44,7 @@ Configuration settings of the AWS accounts you provision via Account Factory sho
 
 ---
 
-See [How to deploy an AWS account with Account Factory](https://docs.aws.amazon.com/controltower/latest/userguide/account-factory.html#configure-provision-new-account) to set up the initial development team AWS accounts. 
+See the section "Provisioning Account Factory Accounts With AWS Service Catalog" in the [AWS Control Tower Account Factory](https://docs.aws.amazon.com/controltower/latest/userguide/account-factory.html) documentation for instructions on how to set up the initial development team AWS accounts. 
 
 ## 4. Set Up Baseline Access Permissions
 
