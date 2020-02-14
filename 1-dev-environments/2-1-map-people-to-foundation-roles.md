@@ -9,7 +9,7 @@ This step should take about 30 minutes to complete subject to the proper stakeho
 ## Typical Starter Foundation Functional Roles
 The following table lists a typical set of minimal functional roles to own and manage your initial iteration of your cloud foundation. You should be able to identify 1-2 people in your organization who will play these functional roles and have these responsibilities for at least this stage of your cloud adoption journey.
 
-|Functional Role	|Description	|Responsibilities	|
+|Foundation Functional Role	|Description	|Responsibilities	|
 |---	|---	|---	|
 |Cloud Administration|Write access to cloud foundation resources.	|<p>* Create and manage shared cloud infrastructure. For example, AWS accounts and shared networking resources.<br>* Onboard new development teams on usage of their cloud development environments.</p>|
 |Security Administration|Write access to cloud foundation security resources.	|<p>* Create and manage baseline security policies in AWS.<br>* Monitor and respond to AWS usage security events.<br>* Learn and promote cloud security best practices.</p>|
