@@ -23,13 +23,16 @@ Initially, you will likely need at least two AWS accounts for the following team
 Moving forward, your company will likely want to apply particular policies or guardrails that apply to all AWS development accounts within your enterprise.  To enable you to easily target such policies across all development AWS accounts, it's recommended that you create a new Organizational Unit (OU) to represent development AWS accounts.
 
 1. As a cloud administrator, use your personal user to log into AWS SSO.
-2. Within the AWS Control Tower dashboard select `Add organizational units`.  
-3. Follow the prompts to create a new OU named `development`.
+2. Select the AWS master account.
+3. Select `Management console` associated with the `AWSAdministratorAccess` role.
+4. Navigate to AWS Control Tower.
+5. Within the AWS Control Tower dashboard select `Add organizational units`.  
+6. Follow the prompts to create a new OU named `development`.
 
 In the next step when you create the new development AWS accounts, you'll specify this new OU.
 
 ---
-**Note: Your OU Design will Evolve** 
+**Note: Your OU design will evolve** 
 
 Since you have the ability to move AWS accounts between OUs and modify OUs, you don't need to perform a complete OU design at this early stage. As you progress on your journey, you will evolve your OU design to suit your emerging needs.  If you'd like to learn more about OUs, see [AWS Organizations in Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/organizations.html).
 
@@ -39,14 +42,27 @@ Since you have the ability to move AWS accounts between OUs and modify OUs, you 
 
 In AWS Control Tower, provision the initial set of AWS development team accounts for early experimentation, development, and testing.
 
+1. As a cloud administrator, use your personal user to log into AWS SSO.
+2. Select the AWS master account.
+3. Select `Management console` associated with the `AWSServiceCatalogEndUserAccess` role.
+4. Navigate to AWS Service Catalog.
+5. Follow the steps in the section "Provisioning Account Factory Accounts With AWS Service Catalog" in the [AWS Control Tower Account Factory](https://docs.aws.amazon.com/controltower/latest/userguide/account-factory.html) documentation for instructions on how to set up the initial development team AWS accounts. 
+
+**Chris left off testing and editing here...**
+
+To Do:
+* Verify that a given user who launches a Service Catalog product is the only one who can see the provisioned product. If so, this is pretty awkward in the case where you have several cloud admins that share this responsibility.
+* Consider replacing the link to the Control Tower doc with the actual steps because:
+  * There's no direct link to the instructions in the Control Tower docs.
+  * We likely want to add some context to a few of the steps. For example, what should I name the product that I'm launching?
+
+
 ----
-**Note: You Can Change AWS Account Settings Later**
+**Note: You can change AWS account settings later**
 
 Configuration settings of the AWS accounts you provision via Account Factory shouldn’t be considered static.  Nearly every part of an AWS account can be changed and updated at a later date.
 
 ---
-
-See the section "Provisioning Account Factory Accounts With AWS Service Catalog" in the [AWS Control Tower Account Factory](https://docs.aws.amazon.com/controltower/latest/userguide/account-factory.html) documentation for instructions on how to set up the initial development team AWS accounts. 
 
 ## 4. Set Up Baseline Access Permissions
 
