@@ -1,8 +1,8 @@
 # 4. Set Up Initial AWS Platform Access
 
-In this step your Security and Cloud Administrators will decide on and implement the initial approach to controlling access to the AWS platform and onboard the foundation team members with appropriate permissions so that they can begin to access your AWS environment.
+In this step your Security and Cloud Administrators will decide on and implement the initial approach to controlling access to the AWS platform and onboard the foundation team members with the appropriate permissions so that they can begin to access your AWS environment.
 
-This step should take about 30 minutes to complete.
+This step should take about 45 minutes to complete.
 
 To Do: Insert table of contents so that a summary of steps are shown...
 
@@ -169,7 +169,7 @@ Their initial sign on experience will consist of:
 4. Selecting from the permissions that they can assume for each AWS account.
 5. Using either the AWS Management Console or AWS CLI/API to access each AWS account.
 
-Inform the foundation team members of [how to register an MFA device](https://docs.aws.amazon.com/singlesignon/latest/userguide/how-to-register-device.html) via the AWS SSO service.
+Inform the foundation team members that use of MFA is required and how they can [register an MFA device](https://docs.aws.amazon.com/singlesignon/latest/userguide/how-to-register-device.html) on their own via the AWS SSO service.
 
 ## 7. Stop Using the AWS Control Tower Administrative User
 
