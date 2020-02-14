@@ -8,7 +8,7 @@ This step should take about 30 minutes to complete.
 2. [Create the Development Organizational Unit](#2-create-the-development-organizational-unit)
 3. [Create Development Team AWS Accounts](#3-create-development-team-aws-accounts)
 4. [Initialize the New AWS Account System Users](#4-initialize-the-new-aws-account-system-users)
-5. [Create Develoment Team Groups in AWS SSO](#5-create-development-team-groups-in-aws-sso)
+5. [Create Development Team Groups in AWS SSO](#5-create-development-team-groups-in-aws-sso)
 6. [Create Development Team Users in AWS SSO](#6-create-development-team-users-in-aws-sso)
 
 ## 1. Use at Least Two Development AWS Accounts from the Start
@@ -60,7 +60,7 @@ You'll follow these steps twice: Once to create the initial deveopment team's AW
 6. Select `Products list`.
 7. Select `AWS Control Tower Account Factory`.
 8. Select `Launch Product`.
-9. Under `Product Version`, specify a `Name`. For example `member-account-team-a-dev`. This will be the name of the provisioned product in AWS Service Catalog and will not be the name of the new AWS account.
+9. Under `Product Version`, specify a `Name`. For example `member-account-team-a-dev` or `member-account-foundation-dev`. This will be the name of the provisioned product in AWS Service Catalog and will not be the name of the new AWS account.
 10. Select `Next`.
 11. In `Parameters`, consider the following recommendations:
 
@@ -68,10 +68,10 @@ You'll follow these steps twice: Once to create the initial deveopment team's AW
 |-----|---------------|
 |`SSOUserEmail`|Consult the [set of AWS account root user email addresses](2-2-create-master-aws-account.md#1-prepare-email-distribution-lists-for-new-aws-accounts) that you established earlier.|
 |`AccountEmail`|Use the same value as `SSOUserEmail`.|
-|`SSOUserFirstName`|Use a part of your account name. For example, `Team A`|
+|`SSOUserFirstName`|Use a part of your account name. For example, `Team A` or `Foundation` for the foundation team's development AWS account.|
 |`SSOUserLastName`|Use the remaining part of the account name. For example, `Development`|
 |`ManagedOrganizationalUnit`|Select the OU you created earlier in this section. For example, `development`|
-|`AccountName`|`Team A Development`|
+|`AccountName`|`Team A Development` or `Foundation Development`|
 
 12. Select `Next`.
 13. On `Tag Options`, select `Next`.
@@ -108,11 +108,62 @@ See [Log In as Root User](https://docs.aws.amazon.com/controltower/latest/usergu
 
 See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user_manage_mfa) for instructions to enable MFA.
 
-## 5. Create Develoment Team Groups in AWS SSO
+## 5. Create Development Team Groups in AWS SSO
+
+Create a new group in AWS SSO for each of the development teams and associate those groups with an initial set of permissions and their respective development AWS accounts.
+
+### Create Development Team Groups in AWS SSO
+
+1. As a cloud administrator, use your personal user to log into AWS SSO.
+2. Select the AWS master account.
+3. Select `Management console` associated with the `AWSAdministratorAccess` role.
+4. Select the appropriate AWS region.
+5. Navigate to AWS SSO.
+6. Access `Groups` in AWS SSO.
+7. Select `Create group`.
+8. Provide a group name. For example `acme-team-a-dev`. Where you should replace `acme` with a common abbreviation for your organization. Use something like `acme-foundation-dev` for the foundation team group.
+9. Provide a description. For example, `Team A development` or `Foundation team development`.
+10. Select `Create`.
+
+### Associate Groups with Permissions and Development AWS Accounts
+
+1. Access `AWS accounts` in AWS SSO.
+2. Select the checkbox next to the development AWS account of interest. For example, `Team A - Dev` or `Foundation - Dev`.
+3. Select `Assgn users`.
+4. Select `Groups`.
+5. Select the checkbox next to `acme-team-a-dev`, `acme-foundation-dev` or similar.
+6. Select `Next: Permission sets`.
+7. Select the checkbox next to `AWSPowerUserAccess`.
+8. Select `Finish`.
+
+Repeat the process above to create a group for your foundation team and enable this group to access their development AWS account.
+
+---
+**Note: `AWSPowerUserAccess` permissions
+
+Initially, this guide suggests using one of the pre-defined, AWS-managed permission sets for your development team users and their access to their development AWS accounts. However, you will likely refine the permissions over time.
+
+---
 
 ## 6. Create Development Team Users in AWS SSO
 
-After the initial team development AWS accounts are created, establish an initial set of baseline access into those accounts following these steps:
+Now that you've established the two development oriented groups in AWS SSO and wired these groups to a set of permissions and AWS accounts, your next step is to create a user in AWS SSO for each development team member.
+
+### Add Foundation Team Members to the Foundation Team Group
+
+Since you've already created users in AWS SSO for foundation team members, all you need to do to enable those team members to access their development AWS account is to add the foundation team member users to the newly created group in AWS SSO.
+
+1. Access `Groups` in AWS SSO.
+2. Select `acme-foundation-dev`.
+3. Select `Add users`.
+4. Select the checkbox of each foundation team member.
+5. Select `Add users`.
+
+The foundation team members now have access to the foundation team development AWS account.
+
+### Create Development Team Users
+
+***Chris left off reviewing/testing/editing here...***
 
 1. **Login to the AWS Master Account**
 2. **Create Users in AWS SSO that require access to the Development account
