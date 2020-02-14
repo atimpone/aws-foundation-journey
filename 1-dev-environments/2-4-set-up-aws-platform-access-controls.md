@@ -1,6 +1,6 @@
 # 4. Set Up Initial AWS Platform Access
 
-In this step your Security and Cloud Administrators will decide on and implement the initial approach to controlling access to the AWS platform and onboard the foundation team members so that they can begin to access your AWS environment.
+In this step your Security and Cloud Administrators will decide on and implement the initial approach to controlling access to the AWS platform and onboard the foundation team members with appropriate permissions so that they can begin to access your AWS environment.
 
 This step should take about 30 minutes to complete.
 
@@ -65,7 +65,9 @@ If you encounter a permissions error when attempting to access AWS SSO via the A
 
 ## 4. Add a Cost Management Group and Permissions in AWS SSO
 
-In order to fill the gap of a dedicated AWS SSO group for your cost management team members, you'll add a new group in AWS SSO and associate the necessary permissions with that group. In a subsequent step, you'll add cost management team members to the new group.
+In order to fill the gap of a dedicated AWS SSO group for your cost management team members, you'll add a new group in AWS SSO and associate the necessary permissions with that group. In a subsequent step, you'll add cost management team members to the new group. 
+
+In the spirit of least privilege access, the resulting permissions will enable cost management team members to access only your master AWS account and only the cost management and billing resources and data accessible within that AWS account.
 
 ### Add Cost Management Group in AWS SSO
 
