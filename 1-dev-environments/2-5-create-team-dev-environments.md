@@ -139,7 +139,7 @@ Create a new group in AWS SSO for each of the development teams and associate th
 Repeat the process above to create a group for your foundation team and enable this group to access their development AWS account.
 
 ---
-**Note: `AWSPowerUserAccess` permissions
+**Note: `AWSPowerUserAccess` permissions**
 
 Initially, this guide suggests using one of the pre-defined, AWS-managed permission sets for your development team users and their access to their development AWS accounts. However, you will likely refine the permissions over time.
 
