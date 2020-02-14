@@ -22,12 +22,14 @@ Initially, you will likely need at least two AWS accounts for the following team
 
 Moving forward, your company will likely want to apply particular policies or guardrails that apply to all AWS development accounts within your enterprise.  To enable you to easily target such policies across all development AWS accounts, it's recommended that you create a new Organizational Unit (OU) to represent development AWS accounts.
 
-Within the AWS Control Tower dashboard select “Add organizational units”.  Proceed to follow the prompts to create a new OU named “development”.
+1. As a cloud administrator, use your personal user to log into AWS SSO.
+2. Within the AWS Control Tower dashboard select `Add organizational units`.  
+3. Follow the prompts to create a new OU named `development`.
 
 In the next step when you create the new development AWS accounts, you'll specify this new OU.
 
 ---
-**Note** 
+**Note: Your OU Design will Evolve** 
 
 Since you have the ability to move AWS accounts between OUs and modify OUs, you don't need to perform a complete OU design at this early stage. As you progress on your journey, you will evolve your OU design to suit your emerging needs.  If you'd like to learn more about OUs, see [AWS Organizations in Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/organizations.html).
 
@@ -38,7 +40,7 @@ Since you have the ability to move AWS accounts between OUs and modify OUs, you 
 In AWS Control Tower, provision the initial set of AWS development team accounts for early experimentation, development, and testing.
 
 ----
-**Note**
+**Note: You Can Change AWS Account Settings Later**
 
 Configuration settings of the AWS accounts you provision via Account Factory shouldn’t be considered static.  Nearly every part of an AWS account can be changed and updated at a later date.
 
