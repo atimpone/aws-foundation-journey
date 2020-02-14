@@ -59,7 +59,7 @@ You'll follow these steps twice: Once to create the initial deveopment team's AW
 
 |Field|Recommendation|
 |-----|---------------|
-|`SSOUserEmail`|Review the [set of AWS account root user email addresses](2-2-create-master-aws-account.md#1-prepare-email-distribution-lists-for-new-aws-accounts) that you established earlier.|
+|`SSOUserEmail`|Consult the [set of AWS account root user email addresses](2-2-create-master-aws-account.md#1-prepare-email-distribution-lists-for-new-aws-accounts) that you established earlier.|
 |`AccountEmail`|Use the same value as `SSOUserEmail`.|
 |`SSOUserFirstName`|Use a part of your account name. For example, `Team A`|
 |`SSOUserLastName`|Use the remaining part of the account name. For example, `Development`|
