@@ -116,7 +116,7 @@ Now that you've created a permission set, you need to associate the permission s
 7. Select the checkbox next to `acme-cost-mgmt` or similar.
 8. Select `Finish`.
 
-## 4. Enable Multi-Factor Authentication (MFA)
+## 5. Enable Multi-Factor Authentication (MFA)
 
 Before adding any human users to AWS SSO and enabling the users to access your AWS environment, it's a best practice to configure AWS SSO to require multi-factor authentication (MFA).
 
@@ -144,7 +144,7 @@ You will likely want to establish either manual or automatic recurring audits to
 
 ---
 
-## 5. Create AWS SSO Users for Foundation Team Users
+## 6. Create AWS SSO Users for Foundation Team Users
 
 In prepartion for adding foundation team users to AWS SSO, decide on the format of the user name.  Typically, the user name will simply be the user's corporate email address that is often used for SaaS services.
 
@@ -157,7 +157,7 @@ Next, access the AWS SSO service to begin adding an AWS SSO user for each founda
 6. Using the table shown above, select the applicable groups for each user.
 7. Select `Add user`.
 
-## 6. Onboard Your Foundation Team Members 
+## 7. Onboard Your Foundation Team Members 
 
 Reach out to each foundation team member to inform them of the context of the email message they received, what they should do next, and what access they have been granted.
 
@@ -171,7 +171,7 @@ Their initial sign on experience will consist of:
 
 Inform the foundation team members that use of MFA is required and how they can [register an MFA device](https://docs.aws.amazon.com/singlesignon/latest/userguide/how-to-register-device.html) on their own via the AWS SSO service.
 
-## 7. Stop Using the AWS Control Tower Administrative User
+## 8. Stop Using the AWS Control Tower Administrative User
 
 Since you've onboarded foundation team members with the appropriate permissions, as a security and compliance best practice, there's no longer any reason for your Cloud Administrators to use the AWS Control Tower Administrator user. From this point forward, the vast majority of your work to administer and manage your AWS environment should be done via your personal users that are defined in AWS SSO.  By using personal users, all operations will be auditable and tied to specific individuals.
 
