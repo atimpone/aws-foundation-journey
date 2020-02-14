@@ -27,14 +27,6 @@ Although the AWS Identity and Access Management (AWS IAM) service supports manag
 
 Earlier in this guide, you should have mapped your foundation team members to the [initial set of functional roles](2-1-map-people-to-foundation-roles.md) to be played in support of your AWS environment. The following table shows a mapping of those functional roles to a set of pre-defined AWS SSO groups and permissions.
 
----
-
-**Note: Your AWS platform access permissions will evolve**
-
-The initial mapping of functional roles to groups in AWS SSO and the underlying permissions associated with those groups shown in the following table is only a simple starting point for your AWS platform access permissions for foundation team members. As you progress on your journey, you will evolve these groups and underlying permissions to meet your needs.
-
----
-
 To Do: Provide a link to where the customer can learn more about the permissions provided with each AWS SSO group.
 
 |Functional Role	|AWS SSO Groups|
@@ -43,6 +35,14 @@ To Do: Provide a link to where the customer can learn more about the permissions
 |Security Administration|`AWSAuditAccountAdmins`<br>`AWSLogArchiveAdmins`<br>`AWSSecurityAuditPowerUsers`|
 |Cost Management|`acme-cost-mgmt` (to be added in the next step)|
 |Audit|`AWSSecurityAuditors`|
+
+---
+
+**Note: Your AWS platform access permissions will evolve**
+
+The initial mapping of functional roles to groups in AWS SSO and the underlying permissions associated with those groups shown in the following table is only a simple starting point for your AWS platform access permissions for foundation team members. As you progress on your journey, you will evolve these groups and underlying permissions to meet your needs.
+
+---
 
 ## 3. Access AWS SSO Using Your AWS Control Tower Administrator User
 
