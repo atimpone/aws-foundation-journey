@@ -133,6 +133,7 @@ Follow these steps to make the MFA related changes:
 3. Under `Users should be prompted for multi-factor authentication (MFA)`, select `Every time they sign in (always-on)`.
 4. Under `When prompted for a MFA code` select `Require them to provide a one-time password sent by email`.
 5. Under `Who can manage MFA devices` select `Users and administrators can add and manage MFA devices`.
+6. Select `Save changes`.
 
 ## 5. Create AWS SSO Users for Foundation Team Users
 
