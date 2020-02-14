@@ -91,7 +91,7 @@ When a new AWS account has been created via the Account Factory, a user for the 
 2. Within the email message "Invitation to join AWS Single Sign-On", select `Accept invitation`.
 3. Follow the process to set the initial password for this user.
 
-Follow the steps in [Enable MFA for User Created by Control Tower](2-3-set-up-landing-zone.md#5-enable-mfa-via-aws-sso-for-the-admin-user-created-via-control-tower) to enable MFA for this AWS account's new SSO user.
+Follow the instruction in [How to Register a Device for Use with Multi-Factor Authentication](https://docs.aws.amazon.com/singlesignon/latest/userguide/user-device-registration.html).
 
 ### Initialize the New AWS Account's Root User
 
