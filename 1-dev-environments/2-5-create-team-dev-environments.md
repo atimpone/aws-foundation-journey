@@ -41,34 +41,63 @@ Since you have the ability to move AWS accounts between OUs and modify OUs, you 
 
 ## 3. Create Development Team AWS Accounts
 
-In AWS Control Tower, provision the initial set of AWS development team accounts for early experimentation, development, and testing.
+In AWS Control Tower, provision the initial set of AWS development team accounts for early experimentation, development, and testing. 
+
+You'll follow these steps twice: Once to create the initial deveopment team's AWS account and again to create the development AWS account for the foundation team.
 
 1. As a cloud administrator, use your personal user to log into AWS SSO.
 2. Select the AWS master account.
 3. Select `Management console` associated with the `AWSServiceCatalogEndUserAccess` role.
 4. Select the appropriate AWS region.
 5. Navigate to AWS Service Catalog.
-6. Select `Products`.
-7. Select `
-8. Follow the steps in the section "Provisioning Account Factory Accounts With AWS Service Catalog" in the [AWS Control Tower Account Factory](https://docs.aws.amazon.com/controltower/latest/userguide/account-factory.html) documentation for instructions on how to set up the initial development team AWS accounts. 
+6. Select `Products list`.
+7. Select `AWS Control Tower Account Factory`.
+8. Select `Launch Product`.
+9. Under `Product Version`, specify a `Name`. For example `member-account-team-a-dev`. This will be the name of the provisioned product in AWS Service Catalog and will not be the name of the new AWS account.
+10. Select `Next`.
+11. In `Parameters`, consider the following recommendations:
 
-**Chris left off testing and editing here...**
+|Field|Recommendation|
+|-----|---------------|
+|`SSOUserEmail`|Review the [set of AWS account root user email addresses](2-2-create-master-aws-account.md#1-prepare-email-distribution-lists-for-new-aws-accounts) that you established earlier.|
+|`AccountEmail`|Use the same value as `SSOUserEmail`.|
+|`SSOUserFirstName`|Use a part of your account name. For example, `Team A`|
+|`SSOUserLastName`|Use the remaining part of the account name. For example, `Development`|
+|`ManagedOrganizationalUnit`|Select the OU you created earlier in this section. For example, `development`|
+|`AccountName`|`Team A Development`|
 
-To Do:
-* Verify that a given user who launches a Service Catalog product is the only one who can see the provisioned product. If so, this is pretty awkward in the case where you have several cloud admins that share this responsibility.
-* Consider replacing the link to the Control Tower doc with the actual steps because:
-  * There's no direct link to the instructions in the Control Tower docs.
-  * We likely want to add some context to a few of the steps. For example, what should I name the product that I'm launching?
+12. Select `Next`.
+13. On `Tag Options`, select `Next`.
+14. On `Notifications`, select `Next`.
+15. Review your account settings, and then select `Launch`. Do not create a resource plan, otherwise the account will fail to be provisioned.
 
+Your account is now being provisioned. It can take a few minutes to complete. You can refresh the page to update the displayed status information. Only one account can be provisioned at a time.
 
 ----
 **Note: You can change AWS account settings later**
 
-Configuration settings of the AWS accounts you provision via Account Factory shouldn’t be considered static.  Nearly every part of an AWS account can be changed and updated at a later date.
+Configuration settings of the AWS accounts you provision via Account Factory shouldn’t be considered static.  Nearly every part of an AWS account can be changed and updated at a later date. See [Account Factory](https://docs.aws.amazon.com/controltower/latest/userguide/account-factory.html) for more details.
 
 ---
 
-## 4. Set Up Baseline Access Permissions
+## 4. Initialize the New AWS Account System Users
+
+When each new development team AWS account is created, follow these steps to initialize the AWS accounts-specific AWS SSO user and root user to align with security best practices.
+
+### Initialize the New AWS SSO User for the AWS Account
+When a new AWS account has been created via the Account Factory, a user for the new AWS account is created in AWS SSO. As a best practice, you should initiatize the associated user's password and enable MFA. 
+
+1. Access the email inbox for the email address you associated with the AWS account when using Account Factory.
+2. Within the email message "Invitation to join AWS Single Sign-On", select `Accept invitation`.
+3. Follow the process to set the initial password for this user.
+
+Follow the same steps in [Enable MFA for User Created by Control Tower](2-3-set-up-landing-zone.md#5-enable-mfa-via-aws-sso-for-the-admin-user-created-via-control-tower) to enable MFA for this AWS account's new SSO user.
+
+### Initialize the New AWS Account's Root User
+
+In addition to a new AWS SSO user being created for the AWS account, the new AWS account has a built-in root user.  Follow the same steps as described in [Set AWS Account Root User Password and Enable MFA](2-3-set-up-landing-zone.md#4-set-aws-account-root-user-password-and-enable-mfa) to align with security best practices.
+
+## 5. Set Up Baseline Access Permissions
 
 After the initial team development AWS accounts are created, establish an initial set of baseline access into those accounts following these steps:
 
