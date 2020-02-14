@@ -35,9 +35,14 @@ Since you have the ability to move AWS accounts between OUs and modify OUs, you 
 
 ## 3. Create Development Team AWS Accounts
 
-In AWS Control Tower, provision the initial set of AWS development team accounts for early experimentation, development, and testing.  You may need to repeat this step, and the following related permissions steps in order to complete the provisioning of all your accounts.
+In AWS Control Tower, provision the initial set of AWS development team accounts for early experimentation, development, and testing.
 
-The configurations of the AWS accounts you provision via Account Factory shouldn’t be considered static.  Nearly every part of an AWS account can be changed and updated at a later date.  With the OU structure in place from the previous step, you can be confident that large changes can be quickly made to all AWS accounts within the OU should the need rise.
+----
+**Note**
+
+Configuration settings of the AWS accounts you provision via Account Factory shouldn’t be considered static.  Nearly every part of an AWS account can be changed and updated at a later date.
+
+---
 
 See [How to deploy an AWS account with Account Factory](https://docs.aws.amazon.com/controltower/latest/userguide/account-factory.html#configure-provision-new-account) to set up the initial development team AWS accounts. 
 
