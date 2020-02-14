@@ -73,8 +73,7 @@ In order to fill the gap of a dedicated AWS SSO group for your cost management t
 
 1. Access `Groups` in AWS SSO.
 2. Select `Create group`.
-3. Provide a group name. For example `acme-cost-mgmt`.
-  - Where your should replace `acme` a common abbreviation for your organization.
+3. Provide a group name. For example `acme-cost-mgmt`. Where your should replace `acme` with a common abbreviation for your organization.
 4. Provide a description. For example, 'Cost management and billing`.
 5. Select `Create`.
 
@@ -98,8 +97,7 @@ Next, we'll create the necessary permissions sets and associate them with the ne
 3. Select `Create permission set`.
 4. Select `Create a custom permission set`.
 5. Provide a Name of `acme-cost-mgmt`.
-6. Select `Attach AWS managed policies` 
-  - A predefined set of AWS-managed IAM permissions will be listed. In some cases, you will want to reuse these IAM-managed permissions so that you defer to AWS to keep common sets of permissiop to date. In other cases, you will create your own custom permissions.
+6. Select `Attach AWS managed policies`. A predefined set of AWS-managed IAM permissions will be listed. In some cases, you will want to reuse these IAM-managed permissions so that you defer to AWS to keep common sets of permissiop to date. In other cases, you will create your own custom permissions.
 7. Search on `Billing` and select `Billing`.
 6. Select `Create`.
 
@@ -116,9 +114,6 @@ Now that you've created a permission set, you need to associate the permission s
 7. Select the checkbox next to `acme-cost-mgmt` or similar.
 8. Select `Finish`.
 
-The steps above created a new group in AWS SSO, a new permission set based on an AWS-managed permission, and associated these two resources with your master AWS account.  In the next step you'll provision a user in AWS SSO for each of your foundation team members.  In support of the people playing the functional role of Cost Manageemnt, their users will be added to the `acme-cost-mgmt` group so that they will be able to access the AWS Management Console for your master AWS account and be limited to cost management and billing related information and operation.
-
-
 ## 4. Enable Multi-Factor Authentication (MFA)
 
 Before adding any human users to AWS SSO and enabling the users to access your AWS environment, it's a best practice to configure AWS SSO to require multi-factor authentication (MFA).
@@ -126,8 +121,7 @@ Before adding any human users to AWS SSO and enabling the users to access your A
 In the following steps, you will modify your AWS SSO configuration to:
 
 * Enable users to authenticate via their MFA device each time they log in via AWS SSO.
-* Require users to use a one-time password when they don't already have an MFA device registered.
-  * This setting will enable new users to access the AWS SSO service at least once so that they can add an MFA device.
+* Require users to use a one-time password when they don't already have an MFA device registered. This setting will enable new users to access the AWS SSO service at least once so that they can add an MFA device.
 * Enable users to add and manage their MFA devices.
 
 Follow these steps to make the MFA related changes:
