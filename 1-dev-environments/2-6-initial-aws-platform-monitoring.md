@@ -10,7 +10,7 @@ This step should take about 30 minutes to complete.
 
 ## Monitor and Manage Costs
 
-AWS Cost Management tools give you and your team visibility into AWS account costs and usage. Each account you create will have access to view their individual account costs and useage. The Master account can see the total organizatonal cost and usage rollup.
+AWS Cost Management tools give you and your team visibility into AWS account costs and usage. Each account you create will have access to view their individual account costs and usage. The Master account can see the total organizational cost and usage rollup.
 
 ### 1. Access the Billing and Cost Management Dashboard
 
@@ -72,7 +72,7 @@ While security is weaved within all AWS services and capabilities, a few explici
 AWS CloudTrail is an AWS service that helps you enable governance, compliance, and operational and risk auditing of your AWS account. Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail. Events include actions taken in the AWS Management Console, AWS Command Line Interface, and AWS SDKs and APIs.
 
 1. Sign in to the AWS Management Console and open the CloudTrail console at https://console.aws.amazon.com/cloudtrail/home/.
-2. Review the information in your dashboard about the most recent events that have occurred in your AWS account. One of these events should be a ConsoleSignin event, showing that you just signed in to the AWS Management Console.
+2. Review the information in your dashboard about the most recent events that have occurred in your AWS account. One of these events should be a "ConsoleLogin" event, showing that you just signed in to the AWS Management Console.
 3. Expand the event to see additional information.
 4. As your usage of the platform grows you will find value in additional capabilities like search, filtering, and exporting the CloudTrail data.
 
@@ -82,14 +82,14 @@ Amazon CloudWatch monitors your Amazon Web Services (AWS) resources and the appl
 The CloudWatch home page automatically displays metrics about every AWS service you use. You can additionally create custom dashboards to display metrics about your custom applications, and display custom collections of metrics that you choose.
 
 1. Open the CloudWatch console at https://console.aws.amazon.com/cloudwatch/
-2. Notice that you can use the navigation bar to change the region to the region where you have your AWS resources. As you build out your environment, take note of the regions you use and be sure to leverage CloudWatch to monitor the resourcesk in each.
+2. Notice that you can use the navigation bar to change the region to the region where you have your AWS resources. As you build out your environment, take note of the regions you use and be sure to leverage CloudWatch to monitor the resources in each.
 
 At this stage without any workloads deployed, your CloudWatch data will be sparse. Once you are ready to configure monitoring, follow the [Getting Started with Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/GettingStarted.html) guidance.
 
 
 ### 4. Security Checklist Validation
 
-Finally, once you have deployed resources in your account, a good checklist to review for security best practices can be found in the [AWS Security Checklist (PDF)](https://d1.awsstatic.com/whitepapers/Security/AWS_Security_Checklist.pdf). Become familiar with the checklist items and periodically review your account against it's guidelines.
+Finally, once you have deployed resources in your account, a good checklist to review for security best practices can be found in the [AWS Security Checklist (PDF)](https://d1.awsstatic.com/whitepapers/Security/AWS_Security_Checklist.pdf). Become familiar with the checklist items and periodically review your account against its guidelines.
 
 ## Monitor and Manage Resource Configuration State
 
