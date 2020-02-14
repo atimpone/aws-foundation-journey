@@ -4,6 +4,8 @@ In this step your Cloud Administrators will use the AWS Control Tower service in
 
 This step should take about 90 minutes to complete.
 
+To Do: Include a table of contents so that an overview of steps is shown up front...
+
 ## 1. Identify Your Preferred AWS Region
 
 Since AWS Control Tower will establish a set of management resources in a “home” AWS region, you need to identify which AWS region you expect to host most of your AWS management resources. You will select this region in the next step.
