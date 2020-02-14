@@ -1,4 +1,4 @@
-# 4. Set Up Initial AWS Platform Access Controls
+# 4. Set Up Initial AWS Platform Access
 
 In this step your Security and Cloud Administrators will decide on and implement the initial approach to controlling access to the AWS platform for use by users who are responsible for your cloud foundation and are members of development teams.
 
@@ -6,80 +6,162 @@ This initial set of access controls will evolve as your use of the AWS platform 
 
 This step should take about 30 minutes to complete.
 
-***Chris left off reviewing and editing here...***
+## 1. Temporarily Use AWS SSO Locally Managed Users and Groups
 
-**Decision Point: Temporarily Use AWS SSO Locally Managed Users and Groups or Integrate Existing Identity Management System**
+If your team needs to move very quickly in a matter of 1-2 days to establish an initial development environment and does not have an immediate requirement to integrate your existing enterprise identity management system to help control access to the AWS platform, then it’s recommended that:
 
-If your team needs to move very quickly (in a matter of a day or two) to establish an initial development environment and does not have an immediate requirement to integrate its existing enterprise identity management system to help control access to the AWS platform, then it’s recommended that:
+1. Your Security and Cloud Administrators temporarily define and manages user and groups within the AWS SSO service.
+2. Make plans for a parallel workstream to integrate your preferred enterprise identity management system with the AWS platform and transition away from locally managed users and groups in the AWS SSO service.
 
-1. Your team temporarily defines and manages users and groups within the AWS SSO service.
-2. In support of expanded use of AWS by more people and teams in the future, make plans in parallel to integrate your preferred enterprise identity management system with the AWS platform and transition away from locally managed users and groups in the AWS SSO service.
+If your organization requires integration of your existing identity management system even for the establishment of an initial development environment, then see [Establishing Federated Access to AWS](../2-fast-follow-on/2-1-federated-access-to-aws.md) before proceeding further in this guide.
 
-If you organization requires integration of your existing identity management system even for the establishment of an initial development environment, then see **Establishing Federated Access to AWS** before proceeding further in this guide.
+---
 
-**What about AWS IAM users and groups?**
+**Note: What about AWS IAM users and groups?**
 
-Although the AWS IAM service supports management of locally defined users and groups, it’s generally not recommended that customers depend on this capability to help manage human user access to the AWS platform. Instead, AWS recommends organizations integrate use of their preferred enterprise identity management system.
+Although the AWS Identity and Access Management (AWS IAM) service supports management of locally defined users and groups, it’s generally not recommended that customers depend on this capability to help manage human user access to the AWS platform. Instead, AWS recommends organizations integrate use of their preferred enterprise identity management system.
 
-## Review Automatically Configured Access Controls
+---
 
-Deploying the Control Tower Landing Zone solution will create SSO Groups, Permission sets and Account Assignments.  Depending on the functional Groups that were defined in Section 1 of this guide some of these CT Groups can be used to assign permissions.
+## 2. Map Functional Roles to Existing AWS Groups
 
-Control Tower created AWS SSO Permissions Assignments:
+Earlier in this guide, you should have mapped your foundation team members to the [initial set of functional roles](2-1-map-people-to-foundation-roles.md) to be played in support of your AWS environment. The following table shows a mapping of those functional roles to a set of pre-defined AWS SSO groups and permissions.
 
-* AWSAccountFactory
-    * Assumes Role: Service Catalog End User Access in the AWS Master Account
-* AWSServiceCatalogAdmins
-    * Assumes Role: Service Catalog Admins in the AWS Master Account
-* AWSControlTowerAdmins
-    * Assumes Role: AWSOrganizationsFullAccess in the AWS Master Account
-    * Assumes Role: AdministratorAccess in the AWS Master Account
-* AWSSecurityAuditPowerUsers
-    * Assumes Role: PowerUserAccess in all AWS Accounts
-* AWSSecurityAuditors
-    * Assumes Role: ReadOnlyAccess in all AWS Accounts
-* AWSLogArchiveAdmins
-    * Assumes Role: AdministratorAccess in the AWS Archive Account
-* AWSLogArchiveViewers
-    * Assumes Role: ReadOnlyAccess in the AWS Archive Account
-* AWSAuditAccountAdmins
-    * Assumes Role: AdministratorAccess in the AWS Audit Account
+---
 
-Additional Groups beyond what Control Tower Creates may be required.  Billing only permissions for example are not created with Control Tower so this must be created manually.  AWS SSO has many permission sets built for common functional group needs.  Use prebuilt permission sets as much as possible.  Repeat the steps below for other Functional Group needs.
+**Note: Your AWS platform access permissions will evolve**
 
-[AWS SSO Documentation](https://docs.aws.amazon.com/singlesignon/index.html)
+The initial mapping of functional roles to groups in AWS SSO and the underlying permissions associated with those groups shown in the following table is only a simple starting point for your AWS platform access permissions for foundation team members. As you progress on your journey, you will evolve these groups and underlying permissions to meet your needs.
 
-**CREATE INITIAL SET OF USERS**
+---
 
-[How to add a user in AWS SSO](https://docs.aws.amazon.com/singlesignon/latest/userguide/addusers.html)
+To Do: Provide a link to where the customer can learn more about the permissions provided with each AWS SSO group.
 
-**CREATE FUNCTIONAL GROUPS**
+|Functional Role	|AWS SSO Groups|
+|---	|---	|
+|Cloud Administration|`AWSControlTowerAdmins`|
+|Security Administration|`AWSAuditAccountAdmins`<br>`AWSLogArchiveAdmins`<br>`AWSSecurityAuditPowerUsers`|
+|Cost Management|`acme-cost-mgmt` (to be added in the next step)|
+|Audit|`AWSSecurityAuditors`|
 
-[How to add groups in AWS SSO](https://docs.aws.amazon.com/singlesignon/latest/userguide/addgroups.html)
+## 3. Access AWS SSO Using Your AWS Control Tower Administrator User
 
-**ADD USERS TO BUILD IN CONTROL TOWER GROUPS AND FUNCTIONAL GROUPS**
+You'll need to use the AWS SSO service to add a new group for cost management and create users for each foundation team members.
 
-[How to add users to AWS SSO groups](https://docs.aws.amazon.com/singlesignon/latest/userguide/adduserstogroups.html)
+Since you have not yet created users in AWS SSO for each member of your foundation team, your Security or Cloud Administrator team members will need to use the AWS Control Tower Administrative User to start adding AWS SSO users for each foundation team member.  Ensure that you have the email address and login credentials for this use before continuing.
 
-**ADD SSO PERMISSION SETS**
+Access the AWS SSO service:
 
-[How to add permission sets to AWS SSO](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html)
+1. Sign in to the AWS SSO URL for your environment using the AWS Control Tower Administrator.
+2. Select the AWS master account.
+3. Select `Management console` associated with the `AWSAdministratorAccess` role.
+4. Navigate to `AWS SSO`.
 
-**ADD GROUPS TO EACH AWS ACCOUNT PERMISSION SETS**
+---
 
-1. From the AWS Console home screen navigate to "Accounts"
-2. Select the account to assign a group to a permission set
-3. Select "Assign Users"
-4. Select the "Groups" tab
-5. Select the Group and press "Next"
-6. Select the Permission Set to add the Group to and press "Finish"
+**Note: Permissions error**
 
-## Enable Multi-Factor Authentication (MFA)
+If you encounter a permissions error when attempting to access AWS SSO via the AWS Management Console, ensure that you've selected the proper AWS account and role, `AWSAdministratorAccess`.
 
-...as a best practice, even for the initial stage of experimentation and early development, enable Multi-factor Authentication (MFA) requirements in AWS SSO... provide recommended settings for this section of the AWS SSO Settings:
-[Image: image.png]Question: How does the customer enforce that MFA via AWS SSO has been configured for all users? i.e. to enable self-service, presumably we’d allow users to sign in without MFA so that they can set up their MFA. But what mechanism can be used to ensure that users eventually set up MFA?
+---
 
-[How to setup MFA](https://docs.aws.amazon.com/singlesignon/latest/userguide//enable-mfa.html)
+## 4. Add a Cost Management Group and Permissions in AWS SSO
+
+In order to fill the gap of a dedicated AWS SSO group for your cost management team members, you'll add a new group in AWS SSO and associate the necessary permissions with that group. In a subsequent step, you'll add cost management team members to the new group.
+
+### Add Cost Management Group in AWS SSO
+
+1. Access `Groups` in AWS SSO.
+2. Select `Create group`.
+3. Provide a group name. For example `acme-cost-mgmt`.
+  - Where your should replace `acme` a common abbreviation for your organization.
+4. Provide a description. For example, 'Cost management and billing`.
+5. Select `Create`.
+
+---
+**Note: Cloud resource naming**
+
+**Using Qualifiers in Shared Namespaces:** When adding cloud resources to a shared namespace, it's a best practice to prefix those resource names with an organization identifier so that you avoid conflict with AWS-managed resources and can easily identify your own custom resources. 
+
+**Lower Case, Camel Case, etc:** Most AWS cloud resource names support using a range of characters and cases.  Typically, AWS-managed resources use camelcase, but organizations often standardize on one style and strive to use that throughout.
+
+TO DO: Provide link to cloud resource naming best practices.
+
+---
+
+### Add Permission Sets in AWS SSO
+
+Next, we'll create the necessary permissions sets and associate them with the new group.
+
+1. Access `AWS accounts` in AWS SSO.
+2. Select the `Permission sets` tab.
+3. Select `Create permission set`.
+4. Select `Create a custom permission set`.
+5. Provide a Name of `acme-cost-mgmt`.
+6. Select `Attach AWS managed policies` 
+  - A predefined set of AWS-managed IAM permissions will be listed. In some cases, you will want to reuse these IAM-managed permissions so that you defer to AWS to keep common sets of permissiop to date. In other cases, you will create your own custom permissions.
+7. Search on `Billing` and select `Billing`.
+6. Select `Create`.
+
+Now that you've created a permission set, you need to associate the permission set with the relevant AWS account and group in AWS SSO.
+
+### Associate Group and Permission Set with AWS Master Account
+
+1. Access `AWS accounts` in AWS SSO.
+2. Select the checkbox next to your master AWS account.
+3. Select `Assgn users`.
+4. Select `Groups`.
+5. Select the checkbox next to `acme-cost-mgmt` or similar.
+6. Select `Next: Permission sets`.
+7. Select the checkbox next to `acme-cost-mgmt` or similar.
+8. Select `Finish`.
+
+The steps above created a new group in AWS SSO, a new permission set based on an AWS-managed permission, and associated these two resources with your master AWS account.  In the next step you'll provision a user in AWS SSO for each of your foundation team members.  In support of the people playing the functional role of Cost Manageemnt, their users will be added to the `acme-cost-mgmt` group so that they will be able to access the AWS Management Console for your master AWS account and be limited to cost management and billing related information and operation.
+
+
+## 4. Enable Multi-Factor Authentication (MFA)
+
+Before adding any human users to AWS SSO and enabling the users to access your AWS environment, it's a best practice to configure AWS SSO to require multi-factor authentication (MFA).
+
+In the following steps, you will modify your AWS SSO configuration to:
+
+* Enable users to authenticate via their MFA device each time they log in via AWS SSO.
+* Require users to use a one-time password when they don't already have an MFA device registered.
+  * This setting will enable new users to access the AWS SSO service at least once so that they can add an MFA device.
+* Enable users to add and manage their MFA devices.
+
+Follow these steps to make the MFA related changes:
+
+1. Access `Settings` in AWS SSO.
+2. Under `Multifactor authentication` select `Configure`.
+3. Under `Users should be prompted for multi-factor authentication (MFA)`, select `Every time they sign in (always-on)`.
+4. Under `When prompted for a MFA code` select `Require them to provide a one-time password sent by email`.
+5. Under `Who can manage MFA devices` select `Users and administrators can add and manage MFA devices`.
+
+## 5. Create AWS SSO Users for Foundation Team Users
+
+In prepartion for adding foundation team users to AWS SSO, decide on the format of the user name.  Typically, the user name will simply be the user's corporate email address that is often used for SaaS services.
+
+Next, access the AWS SSO service to begin adding an AWS SSO user for each foundation team member:
+
+1. Access `Users` in AWS SSO.
+2. Select `Add user`.
+4. Specify a user name and complete at least the other required fields.
+5. Select `Next: Groups`.
+6. Using the table shown above, select the applicable groups for each user.
+7. Select `Add user`.
+
+## 6. Onboard Your Foundation Team Members 
+
+Reach out to each foundation team member to inform them of the context of the email message they received, what they should do next, and what access they have been granted.
+
+Their initial sign on experience will consist of:
+
+1. Receiving the email invitation to the AWS SSO service.
+1. Clicking on the `Accept invitation` link to set their initial password.
+3. Being directed to AWS SSO landing page where they can select from the set of AWS accounts for which they have access.
+4. Selecting from the permissions that they can assume for each AWS account.
+5. Using either the AWS Management Console or AWS CLI/API to access each AWS account.
 
 ## Next Steps
 
