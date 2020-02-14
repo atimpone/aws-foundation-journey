@@ -23,13 +23,13 @@ Although the AWS Identity and Access Management (AWS IAM) service supports manag
 
 ---
 
-## 2. Map Functional Roles to Existing AWS Groups
+## 2. Map Foundation Functional Roles to Existing AWS Groups
 
 Earlier in this guide, you should have mapped your foundation team members to the [initial set of functional roles](2-1-map-people-to-foundation-roles.md) to be played in support of your AWS environment. The following table shows a mapping of those functional roles to a set of pre-defined AWS SSO groups and permissions.
 
 To Do: Provide a link to where the customer can learn more about the permissions provided with each AWS SSO group.
 
-|Functional Role	|AWS SSO Groups|
+|Foundation Functional Role|AWS SSO Groups|
 |---	|---	|
 |Cloud Administration|`AWSControlTowerAdmins`<br>`AWSAccountFactory`|
 |Security Administration|`AWSAuditAccountAdmins`<br>`AWSLogArchiveAdmins`<br>`AWSSecurityAuditPowerUsers`|
