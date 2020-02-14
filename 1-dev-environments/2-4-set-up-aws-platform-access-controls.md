@@ -31,7 +31,7 @@ To Do: Provide a link to where the customer can learn more about the permissions
 
 |Functional Role	|AWS SSO Groups|
 |---	|---	|
-|Cloud Administration|`AWSControlTowerAdmins`|
+|Cloud Administration|`AWSControlTowerAdmins`<br>`AWSAccountFactory`|
 |Security Administration|`AWSAuditAccountAdmins`<br>`AWSLogArchiveAdmins`<br>`AWSSecurityAuditPowerUsers`|
 |Cost Management|`acme-cost-mgmt` (to be added later in this section)|
 |Audit|`AWSSecurityAuditors`|
