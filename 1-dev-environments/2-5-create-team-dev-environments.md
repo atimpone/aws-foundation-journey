@@ -25,7 +25,12 @@ Within the AWS Control Tower dashboard select “Add organizational units”.  P
 
 In the next section when you create the new development AWS accounts, you'll specify this new OU.
 
-You can learn more about [AWS Organizations in Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/organizations.html).
+---
+**Note** 
+
+Since you have the ability to move AWS accounts between OUs and modify OUs, you don't need to perform a complete OU design at this early stage. As you progress on your journey, you will evolve your OU design to suit your emerging needs.  If you'd like to learn more about OUs, see [AWS Organizations in Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/organizations.html).
+
+---
 
 ## 3. Create Development Team AWS Accounts
 
