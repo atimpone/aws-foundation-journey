@@ -25,9 +25,10 @@ Moving forward, your company will likely want to apply particular policies or gu
 1. As a cloud administrator, use your personal user to log into AWS SSO.
 2. Select the AWS master account.
 3. Select `Management console` associated with the `AWSAdministratorAccess` role.
-4. Navigate to AWS Control Tower.
-5. Within the AWS Control Tower dashboard select `Add organizational units`.  
-6. Follow the prompts to create a new OU named `development`.
+4. Select the appropriate AWS region.
+5. Navigate to AWS Control Tower.
+6. Within the AWS Control Tower dashboard select `Add organizational units`.  
+7. Follow the prompts to create a new OU named `development`.
 
 In the next step when you create the new development AWS accounts, you'll specify this new OU.
 
@@ -45,8 +46,11 @@ In AWS Control Tower, provision the initial set of AWS development team accounts
 1. As a cloud administrator, use your personal user to log into AWS SSO.
 2. Select the AWS master account.
 3. Select `Management console` associated with the `AWSServiceCatalogEndUserAccess` role.
-4. Navigate to AWS Service Catalog.
-5. Follow the steps in the section "Provisioning Account Factory Accounts With AWS Service Catalog" in the [AWS Control Tower Account Factory](https://docs.aws.amazon.com/controltower/latest/userguide/account-factory.html) documentation for instructions on how to set up the initial development team AWS accounts. 
+4. Select the appropriate AWS region.
+5. Navigate to AWS Service Catalog.
+6. Select `Products`.
+7. Select `
+8. Follow the steps in the section "Provisioning Account Factory Accounts With AWS Service Catalog" in the [AWS Control Tower Account Factory](https://docs.aws.amazon.com/controltower/latest/userguide/account-factory.html) documentation for instructions on how to set up the initial development team AWS accounts. 
 
 **Chris left off testing and editing here...**
 
