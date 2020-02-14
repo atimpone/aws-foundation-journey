@@ -4,6 +4,13 @@ In this step your Cloud Administrators will create several new team development 
 
 This step should take about 30 minutes to complete.
 
+1. [Use at Least Two Development AWS Accounts from the Start](#1-use-at-least-two-development-aws-accounts-from-the-start)
+2. [Create the Development Organizational Unit](#2-create-the-development-organizational-unit)
+3. [Create Development Team AWS Accounts](#3-create-development-team-aws-accounts)
+4. [Initialize the New AWS Account System Users](#4-initialize-the-new-aws-account-system-users)
+5. [Create Develoment Team Groups in AWS SSO](#5-create-development-team-groups-in-aws-sso)
+6. [Create Development Team Users in AWS SSO](#6-create-development-team-users-in-aws-sso)
+
 ## 1. Use at Least Two Development AWS Accounts from the Start
 
 As highlighted previously, an AWS best practice is to isolate the work of distinct development teams by assigning a different AWS account for each team. Benefits of this approach include:
@@ -101,7 +108,9 @@ See [Log In as Root User](https://docs.aws.amazon.com/controltower/latest/usergu
 
 See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user_manage_mfa) for instructions to enable MFA.
 
-## 5. Set Up Baseline Access Permissions
+## 5. Create Develoment Team Groups in AWS SSO
+
+## 6. Create Development Team Users in AWS SSO
 
 After the initial team development AWS accounts are created, establish an initial set of baseline access into those accounts following these steps:
 
