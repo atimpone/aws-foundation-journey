@@ -135,6 +135,15 @@ Follow these steps to make the MFA related changes:
 5. Under `Who can manage MFA devices` select `Users and administrators can add and manage MFA devices`.
 6. Select `Save changes`.
 
+---
+**Note: Auditing use of MFA**
+
+The configuration shown above does not force the use of MFA, but it does impose an additional overhead of a one-time password sent via email for users that have not yet registered an MFA device.
+
+You will likely want to establish either manual or automatic recurring audits to ensure that your users have registered an MFA device.
+
+---
+
 ## 5. Create AWS SSO Users for Foundation Team Users
 
 In prepartion for adding foundation team users to AWS SSO, decide on the format of the user name.  Typically, the user name will simply be the user's corporate email address that is often used for SaaS services.
@@ -159,6 +168,8 @@ Their initial sign on experience will consist of:
 3. Being directed to AWS SSO landing page where they can select from the set of AWS accounts for which they have access.
 4. Selecting from the permissions that they can assume for each AWS account.
 5. Using either the AWS Management Console or AWS CLI/API to access each AWS account.
+
+Inform the foundation team members of [how to register an MFA device](https://docs.aws.amazon.com/singlesignon/latest/userguide/how-to-register-device.html) via the AWS SSO service.
 
 ## Next Steps
 
