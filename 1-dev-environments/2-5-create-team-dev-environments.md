@@ -24,7 +24,7 @@ Moving forward, your company will likely want to apply particular policies or gu
 
 Within the AWS Control Tower dashboard select “Add organizational units”.  Proceed to follow the prompts to create a new OU named “development”.
 
-In the next section when you create the new development AWS accounts, you'll specify this new OU.
+In the next step when you create the new development AWS accounts, you'll specify this new OU.
 
 ---
 **Note** 
