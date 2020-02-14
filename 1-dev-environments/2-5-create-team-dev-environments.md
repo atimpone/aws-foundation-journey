@@ -95,7 +95,11 @@ Follow the steps in [Enable MFA for User Created by Control Tower](2-3-set-up-la
 
 ### Initialize the New AWS Account's Root User
 
-In addition to a new AWS SSO user being created for the AWS account, the new AWS account has a built-in root user.  Follow the steps as described in [Set AWS Account Root User Password and Enable MFA](2-3-set-up-landing-zone.md#4-set-aws-account-root-user-password-and-enable-mfa) to align with security best practices.
+In addition to a new AWS SSO user being created for the AWS account, the new AWS account has a built-in root user.  
+
+See [Log In as Root User](https://docs.aws.amazon.com/controltower/latest/userguide/best-practices.html#root-login) in the AWS Control Tower documentation for instructions to set the root user’s password.
+
+See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user_manage_mfa) for instructions to enable MFA.
 
 ## 5. Set Up Baseline Access Permissions
 
