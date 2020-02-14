@@ -33,7 +33,7 @@ To Do: Provide a link to where the customer can learn more about the permissions
 |---	|---	|
 |Cloud Administration|`AWSControlTowerAdmins`|
 |Security Administration|`AWSAuditAccountAdmins`<br>`AWSLogArchiveAdmins`<br>`AWSSecurityAuditPowerUsers`|
-|Cost Management|`acme-cost-mgmt` (to be added in the next step)|
+|Cost Management|`acme-cost-mgmt` (to be added later in this section)|
 |Audit|`AWSSecurityAuditors`|
 
 ---
