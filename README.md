@@ -32,7 +32,7 @@ A key element of making the transition from the use of invididual user AWS accou
 
 In support of your first few formal projects, these guides start with getting an initial foundation and several development environments in place before they address how to extend your foundation to support deploying your first few workloads to test and production environments. 
 
-Later, when your organization has demonstrated success with the initial few projects, you will likely make a larger investment in your cloud foundation to support cloud adopton at scale.
+Later, when your organization has demonstrated success with the initial few projects, you will likely make a larger investment in your cloud foundation to support cloud adoption at scale.
 
 <img src="images/foundation.png" alt="Cloud Foundation" width="700"/>
 
