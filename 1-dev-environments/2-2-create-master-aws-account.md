@@ -4,7 +4,16 @@ In this step your Cloud Administrators will use the standard AWS new account cre
 
 This step should take about 20 minutes.
 
-## Benefits of Using Multiple AWS Accounts
+1. Review the Benefits of Using Multiple AWS Accounts
+2. Start With a New Master AWS Account
+3. Prepare Email Distribution Lists for New AWS Accounts
+4. Create a New AWS Master Account
+5. Receive Confirmation Email
+6. Secure Your AWS Account Root User
+7. Create an IAM user for Administrative Bootstrap Purposes
+8. Set Alternate Contacts
+
+## 1. Review the Benefits of Using Multiple AWS Accounts
 
 AWS accounts are coarse grained resource containers that help you isolate and secure different collections of cloud resources and data. Use of multiple AWS accounts can make your use of cloud more secure by providing clear ownership and control boundaries and lowering the blast radius of any particular set of cloud resources. 
 
@@ -12,7 +21,7 @@ In support of your initial need for development environments, this guide leads y
 
 Over the course of your cloud adoption journey, you will likely end up with a number of accounts ranging from a dozen or so to hundreds depending on the size of your application and data services portfolio and the granularity by which you choose to isolate the associated cloud resources and data across your organization and across the software development lifecycle (SDLC).
 
-## Starting With a New Master AWS Account
+## 2. Start With a New Master AWS Account
 
 The initial AWS account that you create will be configured as a new “master” AWS account in which billing for AWS services consumed across accounts will be consolidated and your Cloud Administrators will provision new “member” AWS accounts for development teams.
 
@@ -23,7 +32,7 @@ Even if you have an existing AWS account, we strongly recommend that you establi
 
 After you create your new master AWS account, you can make use of a standard process to move any existing AWS accounts into your new master AWS account so that you can easily consolidate billing and day-to-day management of all of your AWS accounts.
 
-## 1. Prepare Email Distribution Lists for New AWS Accounts
+## 3. Prepare Email Distribution Lists for New AWS Accounts
 
 Prepare a set of email distribution lists to represent the root user of each of the new AWS accounts that will be created. In this step you'll be referring to only the email distribution list for the master AWS account. In later steps, when you create other AWS accounts, you'll be entering the email distribution lists for those other AWS accounts.
 
@@ -47,7 +56,7 @@ For example: [aws-account1+master@acme.com](mailto:aws-account1+master@acme.com)
 ### Controlling Access to Root User Email Accounts
 Since the email address associated with an AWS account is used as the [root user login for the account](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html), anyone with access to that email account will have access to password reset process for the account.  
 
-## 2. Create a New AWS Master Account
+## 4. Create a New AWS Master Account
 
 Visit https://aws.amazon.com/ and click “Create AWS Account” and enter the the required information on the following page.  For this account, use the master account email address you already established. 
 
@@ -67,25 +76,24 @@ Add a payment method and contact information for the billing method.  You’ll g
 
 ### Select a Support Plan
 
-On the Select a Support Plan page, choose one of the available support plans.  Since your organization is going to be using AWS for formal development and eventually production purposes, we recommend that you start by selecting “Developer” support.  
+On the Select a Support Plan page, choose one of the available support plans.  Since your organization is going to be using AWS for formal development and eventually production purposes, we recommend that you start by selecting “Developer” support. 
 
 Before you transition any applications or data services to production, we strongly recommend upgrading to Business support.  
-
 Once you are preparing to host business critical workloads and data in the cloud, you should consider upgrading to Enterprise support levels. 
 
 See [AWS Support Plans](https://aws.amazon.com/premiumsupport/plans/) for a description of features and benefits of each level of support.
 
-## 3. Receive Confirmation Email
+## 5. Receive Confirmation Email
 
 In a few minutes your account should be fully activated and you’ll receive a confirmation email.  If you don’t, review the troubleshooting steps from the [Create and Activate an AWS Account support page](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
 
-## 4. Secure Your AWS Account Root User
+## 6. Secure Your AWS Account Root User
 
 It’s strongly recommended and an AWS security best practice to enable multi-factor authentication (MFA) to the AWS account root user and to avoid using the root user, even for administrative tasks, from this point forward.
 
 See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user_manage_mfa) for instructions.
 
-## 5. Create an IAM user for Administrative Bootstrap Purposes
+## 7. Create an IAM user for Administrative Bootstrap Purposes
 
 Although you will be provisioning cloud administrator and developer user accounts via the AWS Single Sign-on (SSO) service later in this guide, it is required that you first create an administrative bootstrap user account via the AWS Identity and Access Management (IAM) service and switch to that user to set up the next parts of your initial foundation.
 
@@ -102,7 +110,7 @@ While logged in as the root user, follow the instructions in [Create an IAM user
 
 Once the user has been created, sign into the AWS Management Console as the user and enable MFA to help secure the account. See [Enable a Virtual MFA Device fo an IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html#enable-virt-mfa-for-iam-user).
 
-## 6. Set Alternate Contacts
+## 8. Set Alternate Contacts
 
 Once you’ve set up your bootstrap administrative IAM user, log in as that user and set the Alternate Contacts for your account so that notifications of billing, operations, and security events are routed to the proper teams.  As a best practice, you can use email distribution lists so that notifications are set to multiple people in the same team.
 
