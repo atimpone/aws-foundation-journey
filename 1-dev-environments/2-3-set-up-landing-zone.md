@@ -4,7 +4,12 @@ In this step your Cloud Administrators will use the AWS Control Tower service in
 
 This step should take about 90 minutes to complete.
 
-To Do: Include a table of contents so that an overview of steps is shown up front...
+1. [Identify Your Preferred AWS Region]
+2. [Log In as Administrator IAM User]
+3. [Create Landing Zone Using AWS Control Tower]
+4. [Set AWS Account Root User Password and Enable MFA]
+5. [Enable MFA via AWS SSO for the Admin User Created via Control Tower]
+6. [Review AWS Control Tower Best Practices for Administrators]
 
 ## 1. Identify Your Preferred AWS Region
 
