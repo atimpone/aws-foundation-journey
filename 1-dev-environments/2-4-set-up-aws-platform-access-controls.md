@@ -128,11 +128,7 @@ Now that you've created a permission set, you need to associate the permission s
 
 Before adding any human users to AWS SSO and enabling the users to access your AWS environment, it's a best practice to configure AWS SSO to require multi-factor authentication (MFA).
 
-In the following steps, you will modify your AWS SSO configuration to:
-
-* Enable users to authenticate via their MFA device each time they log in via AWS SSO.
-* Require users to use a one-time password when they don't already have an MFA device registered. This setting will enable new users to access the AWS SSO service at least once so that they can add an MFA device.
-* Enable users to add and manage their MFA devices.
+In the following steps, you will modify your AWS SSO configuration to align with typical security best practices.
 
 Follow these steps to make the MFA related changes:
 
