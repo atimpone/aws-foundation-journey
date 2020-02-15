@@ -4,13 +4,19 @@ In this step your Cloud and Security Administrators and Cost Managers will revie
 
 This step should take about 60 minutes to complete.
 
+* [Cloud Administrators](#cloud-administrators)
+* [Security Administrators](#security-administrators)
+* [Cost Managers](#cost-managers)
+
 ## Cloud Administrators
+
+***Ensure the all of the following responsibiities are action oriented, actionable tasks that cloud admins and the organization at large will find to be the bare minimum ongoing regular tasks for cloud admins.***
 
 * Applying AWS Control Tower updates.
 * Responding to alerts from AWS Control Tower guardrails and other AWS platform monitoring services.
 * Monitoring costs across accounts on at least a weekly basis.
 
-## Monitor and Manage Resource Configuration State
+### n. Monitoring and Managing Resource Configuration State
 
 As resources are deployed in your account, managing the growing inventory of resources and ensuring that they are deployed consistently and maintained consistently can become a challenge. [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html) is a Management and Governance tool available to help you with:
 
@@ -42,12 +48,15 @@ By following this guide, your foundation team has already established a foundati
 
 Beyond these capabilities that are already in place, you should plan on performing the following tasks: 
 
+***Ensure the all of the following responsibiities are action oriented, actionable tasks that security admins and the organization at large will find to be the bare minimum ongoing regular tasks for security administrators.***
+
+***Need to refactor the following bulleted list into the content following this list***
+
 * Responding to alerts from AWS Control Tower guardrails and other AWS platform monitoring services.
 * Onboarding and deprovisioning users and groups via AWS SSO.
 * Modifying access permissions via AWS SSO Permission Sets.
 * Performing periodic audits of your AWS security configuration.
     * Although some of the detective guardrails deployed through AWS Control Tower help continuously monitor and audit aspects of your AWS environment, it’s a best practice to periodically audit your security configuration to make sure that it meets your current business needs. See AWS [Security Audit Guidelines](https://docs.aws.amazon.com/general/latest/gr/aws-security-audit-guide.html) for best practices.
-
 
 ### 1. Review and Enable Foundational Security Services
 
@@ -92,6 +101,8 @@ At this stage without any workloads deployed, your CloudWatch data will be spars
 Finally, once you have deployed resources in your account, a good checklist to review for security best practices can be found in the [AWS Security Checklist (PDF)](https://d1.awsstatic.com/whitepapers/Security/AWS_Security_Checklist.pdf). Become familiar with the checklist items and periodically review your account against its guidelines.
 
 ## Cost Managers
+
+***Ensure the all of the following responsibiities are action oriented, actionable tasks that cost managers and the organization at large will find to be the bare minimum ongoing regular tasks for cost managers.***
 
 AWS Cost Management tools give you and your team visibility into AWS account costs and usage. Each account you create will have access to view their individual account costs and usage. The Master account can see the total organizational cost and usage rollup.
 
