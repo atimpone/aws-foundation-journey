@@ -94,7 +94,7 @@ Since you've already created users in AWS SSO for foundation team members, all y
 1. Access `Groups` in AWS SSO.
 2. Select `acme-foundation-dev`.
 3. Select `Add users`.
-4. Select the checkbox of each foundation team member.
+4. Select the checkbox for each foundation team member.
 5. Select `Add users`.
 
 The foundation team members now have access to the foundation team development AWS account.
