@@ -4,7 +4,7 @@ In this step your Security and Cloud Admins will onboard a limited set of initia
 
 This step should take about 60 minutes to complete.
 
-1. [Assemble Onboarding Documentation](#1-prepare-onboarding-documentation)
+1. [Assemble Onboarding Documentation](#1-assemble-onboarding-documentation)
 2. [Create Development Team Groups in AWS SSO](#2-create-development-team-groups-in-aws-sso)
 3. [Create Development Team Users in AWS SSO](#3-create-development-team-users-in-aws-sso)
 4. [Enable Foundation Team Members Access Their Development AWS Account](#4-enable-foundation-team-members-access-their-development-aws-account)
