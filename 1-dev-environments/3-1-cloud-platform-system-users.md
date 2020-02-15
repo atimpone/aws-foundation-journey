@@ -68,6 +68,6 @@ Once the human Cloud Administrators are granted access to the AWS accounts via t
 
 **AWS Accounts:** Each member AWS account created via AWS Control Tower's Account Factory.	
 
-**Username:** Email addresss associated with the AWS account.
+**Username:** Email address associated with the AWS account.
 
 **Permissions:** [AdministratorAccess](https://console.aws.amazon.com/iam/home#/policies/arn%3Aaws%3Aiam%3A%3Aaws%3Apolicy%2FAdministratorAccess)
