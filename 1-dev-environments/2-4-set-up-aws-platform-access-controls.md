@@ -4,14 +4,14 @@ In this step your Security and Cloud Administrators will decide on and implement
 
 This step should take about 45 minutes to complete.
 
-1. Temporarily Use AWS SSO Locally Managed Users and Groups
-2. Map Foundation Functional Roles to Existing AWS Groups
-3. Access AWS SSO Using Your AWS Control Tower Administrator User
-4. Add a Cost Management Group and Permissions in AWS SSO
-5. Enable Multi-Factor Authentication (MFA)
-6. Create AWS SSO Users for Foundation Team Users
-7. Onboard Your Foundation Team Members
-8. Stop Using the AWS Control Tower Administrative User
+1. [Temporarily Use AWS SSO Locally Managed Users and Groups](#1-temporarily-use-aws-sso-locally-managed-users-and-groups)
+2. [Map Foundation Functional Roles to Existing AWS Groups](#2-map-foundation-functional-roles-to-existing-aws-groups)
+3. [Access AWS SSO Using Your AWS Control Tower Administrator User](#3-access-aws-sso-using-your-aws-control-tower-administrator-user)
+4. [Add a Cost Management Group and Permissions in AWS SSO](#4-add-a-cost-management-group-and-permissions-in-aws-sso)
+5. [Enable Multi-Factor Authentication (MFA)](#5-enable-multi-factor-authentication-mfa)
+6. [Create AWS SSO Users for Foundation Team Users](#6-create-aws-sso-users-for-foundation-team-users)
+7. [Onboard Your Foundation Team Members](#7-onboard-your-foundation-team-members)
+8. [Stop Using the AWS Control Tower Administrative User](#8-stop-using-the-aws-control-tower-administrative-user)
 
 ## 1. Temporarily Use AWS SSO Locally Managed Users and Groups
 
