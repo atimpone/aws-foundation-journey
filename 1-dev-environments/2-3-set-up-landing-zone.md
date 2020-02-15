@@ -4,12 +4,12 @@ In this step your Cloud Administrators will use the AWS Control Tower service in
 
 This step should take about 90 minutes to complete.
 
-1. [Identify Your Preferred AWS Region]
-2. [Log In as Administrator IAM User]
-3. [Create Landing Zone Using AWS Control Tower]
-4. [Set AWS Account Root User Password and Enable MFA]
-5. [Enable MFA via AWS SSO for the Admin User Created via Control Tower]
-6. [Review AWS Control Tower Best Practices for Administrators]
+1. [Identify Your Preferred AWS Region](#1-identify-your-preferred-aws-region)
+2. [Log In as Administrator IAM User](#2-log-in-as-administrator-iam-user)
+3. [Create Landing Zone Using AWS Control Tower](#3-create-landing-zone-using-aws-control-tower)
+4. [Set AWS Account Root User Password and Enable MFA](#4-set-aws-account-root-user-password-and-enable-mfa)
+5. [Enable MFA via AWS SSO for the Admin User Created via Control Tower](#5-enable-mfa-via-aws-sso-for-the-admin-user-created-via-control-tower)
+6. [Review AWS Control Tower Best Practices for Administrators](#6-review-aws-control-tower-best-practices-for-administrators)
 
 ## 1. Identify Your Preferred AWS Region
 
