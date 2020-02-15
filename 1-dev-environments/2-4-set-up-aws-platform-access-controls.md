@@ -32,9 +32,7 @@ Although the AWS Identity and Access Management (AWS IAM) service supports manag
 
 ## 2. Map Foundation Functional Roles to Existing AWS Groups
 
-Earlier in this guide, you should have mapped your foundation team members to the [initial set of functional roles](2-1-map-people-to-foundation-roles.md) to be played in support of your AWS environment. The following table shows a mapping of those functional roles to a set of pre-defined AWS SSO groups and permissions.
-
-Feel free to review the [Control Tower User Guide](https://docs.aws.amazon.com/controltower/latest/userguide/controltower-ug.pdf) section "AWS SSO Groups for AWS Control Tower" for a full description of the permissions in the provided SSO Groups.
+Earlier in this guide you should have mapped your foundation team members to the [initial set of functional roles](2-1-map-people-to-foundation-roles.md) to be played in support of your AWS environment. The following table shows a mapping of those functional roles to a set of pre-defined AWS SSO groups and permissions that are provisioned by AWS Control Tower.
 
 |Foundation Functional Role|AWS SSO Groups|
 |---	|---	|
@@ -42,6 +40,14 @@ Feel free to review the [Control Tower User Guide](https://docs.aws.amazon.com/c
 |Security Administration|`AWSAuditAccountAdmins`<br>`AWSLogArchiveAdmins`<br>`AWSSecurityAuditPowerUsers`|
 |Cost Management|`acme-cost-mgmt` (to be added later in this section)|
 |Audit|`AWSSecurityAuditors`|
+
+---
+
+**Note: Learn more about AWS SSO groups provisioned by AWS Control Tower**
+
+Review the [Control Tower User Guide](https://docs.aws.amazon.com/controltower/latest/userguide/controltower-ug.pdf) section "AWS SSO Groups for AWS Control Tower" for a description of the permissions in the provided SSO Groups.
+
+---
 
 ---
 
