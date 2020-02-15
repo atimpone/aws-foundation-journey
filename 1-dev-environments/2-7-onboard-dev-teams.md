@@ -20,6 +20,8 @@ Key aspects to cover in the onboarding documentation include:
 
 ...
 
+***mention that an initial set of preventative and detective security guardrails are in place to avoid and recognize out of compliant resources...***
+
 ***highlight that their access permissions will likely be further constrained for their development AWS accounts over time to help reduce the risk to the overall organization...***
 
 ### How to Access their Team's Development AWS Account
