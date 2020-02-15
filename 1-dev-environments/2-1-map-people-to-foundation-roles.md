@@ -6,22 +6,13 @@ A later section of this guide helps you tie these functional roles to specific p
 
 This step should take about 30 minutes to complete subject to the proper stakeholders being involved in the discussion. 
 
-1. [Map People to Typical Starter Foundation Functional Roles]
-2. [Start With a Small Foundation Team]
-3. [Define Additional Foundation Functional Roles Over Time]
-4. [Use Separate Development Team Functional Roles]
 
-## 1. Map People to Typical Starter Foundation Functional Roles
-The following table lists a typical set of minimal functional roles to own and manage your initial iteration of your cloud foundation. You should be able to identify 1-2 people in your organization who will play these functional roles and have these responsibilities for at least this stage of your cloud adoption journey.
+1. [Start With a Small Foundation Team](#1-start-with-a-small-foundation-team)
+2. [Map People to Typical Starter Foundation Functional Roles](#2-map-people-to-typical-starter-foundation-functional-roles)
+3. [Define Additional Foundation Functional Roles Over Time](#3-define-additional-foundation-functional-roles-over-time)
+4. [Use Separate Development Team Functional Roles](#4-use-separate-development-team-functional-roles)
 
-|Foundation Functional Role	|Description	|Responsibilities	|
-|---	|---	|---	|
-|Cloud Administration|Write access to cloud foundation resources.	|<p>* Create and manage shared cloud infrastructure. For example, AWS accounts and shared networking resources.<br>* Onboard new development teams on usage of their cloud development environments.</p>|
-|Security Administration|Write access to cloud foundation security resources.	|<p>* Create and manage baseline security policies in AWS.<br>* Monitor and respond to AWS usage security events.<br>* Learn and promote cloud security best practices.</p>|
-|Cost Management|Write access to cost budgets and reporting.	|<p>* Monitor overall clound spend.<br>* Create, manage, and ensure access to cost and budget reports.<br>* Learn and apply fundamentals of cloud cost optimization practices.|
-|Audit|Read only access to all AWS resources.	|Periodically review data hosted in AWS for compliance.	|
-
-## 2. Start With a Small Foundation Team
+## 1. Start With a Small Foundation Team
 
 Typically, several capable infrastructure oriented engineers are identified to play the role of the initial set of cloud administrators. Playing this role effectively requires that it is treated as a full-time assignment.
 
@@ -30,6 +21,16 @@ In some cases, where the people resources can be made available and there’s a 
 Even in cases where roles are initially played by the same people, it’s recommended that you start with a separate set of functional roles so that, in the spirit of separation of duties, the access permissions are separated from the start and pave the way for an easier transition to a broader set of administrative teams as your adoption of the cloud expands.
 
 A common mistake made in this early stage of the journey is to assume that people playing certain functional roles in your existing on-premises environment must play a set of corresponding functional roles in the cloud.  Although eventually many of your infrastructure and security people may transition to functional roles in managing your use of cloud resources, to start, it’s a best practice to have a small number of closely knit technical people manage your initial adoption of the cloud.
+
+## 2. Map People to Typical Starter Foundation Functional Roles
+The following table lists a typical set of minimal functional roles to own and manage your initial iteration of your cloud foundation. You should be able to identify 1-2 people in your organization who will play these functional roles and have these responsibilities for at least this stage of your cloud adoption journey.
+
+|Foundation Functional Role	|Description	|Responsibilities	|
+|---	|---	|---	|
+|Cloud Administration|Write access to cloud foundation resources.	|<p>* Create and manage shared cloud infrastructure. For example, AWS accounts and shared networking resources.<br>* Onboard new development teams on usage of their cloud development environments.</p>|
+|Security Administration|Write access to cloud foundation security resources.	|<p>* Create and manage baseline security policies in AWS.<br>* Monitor and respond to AWS usage security events.<br>* Learn and promote cloud security best practices.</p>|
+|Cost Management|Write access to cost budgets and reporting.	|<p>* Monitor overall clound spend.<br>* Create, manage, and ensure access to cost and budget reports.<br>* Learn and apply fundamentals of cloud cost optimization practices.|
+|Audit|Read only access to all AWS resources.	|Periodically review data hosted in AWS for compliance.	|
 
 ## 3. Define Additional Foundation Functional Roles Over Time
 
