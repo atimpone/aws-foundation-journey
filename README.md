@@ -22,7 +22,7 @@ Based on years of experience in helping customers obtain business benefits of cl
 
 Organizations leveraging these guides are typically in the “Project” stage of adoption during which they are starting with a few projects to begin to understand how they can leverage the cloud to meet a business need.
 
-Once an enterprise has gained some benefit from the cloud by taking a few projects to production, an organization tends to move toward a "Foundation" phase in which the organization makes more extensive investments in its cloud foundation in support of scaling cloud adoption across the organization with the goal of gaining more extensive business benefits. 
+Once an enterprise has gained some benefit from the cloud by taking a few projects to production, an organization tends to move toward a "Foundation" stage in which the organization makes more extensive investments in its cloud foundation in support of scaling cloud adoption across the organization with the goal of gaining more extensive business benefits. 
 
 Even in the initial project phase of adoption, AWS recommends that an initial cloud foundation be established that can be extended over time as organizations transition into the foundation phase to prepare for larger scale cloud adotpion. These guides help organizatins establish the beginning of their foundation on AWS in support of their initial few projects.
 
