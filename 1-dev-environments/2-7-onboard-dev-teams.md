@@ -49,17 +49,25 @@ Create a new group in AWS SSO for each of the development teams and associate th
 5. Navigate to AWS SSO.
 6. Access `Groups` in AWS SSO.
 7. Select `Create group`.
-8. Provide a group name. For example `acme-team-a-dev`. Where you should replace `acme` with a common abbreviation for your organization. Use something like `acme-foundation-dev` for the foundation team group.
-9. Provide a description. For example, `Team A development` or `Foundation team development`.
+8. Provide a group name. For example, replacing `acme` with your organization's identifier:
+  * `acme-team-a-dev`
+  * `acme-foundation-dev`
+9. Provide a description. For example:
+  * `Team A development`
+  * `Foundation team development`
 10. Select `Create`.
 
 ### Associate Groups with Permissions and Development AWS Accounts
 
 1. Access `AWS accounts` in AWS SSO.
-2. Select the checkbox next to the development AWS account of interest. For example, `Team A - Dev` or `Foundation - Dev`.
+2. Select the checkbox next to the development AWS account of interest. For example:
+  * `Team A - Dev`
+  * `Foundation - Dev`
 3. Select `Assgn users`.
 4. Select `Groups`.
-5. Select the checkbox next to `acme-team-a-dev`, `acme-foundation-dev` or similar.
+5. Select the checkbox next to the group of interest. For example:
+  * `acme-team-a-dev`
+  * `acme-foundation-dev`
 6. Select `Next: Permission sets`.
 7. Select the checkbox next to `AWSPowerUserAccess`.
 8. Select `Finish`.
