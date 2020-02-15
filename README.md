@@ -26,13 +26,13 @@ Once an enterprise has gained some benefit from the cloud by taking a few projec
 
 Even in the initial project phase of adoption, AWS recommends that an initial cloud foundation be established that can be extended over time as organizations transition into the foundation phase to prepare for larger scale cloud adotpion. These guides help organizatins establish the beginning of their foundation on AWS in support of their initial few projects.
 
-## Initial Form of Cloud Foundation
+## Initial Stage of Cloud Foundation
 
-A key element of making the transition from the use of invididual user AWS accounts for early experiments to more formal initial work with the cloud is to ensure that your organization establishes a sufficiently secured and maintained initial form of your AWS cloud foundation.
+A key element of making the transition from the use of invididual user AWS accounts for early experiments to more formal initial work with the cloud is to ensure that your organization establishes a sufficiently secured and maintained initial stage of your AWS cloud foundation.
 
 In support of your first few formal projects, these guides start with getting an initial foundation and several development environments in place before they address how to extend your foundation to support deploying your first few workloads to test and production environments. 
 
-Later, when your organization has demonstrated success with the initial few projects, you will likely make a larger investment in your cloud foundation to support cloud adoption at scale.
+Later, when your organization has demonstrated success with the initial few projects, you will make a larger investment in your cloud foundation to support cloud adoption at scale.
 
 <img src="images/foundation.png" alt="Cloud Foundation" width="700"/>
 
