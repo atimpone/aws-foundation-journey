@@ -94,7 +94,7 @@ When each new development team AWS account is created, follow these steps to ini
 ### Initialize the New AWS SSO User for the AWS Account
 When a new AWS account has been created via the Account Factory, a user for the new AWS account is created in AWS SSO. As a best practice, you should initiatize the associated user's password and enable MFA. 
 
-1. Access the email inbox for the email address you associated with the AWS account when using Account Factory.
+1. Access the inbox for the email address you associated with the AWS account when using Account Factory.
 2. Within the email message "Invitation to join AWS Single Sign-On", select `Accept invitation`.
 3. Follow the process to set the initial password for this user.
 
