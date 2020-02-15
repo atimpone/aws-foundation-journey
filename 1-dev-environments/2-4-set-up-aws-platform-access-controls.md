@@ -7,8 +7,8 @@ This step should take about 45 minutes to complete.
 1. [Temporarily Use AWS SSO Locally Managed Users and Groups](#1-temporarily-use-aws-sso-locally-managed-users-and-groups)
 2. [Map Foundation Functional Roles to Existing AWS Groups](#2-map-foundation-functional-roles-to-existing-aws-groups)
 3. [Access AWS SSO Using Your AWS Control Tower Administrator User](#3-access-aws-sso-using-your-aws-control-tower-administrator-user)
-4. [Add a Cloud Admin Group and Permissions in AWS SSO](#4-add-a-cloud-admin-group-and-permissions-in-aws-sso)
-5. [Add a Cost Management Group and Permissions in AWS SSO](#5-add-a-cost-management-group-and-permissions-in-aws-sso)
+4. [Add a Cloud Admin Group in AWS SSO](#4-add-a-cloud-admin-group-in-aws-sso)
+5. [Add a Cost Management Group and Assign Permissions in AWS SSO](#5-add-a-cost-management-group-and-assign-permissions-in-aws-sso)
 6. [Enable Multi-Factor Authentication (MFA)](#6-enable-multi-factor-authentication-mfa)
 7. [Create AWS SSO Users for Foundation Team Users](#7-create-aws-sso-users-for-foundation-team-users)
 8. [Onboard Your Foundation Team Members](#8-onboard-your-foundation-team-members)
@@ -78,9 +78,9 @@ If you encounter a permissions error when attempting to access AWS SSO via the A
 
 ---
 
-## 4. Add a Cloud Admin Group and Permissions in AWS SSO
+## 4. Add a Cloud Admin Group in AWS SSO
 
-In order to fill the gap of a dedicated AWS SSO group for your Cloud Administrator team members, you'll add a new group in AWS SSO. In a subsequent step, you'll add Cloud Administrator team members to the new group. 
+In order to fill a gap of a dedicated AWS SSO group for your Cloud Administrator team members, you'll need to add a new group in AWS SSO. In a subsequent step, you'll add Cloud Administrator team members to the new group. 
 
 Later on, after the initial set of development team AWS account are created, you will assign this group and a permission set to each of those new accounts so that the Cloud Administrators can gain sufficient access to manage those accounts. 
 
@@ -99,9 +99,9 @@ Later on, after the initial set of development team AWS account are created, you
 
 ---
 
-## 5. Add a Cost Management Group and Permissions in AWS SSO
+## 5. Add a Cost Management Group and Assign Permissions in AWS SSO
 
-In order to fill the gap of a dedicated AWS SSO group for your cost management team members, you'll add a new group in AWS SSO and associate the necessary permissions with that group. In a subsequent step, you'll add cost management team members to the new group. 
+In order to fill a gap of a dedicated AWS SSO group for your cost management team members, you need to add a new group in AWS SSO and associate the necessary permissions with that group. In a subsequent step, you'll add cost management team members to the new group. 
 
 In the spirit of least privilege access, the resulting permissions will enable cost management team members to access only your master AWS account and only the cost management and billing resources and data accessible within that AWS account.
 
