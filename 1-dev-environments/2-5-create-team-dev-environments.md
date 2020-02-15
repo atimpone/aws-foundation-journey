@@ -89,7 +89,7 @@ Configuration settings of the AWS accounts you provision via Account Factory sho
 
 ## 4. Initialize the New AWS Account System Users
 
-When each new development team AWS account is created, follow these steps to initialize the AWS accounts-specific AWS SSO user and root user to align with security best practices.
+When each new development team AWS account is created, follow these steps to initialize the AWS account's AWS SSO user and root user to align with security best practices.
 
 ### Initialize the New AWS SSO User for the AWS Account
 When a new AWS account has been created via the Account Factory, a user for the new AWS account is created in AWS SSO. As a best practice, you should initiatize the associated user's password and enable MFA. 
