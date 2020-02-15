@@ -36,21 +36,14 @@ Earlier in this guide you should have mapped your foundation team members to the
 
 |Foundation Functional Role|AWS SSO Groups|Effective Permissions|
 |---	|---	|--- |
-|Cloud Administration|`AWSControlTowerAdmins`|Administrator access in the master, log archive, and audit accounts.|
+|Cloud Administration|`AWSControlTowerAdmins`|[Administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) access in the master, log archive, and audit accounts.|
 | |`AWSAccountFactory`|Abilty to use the Account Factory product via AWS Service Catalog.|
-|Security Administration|`AWSAuditAccountAdmins`|Administrator access in the audit account.|
-| |`AWSLogArchiveAdmins`|Administrator access in the log archive account.|
+| |TBD - this is a gap in the pre-defined AWS SSO groups|[Administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) access across all other AWS accounts.
+|Security Administration|`AWSAuditAccountAdmins`|[Administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) access in the audit account.|
+| |`AWSLogArchiveAdmins`|[Administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) access in the log archive account.|
 | |`AWSSecurityAuditPowerUsers`|[Developer power user](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_developer-power-user) access across all accounts.|
-|Cost Management|`acme-cost-mgmt` (to be added later in this section)|Access to billing and cost management configurations in the master account.|
+|Cost Management|`acme-cost-mgmt` (to be added later in this section)|Access to [billing and cost management](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_accounts-payable) in the master account.|
 |Audit|`AWSSecurityAuditors`|Read only access in all accounts.|
-
----
-
-**Note: Learn more about AWS SSO groups provisioned by AWS Control Tower**
-
-Review the [Control Tower User Guide](https://docs.aws.amazon.com/controltower/latest/userguide/controltower-ug.pdf) section "AWS SSO Groups for AWS Control Tower" for a description of the permissions in the provided SSO Groups.
-
----
 
 ---
 
