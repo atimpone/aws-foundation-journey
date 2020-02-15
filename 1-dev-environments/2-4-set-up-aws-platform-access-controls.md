@@ -55,7 +55,7 @@ The initial mapping of functional roles to groups in AWS SSO and the underlying 
 
 You'll need to use the AWS SSO service to add a new group for cost management and create users for each foundation team members.
 
-Since you have not yet created users in AWS SSO for each member of your foundation team, your Security or Cloud Administrator team members will need to use the AWS Control Tower Administrative User to start adding AWS SSO users for each foundation team member.  Ensure that you have the email address and login credentials for this use before continuing.
+Since you have not yet created users in AWS SSO for each member of your foundation team, your Security or Cloud Administrator team members will need to use the AWS Control Tower Administrative User to start adding AWS SSO users for each foundation team member.  Ensure that you have the email address and login credentials for this user before continuing.
 
 Access the AWS SSO service:
 
