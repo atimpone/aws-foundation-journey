@@ -4,7 +4,7 @@ The following diagram represents a typical team development environment as a dis
 
 Since your specific requirements may include some of the optional [Fast Follow-On Requirements](../2-fast-follow-on/1-1-requirements.md), aspects of your initial solution may be different than shown in this diagram.
 
-<img src="../images/dev-initial.png" alt="Initial Development Environment" width="800"/>
+![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-initial.png "Initial Development Environment")
 
 Key aspects of the initial, minimal solution include:
 
