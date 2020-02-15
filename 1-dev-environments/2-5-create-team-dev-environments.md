@@ -161,27 +161,6 @@ Since you've already created users in AWS SSO for foundation team members, all y
 
 The foundation team members now have access to the foundation team development AWS account.
 
-### Create Development Team Users
-
-***Chris left off reviewing/testing/editing here...***
-
-1. **Login to the AWS Master Account**
-2. **Create Users in AWS SSO that require access to the Development account
-    **[**How to add a user in AWS SSO**](https://docs.aws.amazon.com/singlesignon/latest/userguide/addusers.html)
-3. **Create the following AWS SSO Groups for Development use
-    **[**How to add AWS SSO Groups**](https://docs.aws.amazon.com/singlesignon/latest/userguide/addgroups.html)** **
-    1. ACMETeamADevGroup
-        1. AWSPowerUsers
-    2. ACMEFoundationsDevGroup
-        1. AWSPowerUsers
-4. **Add Groups to the AWS Development Account**
-5. **Add Permission Sets to each group**
-6. **Add users to the group with the required permission sets**
-
-Finally, you can inform newly added users that they should configure MFA for their user accounts and provide instructions on how to do so via the AWS SSO User Portal.
-
-[AWS SSO - Enable Multi-Factor Authentication](https://docs.aws.amazon.com/singlesignon/latest/userguide/enable-mfa.html)
-
 ## Next Steps
 
 [6. Establish Initial AWS Platform Monitoring Practices](2-6-initial-aws-platform-monitoring.md)
