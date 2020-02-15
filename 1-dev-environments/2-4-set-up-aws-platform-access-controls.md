@@ -47,7 +47,7 @@ To Do: Provide a link to where the customer can learn more about the permissions
 
 **Note: Your AWS platform access permissions will evolve**
 
-The initial mapping of functional roles to groups in AWS SSO and the underlying permissions associated with those groups shown in the following table is only a simple starting point for your AWS platform access permissions for foundation team members. As you progress on your journey, you will evolve these groups and underlying permissions to meet your needs.
+The initial mapping of functional roles to groups in AWS SSO and the underlying permissions associated with those groups shown in the table above is only a simple starting point for your AWS platform access permissions for foundation team members. As you progress on your journey, you will evolve these groups and underlying permissions to meet your needs.
 
 ---
 
