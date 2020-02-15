@@ -34,7 +34,7 @@ Although the AWS Identity and Access Management (AWS IAM) service supports manag
 
 Earlier in this guide you should have mapped your foundation team members to the [initial set of functional roles](2-1-map-people-to-foundation-roles.md) to be played in support of your AWS environment. 
 
-The following table shows a mapping of those functional roles to a set of AWS SSO groups and permissions. Although AWS Control Tower automaitcally provised many of the AWS SSO groups, several of the groups in the table are not pre-defined. You will create these custom groups later in this section.
+The following table represents a mapping of those functional roles to a set of AWS SSO groups and permissions. Although AWS Control Tower automaitcally provisioned most of the AWS SSO groups, several of the groups in the table are not pre-defined. You will create these custom groups later in this section.
 
 |Foundation Functional Role|AWS SSO Groups|Effective Permissions|
 |---	|---	|--- |
