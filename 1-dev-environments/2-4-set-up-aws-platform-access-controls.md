@@ -185,4 +185,4 @@ Since you've onboarded foundation team members with the appropriate permissions,
 
 ## Next Steps
 
-[5. Determine Networking Approach](2-5-determine-networking-approach.md)
+[5. Determine Initial Networking Approach](2-5-determine-networking-approach.md)
