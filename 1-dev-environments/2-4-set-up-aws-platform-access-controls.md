@@ -32,17 +32,19 @@ Although the AWS Identity and Access Management (AWS IAM) service supports manag
 
 ## 2. Map Foundation Functional Roles to Existing AWS Groups
 
-Earlier in this guide you should have mapped your foundation team members to the [initial set of functional roles](2-1-map-people-to-foundation-roles.md) to be played in support of your AWS environment. The following table shows a mapping of those functional roles to a set of pre-defined AWS SSO groups and permissions that are provisioned by AWS Control Tower.
+Earlier in this guide you should have mapped your foundation team members to the [initial set of functional roles](2-1-map-people-to-foundation-roles.md) to be played in support of your AWS environment. 
+
+The following table shows a mapping of those functional roles to a set of AWS SSO groups and permissions. Although AWS Control Tower automaitcally provised many of the AWS SSO groups, several of the groups in the table are not pre-defined. You will create these custom groups later in this section.
 
 |Foundation Functional Role|AWS SSO Groups|Effective Permissions|
 |---	|---	|--- |
 |Cloud Administration|`AWSControlTowerAdmins`|[Administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) access in the master, log archive, and audit accounts.|
 | |`AWSAccountFactory`|Abilty to use the Account Factory product via AWS Service Catalog.|
-| |TBD - this is a gap in the pre-defined AWS SSO groups|[Administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) access across all other AWS accounts.
+| |`acme-cloud-admin`|[Administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) access across all other AWS accounts.
 |Security Administration|`AWSAuditAccountAdmins`|[Administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) access in the audit account.|
 | |`AWSLogArchiveAdmins`|[Administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) access in the log archive account.|
 | |`AWSSecurityAuditPowerUsers`|[Developer power user](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_developer-power-user) access across all accounts.|
-|Cost Management|`acme-cost-mgmt` (to be added later in this section)|Access to [billing and cost management](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_accounts-payable) in the master account.|
+|Cost Management|`acme-cost-mgmt`|[Billing and cost management](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_accounts-payable) access in the master account.|
 |Audit|`AWSSecurityAuditors`|Read only access in all accounts.|
 
 ---
