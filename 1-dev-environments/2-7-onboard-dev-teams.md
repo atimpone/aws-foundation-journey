@@ -93,7 +93,7 @@ The foundation team members now have access to the foundation team development A
 
 ## 5. Brief Development Team Members
 
-***...highlight the need to communicate the onboarding information to development team members...
+***...highlight the need to communicate the onboarding information to development team members...***
 
 ## Next Steps
 
