@@ -16,7 +16,7 @@ Beyond filing issues, we welcome your bug fixes and enhacenments.
 
 ## Working with draw.io Files
 
-The `.png` images used in this repository are created in the following manner:
+The `.png` drawings used in this repository are created in the following manner:
 
 1. Open the `.drawio` file of interest using either the free online version or your internal instance the draw.io.
 1. Select the tab of interst.
