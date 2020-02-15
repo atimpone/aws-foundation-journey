@@ -27,7 +27,7 @@ Initially, you will likely need at least two AWS accounts for the following team
 
 ## 2. Create the Development Organizational Unit
 
-Moving forward, your company will likely want to apply particular policies or guardrails that apply to all AWS development accounts within your enterprise.  To enable you to easily target such policies across all development AWS accounts, it's recommended that you create a new Organizational Unit (OU) to represent development AWS accounts.
+Moving forward, your company will likely want to apply particular policies or guardrails to all AWS development accounts within your enterprise.  To enable you to easily target such policies across all development AWS accounts, it's recommended that you create a new Organizational Unit (OU) to represent development AWS accounts.
 
 1. As a cloud administrator, use your personal user to log into AWS SSO.
 2. Select the AWS master account.
