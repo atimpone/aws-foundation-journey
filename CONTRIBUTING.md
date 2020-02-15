@@ -4,7 +4,7 @@
 
 File issues in the GitHub repository when you either encounter bugs in the documentation or have suggestions for enhancements.  The maintainers will review issues periodically, tag them as either bug reports or enhancements, and provide comments.
 
-## Fix Bugs and Making Enhancements
+## Fixing Bugs and Making Enhancements
 
 Beyond filing issues, we welcome your bug fixes and enhacenments.
 
