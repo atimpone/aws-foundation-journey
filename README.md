@@ -28,7 +28,7 @@ Even in the initial project phase of adoption, AWS recommends that an initial cl
 
 ## Initial Stage of Cloud Foundation
 
-A key element of making the transition from the use of invididual user AWS accounts for early experiments to more formal initial work with the cloud is to ensure that your organization establishes a sufficiently secured and maintained initial stage of your AWS cloud foundation.
+A key element of making the transition from the use of personal AWS accounts for early experiments to more formal work with the cloud is to ensure that your organization establishes a sufficiently secured and maintained initial stage of your AWS cloud foundation.
 
 In support of your first few formal projects, these guides start with getting an initial foundation and several development environments in place before they address how to extend your foundation to support deploying your first few workloads to test and production environments. 
 
