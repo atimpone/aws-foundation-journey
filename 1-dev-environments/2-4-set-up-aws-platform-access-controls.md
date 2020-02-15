@@ -117,7 +117,7 @@ Now that you've created a permission set, you need to associate the permission s
 
 1. Access `AWS accounts` in AWS SSO.
 2. Select the checkbox next to your master AWS account.
-3. Select `Assgn users`.
+3. Select `Assign users`.
 4. Select `Groups`.
 5. Select the checkbox next to `acme-cost-mgmt` or similar.
 6. Select `Next: Permission sets`.
