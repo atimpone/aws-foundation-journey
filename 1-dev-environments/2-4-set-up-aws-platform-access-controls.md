@@ -26,7 +26,7 @@ If your organization requires integration of your existing identity management s
 
 **Note: What about AWS IAM users and groups?**
 
-Although the AWS Identity and Access Management (AWS IAM) service supports management of locally defined users and groups, it’s generally not recommended that customers depend on this capability to help manage human user access to the AWS platform. Instead, AWS recommends organizations integrate use of their preferred enterprise identity management system.
+Although the AWS Identity and Access Management (AWS IAM) service supports management of locally defined users and groups, it’s generally not recommended that customers depend on this capability to help manage human user access to the AWS platform _at scale_. Instead, AWS recommends organizations integrate use of their preferred enterprise identity management system.
 
 ---
 
@@ -34,7 +34,7 @@ Although the AWS Identity and Access Management (AWS IAM) service supports manag
 
 Earlier in this guide, you should have mapped your foundation team members to the [initial set of functional roles](2-1-map-people-to-foundation-roles.md) to be played in support of your AWS environment. The following table shows a mapping of those functional roles to a set of pre-defined AWS SSO groups and permissions.
 
-To Do: Provide a link to where the customer can learn more about the permissions provided with each AWS SSO group.
+Feel free to review the [Control Tower User Guide](https://docs.aws.amazon.com/controltower/latest/userguide/controltower-ug.pdf) section "AWS SSO Groups for AWS Control Tower" for a full description of the permissions in the provided SSO Groups.
 
 |Foundation Functional Role|AWS SSO Groups|
 |---	|---	|
