@@ -20,6 +20,8 @@ Key aspects to cover in the onboarding documentation include:
 
 ...
 
+***highlight that their access permissions will likely be further constrained for their development AWS accounts over time to help reduce the risk to the overall organization...***
+
 ### How to Access their Team's Development AWS Account
 
 ...
@@ -31,6 +33,10 @@ Key aspects to cover in the onboarding documentation include:
 #### Access Via AWS CLI, AWS SDKs, and AWS APIs
 
 ...
+
+### Overview of the Initial Networking Environment
+
+***...highlight that the initial development environment network environments will likely be supplanted over time as on-premises integration and the need to use non-overlapping IP address ranges and other enhancements emerge...*** 
 
 ### How to Monitor Costs Incurred Via Their Development AWS Account
 
