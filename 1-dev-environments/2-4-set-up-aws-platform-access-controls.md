@@ -34,12 +34,15 @@ Although the AWS Identity and Access Management (AWS IAM) service supports manag
 
 Earlier in this guide you should have mapped your foundation team members to the [initial set of functional roles](2-1-map-people-to-foundation-roles.md) to be played in support of your AWS environment. The following table shows a mapping of those functional roles to a set of pre-defined AWS SSO groups and permissions that are provisioned by AWS Control Tower.
 
-|Foundation Functional Role|AWS SSO Groups|
-|---	|---	|
-|Cloud Administration|`AWSControlTowerAdmins`<br>`AWSAccountFactory`|
-|Security Administration|`AWSAuditAccountAdmins`<br>`AWSLogArchiveAdmins`<br>`AWSSecurityAuditPowerUsers`|
-|Cost Management|`acme-cost-mgmt` (to be added later in this section)|
-|Audit|`AWSSecurityAuditors`|
+|Foundation Functional Role|AWS SSO Groups|Effective Permissions|
+|---	|---	|--- |
+|Cloud Administration|`AWSControlTowerAdmins`|Administrator access in the master, log archive, and audit accounts.|
+| |`AWSAccountFactory`|Abilty to use the Account Factory product via AWS Service Catalog.|
+|Security Administration|`AWSAuditAccountAdmins`|Administrator access in the audit account.|
+| |`AWSLogArchiveAdmins`|Administrator access in the log archive account.|
+| |`AWSSecurityAuditPowerUsers`|[Developer power user](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_developer-power-user) access across all accounts.|
+|Cost Management|`acme-cost-mgmt` (to be added later in this section)|Access to billing and cost management configurations in the master account.|
+|Audit|`AWSSecurityAuditors`|Read only access in all accounts.|
 
 ---
 
