@@ -4,14 +4,14 @@ In this step your Cloud Administrators will use the standard AWS new account cre
 
 This step should take about 20 minutes.
 
-1. Review the Benefits of Using Multiple AWS Accounts
-2. Start With a New Master AWS Account
-3. Prepare Email Distribution Lists for New AWS Accounts
-4. Create a New AWS Master Account
-5. Receive Confirmation Email
-6. Secure Your AWS Account Root User
-7. Create an IAM user for Administrative Bootstrap Purposes
-8. Set Alternate Contacts
+1. [Review the Benefits of Using Multiple AWS Accounts](#1-review-the-benefits-of-using-multiple-aws-accounts)
+2. [Start With a New Master AWS Account](#2-start-with-a-new-master-aws-account)
+3. [Prepare Email Distribution Lists for New AWS Accounts](#3-prepare-email-distribution-lists-for-new-aws-accounts)
+4. [Create a New AWS Master Account](#4-create-a-new-aws-master-account)
+5. [Receive Confirmation Email](#5-receive-confirmation-email)
+6. [Secure Your AWS Account Root User](#6-secure-your-aws-account-root-user)
+7. [Create an IAM user for Administrative Bootstrap Purposes](#7-create-an-iam-user-for-administrative-bootstrap-purposes)
+8. [Set Alternate Contacts](#8-set-alternate-contacts)
 
 ## 1. Review the Benefits of Using Multiple AWS Accounts
 
