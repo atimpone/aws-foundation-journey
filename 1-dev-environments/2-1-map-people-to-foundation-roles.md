@@ -4,7 +4,7 @@ In this step you will identify the people who will play an initial set of functi
 
 A later section of this guide helps you tie these functional roles to specific permissions on the AWS platform.
 
-This step should take about 30 minutes to complete subject to the proper stakeholders being involved in the meeting. 
+This step should take about 30 minutes to complete subject to the proper stakeholders being involved in the discussion. 
 
 ## Typical Starter Foundation Functional Roles
 The following table lists a typical set of minimal functional roles to own and manage your initial iteration of your cloud foundation. You should be able to identify 1-2 people in your organization who will play these functional roles and have these responsibilities for at least this stage of your cloud adoption journey.
