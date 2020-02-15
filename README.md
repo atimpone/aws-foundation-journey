@@ -20,7 +20,7 @@ Based on years of experience in helping customers obtain business benefits of cl
 
 <img src="images/cloud-adoption-framework.png" alt="Cloud Adoption Framework" width="400"/>
 
-Organizations leveraging these guides are typically in the “Project” phase of adoption during which they are starting with a few projects to begin to understand how they can leverage the cloud to meet a business need.
+Organizations leveraging these guides are typically in the “Project” stage of adoption during which they are starting with a few projects to begin to understand how they can leverage the cloud to meet a business need.
 
 Once an enterprise has gained some benefit from the cloud by taking a few projects to production, an organization tends to move toward a "Foundation" phase in which the organization makes more extensive investments in its cloud foundation in support of scaling cloud adoption across the organization with the goal of gaining more extensive business benefits. 
 
