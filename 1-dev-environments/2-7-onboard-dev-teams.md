@@ -7,7 +7,7 @@ This step should take about 60 minutes to complete.
 1. [Assemble Onboarding Documentation](#1-prepare-onboarding-documentation)
 2. [Create Development Team Groups in AWS SSO](#2-create-development-team-groups-in-aws-sso)
 3. [Create Development Team Users in AWS SSO](#3-create-development-team-users-in-aws-sso)
-4. [Enable Foundation Team Members Access Their Development AWS Account]
+4. [Enable Foundation Team Members Access Their Development AWS Account](#4-enable-foundation-team-members-access-their-development-aws-account)
 5. [Brief Development Team Members](#5-brief-development-team-members)
 
 ## 1. Assemble Onboarding Documentation
@@ -77,6 +77,7 @@ As a getting started step, this guide suggests using one of the pre-defined, AWS
 
 Now that you've established the two development oriented groups in AWS SSO and wired these groups to a set of permissions and AWS accounts, your next step is to create a user in AWS SSO for each development team member.
 
+***...add instructions...refer to earlier section where they already added the foundation team users...***
 
 ## 4. Enable Foundation Team Members Access Their Development AWS Account
 
@@ -92,7 +93,7 @@ The foundation team members now have access to the foundation team development A
 
 ## 5. Brief Development Team Members
 
-
+***...highlight the need to communicate the onboarding information to development team members...
 
 ## Next Steps
 
