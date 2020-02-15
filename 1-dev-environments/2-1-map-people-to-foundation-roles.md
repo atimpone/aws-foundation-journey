@@ -6,7 +6,12 @@ A later section of this guide helps you tie these functional roles to specific p
 
 This step should take about 30 minutes to complete subject to the proper stakeholders being involved in the discussion. 
 
-## Typical Starter Foundation Functional Roles
+1. [Map People to Typical Starter Foundation Functional Roles]
+2. [Start With a Small Foundation Team]
+3. [Define Additional Foundation Functional Roles Over Time]
+4. [Use Separate Development Team Functional Roles]
+
+## 1. Map People to Typical Starter Foundation Functional Roles
 The following table lists a typical set of minimal functional roles to own and manage your initial iteration of your cloud foundation. You should be able to identify 1-2 people in your organization who will play these functional roles and have these responsibilities for at least this stage of your cloud adoption journey.
 
 |Foundation Functional Role	|Description	|Responsibilities	|
@@ -16,7 +21,7 @@ The following table lists a typical set of minimal functional roles to own and m
 |Cost Management|Write access to cost budgets and reporting.	|<p>* Monitor overall clound spend.<br>* Create, manage, and ensure access to cost and budget reports.<br>* Learn and apply fundamentals of cloud cost optimization practices.|
 |Audit|Read only access to all AWS resources.	|Periodically review data hosted in AWS for compliance.	|
 
-## Start With a Small Foundation Team
+## 2. Start With a Small Foundation Team
 
 Typically, several capable infrastructure oriented engineers are identified to play the role of the initial set of cloud administrators. Playing this role effectively requires that it is treated as a full-time assignment.
 
@@ -26,7 +31,7 @@ Even in cases where roles are initially played by the same people, it’s recomm
 
 A common mistake made in this early stage of the journey is to assume that people playing certain functional roles in your existing on-premises environment must play a set of corresponding functional roles in the cloud.  Although eventually many of your infrastructure and security people may transition to functional roles in managing your use of cloud resources, to start, it’s a best practice to have a small number of closely knit technical people manage your initial adoption of the cloud.
 
-## Define Additional Foundation Functional Roles Over Time
+## 3. Define Additional Foundation Functional Roles Over Time
 
 When adoption of the cloud expands and the foundation becomes more capable and complicated, you may chose to introduce additional foundation functional roles to spread the ownership and work of managing the foundation across more teams. 
 
@@ -34,7 +39,7 @@ For example, a Network Administration functional role played by Network Engineer
 
 Another common example is for your Security Incident Response team to become more directly involved in the cloud and have a corresponding Incident Response functional role with appropriate access permissions.
 
-## Development Team Functional Roles
+## 4. Use Separate Development Team Functional Roles
 
 In addition to the foundation functional roles listed above, a later section in this guide will help you represent development oriented functional roles to be used by teams that need to experiment, develop, and test early forms of business applications, data services, and/or foundation capabilities.
 
