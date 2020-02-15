@@ -1,4 +1,4 @@
-# 3. Set Up an Initial Landing Zone via AWS Control Tower
+# 3. Set Up an Initial Landing Zone Using AWS Control Tower
 
 In this step your Cloud Administrators will use the AWS Control Tower service in your new AWS master account to establish an initial “landing zone” or a foundation of security guardrails and other resources that will help your organization manage use of the AWS platform. You can learn more by reviewing [AWS Control Tower Features](https://aws.amazon.com/controltower/features/).
 
@@ -72,50 +72,5 @@ For example:
 * **Managing Organizational Units (OUs)** - AWS Control Tower currently supports only a single level of AWS Organizations Organizational Units (OUs) and creation of OUs to be used with AWS accounts managed by AWS Control Tower must be performed via AWS Control Tower and not via AWS Organizations.
 * **Modification of AWS Account Root User Email Addresses** - AWS Control Tower does not currently support self-service modification of the email addresses associated with the root user of each AWS account.  You currently need to contact AWS Support to have these email addresses changed.
 
-## 7. Determine Initial Approach to Virtual Private Cloud (VPC) Configuration
-
-As part of the landing zone established by AWS Control Tower, an “AWS Control Tower Account Factory” product is deployed to AWS Service Catalog in your master account. In a later step in this guide, your Cloud Administrators will use this product to easily create a new AWS member account for each development team. The Account Factory has the ability to provision a basic AWS Virtual Private Cloud (VPC) when it creates a new AWS account.
-
- At this stage, your Cloud Administrators should make a decision as to whether:
-
-1. An initial set of AWS Virtual Private Cloud (VPC) networks will be created via the Account Factory when each development account is created or 
-2. Your Cloud Administrators will create a VPC after each account is created.
-
- If in this early stage of your cloud adoption you simply need to get basic VPCs deployed with each development account and you aren’t yet ready to connect those networks to on-premises networks and/or to other AWS VPCs, then you can take advantage of the built-in VPC creation of Account Factory and replace these initial VPCs that are compatible with these future requirements at a later time.
-
- As your networking requirements evolve, you will likely end up replacing the initial VPC you provision for each development account with VPCs that are built using infrastructure as code tools such as AWS CloudFormation and Hashicorp’s Terraform. 
-
- Key considerations when using the VPC creation feature of Account Factory:
-
-* One set of VPC specifications will be used for all accounts. This means that your initial set of VPCs will have overlapping IP address (CIDR) ranges that make inter-VPC and VPC to on-premises network connectivity difficult.
-* Limited flexibility in terms of the VPC subnet topology including the number and role of subnets.
-
-**Not Using Account Factory to Create VPCs**
- If you want more direct control of your VPCs, you can configure the Account Factory to exclude creation of a VPC when creating a new AWS account. See [Configuring AWS Control Tower Without a VPC](https://docs.aws.amazon.com/controltower/latest/userguide/configure-without-vpc.html) for details on disabling automatic creation of VPCs.
-
- To do: Provide pointer to example CloudFormation template and docs.
-
-**Using Account Factory to Create Initial Temporary VPCs**
- If you choose to use the Account Factory’s built-in support for creating basic VPCs, see the section “Configuring Account Factory with Amazon Virtual Private Cloud Settings” in the [AWS Control Tower Account Factory](https://docs.aws.amazon.com/controltower/latest/userguide/account-factory.html) documentation for setting up the parameters for your initial set of VPCs. 
-
- To review and modify the VPC settings used by the Account Factory, in the AWS Management Console access AWS Control Tower → Account factory.
-
-<img src="../images/control-tower-account-factory-network-settings.png" alt="AWS Control Tower Account Factory Network Settings" width="400"/>
-
-**Internet-accessible subnet**
- Assuming that your development teams’ AWS accounts need access to resources on the Internet, you would enable the “Internet-accessible subnet” option.
-
-**Maximum number of private subnets**
- To enable your developers to develop and testing using multiple AWS Availability Zones (AZs), you should select “2” for the “Maximum number of private subnets”.
-
-**Address range**
- If you don’t expect that your initial VPCs will need to have connectivity with your on-premises networks, you can select any valid network. See [VPC and Subnet Sizing for IPv4](https://docs.aws.amazon.com/vpc/latest/userguide//VPC_Subnets.html#vpc-sizing-ipv4) in the Amazon Virtual Private Cloud documentation for recommendations on IP address ranges and sizes. 
-
- Note that the VPC created in each development team AWS account will be assigned the same IP address range. This overlap might be acceptable to you in the early stages of your use of AWS, but will likely become a barrier as your foundation needs expand.
-
-**Regions for VPC creation**
- Select only the single AWS region in which your organization expects to do most of its initial work. You’ll likely want to choose the same AWS region as you selected for the AWS Control Tower home region.
- 
  ## Next Steps
- 
 [4. Set Up Initial AWS Platform Access Controls](2-4-set-up-aws-platform-access-controls.md)

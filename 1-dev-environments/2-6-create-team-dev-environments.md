@@ -1,4 +1,4 @@
-# 5. Create the Initial Team Development Environments
+# 6. Create the Initial Team Development Environments
 
 In this step your Cloud Administrators will create several new team development AWS accounts via AWS Control Tower's Account Factory.
 
@@ -8,8 +8,6 @@ This step should take about 30 minutes to complete.
 2. [Create the Development Organizational Unit](#2-create-the-development-organizational-unit)
 3. [Create Development Team AWS Accounts](#3-create-development-team-aws-accounts)
 4. [Initialize the New AWS Account System Users](#4-initialize-the-new-aws-account-system-users)
-5. [Create Development Team Groups in AWS SSO](#5-create-development-team-groups-in-aws-sso)
-6. [Create Development Team Users in AWS SSO](#6-create-development-team-users-in-aws-sso)
 
 ## 1. Use at Least Two Development AWS Accounts from the Start
 
@@ -108,59 +106,6 @@ See [Log In as Root User](https://docs.aws.amazon.com/controltower/latest/usergu
 
 See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user_manage_mfa) for instructions to enable MFA.
 
-## 5. Create Development Team Groups in AWS SSO
-
-Create a new group in AWS SSO for each of the development teams and associate those groups with an initial set of permissions and their respective development AWS accounts.
-
-### Create Development Team Groups in AWS SSO
-
-1. As a cloud administrator, use your personal user to log into AWS SSO.
-2. Select the AWS master account.
-3. Select `Management console` associated with the `AWSAdministratorAccess` role.
-4. Select the appropriate AWS region.
-5. Navigate to AWS SSO.
-6. Access `Groups` in AWS SSO.
-7. Select `Create group`.
-8. Provide a group name. For example `acme-team-a-dev`. Where you should replace `acme` with a common abbreviation for your organization. Use something like `acme-foundation-dev` for the foundation team group.
-9. Provide a description. For example, `Team A development` or `Foundation team development`.
-10. Select `Create`.
-
-### Associate Groups with Permissions and Development AWS Accounts
-
-1. Access `AWS accounts` in AWS SSO.
-2. Select the checkbox next to the development AWS account of interest. For example, `Team A - Dev` or `Foundation - Dev`.
-3. Select `Assgn users`.
-4. Select `Groups`.
-5. Select the checkbox next to `acme-team-a-dev`, `acme-foundation-dev` or similar.
-6. Select `Next: Permission sets`.
-7. Select the checkbox next to `AWSPowerUserAccess`.
-8. Select `Finish`.
-
-Repeat the process above to create a group for your foundation team and enable this group to access their development AWS account.
-
----
-**Note: `AWSPowerUserAccess` permissions**
-
-As a getting started step, this guide suggests using one of the pre-defined, AWS-managed permission sets for your development team users and their access to their development AWS accounts. However, you will likely define your own custom set of permissions in AWS IAM to meet your business and security needs and supplant the initial permission set.
-
----
-
-## 6. Create Development Team Users in AWS SSO
-
-Now that you've established the two development oriented groups in AWS SSO and wired these groups to a set of permissions and AWS accounts, your next step is to create a user in AWS SSO for each development team member.
-
-### Add Foundation Team Members to the Foundation Team Group
-
-Since you've already created users in AWS SSO for foundation team members, all you need to do to enable those team members to access their development AWS account is to add the foundation team member users to the newly created group in AWS SSO.
-
-1. Access `Groups` in AWS SSO.
-2. Select `acme-foundation-dev`.
-3. Select `Add users`.
-4. Select the checkbox of each foundation team member.
-5. Select `Add users`.
-
-The foundation team members now have access to the foundation team development AWS account.
-
 ## Next Steps
 
-[6. Establish Initial AWS Platform Monitoring Practices](2-6-initial-aws-platform-monitoring.md)
+[7. Onboarding Your Initial Development Teams](2-7-onboard-dev-teams.md)
