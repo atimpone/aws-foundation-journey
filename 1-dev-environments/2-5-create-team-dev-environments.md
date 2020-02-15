@@ -141,7 +141,7 @@ Repeat the process above to create a group for your foundation team and enable t
 ---
 **Note: `AWSPowerUserAccess` permissions**
 
-As a getting started step, this guide suggests using one of the pre-defined, AWS-managed permission sets for your development team users and their access to their development AWS accounts. However, you will likely define your own customer set of permissions in AWS IAM to meet your business and security needs and supplant the initial permission set.
+As a getting started step, this guide suggests using one of the pre-defined, AWS-managed permission sets for your development team users and their access to their development AWS accounts. However, you will likely define your own custom set of permissions in AWS IAM to meet your business and security needs and supplant the initial permission set.
 
 ---
 
