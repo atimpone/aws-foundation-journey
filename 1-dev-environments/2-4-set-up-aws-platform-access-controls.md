@@ -94,7 +94,7 @@ In the spirit of least privilege access, the resulting permissions will enable c
 
 **Lower Case, Camel Case, etc:** Most AWS cloud resource names support using a range of characters and cases.  Typically, AWS-managed resources use camelcase, but organizations often standardize on one style and strive to use that style throughout their cloud environment.
 
-TO DO: Provide link to cloud resource naming best practices.
+[Additional reading on cloud resource tagging](https://aws.amazon.com/answers/account-management/aws-tagging-strategies/).
 
 ---
 
