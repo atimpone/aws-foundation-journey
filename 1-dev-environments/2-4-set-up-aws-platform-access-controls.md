@@ -7,11 +7,12 @@ This step should take about 45 minutes to complete.
 1. [Temporarily Use AWS SSO Locally Managed Users and Groups](#1-temporarily-use-aws-sso-locally-managed-users-and-groups)
 2. [Map Foundation Functional Roles to Existing AWS Groups](#2-map-foundation-functional-roles-to-existing-aws-groups)
 3. [Access AWS SSO Using Your AWS Control Tower Administrator User](#3-access-aws-sso-using-your-aws-control-tower-administrator-user)
-4. [Add a Cost Management Group and Permissions in AWS SSO](#4-add-a-cost-management-group-and-permissions-in-aws-sso)
-5. [Enable Multi-Factor Authentication (MFA)](#5-enable-multi-factor-authentication-mfa)
-6. [Create AWS SSO Users for Foundation Team Users](#6-create-aws-sso-users-for-foundation-team-users)
-7. [Onboard Your Foundation Team Members](#7-onboard-your-foundation-team-members)
-8. [Stop Using the AWS Control Tower Administrative User](#8-stop-using-the-aws-control-tower-administrative-user)
+4. [Add a Cloud Admin Group and Permissions in AWS SSO](#4-add-a-cloud-admin-group-and-permissions-in-aws-sso)
+5. [Add a Cost Management Group and Permissions in AWS SSO](#5-add-a-cost-management-group-and-permissions-in-aws-sso)
+6. [Enable Multi-Factor Authentication (MFA)](#6-enable-multi-factor-authentication-mfa)
+7. [Create AWS SSO Users for Foundation Team Users](#7-create-aws-sso-users-for-foundation-team-users)
+8. [Onboard Your Foundation Team Members](#8-onboard-your-foundation-team-members)
+9. [Stop Using the AWS Control Tower Administrative User](#9-stop-using-the-aws-control-tower-administrative-user)
 
 ## 1. Temporarily Use AWS SSO Locally Managed Users and Groups
 
@@ -77,7 +78,28 @@ If you encounter a permissions error when attempting to access AWS SSO via the A
 
 ---
 
-## 4. Add a Cost Management Group and Permissions in AWS SSO
+## 4. Add a Cloud Admin Group and Permissions in AWS SSO
+
+In order to fill the gap of a dedicated AWS SSO group for your Cloud Administrator team members, you'll add a new group in AWS SSO. In a subsequent step, you'll add Cloud Administrator team members to the new group. 
+
+Later on, after the initial set of development team AWS account are created, you will assign this group and a permission set to each of those new accounts so that the Cloud Administrators can gain sufficient access to manage those accounts. 
+
+1. Access `Groups` in AWS SSO.
+2. Select `Create group`.
+3. Provide a group name. For example `acme-cloud-admin`. Where you should replace `acme` with a common abbreviation for your organization.
+4. Provide a description. For example, `Cloud administration`.
+5. Select `Create`.
+
+---
+**Note: Cloud resource naming**
+
+**Using Qualifiers in Shared Namespaces:** When adding cloud resources to a shared namespace, it's a best practice to prefix those resource names with an organization identifier so that you avoid conflict with AWS-managed resources and can easily identify your own custom resources. 
+
+**Lower Case, Camel Case, etc:** Most AWS cloud resource names support using a range of characters and cases.  Typically, AWS-managed resources use camelcase, but organizations often standardize on one style and strive to use that style throughout their cloud environment.
+
+---
+
+## 5. Add a Cost Management Group and Permissions in AWS SSO
 
 In order to fill the gap of a dedicated AWS SSO group for your cost management team members, you'll add a new group in AWS SSO and associate the necessary permissions with that group. In a subsequent step, you'll add cost management team members to the new group. 
 
@@ -91,32 +113,6 @@ In the spirit of least privilege access, the resulting permissions will enable c
 4. Provide a description. For example, 'Cost management and billing`.
 5. Select `Create`.
 
----
-**Note: Cloud resource naming**
-
-**Using Qualifiers in Shared Namespaces:** When adding cloud resources to a shared namespace, it's a best practice to prefix those resource names with an organization identifier so that you avoid conflict with AWS-managed resources and can easily identify your own custom resources. 
-
-**Lower Case, Camel Case, etc:** Most AWS cloud resource names support using a range of characters and cases.  Typically, AWS-managed resources use camelcase, but organizations often standardize on one style and strive to use that style throughout their cloud environment.
-
-[Additional reading on cloud resource tagging](https://aws.amazon.com/answers/account-management/aws-tagging-strategies/).
-
----
-
-### Add Permission Sets in AWS SSO
-
-Next, we'll create the necessary permissions sets and associate them with the new group.
-
-1. Access `AWS accounts` in AWS SSO.
-2. Select the `Permission sets` tab.
-3. Select `Create permission set`.
-4. Select `Create a custom permission set`.
-5. Provide a Name of `acme-cost-mgmt`.
-6. Select `Attach AWS managed policies`. A predefined set of AWS-managed IAM permissions will be listed. In some cases, you will want to reuse these IAM-managed permissions so that you defer to AWS to keep common sets of permissiop to date. In other cases, you will create your own custom permissions.
-7. Search on `Billing` and select `Billing`.
-6. Select `Create`.
-
-Now that you've created a permission set, you need to associate the permission set with the relevant AWS account and group in AWS SSO.
-
 ### Associate Group and Permission Set with AWS Master Account
 
 1. Access `AWS accounts` in AWS SSO.
@@ -125,10 +121,10 @@ Now that you've created a permission set, you need to associate the permission s
 4. Select `Groups`.
 5. Select the checkbox next to `acme-cost-mgmt` or similar.
 6. Select `Next: Permission sets`.
-7. Select the checkbox next to `acme-cost-mgmt` or similar.
+7. Select the checkbox next to `Billing`.
 8. Select `Finish`.
 
-## 5. Enable Multi-Factor Authentication (MFA)
+## 6. Enable Multi-Factor Authentication (MFA)
 
 Before adding any human users to AWS SSO and enabling the users to access your AWS environment, it's a best practice to configure AWS SSO to require multi-factor authentication (MFA).
 
@@ -152,7 +148,7 @@ You will likely want to establish either manual or automatic recurring audits to
 
 ---
 
-## 6. Create AWS SSO Users for Foundation Team Users
+## 7. Create AWS SSO Users for Foundation Team Users
 
 In prepartion for adding foundation team users to AWS SSO, decide on the format of the user name.  Typically, the user name will simply be the user's corporate email address that is often used for SaaS services.
 
@@ -165,7 +161,7 @@ Next, access the AWS SSO service to begin adding an AWS SSO user for each founda
 6. Using the table shown above, select the applicable groups for each user.
 7. Select `Add user`.
 
-## 7. Onboard Your Foundation Team Members 
+## 8. Onboard Your Foundation Team Members 
 
 Reach out to each foundation team member to inform them of the context of the email message they received, what they should do next, and what access they have been granted.
 
@@ -179,7 +175,7 @@ Their initial sign on experience will consist of:
 
 Inform the foundation team members that use of MFA is required and how they can [register an MFA device](https://docs.aws.amazon.com/singlesignon/latest/userguide/how-to-register-device.html) on their own via the AWS SSO service.
 
-## 8. Stop Using the AWS Control Tower Administrative User
+## 9. Stop Using the AWS Control Tower Administrative User
 
 Since you've onboarded foundation team members with the appropriate permissions, as a security and compliance best practice, there's no longer any reason for your Cloud Administrators to use the AWS Control Tower Administrator user. 
 
