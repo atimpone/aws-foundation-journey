@@ -8,7 +8,8 @@ This step should take about 30 minutes to complete.
 2. [Create the Development Organizational Unit](#2-create-the-development-organizational-unit)
 3. [Create Development Team AWS Accounts](#3-create-development-team-aws-accounts)
 4. [Initialize AWS Account System Users](#4-initialize-aws-account-system-users)
-5. [Review or Provision Networking](#5-review-or-provision-networking)
+5. Provide Cloud Administrators Access to New AWS Accounts
+6. [Review or Provision Networking](#5-review-or-provision-networking)
 
 ## 1. Use at Least Two Development AWS Accounts from the Start
 
@@ -119,7 +120,11 @@ See [Log In as Root User](https://docs.aws.amazon.com/controltower/latest/usergu
 
 See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user_manage_mfa) for instructions to enable MFA.
 
-## 5. Review or Provision Networking
+## 5. Provide Cloud Administrators Access to New AWS Accounts
+
+...
+
+## 6. Review or Provision Networking
 
 ***...if networking has already been set up via Account Factory for the development AWS accounts, provide a very brief overview of the resulting network topology...***
 
