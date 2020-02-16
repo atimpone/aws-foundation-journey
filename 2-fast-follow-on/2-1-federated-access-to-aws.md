@@ -4,7 +4,7 @@ This section addresses the typical requirements, solution options, and reference
 
 ## Out of Scope: Application Level Federated Access
 
-The section does not address federated access in support or your applications hosted on AWS. Although your enterprise identity and access management solution may also be used in support of application level federated access, different considerations and mechanisms come into play.
+The section does not address federated access in support or your applications hosted on AWS. Although your enterprise identity and access management solution may also be used in support of application level federated access, different considerations and mechanisms come into play in this simialr, but different use case.
 
 ## Common Practices
 It is common practice for organizations to reuse their existing enterpise identity and access management solution to form the basis of controlling access to the AWS platform.  Often, the source of truth for users and group-based entitlement definitions is based in Active Directory (AD) and often exposed via SAML-based Identity Providers (IdPs) for integration with publicly accessible services including SaaS services and cloud platforms such as AWS.
