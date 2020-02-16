@@ -127,4 +127,4 @@ See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/la
 
 ## Next Steps
 
-[8. Onboarding the Initial Development Teams](2-8-onboard-dev-teams.md)
+[8. Onboard the Development Teams](2-8-onboard-dev-teams.md)
