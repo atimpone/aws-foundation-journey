@@ -1,4 +1,4 @@
-# 7. Create the Initial Team Development Environments
+# 7. Create Initial Team Development Environments
 
 In this step your Cloud Administrators will create several new team development AWS accounts via AWS Control Tower's Account Factory.
 
@@ -127,4 +127,4 @@ See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/la
 
 ## Next Steps
 
-[8. Onboard the Development Teams](2-8-onboard-dev-teams.md)
+[8. Onboard Development Teams](2-8-onboard-dev-teams.md)
