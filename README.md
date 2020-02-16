@@ -50,12 +50,12 @@ By following this guide, in as little as a few hours, your organization can esta
 #### Build Out the Environment
 
 1. [Map People to Foundation Functional Roles](1-dev-environments/2-1-map-people-to-foundation-roles.md)
-2. [Create a New Master AWS Account](1-dev-environments/2-2-create-master-aws-account.md)
+2. [Create New Master AWS Account](1-dev-environments/2-2-create-master-aws-account.md)
 3. [Set Up Initial Landing Zone Using AWS Control Tower](1-dev-environments/2-3-set-up-landing-zone.md)
 4. [Set Up Initial AWS Platform Access Controls](1-dev-environments/2-4-set-up-aws-platform-access-controls.md)
-5. [Determine the Initial Networking Approach](1-dev-environments/2-5-determine-networking-approach.md)
-6. [Create the Initial Team Development Environments](1-dev-environments/2-6-create-team-dev-environments.md)
-7. [Onboard the Initial Development Teams](1-dev-environments/2-7-onboard-dev-teams.md)
+5. [Determine Initial Networking Approach](1-dev-environments/2-5-determine-networking-approach.md)
+6. [Create Initial Team Development Environments](1-dev-environments/2-6-create-team-dev-environments.md)
+7. [Onboard Initial Development Teams](1-dev-environments/2-7-onboard-dev-teams.md)
 8. [Manage and Monitor Your AWS Environment](1-dev-environments/2-8-manage-and-monitor-aws-environment.md)
 
 #### Reference
@@ -79,7 +79,7 @@ Depending on your organizations needs, some additional capabilities may be requi
 * [Set Up On-Premises Network Integration](2-fast-follow-on/2-2-on-premises-network-integration.md)
 * [Enable Custom AWS Account Baselines](2-fast-follow-on/2-3-custom-account-baselines.md)
 * [Establish Secure Internet Integration](2-fast-follow-on/2-4-secure-internet-integration.md)
-* [Integrate with Security Information and Event Management (SIEM) Solution](2-fast-follow-on/2-5-siem-integration.md)
+* [Integrate Security Information and Event Management (SIEM) Solution](2-fast-follow-on/2-5-siem-integration.md)
 
 ### Establish Initial Test and Production Environments
 ---
