@@ -149,7 +149,7 @@ You will likely want to establish either manual or automatic recurring audits to
 ---
 
 ---
-**Review To Do: Consider moving next steps 7, 8, and 9 to a sepatate section
+**Review To Do: Consider moving next steps 7, 8, and 9 to a sepatate section**
 
 Similar to how onboarding of the initial dev team is a distinct section, the following steps could be moved to a separate section immediately following the current section so that:
 1. length of the current section is reduced.
