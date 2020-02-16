@@ -10,7 +10,7 @@ In this very first and minimal stage of the build out, there are similarities be
 
 In these respects, the initiall provisioned developemnt team AWS accounts will quickly evolve to take on these additional properties. Rather than characterizing the initial development team AWS accounts as sandbox AWS accounts and needing to rename and reposition them later, the decision was made to position them as formal development team AWS accounts from the start.
 
-Similar to other aspect of overall AWS account design, the guide intentionally avoids overloading customers with the fuller to be state too early in their adoption journey. Down the road and perhaps in the larger "foundation" stage of adoption or earlier as a parallel workstream, the capability to provide true sandbox AWS accounts may be addressed depending on the customer needs.
+Similar to other aspect of overall AWS account design, the guide intentionally avoids overloading customers with the fuller "to be" state too early in their adoption journey. Down the road and perhaps in the larger "foundation" stage of adoption or earlier as a parallel workstream, the capability to provide true sandbox AWS accounts may be addressed depending on the customer needs.
 
 ## Federated Access to AWS Platform
 
