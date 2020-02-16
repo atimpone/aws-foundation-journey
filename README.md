@@ -59,8 +59,9 @@ By following this guide, in about a day, your organization can establish an init
 
 #### Reference
 
-* [Getting Started Guide for Development Teams](1-dev-environments/3-1-getting-started-guide.md)
-* [Cloud Platform System AWS Users](1-dev-environments/3-2-cloud-platform-system-users.md)
+* [Frequently Asked Questions (FAQs)](1-dev-environments/3-1-faq.md)
+* [Getting Started Guide for Development Teams](1-dev-environments/3-2-getting-started-guide.md)
+* [Cloud Platform System AWS Users](1-dev-environments/3-3-cloud-platform-system-users.md)
 
 ### Establish Fast Follow-On Capabilities
 
