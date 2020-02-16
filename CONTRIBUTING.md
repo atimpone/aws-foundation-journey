@@ -6,7 +6,11 @@ File issues in the GitHub repository when you either encounter bugs in the docum
 
 ## Documemntation Style
 
-* **Reuse External Docs Where Feasible:** When there's modular, to the point official documentation that can be linked to, we prefer that route vs duplicating lengthy instructions within these guides.  However, when any of the following conditions apply, in the interest of providing a cohesive user experience, we don't hesitate to put instructions in line:
+### Defer to External Docs Where Feasible
+
+When there's modular, to the point official documentation that can be linked to, we prefer that route vs duplicating lengthy instructions within these guides.  
+
+However, when any of the following conditions apply, in the interest of providing a cohesive user experience, we don't hesitate to put instructions in line:
   * Steps are so few and simple that it's not worth directing the reader to another document.
   * Our instructions require context or specific data to be used that other generic guides don't include.
   * Instructions in other docs are not directly linkable. For example, linking to a large PDF document and asking the reader to find a section for specific instructions is a non-starter for any maintline steps in these guides.
