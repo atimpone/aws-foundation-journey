@@ -23,7 +23,7 @@ Over the course of your cloud adoption journey, you will likely end up with a nu
 
 ## 2. Start With a New Master AWS Account
 
-The initial AWS account that you create will be configured as a new “master” AWS account in which billing for AWS services consumed across accounts will be consolidated and your Cloud Administrators will provision new “member” AWS accounts for development teams.
+The initial AWS account that you create will be configured as a new master AWS account in which billing for AWS services consumed across accounts will be consolidated and your Cloud Administrators will provision new “member” AWS accounts for development teams.
 
 Even if you have an existing AWS account, we strongly recommend that you establish a new AWS account as the basis of your formal cloud foundation and adoption for several reasons:
 
