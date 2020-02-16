@@ -34,3 +34,10 @@ Let's build up ideas and refine as we go.
 *...Note the ability of AWS CloudFormation StackSets to be applied at the OU level and automatically re-applied as the membership of a given OU changes...*
 
 *...defer to existing documentation including decision trees, blog posts, formal AWS docs, etc. as much as feasible...*
+
+Example solution options:
+
+* DIY
+  * [AWS CloudFormation StackSets with AWS Organizations](https://aws.amazon.com/blogs/aws/new-use-aws-cloudformation-stacksets-for-multiple-accounts-in-an-aws-organization/)
+  * [AWS Control Tower Lifecycle Event Notifications](https://aws.amazon.com/about-aws/whats-new/2020/01/aws-control-tower-introduces-lifecycle-event-notifications/)
+* [AWS Deployment Framework](https://github.com/awslabs/aws-deployment-framework/)
