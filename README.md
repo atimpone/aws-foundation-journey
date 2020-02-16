@@ -59,7 +59,8 @@ By following this guide, in as little as a few hours, your organization can esta
 
 #### Reference
 
-* [Cloud Platform System AWS Users](1-dev-environments/3-1-cloud-platform-system-users.md)
+* [Getting Started Guide for Development Teams](1-dev-environments/3-1-getting-started-guide.md)
+* [Cloud Platform System AWS Users](1-dev-environments/3-2-cloud-platform-system-users.md)
 
 ### Establish Fast Follow-On Capabilities
 
