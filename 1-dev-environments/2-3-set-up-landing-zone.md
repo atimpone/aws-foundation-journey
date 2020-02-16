@@ -1,4 +1,4 @@
-# 3. Set Up an Initial Landing Zone Using AWS Control Tower
+# 3. Set Up Initial Landing Zone Using AWS Control Tower
 
 In this step your Cloud Administrators will use the AWS Control Tower service in your new AWS master account to establish an initial “landing zone” or a foundation of security guardrails and other resources that will help your organization manage use of the AWS platform. You can learn more by reviewing [AWS Control Tower Features](https://aws.amazon.com/controltower/features/).
 
