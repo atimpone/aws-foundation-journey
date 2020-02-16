@@ -13,6 +13,6 @@ Let's build up ideas and refine as we go.
 
 ## Solution Options and Resources
 
-*...defer to existing documentation as much as feasible...*
+*...defer to existing documentation including decision trees, blog posts, formal AWS docs, etc. as much as feasible...*
 
 *...if the customer started with the use of locally managed users and groups in AWS SSO, highlight considerations when miograting to the use of external identity providers either via AWS SSO or traditional federated access to AWS outside of AWS SSO...*
