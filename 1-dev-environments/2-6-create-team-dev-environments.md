@@ -90,7 +90,7 @@ Configuration settings of the AWS accounts you provision via Account Factory sho
 ---
 
 ---
-**To Do: Address issue where provisoned products are owned by one user by default***
+**To Do: Address issue where provisoned products are owned by one user by default**
 
 Based on preliminary testing of this step, only the Cloud Admin who provisions an Account Factory product is able to see and manage that product unless the owner chnages ownership to another user or to an IAM role. This may be expected behavior of AWS Service Catalog, but it runs counter our goal of enabling foundation team members with the same intended access to share in the responsibilities of manging common foundation resources.
 
