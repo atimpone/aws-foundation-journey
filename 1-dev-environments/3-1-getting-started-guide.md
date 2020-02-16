@@ -13,6 +13,12 @@ What is the minimum knowledge a dev team would need for day 1 use of their new d
 
 *...add TOC later on once the initial set of topics settles down...*
 
+## Acting on Invitiation to Join AWS SSO
+
+*...very first steps to do after their user accounts have been added to AWS SSO...*
+
+*...accept the invite, set up MFA (point to existing docs)...*
+
 ## Overview of the Cloud Environment
 
 *...show a representaive diagram of the overall environment...*
