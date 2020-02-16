@@ -12,37 +12,9 @@ This step should take about 60 minutes to complete.
 
 ## 1. Assemble Onboarding Documentation
 
-Working with your cross-functional colleagues in Security, Compliance, and Finance, use the following resources to help assemble an onboarding or getting started document and share with the members of the initial development teams so that they understand the fundamentals of their responsibilities, access permissions, and how to access and begin using their development AWS accounts. 
+Work with your cross-functional colleagues in Security, Compliance, and Finance to assemble the basic form of a getting started document and share with the members of the initial development teams so that they understand the fundamentals of their responsibilities, access permissions, and how to access and begin using their development AWS accounts. 
 
-Key aspects to cover in the onboarding documentation include:
-
-### Their Access Permissions and Responsibilities
-
-...
-
-***mention that an initial set of preventative and detective security guardrails are in place to avoid and recognize out of compliant resources...***
-
-***highlight that their access permissions will likely be further constrained for their development AWS accounts over time to help reduce the risk to the overall organization...***
-
-### How to Access their Team's Development AWS Account
-
-...
-
-#### Access Via AWS Management Console
-
-...
-
-#### Access Via AWS CLI, AWS SDKs, and AWS APIs
-
-...
-
-### Overview of the Initial Networking Environment
-
-***...highlight that the initial development environment network environments will likely be supplanted over time as on-premises integration and the need to use non-overlapping IP address ranges and other enhancements emerge...*** 
-
-### How to Monitor Costs Incurred Via Their Development AWS Account
-
-...
+See the [Example Getting Started Guide](3-2-getting-started-guide.md) as a potential starting point.
 
 ## 2. Create Development Team Groups in AWS SSO
 
@@ -104,7 +76,7 @@ Now that you've established the two development oriented groups in AWS SSO and w
 
 
 ---
-**Review Note: Need to ensure dev team access to cost reporting**
+**Review Note: Need to ensure dev team can access cost reporting**
 
 Per the up front requirements for this stage, we need to ensure that dev teams have sifficient permissions somthat they can self service review their cloud costs.
 
@@ -124,7 +96,7 @@ The foundation team members now have access to the foundation team development A
 
 ## 5. Brief Development Team Members
 
-***...highlight the need to communicate the onboarding information to development team members...***
+***...meet with the development team members to review the getting started guide and address any onboarding and ongoing support questions...***
 
 ## Next Steps
 
