@@ -1,6 +1,6 @@
 # Custom AWS Account Baselines
 
-This section reviews the typical requirements, introduces common solution options, and provides references to further information to help you determine your approach and enable your foundation team to define and efficiently roll out new and updated cloud resources or "baselines" across your AWS accounts to further secure the overall environment and deliver useful common capabilities to your internal teams. 
+This section addresses options and resources to enable your foundation team to define and efficiently roll out new and updated cloud resources or "baselines" across your AWS accounts to further secure the overall environment and deliver useful common capabilities to your internal teams. 
 
 ## Examples
 
