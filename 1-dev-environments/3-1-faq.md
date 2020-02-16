@@ -2,7 +2,7 @@
 
 ## General
 
-### Q: Isn't this imformation already addressed in formal AWS documentation?
+### Q: Isn't this information already addressed in formal AWS documentation?
 
 For example, in the AWS Control Tower documention.
 
