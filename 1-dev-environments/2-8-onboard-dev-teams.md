@@ -128,4 +128,4 @@ The foundation team members now have access to the foundation team development A
 
 ## Next Steps
 
-[9. Managing and Monitoring Your AWS Environment](2-9-manage-and-monitor-aws-environment.md)
+[9. Manage and Monitor Your AWS Environment](2-9-manage-and-monitor-aws-environment.md)
