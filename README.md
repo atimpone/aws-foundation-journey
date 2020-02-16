@@ -38,7 +38,7 @@ Later, when your organization has demonstrated success with the initial few proj
 
 ### Establish Initial Development Environments
 
-By following this guide, in as little as a few hours, your organization can establish an initial secure foundation and development environment in AWS.
+By following this guide, in about a day, your organization can establish an initial secure foundation and development environments in AWS.
 
 #### Review and Refine Requirements and Solution Design
 
