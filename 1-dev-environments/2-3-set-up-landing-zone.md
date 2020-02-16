@@ -78,4 +78,4 @@ For example:
 * **Modification of AWS Account Root User Email Addresses** - AWS Control Tower does not currently support self-service modification of the email addresses associated with the root user of each AWS account.  You currently need to contact AWS Support to have these email addresses changed.
 
  ## Next Steps
-[4. Setting Up Initial AWS Platform Access Controls](2-4-set-up-aws-platform-access-controls.md)
+[4. Set Up Initial AWS Platform Access Controls](2-4-set-up-aws-platform-access-controls.md)
