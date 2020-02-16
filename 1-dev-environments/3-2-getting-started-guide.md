@@ -7,7 +7,7 @@ As your organization progresses on its cloud adoption journey, you will likely s
 ---
 ***Review Note: Help add useful day 1 topics for new dev teams and members***
 
-What is the minimum knowledge a dev team would need for day 1 use of their new development AWS account.
+What is the minimum knowledge a dev team would need for day 1 use of their new development AWS account?
 
 ----
 
