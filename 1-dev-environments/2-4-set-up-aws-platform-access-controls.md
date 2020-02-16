@@ -149,12 +149,12 @@ You will likely want to establish either manual or automatic recurring audits to
 ---
 
 ---
-**Review To Do: Consider moving next steps 7, 8, and 9 to a sepatate section**
+**Review To Do: Consider moving next steps 7, 8, and 9 to a separate section**
 
 Similar to how onboarding of the initial dev team is a distinct section, the following steps could be moved to a separate section immediately following the current section so that:
 1. length of the current section is reduced.
-2. we seperate setting up of access controls from provisioning users and onboarding teams. These are pretty different operations.
-3. we align with the approach alredy being taken for onboarding dev teams.
+2. we separate setting up of access controls from provisioning users and onboarding teams. These are pretty different operations.
+3. we align with the approach already being taken for onboarding dev teams.
 
 ---
 
