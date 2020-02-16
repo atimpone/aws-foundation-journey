@@ -7,7 +7,7 @@ This step should take about 30 minutes to complete.
 1. [Use at Least Two Development AWS Accounts from the Start](#1-use-at-least-two-development-aws-accounts-from-the-start)
 2. [Create the Development Organizational Unit](#2-create-the-development-organizational-unit)
 3. [Create Development Team AWS Accounts](#3-create-development-team-aws-accounts)
-4. [Initialize the New AWS Account System Users](#4-initialize-the-new-aws-account-system-users)
+4. [Initialize AWS Account System Users](#4-initialize-aws-account-system-users)
 5. [Review or Provision Networking](#5-review-or-provision-networking)
 
 ## 1. Use at Least Two Development AWS Accounts from the Start
@@ -98,7 +98,7 @@ We need to verify that this is the default behavior and, if it is, enhance this 
 
 ---
 
-## 4. Initialize the New AWS Account System Users
+## 4. Initialize AWS Account System Users
 
 When each new development team AWS account is created, follow these steps to initialize the AWS account's AWS SSO user and root user to align with security best practices.
 
