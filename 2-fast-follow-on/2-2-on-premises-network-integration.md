@@ -1,6 +1,6 @@
 # On-Premises Network Integration
 
-This section addresses the typical requirements, solution options, and references to further information to help you determine your next steps in enabling network connectivity between your on-premises networks and AWS environment.
+This section reviews the typical requirements, introduces common solution options, and provides references to further information to help you determine and take action to enable network connectivity between your on-premises networks and AWS environment.
 
 ---
 **Review Notes: For now add ideas and references to existing publicly available resources**
@@ -12,6 +12,8 @@ Let's build up ideas and refine as we go.
 ## Requirements
 
 *...use the CAF perspectives to represent the typical set of customer requirements...*
+
+*...list business use cases first along with outcomes...*
 
 *...typically start with site-to-site VPN based on speed of set up...*
 
