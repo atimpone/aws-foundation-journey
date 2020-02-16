@@ -24,15 +24,13 @@ Organizations leveraging these guides are typically in the “Project” stage o
 
 Once an enterprise has gained some benefit from the cloud by taking a few projects to production, an organization tends to move toward a "Foundation" stage in which the organization makes more extensive investments in its cloud foundation in support of scaling cloud adoption across the organization with the goal of gaining more extensive business benefits. 
 
-Even in the initial project stage of adoption, AWS recommends that an initial cloud foundation be established that can be extended over time as organizations transition into the foundation stage to prepare for larger scale cloud adotpion. These guides help organizatins establish the beginning of their foundation on AWS in support of their initial few projects.
+## Initial Cloud Foundation in Project Stage
 
-## Initial Stage of Cloud Foundation
+Even in the initial project stage of adoption, AWS recommends that an initial foundation be established that can be extended over time as organizations transition into the foundation stage to prepare for larger scale cloud adotpion. These guides help organizatins establish the beginning of a secure foundation on AWS in support of their initial few projects.
 
-A key element of making the transition from the use of personal AWS accounts for early experiments to more formal work with the cloud is to ensure that your organization establishes a sufficiently secured and maintained initial stage of your AWS cloud foundation.
+In support of your first few formal projects, these guides start with establising an initial foundation and several development environments before the guides address how to extend your foundation to support deploying your first few workloads to test and production environments. 
 
-In support of your first few formal projects, these guides start with getting an initial foundation and several development environments in place before they address how to extend your foundation to support deploying your first few workloads to test and production environments. 
-
-Later, when your organization has demonstrated success with the initial few projects, you will make a larger investment in your cloud foundation to support cloud adoption at scale.
+Later, when your organization has demonstrated success with the initial few projects, you will likely make larger investments during the foundation stage of your journey to support cloud adoption at scale.
 
 <img src="images/foundation.png" alt="Cloud Foundation" width="700"/>
 
