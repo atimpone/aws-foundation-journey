@@ -18,7 +18,7 @@ Next, access the AWS SSO service to begin adding an AWS SSO user for each founda
 2. Select `Add user`.
 4. Specify a user name and complete at least the other required fields.
 5. Select `Next: Groups`.
-6. Depending on the functional role of a foundation team member, select the checkbox for each corresponding AWS SSO group based on [Mapping of Functional Roles to AWS SSO Groups](2-4-set-up-aws-platform-access-controls.md#2-map-foundation-functional-roles-to-existing-aws-groups).
+6. Select the checkbox for each corresponding AWS SSO group based on [Mapping of Functional Roles to AWS SSO Groups](2-4-set-up-aws-platform-access-controls.md#2-map-foundation-functional-roles-to-existing-aws-groups).
 7. Select `Add user`.
 
 ## 2. Onboard Your Foundation Team Members 
