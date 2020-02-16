@@ -1,8 +1,8 @@
 # Getting Started Guide for Development Teams
 
-This document represents an example starting point for your organization to develop and publish internally your own getting started guide for teams that are onboarding to your AWS environment.  You are free to copy this content into your own internal wiki or other system and modify it to meet your needs.
+This document represents an example that can help your organization develop and publish internally your own getting started guide for teams that are onboarding to your AWS environment.  You are free to copy this content into your own internal wiki or other system and modify it to meet your needs.
 
-As your organization progresses on its cloud adoption journey, you will likely significantly expand your internal documentation to help communicate the expanding and increasingly sophisticated capabilities that are available to teams.
+As your organization progresses on its cloud adoption journey, you will likely significantly expand your internal documentation to help communicate additional and increasingly sophisticated capabilities and associated best practices that are available to teams.
 
 ---
 ***Review Note: Help add useful day 1 topics for new dev teams and members***
