@@ -1,6 +1,6 @@
 # Federated Access to AWS Platform
 
-This section addresses the typical requirements, solution options, and references to information to help you determine your direction to enable your internal users federated access to your AWS environment by using an identity proivider external to AWS. 
+This section reviews the typical requirements, introduces common solution options, and provides references to further information to help you determine and take action to enable your internal users federated access to your AWS environment by using an identity proivider external to AWS. 
 
 ## Out of Scope: Application Level Federated Access
 
