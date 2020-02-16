@@ -122,7 +122,7 @@ See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/la
 
 ## 5. Provide Cloud Administrators Access to New AWS Accounts
 
-Since Cloud Administrators won't be automatically granted sufficient access to newly created AWS accounts, you need to enable this access each time you create a new AWS account via AWS Control Tower's Account Factory.
+Since Cloud Administrators won't automatically be granted sufficient access to newly created AWS accounts, you need to enable this access each time you create new AWS accounts via AWS Control Tower's Account Factory.
 
 1. As a cloud administrator, use your personal user to log into AWS SSO.
 2. Select the AWS **master** account.
@@ -133,12 +133,14 @@ Since Cloud Administrators won't be automatically granted sufficient access to n
 7. Select the checkboxes next both development AWS accounts. For example:
   * `Team A - Dev`
   * `Foundation - Dev`
-8. Select `Assgn users`.
+8. Select `Assign users`.
 9. Select `Groups`.
 10. Select the checkbox next to the group `acme-cloud-admin` or similar.
 11. Select `Next: Permission sets`.
 12. Select the checkbox next to `AWSAdministratorAccess`.
 13. Select `Finish`.
+
+Now you've enabled all users who are part of the Cloud Administrator group in AWS SSO administrator access to the selected AWS accounts.
 
 ## 6. Review or Provision Networking
 
