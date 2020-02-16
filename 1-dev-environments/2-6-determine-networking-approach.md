@@ -1,12 +1,18 @@
 # 6. Determine Initial Networking Approach
 
-In this step your Cloud Administrators will review options and make a decision on the approaches for both the network design and provisioning method for the initial set of virtual networks to be used by the initial set of development teams.
+In this step your Cloud Administrators will review options and make decisions for both the initial network design and provisioning methods in support of the development team AWS accounts.
 
 This step should take about 30 minutes to complete.
 
 ## 1. Decide on Initial Network Design
 
+As mentioned in the Initial [Development Environment Solution Overview](1-2-solution.md#vpc-network-for-each-development-team-aws-account), it's recommended that you start with a two-tier network design consisting of a dedicated VPC for each development team AWS account including a set of public subnets and a set of private subnets.  
+
 ...
+
+### Set Expectations for Replacing These Networks in the Future
+
+Later in your journey, if and when you set up network connectivity with your on-premises network, you will likely replace these initial VPCs with VPCs that more closely align with your longer term needs. For example, in the future, to avoid complicated network address translation (NAT) configurations, you will likely allocate IP address ranges or "CIDR blocks" to your VPCs that don't overlap with on-premises networks.
 
 ## 2. Decide on Initial Networking Provisioning Approach
 
