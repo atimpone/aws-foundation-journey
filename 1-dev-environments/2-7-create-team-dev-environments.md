@@ -13,7 +13,7 @@ This step should take about 30 minutes to complete.
 
 ## 1. Use at Least Two Development AWS Accounts from the Start
 
-As highlighted previously, an AWS best practice is to isolate the work of distinct development teams by assigning a different AWS account for each team. Benefits of this approach include:
+As highlighted previously, an AWS best practice is to isolate the work of distinct development teams by assigning a different AWS account to each team. Benefits of this approach include:
 
 * **Inherent Per Team Cost Allocation:** Since AWS resource costs are, by default, attributable to each AWS account in which the resources are provisioned, at this early stage in your adoption, you don't need to force development teams to use cost allocation tags on their resources.
 
