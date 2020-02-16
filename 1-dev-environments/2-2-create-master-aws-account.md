@@ -65,11 +65,11 @@ Since the email address associated with an AWS account is used as the [root user
 
 ## 4. Create a New AWS Master Account
 
-Visit https://aws.amazon.com/ and click “Create AWS Account” and enter the the required information on the following page.  For this account, use the master account email address you already established. 
+Visit https://aws.amazon.com/ and click “Create AWS Account” and enter the the required information on the following page.
 
 ### Provide Account Root User’s Email Address
 
-Since the email address is used to initially access your AWS account, be very careful that you enter the correct email address and that you have access to that email account.
+Use the master account email address you already established. Since this email address is used to initially access your AWS account, be very careful that you enter the correct email address and that you have access to the email account.
 
 ### Set Personal or Professional
 
