@@ -23,8 +23,8 @@ Create a new group in AWS SSO for each of the development teams and associate th
 ### Create Development Team Groups in AWS SSO
 
 1. As a cloud administrator, use your personal user to log into AWS SSO.
-2. Select the AWS master account.
-3. Select `Management console` associated with the `AWSAdministratorAccess` role.
+2. Select the AWS **master** account.
+3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
 4. Select the appropriate AWS region.
 5. Navigate to AWS SSO.
 6. Access `Groups` in AWS SSO.
