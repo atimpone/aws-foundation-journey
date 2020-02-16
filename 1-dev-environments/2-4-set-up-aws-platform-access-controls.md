@@ -9,7 +9,7 @@ This step should take about 45 minutes to complete.
 3. [Access AWS SSO Using Your AWS Control Tower Administrator User](#3-access-aws-sso-using-your-aws-control-tower-administrator-user)
 4. [Add a Cloud Admin Group in AWS SSO](#4-add-a-cloud-admin-group-in-aws-sso)
 5. [Add a Cost Management Group and Assign Permissions in AWS SSO](#5-add-a-cost-management-group-and-assign-permissions-in-aws-sso)
-6. [Enable Multi-Factor Authentication (MFA)](#6-enable-multi-factor-authentication-mfa)
+6. [Configure Multi-Factor Authentication (MFA) Requirements](#6-configure-multi-factor-authentication-mfa-requirements)
 
 ## 1. Temporarily Use AWS SSO Locally Managed Users and Groups
 
@@ -121,7 +121,7 @@ In the spirit of least privilege access, the resulting permissions will enable c
 7. Select the checkbox next to `Billing`.
 8. Select `Finish`.
 
-## 6. Enable Multi-Factor Authentication (MFA)
+## 6. Configure Multi-Factor Authentication (MFA) Requirements
 
 Before adding any human users to AWS SSO and enabling the users to access your AWS environment, it's a best practice to configure AWS SSO to require multi-factor authentication (MFA).
 
