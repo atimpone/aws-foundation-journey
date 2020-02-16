@@ -72,7 +72,7 @@ We need to validate that the predefined AWS managed permission is sufficient as 
 ---
 **Review Note: Need to ensure dev teams can access cost reporting**
 
-Per the up front requirements for this stage, we need to ensure that dev teams have sifficient permissions somthat they can self service review their cloud costs.
+Per the up front requirements for this stage, we need to ensure that dev teams have sufficient permissions somthat they can self service review their cloud costs.
 
 ---
 
