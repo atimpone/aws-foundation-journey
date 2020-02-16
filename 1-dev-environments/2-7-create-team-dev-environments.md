@@ -8,7 +8,7 @@ This step should take about 30 minutes to complete.
 2. [Create the Development Organizational Unit](#2-create-the-development-organizational-unit)
 3. [Create Development Team AWS Accounts](#3-create-development-team-aws-accounts)
 4. [Initialize AWS Account System Users](#4-initialize-aws-account-system-users)
-5. Provide Cloud Administrators Access to New AWS Accounts
+5. [Provide Cloud Administrators Access to New AWS Accounts](#5-provide-cloud-administrators-access-to-new-aws-accounts)
 6. [Review or Provision Networking](#5-review-or-provision-networking)
 
 ## 1. Use at Least Two Development AWS Accounts from the Start
@@ -54,8 +54,8 @@ In AWS Control Tower, provision the initial set of AWS development team accounts
 You'll follow these steps twice: Once to create the initial deveopment team's AWS account and again to create the development AWS account for the foundation team.
 
 1. As a cloud administrator, use your personal user to log into AWS SSO.
-2. Select the AWS master account.
-3. Select `Management console` associated with the `AWSServiceCatalogEndUserAccess` role.
+2. Select the AWS **master** account.
+3. Select `Management console` associated with the **`AWSServiceCatalogEndUserAccess`** role.
 4. Select the appropriate AWS region.
 5. Navigate to AWS Service Catalog.
 6. Select `Products list`.
@@ -122,7 +122,23 @@ See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/la
 
 ## 5. Provide Cloud Administrators Access to New AWS Accounts
 
-...
+Since Cloud Administrators won't be automatically granted sufficient access to newly created AWS accounts, you need to enable this access each time you create a new AWS account via AWS Control Tower's Account Factory.
+
+1. As a cloud administrator, use your personal user to log into AWS SSO.
+2. Select the AWS **master** account.
+3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
+4. Select the appropriate AWS region.
+5. Navigate to AWS SSO.
+6. Access `AWS accounts` in AWS SSO.
+7. Select the checkboxes next both development AWS accounts. For example:
+  * `Team A - Dev`
+  * `Foundation - Dev`
+8. Select `Assgn users`.
+9. Select `Groups`.
+10. Select the checkbox next to the group `acme-cloud-admin` or similar.
+11. Select `Next: Permission sets`.
+12. Select the checkbox next to `AWSAdministratorAccess`.
+13. Select `Finish`.
 
 ## 6. Review or Provision Networking
 
