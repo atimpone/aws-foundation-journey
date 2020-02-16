@@ -53,10 +53,11 @@ By following this guide, in as little as a few hours, your organization can esta
 2. [Create New Master AWS Account](1-dev-environments/2-2-create-master-aws-account.md)
 3. [Set Up Initial Landing Zone Using AWS Control Tower](1-dev-environments/2-3-set-up-landing-zone.md)
 4. [Set Up Initial AWS Platform Access Controls](1-dev-environments/2-4-set-up-aws-platform-access-controls.md)
-5. [Determine Initial Networking Approach](1-dev-environments/2-5-determine-networking-approach.md)
-6. [Create Initial Team Development Environments](1-dev-environments/2-6-create-team-dev-environments.md)
-7. [Onboard Initial Development Teams](1-dev-environments/2-7-onboard-dev-teams.md)
-8. [Manage and Monitor Your AWS Environment](1-dev-environments/2-8-manage-and-monitor-aws-environment.md)
+5. [Onboard Foundation Team](1-dev-environments/2-5-onboard-foundation-team.md)
+6. [Determine Initial Networking Approach](1-dev-environments/2-6-determine-networking-approach.md)
+7. [Create Initial Team Development Environments](1-dev-environments/2-7-create-team-dev-environments.md)
+8. [Onboard Development Teams](1-dev-environments/2-8-onboard-dev-teams.md)
+9. [Manage and Monitor Your AWS Environment](1-dev-environments/2-9-manage-and-monitor-aws-environment.md)
 
 #### Reference
 

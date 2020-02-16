@@ -1,4 +1,4 @@
-# 5. Determine Initial Networking Approach
+# 6. Determine Initial Networking Approach
 
 In this step your Cloud Administrators will review options and make a decision on the approaches for both the network design and provisioning method for the initial set of virtual networks to be used by the initial set of development teams.
 
@@ -56,4 +56,4 @@ If you've chosen to use another method to provision the initial set of VPCs, ski
 
  ## Next Steps
 
-[6. Create the Initial Team Development Environments](2-6-create-team-dev-environments.md)
+[7. Create the Initial Team Development Environments](2-7-create-team-dev-environments.md)

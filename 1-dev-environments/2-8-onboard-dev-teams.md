@@ -1,4 +1,4 @@
-# 7. Onboard the Initial Development Teams
+# 8. Onboard the Initial Development Teams
 
 In this step your Security and Cloud Admins will onboard a limited set of initial developers who will have access to their team development environment. The outcome is that a small team of developers has the knowledge to start using their AWS development account, where to find basic usage documentation, and who to contact for support.
 
@@ -128,4 +128,4 @@ The foundation team members now have access to the foundation team development A
 
 ## Next Steps
 
-[8. Managing and Monitoring Your AWS Environment](2-8-manage-and-monitor-aws-environment.md)
+[9. Managing and Monitoring Your AWS Environment](2-9-manage-and-monitor-aws-environment.md)
