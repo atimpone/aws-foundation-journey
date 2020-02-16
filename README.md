@@ -94,3 +94,10 @@ The next guide that is under development helps you extend your foundation by int
 #### Build Out the Environments
 
 * TBD
+
+## Contributing
+
+1. See the issues in this GitHub repository for outstanding enhancements and bugs.
+2. See [CONTRIBUTING.md](./CONTRIBUTING.md) for the contribution process.
+
+
