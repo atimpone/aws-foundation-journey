@@ -1,8 +1,20 @@
 # Frequently Asked Questions (FAQs)
 
+## General
+
+### Q: Isn't this imformation already addressed in formal AWS documentation?
+
+For example, in the AWS Control Tower documention.
+
+No, not to our knowledge. This guide take an experience journey based approach to introducing customers to the overall use case, the set of typical requirements, and overall solution before leading customers through the actual steps to realize a set development environments resting on the initial stage of their AWS foundation.
+
+Additionally, the scope of the initial stage of customers' adoption of AWS extends beyond the scope of any single AWS service. Consequently, it's difficult for any one AWS service to document such wide ranging experiences.
+
+Moving forward there's an opportunity to introduce this type of documentation and knowlege into more mainstream AWS documentation.
+
 ## AWS Account Design
 
-### Why aren't Sandbox AWS accounts included in the initial build out?
+### Q: Why aren't Sandbox AWS accounts included in the initial build out?
 
 Since the premise of the initial guide is to help customers quickly establish a formal development environment in which development, experimentation, and early testing of the first few application and/or data services can take place before they are rapidly moved through formal testing environments and into production, the traditional role of sandbox accounts in which the organization's intellectual propertly (IP) is not allowed does not yet apply to the customer.
 
@@ -14,6 +26,6 @@ Similar to other aspect of overall AWS account design, the guide intentionally a
 
 ## Federated Access to AWS Platform
 
-### Why isn't federated access addressed from the start?
+### Q: Why isn't federated access addressed from the start?
 
 It is our belief that can commonly take several weeks for an organization to go through the necessary preparation and execution to get true federated access into place. The minimal form of the foundation uses locally managed groups and users in AWS SSO for the first few weeks until a more desirable federated access capability is established.
