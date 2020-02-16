@@ -10,7 +10,7 @@ For example, you will likely gain value from:
 * Reducing the set of AWS services that development teams can use in their development AWS accounts so that access to services that are likely not important to your business are disallowed.
 * Refining the degree of access development teams have in their development AWS accounts. For example, you likely don't want development team members to be able to modify stable foundation team managed resources residing in the development team AWS accounts.
 
-These are just serveral examples of many that are common for organizations starting out with AWS.
+These are just several examples of many that are common for organizations starting out with AWS.
 
 ## Automation and Infrastructure as Code (IaC)
 
