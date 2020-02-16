@@ -1,4 +1,4 @@
-# Getting Started Guide
+# Getting Started Guide for Development Teams
 
 This document is meant to represent a starting point for your organization to develop and publish internally your own getting started guide for teams that are onboarding to your AWS environment.  You are free to copy this content into your own internal wiki or other system and modify it as you see fit.
 
