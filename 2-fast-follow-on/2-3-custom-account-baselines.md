@@ -1,11 +1,12 @@
 # Custom AWS Account Baselines
 
-This section reviews the typical requirements, introduces common solution options, and provides references to further information to help you determine and take action to enable your foundation team to define and efficiently roll out new and updated cloud resources or "baselines" across your AWS accounts to further secure the overall environment and deliver useful common capabilities to your internal teams. 
+This section reviews the typical requirements, introduces common solution options, and provides references to further information to help you determine your approach and enable your foundation team to define and efficiently roll out new and updated cloud resources or "baselines" across your AWS accounts to further secure the overall environment and deliver useful common capabilities to your internal teams. 
 
 ## Examples
 
 For example, you will likely gain value from:
 
+* Restricting the AWS regions in which your teams can deploy resources.
 * Reducing the set of AWS services that development teams can use in their development AWS accounts so that access to services that are likely not important to your business are disallowed.
 * Refining the degree of access development teams have in their development AWS accounts. For example, you likely don't want development team members to be able to modify stable foundation team managed resources residing in the development team AWS accounts.
 
