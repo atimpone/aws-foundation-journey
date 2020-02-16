@@ -34,7 +34,7 @@ After you create your new master AWS account, you can make use of a standard pro
 
 ## 3. Prepare Email Distribution Lists for New AWS Accounts
 
-Prepare a set of email distribution lists to represent the root user of each of the new AWS accounts that will be created. In this step you'll be referring to only the email distribution list for the master AWS account. In later steps, when you create other AWS accounts, you'll be entering the email distribution lists for those other AWS accounts.
+Prepare a set of email distribution lists to represent the root user of each of the new AWS accounts that will be created. In this step you'll be referring to only the email distribution list for the master AWS account. In later steps, when you create other AWS accounts, you'll be referring to the email distribution lists for those other AWS accounts.
 
 The following table includes the minimum set of distribution lists to get started. Each AWS account must have a globally unique email address. 
 
