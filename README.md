@@ -1,4 +1,4 @@
-# AWS Cloud Adoption Journey: Initial Foundation for the Project Stage
+# Establishing an Initial Cloud Foundation
 
 Some Amazon Web Services (AWS) customers have expressed the need to have a perscriptive guide to help their organizations better understand how they can get started with the AWS platform when they are ready to move from the informal stage of using personal AWS accounts to the next stage of performing more formal collaborative experiments, initial development, and testing work that will likely result in an initial set of application and/or data services being deployed to production. 
 
