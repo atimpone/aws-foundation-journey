@@ -102,7 +102,7 @@ We need to verify that this is the default behavior and, if it is, enhance this 
 
 When each new development team AWS account is created, follow these steps to initialize the AWS account's AWS SSO user and root user to align with security best practices.
 
-### Initialize the New AWS SSO User for the AWS Account
+### Initialize AWS SSO User for the AWS Account
 When a new AWS account has been created via the Account Factory, a user for the new AWS account is created in AWS SSO. As a best practice, you should initiatize the associated user's password and enable MFA. 
 
 1. Access the inbox for the email address you associated with the AWS account when using Account Factory.
@@ -111,7 +111,7 @@ When a new AWS account has been created via the Account Factory, a user for the 
 
 Follow the instruction in [How to Register a Device for Use with Multi-Factor Authentication](https://docs.aws.amazon.com/singlesignon/latest/userguide/user-device-registration.html).
 
-### Initialize the New AWS Account's Root User
+### Initialize AWS Account's Root User
 
 In addition to a new AWS SSO user being created for the AWS account, the new AWS account has a built-in root user.  
 
