@@ -89,11 +89,26 @@ As a getting started step, this guide suggests using one of the pre-defined, AWS
 
 ---
 
+---
+**Review Note: Power user access might be insufficient***
+
+We need to validate that the predefined AWS managed permission is sufficient as a starting point. It has some restrictions that might not be compatible with common dev use cases.
+
+---
+
 ## 3. Create Development Team Users in AWS SSO
 
 Now that you've established the two development oriented groups in AWS SSO and wired these groups to a set of permissions and AWS accounts, your next step is to create a user in AWS SSO for each development team member.
 
 ***...add instructions...refer to earlier section where they already added the foundation team users...***
+
+
+---
+**Review Note: Need to ensure dev team access to cost reporting**
+
+Per the up front requirements for this stage, we need to ensure that dev teams have sifficient permissions somthat they can self service review their cloud costs.
+
+---
 
 ## 4. Enable Foundation Team Members Access Their Development AWS Account
 
