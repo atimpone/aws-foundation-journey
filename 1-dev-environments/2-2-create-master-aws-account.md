@@ -45,7 +45,7 @@ If your organization already has a naming standard for mail addresses associated
 |Master|aws-account-master@acme.com|aws-account+master@acme.com|
 |Audit|aws-account-audit@acme.com|aws-account+audit@acme.com|
 |Log Archive|aws-account-log-archive@acme.com|aws-account+log-archive@acme.com|
-|Cloud Platform Team Development|aws-account-cloud-platform-dev@acme.com	|aws-account+cloud-platform-dev@acme.com|
+|Foundation Team Development|aws-account-foundation-dev@acme.com|aws-account+foundation-dev@acme.com|
 |Team 1 Development|aws-account-team-a-dev@acme.com|aws-account+team-a-dev@acme.com|
 
 ### Use of “+” Style Email Addresses
