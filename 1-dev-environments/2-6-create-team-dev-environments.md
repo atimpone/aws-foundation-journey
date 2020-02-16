@@ -60,7 +60,9 @@ You'll follow these steps twice: Once to create the initial deveopment team's AW
 6. Select `Products list`.
 7. Select `AWS Control Tower Account Factory`.
 8. Select `Launch Product`.
-9. Under `Product Version`, specify a `Name`. For example `member-account-team-a-dev` or `member-account-foundation-dev`. This will be the name of the provisioned product in AWS Service Catalog and will not be the name of the new AWS account.
+9. Under `Product Version`, specify a `Name`. This will be the name of the provisioned product in AWS Service Catalog and will not be the name of the new AWS account. For example:
+  * `member-account-team-a-dev`
+  * `member-account-foundation-dev`
 10. Select `Next`.
 11. In `Parameters`, consider the following recommendations:
 
