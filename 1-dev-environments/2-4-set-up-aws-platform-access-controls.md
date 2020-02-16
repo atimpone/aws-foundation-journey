@@ -147,4 +147,4 @@ You will likely want to establish either manual or automatic recurring audits to
 
 ## Next Steps
 
-[5. Onboarding the Foundation Team](2-5-onboard-foundation-team.md)
+[5. Onboard the Foundation Team](2-5-onboard-foundation-team.md)
