@@ -1,7 +1,7 @@
 # Federated Access to AWS Platform
 
 ---
-**Review Notes: For now add ideas and references to existing publicly available resources
+**Review Notes: For now add ideas and references to existing publicly available resources**
 
 Let's build up ideas and refine as we go.
 
