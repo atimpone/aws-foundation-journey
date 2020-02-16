@@ -14,7 +14,7 @@ This step should take about 60 minutes to complete.
 
 Work with your cross-functional colleagues in Security, Compliance, and Finance to assemble the basic form of a getting started document and share with the members of the initial development teams so that they understand the fundamentals of their responsibilities, access permissions, and how to access and begin using their development AWS accounts. 
 
-See the [Example Getting Started Guide](3-1-getting-started-guide.md) as a potential starting point.
+See the [Example Getting Started Guide](3-1-getting-started-guide.md) as a recommended starting point.
 
 ## 2. Create Development Team Groups in AWS SSO
 
