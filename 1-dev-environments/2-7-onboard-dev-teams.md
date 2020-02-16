@@ -90,7 +90,7 @@ As a getting started step, this guide suggests using one of the pre-defined, AWS
 ---
 
 ---
-**Review Note: Power user access might be insufficient***
+**Review Note: Power user access might be insufficient**
 
 We need to validate that the predefined AWS managed permission is sufficient as a starting point. It has some restrictions that might not be compatible with common dev use cases.
 
