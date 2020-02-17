@@ -1,6 +1,6 @@
 # 5. Onboard Foundation Team
 
-In this step your Cloud Administrators will onboard the few people that make up the initial foundation team so that they can stop using system users and start using their own user accounts to manage the foundation.
+In this step either your Security or Cloud Administrators will onboard the few people that make up the initial foundation team so that they can stop using system users and start using their own user accounts to manage the foundation.
 
 This step should take about 20 minutes to complete.
 
