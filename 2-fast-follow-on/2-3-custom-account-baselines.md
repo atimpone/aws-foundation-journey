@@ -12,7 +12,7 @@ The actual security and compliance controls and typical common foundation resour
 
 ### Automation and Infrastructure as Code (IaC)
 
-As the degree of customization and extent of your foundation resources expands over time, you'll benefit for having an automated means to roll out and manage such resources.  Additionally, you'll benefit from using Infrastructure as Code (IaC) and other common practices to treat such resources as code that progresses through a modern development and testing worklow.
+As the degree of customization and extent of your foundation resources expands over time, you'll benefit for having an automated means to roll out and manage such resources.  Additionally, you'll benefit from using Infrastructure as Code (IaC) and other common practices to treat such resources as code that progresses through a modern development and testing workflow.
 
 ### Ability to Target AWS Organization Units (OUs) and Independent AWS Accounts
 
