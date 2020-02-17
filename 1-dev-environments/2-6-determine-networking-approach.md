@@ -6,15 +6,15 @@ This step should take about 15 minutes to complete.
 
 1. [Review Initial Network Design](#1-review-initial-network-design)
 2. [Decide on Initial Provisioning Approach](#2-decide-on-initial-provisioning-approach)
-3. [Using Option 1: Update VPC Settings]
-4. [Using Option 2: Disable VPC Provisioning by Account Factory]
+3. [Using Option 1: Update VPC Settings](#3-using-option-1-update-vpc-settings)
+4. [Using Option 2: Disable VPC Provisioning by Account Factory](#4-using-option-2-disable-vpc-provisioning-by-account-factory)
  
 
 ## 1. Review Initial Network Design
 
-As mentioned in the Initial [Development Environment Solution Overview](1-2-solution.md#vpc-network-for-each-development-team-aws-account), it's recommended that you start with a two-tier network design consisting of a dedicated VPC for each development team AWS account including a set of public subnets and a set of private subnets.  
+As mentioned in the Initial [Development Environment Solution Overview](1-2-solution.md#vpc-network-for-each-development-team-aws-account), it's recommended that you start with a network design consisting of a dedicated VPC for each development team AWS account including a set of public subnets and a set of private subnets.
 
-...
+*...insert network design similar to the one on the solutions page but with a bit more detail including multiple subnets/AZs per tier, use of NAT Gateways, Internet Gateway, VPC FlowLogs, etc.*
 
 ### Set Expectations for Replacing These Networks in the Future
 
@@ -40,8 +40,8 @@ After you create each development team AWS account, you would use AWS CloudForma
 
 |Option|Pros|Cons|
 |------|----|----|
-|1. AWS Control Tower Account Factory|* Ready to use<br>* Since it uses AWS CloudFormation, you can modify the VPC resources to some extent after the fact.|* In order to use different IP address ranges for each development AWS account, you'll need to keep changing the AWS Control Tower settings.* Given the relative simplicity of the current implementation, this option probably won't be the method you'll use as you progress on your journey.<br>* Although it uses AWS CloudFormation to provision the VPC resources, it uses AWS CloudFormation StackSets managed from the master AWS account.|
-|2. AWS CloudFormation Template|* Aligned with Infrastructure as Code (Iac)<br>* Enables more direct, code-based control of VPC resources in the development AWS accounts without using StackSets.<br>* Likely aligned with your direction moving forward.|* Requires you to understand how to deploy AWS CloudFormation templates.|
+|1. AWS Control Tower Account Factory|* Ready-to-use as part of Account Factory.<br>* Since it uses AWS CloudFormation, you can modify the VPC resources to some extent after the fact.|* In order to use different IP address ranges for each development AWS account, you'll need to keep changing the AWS Control Tower settings.<br>* Configuration options can be confusing.<br>* Given the relative simplicity of the current implementation, this option probably won't be the method you'll use as you progress on your journey.<br>* Although it uses AWS CloudFormation to provision the VPC resources, it uses AWS CloudFormation StackSets managed from the master AWS account.|
+|2. AWS CloudFormation Template|* Aligned with Infrastructure as Code (Iac)<br>* Provides more flexible configuration options that you can easily extend as you progress on your journey.<br>Does not require accessing the master AWS account to managed StackSets.<br>* Likely aligned with your direction moving forward.|* Requires a few minutes of learning how to create stacks from AWS CloudFormation templates if you do not already have this experience.|
 
 ---
 **Note: AWS Management Console VPC Wizard**
@@ -63,11 +63,9 @@ If you choose to use the AWS Control Tower Account Factory’s built-in support 
 3. Select Management console associated with the **`AWSAdministratorAccess`** role.
 4. Select the appropriate AWS region.
 5. Navigate to AWS Control Tower.
-6. 
-
-To review and modify the VPC settings used by the Account Factory, in the AWS Management Console access `AWS Control Tower → Account factory`.
-
-<img src="../images/control-tower-account-factory-network-settings.png" alt="AWS Control Tower Account Factory Network Settings" width="400"/>
+6. Select `Account factory`.
+7. Select `Edit` to edit the Account Factory network configuration.
+8. Use the following guidance to update the configuration.
 
 **Internet-accessible subnet**
 Assuming that your development teams’ AWS accounts need access to resources on the Internet, you should enable the “Internet-accessible subnet” option.
