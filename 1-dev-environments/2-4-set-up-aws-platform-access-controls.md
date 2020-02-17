@@ -61,7 +61,7 @@ Since you have not yet created users in AWS SSO for each member of your foundati
 
 Access the AWS SSO service:
 
-1. Sign in to the AWS SSO URL for your environment using the AWS Control Tower Administrator user.
+1. Sign in to the AWS SSO URL for your environment using the **AWS Control Tower Administrator** user.
 2. Select the AWS **master** account.
 3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
 4. Select the appropriate AWS region.
