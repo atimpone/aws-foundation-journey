@@ -14,7 +14,7 @@ As mentioned in the Initial [Development Environment Solution Overview](1-2-solu
 
 Later in your journey, if and when you set up network connectivity with your on-premises network, you will likely replace these initial VPCs with VPCs that more closely align with your longer term needs. For example, in the future, to avoid complicated network address translation (NAT) configurations, you will likely allocate IP address ranges or "CIDR blocks" to your VPCs that don't overlap with on-premises networks.
 
-## 2. Decide on Initial Networking Provisioning Approach
+## 2. Decide on Provisioning Approach
 
 As part of the landing zone established by AWS Control Tower, an “AWS Control Tower Account Factory” product is deployed to AWS Service Catalog in your master account. In a later step in this guide, your Cloud Administrators will use this product to easily create a new AWS member account for each development team. The Account Factory has the ability to provision a basic AWS Virtual Private Cloud (VPC) when it creates a new AWS account.
 
