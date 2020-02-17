@@ -44,7 +44,7 @@ After you create each development team AWS account, you would use AWS CloudForma
 |Option|Pros|Cons|
 |------|----|----|
 |1. AWS Control Tower Account Factory|* Ready-to-use as part of Account Factory.<br><br>* Since it uses AWS CloudFormation, you can modify the VPC resources to some extent after the fact.|* In order to use different IP address ranges for each development AWS account, you'll need to keep changing the AWS Control Tower settings.<br><br>* Configuration options can be confusing.<br><br>* Given the relative simplicity of the current implementation, this option probably won't be the method you'll use as you progress on your journey.<br><br>* Although it uses AWS CloudFormation to provision the VPC resources, it uses AWS CloudFormation StackSets managed from the master AWS account.|
-|2. AWS CloudFormation Template|* Aligned with Infrastructure as Code (Iac)<br><br>* Provides more flexible configuration options that you can easily extend as you progress on your journey.<br><br>Does not require accessing the master AWS account to managed StackSets.<br><br>* Likely aligned with your direction moving forward.|* Requires a few minutes of learning how to create stacks from AWS CloudFormation templates if you do not already have this experience.|
+|2. AWS CloudFormation Template|* Aligned with Infrastructure as Code (Iac)<br><br>* Provides more flexible configuration options that you can easily extend as you progress on your journey.<br><br>Does not require accessing the master AWS account to manage StackSets.<br><br>* Likely aligned with your direction moving forward.|* Requires a few minutes of learning how to create stacks from AWS CloudFormation templates.|
 
 ---
 **Note: AWS Management Console VPC Wizard**
