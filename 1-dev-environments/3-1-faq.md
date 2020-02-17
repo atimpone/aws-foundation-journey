@@ -28,4 +28,4 @@ Similar to other aspects of overall AWS account design, the guide intentionally 
 
 ### Q: Why isn't federated access addressed from the start?
 
-It is our belief that can commonly take several weeks for an organization to go through the necessary preparation and execution to get true federated access into place. The minimal form of the foundation uses locally managed groups and users in AWS SSO for the first few weeks until a more desirable federated access capability is established.
+Based on our experience, it can commonly take several weeks for an organization to go through the necessary preparation and execution to get true federated access into place. The minimal form of the foundation uses locally managed groups and users in AWS SSO for the first few weeks until a more desirable federated access capability is established.
