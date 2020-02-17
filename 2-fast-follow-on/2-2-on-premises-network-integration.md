@@ -21,6 +21,8 @@ Let's build up ideas and refine as we go.
 * Hybrid DNS resolution:
   * On-premises clients resolve custom FQDNs for cloud hosted services.
   * Cloud clients resolve customer FQDNs on on-premises services.
+  
+* Non-overlapping allocation of IP address ranges for use by cloud environments.
 
 ## Solution Options and Resources
 
