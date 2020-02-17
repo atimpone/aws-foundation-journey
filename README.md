@@ -41,6 +41,8 @@ Later, when your organization has demonstrated success with the initial few proj
 2. [Establish Fast Follow-On Capabilities](#2-establish-fast-follow-on-capabilities)
 3. [Establish Initial Test and Production Environments](#3-establish-initial-test-and-production-environments)
 
+---
+
 ### 1. Establish Initial Development Environments
 
 By following this guide, in about a day, your organization can establish an initial secure foundation and development environments in AWS.
@@ -68,6 +70,8 @@ By following this guide, in about a day, your organization can establish an init
 * [Getting Started Guide for Development Teams](1-dev-environments/3-2-getting-started-guide.md)
 * [Cloud Platform System AWS Users](1-dev-environments/3-3-cloud-platform-system-users.md)
 
+---
+
 ### 2. Establish Fast Follow-On Capabilities
 
 Depending on your organizations needs, some additional capabilities may be required either as part of your initial build out of development environments or shortly thereafter. The following guides address most common "fast follow-on" capabilities and provide references to current best practices to establish these capabilities.
@@ -82,6 +86,8 @@ Depending on your organizations needs, some additional capabilities may be requi
 * [Establish Secure Internet Integration](2-fast-follow-on/2-4-secure-internet-integration.md)
 * [Integrate Security Information and Event Management (SIEM) Solution](2-fast-follow-on/2-5-siem-integration.md)
 * [Enhance Security Monitoring and Compliance](2-fast-follow-on/2-6-enhanced-security-monitoring-and-compliance.md)
+
+---
 
 ### 3. Establish Initial Test and Production Environments
 ---
