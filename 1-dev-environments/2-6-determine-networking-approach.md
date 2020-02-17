@@ -4,10 +4,10 @@ In this step your Cloud Administrators will review the initial network design an
 
 This step should take about 15 minutes to complete.
 
-1. [Review Initial Network Design]
-2. [Decide on Initial Provisioning Approach]
-  * [Using Option 1: Update VPC Settings]
-  * [Using Option 2: Disable VPC Provisioning by Account Factory]
+1. [Review Initial Network Design](#1-review-initial-network-design)
+2. [Decide on Initial Provisioning Approach](#2-decide-on-initial-provisioning-approach)
+3a. [Using Option 1: Update VPC Settings]
+3b. [Using Option 2: Disable VPC Provisioning by Account Factory]
  
 
 ## 1. Review Initial Network Design
@@ -39,6 +39,7 @@ After you create each development team AWS account, you would use AWS CloudForma
 ### Deciding on an Approach
 
 |Option|Pros|Cons|
+|------|----|----|
 |1. AWS Control Tower Account Factory|* Ready to use<br>* Since it uses AWS CloudFormation, you can modify the VPC resources to some extent after the fact.|* In order to use different IP address ranges for each development AWS account, you'll need to keep changing the AWS Control Tower settings.* Given the relative simplicity of the current implementation, this option probably won't be the method you'll use as you progress on your journey.<br>* Although it uses AWS CloudFormation to provision the VPC resources, it uses AWS CloudFormation StackSets managed from the master AWS account.|
 |2. AWS CloudFormation Template|* Aligned with Infrastructure as Code (Iac)<br>* Enables more direct, code-based control of VPC resources in the development AWS accounts without using StackSets.<br>* Likely aligned with your direction moving forward.|* Requires you to understand how to deploy AWS CloudFormation templates.|
 
