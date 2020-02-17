@@ -2,7 +2,7 @@
 
 In this step your Cloud Administrators will review the initial network design and recommended provisioning methods in support of the development team AWS accounts.
 
-This step should take about 15 minutes to complete.
+This step should take about 20 minutes to complete.
 
 1. [Review Initial Network Design](#1-review-initial-network-design)
 2. [Decide on Initial Provisioning Approach](#2-decide-on-initial-provisioning-approach)
