@@ -12,7 +12,7 @@ This step should take about 15 minutes to complete.
 
 ## 1. Review Initial Network Design
 
-As mentioned in the Initial [Development Environment Solution Overview](1-2-solution.md#vpc-network-for-each-development-team-aws-account), it's recommended that you start with a network design consisting of a dedicated VPC for each development team AWS account including a set of public subnets and a set of private subnets.
+As mentioned in the Initial [Development Environment Solution Overview](1-2-solution.md#vpc-network-for-each-development-team-aws-account), it's recommended that you start with a network design consisting of a dedicated VPC for each development team AWS account including a set of public and private subnets.
 
 *...insert network design similar to the one on the solutions page but with a bit more detail including multiple subnets/AZs per tier, use of NAT Gateways, Internet Gateway, VPC FlowLogs, etc.*
 
