@@ -86,7 +86,7 @@ Depending on your organizations needs, some additional capabilities may be requi
 * [Establish Secure Internet Integration](2-fast-follow-on/2-4-secure-internet-integration.md)
 * [Integrate Security Information and Event Management (SIEM) Solution](2-fast-follow-on/2-5-siem-integration.md)
 * [Enhance Security Monitoring and Compliance](2-fast-follow-on/2-6-enhanced-security-monitoring-and-compliance.md)
-* [Enhance Access Controls](2-fast-follow-on/2-6-enhanced-access-controls.md)
+* [Enhance Access Controls](2-fast-follow-on/2-7-enhanced-access-controls.md)
 ---
 
 ### 3. Establish Initial Test and Production Environments
