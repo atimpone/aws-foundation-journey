@@ -83,7 +83,7 @@ If you don’t expect that your initial VPCs will need to have connectivity with
 
 Note that the VPC created in each development team AWS account will be assigned the same IP address range. This overlap might be acceptable to you in the early stages of your use of AWS, but will likely become a barrier as your foundation needs expand.
 
-## Regions for VPC creation
+### Regions for VPC creation
  Select only the single AWS region in which your organization expects to do most of its initial work. You’ll likely want to choose the same AWS region as you selected for the AWS Control Tower home region.
 
 ## 4. Using Option 2: Disable Account Factory VPC Provisioning
