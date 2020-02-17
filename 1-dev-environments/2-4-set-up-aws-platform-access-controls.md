@@ -38,7 +38,7 @@ The following table represents a mapping of those functional roles to a set of A
 |---	|---	|--- |
 |Cloud Administration|`AWSControlTowerAdmins`|[Administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) access in the master, log archive, and audit accounts.|
 | |`AWSAccountFactory`|Abilty to use the Account Factory product via AWS Service Catalog.|
-| |`acme-cloud-admin`|[Administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) access across all other AWS accounts.
+| |`acme-cloud-admin`|[Administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) access in all other AWS accounts.
 |Security Administration|`AWSAuditAccountAdmins`|[Administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) access in the audit account.|
 | |`AWSLogArchiveAdmins`|[Administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) access in the log archive account.|
 | |`AWSSecurityAuditPowerUsers`|[Developer power user](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_developer-power-user) access across all accounts.|
@@ -77,9 +77,7 @@ If you encounter a permissions error when attempting to access AWS SSO via the A
 
 ## 4. Add a Cloud Admin Group in AWS SSO
 
-In order to fill a gap of a dedicated AWS SSO group for your Cloud Administrator team members, you'll need to add a new group in AWS SSO. In a subsequent step, you'll add Cloud Administrator team members to the new group. 
-
-Later on, after the initial set of development team AWS account are created, you will assign this group and a permission set to each of those new accounts so that the Cloud Administrators can gain sufficient access to manage those accounts. 
+Since Cloud Administrators don't have administrator access to newly created AWS accounts, you'll need to start laying the groundwork for this access by adding a new group in AWS SSO. In a subsequent step, you'll add Cloud Administrator team members to the new group. Later on, after the initial set of development team AWS account are created, you will assign this group and a permission set to each of those new accounts so that the Cloud Administrators can gain administrator level access to manage those accounts. 
 
 1. Access `Groups` in AWS SSO.
 2. Select `Create group`.
