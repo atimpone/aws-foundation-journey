@@ -10,13 +10,15 @@ This step should take about 60 minutes to complete.
 
 ## Cloud Administrators
 
-***Ensure the all of the following responsibiities are action oriented, actionable tasks that cloud admins and the organization at large will find to be the bare minimum ongoing regular tasks for cloud admins.***
+### 1. Identify Day-to-Day Tasks for This Role.
+
+Consider starting with the following list:
 
 * Applying AWS Control Tower updates.
 * Responding to alerts from AWS Control Tower guardrails and other AWS platform monitoring services.
 * Monitoring costs across accounts on at least a weekly basis.
 
-### n. Monitoring and Managing Resource Configuration State
+### 2. Monitor and Manage Resource Configuration State
 
 As resources are deployed in your account, managing the growing inventory of resources and ensuring that they are deployed consistently and maintained consistently can become a challenge. [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html) is a Management and Governance tool available to help you with:
 
@@ -28,11 +30,11 @@ As resources are deployed in your account, managing the growing inventory of res
 More specifically, you can do the following with AWS Config:
 
 * Evaluate your AWS resource configurations for desired settings.
-* Get a snapshot of the current configurations of the supported resources that are associated with your AWS account. 
+* Get a snapshot of the current configurations of the supported resources that are associated with your AWS account.
 * Retrieve configurations of one or more resources that exist in your account.
 * Retrieve historical configurations of one or more resources.
 * Receive a notification whenever a resource is created, modified, or deleted.
-* View relationships between resources. For example, you might want to find all resources that use a particular security group. 
+* View relationships between resources. For example, you might want to find all resources that use a particular security group.
 
 Once you have resources deployed in your account, consider [Getting Started with AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/getting-started.html).
 
@@ -46,21 +48,19 @@ By following this guide, your foundation team has already established a foundati
 * Secured the root user of your AWS accounts with multi-factor authentication (MFA).
 * Set up an initial degree of AWS platform access management.
 
-Beyond these capabilities that are already in place, you should plan on performing the following tasks: 
+### 1. Identify Day-to-Day Tasks for This Role.
 
-***Ensure the all of the following responsibiities are action oriented, actionable tasks that security admins and the organization at large will find to be the bare minimum ongoing regular tasks for security administrators.***
-
-***Need to refactor the following bulleted list into the content following this list***
+Consider starting with the following list:
 
 * Responding to alerts from AWS Control Tower guardrails and other AWS platform monitoring services.
-* Onboarding and deprovisioning users and groups via AWS SSO.
+* Onboarding and de-provisioning users and groups via AWS SSO.
 * Modifying access permissions via AWS SSO Permission Sets.
 * Performing periodic audits of your AWS security configuration.
     * Although some of the detective guardrails deployed through AWS Control Tower help continuously monitor and audit aspects of your AWS environment, it’s a best practice to periodically audit your security configuration to make sure that it meets your current business needs. See AWS [Security Audit Guidelines](https://docs.aws.amazon.com/general/latest/gr/aws-security-audit-guide.html) for best practices.
 
-### 1. Review and Enable Foundational Security Services
+### 2. Review and Enable Foundational Security Services
 
-While security is weaved within all AWS services and capabilities, a few explicit AWS Security, Identity, & Compliance services you should be aware of at this point in your journey are: 
+While security is weaved within all AWS services and capabilities, a few explicit AWS Security, Identity, & Compliance services you should be aware of at this point in your journey are:
 
 ****[Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html)**** is our threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts and workloads. To use GuardDuty, it is a service that needs to be enabled. We recommend [enabling](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_settingup.html) the service for the 30-day free trial and see the visibility and value it brings to your security practice.
 
@@ -77,7 +77,7 @@ While security is weaved within all AWS services and capabilities, a few explici
     * RDS Public Snapshots
 * ****Service Limits****
 
-### 2. Access CloudTrail
+### 3. Access CloudTrail
 
 AWS CloudTrail is an AWS service that helps you enable governance, compliance, and operational and risk auditing of your AWS account. Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail. Events include actions taken in the AWS Management Console, AWS Command Line Interface, and AWS SDKs and APIs.
 
@@ -86,7 +86,7 @@ AWS CloudTrail is an AWS service that helps you enable governance, compliance, a
 3. Expand the event to see additional information.
 4. As your usage of the platform grows you will find value in additional capabilities like search, filtering, and exporting the CloudTrail data.
 
-### 3. Access CloudWatch
+### 4. Access CloudWatch
 
 Amazon CloudWatch monitors your Amazon Web Services (AWS) resources and the applications you run on AWS in real time. You can use CloudWatch to collect and track metrics, which are variables you can measure for your resources and applications.
 The CloudWatch home page automatically displays metrics about every AWS service you use. You can additionally create custom dashboards to display metrics about your custom applications, and display custom collections of metrics that you choose.
@@ -96,13 +96,11 @@ The CloudWatch home page automatically displays metrics about every AWS service 
 
 At this stage without any workloads deployed, your CloudWatch data will be sparse. Once you are ready to configure monitoring, follow the [Getting Started with Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/GettingStarted.html) guidance.
 
-### 4. Security Checklist Validation
+### 5. Security Checklist Validation
 
 Finally, once you have deployed resources in your account, a good checklist to review for security best practices can be found in the [AWS Security Checklist (PDF)](https://d1.awsstatic.com/whitepapers/Security/AWS_Security_Checklist.pdf). Become familiar with the checklist items and periodically review your account against its guidelines.
 
 ## Cost Managers
-
-***Ensure the all of the following responsibiities are action oriented, actionable tasks that cost managers and the organization at large will find to be the bare minimum ongoing regular tasks for cost managers.***
 
 AWS Cost Management tools give you and your team visibility into AWS account costs and usage. Each account you create will have access to view their individual account costs and usage. The Master account can see the total organizational cost and usage rollup.
 
@@ -110,15 +108,15 @@ AWS Cost Management tools give you and your team visibility into AWS account cos
 
 Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console.aws.amazon.com/billing/home#/](https://console.aws.amazon.com/billing/home)
 
-There are a range of AWS Cost Management tools to help you access, organize, understand, control, and optimize your costs. You start to access detailed information about your AWS costs and usage using the built-in dashboard in the Billing and Management area of the AWS Management Console. 
+There are a range of AWS Cost Management tools to help you access, organize, understand, control, and optimize your costs. You start to access detailed information about your AWS costs and usage using the built-in dashboard in the Billing and Management area of the AWS Management Console.
 
 ### 2. Enable Cost Explorer
 
 To see more detailed cost information for your account, you will want to enable the Cost Explorer:
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console.aws.amazon.com/billing/home#/](https://console.aws.amazon.com/billing/home)
-2. On the navigation pane, choose **Cost Explorer**. 
-3. On the **Welcome to Cost Explorer** page, choose **Enable Cost Explorer**. 
+2. On the navigation pane, choose **Cost Explorer**.
+3. On the **Welcome to Cost Explorer** page, choose **Enable Cost Explorer**.
 
 ### 3. Create a Budget
 
@@ -131,7 +129,7 @@ For more proactive management of your AWS costs, set up budgets within the Billi
 * Create alerts based on a budget to notify you or others as budget thresholds are reached. Each budget alert notification can be sent to up to 10 email addresses and 1 SNS topic for subscribers.
 
 Take a few minutes and create an initial basic budget by following this guide [Create your first Budget](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-create.html).
-   
+
 ## Next Steps
 
 Review the other guides including Establishing Fast Follow-on Capabilities and Establishing Initial Test and Production Environments in the [main documentation](../README.md)
