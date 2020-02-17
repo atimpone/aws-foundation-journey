@@ -1,6 +1,6 @@
 # 8. Onboard Initial Development Teams
 
-In this step your Security and Cloud Admins will onboard a limited set of initial developers who will have access to their team development environment. The outcome is that a small team of developers has the knowledge to start using their AWS development account, where to find basic usage documentation, and who to contact for support.
+In this step either Security or Cloud Administrators will onboard a limited set of initial developers who will have access to their team development environment. The outcome is that a small team of developers has the knowledge to start using their AWS development account, where to find basic usage documentation, and who to contact for support.
 
 This step should take about 60 minutes to complete.
 
