@@ -19,7 +19,7 @@ As mentioned in the Initial [Development Environment Solution Overview](1-2-solu
 ---
 **Note: These Networks Will Likely Be Replaced**
 
-Later in your journey, if and when you set up network connectivity with your on-premises network, you will likely replace these initial VPCs with VPCs that more closely align with your longer term needs. For example, common capabilites that would entail replacing or significantly changing the initial VPCs include:
+Later in your journey, if and when you set up network connectivity with your on-premises network, you will likely replace these initial VPCs with configurations that more closely align with your longer term needs. For example, common capabilites that would entail replacing or significantly changing the initial VPCs include:
 
 * **Use Non Overlapping IP Address Ranges:** So as to avoid complicated network address translation (NAT) configurations, you will likely allocate IP address ranges or "CIDR blocks" to your VPCs that don't overlap with on-premises networks.
 
