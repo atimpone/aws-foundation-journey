@@ -88,7 +88,7 @@ Note that the VPC created in each development team AWS account will be assigned 
 
 ## 4. Using Option 2: Disable Account Factory VPC Provisioning
 
-If you plan to use any of the other options, you should ensure that the AWS Control Tower settings are configured to disable creation of a VPC when creating a new AWS account via AWS Control Tower's Account Factory. 
+If you plan to use AWS CloudFormation directly, you should ensure that the AWS Control Tower Account Factory network configuration is set to disable creation of a VPC when creating a new AWS account. 
 
 See [Configuring AWS Control Tower Without a VPC](https://docs.aws.amazon.com/controltower/latest/userguide/configure-without-vpc.html) for details on disabling automatic creation of VPCs.
 
