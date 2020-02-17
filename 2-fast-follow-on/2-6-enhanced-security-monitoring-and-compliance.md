@@ -1,10 +1,11 @@
 # Enhanced Security Monitoring and Compliance
 
-This section addresses the need for enhanced security capabilities often required as applications are launched. These capabilities would be less than requiring a custom account baseline ([discussed here](./2-3-custom-account-baselines.md)) but still need to be addressed.
+This section addresses requirements, options, and resources to enable your Security and Cloud Administrators to extend the degree of preventative, detective, and corrective controls.
+
+Support for [custom AWS account baselines](./2-3-custom-account-baselines.md) can be the means to roll out such controls, but this section focuses on what controls are of most interest.
 
 ## Examples
 
 * An application requires a named IAM user to access the AWS platform with an API key and secret, configure additional alarms and logs when these credentials are used.
 * Restricting the AWS regions in which your teams can deploy resources.
-
-## Service Control Policies
+* Restricting the set of AWS services that are accessible to development teams.
