@@ -68,6 +68,10 @@ What is the minimum knowledge a dev team would need for day 1 use of their new d
 
 *...provide links to existing resources to learn more...*
 
+## How to Learn More About AWS Services and Best Pratices
+
+...
+
 ## How to Get Support
 
 *...address how development teams get support to get things done in their development AWS accounts... include: 1) organization-specific support needds; 2) support for AWS services - can the dev teams file tickets?...*
