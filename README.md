@@ -7,6 +7,7 @@ The documents provided in this repository are part of an ongoing project to shar
 ---
 > ***The current focus of this project is to complete the first guide, "Establish Initial Development Environments". As the authors encounter best practices and resources associated with the subjects of the other guides outlined below, they will continue to add notes and links in those remaining guides.***
 ---
+
 * [Stages of Cloud Adoption](#stages-of-cloud-adoption)
 * [Cloud Foundation](#cloud-foundation)
 * Guides
@@ -65,17 +66,12 @@ By following this guide, in about a day, your organization can establish an init
 
 ### Establish Fast Follow-On Capabilities
 
-Depending on your organizations needs, some additional capabilities may be required either as part of your initial build out of development environments or shortly thereafter. This guide highlights the most common "fast follow-on" capabilities and provide references to current best practices to establish the capabilities.
+Depending on your organizations needs, some additional capabilities may be required either as part of your initial build out of development environments or shortly thereafter. The following guides highlight the most common "fast follow-on" capabilities and provide references to current best practices to establish these capabilities.
 
-#### Review and Refine Requirements and Solution Design
-
-* [Review and Refine Initial Development Environment Fast Follow-On Requirements](2-fast-follow-on/1-1-requirements.md)
-* [Review and Refine Initial Development Environment Fast Follow-On Solution](2-fast-follow-on/1-2-solution.md)
-
-#### Build Out the Capabilities
 ---
-> *The following sections have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.*
+> ***The following guides have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.***
 ---
+
 * [Establish Federated Access to Your AWS Environment](2-fast-follow-on/2-1-federated-access-to-aws.md)
 * [Set Up On-Premises Network Integration](2-fast-follow-on/2-2-on-premises-network-integration.md)
 * [Enable Custom AWS Account Baselines](2-fast-follow-on/2-3-custom-account-baselines.md)
@@ -84,7 +80,7 @@ Depending on your organizations needs, some additional capabilities may be requi
 
 ### Establish Initial Test and Production Environments
 ---
-> *Other than the inclusion in the Solution Overview section of a rough diagram of a typical layout of the foundation including the addition of test and production environments, the sections for this guide have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.*
+> ***Other than the inclusion in the Solution Overview section of a rough diagram of a typical layout of the foundation including the addition of test and production environments, the sections for this guide have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.***
 ---
 The next guide that is under development helps you extend your foundation by introducting a set of capabilities organizations typically require before moving any workload into production.
 
