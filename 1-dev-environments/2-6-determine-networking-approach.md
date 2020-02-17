@@ -17,7 +17,7 @@ As mentioned in the Initial [Development Environment Solution Overview](1-2-solu
 *...insert network design similar to the one on the solutions page but with a bit more detail including multiple subnets/AZs per tier, use of NAT Gateways, Internet Gateway, VPC FlowLogs, etc.*
 
 ---
-**Note: These Networks Will Likely Be Replaced**
+**Note: The initial networks will likely be replaced later on**
 
 Later in your journey, if and when you set up network connectivity with your on-premises network, you will likely replace these initial VPCs with configurations that more closely align with your longer term needs. For example, common capabilites that would entail replacing or significantly changing the initial VPCs include:
 
