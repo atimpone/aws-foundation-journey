@@ -47,6 +47,8 @@ Later, when your organization has demonstrated success with the initial few proj
 
 By following this guide, in about a day, your organization can establish an initial secure foundation and development environments in AWS.
 
+![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-initial.png "Initial Development Environment")
+
 #### Review and Refine Requirements and Solution Design
 
 1. [Review and Refine Initial Development Environment Requirements](1-dev-environments/1-1-requirements.md)
@@ -76,6 +78,8 @@ By following this guide, in about a day, your organization can establish an init
 
 Depending on your organizations needs, some additional capabilities may be required either as part of your initial build out of development environments or shortly thereafter. The following guides address most common "fast follow-on" capabilities and provide references to current best practices to establish these capabilities.
 
+![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-fast-follow-ons.png "Initial Development Environment with Fast Follow-On Capabilities")
+
 ---
 > ***The following guides have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.***
 ---
@@ -94,6 +98,8 @@ Depending on your organizations needs, some additional capabilities may be requi
 > ***Other than the inclusion in the Solution Overview section of a rough diagram of a typical layout of the foundation including the addition of test and production environments, the sections for this guide have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.***
 ---
 The next guide that is under development helps you extend your foundation by introducting a set of capabilities organizations typically require before moving any workload into production.
+
+![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/test-prod-single-region.png "Initial Test and Production Environments in Single AWS Region")
 
 #### Review and Refine Requirements and Solution Design
 
