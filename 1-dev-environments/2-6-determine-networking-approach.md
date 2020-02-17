@@ -16,13 +16,16 @@ As mentioned in the Initial [Development Environment Solution Overview](1-2-solu
 
 *...insert network design similar to the one on the solutions page but with a bit more detail including multiple subnets/AZs per tier, use of NAT Gateways, Internet Gateway, VPC FlowLogs, etc.*
 
-### Set Expectations for Replacing These Networks in the Future
+---
+**Note: These Networks Will Likely Be Replaced**
 
 Later in your journey, if and when you set up network connectivity with your on-premises network, you will likely replace these initial VPCs with VPCs that more closely align with your longer term needs. For example, common capabilites that would entail replacing or significantly changing the initial VPCs include:
 
 * **Use Non Overlapping IP Address Ranges:** So as to avoid complicated network address translation (NAT) configurations, you will likely allocate IP address ranges or "CIDR blocks" to your VPCs that don't overlap with on-premises networks.
 
 * **Removal of Public Subnets:** So that your hosting networks have only private subnets and all Internet ingress and egress traffic is routed through centrally managed proxies and security services.
+
+---
 
 ## 2. Decide on Initial Provisioning Approach
 
