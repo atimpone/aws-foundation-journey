@@ -81,7 +81,7 @@ Depending on your organizations needs, some additional capabilities may be requi
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-fast-follow-ons.png "Initial Development Environment with Fast Follow-On Capabilities")
 
 ---
-> ***The following guides have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.***
+> ***The following guides have not yet been drafted. Currently, they contain a series of notes and links to existing best practices and resources.***
 ---
 
 * [Establish Federated Access to Your AWS Environment](2-fast-follow-on/2-1-federated-access-to-aws.md)
@@ -94,12 +94,14 @@ Depending on your organizations needs, some additional capabilities may be requi
 ---
 
 ### 3. Establish Initial Test and Production Environments
----
-> ***Other than the inclusion in the Solution Overview section of a rough diagram of a typical layout of the foundation including the addition of test and production environments, the sections for this guide have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.***
----
+
 The next guide that is under development helps you extend your foundation by introducting a set of capabilities organizations typically require before moving any workload into production.
 
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/test-prod-single-region.png "Initial Test and Production Environments in Single AWS Region")
+
+---
+> ***Other than the inclusion in the Solution Overview section of a rough diagram of a typical layout of the foundation including the addition of test and production environments, the sections for this guide have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.***
+---
 
 #### Review and Refine Requirements and Solution Design
 
