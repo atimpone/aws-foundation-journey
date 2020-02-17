@@ -8,4 +8,4 @@ Dev teams are starting out with `AWSPowerUser` permissions which is pretty broad
 
 * AWS Control Tower CloudFormation stacks.
 * VPC resources
-* Other fortcoming baseline resources
+* Other forthcoming baseline resources
