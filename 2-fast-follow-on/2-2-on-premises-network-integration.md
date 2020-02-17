@@ -15,9 +15,16 @@ Let's build up ideas and refine as we go.
 
 *...list business use cases first along with outcomes...*
 
-*...typically start with site-to-site VPN based on speed of set up...*
+* Cloud client access to defined non-prod application and data services.
+* On-premises access to newly deployed cloud hosted dev, test, prod workloads and services.
+* Cloud client access to on-premises source code management access.
+* Hybrid DNS resolution:
+  * On-premises clients resolve custom FQDNs for cloud hosted services.
+  * Cloud clients resolve customer FQDNs on on-premises services.
 
 ## Solution Options and Resources
+
+*...typically start with site-to-site VPN based on speed of set up...*
 
 *...defer to existing documentation including decision trees, blog posts, formal AWS docs, etc. as much as feasible...*
 
