@@ -5,3 +5,6 @@ This section addresses the need for enhanced security capabilities often require
 ## Examples
 
 * An application requires a named IAM user to access the AWS platform with an API key and secret, configure additional alarms and logs when these credentials are used.
+* Restricting the AWS regions in which your teams can deploy resources.
+
+## Service Control Policies
