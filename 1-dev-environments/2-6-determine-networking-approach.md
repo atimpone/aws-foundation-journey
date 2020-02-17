@@ -6,8 +6,8 @@ This step should take about 15 minutes to complete.
 
 1. [Review Initial Network Design](#1-review-initial-network-design)
 2. [Decide on Initial Provisioning Approach](#2-decide-on-initial-provisioning-approach)
-3. [Using Option 1: Update VPC Settings](#3-using-option-1-update-vpc-settings)
-4. [Using Option 2: Disable VPC Provisioning by Account Factory](#4-using-option-2-disable-vpc-provisioning-by-account-factory)
+3. [Using Option 1: Update Account Factory VPC Settings](#3-using-option-1-update-account-factory-vpc-settings)
+4. [Using Option 2: Disable Account Factory VPC Provisioning](#4-using-option-2-disable-account-factory-vpc-provisioning)
  
 
 ## 1. Review Initial Network Design
@@ -57,7 +57,7 @@ This is another option, but it's a bit more awkward to use as compared to the tw
 
 ---
 
-## 3. Using Option 1: Update VPC Settings
+## 3. Using Option 1: Update Account Factory VPC Settings
 
 If you choose to use the AWS Control Tower Account Factory’s built-in support for creating basic VPCs, see the section “Configuring Account Factory with Amazon Virtual Private Cloud Settings” in the [AWS Control Tower Account Factory](https://docs.aws.amazon.com/controltower/latest/userguide/account-factory.html) documentation for setting up the parameters for your initial set of VPCs. 
 
@@ -84,7 +84,7 @@ Note that the VPC created in each development team AWS account will be assigned 
 **Regions for VPC creation**
  Select only the single AWS region in which your organization expects to do most of its initial work. You’ll likely want to choose the same AWS region as you selected for the AWS Control Tower home region.
 
-## 4. Using Option 2: Disable VPC Provisioning by Account Factory 
+## 4. Using Option 2: Disable Account Factory VPC Provisioning
 
 If you plan to use any of the other options, you should ensure that the AWS Control Tower settings are configured to disable creation of a VPC when creating a new AWS account via AWS Control Tower's Account Factory. 
 
