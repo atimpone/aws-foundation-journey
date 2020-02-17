@@ -37,7 +37,7 @@ As part of the landing zone established by AWS Control Tower, an “AWS Control 
 
 ### Option 2: AWS CloudFormation Template
 
-After you create each development team AWS account, you would use AWS CloudFormation either from the AWS Management Console or command line to create a new CloudFormation stack that automatically provisions a VPC and related resources based on a series of input parameters.
+After you create each development team AWS account, you would use AWS CloudFormation either from the AWS Management Console or command line to create a new CloudFormation stack based on a CloudFormation template file that automatically provisions a VPC and related resources. You supply a series of parameters to customize the VPC configuration. Over time, you can easily evolve the template to meet your changing needs.
 
 ### Deciding on an Approach
 
@@ -46,7 +46,7 @@ Use the following table to help you decide which approach to take to provision t
 |Option|Pros|Cons|
 |------|----|----|
 |1. AWS Control Tower Account Factory|* Ready-to-use as part of Account Factory.<br><br>* Since it uses AWS CloudFormation, you can modify the VPC resources to some extent after the fact.|* In order to use different IP address ranges for each development AWS account, you'll need to keep changing the AWS Control Tower settings.<br><br>* Configuration options can be confusing in terms of number of subnets per type and number of AZs.<br><br>* Given the relative simplicity of the current implementation, this option probably won't be the method you'll use as you progress on your journey.<br><br>* Although it uses AWS CloudFormation to provision the VPC resources, it uses AWS CloudFormation StackSets managed from the master AWS account.|
-|2. AWS CloudFormation Template|* Aligned with Infrastructure as Code (Iac).<br><br>* Provides more flexible configuration options that you can easily extend as you progress on your journey.<br><br>* Does not require accessing the master AWS account to manage StackSets.<br><br>* Likely aligned with your direction moving forward.|* Requires a few minutes of learning how to create stacks from AWS CloudFormation templates.|
+|2. AWS CloudFormation Template|* Aligned with Infrastructure as Code (Iac).<br><br>* Provides more flexible configuration options that you can easily extend as you progress on your journey.<br><br>* Does not require accessing the master AWS account to manage StackSets.<br><br>* Likely aligned with your direction moving forward.|* May require a few minutes of your time to learn how to create stacks from AWS CloudFormation templates.|
 
 ---
 **Note: AWS Management Console VPC Wizard**
