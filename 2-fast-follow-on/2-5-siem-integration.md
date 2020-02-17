@@ -6,6 +6,10 @@ This section addresses options and resources to enable your Security team to int
 
 *...In the context of the overall set of Security and Compliance requirements, highlight the typical role and value of integrating AWS CloudTrail and other event sources with SIEM services...*
 
+* AWS API usage (e.g. AWS CloudTrail logs)
+* AWS Resource Configuration changes (e.g. AWS Config)
+* Network traffic monitoring (e.g. partly based on capture of VPC Flow Logs)
+
 ## Solution Options and Resources
 
 ...
