@@ -100,7 +100,7 @@ The next guide that is under development helps you extend your foundation by int
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/test-prod-single-region.png "Initial Test and Production Environments in Single AWS Region")
 
 ---
-> ***Other than the inclusion in the Solution Overview section of a rough diagram of a typical layout of the foundation including the addition of test and production environments, the sections for this guide have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.***
+> ***The sections for this guide have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.***
 ---
 
 #### Review and Refine Requirements and Solution Design
