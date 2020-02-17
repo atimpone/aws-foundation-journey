@@ -11,9 +11,9 @@ The documents provided in this repository are part of an ongoing project to shar
 * [Stages of Cloud Adoption](#stages-of-cloud-adoption)
 * [Cloud Foundation](#cloud-foundation)
 * Guides
-  * [Establish Initial Development Environments](#establish-initial-development-environments)
-  * [Establish Fast Follow-On Capabilities](#establish-fast-follow-on-capabilities)
-  * [Establish Initial Test and Production Environments](#establish-initial-test-and-production-environments)
+  1. [Establish Initial Development Environments](#1-establish-initial-development-environments)
+  2. [Establish Fast Follow-On Capabilities](#2-establish-fast-follow-on-capabilities)
+  3. [Establish Initial Test and Production Environments](#3-establish-initial-test-and-production-environments)
 
 ## Stages of Cloud Adoption
 
@@ -37,7 +37,11 @@ Later, when your organization has demonstrated success with the initial few proj
 
 ## Guides
 
-### Establish Initial Development Environments
+1. [Establish Initial Development Environments](#1-establish-initial-development-environments)
+2. [Establish Fast Follow-On Capabilities](#2-establish-fast-follow-on-capabilities)
+3. [Establish Initial Test and Production Environments](#3-establish-initial-test-and-production-environments)
+
+### 1. Establish Initial Development Environments
 
 By following this guide, in about a day, your organization can establish an initial secure foundation and development environments in AWS.
 
@@ -64,7 +68,7 @@ By following this guide, in about a day, your organization can establish an init
 * [Getting Started Guide for Development Teams](1-dev-environments/3-2-getting-started-guide.md)
 * [Cloud Platform System AWS Users](1-dev-environments/3-3-cloud-platform-system-users.md)
 
-### Establish Fast Follow-On Capabilities
+### 2. Establish Fast Follow-On Capabilities
 
 Depending on your organizations needs, some additional capabilities may be required either as part of your initial build out of development environments or shortly thereafter. The following guides address most common "fast follow-on" capabilities and provide references to current best practices to establish these capabilities.
 
@@ -79,7 +83,7 @@ Depending on your organizations needs, some additional capabilities may be requi
 * [Integrate Security Information and Event Management (SIEM) Solution](2-fast-follow-on/2-5-siem-integration.md)
 * [Enhance Security Monitoring and Compliance](2-fast-follow-on/2-6-enhanced-security-monitoring-and-compliance.md)
 
-### Establish Initial Test and Production Environments
+### 3. Establish Initial Test and Production Environments
 ---
 > ***Other than the inclusion in the Solution Overview section of a rough diagram of a typical layout of the foundation including the addition of test and production environments, the sections for this guide have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.***
 ---
