@@ -6,7 +6,7 @@ Based on AWS’ extensive experience with customers progressing on their journey
 
 These are the typical bare minimum requirements to address when setting up formally managed development environments.
 
-A separate document addresses a series of [fast follow-on requirements](../2-fast-follow-on/1-1-requirements.md) that might be required up front depending on your organization's needs.
+A separate set of guides address a series of [fast follow-on capabilities](../aws-foundation-journey#2-establish-fast-follow-on-capabilities) that might be required up front depending on your organization's needs.
 
 ## Cloud Adoption Framework Perspectives
 
