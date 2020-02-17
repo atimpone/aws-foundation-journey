@@ -77,6 +77,7 @@ Depending on your organizations needs, some additional capabilities may be requi
 * [Enable Custom AWS Account Baselines](2-fast-follow-on/2-3-custom-account-baselines.md)
 * [Establish Secure Internet Integration](2-fast-follow-on/2-4-secure-internet-integration.md)
 * [Integrate Security Information and Event Management (SIEM) Solution](2-fast-follow-on/2-5-siem-integration.md)
+* [Enhance Security Monitoring and Compliance](2-fast-follow-on/2-6-enhanced-security-monitoring-and-compliance.md)
 
 ### Establish Initial Test and Production Environments
 ---
