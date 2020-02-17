@@ -10,3 +10,4 @@ Support for [custom AWS account baselines](./2-3-custom-account-baselines.md) ca
 * Restricting the AWS regions in which your teams can deploy resources.
 * Restricting the set of AWS services that are accessible to development teams.
 * Expunge default VPCs from all AWS accounts and AWS regions in those accounts.
+* Restrict access to AWS services to only the enterprise’s IP addresses.
