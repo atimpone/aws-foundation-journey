@@ -66,7 +66,7 @@ By following this guide, in about a day, your organization can establish an init
 
 ### Establish Fast Follow-On Capabilities
 
-Depending on your organizations needs, some additional capabilities may be required either as part of your initial build out of development environments or shortly thereafter. The following guides highlight the most common "fast follow-on" capabilities and provide references to current best practices to establish these capabilities.
+Depending on your organizations needs, some additional capabilities may be required either as part of your initial build out of development environments or shortly thereafter. The following guides address most common "fast follow-on" capabilities and provide references to current best practices to establish these capabilities.
 
 ---
 > ***The following guides have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.***
