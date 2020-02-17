@@ -6,7 +6,6 @@ This section addresses options and resources to enable your foundation team to d
 
 For example, you will likely gain value from:
 
-* Restricting the AWS regions in which your teams can deploy resources.
 * Reducing the set of AWS services that development teams can use in their development AWS accounts so that access to services that are likely not important to your business are disallowed.
 * Refining the degree of access development teams have in their development AWS accounts. For example, you likely don't want development team members to be able to modify stable foundation team managed resources residing in the development team AWS accounts.
 
