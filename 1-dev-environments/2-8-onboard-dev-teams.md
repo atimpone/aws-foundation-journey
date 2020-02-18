@@ -66,6 +66,8 @@ As a getting started step, this guide suggests using one of the pre-defined, AWS
 
 We need to validate that the predefined AWS managed permission is sufficient as a starting point. It has some restrictions that might not be compatible with common dev use cases.
 
+Indeed, it is not sufficient. See [Issue 15](https://github.com/ckamps/aws-foundation-journey/issues/15)
+
 ---
 
 
