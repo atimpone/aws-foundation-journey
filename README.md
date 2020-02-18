@@ -5,7 +5,10 @@ Some Amazon Web Services (AWS) customers have expressed the need to have a persc
 The documents provided in this repository are part of an ongoing project to share AWS foundational architecture best practices which enable the quick deployment of secure environments in which teams can start collaborating on and experimenting with new ideas with the expectation that some of the results will need to move rapidly from development to test and production.
 
 ---
-> ***The current focus of this project is to complete the first guide, "Establish Initial Development Environments". As the authors encounter best practices and resources associated with the subjects of the other guides outlined below, they will continue to add notes and links in those remaining guides.***
+**Review Note: Current focus is to complete the first guide: "Establish Initial Development Environments"**
+
+As the authors encounter best practices and resources associated with the subjects of the other guides outlined below, they will continue to add notes and links in those remaining guides.
+
 ---
 
 Background
@@ -79,7 +82,10 @@ Depending on your organizations needs, some additional capabilities may be requi
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-fast-follow-ons.png "Initial Development Environment with Fast Follow-On Capabilities")
 
 ---
-> ***The following guides have not yet been drafted. Currently, they contain a series of notes and links to existing best practices and resources.***
+**Review Note: These sections have not yet been drafted**
+
+The following guides have not yet been drafted. Currently, they contain a series of notes and links to existing best practices and resources.  The following list will likely change to be ordered by priority.
+
 ---
 
 Cost Management and Billing
@@ -114,7 +120,10 @@ The next guide that is under development helps you extend your foundation by int
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/test-prod-single-region.png "Initial Test and Production Environments in Single AWS Region")
 
 ---
-> ***The sections for this guide have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.***
+**Review Note: These sections have not yet been drafted**
+
+Initially, they will hold a series of notes and links to existing best practices and resources.
+
 ---
 
 ### Review and Refine Requirements and Solution Design
