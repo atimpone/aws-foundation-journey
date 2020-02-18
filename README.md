@@ -10,10 +10,11 @@ The documents provided in this repository are part of an ongoing project to shar
 
 * [Stages of Cloud Adoption](#stages-of-cloud-adoption)
 * [Cloud Foundation](#cloud-foundation)
-* Guides
-  1. [Establish Initial Development Environments](#1-establish-initial-development-environments)
-  2. [Establish Fast Follow-On Capabilities](#2-establish-fast-follow-on-capabilities)
-  3. [Establish Initial Test and Production Environments](#3-establish-initial-test-and-production-environments)
+
+Guides
+1. [Establish Initial Development Environments](#1-establish-initial-development-environments)
+2. [Establish Fast Follow-On Capabilities](#2-establish-fast-follow-on-capabilities)
+3. [Establish Initial Test and Production Environments](#3-establish-initial-test-and-production-environments)
 
 ## Stages of Cloud Adoption
 
@@ -35,26 +36,20 @@ Later, when your organization has demonstrated success with the initial few proj
 
 <img src="images/foundation.png" alt="Cloud Foundation" width="700"/>
 
-## Guides
-
-1. [Establish Initial Development Environments](#1-establish-initial-development-environments)
-2. [Establish Fast Follow-On Capabilities](#2-establish-fast-follow-on-capabilities)
-3. [Establish Initial Test and Production Environments](#3-establish-initial-test-and-production-environments)
-
 ---
 
-### 1. Establish Initial Development Environments
+## 1. Establish Initial Development Environments
 
 By following this guide, in about a day, your organization can establish an initial secure foundation and development environments in AWS.
 
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-initial.png "Initial Development Environment")
 
-#### Review and Refine Requirements and Solution Design
+### Review and Refine Requirements and Solution Design
 
 1. [Review and Refine Initial Development Environment Requirements](1-dev-environments/1-1-requirements.md)
 2. [Review and Refine Initial Development Environment Solution](1-dev-environments/1-2-solution.md)
 
-#### Build Out the Environment
+### Build Out the Environment
 
 1. [Map People to Foundation Functional Roles](1-dev-environments/2-1-map-people-to-foundation-roles.md)
 2. [Create New Master AWS Account](1-dev-environments/2-2-create-master-aws-account.md)
@@ -66,7 +61,7 @@ By following this guide, in about a day, your organization can establish an init
 8. [Onboard Development Teams](1-dev-environments/2-8-onboard-dev-teams.md)
 9. [Manage and Monitor Your AWS Environment](1-dev-environments/2-9-manage-and-monitor-aws-environment.md)
 
-#### Reference
+### Reference
 
 * [Frequently Asked Questions (FAQs)](1-dev-environments/3-1-faq.md)
 * [Getting Started Guide for Development Teams](1-dev-environments/3-2-getting-started-guide.md)
@@ -74,7 +69,7 @@ By following this guide, in about a day, your organization can establish an init
 
 ---
 
-### 2. Establish Fast Follow-On Capabilities
+## 2. Establish Fast Follow-On Capabilities
 
 Depending on your organizations needs, some additional capabilities may be required either as part of your initial build out of development environments or shortly thereafter. The following guides address most common "fast follow-on" capabilities and provide references to current best practices to establish these capabilities.
 
@@ -95,7 +90,7 @@ Depending on your organizations needs, some additional capabilities may be requi
 * [Infrastructure as Code (IaC)](2-fast-follow-on/2-9-infrastructure-as-code.md)
 ---
 
-### 3. Establish Initial Test and Production Environments
+## 3. Establish Initial Test and Production Environments
 
 The next guide that is under development helps you extend your foundation by introducting a set of capabilities organizations typically require before moving any workload into production.
 
@@ -105,12 +100,12 @@ The next guide that is under development helps you extend your foundation by int
 > ***The sections for this guide have not yet been drafted. Initially, they will hold a series of notes and links to existing best practices and resources.***
 ---
 
-#### Review and Refine Requirements and Solution Design
+### Review and Refine Requirements and Solution Design
 
 * [Review and Refine Initial Test and Production Environment Requirements](3-test-production/1-1-requirements.md)
 * [Review and Refine Initial Test and Production Environment Solution](3-test-production/1-2-solution.md)
 
-#### Build Out the Environments
+### Build Out the Environments
 
 * TBD
 
