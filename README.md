@@ -88,7 +88,7 @@ Depending on your organizations needs, some additional capabilities may be requi
 * [Enhance Access Controls](2-fast-follow-on/2-7-enhanced-access-controls.md)
 * [Invoice Billing](2-fast-follow-on/2-8-invoice-billing.md)
 * [Infrastructure as Code (IaC)](2-fast-follow-on/2-9-infrastructure-as-code.md)
-* [Shared Development VPC)](2-fast-follow-on/2-10-shared-dev-vpc.md)
+* [Shared Development VPC](2-fast-follow-on/2-10-shared-dev-vpc.md)
 ---
 
 ## 3. Establish Initial Test and Production Environments
