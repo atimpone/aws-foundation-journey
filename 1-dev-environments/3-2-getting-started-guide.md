@@ -30,7 +30,7 @@ The following are some basic terms and definitions and why they're needed.
 An AWS account is a logical container and boundary to separate AWS resources based on a number of criteria including our SLDC environment, security requirements, cost reporting, and organizational ownership.
 
 **2. What AWS account do I have access to?**
-When you log into your AWS SSO portal ([add your company's link here]()), you'll be shown a list of AWS accounts you have access to.  Initially, each development team is provided a single AWS account.
+When you log into your AWS SSO portal ([add your company's link here]()), you'll be shown a list of AWS accounts you have access to.  Initially, each development team is provided a single development AWS account.
 
 If your team has more environment or security specific requirements please work with your cloud foundations team.
 
