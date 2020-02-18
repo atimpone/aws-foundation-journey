@@ -14,15 +14,6 @@ This step should take about 20 minutes to complete.
 
 As mentioned in the Initial [Development Environment Solution Overview](1-2-solution.md#vpc-network-for-each-development-team-aws-account), it's recommended that you start with a network design consisting of a dedicated VPC for each development team AWS account including a set of public and private subnets.
 
-![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-network-initial-details.png "Initial Network Details")
-
----
-**Review Note: Network Configuration Options**
-
-* **One or Multple NAT Gateways?:** Given that these networks will be replaced down the line, should we recommend a single NAT Gateway or go with the NAT Gateway per public subnet?  Due to cost considerations, we may want to recommend a single NAT Gateway for this temporary network.
-
-* **Two or Three AZs?:** Do some AWS services require 3 AZs? If so, where 3 are available, should we recommend 3 by default?
-
 ---
 **Note: The initial networks will likely be replaced later on**
 
@@ -33,6 +24,8 @@ Later in your journey, if and when you set up network connectivity with your on-
 * **Removal of Public Subnets:** So that your hosting networks have only private subnets and all Internet ingress and egress traffic is routed through centrally managed proxies and security services.
 
 ---
+
+![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-network-initial-details.png "Initial Network Details")
 
 ## 2. Decide on Initial Provisioning Approach
 
