@@ -9,7 +9,7 @@ This step should take about 30 minutes to complete.
 3. [Create Development Team AWS Accounts](#3-create-development-team-aws-accounts)
 4. [Initialize AWS Account System Users](#4-initialize-aws-account-system-users)
 5. [Provide Cloud Administrators Access to New AWS Accounts](#5-provide-cloud-administrators-access-to-new-aws-accounts)
-6. [Review or Provision Networking](#5-review-or-provision-networking)
+6. [Review or Provision Networking](#6-review-or-provision-networking)
 
 ## 1. Use at Least Two Development AWS Accounts from the Start
 
