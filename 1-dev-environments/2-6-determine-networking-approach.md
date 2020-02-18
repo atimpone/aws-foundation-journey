@@ -23,7 +23,7 @@ At least one public subnet will have a NAT Gateway that enables workloads in any
 
 Later in your journey, if you set up network connectivity with your on-premises network, you will replace the initial VPCs with configurations that more closely align with your longer term needs. For example, common capabilites that would entail replacing or significantly changing the initial VPCs include:
 
-* **Use of Non Overlapping IP Address Ranges:** So as to avoid complicated network address translation (NAT) configurations, you will likely allocate IP address ranges or "CIDR blocks" to your VPCs that don't overlap with on-premises networks.
+* **Use of Non Overlapping IP Address Ranges:** So as to avoid complicated network address translation (NAT) configurations, you will likely allocate IP address ranges or "CIDR blocks" to your VPCs that don't overlap with on-premises networks and your other cloud networks.
 
 * **Removal of Public Subnets:** So that your hosting networks have only private subnets and all Internet ingress and egress traffic is routed through centrally managed proxies and security services.
 
