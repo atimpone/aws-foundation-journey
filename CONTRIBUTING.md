@@ -4,7 +4,7 @@
 
 File issues in the GitHub repository when you either encounter bugs in the documentation or have suggestions for enhancements.  The maintainers will review issues periodically, tag them as either bug reports or enhancements, and provide comments.
 
-## Documemntation Style
+## Documentation Style
 
 ### Defer to External Docs Where Feasible
 
