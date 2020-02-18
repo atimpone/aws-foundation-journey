@@ -70,7 +70,7 @@ By following this guide, your organization can establish an initial secure found
 ### Reference
 
 * [Frequently Asked Questions (FAQs)](1-dev-environments/3-1-faq.md)
-* [Getting Started Guide for Development Teams](1-dev-environments/3-2-getting-started-guide.md)
+* [Getting Started Guide for Development Teams](1-dev-environments/3-2-getting-started-guide-dev-teams.md)
 * [Cloud Platform System AWS Users](1-dev-environments/3-3-cloud-platform-system-users.md)
 
 ---
