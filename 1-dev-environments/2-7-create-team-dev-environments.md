@@ -9,7 +9,8 @@ This step should take about 30 minutes to complete.
 3. [Create Development Team AWS Accounts](#3-create-development-team-aws-accounts)
 4. [Initialize AWS Account System Users](#4-initialize-aws-account-system-users)
 5. [Provide Cloud Administrators Access to New AWS Accounts](#5-provide-cloud-administrators-access-to-new-aws-accounts)
-6. [Review or Provision Networking](#6-review-or-provision-networking)
+6. [Provision Networking (optional)](#6-provision-networking)
+7. [Review Networking](#7-review-networking)
 
 ## 1. Use at Least Two Development AWS Accounts from the Start
 
@@ -128,7 +129,7 @@ Since Cloud Administrators won't automatically be granted sufficient access to n
 2. Select the AWS **master** account.
 3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
 4. Select the appropriate AWS region.
-5. Navigate to AWS SSO.
+5. Navigate to `AWS SSO`.
 6. Access `AWS accounts` in AWS SSO.
 7. Select the checkboxes next both development AWS accounts. For example:
   * `Team A - Dev`
@@ -142,11 +143,58 @@ Since Cloud Administrators won't automatically be granted sufficient access to n
 
 Now you've enabled all users who are part of the Cloud Administrator group in AWS SSO administrator access to the selected AWS accounts.
 
-## 6. Review or Provision Networking
+## 6. Provision Networking
 
-***...if networking has already been set up via Account Factory for the development AWS accounts, provide a very brief overview of the resulting network topology...***
+Skip this step if you chose to use the Account Factory to provision the VPC, browse the VPC configuration.
 
-***...if networking has not been set up via Account Factory, highlight their options to use several other approaches at this stage...***
+If you would like to deploy a VPC using AWS CloudFormation, you can use this [sample AWS CloudFormation template](https://github.com/ckamps/infra-aws-vpc-multi-tier).
+
+Download the sample AWS CloudFormation template [infra-multi-tier-vpc.yml](https://raw.githubusercontent.com/ckamps/infra-aws-vpc-multi-tier/master/infra-vpc-multi-tier.yml) to your desktop.
+
+Next, access the development AWS account of interest:
+
+1. As a cloud administrator, use your personal user to log into AWS SSO.
+2. Select the development AWS account of interest.
+3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
+4. Select the appropriate AWS region.
+
+Now create a new AWS CloudFormation stack using the sample template you downloaded to your desktop:
+
+1. Navigate to `CloudFormation`.
+2. Select `Create stack` and `With new resources`.
+3. Select `Upload a template file` and `Chose file` to select the downloaded template file from your desktop.
+4. Select `Next`.
+5. Enter a `Stack name`. For example, `dev-vpc`.
+6. In `Parameters`:
+
+|Parameter|Guidance|
+|---------|--------|
+|`Business Scope`|Replace `acme` with your organization identifier. This is only used to name some of the cloud resources.|
+|`VPC Name`|Change to `dev`.|
+
+If you desire to override the IP address CIDR blocks for the VPC and subnets, obverride those values via the parameters.
+
+7. Select `Next`.
+8. Select `Next`.
+9. Scrolls to the bottom and mark the checkbox to acknoledge that IAM resources will be created.
+10. Select `Create stack`.
+
+Monitor the progress of the stack creation process. After 5 or so minutes, creation of the stack should complete. Proceed to the next step.
+
+## 7. Review Networking
+
+Regardless of whether you relied on AWS Control Tower Account Factory to create a VPC or you used AWS CloudFormation directly, review the newly create VPC and associated resources.
+
+1. As a Cloud Administrator, use your personal user to log into AWS SSO.
+2. Select the development AWS account of interest.
+3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
+4. Select the appropriate AWS region.
+5. Navigate to `VPC`.
+6. Select the VPC and review its details.
+7. Select `Subnets` in the left menu and review.
+8. Select `Route Tables` and review.
+9. Select `NAT Gateways` and review.
+10. Select `Elastic IPs` and review.  You should see one EIP allocated for each NAT Gateway.
 
 ## Next Steps
 
