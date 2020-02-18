@@ -112,11 +112,14 @@ There are a range of AWS Cost Management tools to help you access, organize, und
 
 ### 2. Enable Cost Explorer
 
-To see more detailed cost information for your account, you will want to enable the Cost Explorer:
+To see more detailed cost information for the entire organization of AWS accounts and to enable development teams to access cost reporting within their own AWS accounts, you should enable the Cost Explorer:
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console.aws.amazon.com/billing/home#/](https://console.aws.amazon.com/billing/home)
-2. On the navigation pane, choose **Cost Explorer**.
-3. On the **Welcome to Cost Explorer** page, choose **Enable Cost Explorer**.
+1. As a **Cost Manager**, use your personal user to log into AWS SSO.
+2. Select the AWS **master** account.
+3. Select `Management console` associated with the `Billing` role.
+4. Access the `Billing` service.
+5. Select `Cost Explorer`.
+6. Choose `Enable Cost Explorer`.
 
 ### 3. Create a Budget
 
