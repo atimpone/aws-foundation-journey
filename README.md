@@ -82,15 +82,26 @@ Depending on your organizations needs, some additional capabilities may be requi
 > ***The following guides have not yet been drafted. Currently, they contain a series of notes and links to existing best practices and resources.***
 ---
 
+Cost Management and Billing
+
+* [Move to Invoice Billing](2-fast-follow-on/2-8-invoice-billing.md)
+
+Security and Compliance
+
 * [Establish Federated Access to Your AWS Environment](2-fast-follow-on/2-1-federated-access-to-aws.md)
-* [Set Up On-Premises Network Integration](2-fast-follow-on/2-2-on-premises-network-integration.md)
 * [Enable Secure Terminal Access to OS Instances](2-fast-follow-on/2-11-secure-terminal-access-to-os.md)
 * [Enhance Access Controls](2-fast-follow-on/2-7-enhanced-access-controls.md)
-* [Move to Invoice Billing](2-fast-follow-on/2-8-invoice-billing.md)
-* [Establish Secure Internet Integration](2-fast-follow-on/2-4-secure-internet-integration.md)
 * [Integrate Security Information and Event Management (SIEM) Solution](2-fast-follow-on/2-5-siem-integration.md)
 * [Enhance Security Monitoring and Compliance](2-fast-follow-on/2-6-enhanced-security-monitoring-and-compliance.md)
+
+Network Integration
+
+* [Set Up On-Premises Network Integration](2-fast-follow-on/2-2-on-premises-network-integration.md)
+* [Establish Secure Internet Integration](2-fast-follow-on/2-4-secure-internet-integration.md)
 * [Shared Development VPC](2-fast-follow-on/2-10-shared-dev-vpc.md)
+
+Foundation Management
+
 * [Begin to Adopt Infrastructure as Code (IaC)](2-fast-follow-on/2-9-infrastructure-as-code.md)
 * [Enable Custom AWS Account Baselines](2-fast-follow-on/2-3-custom-account-baselines.md)
 
