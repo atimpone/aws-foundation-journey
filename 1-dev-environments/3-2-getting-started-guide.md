@@ -74,7 +74,7 @@ Then review [Configuring the AWS CLI to Use AWS SSO](https://docs.aws.amazon.com
 
 ### Using AWS Cloud9 Web IDE
 
-If you have challenges getting the AWS CLI and other tools installed on your corporate desktop, you may find it useful to use AWS Cloud9, a web-based IDE that enables you to deploy a development environment in your own AWS account.  Your cloud IDE is essentially an Amazon EC2 Linux instance that includes a browser-based IDE. Your deploy your Cloud9 environment in one of your public subnets and access it via Cloud9 service.
+If you have challenges getting the AWS CLI and other tools installed on your corporate desktop, you may find it useful to use AWS Cloud9, a web-based IDE that enables you to deploy a development environment in your development AWS account.  Your cloud IDE is essentially an Amazon EC2 Linux instance that includes a browser-based IDE. Your deploy your Cloud9 environment in one of your public subnets and access it via Cloud9 service.
 
 See [AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html) for set up details.
 
