@@ -4,6 +4,15 @@ This document represents an example that can help your organization develop and 
 
 As your organization progresses on its cloud adoption journey, you will likely significantly expand your internal documentation to help communicate additional and increasingly sophisticated capabilities and associated best practices that are available to teams.
 
+---
+***Review Note: Help add useful day 1 topics for new dev teams and members***
+
+What is the minimum knowledge a dev team would need for day 1 use of their new development AWS account?
+
+Don't overload the initial doc with more advanced capabilities. Focus on the "crawl" level of knowledge that they need.
+
+----
+
 * Accepting Invite to Join AWS SSO
 * Understanding Your Initial Development Environment
 * Understanding Your Access Permissions and Responsibilities
@@ -13,15 +22,6 @@ As your organization progresses on its cloud adoption journey, you will likely s
 * Learning About AWS Services
 * Working with Other AWS Accounts
 * Getting Support
-
----
-***Review Note: Help add useful day 1 topics for new dev teams and members***
-
-What is the minimum knowledge a dev team would need for day 1 use of their new development AWS account?
-
-----
-
-*...add TOC later on once the initial set of topics settles down...*
 
 ## Accepting Invite to Join AWS SSO
 
