@@ -49,7 +49,7 @@ For additional getting started material, based on your role, refer to the follow
 
 ### How to Consume Another Team's APIs or Resources
 
-*... Connectivity options ...*
+*... Connectivity options ...probably not a super high priority given that the initial context is where the customer is focusing on one or several workloads in this project stage...i.e. might not be very many teams in play at the start...but sharing services across dev teams is another reason to move soon/fast follow-on to either a shared dev VPC or using TGW to help provide relatively open connectivity across separate dev VPCs (I vote for the former at least for dev AWS accounts)...* 
 
 ## Your Access Permissions and Responsibilities
 
