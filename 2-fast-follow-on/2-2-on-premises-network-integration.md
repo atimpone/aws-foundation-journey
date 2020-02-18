@@ -20,6 +20,11 @@ In many cases, organizations require that applications and workloads hosted in A
   * On-premises clients resolve custom FQDNs for cloud hosted services.
   * Cloud clients resolve customer FQDNs on on-premises services.
   
+* Security
+  * Protect against external attack vectors from the Internet.
+  * Protect against internal data loss/exfiltration to the Internet.
+  * Ensure that only appropriate cloud networks and cloud hosted services can have connectivity to appropriate internal networks and services and vice vesa.
+  
 * Non-overlapping allocation of IP address ranges for use by cloud environments.
 
 ## Solution Options and Resources
