@@ -81,14 +81,15 @@ Depending on your organizations needs, some additional capabilities may be requi
 
 * [Establish Federated Access to Your AWS Environment](2-fast-follow-on/2-1-federated-access-to-aws.md)
 * [Set Up On-Premises Network Integration](2-fast-follow-on/2-2-on-premises-network-integration.md)
-* [Enable Custom AWS Account Baselines](2-fast-follow-on/2-3-custom-account-baselines.md)
+* [Enhance Access Controls](2-fast-follow-on/2-7-enhanced-access-controls.md)
+* [Move to Invoice Billing](2-fast-follow-on/2-8-invoice-billing.md)
 * [Establish Secure Internet Integration](2-fast-follow-on/2-4-secure-internet-integration.md)
 * [Integrate Security Information and Event Management (SIEM) Solution](2-fast-follow-on/2-5-siem-integration.md)
 * [Enhance Security Monitoring and Compliance](2-fast-follow-on/2-6-enhanced-security-monitoring-and-compliance.md)
-* [Enhance Access Controls](2-fast-follow-on/2-7-enhanced-access-controls.md)
-* [Move to Invoice Billing](2-fast-follow-on/2-8-invoice-billing.md)
-* [Begin to Adopt Infrastructure as Code (IaC)](2-fast-follow-on/2-9-infrastructure-as-code.md)
 * [Shared Development VPC](2-fast-follow-on/2-10-shared-dev-vpc.md)
+* [Begin to Adopt Infrastructure as Code (IaC)](2-fast-follow-on/2-9-infrastructure-as-code.md)
+* [Enable Custom AWS Account Baselines](2-fast-follow-on/2-3-custom-account-baselines.md)
+
 ---
 
 ## 3. Establish Initial Test and Production Environments
