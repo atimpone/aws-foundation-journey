@@ -156,6 +156,13 @@ If you would like to deploy a VPC using AWS CloudFormation, you can use this [sa
 
 Download the sample AWS CloudFormation template [infra-multi-tier-vpc.yml](https://raw.githubusercontent.com/ckamps/infra-aws-vpc-multi-tier/master/infra-vpc-multi-tier.yml) to your desktop.
 
+---
+**Review Note:  Better VPC CloudFormation example?**
+
+If you're aware of a better CloudFormation template example that is maintained in the `aws-samples` or similar AWS-managed GitHub organizations, provide that feedback. Otherwise, we'll get this example introduced into the `aws-samples` organization.
+
+---
+
 Next, access the development AWS account of interest:
 
 1. As a Cloud Administrator, use your personal user to log into AWS SSO.
