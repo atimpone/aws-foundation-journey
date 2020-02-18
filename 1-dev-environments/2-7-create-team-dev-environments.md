@@ -148,7 +148,7 @@ Now you've enabled all users who are part of the Cloud Administrator group in AW
 ---
 **Note: Skip this step if you chose to use Account Factory to provision the VPCs**
 
-Instead, skip to the next step to browse already provisioned VPC configurations.
+Instead, skip to the next step to review the already provisioned VPC configurations.
 
 ---
 
