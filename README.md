@@ -8,10 +8,13 @@ The documents provided in this repository are part of an ongoing project to shar
 > ***The current focus of this project is to complete the first guide, "Establish Initial Development Environments". As the authors encounter best practices and resources associated with the subjects of the other guides outlined below, they will continue to add notes and links in those remaining guides.***
 ---
 
+Background
+
 * [Stages of Cloud Adoption](#stages-of-cloud-adoption)
-* [Cloud Foundation](#cloud-foundation)
+* [Cloud Foundation](#initial-cloud-foundation-in-project-stage)
 
 Guides
+
 1. [Establish Initial Development Environments](#1-establish-initial-development-environments)
 2. [Establish Fast Follow-On Capabilities](#2-establish-fast-follow-on-capabilities)
 3. [Establish Initial Test and Production Environments](#3-establish-initial-test-and-production-environments)
