@@ -47,6 +47,10 @@ For additional getting started material, based on your role, refer to the follow
 
 *...highlight that the initial development environment network environments will likely be supplanted over time as on-premises integration and the need to use non-overlapping IP address ranges and other enhancements emerge...*
 
+### How to Consume Another Team's APIs or Resources
+
+*... Connectivity options ...*
+
 ## Your Access Permissions and Responsibilities
 
 *...use of personal users set up in AWS SSO...*
@@ -76,12 +80,20 @@ AWS SSO supports CLI access.  Refer to [the official AWS documentation](https://
 For a list of tools and SDKs that AWS supports, please review [Tools on AWS](https://aws.amazon.com/tools/).
 
 ## How to Monitor Costs
+With our adoption of AWS, we're shifting our operation model to empower builders with more flexibility and control over their environments.  This includes understanding the AWS resources they're consuming and the costs that are associated with them.
 
 *...reiterate their responsibility and highlight how they can monitor their costs...*
 
 *...can teams set their own budgets? what access would they need?...*
 
 *...provide links to existing resources to learn more...*
+
+## How to Get an Application to Production
+
+*.... Well Architected Review...Any other changes to traditional SDLC...*
+
+## How to Apply Additional Compliance Guardrails for Sensitive Applications?
+*... engaging cloud foundations team for SCP/Organizational changes/creation...*
 
 ## How to Learn More About AWS Services and Best Pratices
 
