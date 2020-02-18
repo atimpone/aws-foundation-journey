@@ -12,16 +12,20 @@ This step should take about 20 minutes to complete.
 
 ## 1. Review Initial Network Design
 
-As mentioned in the Initial [Development Environment Solution Overview](1-2-solution.md#vpc-network-for-each-development-team-aws-account), it's recommended that you start with a network design consisting of a dedicated VPC for each development team AWS account including a set of public and private subnets.
+As mentioned in the [Initial Development Environment Solution Overview](1-2-solution.md#vpc-network-for-each-development-team-aws-account), it's recommended that you start with a dedicated VPC for each development team AWS account. In each VPC you will have a set of public and private subnets. In those AWS regions in which at least 3 Availability Zones (AZs) are availabkle for customer use, it's recommended that your initial set of VPCs have subnets in each of 3 AZs so that your development teams can experiment and perform early testing of workloads that can take advantage of 3 AZs.
+
+At least one public subnet will have a NAT Gateway that enables workloads in any of the private subnets to send traffic outbound to the Internet.
 
 ---
-**Note: The initial networks will likely be replaced later on**
+**Note: The initial networks will be replaced later on**
 
-Later in your journey, if and when you set up network connectivity with your on-premises network, you will likely replace these initial VPCs with configurations that more closely align with your longer term needs. For example, common capabilites that would entail replacing or significantly changing the initial VPCs include:
+Later in your journey, if you set up network connectivity with your on-premises network, you will replace the initial VPCs with configurations that more closely align with your longer term needs. For example, common capabilites that would entail replacing or significantly changing the initial VPCs include:
 
 * **Use of Non Overlapping IP Address Ranges:** So as to avoid complicated network address translation (NAT) configurations, you will likely allocate IP address ranges or "CIDR blocks" to your VPCs that don't overlap with on-premises networks.
 
 * **Removal of Public Subnets:** So that your hosting networks have only private subnets and all Internet ingress and egress traffic is routed through centrally managed proxies and security services.
+
+* **Migration to Using a Shared VPC for Development AWS Accounts:** A common solution for multiple development AWS accounts is to provision a single VPC in a network AWS account and share the VPC's subnets with development AWS accounts.  This approach helps consolidate management of VPC resources.
 
 ---
 
