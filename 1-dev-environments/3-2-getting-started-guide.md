@@ -4,6 +4,16 @@ This document represents an example that can help your organization develop and 
 
 As your organization progresses on its cloud adoption journey, you will likely significantly expand your internal documentation to help communicate additional and increasingly sophisticated capabilities and associated best practices that are available to teams.
 
+* Accepting Invite to Join AWS SSO
+* Understanding Your Initial Development Environment
+* Understanding Your Access Permissions and Responsibilities
+* Accessing Your Team's Development AWS Account
+* Monitoring and Managing Costs
+* Learning Architecture Best Practices
+* Learning About AWS Services
+* Working with Other AWS Accounts
+* Getting Support
+
 ---
 ***Review Note: Help add useful day 1 topics for new dev teams and members***
 
@@ -13,45 +23,25 @@ What is the minimum knowledge a dev team would need for day 1 use of their new d
 
 *...add TOC later on once the initial set of topics settles down...*
 
-## Get Access to your AWS Account
+## Accepting Invite to Join AWS SSO
+
 You should've received an email from AWS with the subject "Invitation to join AWS Single Sign-On".  To login to your AWS account, you'll need to [accept the invitation](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtoactivateaccount.html).
 
 Once you're able to login, you'll need to [register an MFA device](https://docs.aws.amazon.com/singlesignon/latest/userguide/user-device-registration.html) to your AWS SSO account.
 
+## Understanding Your Initial Development Environment
 
-## Overview of the Cloud Environment
+*...highlight that the initial development environment network environments will likely be supplanted over time as on-premises integration and the need to use non-overlapping IP address ranges and other enhancements emerge...*
 
-*...show a representaive diagram of the overall environment...*
-
-## AWS Fundamentals
-The following are some basic terms and definitions and why they're needed.
-
-**1. What is an AWS Account?**
+### What is an AWS Account?
 An AWS account is a logical container and boundary to separate AWS resources based on a number of criteria including our SLDC environment, security requirements, cost reporting, and organizational ownership.
 
-**2. What AWS account do I have access to?**
+### What AWS account do I have access to?
 When you log into your AWS SSO portal ([add your company's link here]()), you'll be shown a list of AWS accounts you have access to.  Initially, each development team is provided a single development AWS account.
 
 If your team has more environment or security specific requirements please work with your cloud foundations team.
 
-**3. If I already have an AWS account registered with my corporate/company email, can I use it instead?**
-If you have production workloads, please contact your cloud foundations team to absorb that account into our proper environment to ensure compliance and security requirements are met.
-
-For additional getting started material, based on your role, refer to the following links:
-* [AWS Getting Started](https://aws.amazon.com/getting-started/)
-* [AWS Training and Certification](https://aws.amazon.com/training/?e=gs&p=gsrc)
-* [Start Developing with AWS](https://aws.amazon.com/developers/getting-started/)
-
-
-## Initial Networking Environment
-
-*...highlight that the initial development environment network environments will likely be supplanted over time as on-premises integration and the need to use non-overlapping IP address ranges and other enhancements emerge...*
-
-### How to Consume Another Team's APIs or Resources
-
-*... Connectivity options ...probably not a super high priority given that the initial context is where the customer is focusing on one or several workloads in this project stage...i.e. might not be very many teams in play at the start...but sharing services across dev teams is another reason to move soon/fast follow-on to either a shared dev VPC or using TGW to help provide relatively open connectivity across separate dev VPCs (I vote for the former at least for dev AWS accounts)...* 
-
-## Your Access Permissions and Responsibilities
+## Understanding Your Access Permissions and Responsibilities
 
 *...use of personal users set up in AWS SSO...*
 
@@ -65,7 +55,8 @@ For additional getting started material, based on your role, refer to the follow
 
 *...use scripted builds for their cloud resources where feasible to avoid cost of rework as their development AWS networks are likely to be replaced over time... provide pointers to Infrastructure as Code resources...*
 
-## How to Access Your Team's Development AWS Account
+## Accessing Your Team's Development AWS Account
+
 For non-production environments, our company allows console access to create and update AWS resources.  As workloads move towards production and our practices on AWS mature, we'll be implementing a "Console Read Only" policy in production environments.
 
 Any production workloads should be managed with infrastructure as code.
@@ -73,13 +64,25 @@ Any production workloads should be managed with infrastructure as code.
 ### Access Via AWS Management Console
 When you log into your AWS SSO portal ([add your company's link here]()), you'll be shown a list of AWS accounts you have access to.  Initially, each development team is provided a single development AWS account.
 
-### (Recommended) Access Via AWS CLI, AWS SDKs, and AWS APIs
+### Access Via AWS CLI, AWS SDKs, and AWS APIs
 
-AWS SSO supports CLI access.  Refer to [the official AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) to install and configure the CLI.
+AWS SSO supports CLI access via the AWS CLI.  
 
-For a list of tools and SDKs that AWS supports, please review [Tools on AWS](https://aws.amazon.com/tools/).
+First, [Install the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html).
 
-## How to Monitor Costs
+Then review [Configuring the AWS CLI to Use AWS SSO](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html).
+
+### Using AWS Cloud9 Web IDE
+
+If you have challenges getting the AWS CLI and other tools installed on your corporate desktop, you may find it useful to use AWS Cloud9, a web-based IDE that enables you to deploy a development environment in your own AWS account.  Your cloud IDE is essentially an Amazon EC2 Linux instance that includes a browser-based IDE. Your deploy your Cloud9 environment in one of your public subnets and access it via Cloud9 service.
+
+See [AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html) for set up details.
+
+### Other Tools
+
+See [Tools on AWS](https://aws.amazon.com/tools/) for a list of tools and SDKs that AWS supports.
+
+## Monitoring and Managing Costs
 With our adoption of AWS, we're shifting our operation model to empower builders with more flexibility and control over their environments.  This includes understanding the AWS resources they're consuming and the costs that are associated with them.
 
 *...reiterate their responsibility and highlight how they can monitor their costs...*
@@ -88,17 +91,35 @@ With our adoption of AWS, we're shifting our operation model to empower builders
 
 *...provide links to existing resources to learn more...*
 
-## How to Get an Application to Production
+## Learning Architecture Best Practices
+
+### How to Get an Application to Production
 
 *.... Well Architected Review...Any other changes to traditional SDLC...*
 
-## How to Apply Additional Compliance Guardrails for Sensitive Applications?
+### How to Apply Additional Compliance Guardrails for Sensitive Applications?
 *... engaging cloud foundations team for SCP/Organizational changes/creation...*
 
-## How to Learn More About AWS Services and Best Pratices
+## Learning About AWS Services
 
-...
+See additional getting started with AWS information:
 
-## How to Get Support
+* [AWS Getting Started](https://aws.amazon.com/getting-started/)
+* [AWS Training and Certification](https://aws.amazon.com/training/?e=gs&p=gsrc)
+* [Start Developing with AWS](https://aws.amazon.com/developers/getting-started/)
+
+## Working with Other AWS Accounts
+
+### Consuming Another Team's APIs or Resources
+
+*... Connectivity options ...probably not a super high priority given that the initial context is where the customer is focusing on one or several workloads in this project stage...i.e. might not be very many teams in play at the start...but sharing services across dev teams is another reason to move soon/fast follow-on to either a shared dev VPC or using TGW to help provide relatively open connectivity across separate dev VPCs (I vote for the former at least for dev AWS accounts)...* 
+
+### Working With External AWS Accounts
+
+If I already have an AWS account registered with my corporate/company email, can I use it instead?
+
+If you have production workloads, contact your cloud foundations team to absorb that account into our proper environment to ensure compliance and security requirements are met.
+
+## Getting Support
 
 *...address how development teams get support to get things done in their development AWS accounts... include: 1) organization-specific support needds; 2) support for AWS services - can the dev teams file tickets?...*
