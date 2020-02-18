@@ -11,3 +11,7 @@ Support for [custom AWS account baselines](./2-3-custom-account-baselines.md) ca
 * Restricting the set of AWS services that are accessible to development teams.
 * Expunge default VPCs from all AWS accounts and AWS regions in those accounts.
 * Restrict access to AWS services to only the enterprise’s IP addresses.
+
+## AWS Control Tower Guardrails
+
+Review the [strongly recommended and elective guardrails](https://docs.aws.amazon.com/controltower/latest/userguide/guardrails-reference.html) to determine if they provide value in your environment.
