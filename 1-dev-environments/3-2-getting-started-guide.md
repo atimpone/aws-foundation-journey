@@ -13,21 +13,35 @@ What is the minimum knowledge a dev team would need for day 1 use of their new d
 
 *...add TOC later on once the initial set of topics settles down...*
 
-## Acting on Invitiation to Join AWS SSO
+## Get Access to your AWS Account
+You should've received an email from AWS with the subject "Invitation to join AWS Single Sign-On".  To login to your AWS account, you'll need to [accept the invitation](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtoactivateaccount.html).
 
-*...very first steps to do after their user accounts have been added to AWS SSO...*
+Once you're able to login, you'll need to [register an MFA device](https://docs.aws.amazon.com/singlesignon/latest/userguide/user-device-registration.html) to your AWS SSO account.
 
-*...accept the invite, set up MFA (point to existing docs)...*
 
 ## Overview of the Cloud Environment
 
 *...show a representaive diagram of the overall environment...*
 
 ## AWS Fundamentals
+The following are some basic terms and definitions and why they're needed.
 
-*...what are AWS accounts, what AWS accounts their team be using initially?...*
+**1. What is an AWS Account?**
+An AWS account is a logical container and boundary to separate AWS resources based on a number of criteria including our SLDC environment, security requirements, cost reporting, and organizational ownership.
 
-*...pointers to existing getting started with AWS docs and tutorials...*
+**2. What AWS account do I have access to?**
+When you log into your AWS SSO portal ([add your company's link here]()), you'll be shown a list of AWS accounts you have access to.  Initially, each development team is provided 2 accounts based on environment requirements - Production and Non-production.
+
+If your team has more environment or security specific requirements please work with your cloud foundations team.
+
+**3. If I already have an AWS account registered with my corporate/company email, can I use it instead?**
+If you have production workloads, please contact your cloud foundations team to absorb that account into our proper environment to ensure compliance and security requirements are met.
+
+For additional getting started material, based on your role, refer to the following links:
+* [AWS Getting Started](https://aws.amazon.com/getting-started/)
+* [AWS Training and Certification](https://aws.amazon.com/training/?e=gs&p=gsrc)
+* [Start Developing with AWS](https://aws.amazon.com/developers/getting-started/)
+
 
 ## Initial Networking Environment
 
@@ -48,17 +62,18 @@ What is the minimum knowledge a dev team would need for day 1 use of their new d
 *...use scripted builds for their cloud resources where feasible to avoid cost of rework as their development AWS networks are likely to be replaced over time... provide pointers to Infrastructure as Code resources...*
 
 ## How to Access Your Team's Development AWS Account
+For non-production environments, our company allows console access to create and update AWS resources.  As workloads move towards production and our practices on AWS mature, we'll be implementing a "Console Read Only" policy in production environments.
 
-...
+Any production workloads should be managed with infrastructure as code.
 
 ### Access Via AWS Management Console
+When you log into your AWS SSO portal ([add your company's link here]()), you'll be shown a list of AWS accounts you have access to.  Initially, each development team is provided 2 accounts based on environment requirements - Production and Non-production.
 
-...
+### (Recommended) Access Via AWS CLI, AWS SDKs, and AWS APIs
 
-### Access Via AWS CLI, AWS SDKs, and AWS APIs
+AWS SSO supports CLI access.  Refer to [the official AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) to install and configure the CLI.
 
-*...point to AWS SSO and AWS SDK v2 docs...*
-
+For a list of tools and SDKs that AWS supports, please review [Tools on AWS](https://aws.amazon.com/tools/).
 
 ## How to Monitor Costs
 
