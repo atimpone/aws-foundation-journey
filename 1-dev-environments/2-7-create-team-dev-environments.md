@@ -176,7 +176,7 @@ If you desire to override the IP address CIDR blocks for the VPC and subnets, ob
 
 7. Select `Next`.
 8. Select `Next`.
-9. Scrolls to the bottom and mark the checkbox to acknoledge that IAM resources will be created.
+9. Scrolls to the bottom and mark the checkbox to acknowledge that IAM resources will be created.
 10. Select `Create stack`.
 
 Monitor the progress of the stack creation process. After 5 or so minutes, creation of the stack should complete. Proceed to the next step.
