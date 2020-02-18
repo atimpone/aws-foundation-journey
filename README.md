@@ -98,7 +98,7 @@ Network Integration
 
 * [Set Up On-Premises Network Integration](2-fast-follow-on/2-2-on-premises-network-integration.md)
 * [Establish Secure Internet Integration](2-fast-follow-on/2-4-secure-internet-integration.md)
-* [Shared Development VPC](2-fast-follow-on/2-10-shared-dev-vpc.md)
+* [Move to Shared Development VPC](2-fast-follow-on/2-10-shared-dev-vpc.md)
 
 Foundation Management
 
