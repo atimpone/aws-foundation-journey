@@ -31,7 +31,7 @@ Initially, you will likely need AWS accounts for the following teams:
 
 Moving forward, your organization will likely want to apply particular policies or guardrails to all AWS development accounts within your enterprise.  To enable you to easily target such policies across all development AWS accounts, it's recommended that you create a new Organizational Unit (OU) to represent development AWS accounts.
 
-1. As a cloud administrator, use your personal user to log into AWS SSO.
+1. As a Cloud Administrator, use your personal user to log into AWS SSO.
 2. Select the AWS master account.
 3. Select `Management console` associated with the `AWSAdministratorAccess` role.
 4. Select the appropriate AWS region.
@@ -54,7 +54,7 @@ In AWS Control Tower, provision the initial set of AWS development team accounts
 
 You'll follow these steps twice: Once to create the initial deveopment team's AWS account and again to create the development AWS account for the foundation team.
 
-1. As a cloud administrator, use your personal user to log into AWS SSO.
+1. As a Cloud Administrator, use your personal user to log into AWS SSO.
 2. Select the AWS **master** account.
 3. Select `Management console` associated with the **`AWSServiceCatalogEndUserAccess`** role.
 4. Select the appropriate AWS region.
@@ -125,7 +125,7 @@ See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/la
 
 Since Cloud Administrators won't automatically be granted sufficient access to newly created AWS accounts, you need to enable this access each time you create new AWS accounts via AWS Control Tower's Account Factory.
 
-1. As a cloud administrator, use your personal user to log into AWS SSO.
+1. As a Cloud Administrator, use your personal user to log into AWS SSO.
 2. Select the AWS **master** account.
 3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
 4. Select the appropriate AWS region.
@@ -153,7 +153,7 @@ Download the sample AWS CloudFormation template [infra-multi-tier-vpc.yml](https
 
 Next, access the development AWS account of interest:
 
-1. As a cloud administrator, use your personal user to log into AWS SSO.
+1. As a Cloud Administrator, use your personal user to log into AWS SSO.
 2. Select the development AWS account of interest.
 3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
 4. Select the appropriate AWS region.
