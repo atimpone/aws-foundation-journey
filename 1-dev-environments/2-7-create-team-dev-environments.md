@@ -208,6 +208,8 @@ Regardless of whether you relied on AWS Control Tower Account Factory to create 
 9. Select `NAT Gateways` and review.
 10. Select `Elastic IPs` and review.  You should see one EIP allocated for each NAT Gateway.
 
+If you depended on AWS Control Tower Account Factory to provision the VPC, you can access "CloudFormation" in the AWS Management Console and review the CloudFormation stack that was created through the Account Factory.  Look for a stack where the name is prefixed with `StackSet-` and includes `VPC` in the name.  You can learn more about [AWS CloudFormation StackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html) 
+
 ## Next Steps
 
 [8. Onboard Development Teams](2-8-onboard-dev-teams.md)
