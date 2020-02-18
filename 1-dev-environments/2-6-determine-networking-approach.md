@@ -61,7 +61,6 @@ This is another option, but it's a bit more awkward to use as compared to the tw
 
 * It requires a separate step to obtain an Elastic IP Address.
 * It provisions only one private and one public subnet. More subnets can be manually added later.
-* Since it doesn't use AWS CloudFormation, removing the VPC and the associated resources is a bit more work than simply deleting an AWS CloudFormation stack.
 
 ---
 
