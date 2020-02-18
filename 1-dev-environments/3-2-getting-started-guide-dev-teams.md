@@ -13,15 +13,15 @@ Don't overload the initial doc with more advanced capabilities. Focus on the "cr
 
 ----
 
-* Accepting Invite to Join AWS SSO
-* Understanding Your Initial Development Environment
-* Understanding Your Access Permissions and Responsibilities
-* Accessing Your Team's Development AWS Account
-* Monitoring and Managing Costs
-* Learning Architecture Best Practices
-* Learning About AWS Services
-* Working with Other AWS Accounts
-* Getting Support
+* [Accepting Invite to Join AWS SSO](#accepting-invite-to-join-aws-sso)
+* [Understanding Your Initial Development Environment](#understanding-your-initial-development-environment)
+* [Understanding Your Access Permissions and Responsibilities](#understanding-your-access-permissions-and-responsibilities)
+* [Accessing Your Team's Development AWS Account](#accessing-your-teams-development-aws-account)
+* [Monitoring and Managing Costs](#monitoring-and-managing-costs)
+* [Learning Architecture Best Practices](h#learning-architecture-best-practices)
+* [Learning About AWS Services](#learning-about-aws-services)
+* [Working with Other AWS Accounts](#working-with-other-aws-accounts)
+* [Getting Support](#getting-support)
 
 ## Accepting Invite to Join AWS SSO
 
