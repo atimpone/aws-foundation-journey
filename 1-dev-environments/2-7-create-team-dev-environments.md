@@ -188,7 +188,7 @@ Monitor the progress of the stack creation process. After 5 or so minutes, creat
 
 ## 7. Review Networking
 
-Regardless of whether you relied on AWS Control Tower Account Factory to create a VPC or you used AWS CloudFormation directly, review the newly create VPC and associated resources.
+Regardless of whether you relied on AWS Control Tower Account Factory to create a VPC or you used AWS CloudFormation directly, review the newly created VPC and associated resources.
 
 1. As a Cloud Administrator, use your personal user to log into AWS SSO.
 2. Select the development AWS account of interest.
