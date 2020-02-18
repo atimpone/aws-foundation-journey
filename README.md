@@ -102,7 +102,7 @@ Network Integration
 
 Foundation Management
 
-* [Begin to Adopt Infrastructure as Code (IaC)](2-fast-follow-on/2-9-infrastructure-as-code.md)
+* [Begin Adopting Infrastructure as Code (IaC)](2-fast-follow-on/2-9-infrastructure-as-code.md)
 * [Enable Custom AWS Account Baselines](2-fast-follow-on/2-3-custom-account-baselines.md)
 
 ---
