@@ -35,7 +35,7 @@ Even in the initial project stage of adoption, AWS recommends that an initial fo
 
 In support of your first few formal projects, these guides start with establishing an initial foundation and several development environments before the guides address how to extend your foundation to support deploying your first few workloads to test and production environments. 
 
-Later, when your organization has demonstrated success with the initial few projects, you will likely make larger investments during the foundation stage of your journey to support cloud adoption at scale.
+Later, after your organization has demonstrated success with the initial few projects, you will likely make larger investments during the foundation stage of your journey to support cloud adoption at scale.
 
 <img src="images/foundation.png" alt="Cloud Foundation" width="700"/>
 
