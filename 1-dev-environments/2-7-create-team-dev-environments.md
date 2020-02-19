@@ -184,7 +184,7 @@ Now create a new AWS CloudFormation stack using the sample template you download
 |`Business Scope`|Replace `acme` with your organization identifier. This is only used to name some of the cloud resources.|
 |`VPC Name`|Change to `dev`.|
 
-If you desire to override the IP address CIDR blocks for the VPC and subnets, obverride those values via the parameters.
+If you desire to override the IP address CIDR blocks for the VPC and subnets, override those values via the parameters.
 
 7. Select `Next`.
 8. Select `Next`.
