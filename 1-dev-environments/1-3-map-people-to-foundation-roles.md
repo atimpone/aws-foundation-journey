@@ -2,10 +2,7 @@
 
 In this step you will identify the people who will play an initial set of functional roles in establishing, securing, and maintaining the cloud foundation so that your expectations are set in terms of accountability, ownership, and required skills and training.
 
-A later section of this guide helps you tie these functional roles to specific permissions on the AWS platform.
-
-This step should take about 30 minutes to complete subject to the proper stakeholders being involved in the discussion. 
-
+A subsequent section of this guide helps you tie these functional roles to specific permissions on the AWS platform. 
 
 1. [Start With a Small Foundation Team](#1-start-with-a-small-foundation-team)
 2. [Map People to Typical Starter Foundation Functional Roles](#2-map-people-to-typical-starter-foundation-functional-roles)

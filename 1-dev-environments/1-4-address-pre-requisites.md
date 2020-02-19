@@ -2,8 +2,6 @@
 
 In this step the few people who are leading the effort to establish the initial development environment and supporting foundation will address a few technical pre-requsites before the build out of the environment begins.
 
-This step should take about 20 minutes.
-
 1. [Create Email Distribution Lists for New AWS Accounts](#1-create-email-distribution-lists-for-new-aws-accounts)
 2. [Obtain Non-Overlapping IP Address Range](#2-obtain-non-overlappin-ip-address-range)
 
@@ -17,9 +15,12 @@ If your organization already has a naming standard for mail addresses associated
 
 |AWS Account	|Example Root User Email Distribution List|Example with "+" Style Email Address|
 |---|---|---|
+|Foundation AWS Accounts||
 |Master|aws-account-master@acme.com|aws-account+master@acme.com|
 |Audit|aws-account-audit@acme.com|aws-account+audit@acme.com|
 |Log Archive|aws-account-log-archive@acme.com|aws-account+log-archive@acme.com|
+|Network|aws-account-network@acme.com|aws-account+network@acme.com|
+|Development Team AWS Accounts|||
 |Foundation Team Development|aws-account-foundation-dev@acme.com|aws-account+foundation-dev@acme.com|
 |Team 1 Development|aws-account-team-a-dev@acme.com|aws-account+team-a-dev@acme.com|
 
