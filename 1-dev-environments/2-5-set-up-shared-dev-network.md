@@ -247,7 +247,9 @@ Review the newly created VPC and associated resources.
 
 ## 8. Share Development VPC With Development OU
 
-...
+Now that the development VPC has been provisioned, you need to share the subnets of the VPC with all of the AWS accounts that will become part of the `development` OU that you created earlier.  
+
+See [Sharing a Subnet](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-sharing-share-subnet) for instructions on sharing subnets.
 
  ## Next Steps
 
