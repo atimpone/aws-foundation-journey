@@ -18,9 +18,22 @@ Each development team is allocated a distinct AWS account to act as a resource c
 
 In addition to your initial application and data engineering development teams that need access to the AWS platform, you should view your initial cloud platform engineers and administrators as a development team in its own right that should have its own AWS account for its own work to iterate on, develop, and perform early testing of changes to the foundation and experimentation with new data and application services.
 
-## VPC Network for Each Development Team AWS Account
+## Shared Development VPC Network
 
-Each development team AWS account has an AWS Virtual Private Cloud (VPC) network to support cases in which a team needs to deploy AWS resources that reside in VPCs. For example, deploying Amazon EC2 Virtual Machines (VMs) and Amazon Relational Database Service (RDS) instances. These VPCs provide both public and private subnets across multiple Availability Zones (AZs) to both mimic typical production topologies and enable teams to access Internet-based resources such as package repositories and publicly available APIs during their experiment and development work.
+A shared development network in the form of an AWS Virtual Private Cloud (VPC) will be used to support the networking needs of development teams.  Your Cloud Administrators will provision this shared development VPC to a new "Network" AWS account and share it will all of the future development team AWS accounts.
+
+The shared VPC will support cases in which a development team needs to deploy AWS resources that reside in VPCs. For example, deploying Amazon EC2 Virtual Machines (VMs) and Amazon Relational Database Service (RDS) instances. The shared development VPC provides both public and private subnets across multiple Availability Zones (AZs) to both mimic typical production topologies and enable teams to access Internet-based resources such as package repositories and publicly available APIs during their experiment and development work.
+
+Benefits of using a shared VPC for development team include:
+* The organization needs to manage and pay for only one set of common shared VPC resources for all development teams. For example, one set of NAT Gateways - which are billed on an hourly basis.
+* Configuration of organization standard newtork services such as AWS VPC endpoints is easier to manage in a single VPC.
+* Development teams reuse centrally managed VPC resources for multiple development teams.
+* Development teams still manage security groups, ec2 instances, etc.
+* Development teams have inherent connectivity to other teams' services given that they are in the same VPC.
+* Development teams cannot see and manage other teams' workloads even though they're sharing the same VPCs.
+* Development teams cannot modify the VPC and related resources that are centally hosted and managed in a separate network AWS account. No additional IAM policies are required.
+* Costs for development teams' cloud resources are still allocated to their respective development team AWS accounts.
+* Costs for shared VPC foundation resources are allocated to the network AWS account.
 
 ## Direct Internet Access
 
