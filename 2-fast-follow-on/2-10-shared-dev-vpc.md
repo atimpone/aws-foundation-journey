@@ -9,6 +9,6 @@
 * Teams reuse centrally managed VPC resources for multiple development teams.
 * Teams have inherent connectivity to other teams' services given that they are in the same VPC.
 * Teams cannot see and manage other teams' workloads even though they're sharing the same VPCs.
-* Teams cannot modify the VPC and related resources that are centally hosted and managed in a separate network AWS account.
+* Teams cannot modify the VPC and related resources that are centally hosted and managed in a separate network AWS account. No additional IAM policies are required.
 * Costs for teams' cloud resources are still allocated to their respective development team AWS accounts.
 * Costs for shared VPC foundation resources are allocated to the network AWS account.
