@@ -9,9 +9,10 @@ This step should take about 60 minutes to complete.
 3. [Disable Account Factory VPC Provisioning](#3-disable-account-factory-vpc-provisioning)
 4. [Create Network AWS Account](#4-create-network-aws-account)
 5. [Enable Foundation Team Members Access](#5-enable-foundation-team-members-access)
-6. [Provision Development VPC](#6-provision-development-vpc)
-7. [Review Development VPC](#7-review-development-vpc)
-8. [Share Development VPC with Development OU](#8-share-development-VPC-with-development-ou)
+6. [Calculate IP Address CIDR Blocks](#6-calculate-ip-address-cidr-blocks)
+7. [Provision Development VPC](#7-provision-development-vpc)
+8. [Review Development VPC](#8-review-development-vpc)
+9. [Share Development VPC with Development OU](#9-share-development-VPC-with-development-ou)
 
 ## 1. Review Initial Network Design
 
@@ -140,14 +141,12 @@ Since Cloud Administrators won't automatically be granted sufficient access to n
 
 Now you've enabled all users who are part of the Cloud Administrator group in AWS SSO administrator access to the Network AWS account.
 
-## 6. Provision Development VPC
+## 6. Calculate IP Address CIDR Blocks
 
 In this step you'll:
 
 1. Identify the IP address CIDR blocks to specify for both your VPC and the subnets within it.
 2. Provision the VPC using AWS CloudFormation.
-
-### Calculate Your CIDR Blocks for the VPC
 
 If you're just experimenting and don't care which CIDR block is used to build the VPC, you can move to the next step, [Use AWS CloudFormation to Provision the VPC](#use-aws-cloudformation-to-provision-the-vpc).
 
@@ -175,19 +174,19 @@ The AWS CloudFormation template that you'll use in the next step to provision th
 |Private Subnet 2|`pTier2Subnet2Cidr`|A subset of the VPC CIDR block.|
 |Private Subnet 3|`pTier2Subnet3Cidr`|A subset of the VPC CIDR block.|
 
-#### Determine VPC CIDR Block
+### Determine VPC CIDR Block
 
 If your Network team has supplied a relatively large non-overlapping CIDR block, for example a `/16` - `/20`, you should consider using only a subset of that block for your shared development VPC.  Otherwise, if you've been allocated a `/20` - `/22`, then you should use the entire block for the VPC.
 
 If you need to break down a larger block, use the [Visual Subnet Calculator](http://www.davidc.net/sites/default/subnets/subnets.html). Enter the size of allocated larger block in the "Mask bits" field and click "Update".  Now click the `Divide` link to break down the block into smaller blocks.  When you've reached block sizes from `/20` - `/22`, home in on the block size of most interest to you and record that CIDR range as the one will you use for the shared development VPC.
 
-#### Determine Subnet CIDR Blocks
+### Determine Subnet CIDR Blocks
 
 Once you've determined the VPC CIDR block, break it down into an equal size block per subnets is straightforward. Using the [Visual Subnet Calculator](http://www.davidc.net/sites/default/subnets/subnets.html), enter the size of your VPC block in the "Mask bits" field and click "Update".  Now in the table below, click the "Divide" links to start subdividing the larger block into at 8 blocks of equal size.
 
 Note the first 6 blocks and supply them as the subnet CIDR blocks in the next step.
 
-### Use AWS CloudFormation to Provision the VPC
+## 7. Provision the VPC
 
 You can use the this [sample AWS CloudFormation template](https://github.com/ckamps/infra-aws-vpc-multi-tier) to easily deploy your shared development network.
 
@@ -220,7 +219,7 @@ Now create a new AWS CloudFormation stack using the sample template you download
 |---------|--------|
 |**`Business Scope`**|Replace `acme` with your organization identifier or stock ticker if that applies. This value is used as a prefix in the name of some of the VPC-related cloud resources.|
 |**`VPC Name`**|Change to `dev`.|
-|**`*Cidr`**|**Just Experimenting**<br>If you want to just experiment at this point and don't care about using formally assigned IP address ranges, you can leave CIDR block parameters at their default values.<br><br>**You Have Your Own CIDR Blocks**<br><br>Enter the CIDR blocks from the prior step.|
+|**`*Cidr`**|**Just Experimenting**<br><br>If you want to just experiment at this point and don't care about using formally assigned IP address ranges, you can leave CIDR block parameters at their default values.<br><br>**You Have Your Own CIDR Blocks**<br><br>Enter the CIDR blocks from the prior step.|
 
 Leave all of the other parameters at their defautl settings unless you're comfortable changing them.  You can always easily create another stack with to try out different settings.
 
@@ -231,7 +230,7 @@ Leave all of the other parameters at their defautl settings unless you're comfor
 
 Monitor the progress of the stack creation process. After 5 or so minutes, creation of the stack should complete.
 
-## 7. Review Development VPC
+## 8. Review Development VPC
 
 Review the newly created VPC and associated resources.
 
