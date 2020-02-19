@@ -163,9 +163,11 @@ The AWS CloudFormation template that you'll use in the next step to provision th
 |CIDR Block|CloudFormation Parameter Name|Purpose|
 |----------|-----------------------------|-------|
 |VPC|`pCidr`|The overall CIDR block for the VPC. Although you cannot change this assignment later, you can add another CIDR block to augment the original block.|
+|**Public Subnets**||
 |Public Subnet 1|`pTier1Subnet1Cidr`|A subset of the VPC CIDR block.|
 |Public Subnet 2|`pTier1Subnet2Cidr`|A subset of the VPC CIDR block.|
 |Public Subnet 3|`pTier1Subnet3Cidr`|A subset of the VPC CIDR block.|
+|**Private Subnets**||
 |Private Subnet 1|`pTier2Subnet1Cidr`|A subset of the VPC CIDR block.|
 |Private Subnet 2|`pTier2Subnet2Cidr`|A subset of the VPC CIDR block.|
 |Private Subnet 3|`pTier2Subnet3Cidr`|A subset of the VPC CIDR block.|
