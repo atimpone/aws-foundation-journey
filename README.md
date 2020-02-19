@@ -59,26 +59,23 @@ By following this guide, your organization can establish an initial secure found
 
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-initial.png "Initial Development Environment")
 
-### Review and Refine Requirements and Solution Design
+### Perform Up-front Tasks
 
 1. [Review and Refine Initial Development Environment Requirements](1-dev-environments/1-1-requirements.md)
 2. [Review and Refine Initial Development Environment Solution](1-dev-environments/1-2-solution.md)
-
-### Pre-Requistes
-
-0. [Address Pre-Requisites](1-dev-environments/1-3-address-pre-requisites.md)
+3. [Map People to Foundation Functional Roles](1-dev-environments/1-3-map-people-to-foundation-roles.md)
+4. [Address Pre-Requisites](1-dev-environments/1-4-address-pre-requisites.md)
 
 ### Build Out the Environment
 
-1. [Map People to Foundation Functional Roles](1-dev-environments/2-1-map-people-to-foundation-roles.md)
-2. [Create New Master AWS Account](1-dev-environments/2-2-create-master-aws-account.md)
-3. [Set Up Initial Landing Zone Using AWS Control Tower](1-dev-environments/2-3-set-up-landing-zone.md)
-4. [Set Up Initial AWS Platform Access Controls](1-dev-environments/2-4-set-up-aws-platform-access-controls.md)
-5. [Onboard Foundation Team](1-dev-environments/2-5-onboard-foundation-team.md)
-6. [Determine Initial Networking Approach](1-dev-environments/2-6-determine-networking-approach.md)
-7. [Create Initial Team Development Environments](1-dev-environments/2-7-create-team-dev-environments.md)
-8. [Onboard Development Teams](1-dev-environments/2-8-onboard-dev-teams.md)
-9. [Manage and Monitor Your AWS Environment](1-dev-environments/2-9-manage-and-monitor-aws-environment.md)
+1. [Create New Master AWS Account](1-dev-environments/2-1-create-master-aws-account.md)
+2. [Set Up Initial Landing Zone Using AWS Control Tower](1-dev-environments/2-2-set-up-landing-zone.md)
+3. [Set Up Initial AWS Platform Access Controls](1-dev-environments/2-3-set-up-aws-platform-access-controls.md)
+4. [Onboard Foundation Team](1-dev-environments/2-4-onboard-foundation-team.md)
+5. [Determine Initial Networking Approach](1-dev-environments/2-5-determine-networking-approach.md)
+6. [Create Initial Team Development Environments](1-dev-environments/2-6-create-team-dev-environments.md)
+7. [Onboard Development Teams](1-dev-environments/2-7-onboard-dev-teams.md)
+8. [Manage and Monitor Your AWS Environment](1-dev-environments/2-8-manage-and-monitor-aws-environment.md)
 
 ### Reference
 
