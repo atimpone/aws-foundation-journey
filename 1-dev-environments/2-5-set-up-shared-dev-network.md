@@ -91,7 +91,7 @@ In the following steps, it's important that you select the correct role when acc
 
 |Field|Recommendation|
 |-----|---------------|
-|`SSOUserEmail`|Consult the [set of AWS account root user email addresses](1-4-address-pre-requisites#1-prepare-email-distribution-lists-for-new-aws-accounts) that you established earlier.|
+|`SSOUserEmail`|Consult the [set of AWS account root user email addresses](1-4-address-pre-requisites.md#1-create-email-distribution-lists-for-new-aws-accounts) that you established earlier.|
 |`AccountEmail`|Use the same value as `SSOUserEmail`.|
 |`SSOUserFirstName`|Use a part of your account name. For example, `Network`.|
 |`SSOUserLastName`|Use the remaining part of the account name. For example, `Infrastructure`|
