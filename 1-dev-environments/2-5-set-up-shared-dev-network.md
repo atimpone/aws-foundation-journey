@@ -212,10 +212,11 @@ Now create a new AWS CloudFormation stack using the sample template you download
 
 1. Navigate to **`CloudFormation`**.
 2. Select `Create stack` and `With new resources`.
-3. Select `Upload a template file` and `Chose file` to select the downloaded template file from your desktop.
-4. Select `Next`.
-5. Enter a `Stack name`. For example, `dev-vpc`.
-6. In `Parameters`:
+3. Select `Upload a template file`.
+4. Select `Choose file` to select the downloaded template file from your desktop.
+5. Select `Next`.
+6. Enter a `Stack name`. For example, `dev-vpc`.
+7. In `Parameters`:
 
 |Parameter|Guidance|
 |---------|--------|
@@ -255,9 +256,22 @@ Now that the development VPC has been provisioned, you need to share the subnets
 4. Navigate to **`Resource Access Manager`**.
 5. Select **`Enable sharing with AWS Organizations`**.
 
+While you're in the master AWS account, obtain and record the resource ID of the **`development`** OU.
+
+1. Navigate to **`AWS Control Tower`**.
+2. Select `Organizational units`.
+3. Select **`development`**.
+4. Copy the `ID` of the form `ou-szfb-rixl8jqc` (example) so that you can refer to it in the next step.
+
 ### Create a Resource Share
 
-...
+1. As a Cloud Administrator, use your personal user to log into AWS SSO.
+2. Select the **Network** AWS account.
+3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
+4. Select the appropriate AWS region.
+5. Navigate to **`Resource Access Manager`**.
+6. Select `Create a resource share`.
+7. 
 
 ### Share the Subnets
 
