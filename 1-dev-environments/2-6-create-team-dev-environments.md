@@ -34,7 +34,7 @@ You'll follow these steps twice: Once to create the initial deveopment team's AW
 2. Select the AWS **master** account.
 3. Select `Management console` associated with the **`AWSServiceCatalogEndUserAccess`** role.
 4. Select the appropriate AWS region.
-5. Navigate to AWS Service Catalog.
+5. Navigate to **`AWS Service Catalog`**.
 6. Select `Products list`.
 7. Select `AWS Control Tower Account Factory`.
 8. Select `Launch Product`.
@@ -89,7 +89,7 @@ Since Cloud Administrators won't automatically be granted sufficient access to n
 2. Select the AWS **master** account.
 3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
 4. Select the appropriate AWS region.
-5. Navigate to `AWS SSO`.
+5. Navigate to **`AWS SSO`**.
 6. Access `AWS accounts` in AWS SSO.
 7. Select the checkboxes next both development AWS accounts. For example:
   * `Team A - Dev`

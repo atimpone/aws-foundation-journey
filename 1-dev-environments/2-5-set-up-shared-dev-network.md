@@ -43,9 +43,9 @@ Moving forward, your organization will likely want to apply particular policies 
 
 1. As a Cloud Administrator, use your personal user to log into AWS SSO.
 2. Select the AWS **master** account.
-3. Select `Management console` associated with the `AWSAdministratorAccess` role.
+3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
 4. Select the appropriate AWS region.
-5. Navigate to AWS Control Tower.
+5. Navigate to **`AWS Control Tower`**.
 6. Within the AWS Control Tower dashboard select `Add organizational units`.  
 7. Follow the prompts to create a new OU named **`infrastructure`**.
 
@@ -81,7 +81,7 @@ In the following steps, it's important that you select the correct role when acc
 2. Select the AWS **master** account.
 3. Select `Management console` associated with the **`AWSServiceCatalogEndUserAccess`** role.
 4. Select the appropriate AWS region.
-5. Navigate to AWS Service Catalog.
+5. Navigate to **`AWS Service Catalog`**.
 6. Select `Products list`.
 7. Select `AWS Control Tower Account Factory`.
 8. Select `Launch Product`.
@@ -129,7 +129,7 @@ Since Cloud Administrators won't automatically be granted sufficient access to n
 2. Select the AWS **master** account.
 3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
 4. Select the appropriate AWS region.
-5. Navigate to `AWS SSO`.
+5. Navigate to **`AWS SSO`**.
 6. Access `AWS accounts` in AWS SSO.
 7. Select the checkbox next to the **`Network`** AWS account.
 8. Select `Assign users`.
@@ -210,7 +210,7 @@ Next, access the new Network AWS account:
 
 Now create a new AWS CloudFormation stack using the sample template you downloaded to your desktop:
 
-1. Navigate to `CloudFormation`.
+1. Navigate to **`CloudFormation`**.
 2. Select `Create stack` and `With new resources`.
 3. Select `Upload a template file` and `Chose file` to select the downloaded template file from your desktop.
 4. Select `Next`.
@@ -236,7 +236,7 @@ Monitor the progress of the stack creation process. After 5 or so minutes, creat
 
 Review the newly created VPC and associated resources.
 
-1. Navigate to `VPC`.
+1. Navigate to **`VPC`**.
 2. Select the VPC and review its details.
 3. Select `Subnets` in the left menu and review.
 4. Select `Route Tables` and review.
