@@ -145,7 +145,7 @@ Now you've enabled all users who are part of the Cloud Administrator group in AW
 
 If you're just experimenting and don't care which CIDR block is used to build the VPC, you can move to the next step, [7. Provision the VPC](#7-provision-the-vpc).
 
-In this step you'll:
+Otherwise, if you have a formally assigned CIDR block to use, in this step you'll:
 
 1. Review Default VPC Topology
 2. Determine VPC CIDR Block
@@ -252,7 +252,8 @@ Now that the development VPC has been provisioned, you need to share the subnets
 1. As a Cloud Administrator, use your personal user to log into AWS SSO.
 2. Select the AWS **master** account.
 3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
-4. Follow the instructions [Enabling Sharing with AWS Organizations](https://docs.aws.amazon.com/ram/latest/userguide/getting-started-sharing.html#getting-started-sharing-orgs).
+4. Navigate to **`Resource Access Manager`**.
+5. Select **`Enable sharing with AWS Organizations`**.
 
 ### Create a Resource Share
 
