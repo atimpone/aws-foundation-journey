@@ -24,9 +24,9 @@ The following table lists a typical set of minimal functional roles to own and m
 
 |Foundation Functional Role	|Description	|Responsibilities	|
 |---	|---	|---	|
-|Cloud Administration|Write access to cloud foundation resources.	|<p>* Create and manage shared cloud infrastructure. For example, AWS accounts and shared networking resources.<br>* Onboard new development teams on usage of their cloud development environments.</p>|
-|Security Administration|Write access to cloud foundation security resources.	|<p>* Create and manage baseline security policies in AWS.<br>* Monitor and respond to AWS usage security events.<br>* Learn and promote cloud security best practices.</p>|
-|Cost Management|Write access to cost budgets and reporting.	|<p>* Monitor overall clound spend.<br>* Create, manage, and ensure access to cost and budget reports.<br>* Learn and apply fundamentals of cloud cost optimization practices.|
+|Cloud Administration|Write access to cloud foundation resources.	|<p>* Create and manage shared cloud infrastructure. For example, AWS accounts and shared networking resources.<br><br>* Onboard new development teams on usage of their cloud development environments.</p>|
+|Security Administration|Write access to cloud foundation security resources.	|<p>* Become skilled in AWS security including IAM.<br><br>* Provision and manage IAM roles and policies based on developers' needs.<br><br>* Create and manage baseline security policies in AWS.<br><br>* Monitor and respond to AWS usage security events.<br><br>* Learn and promote cloud security best practices.</p>|
+|Cost Management|Write access to cost budgets and reporting.	|<p>* Monitor overall clound spend.<br><br>* Create, manage, and ensure access to cost and budget reports.<br><br>* Learn and apply fundamentals of cloud cost optimization practices.|
 |Audit|Read only access to all AWS resources.	|Periodically review data hosted in AWS for compliance.	|
 
 ## 3. Define Additional Foundation Functional Roles Over Time
