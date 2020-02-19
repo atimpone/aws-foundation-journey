@@ -3,7 +3,7 @@
 ---
 ***DRAFT CONTENT***
 
-The content of this repository is in a preliminary draft form and should not be used for formal build outs of AWS environments.  It it currently undergoing rapid changes as it is reviewed and tested.  
+Content in this repository is in a preliminary draft form and should not be used for formal build outs of AWS environments.  It it currently undergoing rapid changes as it is reviewed and tested.  
 
 If you'd like to contribute via feedback, bug fixes, and/or enhanced content, see [CONTRIBUTING.md](CONTRIBUTING.md)
 
