@@ -143,7 +143,7 @@ Now you've enabled all users who are part of the Cloud Administrator group in AW
 
 ## 6. Calculate IP Address CIDR Blocks
 
-If you're just experimenting and don't care which CIDR block is used to build the VPC, you can move to the next step, [Use AWS CloudFormation to Provision the VPC](#7-provision-the-vpc).
+If you're just experimenting and don't care which CIDR block is used to build the VPC, you can move to the next step, [7. Provision the VPC](#7-provision-the-vpc).
 
 In this step you'll:
 
