@@ -3,7 +3,7 @@
 In this step the few people who are leading the effort to establish the initial development environment and supporting foundation will address a few technical pre-requsites before the build out of the environment begins.
 
 1. [Create Email Distribution Lists for New AWS Accounts](#1-create-email-distribution-lists-for-new-aws-accounts)
-2. [Obtain Non-Overlapping IP Address Range](#2-obtain-non-overlappin-ip-address-range)
+2. [Obtain Non-Overlapping IP Address Range](#2-obtain-non-overlapping-ip-address-range)
 
 ## 1. Create Email Distribution Lists for New AWS Accounts
 
