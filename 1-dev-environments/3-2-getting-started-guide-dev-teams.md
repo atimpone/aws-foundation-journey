@@ -29,19 +29,23 @@ You should've received an email from AWS with the subject "Invitation to join AW
 
 Once you're able to login, you'll need to [register an MFA device](https://docs.aws.amazon.com/singlesignon/latest/userguide/user-device-registration.html) to your AWS SSO account.
 
-## Understanding Your Initial Development Environment
+## Understanding Your Team's Initial Development Environment
 
 *...highlight that the initial development environment network environments will likely be supplanted over time as on-premises integration and the need to use non-overlapping IP address ranges and other enhancements emerge...*
 
 ### What is an AWS Account?
 An AWS account is a logical container and boundary to separate AWS resources based on a number of criteria including our SLDC environment, security requirements, cost reporting, and organizational ownership.
 
-### What AWS account do I have access to?
+### What AWS account does my team have access to?
 When you log into your AWS SSO portal ([add your company's link here]()), you'll be shown a list of AWS accounts you have access to.  Initially, each development team is provided a single development AWS account.
 
 If your team has more environment or security specific requirements please work with your cloud foundations team.
 
-## Understanding Your Access Permissions and Responsibilities
+### Where should my team deploy resources?
+
+*...note that for resources requiring a VPC, use the private subnets by default unless unsolicited access from the Internet is required. Note that public subnets in the dev VPC will be decommisioned in the near future...*
+
+## Understanding Your Team's Access Permissions and Responsibilities
 
 *...use of personal users set up in AWS SSO...*
 
