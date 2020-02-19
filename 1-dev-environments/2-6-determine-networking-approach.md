@@ -31,6 +31,13 @@ Later in your journey, if you set up network connectivity with your on-premises 
 
 ---
 
+---
+**Review Note: Why not start with a shared development VPC from the start?**
+
+Given the benefits and relative ease of doing even at this early stage?
+
+---
+
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-network-initial-details.png "Initial Network Details")
 
 ## 2. Decide on Initial Provisioning Approach
