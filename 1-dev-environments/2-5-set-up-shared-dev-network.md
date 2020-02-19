@@ -9,7 +9,7 @@ This step should take about 60 minutes to complete.
 3. [Disable Account Factory VPC Provisioning](#3-disable-account-factory-vpc-provisioning)
 4. [Create Network AWS Account](#4-create-network-aws-account)
 5. [Enable Foundation Team Members Access](#5-enable-foundation-team-members-access)
-6. [Calculate IP Address CIDR Blocks](#6-calculate-ip-address-cidr-blocks)
+6. [Determine IP Address CIDR Blocks](#6-determine-ip-address-cidr-blocks)
 7. [Provision Development VPC](#7-provision-development-vpc)
 8. [Review Development VPC](#8-review-development-vpc)
 9. [Share Development VPC with Development OU](#9-share-development-VPC-with-development-ou)
@@ -141,7 +141,7 @@ Since Cloud Administrators won't automatically be granted sufficient access to n
 
 Now you've enabled all users who are part of the Cloud Administrator group in AWS SSO administrator access to the Network AWS account.
 
-## 6. Calculate IP Address CIDR Blocks
+## 6. Determine IP Address CIDR Blocks
 
 If you're just experimenting and don't care which CIDR block is used to build the VPC, you can move to the next step, [7. Provision the VPC](#7-provision-the-vpc).
 
