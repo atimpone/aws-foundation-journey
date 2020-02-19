@@ -149,7 +149,7 @@ In this step you'll:
 
 ### Calculate Your CIDR Blocks for the VPC
 
-If you're just experimenting and don't care which CIDR block is used to build the VPC, you can move to the next step, [Use AWS CloudFormation to Provision the VPC](h#use-aws-cloudformation-to-provision-the-vpc).
+If you're just experimenting and don't care which CIDR block is used to build the VPC, you can move to the next step, [Use AWS CloudFormation to Provision the VPC](#use-aws-cloudformation-to-provision-the-vpc).
 
 Otherwise, you should take the non-overlapping CIDR block that was allocated by your Network team and break it down so that you can assign CIDR blocks to the subnets that make up the initial shared development VPC.
 
