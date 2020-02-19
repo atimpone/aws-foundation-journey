@@ -159,7 +159,7 @@ Download the sample AWS CloudFormation template [infra-multi-tier-vpc.yml](https
 ---
 **Review Note:  Better VPC CloudFormation example?**
 
-If you're aware of a better CloudFormation template example that is maintained in the `aws-samples` or similar AWS-managed GitHub organizations, provide that feedback. Otherwise, we'll get this example introduced into the `aws-samples` organization.
+If you're aware of a better CloudFormation template example that is maintained in the `aws-samples` or similar AWS-managed GitHub organizations, provide that feedback. In the mean time, we've started the process to get this example introduced into the `aws-samples` organization.
 
 ---
 
