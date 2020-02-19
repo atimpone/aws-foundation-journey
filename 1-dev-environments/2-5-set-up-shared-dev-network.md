@@ -142,11 +142,14 @@ Now you've enabled all users who are part of the Cloud Administrator group in AW
 
 ## 6. Provision Development VPC
 
-In this step you'll identify the IP address CIDR blocks to specify for both your VPC and the subnets within it.
+In this step you'll:
+
+1. Identify the IP address CIDR blocks to specify for both your VPC and the subnets within it.
+2. Provision the VPC using AWS CloudFormation.
 
 ### Calculate Your CIDR Blocks for the VPC
 
-If you're just experimenting and don't care which IP address CIDR blocks are used to build the VPC, you can move to the next step, [Use AWS CloudFormation to Provision the VPC](3-use-aws-cloudformation-to-provision-the-vpc).
+If you're just experimenting and don't care which CIDR block is used to build the VPC, you can move to the next step, [Use AWS CloudFormation to Provision the VPC](h#use-aws-cloudformation-to-provision-the-vpc).
 
 Otherwise, you should take the non-overlapping CIDR block that was allocated by your Network team and break it down so that you can assign CIDR blocks to the subnets that make up the initial shared development VPC.
 
