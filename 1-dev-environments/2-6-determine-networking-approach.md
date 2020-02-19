@@ -34,7 +34,9 @@ Later in your journey, if you set up network connectivity with your on-premises 
 ---
 **Review Note: Why not start with a shared development VPC from the start?**
 
-Given the benefits and relative ease of doing even at this early stage. i.e create Network AWS accoumt, provision VPC using CloudFormation per this design, ideally with non-overlapping CIDR, share VPC subnets to the development OU AWS accounts. A 20-minute task.
+Given the benefits and relative ease of doing this even at this early stage. i.e create Network AWS accoumt, provision VPC using CloudFormation per this design, ideally with non-overlapping CIDR, share VPC subnets to the development OU AWS accounts. A 20-minute task.
+
+Later, hooking in on-premises network integration via a site-to-site VPN + Transit Gateway as a fast follow-on is straightforward and doesn't require rework of the dev VPC.
 
 ---
 
