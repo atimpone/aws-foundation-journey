@@ -86,7 +86,7 @@ See [Tools on AWS](https://aws.amazon.com/tools/) for a list of tools and SDKs t
 With our adoption of AWS, we're shifting our operation model to empower builders with more flexibility and control over their environments.  This includes understanding the AWS resources they're consuming and the costs that are associated with them.
 
 1. Use your personal user to log into AWS SSO.
-2. Select your development Team account.
+2. Select your development team AWS account.
 3. Select `Management console`.
 4. Access the `Billing` service.
 
