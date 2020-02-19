@@ -15,12 +15,12 @@ If your organization already has a naming standard for mail addresses associated
 
 |AWS Account	|Example Root User Email Distribution List|Example with "+" Style Email Address|
 |---|---|---|
-|Foundation AWS Accounts||
+|**Foundation AWS Accounts**||
 |Master|aws-account-master@acme.com|aws-account+master@acme.com|
 |Audit|aws-account-audit@acme.com|aws-account+audit@acme.com|
 |Log Archive|aws-account-log-archive@acme.com|aws-account+log-archive@acme.com|
 |Network|aws-account-network@acme.com|aws-account+network@acme.com|
-|Development Team AWS Accounts|||
+|**Development Team AWS Accounts**|||
 |Foundation Team Development|aws-account-foundation-dev@acme.com|aws-account+foundation-dev@acme.com|
 |Team 1 Development|aws-account-team-a-dev@acme.com|aws-account+team-a-dev@acme.com|
 
