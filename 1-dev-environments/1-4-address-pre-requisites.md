@@ -13,7 +13,7 @@ The following table includes the minimum set of distribution lists to get starte
 
 If your organization already has a naming standard for mail addresses associated with services, you should use that standard format and include references to at least "aws" and and an abbreviation of the unique role or purpose of each account.
 
-|AWS Account	|Example Root User Email Distribution List|Example with "+" Style Email Address|
+|AWS Account	|Example Distribution List|Example with "+" Style Email Address|
 |---|---|---|
 |**Foundation AWS Accounts**||
 |Master|aws-account-master@acme.com|aws-account+master@acme.com|
