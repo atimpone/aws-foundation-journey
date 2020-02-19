@@ -1,0 +1,203 @@
+# 5. Set Up Shared Development Network
+
+In this step your Cloud Administrators will review the initial network design, create a new Network AWS account, provision a shared development network, and share that network will all development AWS accounts in your AWS organization.
+
+This step should take about 60 minutes to complete.
+
+1. [Review Initial Network Design](#1-review-initial-network-design)
+2. [Create Organizational Units](#2-create-organizational-units)
+3. [Disable Account Factory VPC Provisioning](#3-disable-account-factory-vpc-provisioning)
+4. [Create Network AWS Account](#4-create-network-aws-account)
+5. [Enable Foundation Team Members Access](#5-enable-foundation-team-access)
+6. [Provision Development VPC](#6-provision-development-vpc)
+7. [Review Development VPC](#7-review-development-vpc)
+8. [Share Development VPC with Development OU](#8-share-development-VPC-with-development-ou)
+
+## 1. Review Initial Network Design
+
+As mentioned in the [Initial Development Environment Solution Overview](1-2-solution.md#vpc-network-for-each-development-team-aws-account), it's recommended that you start with a single development VPC that you will share across all development team AWS accounts. 
+
+The shared development VPC will have a set of public and private subnets. In those AWS regions in which at least 3 Availability Zones (AZs) are availabkle for customer use, it's recommended that your initial set of VPCs have subnets in each of 3 AZs so that your development teams can experiment and perform early testing of workloads that can take advantage of 3 AZs.
+
+At least one public subnet will have a NAT Gateway that enables workloads in any of the private subnets to send traffic outbound to the Internet. For example, to enable workloads to download packages from Internet accessible source code and package repositories.
+
+![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-network-initial-details.png "Initial Network Details")
+
+## 2. Create Organizational Units
+
+Using AWS Control Tower, create several Organizational Units (OUs) that will act as a mechanism to group AWS accounts that have similar security and management needs.  Initially, the OU structure will simply consist of two custom OUs:
+
+* **`infrastructure`** - For foundation infrastructure related AWS accounts including the Network AWS account that you will create later in this section.
+* **`development`** - For development team AWS accounts that you'll create in the next section.
+
+---
+**Note: Your OU design will evolve** 
+
+Since you have the ability to move AWS accounts between OUs and modify OUs, you don't need to perform a complete OU design at this early stage. As you progress on your journey, you will evolve your OU design to suit your emerging needs.  If you'd like to learn more about OUs, see [AWS Organizations in Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/organizations.html).
+
+---
+### Create the Infrastructure OU
+
+Moving forward, your organization will likely want to apply particular policies or guardrails to all AWS development accounts within your enterprise.  To enable you to easily target such policies across all development AWS accounts, it's recommended that you create a new Organizational Unit (OU) to represent development AWS accounts.
+
+1. As a Cloud Administrator, use your personal user to log into AWS SSO.
+2. Select the AWS **master** account.
+3. Select `Management console` associated with the `AWSAdministratorAccess` role.
+4. Select the appropriate AWS region.
+5. Navigate to AWS Control Tower.
+6. Within the AWS Control Tower dashboard select `Add organizational units`.  
+7. Follow the prompts to create a new OU named **`infrastructure`**.
+
+In the next step when you create the new Network AWS account, you'll specify this new OU.
+
+### Create the Development OU
+
+Moving forward, your organization will likely want to apply particular policies or guardrails to all AWS development accounts within your enterprise.  To enable you to easily target such policies across all development AWS accounts, it's recommended that you create a new Organizational Unit (OU) to represent development AWS accounts.
+
+1. Within the AWS Control Tower dashboard select `Add organizational units`.  
+2. Follow the prompts to create a new OU named **`development`**.
+
+In the next section when you create the new development AWS accounts, you'll specify this new OU.
+
+## 3. Disable Account Factory VPC Provisioning
+
+Since you will be provisioning the shared development VPC directly using AWS CloudFormation, you need to ensure that the AWS Control Tower Account Factory network configuration is set to disable creation of a VPC when creating a new AWS account.  Otherwise, the Account Factory will attempt to create a VPC each time you provision a new AWS account.
+
+See [Configuring AWS Control Tower Without a VPC](https://docs.aws.amazon.com/controltower/latest/userguide/configure-without-vpc.html) for details on disabling automatic creation of VPCs.
+
+## 4. Create Network AWS Account
+
+In AWS Control Tower, provision the Network AWS account that will initially contain the shared development VPC. Later in your joruney, you'll deploy more network related resources to this AWS account. 
+
+---
+**Note:** Use the `AWSServiceCatalogEndUserAccess` role**
+
+In the following steps, it's important that you select the correct role when accessing the master AWS account. Failure to do so, will result in you not being able to work with AWS Service Catalog to provision the new AWS account.
+
+---
+
+1. As a Cloud Administrator, use your personal user to log into AWS SSO.
+2. Select the AWS **master** account.
+3. Select `Management console` associated with the **`AWSServiceCatalogEndUserAccess`** role.
+4. Select the appropriate AWS region.
+5. Navigate to AWS Service Catalog.
+6. Select `Products list`.
+7. Select `AWS Control Tower Account Factory`.
+8. Select `Launch Product`.
+9. Under `Product Version`, specify a `Name`. For example, **`member-account-network`**.
+10. Select `Next`.
+11. In `Parameters`, consider the following recommendations:
+
+|Field|Recommendation|
+|-----|---------------|
+|`SSOUserEmail`|Consult the [set of AWS account root user email addresses](1-4-address-pre-requisites#1-prepare-email-distribution-lists-for-new-aws-accounts) that you established earlier.|
+|`AccountEmail`|Use the same value as `SSOUserEmail`.|
+|`SSOUserFirstName`|Use a part of your account name. For example, `Network`.|
+|`SSOUserLastName`|Use the remaining part of the account name. For example, `Infrastructure`|
+|`ManagedOrganizationalUnit`|Select the infrastructure OU you created earlier in this section. For example, **`infrastructure`**.|
+|`AccountName`|**`Infrastructure`**|
+
+12. Select `Next`.
+13. On `Tag Options`, select `Next`.
+14. On `Notifications`, select `Next`.
+15. Review the account settings, and then select `Launch`. Do not create a resource plan, otherwise the account will fail to be provisioned.
+
+The AWS account is now being provisioned. It can take a few minutes to complete. You can refresh the page to update the displayed status information.
+
+----
+**Note: You can change AWS account settings later**
+
+Configuration settings of the AWS accounts you provision via Account Factory shouldn’t be considered static.  Nearly every part of an AWS account can be changed and updated at a later date. See [Account Factory](https://docs.aws.amazon.com/controltower/latest/userguide/account-factory.html) for more details.
+
+---
+
+---
+**Review Note: Address issue where provisoned products are owned by one user by default**
+
+Based on preliminary testing of this step, only the Cloud Admin who provisions an Account Factory product is able to see and manage that product unless the owner chnages ownership to another user or to an IAM role. This may be the expected behavior of AWS Service Catalog, but it runs counter to our goal of enabling foundation team members who are playing the same functional role to share in the responsibilities of manging common foundation resources.
+
+We need to verify that this is the default behavior and, if it is, enhance this section to ensure that the resource is shared amongst at least the Cloud Administration team members.
+
+---
+
+## 5. Enable Foundation Team Members Access
+
+Since Cloud Administrators won't automatically be granted sufficient access to newly created AWS account, you need to enable this access each time you create a new AWS account via AWS Control Tower's Account Factory.
+
+1. As a Cloud Administrator, use your personal user to log into AWS SSO.
+2. Select the AWS **master** account.
+3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
+4. Select the appropriate AWS region.
+5. Navigate to `AWS SSO`.
+6. Access `AWS accounts` in AWS SSO.
+7. Select the checkbox next to the **`Network`** AWS account.
+8. Select `Assign users`.
+9. Select `Groups`.
+10. Select the checkbox next to the group **`acme-cloud-admin`** or similar.
+11. Select `Next: Permission sets`.
+12. Select the checkbox next to `AWSAdministratorAccess`.
+13. Select `Finish`.
+
+Now you've enabled all users who are part of the Cloud Administrator group in AWS SSO administrator access to the Network AWS account.
+
+## 6. Provision Development VPC
+
+You can use the this [sample AWS CloudFormation template](https://github.com/ckamps/infra-aws-vpc-multi-tier) to easily deploy your shared development network.
+
+Download the sample AWS CloudFormation template [infra-multi-tier-vpc.yml](https://raw.githubusercontent.com/ckamps/infra-aws-vpc-multi-tier/master/infra-vpc-multi-tier.yml) to your desktop.
+
+---
+**Review Note:  Better VPC CloudFormation example?**
+
+If you're aware of a better CloudFormation template example that is maintained in the `aws-samples` or similar AWS-managed GitHub organizations, provide that feedback. In the meantime, we've started the process to get this example introduced into the `aws-samples` organization.
+
+---
+
+Next, access the new Network AWS account:
+
+1. As a Cloud Administrator, use your personal user to log into AWS SSO.
+2. Select the **Network** AWS account.
+3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
+4. Select the appropriate AWS region.
+
+Now create a new AWS CloudFormation stack using the sample template you downloaded to your desktop:
+
+1. Navigate to `CloudFormation`.
+2. Select `Create stack` and `With new resources`.
+3. Select `Upload a template file` and `Chose file` to select the downloaded template file from your desktop.
+4. Select `Next`.
+5. Enter a `Stack name`. For example, `dev-vpc`.
+6. In `Parameters`:
+
+***To do...beef up the parameters with more detailed guidance in case the customer has a CIDR range of interest.***
+
+|Parameter|Guidance|
+|---------|--------|
+|`Business Scope`|Replace `acme` with your organization identifier. This value is used as a prefix in the name of some of the VPC-related cloud resources.|
+|`VPC Name`|Change to `dev`.|
+
+7. Select `Next`.
+8. Select `Next`.
+9. Scrolls to the bottom and mark the checkbox to acknowledge that IAM resources will be created.
+10. Select `Create stack`.
+
+Monitor the progress of the stack creation process. After 5 or so minutes, creation of the stack should complete.
+
+## 7. Review Development VPC
+
+Review the newly created VPC and associated resources.
+
+1. Navigate to `VPC`.
+2. Select the VPC and review its details.
+3. Select `Subnets` in the left menu and review.
+4. Select `Route Tables` and review.
+5. Select `NAT Gateways` and review.
+6. Select `Elastic IPs` and review.  You should see one EIP allocated for each NAT Gateway.
+
+## 8. Share Development VPC With Development OU
+
+...
+
+ ## Next Steps
+
+[6. Create Initial Team Development Environments](2-6-create-team-dev-environments.md)

@@ -48,4 +48,4 @@ From this point forward, the vast majority of your work to administer and manage
 
 ## Next Steps
 
-[5. Determine Initial Networking Approach](2-5-determine-networking-approach.md)
+[5. Set Up Shared Dev Network](2-5-set-up-shared-dev-network.md)

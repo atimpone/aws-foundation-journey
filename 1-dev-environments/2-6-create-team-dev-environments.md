@@ -5,12 +5,9 @@ In this step your Cloud Administrators will create several new team development 
 This step should take about 30 minutes to complete.
 
 1. [Use at Least Two Development AWS Accounts from the Start](#1-use-at-least-two-development-aws-accounts-from-the-start)
-2. [Create the Development Organizational Unit](#2-create-the-development-organizational-unit)
-3. [Create Development Team AWS Accounts](#3-create-development-team-aws-accounts)
-4. [Initialize AWS Account System Users](#4-initialize-aws-account-system-users)
-5. [Provide Cloud Administrators Access to New AWS Accounts](#5-provide-cloud-administrators-access-to-new-aws-accounts)
-6. [Provision Networking (optional)](#6-provision-networking)
-7. [Review Networking](#7-review-networking)
+2. [Create Development Team AWS Accounts](#2-create-development-team-aws-accounts)
+3. [Initialize AWS Account System Users](#3-initialize-aws-account-system-users)
+4. [Provide Cloud Administrators Access to New AWS Accounts](#4-provide-cloud-administrators-access-to-new-aws-accounts)
 
 ## 1. Use at Least Two Development AWS Accounts from the Start
 
@@ -27,28 +24,7 @@ Initially, you will likely need AWS accounts for the following teams:
 |**Application Development Team AWS Account**|A development AWS account for the initial application or data services development team.|
 |**Foundation Team AWS Account**|A development AWS account for the initial few Cloud and Security Administrators to experiment, develop, and perform early testing of changes to the foundation.|
 
-## 2. Create the Development Organizational Unit
-
-Moving forward, your organization will likely want to apply particular policies or guardrails to all AWS development accounts within your enterprise.  To enable you to easily target such policies across all development AWS accounts, it's recommended that you create a new Organizational Unit (OU) to represent development AWS accounts.
-
-1. As a Cloud Administrator, use your personal user to log into AWS SSO.
-2. Select the AWS master account.
-3. Select `Management console` associated with the `AWSAdministratorAccess` role.
-4. Select the appropriate AWS region.
-5. Navigate to AWS Control Tower.
-6. Within the AWS Control Tower dashboard select `Add organizational units`.  
-7. Follow the prompts to create a new OU named `development`.
-
-In the next step when you create the new development AWS accounts, you'll specify this new OU.
-
----
-**Note: Your OU design will evolve** 
-
-Since you have the ability to move AWS accounts between OUs and modify OUs, you don't need to perform a complete OU design at this early stage. As you progress on your journey, you will evolve your OU design to suit your emerging needs.  If you'd like to learn more about OUs, see [AWS Organizations in Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/organizations.html).
-
----
-
-## 3. Create Development Team AWS Accounts
+## 2. Create Development Team AWS Accounts
 
 In AWS Control Tower, provision the initial set of AWS development team accounts for early experimentation, development, and testing. 
 
@@ -63,8 +39,8 @@ You'll follow these steps twice: Once to create the initial deveopment team's AW
 7. Select `AWS Control Tower Account Factory`.
 8. Select `Launch Product`.
 9. Under `Product Version`, specify a `Name`. This will be the name of the provisioned product in AWS Service Catalog and will not be the name of the new AWS account. For example:
-  * `member-account-team-a-dev`
-  * `member-account-foundation-dev`
+  * **`member-account-team-a-dev`**
+  * **`member-account-foundation-dev`**
 10. Select `Next`.
 11. In `Parameters`, consider the following recommendations:
 
@@ -74,7 +50,7 @@ You'll follow these steps twice: Once to create the initial deveopment team's AW
 |`AccountEmail`|Use the same value as `SSOUserEmail`.|
 |`SSOUserFirstName`|Use a part of your account name. For example, `Team A` or `Foundation` for the foundation team's development AWS account.|
 |`SSOUserLastName`|Use the remaining part of the account name. For example, `Development`|
-|`ManagedOrganizationalUnit`|Select the OU you created earlier in this section. For example, `development`|
+|`ManagedOrganizationalUnit`|Select the development OU you created earlier. For example, **`development`**|
 |`AccountName`|`Team A Development` or `Foundation Development`|
 
 12. Select `Next`.
@@ -82,25 +58,9 @@ You'll follow these steps twice: Once to create the initial deveopment team's AW
 14. On `Notifications`, select `Next`.
 15. Review your account settings, and then select `Launch`. Do not create a resource plan, otherwise the account will fail to be provisioned.
 
-Your account is now being provisioned. It can take a few minutes to complete. You can refresh the page to update the displayed status information. Only one account can be provisioned at a time.
+The AWS account is now being provisioned. It can take a few minutes to complete. You can refresh the page to update the displayed status information.
 
-----
-**Note: You can change AWS account settings later**
-
-Configuration settings of the AWS accounts you provision via Account Factory shouldn’t be considered static.  Nearly every part of an AWS account can be changed and updated at a later date. See [Account Factory](https://docs.aws.amazon.com/controltower/latest/userguide/account-factory.html) for more details.
-
----
-
----
-**Review Note: Address issue where provisoned products are owned by one user by default**
-
-Based on preliminary testing of this step, only the Cloud Admin who provisions an Account Factory product is able to see and manage that product unless the owner chnages ownership to another user or to an IAM role. This may be the expected behavior of AWS Service Catalog, but it runs counter to our goal of enabling foundation team members who are playing the same functional role to share in the responsibilities of manging common foundation resources.
-
-We need to verify that this is the default behavior and, if it is, enhance this section to ensure that the resource is shared amongst at least the Cloud Administration team members.
-
----
-
-## 4. Initialize AWS Account System Users
+## 3. Initialize AWS Account System Users
 
 When each new development team AWS account is created, follow these steps to initialize the AWS account's AWS SSO user and root user to align with security best practices.
 
@@ -121,7 +81,7 @@ See [Log In as Root User](https://docs.aws.amazon.com/controltower/latest/usergu
 
 See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user_manage_mfa) for instructions to enable MFA.
 
-## 5. Provide Cloud Administrators Access to New AWS Accounts
+## 4. Provide Cloud Administrators Access to New AWS Accounts
 
 Since Cloud Administrators won't automatically be granted sufficient access to newly created AWS accounts, you need to enable this access each time you create new AWS accounts via AWS Control Tower's Account Factory.
 
@@ -142,73 +102,6 @@ Since Cloud Administrators won't automatically be granted sufficient access to n
 13. Select `Finish`.
 
 Now you've enabled all users who are part of the Cloud Administrator group in AWS SSO administrator access to the selected AWS accounts.
-
-## 6. Provision Networking
-
----
-**Note: Skip this step if you chose to use Account Factory to provision the VPCs**
-
-Instead, skip to the next step to review the already provisioned VPC configurations.
-
----
-
-If you would like to deploy a VPC using AWS CloudFormation, you can use this [sample AWS CloudFormation template](https://github.com/ckamps/infra-aws-vpc-multi-tier).
-
-Download the sample AWS CloudFormation template [infra-multi-tier-vpc.yml](https://raw.githubusercontent.com/ckamps/infra-aws-vpc-multi-tier/master/infra-vpc-multi-tier.yml) to your desktop.
-
----
-**Review Note:  Better VPC CloudFormation example?**
-
-If you're aware of a better CloudFormation template example that is maintained in the `aws-samples` or similar AWS-managed GitHub organizations, provide that feedback. In the meantime, we've started the process to get this example introduced into the `aws-samples` organization.
-
----
-
-Next, access the development AWS account of interest:
-
-1. As a Cloud Administrator, use your personal user to log into AWS SSO.
-2. Select the development AWS account of interest.
-3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
-4. Select the appropriate AWS region.
-
-Now create a new AWS CloudFormation stack using the sample template you downloaded to your desktop:
-
-1. Navigate to `CloudFormation`.
-2. Select `Create stack` and `With new resources`.
-3. Select `Upload a template file` and `Chose file` to select the downloaded template file from your desktop.
-4. Select `Next`.
-5. Enter a `Stack name`. For example, `dev-vpc`.
-6. In `Parameters`:
-
-|Parameter|Guidance|
-|---------|--------|
-|`Business Scope`|Replace `acme` with your organization identifier. This is only used to name some of the cloud resources.|
-|`VPC Name`|Change to `dev`.|
-
-If you desire to customize the IP address CIDR blocks for the VPC and subnets, override those values via the parameters.
-
-7. Select `Next`.
-8. Select `Next`.
-9. Scrolls to the bottom and mark the checkbox to acknowledge that IAM resources will be created.
-10. Select `Create stack`.
-
-Monitor the progress of the stack creation process. After 5 or so minutes, creation of the stack should complete. Proceed to the next step.
-
-## 7. Review Networking
-
-Regardless of whether you relied on AWS Control Tower Account Factory to create a VPC or you used AWS CloudFormation directly, review the newly created VPC and associated resources.
-
-1. As a Cloud Administrator, use your personal user to log into AWS SSO.
-2. Select the development AWS account of interest.
-3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
-4. Select the appropriate AWS region.
-5. Navigate to `VPC`.
-6. Select the VPC and review its details.
-7. Select `Subnets` in the left menu and review.
-8. Select `Route Tables` and review.
-9. Select `NAT Gateways` and review.
-10. Select `Elastic IPs` and review.  You should see one EIP allocated for each NAT Gateway.
-
-If you depended on AWS Control Tower Account Factory to provision the VPC, you can access "CloudFormation" in the AWS Management Console and review the CloudFormation stack that was created through the Account Factory.  Look for a stack where the name is prefixed with `StackSet-` and includes `VPC` in the name.  You can learn more about [AWS CloudFormation StackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html) 
 
 ## Next Steps
 
