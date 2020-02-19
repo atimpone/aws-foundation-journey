@@ -222,7 +222,7 @@ Now create a new AWS CloudFormation stack using the sample template you download
 |---------|--------|
 |**`Business Scope`**|Replace `acme` with your organization identifier or stock ticker if that applies. This value is used as a prefix in the name of some of the VPC-related cloud resources.|
 |**`VPC Name`**|Change to **`dev`**.|
-|**`*Cidr`**|**Just Experimenting**<br><br>If you want to just experiment at this point and don't care about using formally assigned IP address ranges, you can leave the CIDR block parameters at their default values.<br><br>**You Have Your Own CIDR Blocks**<br><br>Enter the CIDR blocks from the prior step.|
+|**`*Cidr`**|**Just Experimenting**<br><br>If you want to just experiment at this point and don't care about using formally assigned IP address ranges, you can leave the CIDR block parameters at their default values.<br><br>**You Have Your Own CIDR Blocks**<br><br>Enter the CIDR blocks from the prior step. You can ignore the `pTier3...` parameters because only two tiers - public and private - are being provisioned by default.|
 
 Leave all of the other parameters at their default settings unless you're comfortable changing them.  You can always easily create another stack to experiment with other parameter values.
 
@@ -231,7 +231,7 @@ Leave all of the other parameters at their default settings unless you're comfor
 9. Scrolls to the bottom and mark the checkbox to acknowledge that IAM resources will be created.
 10. Select `Create stack`.
 
-Monitor the progress of the stack creation process. After 5 or so minutes, creation of the stack should complete.
+In the `Events` tab, monitor the progress of the stack creation process. After 5 or so minutes, creation of the stack should complete.
 
 ## 8. Review Development VPC
 
