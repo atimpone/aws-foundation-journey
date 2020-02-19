@@ -34,7 +34,7 @@ Later in your journey, if you set up network connectivity with your on-premises 
 ---
 **Review Note: Why not start with a shared development VPC from the start?**
 
-Given the benefits and relative ease of doing even at this early stage?
+Given the benefits and relative ease of doing even at this early stage.
 
 ---
 
