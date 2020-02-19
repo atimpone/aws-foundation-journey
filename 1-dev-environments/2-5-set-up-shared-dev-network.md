@@ -8,7 +8,7 @@ This step should take about 60 minutes to complete.
 2. [Create Organizational Units](#2-create-organizational-units)
 3. [Disable Account Factory VPC Provisioning](#3-disable-account-factory-vpc-provisioning)
 4. [Create Network AWS Account](#4-create-network-aws-account)
-5. [Enable Foundation Team Members Access](#5-enable-foundation-team-access)
+5. [Enable Foundation Team Members Access](#5-enable-foundation-team-members-access)
 6. [Provision Development VPC](#6-provision-development-vpc)
 7. [Review Development VPC](#7-review-development-vpc)
 8. [Share Development VPC with Development OU](#8-share-development-VPC-with-development-ou)
@@ -161,6 +161,7 @@ To keep things simple, you can size the subnets identically.
 The AWS CloudFormation template that you'll use in the next step to provision the VPC, supports the following CIDR block related parameters:
 
 |CIDR Block|CloudFormation Parameter Name|Purpose|
+|----------|-----------------------------|-------|
 |VPC|`pCidr`|The overall CIDR block for the VPC. Although you cannot change this assignment later, you can add another CIDR block to augment the original block.|
 |Public Subnet 1|`pTier1Subnet1Cidr`|A subset of the VPC CIDR block.|
 |Public Subnet 2|`pTier1Subnet2Cidr`|A subset of the VPC CIDR block.|
