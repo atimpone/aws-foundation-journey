@@ -37,7 +37,7 @@ Using AWS Control Tower, create several Organizational Units (OUs) that will act
 Since you have the ability to move AWS accounts between OUs and modify OUs, you don't need to perform a complete OU design at this early stage. As you progress on your journey, you will evolve your OU design to suit your emerging needs.  If you'd like to learn more about OUs, see [AWS Organizations in Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/organizations.html).
 
 ---
-### Create the Infrastructure OU
+### Create the `infrastructure` OU
 
 Moving forward, your organization will likely want to apply particular policies or guardrails to all AWS development accounts within your enterprise.  To enable you to easily target such policies across all development AWS accounts, it's recommended that you create a new Organizational Unit (OU) to represent development AWS accounts.
 
@@ -51,7 +51,7 @@ Moving forward, your organization will likely want to apply particular policies 
 
 In the next step when you create the new Network AWS account, you'll specify this new OU.
 
-### Create the Development OU
+### Create the `development` OU
 
 Moving forward, your organization will likely want to apply particular policies or guardrails to all AWS development accounts within your enterprise.  To enable you to easily target such policies across all development AWS accounts, it's recommended that you create a new Organizational Unit (OU) to represent development AWS accounts.
 
