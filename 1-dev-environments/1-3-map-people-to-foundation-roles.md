@@ -1,4 +1,4 @@
-# 1. Map People to Foundation Functional Roles
+# Map People to Foundation Functional Roles
 
 In this step you will identify the people who will play an initial set of functional roles in establishing, securing, and maintaining the cloud foundation so that your expectations are set in terms of accountability, ownership, and required skills and training.
 
@@ -48,4 +48,4 @@ People playing foundation functional roles will also be granted access to develo
 
 ## Next Steps
 
-[2. Create a New Master AWS Account](2-2-create-master-aws-account.md)
+[Address Pre-Requisites](1-4-address-pre-requisites.md)

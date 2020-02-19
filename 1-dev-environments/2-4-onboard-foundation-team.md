@@ -1,4 +1,4 @@
-# 5. Onboard Foundation Team
+# 4. Onboard Foundation Team
 
 In this step either your Security or Cloud Administrators will onboard the few people that make up the initial foundation team so that they can stop using system users and start using their own user accounts to manage the foundation.
 
@@ -23,7 +23,7 @@ Next, access the AWS SSO service to begin adding an AWS SSO user for each founda
 7. Select `Add user`.
 8. Specify a user name and complete at least the other required fields.
 9. Select `Next: Groups`.
-10. Select the checkbox for each corresponding AWS SSO group based on [Mapping of Functional Roles to AWS SSO Groups](2-4-set-up-aws-platform-access-controls.md#2-map-foundation-functional-roles-to-existing-aws-groups).
+10. Select the checkbox for each corresponding AWS SSO group based on [Mapping of Functional Roles to AWS SSO Groups](2-3-set-up-aws-platform-access-controls.md#2-map-foundation-functional-roles-to-existing-aws-groups).
 11. Select `Add user`.
 
 ## 2. Onboard Your Foundation Team Members 
@@ -48,4 +48,4 @@ From this point forward, the vast majority of your work to administer and manage
 
 ## Next Steps
 
-[6. Determine Initial Networking Approach](2-6-determine-networking-approach.md)
+[5. Determine Initial Networking Approach](2-5-determine-networking-approach.md)

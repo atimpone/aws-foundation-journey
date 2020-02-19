@@ -1,4 +1,4 @@
-# 4. Set Up Initial AWS Platform Access Controls
+# 3. Set Up Initial AWS Platform Access Controls
 
 In this step your Security and Cloud Administrators will decide on and implement the initial approach to controlling access to the AWS platform and onboard the foundation team members with the appropriate permissions so that they can begin to access your AWS environment.
 
@@ -30,7 +30,7 @@ Although the AWS Identity and Access Management (AWS IAM) service supports manag
 
 ## 2. Map Foundation Functional Roles to Existing AWS Groups
 
-Earlier in this guide you should have mapped your foundation team members to the [initial set of functional roles](2-1-map-people-to-foundation-roles.md) to be played in support of your AWS environment. 
+Earlier in this guide you should have mapped your foundation team members to the [initial set of functional roles](1-3-map-people-to-foundation-roles.md) to be played in support of your AWS environment. 
 
 The following table represents a mapping of those functional roles to a set of AWS SSO groups and permissions. Although AWS Control Tower automaitcally provisioned most of the AWS SSO groups, several of the groups in the table are not pre-defined. You will create these custom groups later in this section.
 
@@ -145,4 +145,4 @@ You will likely want to establish either manual or automatic recurring audits to
 
 ## Next Steps
 
-[5. Onboard the Foundation Team](2-5-onboard-foundation-team.md)
+[4. Onboard the Foundation Team](2-4-onboard-foundation-team.md)

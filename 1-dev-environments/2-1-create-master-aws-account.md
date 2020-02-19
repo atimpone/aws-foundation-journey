@@ -1,4 +1,4 @@
-# 2. Create a New Master AWS Account
+# 1. Create a New Master AWS Account
 
 In this step your Cloud Administrators will use the standard AWS new account creation process to create a new “master” AWS account. 
 
@@ -6,12 +6,11 @@ This step should take about 20 minutes.
 
 1. [Review the Benefits of Using Multiple AWS Accounts](#1-review-the-benefits-of-using-multiple-aws-accounts)
 2. [Start With a New Master AWS Account](#2-start-with-a-new-master-aws-account)
-3. [Prepare Email Distribution Lists for New AWS Accounts](#3-prepare-email-distribution-lists-for-new-aws-accounts)
-4. [Create a New AWS Master Account](#4-create-a-new-aws-master-account)
-5. [Receive Confirmation Email](#5-receive-confirmation-email)
-6. [Secure Your AWS Account Root User](#6-secure-your-aws-account-root-user)
-7. [Create an IAM user for Administrative Bootstrap Purposes](#7-create-an-iam-user-for-administrative-bootstrap-purposes)
-8. [Set Alternate Contacts](#8-set-alternate-contacts)
+3. [Create a New AWS Master Account](#3-create-a-new-aws-master-account)
+4. [Receive Confirmation Email](#4-receive-confirmation-email)
+5. [Secure Your AWS Account Root User](#5-secure-your-aws-account-root-user)
+6. [Create an IAM user for Administrative Bootstrap Purposes](#6-create-an-iam-user-for-administrative-bootstrap-purposes)
+7. [Set Alternate Contacts](#7-set-alternate-contacts)
 
 ## 1. Review the Benefits of Using Multiple AWS Accounts
 
@@ -32,38 +31,7 @@ Even if you have an existing AWS account, we strongly recommend that you establi
 
 After you create your new master AWS account, you can make use of a standard process to move any existing AWS accounts into your new master AWS account so that you can easily consolidate billing and day-to-day management of all of your AWS accounts.
 
-## 3. Prepare Email Distribution Lists for New AWS Accounts
-
-Prepare a set of email distribution lists to represent the root user of each of the new AWS accounts that will be created. In this step you'll be referring to only the email distribution list for the master AWS account. In later steps, when you create other AWS accounts, you'll be referring to the email distribution lists for those other AWS accounts.
-
-The following table includes the minimum set of distribution lists to get started. Each AWS account must have a globally unique email address. 
-
-If your organization already has a naming standard for mail addresses associated with services, you should use that standard format and include references to at least "aws" and and an abbreviation of the unique role or purpose of each account.
-
-|AWS Account	|Example Root User Email Distribution List|Example with "+" Style Email Address|
-|---|---|---|
-|Master|aws-account-master@acme.com|aws-account+master@acme.com|
-|Audit|aws-account-audit@acme.com|aws-account+audit@acme.com|
-|Log Archive|aws-account-log-archive@acme.com|aws-account+log-archive@acme.com|
-|Foundation Team Development|aws-account-foundation-dev@acme.com|aws-account+foundation-dev@acme.com|
-|Team 1 Development|aws-account-team-a-dev@acme.com|aws-account+team-a-dev@acme.com|
-
-### Use of “+” Style Email Addresses
-If your organization’s email system supports the use of “+” style email addresses in which email multiple email addresses are aliased to the same email account, then you might find it beneficial to use this form to consolidate the root user email addresses for either all or collections of AWS accounts to either one or a few actual email accounts.
-
-For example: [aws-account1+master@acme.com](mailto:aws-account1+master@acme.com) and [aws-account1+audit@acme.com](mailto:aws-account1+audit@acme.com) will be treated as unique addresses in AWS but your mail system may deliver the mail to the same [aws-account1@acme.com](mailto:aws-account1@acme.com) email address.
-
----
-**Note: Office 365 users**
-
-It appears that plus style addressing is on the [Office 365 roadmap for 2020](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-transport-news-from-microsoft-ignite-2019/ba-p/993417).
-
----
-
-### Controlling Access to Root User Email Accounts
-Since the email address associated with an AWS account is used as the [root user login for the account](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html), anyone with access to that email account will have access to password reset process for the account.  
-
-## 4. Create a New AWS Master Account
+## 3. Create a New AWS Master Account
 
 Visit https://aws.amazon.com/ and click “Create AWS Account” and enter the the required information on the following page.
 
@@ -90,17 +58,17 @@ Once you are preparing to host business critical workloads and data in the cloud
 
 See [AWS Support Plans](https://aws.amazon.com/premiumsupport/plans/) for a description of features and benefits of each level of support.
 
-## 5. Receive Confirmation Email
+## 4. Receive Confirmation Email
 
 In a few minutes your account should be fully activated and you’ll receive a confirmation email.  If you don’t, review the troubleshooting steps from the [Create and Activate an AWS Account support page](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
 
-## 6. Secure Your AWS Account Root User
+## 5. Secure Your AWS Account Root User
 
 It’s strongly recommended and an AWS security best practice to enable multi-factor authentication (MFA) to the AWS account root user and to avoid using the root user, even for administrative tasks, from this point forward.
 
 See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user_manage_mfa) for instructions.
 
-## 7. Create an IAM user for Administrative Bootstrap Purposes
+## 6. Create an IAM user for Administrative Bootstrap Purposes
 
 ---
 **Review Note: Is creating a admin bootstrap user necessary?**
@@ -128,7 +96,7 @@ While logged in as the root user, follow the instructions in [Create an IAM user
 
 Once the user has been created, sign into the AWS Management Console as the user and enable MFA to help secure the account. See [Enable a Virtual MFA Device fo an IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html#enable-virt-mfa-for-iam-user).
 
-## 8. Set Alternate Contacts
+## 7. Set Alternate Contacts
 
 Once you’ve set up your bootstrap administrative IAM user, log in as that user and set the Alternate Contacts for your account so that notifications of billing, operations, and security events are routed to the proper teams.  As a best practice, you can use email distribution lists so that notifications are set to multiple people in the same team.
 
@@ -136,4 +104,4 @@ Access [Account  Settings](https://console.aws.amazon.com/billing/home?#/account
 
 ## Next Steps
 
-[3. Set Up Initial Landing Zone Using AWS Control Tower](2-3-set-up-landing-zone.md)
+[2. Set Up Initial Landing Zone Using AWS Control Tower](2-2-set-up-landing-zone.md)

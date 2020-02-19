@@ -1,4 +1,4 @@
-# 7. Create Initial Team Development Environments
+# 6. Create Initial Team Development Environments
 
 In this step your Cloud Administrators will create several new team development AWS accounts via AWS Control Tower's Account Factory.
 
@@ -70,7 +70,7 @@ You'll follow these steps twice: Once to create the initial deveopment team's AW
 
 |Field|Recommendation|
 |-----|---------------|
-|`SSOUserEmail`|Consult the [set of AWS account root user email addresses](2-2-create-master-aws-account.md#3-prepare-email-distribution-lists-for-new-aws-accounts) that you established earlier.|
+|`SSOUserEmail`|Consult the [set of AWS account root user email addresses](2-1-create-master-aws-account.md#3-prepare-email-distribution-lists-for-new-aws-accounts) that you established earlier.|
 |`AccountEmail`|Use the same value as `SSOUserEmail`.|
 |`SSOUserFirstName`|Use a part of your account name. For example, `Team A` or `Foundation` for the foundation team's development AWS account.|
 |`SSOUserLastName`|Use the remaining part of the account name. For example, `Development`|
@@ -212,4 +212,4 @@ If you depended on AWS Control Tower Account Factory to provision the VPC, you c
 
 ## Next Steps
 
-[8. Onboard Development Teams](2-8-onboard-dev-teams.md)
+[7. Onboard Development Teams](2-7-onboard-dev-teams.md)

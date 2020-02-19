@@ -1,4 +1,4 @@
-# 9. Manage and Monitor Your AWS Environment
+# 8. Manage and Monitor Your AWS Environment
 
 In this step your Cloud and Security Administrators and Cost Managers will review the typical day-to-day tasks and supporting methods, tools, and AWS services to help them manage and monitor your new AWS environment.
 

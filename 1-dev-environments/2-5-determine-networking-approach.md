@@ -1,4 +1,4 @@
-# 6. Determine Initial Networking Approach
+# 5. Determine Initial Networking Approach
 
 In this step your Cloud Administrators will review the initial network design and recommended provisioning methods in support of the development team AWS accounts.
 
@@ -101,4 +101,4 @@ See [Configuring AWS Control Tower Without a VPC](https://docs.aws.amazon.com/co
 
  ## Next Steps
 
-[7. Create Initial Team Development Environments](2-7-create-team-dev-environments.md)
+[6. Create Initial Team Development Environments](2-6-create-team-dev-environments.md)

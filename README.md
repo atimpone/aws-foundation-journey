@@ -64,6 +64,10 @@ By following this guide, your organization can establish an initial secure found
 1. [Review and Refine Initial Development Environment Requirements](1-dev-environments/1-1-requirements.md)
 2. [Review and Refine Initial Development Environment Solution](1-dev-environments/1-2-solution.md)
 
+### Pre-Requistes
+
+0. [Address Pre-Requisites](1-dev-environments/1-3-address-pre-requisites.md)
+
 ### Build Out the Environment
 
 1. [Map People to Foundation Functional Roles](1-dev-environments/2-1-map-people-to-foundation-roles.md)
