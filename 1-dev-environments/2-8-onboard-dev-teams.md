@@ -70,14 +70,6 @@ Indeed, it is not sufficient. See [Issue 15](https://github.com/ckamps/aws-found
 
 ---
 
-
----
-**Review Note: Need to ensure dev teams can access cost reporting**
-
-Per the up front requirements for this stage, we need to ensure that dev teams have sufficient permissions so that they can self service review their cloud costs.
-
----
-
 ## 3. Create Development Team Users in AWS SSO
 
 Now that you've established the two development oriented groups in AWS SSO and wired these groups to a set of permissions and AWS accounts, your next step is to create a user in AWS SSO for each development team member.
