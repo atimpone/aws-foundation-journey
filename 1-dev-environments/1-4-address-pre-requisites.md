@@ -47,14 +47,14 @@ Since your organization will likely interconnect at least a portion of your on-p
 
 ### Recommended IP Address Range Size
 
-Ideally, taking into account future networks beyond the initial development network, you should obtain for your organization's use of AWS overall, an IP address range or [CIDR block](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) of at least size `/18` to `/16` or support for from 16,382 to 65,534 IP addresses.
+Ideally, taking into account future networks beyond the initial development network, you should obtain for your organization's use of AWS overall, an IP address range or [CIDR block](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) of at least size `/18` to `/16` or 16,382 to 65,534 IP addresses.
 
-If the desired sizes of non-overlapping CIDR block cannot be obtained at this stage, you should at least a size `/22` or 1,022 IP addresses to address the initial shared development network.  You can obtain additional non-overlapping CIDR blocks later to support your build out of test and production networks.
+If the desired sizes of non-overlapping CIDR block cannot be obtained at this stage, you should obtain a block of at least size `/22` or 1,022 IP addresses to address the initial shared development network.  You can obtain additional non-overlapping CIDR blocks later to support your build out of test and production networks.
 
 ---
 **Note: Don't be lulled into thinking a particular CIDR block is large enough**
 
-For example, since your initial shared development environment will likely have at least 4 subnets, when you divide a `/22` CIDDR block of 1,022 IP addresses across the 4 subnets, you end up with only 254 IP available addresses per subnet. Using a `/23` would leave only 126 IP addresses per subnet.
+For example, since your initial shared development environment will likely have at least 4 subnets, when you divide a `/22` CIDR block of 1,022 IP addresses across the 4 subnets, you end up with only 254 IP available addresses per subnet. Using a `/23` would leave only 126 IP addresses per subnet. Depending on the number of workloads your infrastructure and development teams will be experimenting and testing, these numbers can end up being pretty modest.
 
 ---
 
