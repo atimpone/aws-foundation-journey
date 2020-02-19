@@ -156,9 +156,11 @@ Otherwise, you should take the non-overlapping CIDR block that was allocated by 
 ### Review Default VPC Topology
 
 The default parameters of the CloudFormation template will result in a VPC with:
-* 2 tiers of subnets: A public and a private tier.
+* 2 tiers of subnets: 
+  * Public tier
+  * Private tier
 * 3 subnets for each tier.
-* Each subnet in each tier is mapped to a distinct Availability Zone (AZ).
+* Subnet are mapped across 3 Availability Zone (AZ).
 
 To keep things simple, you can size the subnets identically.
 
