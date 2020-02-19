@@ -1,5 +1,14 @@
 # Getting Started with AWS for Initial Formal Projects
 
+---
+***DRAFT CONTENT***
+
+The content of this repository is in a preliminary draft form and should not be used for formal build outs of AWS environments.  It it currently undergoing rapid changes as it is reviewed and tested.  
+
+If you'd like to contribute via feedback, bug fixes, and/or enhanced content, see [CONTRIBUTING.md](CONTRIBUTING.md)
+
+---
+
 Some Amazon Web Services (AWS) customers have expressed the need to have a perscriptive guide to help their organizations better understand how they can get started with the AWS platform when they are ready to move from the informal stage of using personal AWS accounts to the next stage of performing more formal experiments, initial development, and testing work that will likely result in an initial set of application and/or data services being deployed to production. 
 
 The documents provided in this repository are part of an ongoing project to share AWS foundational architecture best practices which enable the quick deployment of secure environments in which teams can start collaborating on and experimenting with new ideas with the expectation that some of the results will need to move rapidly from development to test and production.
