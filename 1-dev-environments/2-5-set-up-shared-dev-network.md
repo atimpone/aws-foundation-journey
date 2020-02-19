@@ -145,10 +145,11 @@ Now you've enabled all users who are part of the Cloud Administrator group in AW
 
 In this step you'll:
 
-1. Identify the IP address CIDR blocks to specify for both your VPC and the subnets within it.
-2. Provision the VPC using AWS CloudFormation.
+1. Review Default VPC Topology
+2. Determine VPC CIDR Block
+3. Determine Subnet CIDR Blocks
 
-If you're just experimenting and don't care which CIDR block is used to build the VPC, you can move to the next step, [Use AWS CloudFormation to Provision the VPC](#use-aws-cloudformation-to-provision-the-vpc).
+If you're just experimenting and don't care which CIDR block is used to build the VPC, you can move to the next step, [Use AWS CloudFormation to Provision the VPC](#7-provision-the-vpc).
 
 Otherwise, you should take the non-overlapping CIDR block that was allocated by your Network team and break it down so that you can assign CIDR blocks to the subnets that make up the initial shared development VPC.
 
@@ -157,10 +158,11 @@ Otherwise, you should take the non-overlapping CIDR block that was allocated by 
 The default parameters of the CloudFormation template will result in a VPC with:
 * 2 tiers of subnets: A public and a private tier.
 * 3 subnets for each tier.
+* Each subnet in each tier is mapped to a distinct Availability Zone (AZ).
 
 To keep things simple, you can size the subnets identically.
 
-The AWS CloudFormation template that you'll use in the next step to provision the VPC, supports the following CIDR block related parameters:
+The AWS CloudFormation template that you'll use in the next step to provision the VPC supports the following CIDR block related parameters.
 
 |CIDR Block    |CloudFormation Parameter Name|Purpose|
 |--------------|-----------------------------|-------|
@@ -218,10 +220,10 @@ Now create a new AWS CloudFormation stack using the sample template you download
 |Parameter|Guidance|
 |---------|--------|
 |**`Business Scope`**|Replace `acme` with your organization identifier or stock ticker if that applies. This value is used as a prefix in the name of some of the VPC-related cloud resources.|
-|**`VPC Name`**|Change to `dev`.|
-|**`*Cidr`**|**Just Experimenting**<br><br>If you want to just experiment at this point and don't care about using formally assigned IP address ranges, you can leave CIDR block parameters at their default values.<br><br>**You Have Your Own CIDR Blocks**<br><br>Enter the CIDR blocks from the prior step.|
+|**`VPC Name`**|Change to **`dev`**.|
+|**`*Cidr`**|**Just Experimenting**<br><br>If you want to just experiment at this point and don't care about using formally assigned IP address ranges, you can leave the CIDR block parameters at their default values.<br><br>**You Have Your Own CIDR Blocks**<br><br>Enter the CIDR blocks from the prior step.|
 
-Leave all of the other parameters at their defautl settings unless you're comfortable changing them.  You can always easily create another stack with to try out different settings.
+Leave all of the other parameters at their default settings unless you're comfortable changing them.  You can always easily create another stack to experiment with other parameter values.
 
 7. Select `Next`.
 8. Select `Next`.
