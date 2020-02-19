@@ -142,6 +142,47 @@ Now you've enabled all users who are part of the Cloud Administrator group in AW
 
 ## 6. Provision Development VPC
 
+In this step you'll identify the IP address CIDR blocks to specify for both your VPC and the subnets within it.
+
+### Calculate Your CIDR Blocks for the VPC
+
+If you're just experimenting and don't care which IP address CIDR blocks are used to build the VPC, you can move to the next step, [Use AWS CloudFormation to Provision the VPC](3-use-aws-cloudformation-to-provision-the-vpc).
+
+Otherwise, you should take the non-overlapping CIDR block that was allocated by your Network team and break it down so that you can assign CIDR blocks to the subnets that make up the initial shared development VPC.
+
+### Review Default VPC Topology
+
+The default parameters of the CloudFormation template will result in a VPC with:
+* 2 tiers of subnets: A public and a private tier.
+* 3 subnets for each tier.
+
+To keep things simple, you can size the subnets identically.
+
+The AWS CloudFormation template that you'll use in the next step to provision the VPC, supports the following CIDR block related parameters:
+
+|CIDR Block|CloudFormation Parameter Name|Purpose|
+|VPC|`pCidr`|The overall CIDR block for the VPC. Although you cannot change this assignment later, you can add another CIDR block to augment the original block.|
+|Public Subnet 1|`pTier1Subnet1Cidr`|A subset of the VPC CIDR block.|
+|Public Subnet 2|`pTier1Subnet2Cidr`|A subset of the VPC CIDR block.|
+|Public Subnet 3|`pTier1Subnet3Cidr`|A subset of the VPC CIDR block.|
+|Private Subnet 1|`pTier2Subnet1Cidr`|A subset of the VPC CIDR block.|
+|Private Subnet 2|`pTier2Subnet2Cidr`|A subset of the VPC CIDR block.|
+|Private Subnet 3|`pTier2Subnet3Cidr`|A subset of the VPC CIDR block.|
+
+#### Determine VPC CIDR Block
+
+If your Network team has supplied a relatively large non-overlapping CIDR block, for example a `/16` - `/20`, you should consider using only a subset of that block for your shared development VPC.  Otherwise, if you've been allocated a `/20` - `/22`, then you should use the entire block for the VPC.
+
+If you need to break down a larger block, use the [Visual Subnet Calculator](http://www.davidc.net/sites/default/subnets/subnets.html). Enter the size of allocated larger block in the "Mask bits" field and click "Update".  Now click the `Divide` link to break down the block into smaller blocks.  When you've reached block sizes from `/20` - `/22`, home in on the block size of most interest to you and record that CIDR range as the one will you use for the shared development VPC.
+
+#### Determine Subnet CIDR Blocks
+
+Once you've determined the VPC CIDR block, break it down into an equal size block per subnets is straightforward. Using the [Visual Subnet Calculator](http://www.davidc.net/sites/default/subnets/subnets.html), enter the size of your VPC block in the "Mask bits" field and click "Update".  Now in the table below, click the "Divide" links to start subdividing the larger block into at 8 blocks of equal size.
+
+Note the first 6 blocks and supply them as the subnet CIDR blocks in the next step.
+
+### Use AWS CloudFormation to Provision the VPC
+
 You can use the this [sample AWS CloudFormation template](https://github.com/ckamps/infra-aws-vpc-multi-tier) to easily deploy your shared development network.
 
 Download the sample AWS CloudFormation template [infra-multi-tier-vpc.yml](https://raw.githubusercontent.com/ckamps/infra-aws-vpc-multi-tier/master/infra-vpc-multi-tier.yml) to your desktop.
@@ -169,12 +210,13 @@ Now create a new AWS CloudFormation stack using the sample template you download
 5. Enter a `Stack name`. For example, `dev-vpc`.
 6. In `Parameters`:
 
-***To do...beef up the parameters with more detailed guidance in case the customer has a CIDR range of interest.***
-
 |Parameter|Guidance|
 |---------|--------|
-|`Business Scope`|Replace `acme` with your organization identifier. This value is used as a prefix in the name of some of the VPC-related cloud resources.|
-|`VPC Name`|Change to `dev`.|
+|**`Business Scope`**|Replace `acme` with your organization identifier or stock ticker if that applies. This value is used as a prefix in the name of some of the VPC-related cloud resources.|
+|**`VPC Name`**|Change to `dev`.|
+|**`*Cidr`**|**Just Experimenting**<br>If you want to just experiment at this point and don't care about using formally assigned IP address ranges, you can leave CIDR block parameters at their default values.<br><br>**You Have Your Own CIDR Blocks**<br><br>Enter the CIDR blocks from the prior step.|
+
+Leave all of the other parameters at their defautl settings unless you're comfortable changing them.  You can always easily create another stack with to try out different settings.
 
 7. Select `Next`.
 8. Select `Next`.
