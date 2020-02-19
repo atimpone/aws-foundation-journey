@@ -243,9 +243,24 @@ Review the newly created VPC and associated resources.
 5. Select `NAT Gateways` and review.
 6. Select `Elastic IPs` and review.  You should see one EIP allocated for each NAT Gateway.
 
-## 8. Share Development VPC With Development OU
+## 9. Share Development VPC With Development OU
 
 Now that the development VPC has been provisioned, you need to share the subnets of the VPC with all of the AWS accounts that will become part of the `development` OU that you created earlier.  
+
+### Enable Resource Sharing in AWS Organizations
+
+1. As a Cloud Administrator, use your personal user to log into AWS SSO.
+2. Select the AWS **master** account.
+3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
+4. Follow the instructions [Enabling Sharing with AWS Organizations](https://docs.aws.amazon.com/ram/latest/userguide/getting-started-sharing.html#getting-started-sharing-orgs).
+
+### Create a Resource Share
+
+...
+
+### Share the Subnets
+
+...
 
 See [Sharing a Subnet](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-sharing-share-subnet) for instructions on sharing subnets.
 
