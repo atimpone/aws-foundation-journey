@@ -158,7 +158,7 @@ The default parameters of the CloudFormation template will result in a VPC with:
   * Public tier
   * Private tier
 * 3 subnets for each tier.
-* Subnet are mapped across 3 Availability Zone (AZ).
+* Subnets are mapped across 3 Availability Zone (AZ).
 
 To keep things simple, you can size the subnets identically.
 
