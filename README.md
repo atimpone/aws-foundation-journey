@@ -96,7 +96,7 @@ Depending on your organizations needs, some additional capabilities may be requi
 ---
 **Review Note: These sections have not yet been drafted**
 
-The following guides have not yet been drafted. Currently, they contain a series of notes and links to existing best practices and resources.  The following list will likely change to be ordered by priority.
+Currently, they contain a series of notes and links to existing best practices and resources.  The following list will likely change to be ordered by priority.
 
 ---
 
