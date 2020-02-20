@@ -2,6 +2,13 @@
 
 This sample IAM policy is intended to be used as a starting point for access control as it applies to development team members accessing their development AWS accounts. Your organization is expected to understand this sample policy in detail before applying it. Over time, as your needs become more clear, you're expected to evolve this type of policy.
 
+---
+**Note: Initial iteration of development team permission set**
+
+In the near future, the sample policy will be updated with the requirement for an IAM Permission Boundary to be applied so that development team members cannot escalate privileges by creating new IAM roles that go beyond the intended permissions. See [Issue 15](https://github.com/ckamps/aws-foundation-journey/issues/15).
+
+---
+
 * [Sample Policy](#sample-policy)
 * [Intent of the Policy](#intent-of-the-policy)
 * [Requirements](#requirements)
@@ -10,13 +17,6 @@ This sample IAM policy is intended to be used as a starting point for access con
 ## Sample Policy
 
 [acme-infra-dev-team.json](../4-code-samples/01-iam-policies/acme-infra-dev-team.json)
-
----
-**Note: Initial iteration of development team permission set**
-
-In the near future, the sample policy will be updated with the requirement for an IAM Permission Boundary to be applied so that development team members cannot escalate privileges by creating new IAM roles that go beyond the intended permissions. See [Issue 15](https://github.com/ckamps/aws-foundation-journey/issues/15).
-
----
 
 ## Intent of the Policy
 
@@ -93,7 +93,7 @@ Explicitly disallow creation of IAM users since development team users do not us
 Allow development team members to create, list, and update IAM roles so that they can experiment, develop, and perform early testing of IAM roles that are required to support their workloads.
 
 ---
-**Review Note: This is a wide reaching permission.
+**Review Note: This is a wide reaching permission**
 
 An immediate next step is to introduce AWS IAM Permissions Boundaries to ensure that development team members cannot use IAM roles that circumvent these requirements.
 
@@ -120,8 +120,6 @@ Note the use of a naming convention for customer-managed roles and policies belo
 
 Since IAM resources named with `AWS` and `aws` are not inherently modifiable by customers, they are not included in the following section.
 
-#### Foundation Roles
-
 ```
         {
             "Sid": "DenyWriteAccessFoundationRoles",
@@ -135,9 +133,6 @@ Since IAM resources named with `AWS` and `aws` are not inherently modifiable by 
                 "arn:aws:iam::*:role/acme-infra-*"
             ]
         },
-```
-#### Foundation Policies
-
         {
             "Sid": "DenyWriteAccessFoundationPolicies",
             "Effect": "Deny",
@@ -150,11 +145,13 @@ Since IAM resources named with `AWS` and `aws` are not inherently modifiable by 
             ],
             "Resource": "arn:aws:iam::*:policy/acme-infra-*"
         },
+```
 
 #### AWS ControlTower CloudFormation StackSet Stacks
 
 Since the AWS Control Tower services uses the AWS CloudFormation StackSet feature to configure resources in each AWS account that is managed by AWS Control Tower, we need to ensure that development teams cannot modify these foundation resources,
 
+```
         {
             "Sid": "DenyWriteAccessStackSets",
             "Effect": "Deny",
