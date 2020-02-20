@@ -180,13 +180,6 @@ Note that both traditional EC2 VM related resources and VPC networking resource 
             "Sid": "DenyVPCWrite",
             "Effect": "Deny",
             "Action": [
-                "ec2:AcceptVpcEndpointConnections",
-                "ec2:AssociateDhcpOptions",
-                "ec2:AssociateRouteTable",
-                "ec2:AssociateSubnetCidrBlock",
-                "ec2:AssociateVpcCidrBlock",
-                "ec2:AttachInternetGateway",
-                "ec2:AttachVpnGateway",
                 "ec2:CreateCustomerGateway",
                 "ec2:CreateDefaultSubnet",
                 "ec2:CreateDefaultVpc",
