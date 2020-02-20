@@ -255,7 +255,7 @@ Review the newly created VPC and associated resources.
 7. Navigate to **CloudWatch**.
 8. Select CloudWatch Logs.
 9. Select the log group associated with the VPC Flow Logs.
-10. Explore the flow logs.
+10. Explore the flow logs. You should see a flow log for each Elastic Network Interface (ENI) used in the VPC. For example, each NAT Gateway has one ENI.
 
 ## 9. Share Development VPC With Development OU
 
