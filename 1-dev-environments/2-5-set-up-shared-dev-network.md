@@ -188,7 +188,7 @@ Once you've determined the VPC CIDR block, break it down into an equal size bloc
 
 Note the first 6 blocks and supply them as the subnet CIDR blocks in the next step.
 
-## 7. Provision the VPC
+## 7. Provision Development VPC
 
 You can use the this [sample AWS CloudFormation template](https://github.com/ckamps/infra-aws-vpc-multi-tier) to easily deploy your shared development network.
 
