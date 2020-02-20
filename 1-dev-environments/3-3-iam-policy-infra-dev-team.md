@@ -116,6 +116,8 @@ An immediate next step is to introduce AWS IAM Permissions Boundaries to ensure 
 
 Do not allow development team members to disrupt the foundation resources.
 
+#### Foundation IAM Roles and Policies
+
 Note the use of a naming convention for customer-managed roles and policies below.  The sample naming convention shown below is simply `<org identifier>-infra-...` where `infra` is shorthand for "foundation".
 
 Since IAM resources named with `AWS` and `aws` are not inherently modifiable by customers, they are not included in the following section.
