@@ -132,15 +132,17 @@ Next, you'll create a custom permission set in AWS SSO to represent the initial 
 6. Enter a `Description`. For example, `Day-to-day permission used by developers in their development AWS accounts.`.
 7. Set the `Session duration` to the desired value.
 8. Select the checkbox `Create a custom permissions policy`.
-9. Open the [sample policy](../4-code-samples/01-iam-policies/acme-infra-dev-team.json) in a text editor, copy, and paste the content.  Review the policies to determine if they meet your needs.
+9. Open the [sample policy](../4-code-samples/01-iam-policies/acme-infra-dev-team.json) in a text editor, copy, and paste the content.
 10. Select `Create`.
 
 Later, when you onboard the development teams to their development AWS accounts, you'll reference this permission set.
 
 ---
-**Note: Initial iteration of development team permission set**
+**Note: Review the sample policy**
 
-This is only an initial iteration of the policies to associate with development teams.  In the near future, the sample policy will be updated with the requirement for an IAM Permission Boundary to be applied so that development team members cannot escalate privileges by creating new IAM roles that go beyond the intended permissions. See [Issue 15](https://github.com/ckamps/aws-foundation-journey/issues/15).
+This is only an initial iteration of the policies to associate with development teams.  Before you use th sample policy, you should review it in detail with a person skilled in AWS IAM to ensure that it aligns with your needs and to modify it as necessary.
+
+See [IAM Policy Sample - acme-infra-dev-team.json](3-3-iam-policy-infra-dev-team.md) for more details on this sample policy.
 
 ---
 
