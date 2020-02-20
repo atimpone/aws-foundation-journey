@@ -32,29 +32,31 @@ This policy is not intended to be applied beyond development AWS accounts.  Typi
 
 ### Disallow
 
-* **Modification of Foundation Resources:** Including:
-  * AWS Control Tower CloudFormation StackSet stack instances.
-  * Foundation IAM roles and policies.
+**Modification of Foundation Resources:** For example:
+* AWS Control Tower CloudFormation StackSet stack instances.
+* Foundation IAM roles and policies.
 
-* **Creation of IAM Users:**  There's generally no need for IAM users.
+**Creation of Sensitive IAM Resources:**  For example:
+* IAM Users: Given the use of AWS SSO for human user login, there's generally no need for IAM users.
+* SAML Providers: Creation of these resources could enable external entities to access your AWS account.
 
-* **Privilege Escalation:** Inhibit the ability for development team members to create and use IAM roles that circumvent these requirements.
+**Privilege Escalation:** Inhibit the ability for development team members to create and use IAM roles that circumvent these requirements.
 
-* **Creation and Management of VPC Resources:** Since development teams already have read access to a shared development VPC and supporting network resources, teams should not generally need to create and manage VPC resources. 
+**Creation and Management of VPC Resources:** Since development teams already have read access to a shared development VPC and supporting network resources, teams should not generally need to create and manage VPC resources. 
 
 ### Allow
 
-* **Wide Range of AWS Services Subject to Organizational Policies:**  Allow for use of any AWS service with the expectation that AWS Organizations Service Control Policies (SCP) will be used to restrict the overall set of AWS services that are accessible for any AWS account in the `development` organization.
+**Wide Range of AWS Services Subject to Organizational Policies:**  Allow for use of any AWS service with the expectation that AWS Organizations Service Control Policies (SCP) will be used to restrict the overall set of AWS services that are accessible for any AWS account in the `development` organization.
 
-* **Creation of IAM Roles and Policies:** Subject to the constraints that development team members must not be able to escalate their privileges to circumvent the disallowed acces stated above.
+**Creation of IAM Roles and Policies:** Subject to the constraints that development team members must not be able to escalate their privileges to circumvent other policies.
 
 ### User Experience
 
-* **Avoid Prematurely Requiring Standard Resource Naming and Tagging:** Although your organization will find value in the introduction of cloud resource naming and tagging standards in support of a variety of needs, these standards are not necessary to impose of development teams at this early stage in your journey. (It is important that foundation resources adhere to a naming convention so that IAM policies can be defined that, for example, inhibit unauthorized entities from modifying those resources).
+**Avoid Prematurely Requiring Standard Resource Naming and Tagging:** Although your organization will find value in the introduction of cloud resource naming and tagging standards in support of a variety of needs, these standards are not necessary to impose sufficient constraints on development teams at this early stage in your journey. (It is important that foundation resources adhere to a naming convention so that IAM policies can be defined to inhibit unauthorized modification of those resources).
 
 ### Assumptions
 
-* **Separate Policy for Foundation Team Development:** Since your cloud foundation team members will likely need additional acccess in their foundation team development AWS account, a derivative of this sample policy may be warranted.  As a best practice, when foundation team members are doing day-to-day development of Infrastructure as Code (IaC), they should not be using administrative access roles and permissions.  Rathey, they should drop into the Cloud Administrator and similar roles only when necessary.
+**Separate Policy for Foundation Team Development:** Since your cloud foundation team members will likely need additional acccess in their foundation team development AWS account, a derivative of this sample policy may be warranted.  As a best practice, when foundation team members are doing day-to-day development of Infrastructure as Code (IaC), they should not be using administrative access roles and permissions.  Rathey, they should drop into the Cloud Administrator and similar roles only when necessary.
 
 ## Policy Walkthrough
 
