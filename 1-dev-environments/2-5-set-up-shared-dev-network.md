@@ -254,6 +254,7 @@ Now that the development VPC has been provisioned, you need to share the subnets
 2. Select the AWS **master** account.
 3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
 4. Navigate to **`Resource Access Manager`**.
+5. Select `Settings`.
 5. Select **`Enable sharing with AWS Organizations`**.
 
 ### Obtain the ID of the `development` OU
