@@ -250,6 +250,8 @@ Now that the development VPC has been provisioned, you need to share the subnets
 
 ### Enable Resource Sharing in AWS Organizations
 
+This is a one time operation.
+
 1. As a Cloud Administrator, use your personal user to log into AWS SSO.
 2. Select the AWS **master** account.
 3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
