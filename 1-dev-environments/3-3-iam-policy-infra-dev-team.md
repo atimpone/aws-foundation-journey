@@ -175,13 +175,6 @@ Since a centrally managed VPC is shared with development AWS accounts in a read 
 
 Note that both traditional EC2 VM related resources and VPC networking resource both live under the `ec2:` namespace. In their development AWS accounts, development teams are allowed to create the tradition EC2 VM related resources.
 
----
-**Review Note: Policy could likely be greatly simplified**
-
-Since VPC resources other than the centrally managed shared VPC resources aren't expected to be provisioned in development team AWS accounts, actions other than `Create` might be candidates for removal. Since the shared VPC resources are inherently read only from the perspective of the development AWS accounts, protection against write access in this IAM policy is unnecessary.
-
----
-
 ```
         {
             "Sid": "DenyVPCWrite",
@@ -214,53 +207,14 @@ Since VPC resources other than the centrally managed shared VPC resources aren't
                 "ec2:CreateVpnConnection",
                 "ec2:CreateVpnConnectionRoute",
                 "ec2:CreateVpnGateway",
-                "ec2:DeleteEgressOnlyInternetGateway",
-                "ec2:DeleteFlowLogs",
-                "ec2:DeleteNatGateway",
-                "ec2:DeleteSubnet",
-                "ec2:DeleteVpc",
-                "ec2:DeleteVpcEndpointConnectionNotifications",
-                "ec2:DeleteVpcEndpoints",
-                "ec2:DeleteVpcEndpointServiceConfigurations",
-                "ec2:DeleteVpnConnection",
-                "ec2:DeleteVpnConnectionRoute",
-                "ec2:DeleteVpnGateway",
-                "ec2:DetachInternetGateway",
-                "ec2:DetachVpnGateway",
-                "ec2:DisableVgwRoutePropagation",
-                "ec2:DisableVpcClassicLinkDnsSupport",
-                "ec2:DisassociateRouteTable",
-                "ec2:DisassociateSubnetCidrBlock",
-                "ec2:DisassociateVpcCidrBlock",
                 "ec2:EnableVgwRoutePropagation",
                 "ec2:EnableVpcClassicLinkDnsSupport",
-                "ec2:ModifySubnetAttribute",
-                "ec2:ModifyVpcAttribute",
-                "ec2:ModifyVpcEndpoint",
-                "ec2:ModifyVpcEndpointConnectionNotification",
-                "ec2:ModifyVpcEndpointServiceConfiguration",
-                "ec2:ModifyVpcEndpointServicePermissions",
-                "ec2:ModifyVpcPeeringConnectionOptions",
-                "ec2:ModifyVpcTenancy",
                 "ec2:MoveAddressToVpc",
                 "ec2:RejectVpcEndpointConnections",
-                "ec2:ReplaceNetworkAclAssociation",
-                "ec2:ReplaceNetworkAclEntry",
-                "ec2:ReplaceRoute",
-                "ec2:ReplaceRouteTableAssociation",
                 "ec2:RestoreAddressToClassic",
                 "ec2:AcceptVpcPeeringConnection",
                 "ec2:AttachClassicLinkVpc",
                 "ec2:CreateVpcPeeringConnection",
-                "ec2:DeleteCustomerGateway",
-                "ec2:DeleteInternetGateway",
-                "ec2:DeleteNetworkAcl",
-                "ec2:DeleteNetworkAclEntry",
-                "ec2:DeleteRoute",
-                "ec2:DeleteRouteTable",
-                "ec2:DeleteVpcPeeringConnection",
-                "ec2:DetachClassicLinkVpc",
-                "ec2:DisableVpcClassicLink",
                 "ec2:EnableVpcClassicLink",
                 "ec2:RejectVpcPeeringConnection",
                 "directconnect:*"
