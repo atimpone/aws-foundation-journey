@@ -22,7 +22,7 @@ In addition to your initial application and data engineering development teams t
 
 ## Shared Development VPC Network
 
-A shared development network in the form of an AWS Virtual Private Cloud (VPC) will be used to support the networking needs of development teams.  Your Cloud Administrators will provision this shared development VPC to a new "Network" AWS account and share it will all of the future development team AWS accounts.
+A shared development network in the form of an AWS Virtual Private Cloud (VPC) will be used to support the networking needs of development teams.  Your Cloud Administrators will provision this shared development VPC to a new "Network" AWS account and share it with all future development team AWS accounts.
 
 The shared VPC will support cases in which a development team needs to deploy AWS resources that reside in VPCs. For example, deploying Amazon EC2 Virtual Machines (VMs) and Amazon Relational Database Service (RDS) instances. The shared development VPC provides both public and private subnets across multiple Availability Zones (AZs) to both mimic typical production topologies and enable teams to access Internet-based resources such as package repositories and publicly available APIs during their experiment and development work.
 
