@@ -185,8 +185,10 @@ If your Network team has supplied a relatively large non-overlapping CIDR block,
 If you need to break down a larger block:
 
 1. Acess the [Visual Subnet Calculator](http://www.davidc.net/sites/default/subnets/subnets.html). 
-2. Enter the size of allocated larger block in the "Mask bits" field and click "Update".  
-3. Click the `Divide` link to break down the block into smaller blocks.  
+2. Enter your network address without the mask portion `/nn` the `Network Address` field.
+3. Enter the size of allocated block in the `Mask bits` field.
+4. Click `Update`.  
+5. In the table at the bottom, click the `Divide` link to break down the block into smaller blocks.  
 
 When you've reached block sizes from `/20` - `/22`, select a block size of most interest to you and record that CIDR range so that you can use it in the next step.
 
@@ -195,9 +197,11 @@ When you've reached block sizes from `/20` - `/22`, select a block size of most 
 Once you've determined the VPC CIDR block, breaking it down into an equal size block per subnets is straightforward. 
 
 1. Access the [Visual Subnet Calculator](http://www.davidc.net/sites/default/subnets/subnets.html)
-2. Enter the size of your VPC block in the "Mask bits" field and click "Update". 
-3. In the table at the bottom, click the "Divide" links to start subdividing the larger block into 6 blocks of equal size.
-4. Note the first 6 blocks and supply them as the subnet CIDR blocks in the next step.
+2. Enter your network address without the mask portion `/nn` the `Network Address` field.
+3. Enter the size of allocated block in the `Mask bits` field.
+4. Click `Update`.  
+5. In the table at the bottom, click the `Divide` links to start subdividing the larger block into 6 blocks of equal size.
+6. Note the first 6 blocks and supply them as the subnet CIDR blocks in the next step.
 
 ## 7. Provision Development VPC
 
