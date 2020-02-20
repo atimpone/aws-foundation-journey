@@ -165,7 +165,7 @@ Since the AWS Control Tower services uses the AWS CloudFormation StackSet featur
         },
 ```
 
-### Deny Access to Create VPC Resources
+### Deny Creation and Management of VPC Resources
 
 Since a centrally managed VPC is shared with development AWS accounts in a read only manner and it's a best practice to delegate ownership and management of VPC resources to your central foundation team, typically, development teams don't need to have write access to VPC resources.
 
