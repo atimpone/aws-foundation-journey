@@ -256,6 +256,8 @@ Now that the development VPC has been provisioned, you need to share the subnets
 4. Navigate to **`Resource Access Manager`**.
 5. Select **`Enable sharing with AWS Organizations`**.
 
+### Obtain the ID of the `development` OU
+
 While you're in the master AWS account, obtain and record the resource ID of the **`development`** OU.
 
 1. Navigate to **`AWS Control Tower`**.
@@ -271,13 +273,13 @@ While you're in the master AWS account, obtain and record the resource ID of the
 4. Select the appropriate AWS region.
 5. Navigate to **`Resource Access Manager`**.
 6. Select `Create a resource share`.
-7. 
-
-### Share the Subnets
-
-...
-
-See [Sharing a Subnet](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-sharing-share-subnet) for instructions on sharing subnets.
+7. Enter a `Name` of **`dev-vpc`**.
+8. Under `Resources`, by default, the subnets that were just provisioned should be listed.
+9. Select the checkbox to select all of the subnets.
+10. Under `Principals`, uncheck `Allow external accounts` given that we're sharing the subnets only with other AWS accounts within this AWS organization.
+11. In the search field, copy the organization ID of the **`development`** OU. 
+12. Select the matched OU.
+13. Select `Create resource share`.
 
  ## Next Steps
 
