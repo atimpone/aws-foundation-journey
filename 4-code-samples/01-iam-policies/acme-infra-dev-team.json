@@ -13,6 +13,8 @@
                 "iam:CreateUser",
                 "iam:CreateGroup",
                 "iam:CreateSAMLProvider",
+                "iam:DeleteSAMLProvider",
+                "iam:UpdateSAMLProvider",
                 "iam:DeleteAccountPasswordPolicy",
                 "iam:UpdateAccountPasswordPolicy",
                 "iam:DeleteUserPermissionsBoundary",

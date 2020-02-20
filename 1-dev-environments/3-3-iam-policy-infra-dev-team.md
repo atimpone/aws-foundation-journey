@@ -85,6 +85,8 @@ Explicitly disallow creation of IAM users since development team users do not us
                 "iam:CreateUser",
                 "iam:CreateGroup",
                 "iam:CreateSAMLProvider",
+                "iam:DeleteSAMLProvider",
+                "iam:UpdateSAMLProvider",
                 "iam:DeleteAccountPasswordPolicy",
                 "iam:UpdateAccountPasswordPolicy",
                 "iam:DeleteUserPermissionsBoundary",
