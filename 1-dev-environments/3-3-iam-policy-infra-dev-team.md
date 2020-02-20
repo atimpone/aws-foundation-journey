@@ -13,12 +13,12 @@ In the near future, the sample policy will be updated with the requirement for a
 
 ---
 
-* [Sample Policy](#sample-policy)
+* [Sample Policy](#sample-policy-code)
 * [Intent of the Policy](#intent-of-the-policy)
 * [Requirements](#requirements)
 * [Policy Walkthrough](#policy-walkthrough)
 
-## Sample Policy
+## Sample Policy Code
 
 [acme-infra-dev-team.json](../4-code-samples/01-iam-policies/acme-infra-dev-team.json)
 
