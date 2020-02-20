@@ -258,10 +258,10 @@ Review the newly created VPC and associated resources.
 4. Select `Route Tables` and review. You will see one route table per subnet in addition to the VPC's main route table.
 5. Select `NAT Gateways` and review. With the default behavior of the CloudFormation template, a single NAT Gateway will be created.
 6. Select `Elastic IPs` and review.  You will see one EIP allocated for each NAT Gateway.
-7. Navigate to **CloudWatch**.
-8. Select CloudWatch Logs.
-9. Select the log group associated with the VPC Flow Logs.
-10. Explore the flow logs. You should see a flow log for each Elastic Network Interface (ENI) used in the VPC. For example, each NAT Gateway has one ENI.
+7. Navigate to **`CloudWatch`**.
+8. Select `Log groups`.
+9. Select the log group associated with the VPC Flow Logs. For example, `/infra/shared/flowlogs`.
+10. Explore the log streams. You should see a log stream for each Elastic Network Interface (ENI) used in the VPC. For example, each NAT Gateway has one ENI. Each entry in a log stream represents a the source, destination, and other overall information about the network traffic flowing through the ENI.
 
 ## 9. Share Development VPC With Development OU
 
