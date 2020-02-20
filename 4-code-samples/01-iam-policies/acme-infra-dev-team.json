@@ -1,0 +1,150 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowVirtuallyAllServicesActionsExcept",
+            "Effect": "Allow",
+            "NotAction": [
+                "iam:CreateUser",
+                "account:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "account:ListRegions"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "AllowWriteAccessAppRoles",
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateRole",
+                "iam:ListRoles",
+                "iam:UpdateRole"
+            ],
+            "Resource": "arn:aws:iam::*:role/*"
+        },
+        {
+            "Sid": "DenyWriteAccessFoundationRoles",
+            "Effect": "Deny",
+            "Action": [
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:UpdateRole"
+            ],
+            "Resource": [
+                "arn:aws:iam::*:role/AWS*",
+                "arn:aws:iam::*:role/aws*",
+                "arn:aws:iam::*:role/acme-infra-*"
+            ]
+        },
+        {
+            "Sid": "DenyWriteAccessFoundationPolicies",
+            "Effect": "Deny",
+            "Action": [
+                "iam:CreatePolicy",
+                "iam:DeletePolicy",
+                "iam:DeletePolicyVersion",
+                "iam:UpdatePolicy",
+                "iam:UpdatePolicyVersion"
+            ],
+            "Resource": "arn:aws:iam::*:policy/acme-infra-*"
+        },
+        {
+            "Sid": "DenyWriteAccessStacksFromStackSets",
+            "Effect": "Deny",
+            "Action": [
+                "cloudformation:DeleteStack",
+                "cloudformation:UpdateStack"
+            ],
+            "Resource": "arn:aws:cloudformation::*:stack/StackSet-*"
+        },
+        {
+            "Sid": "DenyVPCWrite",
+            "Effect": "Deny",
+            "Action": [
+                "ec2:AcceptVpcEndpointConnections",
+                "ec2:AssociateDhcpOptions",
+                "ec2:AssociateRouteTable",
+                "ec2:AssociateSubnetCidrBlock",
+                "ec2:AssociateVpcCidrBlock",
+                "ec2:AttachInternetGateway",
+                "ec2:AttachVpnGateway",
+                "ec2:CreateCustomerGateway",
+                "ec2:CreateDefaultSubnet",
+                "ec2:CreateDefaultVpc",
+                "ec2:CreateDhcpOptions",
+                "ec2:CreateEgressOnlyInternetGateway",
+                "ec2:CreateFlowLogs",
+                "ec2:CreateInternetGateway",
+                "ec2:CreateNatGateway",
+                "ec2:CreateNetworkAcl",
+                "ec2:CreateNetworkAclEntry",
+                "ec2:CreateRoute",
+                "ec2:CreateRouteTable",
+                "ec2:CreateSubnet",
+                "ec2:CreateVpc",
+                "ec2:CreateVpcEndpoint",
+                "ec2:CreateVpcEndpointConnectionNotification",
+                "ec2:CreateVpcEndpointServiceConfiguration",
+                "ec2:CreateVpnConnection",
+                "ec2:CreateVpnConnectionRoute",
+                "ec2:CreateVpnGateway",
+                "ec2:DeleteEgressOnlyInternetGateway",
+                "ec2:DeleteFlowLogs",
+                "ec2:DeleteNatGateway",
+                "ec2:DeleteSubnet",
+                "ec2:DeleteVpc",
+                "ec2:DeleteVpcEndpointConnectionNotifications",
+                "ec2:DeleteVpcEndpoints",
+                "ec2:DeleteVpcEndpointServiceConfigurations",
+                "ec2:DeleteVpnConnection",
+                "ec2:DeleteVpnConnectionRoute",
+                "ec2:DeleteVpnGateway",
+                "ec2:DetachInternetGateway",
+                "ec2:DetachVpnGateway",
+                "ec2:DisableVgwRoutePropagation",
+                "ec2:DisableVpcClassicLinkDnsSupport",
+                "ec2:DisassociateRouteTable",
+                "ec2:DisassociateSubnetCidrBlock",
+                "ec2:DisassociateVpcCidrBlock",
+                "ec2:EnableVgwRoutePropagation",
+                "ec2:EnableVpcClassicLinkDnsSupport",
+                "ec2:ModifySubnetAttribute",
+                "ec2:ModifyVpcAttribute",
+                "ec2:ModifyVpcEndpoint",
+                "ec2:ModifyVpcEndpointConnectionNotification",
+                "ec2:ModifyVpcEndpointServiceConfiguration",
+                "ec2:ModifyVpcEndpointServicePermissions",
+                "ec2:ModifyVpcPeeringConnectionOptions",
+                "ec2:ModifyVpcTenancy",
+                "ec2:MoveAddressToVpc",
+                "ec2:RejectVpcEndpointConnections",
+                "ec2:ReplaceNetworkAclAssociation",
+                "ec2:ReplaceNetworkAclEntry",
+                "ec2:ReplaceRoute",
+                "ec2:ReplaceRouteTableAssociation",
+                "ec2:RestoreAddressToClassic",
+                "ec2:AcceptVpcPeeringConnection",
+                "ec2:AttachClassicLinkVpc",
+                "ec2:CreateVpcPeeringConnection",
+                "ec2:DeleteCustomerGateway",
+                "ec2:DeleteInternetGateway",
+                "ec2:DeleteNetworkAcl",
+                "ec2:DeleteNetworkAclEntry",
+                "ec2:DeleteRoute",
+                "ec2:DeleteRouteTable",
+                "ec2:DeleteVpcPeeringConnection",
+                "ec2:DetachClassicLinkVpc",
+                "ec2:DisableVpcClassicLink",
+                "ec2:EnableVpcClassicLink",
+                "ec2:RejectVpcPeeringConnection",
+                "directconnect:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
