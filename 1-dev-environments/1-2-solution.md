@@ -45,8 +45,7 @@ In this initial stage, there’s no network connectivity between your AWS accoun
 
 ## AWS Single Sign-On (SSO)
 
-
-AWS SSO is used to initially manage the initial relatively limited number of human users across your development teams and cloud administrators who need to access the AWS Management Console and AWS APIs to get things done in either team development AWS accounts or in support of managing and operating the overall use of AWS. Initially, you’ll use a locally managed store of groups and users in AWS to represent people who can access your AWS accounts.
+AWS SSO is used to manage the initial relatively limited number of human users across your development teams and cloud administrators who need to access the AWS Management Console and AWS APIs to get things done in either team development AWS accounts or in support of managing and operating the overall use of AWS. Initially, you’ll use a locally managed store of groups and users in AWS to represent people who can access your AWS accounts.
 
 As a best practice, it’s strongly recommended that all users managed via AWS SSO set up MFA for their users.
 
