@@ -22,7 +22,7 @@ The shared development VPC will have a set of public and private subnets. In tho
 
 At least one public subnet will have a NAT Gateway that enables workloads in any of the private subnets to send traffic outbound to the Internet. For example, to enable workloads to download content from Internet accessible source code and package repositories.
 
-As you progress in your journey, you may transition from this initial approach of providing development teams with direct Internet access via the initial set of public subnets and NAT Gateway to a more secure architecture where all Internet egress and ingress traffic is routed through your standard enterprise edge security services. In this future state, development teams would not have access direct to public subnets.
+As you progress in your journey, you may transition from this initial approach of providing development teams with direct Internet access via the initial set of public subnets and NAT Gateway to a more secure architecture where all Internet egress and ingress traffic is routed through your standard enterprise edge security services. In this future state, development teams would not have access direct to public subnets. This capability is highlighted in the optional [fast follow-on capabilities](../README.md#2-establish-fast-follow-on-capabilities).
 
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-network-initial-details.png "Initial Network Details")
 
