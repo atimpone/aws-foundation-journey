@@ -9,7 +9,8 @@ This step should take about 30 minutes to complete.
 3. [Access AWS SSO Using Your AWS Control Tower Administrator User](#3-access-aws-sso-using-your-aws-control-tower-administrator-user)
 4. [Add a Cloud Admin Group in AWS SSO](#4-add-a-cloud-admin-group-in-aws-sso)
 5. [Add a Cost Management Group and Assign Permissions in AWS SSO](#5-add-a-cost-management-group-and-assign-permissions-in-aws-sso)
-6. [Configure Multi-Factor Authentication (MFA) Requirements](#6-configure-multi-factor-authentication-mfa-requirements)
+6. [Create Development Team Permission Set in AWS SSO](#6-create-a-development-team-permission-set-in-aws-sso)
+7. [Configure Multi-Factor Authentication (MFA) Requirements](#7-configure-multi-factor-authentication-mfa-requirements)
 
 ## 1. Temporarily Use AWS SSO Locally Managed Users and Groups
 
@@ -119,7 +120,24 @@ In the spirit of least privilege access, the resulting permissions will enable c
 7. Select the checkbox next to `Billing`.
 8. Select `Finish`.
 
-## 6. Configure Multi-Factor Authentication (MFA) Requirements
+## 6. Create Development Team Permission Set in AWS SSO
+
+Next, you'll create a custom permission set in AWS SSO to represent the initial iteration of an AWS IAM policy under which development team members will work in their development AWS accounts.
+
+1. Access `AWS accounts` in AWS SSO.
+2. Select `Permission sets`.
+3. Select `Create permission set`.
+4. Select `Create a customer permission set`.
+5. Enter a `Name`. For example **`acme-infra-dev-team`**. It's useful to prefix your custom cloud resources that live in a larger name space with your organization identifier and a qualifier such as `infra` to represent foundation resources.
+6. Enter a `Description`. For example, `Day-to-day permission used by developers in their development AWS accounts.`.
+7. Set the `Session duration` to the desired value.
+8. Select the checkbox `Create a custom permissions policy`.
+9. Open the [sample policy](../4-code-samples/01-iam-policies/acme-infra-dev-team.json) in a text editor, copy, and paste the content.  Review the policies to determine if they meet your needs.
+10. Select `Create`.
+
+Later, when you onboard the development teams to their development AWS accounts, you'll reference this permission set.
+
+## 7. Configure Multi-Factor Authentication (MFA) Requirements
 
 Before adding any human users to AWS SSO and enabling the users to access your AWS environment, it's a best practice to configure AWS SSO to require multi-factor authentication (MFA).
 
