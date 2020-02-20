@@ -85,6 +85,7 @@ By following this guide, your organization can establish an initial secure found
 
 * [Getting Started Guide for Development Teams](1-dev-environments/3-1-getting-started-guide-dev-teams.md)
 * [Cloud Platform System AWS Users](1-dev-environments/3-2-cloud-platform-system-users.md)
+* [Sample IAM Policy for Developmemt Teams](1-dev-environments/3-3-iam-policy-infra-dev-team.md)
 
 ---
 
