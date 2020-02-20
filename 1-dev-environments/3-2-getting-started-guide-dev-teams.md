@@ -41,7 +41,7 @@ The following diagram provides a more detailed view of the initial network envir
 
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-network-initial-details.png "Initial Network Details")
 
-When you access your development AWS account via the the AWS Management Console and review the Virtual Private Cloud (VPC) resources, you will see a series of subnets that have been shared with your AWS account.  These subnets and other VPC resources are managed in the central Network AWS account that is managed by the Cloud Administrators.  All development AWS accounts have read only access to these VPC resources.
+When you access your development AWS account via the the AWS Management Console and review the Virtual Private Cloud (VPC) resources, you will see a series of subnets that have been shared with your AWS account.  These subnets and other VPC resources are hosted in the central Network AWS account that is managed by your Cloud Administrators.  All development AWS accounts have read only access to these VPC resources.
 
 By design, your team does not have permissions to create and modify VPC resources in your own development AWS account.
 
