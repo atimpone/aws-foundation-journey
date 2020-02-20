@@ -6,8 +6,15 @@
             "Effect": "Allow",
             "NotAction": [
                 "iam:CreateUser",
+                "iam:CreateGroup",
+                "iam:CreateSAMLProvider",
+                "iam:DeleteAccountPasswordPolicy",
+                "iam:UpdateAccountPasswordPolicy",
                 "iam:DeleteUserPermissionsBoundary",
                 "iam:DeleteRolePermissionsBoundary",
+                "billing:ModifyAccount",
+                "billing:ModifyBilling",
+                "billing:ModifyPaymentMethods",
                 "account:*"
             ],
             "Resource": "*"
