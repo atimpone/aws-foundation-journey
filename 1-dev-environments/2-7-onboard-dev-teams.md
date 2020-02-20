@@ -7,7 +7,7 @@ This step should take about 60 minutes to complete.
 1. [Assemble Onboarding Documentation](#1-assemble-onboarding-documentation)
 2. [Create Development Team Groups in AWS SSO](#2-create-development-team-groups-in-aws-sso)
 3. [Create Development Team Users in AWS SSO](#3-create-development-team-users-in-aws-sso)
-4. [Enable Foundation Team Members Access to Their Development AWS Account](#4-enable-foundation-team-members-access-their-development-aws-account)
+4. [Enable Foundation Team Members Access to Their Development AWS Account](#4-enable-foundation-team-members-access-to-their-development-aws-account)
 5. [Brief Development Team Members](#5-brief-development-team-members)
 
 ## 1. Assemble Onboarding Documentation
