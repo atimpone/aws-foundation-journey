@@ -2,16 +2,28 @@
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "AllowVirtuallyAllServicesActionsExcept",
             "Effect": "Allow",
-            "NotAction": [
+            "Action": "*",
+            "Resource": "*"
+        },
+        {
+            "Sid": "DenyUnnecessaryIam",
+            "Effect": "Deny",
+            "Action": [
                 "iam:CreateUser",
                 "iam:CreateGroup",
                 "iam:CreateSAMLProvider",
                 "iam:DeleteAccountPasswordPolicy",
                 "iam:UpdateAccountPasswordPolicy",
                 "iam:DeleteUserPermissionsBoundary",
-                "iam:DeleteRolePermissionsBoundary",
+                "iam:DeleteRolePermissionsBoundary"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "DenyWriteBillingAccount",
+            "Effect": "Deny",
+            "Action": [
                 "billing:ModifyAccount",
                 "billing:ModifyBilling",
                 "billing:ModifyPaymentMethods",

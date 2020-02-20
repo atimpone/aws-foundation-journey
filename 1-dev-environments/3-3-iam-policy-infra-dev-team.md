@@ -62,24 +62,40 @@ Each section of the sample policy is explained here.
 
 ### Allow Virtually All AWS Services
 
-Except for the listed resources and actions, start by allowing access to all AWS service resources and actions.  
+Start by allowing access to all AWS service resources and actions.  
 
 As mentioned above, it's a best practice to use AWS Organizations SCPs to provide an overarching constraint on which AWS services can be used in a given AWS ccount. Instead of over complicating the following policy with fine grained lists of allowed or disallowed AWS services, it's best practice to defer to SCPs.
+
+```
+        {
+            "Effect": "Allow",
+            "Action": "*",
+            "Resource": "*"
+        },
+```
+### Disallow Key IAM, Account, and Billing Write Access
 
 Explicitly disallow creation of IAM users since development team users do not use IAM users to access their development AWS accounts.
 
 ```
         {
-            "Sid": "AllowVirtuallyAllServicesActionsExcept",
-            "Effect": "Allow",
-            "NotAction": [
+            "Sid": "DenyUnnecessaryIam",
+            "Effect": "Deny",
+            "Action": [
                 "iam:CreateUser",
                 "iam:CreateGroup",
                 "iam:CreateSAMLProvider",
                 "iam:DeleteAccountPasswordPolicy",
                 "iam:UpdateAccountPasswordPolicy",
                 "iam:DeleteUserPermissionsBoundary",
-                "iam:DeleteRolePermissionsBoundary",
+                "iam:DeleteRolePermissionsBoundary"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "DenyWriteBillingAccount",
+            "Effect": "Deny",
+            "Action": [
                 "billing:ModifyAccount",
                 "billing:ModifyBilling",
                 "billing:ModifyPaymentMethods",
