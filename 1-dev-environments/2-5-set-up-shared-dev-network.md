@@ -233,7 +233,7 @@ Now create a new AWS CloudFormation stack using the sample template you download
 |**`VPC Name`**|Change to **`dev`**.|
 |**`*Cidr`**|**Just Experimenting**<br><br>If you want to just experiment at this point and don't care about using formally assigned IP address ranges, you can leave the CIDR block parameters at their default values.<br><br>**You Have Your Own CIDR Blocks**<br><br>Enter values for the `pVpcCidr`, `pTier1..`, and `pTier2...` CIDR blocks from the prior step. You can ignore the `pTier3...` parameters because only two tiers - public and private - are being provisioned by default.|
 
-Leave all of the other parameters at their default settings unless you're comfortable changing them.  You can always easily create another stack to experiment with other parameter values.
+Leave all of the other parameters at their default settings unless you're comfortable changing them.  You can always easily create another stack to experiment with other parameter values. Review the [README](https://github.com/ckamps/infra-aws-vpc-multi-tier) for details on parameters.
 
 7. Select `Next`.
 8. Select `Next`.
@@ -248,10 +248,10 @@ Review the newly created VPC and associated resources.
 
 1. Navigate to **`VPC`**.
 2. Select the VPC and review its details.
-3. Select `Subnets` in the left menu and review.
-4. Select `Route Tables` and review.
-5. Select `NAT Gateways` and review.
-6. Select `Elastic IPs` and review.  You should see one EIP allocated for each NAT Gateway.
+3. Select `Subnets` in the left menu and review. By default, you will see 6 subnets.
+4. Select `Route Tables` and review. You will see one route table per subnet in addition to the VPC's main route table.
+5. Select `NAT Gateways` and review. With the default behavior of the CloudFormation template, a single NAT Gateway will be created.
+6. Select `Elastic IPs` and review.  You will see one EIP allocated for each NAT Gateway.
 
 ## 9. Share Development VPC With Development OU
 
