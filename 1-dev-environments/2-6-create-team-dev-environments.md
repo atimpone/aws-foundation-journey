@@ -116,7 +116,7 @@ Since the names of shared subnets are not currently propagated to AWS accounts, 
 6. Select `Your VPCs`.
 7. Select the unamed VPC and assign the same name as used in the Network AWS account. For example, **`shared`**.
 8. Select `Subnets`.
-9. Update the `Name` field of each subnet to match the name of the subnet as it's configured in the `Network` AWS account. You can open another icognito or similar browser session to view the `Network` account's resources.
+9. Update the `Name` field of each subnet to match the name of the subnet as it's configured in the `Network` AWS account. You can open another icognito or similar browser session to view the `Network` account's resources. **Caution:** The subnets may not be listed in the same order in both AWS accounts by default.
 
 ---
 **Review Note: This step is ripe for automation**
