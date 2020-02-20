@@ -20,7 +20,7 @@ As mentioned in the [Initial Development Environment Solution Overview](1-2-solu
 
 The shared development VPC will have a set of public and private subnets. In those AWS regions in which at least 3 Availability Zones (AZs) are availabkle for customer use, it's recommended that your initial set of VPCs have subnets in each of 3 AZs so that your development teams can experiment with and perform early testing of workloads and AWS services that can take advantage of 3 AZs.
 
-At least one public subnet will have a NAT Gateway that enables workloads in any of the private subnets to send traffic outbound to the Internet. For example, to enable workloads to download packages from Internet accessible source code and package repositories.
+At least one public subnet will have a NAT Gateway that enables workloads in any of the private subnets to send traffic outbound to the Internet. For example, to enable workloads to download content from Internet accessible source code and package repositories.
 
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-network-initial-details.png "Initial Network Details")
 
