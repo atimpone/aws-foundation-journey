@@ -121,7 +121,7 @@ Foundation Management
 
 * [Begin Adopting Infrastructure as Code (IaC)](2-fast-follow-on/2-9-infrastructure-as-code.md)
 * [Enable Custom AWS Account Baselines](2-fast-follow-on/2-3-custom-account-baselines.md)
-
+* Bring Other AWS Accounts Into Your AWS Account Structure
 ---
 
 ## 3. Establish Initial Test and Production Environments
