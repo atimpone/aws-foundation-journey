@@ -8,7 +8,7 @@ For example, in the AWS Control Tower documention.
 
 No, not to our knowledge. This guide take an experience journey based approach to introducing customers to the overall use case, the set of typical requirements, and an overall solution before leading customers through the actual steps to realize a set development environments resting on the initial form of their AWS foundation.
 
-Additionally, the scope of the initial stage of customers' adoption of AWS extends beyond the domain of any single AWS service. Consequently, it's difficult for any one AWS service to document such wide ranging experiences.
+Additionally, since the scope of the initial stage of customers' adoption of AWS extends beyond the domain of any single AWS service, it's difficult for any one AWS service to document such a wide ranging experience.
 
 Moving forward there's an opportunity to introduce this type of documentation and knowlege into more mainstream AWS documentation.
 
