@@ -297,6 +297,15 @@ While you're in the master AWS account, obtain and record the resource ID of the
 12. Select the matched OU.
 13. Select `Create resource share`.
 
+---
+**Note: Sharing of names of VPC subnets**
+
+If you were to list the shared VPC subnets from within the development AWS accounts, you would notice that the subnet names are blank.  Currently, sharing of subnets does not include automatic propagation of resource tags, including the `Name` tag. 
+
+As a workaround, in a subsequent section where you provision the development AWS accounts, you can manually assign names to the shared subnets so that it will be easier for the development teams to understand the role of each subnet. For example, more readily distinguising between public and private subnets.
+
+---
+
  ## Next Steps
 
 [6. Create Initial Team Development Environments](2-6-create-team-dev-environments.md)
