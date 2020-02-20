@@ -54,7 +54,7 @@
             "Resource": "arn:aws:iam::*:policy/acme-infra-*"
         },
         {
-            "Sid": "DenyWriteAccessStacksFromStackSets",
+            "Sid": "DenyWriteAccessStackSets",
             "Effect": "Deny",
             "Action": [
                 "cloudformation:DeleteStack",
