@@ -47,7 +47,7 @@ By design, your team does not have permissions to create and modify VPC resource
 
 ### Where should my team deploy resources?
 
-All AWS resources that your team creates and manage are constrained to your development AWS account.  In support of workloads requiring access to VPC resources, your team can deploy those workloads in the shared development VPC.
+All AWS resources that your team creates and manages are constrained to your development AWS account.  In support of workloads requiring access to VPC resources, your team can deploy those workloads in the shared development VPC.
 
 ## Understanding Your Team's Access Permissions and Responsibilities
 
