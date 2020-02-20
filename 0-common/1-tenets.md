@@ -22,7 +22,7 @@ That apply largely independent of specific workload types and industry verticals
 
 At least in the early stages of developing this guidance, defer to other resources to address workload- and industry-specific needs.
 
-# 5. Start and focus on early stage of formal adoption of AWS.
+# 5. Focus on early stage of formal adoption of AWS.
 
 Don't boil the ocean. Focus on the early "project" stage of formal adoption of AWS. Provide pathways to other guidance and offerings that help customers through the later "foundation" stage of adoption.
 
