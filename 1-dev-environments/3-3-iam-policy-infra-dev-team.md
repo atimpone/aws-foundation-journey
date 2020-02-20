@@ -74,6 +74,8 @@ Explicitly disallow creation of IAM users since development team users do not us
             "Effect": "Allow",
             "NotAction": [
                 "iam:CreateUser",
+                "iam:DeleteUserPermissionsBoundary",
+                "iam:DeleteRolePermissionsBoundary",
                 "account:*"
             ],
             "Resource": "*"

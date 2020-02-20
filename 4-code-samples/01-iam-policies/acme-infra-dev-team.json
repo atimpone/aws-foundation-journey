@@ -6,6 +6,8 @@
             "Effect": "Allow",
             "NotAction": [
                 "iam:CreateUser",
+                "iam:DeleteUserPermissionsBoundary",
+                "iam:DeleteRolePermissionsBoundary",
                 "account:*"
             ],
             "Resource": "*"
