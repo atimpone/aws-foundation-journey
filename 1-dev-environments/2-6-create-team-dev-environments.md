@@ -8,7 +8,7 @@ This step should take about 30 minutes to complete.
 2. [Create Development Team AWS Accounts](#2-create-development-team-aws-accounts)
 3. [Initialize AWS Account System Users](#3-initialize-aws-account-system-users)
 4. [Provide Cloud Administrators Access to New AWS Accounts](#4-provide-cloud-administrators-access-to-new-aws-accounts)
-5. [Apply Names to Shared Subnets](#5-apply-names-to-shared-subnets)
+5. [Apply Names to Shared VPC Resources](#5-apply-names-to-shared-vpc-resources)
 
 ## 1. Use at Least Two Development AWS Accounts from the Start
 
@@ -104,7 +104,7 @@ Since Cloud Administrators won't automatically be granted sufficient access to n
 
 Now you've enabled all users who are part of the Cloud Administrator group in AWS SSO administrator access to the selected AWS accounts.
 
-## 5. Apply Names to Shared Subnets
+## 5. Apply Names to Shared VPC Resources
 
 Since the names of shared subnets are not currently propagated to AWS accounts, as a Cloud Administrator, you can optionally apply names to the shared subnets within each development AWS account so that it's easier for the development teams to understand the role of each subnet. For example, more readily distinguising between public and private subnets.
 
@@ -113,8 +113,10 @@ Since the names of shared subnets are not currently propagated to AWS accounts, 
 3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
 4. Select the appropriate AWS region.
 5. Navigate to **`VPC`**.
-6. Select `Subnets`.
-7. Update the `Name` field of each subnet to match the name of the subnet as it's configured in the `Network` AWS account. You can open another icognito or similar browser session to view the `Network` account's resources.
+6. Select `Your VPCs`.
+7. Select the unamed VPC and assign the same name as used in the Network AWS account. For example, **`shared`**.
+8. Select `Subnets`.
+9. Update the `Name` field of each subnet to match the name of the subnet as it's configured in the `Network` AWS account. You can open another icognito or similar browser session to view the `Network` account's resources.
 
 ---
 **Review Note: This step is ripe for automation**
