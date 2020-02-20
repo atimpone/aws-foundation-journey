@@ -1,6 +1,6 @@
 # Tenets
 
-The following tenets or principles guide this collection of guides.
+The following tenets or principles help the team make decisions about this collection of guides.
 
 # 1. Customer self-service and scale.
 
