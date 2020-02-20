@@ -116,6 +116,13 @@ Since the names of shared subnets are not currently propagated to AWS accounts, 
 6. Select `Subnets`.
 7. Update the `Name` field of each subnet to match the name of the subnet as it's configured in the `Network` AWS account. You can open another icognito or similar browser session to view the `Network` account's resources.
 
+---
+**Review Note: This step is ripe for automation**
+
+See [issue 18](https://github.com/ckamps/aws-foundation-journey/issues/18)
+
+---
+
 ## Next Steps
 
 [7. Onboard Development Teams](2-7-onboard-dev-teams.md)
