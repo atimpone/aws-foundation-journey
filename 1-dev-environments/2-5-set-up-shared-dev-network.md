@@ -184,7 +184,7 @@ If you need to break down a larger block, use the [Visual Subnet Calculator](htt
 
 ### Determine Subnet CIDR Blocks
 
-Once you've determined the VPC CIDR block, break it down into an equal size block per subnets is straightforward. Using the [Visual Subnet Calculator](http://www.davidc.net/sites/default/subnets/subnets.html), enter the size of your VPC block in the "Mask bits" field and click "Update".  Now in the table below, click the "Divide" links to start subdividing the larger block into at 8 blocks of equal size.
+Once you've determined the VPC CIDR block, breaking it down into an equal size block per subnets is straightforward. Using the [Visual Subnet Calculator](http://www.davidc.net/sites/default/subnets/subnets.html), enter the size of your VPC block in the "Mask bits" field and click "Update".  Now in the table below, click the "Divide" links to start subdividing the larger block into at 8 blocks of equal size.
 
 Note the first 6 blocks and supply them as the subnet CIDR blocks in the next step.
 
