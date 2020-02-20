@@ -9,7 +9,7 @@ This step should take about 30 minutes to complete.
 3. [Access AWS SSO Using Your AWS Control Tower Administrator User](#3-access-aws-sso-using-your-aws-control-tower-administrator-user)
 4. [Add a Cloud Admin Group in AWS SSO](#4-add-a-cloud-admin-group-in-aws-sso)
 5. [Add a Cost Management Group and Assign Permissions in AWS SSO](#5-add-a-cost-management-group-and-assign-permissions-in-aws-sso)
-6. [Create Development Team Permission Set in AWS SSO](#6-create-a-development-team-permission-set-in-aws-sso)
+6. [Create Development Team Permission Set in AWS SSO](#6-create-development-team-permission-set-in-aws-sso)
 7. [Configure Multi-Factor Authentication (MFA) Requirements](#7-configure-multi-factor-authentication-mfa-requirements)
 
 ## 1. Temporarily Use AWS SSO Locally Managed Users and Groups
