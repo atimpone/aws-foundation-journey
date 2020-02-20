@@ -4,7 +4,7 @@ This sample IAM policy is intended to be used as a starting point for access con
 
 Your organization is expected to understand this sample policy in detail before potentially applying it.  
 
-Whichever policy is used initially, as you progress on your journey, managing and controlling changes to these types of policies will be a critical responsibility of your foundation team.  Typically, only your Cloud Security Administrator would have write access to such policies.
+Whichever policy is used initially, as you progress on your journey, managing and controlling changes to these types of policies will be a critical responsibility of your foundation team.  Typically, only your Cloud Security team would have write access to such policies.
 
 ---
 **Note: Initial iteration of development team permission set**
