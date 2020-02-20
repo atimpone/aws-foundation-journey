@@ -72,4 +72,4 @@ In the future, when you need to interconnect a portion of your existing on-premi
 
 ## Next Steps
 
-[1. Create Master AWS Account](2-1-create-master-aws-account.md)
+[Build Out the Environment](../README.md#build-out-the-environment)
