@@ -98,7 +98,7 @@ In the following steps, it's important that you select the correct role when acc
 |`SSOUserFirstName`|Use a part of your account name. For example, `Network`.|
 |`SSOUserLastName`|Use the remaining part of the account name. For example, `Infrastructure`|
 |`ManagedOrganizationalUnit`|Select the infrastructure OU you created earlier in this section. For example, **`infrastructure`**.|
-|`AccountName`|**`Infrastructure`**|
+|`AccountName`|**`Network`**|
 
 12. Select `Next`.
 13. On `Tag Options`, select `Next`.
