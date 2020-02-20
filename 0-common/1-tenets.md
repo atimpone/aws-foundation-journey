@@ -24,7 +24,9 @@ At least in the early stages of developing this guidance, defer to other resourc
 
 Don't boil the ocean. Focus on the early "project" stage of formal adoption of AWS. Provide pathways to other guidance and offerings that help customers through the later "foundation" stage of adoption.
 
-# 6. Focus on the 80 part of 80/20.
+# 6. Focus on the 80% part of 80/20.
+
+Address the most common scnearios first.
 
 # 7. Work with AWS to continually improve the customer experience.
 
