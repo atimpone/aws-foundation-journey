@@ -137,6 +137,13 @@ Next, you'll create a custom permission set in AWS SSO to represent the initial 
 
 Later, when you onboard the development teams to their development AWS accounts, you'll reference this permission set.
 
+---
+**Note: Initial iteration of development team permission set**
+
+This is only an initial iteration of the policies to associate with development teams.  In the near future, the sample policy will be updated with the requirement for an IAM Permission Boundary to be applied so that development team members cannot escalate privileges by creating new IAM roles that go beyond the intended permissions.
+
+---
+
 ## 7. Configure Multi-Factor Authentication (MFA) Requirements
 
 Before adding any human users to AWS SSO and enabling the users to access your AWS environment, it's a best practice to configure AWS SSO to require multi-factor authentication (MFA).
