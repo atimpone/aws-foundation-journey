@@ -25,7 +25,7 @@ Don't overload the initial doc with more advanced capabilities. Focus on the "cr
 
 ## Accepting Invite to Join AWS SSO
 
-You should've received an email from AWS with the subject "Invitation to join AWS Single Sign-On".  To login to your AWS account, you'll need to [accept the invitation](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtoactivateaccount.html).
+After your Cloud Administrators have onboarded your team and added your individual user logins, you will receive an email from AWS with the subject "Invitation to join AWS Single Sign-On".  To login to your AWS account, you'll need to [accept the invitation](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtoactivateaccount.html).
 
 Once you're able to login, you'll need to [register an MFA device](https://docs.aws.amazon.com/singlesignon/latest/userguide/user-device-registration.html) to your AWS SSO account.
 
