@@ -175,6 +175,13 @@ Since a centrally managed VPC is shared with development AWS accounts in a read 
 
 Note that both traditional EC2 VM related resources and VPC networking resource both live under the `ec2:` namespace. In their development AWS accounts, development teams are allowed to create the tradition EC2 VM related resources.
 
+---
+**Review Note: Policy could likely be greatly simplified**
+
+Since VPC resources other than the centrally managed shared VPC resources aren't expected to be provisioned in development team AWS accounts, actions other than `Create` might be candidates for removal. Since the shared VPC resources are inherently read only from the perspective of the development AWS accounts, protection against write access in this IAM policy is unnecessary.
+
+---
+
 ```
         {
             "Sid": "DenyVPCWrite",
