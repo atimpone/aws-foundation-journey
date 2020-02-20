@@ -16,7 +16,9 @@ Make the target audience and specific stage of adoption clear throughout the gui
 
 Incorporate all guidance into a contiguous experience. Avoid inclusion of guidance and resources that don't fit the story and journey.  Take steps to position all references to other guidance in the content of the contiguous narrative.
 
-# 4. Focus on the common underpinnings or "foundation" aspects of the journey that apply largely independent of specific workload types and industry verticals.
+# 4. Focus on the common underpinnings or "foundation" aspects of the journey
+
+That apply largely independent of specific workload types and industry verticals.
 
 At least in the early stages of developing this guidance, defer to other resources to address workload- and industry-specific needs.
 
