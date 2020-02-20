@@ -49,26 +49,10 @@ Create a new group in AWS SSO for each of the development teams and associate th
   * `acme-team-a-dev`
   * `acme-foundation-dev`
 6. Select `Next: Permission sets`.
-7. Select the checkbox next to `AWSPowerUserAccess`.
+7. Select the checkbox next to **`acme-infra-dev-team`**.
 8. Select `Finish`.
 
 Repeat the process above to create a group for your foundation team and enable this group to access their development AWS account.
-
----
-**Note: `AWSPowerUserAccess` permissions**
-
-As a getting started step, this guide suggests using one of the pre-defined, AWS-managed permission sets for your development team users and their access to their development AWS accounts. However, you will likely define your own custom set of permissions in AWS IAM to meet your business and security needs and supplant the initial permission set.
-
----
-
----
-**Review Note: Power user access might be insufficient**
-
-We need to validate that the predefined AWS managed permission is sufficient as a starting point. It has some restrictions that might not be compatible with common dev use cases.
-
-Indeed, it is not sufficient. See [Issue 15](https://github.com/ckamps/aws-foundation-journey/issues/15)
-
----
 
 ## 3. Create Development Team Users in AWS SSO
 
