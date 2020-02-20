@@ -140,7 +140,7 @@ Later, when you onboard the development teams to their development AWS accounts,
 ---
 **Note: Initial iteration of development team permission set**
 
-This is only an initial iteration of the policies to associate with development teams.  In the near future, the sample policy will be updated with the requirement for an IAM Permission Boundary to be applied so that development team members cannot escalate privileges by creating new IAM roles that go beyond the intended permissions.
+This is only an initial iteration of the policies to associate with development teams.  In the near future, the sample policy will be updated with the requirement for an IAM Permission Boundary to be applied so that development team members cannot escalate privileges by creating new IAM roles that go beyond the intended permissions. See [Issue 15](https://github.com/ckamps/aws-foundation-journey/issues/15).
 
 ---
 
