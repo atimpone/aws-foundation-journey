@@ -31,19 +31,23 @@ Once you're able to login, you'll need to [register an MFA device](https://docs.
 
 ## Understanding Your Team's Initial Development Environment
 
-*...highlight that the initial development environment network environments will likely be supplanted over time as on-premises integration and the need to use non-overlapping IP address ranges and other enhancements emerge...*
+### Environment Overview
 
-### What is an AWS Account?
-An AWS account is a logical container and boundary to separate AWS resources based on a number of criteria including our SLDC environment, security requirements, cost reporting, and organizational ownership.
+Review the [Initial Development Environment Solution Overview](1-2-solution.md) to gain an introduction to the overall environment.
 
-### What AWS account does my team have access to?
-When you log into your AWS SSO portal ([add your company's link here]()), you'll be shown a list of AWS accounts you have access to.  Initially, each development team is provided a single development AWS account.
+### Network Overview
 
-If your team has more environment or security specific requirements please work with your cloud foundations team.
+The following diagram provides a more detailed view of the initial network environment that is available to your development AWS account:
+
+![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-network-initial-details.png "Initial Network Details")
+
+When you access your development AWS account via the the AWS Management Console and review the Virtual Private Cloud (VPC) resources, you will see a series of subnets that have been shared with your AWS account.  These subnets and other VPC resources are managed in the central Network AWS account that is managed by the Cloud Administrators.  All development AWS accounts have read only access to these VPC resources.
+
+By design, your team does not have permissions to create and modify VPC resources in your own development AWS account.
 
 ### Where should my team deploy resources?
 
-*...note that for resources requiring a VPC, use the private subnets by default unless unsolicited access from the Internet is required. Note that public subnets in the dev VPC will be decommisioned in the near future...*
+All AWS resources that your team creates and manage are constrained to your development AWS account.  In support of workloads requiring access to VPC resources, your team can deploy those workloads in the shared development VPC.
 
 ## Understanding Your Team's Access Permissions and Responsibilities
 
@@ -130,3 +134,15 @@ If you have production workloads, contact your cloud foundations team to absorb 
 ## Getting Support
 
 *...address how development teams get support to get things done in their development AWS accounts... include: 1) organization-specific support needds; 2) support for AWS services - can the dev teams file tickets?...*
+
+Typically, best practices are:
+
+For organization-specific usage needs, consult these resources in this order:
+* Review the internal documentation.
+* Interact with the internal community forum.
+* File an internal support ticket.
+
+For AWS-specific usage needs:
+* Review external documentation.
+* Interact with public community forums. Being careful to not disclose company confidential and other sensitive information.
+* File a ticket with AWS Support.  See internal guidelines and procedures for doing so.
