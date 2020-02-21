@@ -52,7 +52,9 @@ This policy is not intended to be applied beyond development AWS accounts.  For 
 
 ### User Experience
 
-**Avoid Prematurely Requiring Standard Resource Naming and Tagging:** Although your organization will find value in the introduction of cloud resource naming and tagging standards in support of a variety of needs, these standards are not necessary to impose sufficient constraints on development teams at this early stage in your journey. (It is important that foundation resources adhere to a naming convention so that IAM policies can be defined to inhibit unauthorized modification of those resources).
+**Avoid Prematurely Requiring Standard Resource Naming and Tagging:** Although your organization will find value in the introduction of cloud resource naming and tagging standards in support of a variety of needs, these standards are not necessary to impose sufficient constraints on development teams at this early stage in your journey.
+
+However, it is important that foundation resources adhere to a naming convention so that IAM policies can be defined to inhibit unauthorized modification of those resources).
 
 ### Assumptions
 
