@@ -11,25 +11,26 @@ If you'd like to contribute via feedback, bug fixes, and/or enhanced content, se
 
 ---
 
-Some Amazon Web Services (AWS) customers have expressed the need to have a perscriptive guide to help their organizations better understand how they can get started with the AWS platform when they are ready to move from the informal stage of using personal AWS accounts to the next stage of performing more formal experiments, initial development, and testing work that will likely result in an initial set of application and/or data services being deployed to production. 
+Some Amazon Web Services (AWS) customers have expressed the need to have a perscriptive guide to help their organizations better understand how they can get started with the AWS platform when they are ready to move from the informal stage of using personal AWS accounts to the next stage of doing the formal work to bring a few workloads to production on AWS.
 
-The documents provided in this repository are part of an ongoing project to share AWS foundational architecture best practices which enable the quick deployment of secure environments in which teams can start collaborating on and experimenting with new ideas with the expectation that some of the results will need to move rapidly from development to test and production.
+Your organization may be motivated to use AWS in support of the need to migrate existing on-premises applications, deliver new data services, and/or develop new applications.
 
----
-**Review Note: Current focus is to complete the first guide: "Establish Initial Development Environments"**
+# Purpose of the Guides
 
-As the authors encounter best practices and resources associated with the subjects of the other guides outlined below, they will continue to add notes and links in those remaining guides.
+The guides provided in this repository are part of an ongoing project to share AWS foundational architecture best practices which enable the quick deployment of secure environments in which your technical teams can start collaborating on and experimenting with new ideas with the expectation that some of the results will need to move rapidly from development to test and production.
 
----
+These guides are intended be used by your organization's technology teams that will be responsible for establishing and maintaining your inital AWS environment.
 
-Background
+# Table of Contents
+
+## Background
 
 * [Stages of Cloud Adoption](#stages-of-cloud-adoption)
 * [Cloud Foundation](#initial-cloud-foundation-in-project-stage)
 * [Project Tenets](0-common/1-tenets.md)
 * [Frequently Asked Questions (FAQs)](0-common/2-faq.md)
 
-Guides
+## Guides
 
 1. [Establish Initial Development Environments](#1-establish-initial-development-environments)
 2. [Establish Fast Follow-On Capabilities](#2-establish-fast-follow-on-capabilities)
@@ -54,6 +55,13 @@ In support of your first few formal projects, these guides start with establishi
 Later, after your organization has demonstrated success with the initial few projects, you will likely make larger investments during the foundation stage of your journey to support cloud adoption at scale.
 
 <img src="images/foundation.png" alt="Cloud Foundation" width="700"/>
+
+---
+
+---
+**Review Note: Current focus is to complete the first guide: "Establish Initial Development Environments"**
+
+As the authors encounter best practices and resources associated with the subjects of the other guides outlined below, they will continue to add notes and links in those remaining guides.
 
 ---
 
