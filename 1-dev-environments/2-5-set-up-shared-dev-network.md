@@ -69,7 +69,7 @@ See [Configuring AWS Control Tower Without a VPC](https://docs.aws.amazon.com/co
 In AWS Control Tower, provision the Network AWS account that will initially contain the shared development VPC. Later in your joruney, you'll deploy more network related resources to this AWS account. 
 
 ---
-**Note:** Use the `AWSServiceCatalogEndUserAccess` role**
+**Note: Use the `AWSServiceCatalogEndUserAccess` role**
 
 In the following steps, it's important that you select the correct role when accessing the master AWS account. Failure to do so, will result in you not being able to work with AWS Service Catalog to provision the new AWS account.
 
