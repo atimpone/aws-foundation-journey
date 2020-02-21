@@ -15,25 +15,6 @@ Some Amazon Web Services (AWS) customers have expressed the need to have a persc
 
 Your organization may be motivated to use AWS in support of migrating existing on-premises applications, delivering new data services, and/or developing new applications. Regardless of the motivation, these guides are intended be used by your organization's technology teams that will be responsible for establishing and maintaining your inital AWS environment.
 
----
-
-# Table of Contents
-
-## Background
-
-* [Stages of Cloud Adoption](#stages-of-cloud-adoption)
-* [Cloud Foundation](#initial-cloud-foundation-in-project-stage)
-* [Project Tenets](0-common/1-tenets.md)
-* [Frequently Asked Questions (FAQs)](0-common/2-faq.md)
-
-## Guides
-
-1. [Establish Initial Development Environments](#1-establish-initial-development-environments)
-2. [Establish Fast Follow-On Capabilities](#2-establish-fast-follow-on-capabilities)
-3. [Establish Initial Test and Production Environments](#3-establish-initial-test-and-production-environments)
-
----
-
 # Background
 
 ## Stages of Cloud Adoption
@@ -56,9 +37,12 @@ Later, after your organization has demonstrated success with the initial few pro
 
 <img src="images/foundation.png" alt="Cloud Foundation" width="700"/>
 
----
+# Project Tenets and FAQs
 
-# Guides
+* [Project Tenets](0-common/1-tenets.md)
+* [Frequently Asked Questions (FAQs)](0-common/2-faq.md)
+
+# 1. Establish Initial Development Environments
 
 ---
 **Review Note: Current focus is to complete the first guide: "Establish Initial Development Environments"**
@@ -67,20 +51,18 @@ As the authors encounter best practices and resources associated with the subjec
 
 ---
 
-## 1. Establish Initial Development Environments
-
 By following this guide, your organization can establish an initial secure foundation and development environments in AWS in less than a day.
 
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-initial.png "Initial Development Environment")
 
-### Perform Up-front Tasks
+## Perform Up-front Tasks
 
 1. [Review and Refine Initial Development Environment Requirements](1-dev-environments/1-1-requirements.md)
 2. [Review and Refine Initial Development Environment Solution](1-dev-environments/1-2-solution.md)
 3. [Map People to Foundation Functional Roles](1-dev-environments/1-3-map-people-to-foundation-roles.md)
 4. [Address Pre-Requisites](1-dev-environments/1-4-address-pre-requisites.md)
 
-### Build Out the Environment
+## Build Out the Environment
 
 1. [Create New Master AWS Account](1-dev-environments/2-1-create-master-aws-account.md)
 2. [Set Up Initial Landing Zone Using AWS Control Tower](1-dev-environments/2-2-set-up-landing-zone.md)
@@ -91,15 +73,13 @@ By following this guide, your organization can establish an initial secure found
 7. [Onboard Development Teams](1-dev-environments/2-7-onboard-dev-teams.md)
 8. [Manage and Monitor Your AWS Environment](1-dev-environments/2-8-manage-and-monitor-aws-environment.md)
 
-### Reference
+## Reference
 
 * [Getting Started Guide for Development Teams](1-dev-environments/3-1-getting-started-guide-dev-teams.md)
 * [Cloud Platform System AWS Users](1-dev-environments/3-2-cloud-platform-system-users.md)
 * [Sample IAM Policy for Developmemt Teams](1-dev-environments/3-3-iam-policy-infra-dev-team.md)
 
----
-
-## 2. Establish Fast Follow-On Capabilities
+# 2. Establish Fast Follow-On Capabilities
 
 Depending on your organizations needs, additional capabilities may be required either as part of your initial build out of development environments or shortly thereafter. The following guides address the most common "fast follow-on" capabilities and provide references to current best practices to establish these capabilities.
 
@@ -136,9 +116,8 @@ Foundation Management
 * [Begin Adopting Infrastructure as Code (IaC)](2-fast-follow-on/2-9-infrastructure-as-code.md)
 * [Enable Custom AWS Account Baselines](2-fast-follow-on/2-3-custom-account-baselines.md)
 * Bring Other AWS Accounts Into Your AWS Account Structure
----
 
-## 3. Establish Initial Test and Production Environments
+# 3. Establish Initial Test and Production Environments
 
 The next guide that is under development helps you extend your foundation by introducting a set of capabilities organizations typically require before moving any workload into production.
 
@@ -151,7 +130,7 @@ Initially, they will hold a series of notes and links to existing best practices
 
 ---
 
-### Perform Up-front Tasks
+## Perform Up-front Tasks
 
 * [Review and Refine Initial Test and Production Environment Requirements](3-test-production/1-1-requirements.md)
 * [Review and Refine Initial Test and Production Environment Solution](3-test-production/1-2-solution.md)
@@ -160,7 +139,7 @@ Initially, they will hold a series of notes and links to existing best practices
 * Define Your Test and Production AWS Account Tenancy Model
 * Define Your Initial Promotion and Release Management Process
 
-### Build Out the Environments
+## Build Out the Environments
 
 * Build Test and Production AWS Accounts
 * Establish Test and Product AWS Account Access Controls
@@ -170,12 +149,3 @@ Initially, they will hold a series of notes and links to existing best practices
 * Establish Promotion and Release Management Process
 * Onboard Development Team to Release Pipeline
 * ...
-
----
-
-# Contributing
-
-1. See the issues in this GitHub repository for outstanding enhancements and bugs.
-2. See [CONTRIBUTING.md](./CONTRIBUTING.md) for the contribution process.
-
-
