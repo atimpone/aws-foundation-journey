@@ -13,9 +13,7 @@ If you'd like to contribute via feedback, bug fixes, and/or enhanced content, se
 
 Some Amazon Web Services (AWS) customers have expressed the need to have a perscriptive guide to help their organizations better understand how they can get started with the AWS platform when they are ready to move from the informal stage of using personal AWS accounts to the next stage of doing the formal work to bring a few workloads to production on AWS.
 
-Your organization may be motivated to use AWS in support of the need to migrate existing on-premises applications, deliver new data services, and/or develop new applications. Regardless of the motivation, these guides are intended be used by your organization's technology teams that will be responsible for establishing and maintaining your inital AWS environment.
-
-The guides provided in this repository are part of an ongoing project to share AWS foundational architecture best practices which enable the quick deployment of secure environments in which your technical teams can start collaborating on and experimenting with new ideas with the expectation that some of the results will need to move rapidly from development to test and production.
+Your organization may be motivated to use AWS in support of migrating existing on-premises applications, delivering new data services, and/or developing new applications. Regardless of the motivation, these guides are intended be used by your organization's technology teams that will be responsible for establishing and maintaining your inital AWS environment.
 
 ---
 
