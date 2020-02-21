@@ -13,7 +13,13 @@ If you'd like to contribute via feedback, bug fixes, and/or enhanced content, se
 
 Some Amazon Web Services (AWS) customers have expressed the need to have a perscriptive guide to help their organizations better understand how they can get started with the AWS platform when they are ready to move from the informal stage of using personal AWS accounts to the next stage of doing the formal work to bring a few workloads to production on AWS.
 
-Your organization may be motivated to use AWS in support of migrating existing on-premises applications, delivering new data services, and/or developing new applications. Regardless of the motivation, these guides are intended be used by your organization's technology teams that will be responsible for establishing and maintaining your inital AWS environment.
+Your organization may be motivated to use AWS in support of migrating existing on-premises applications, delivering new data services, and/or developing new applications. 
+
+# Intended Audience
+
+Regardless of your organization's motivation for adopting AWS, these guides are intended be used by your organization's technology teams that will be responsible for establishing and maintaining your inital AWS environment.
+
+Although the guides are intended to be self-service, depending on your organization's experience with cloud technologies and AWS, you may benefit from the assistance of your AWS sales team and AWS partners as you establish your initial foundation.
 
 # Background
 
@@ -21,7 +27,7 @@ Your organization may be motivated to use AWS in support of migrating existing o
 
 Based on years of experience in helping customers obtain business benefits of cloud adoption, AWS has identified the following mental model to represent the [stages of cloud adoption](https://aws.amazon.com/blogs/enterprise-strategy/the-journey-toward-cloud-first-the-stages-of-adoption/).  
 
-<img src="images/cloud-adoption-framework.png" alt="Cloud Adoption Framework" width="400"/>
+<img src="images/cloud-adoption-framework.png" alt="Cloud Adoption Framework" width="500"/>
 
 Organizations leveraging these guides are typically in the “Project” stage of adoption during which they are starting with a relatively small set of people and a few projects to begin to understand how they can leverage the cloud to meet a business need.
 
@@ -35,7 +41,7 @@ In support of your first few formal projects, these guides start with establishi
 
 Later, after your organization has demonstrated success with the initial few projects, you will likely make larger investments during the foundation stage of your journey to support cloud adoption at scale.
 
-<img src="images/foundation.png" alt="Cloud Foundation" width="700"/>
+<img src="images/foundation.png" alt="Cloud Foundation" width="900"/>
 
 # Guides
 
