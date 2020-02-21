@@ -36,4 +36,4 @@ Over time, the detailed guidance should continually reduce in scope as more feat
 
 # 8. Keep apace with latest best practices and AWS capabilities.
 
-As more capabilities are built into the AWS platform and additional best practices are development, ensure that this guidance is kept up-to-date.
+As more capabilities are built into the AWS platform and additional best practices are developed, ensure that this guidance is kept up-to-date.
