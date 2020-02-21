@@ -204,7 +204,7 @@ Since the AWS Control Tower services uses the AWS CloudFormation StackSet featur
 
 Since a centrally managed VPC is shared with development AWS accounts in a read only manner and it's a best practice to delegate ownership and management of VPC resources to your central foundation team, typically, development teams don't need to have write access to VPC resources.
 
-Note that both traditional EC2 VM related resources and VPC networking resource both live under the `ec2:` namespace. In their development AWS accounts, development teams are allowed to create the tradition EC2 VM related resources.
+Note that both EC2 VM related resources and VPC related networking resources share the same IAM `ec2:` namespace. In their development AWS accounts, development teams are allowed to create EC2 VM related resources.
 
 ```
         {
