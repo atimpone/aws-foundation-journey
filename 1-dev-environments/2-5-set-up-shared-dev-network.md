@@ -49,7 +49,7 @@ Since you have the ability to move AWS accounts between OUs and modify OUs, you 
 6. Within the AWS Control Tower dashboard select `Add organizational units`.  
 7. Follow the prompts to create a new OU named **`infrastructure`**.
 
-In the next step when you create the new Network AWS account, you'll specify this new OU.
+In the a subsequent step when you create the new Network AWS account, you'll specify this new OU.
 
 ### Create the `development` OU
 
