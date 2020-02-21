@@ -151,8 +151,11 @@ Initially, they will hold a series of notes and links to existing best practices
 ### Build Out the Environments
 
 * Build Test and Production AWS Accounts
+* Establish Test and Product AWS Account Access Controls
 * Onboard Foundation Team
-* Establish Release Pipeline
+* Set Up Test and Production Networks
+* Establish Secure Internet Integration
+* Establish Release Pipeline (not necesarily a CD pipeline at this stage. Likely just a documented process/workflow.)
 * Onboard Development Team to Release Pipeline
 * ...
 
