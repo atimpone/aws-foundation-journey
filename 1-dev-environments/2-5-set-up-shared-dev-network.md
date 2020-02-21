@@ -176,7 +176,7 @@ The AWS CloudFormation template that you'll use in the next step to provision th
 
 ### Determine VPC CIDR Block
 
-If your Network team has supplied a relatively large non-overlapping CIDR block, for example a `/16` - `/20`, you should consider using only a subset of that block for your shared development VPC.  Otherwise, if you've been allocated a `/20` - `/22`, then you should use the entire block for the VPC.
+If your Network team has supplied a relatively large non-overlapping CIDR block, for example a `/16` - `/20`, you should consider using only a subset of that block for your shared development VPC.  Otherwise, if you've been allocated a `/21` - `/22`, then you should use the entire block for the VPC.
 
 If you need to break down a larger block:
 
