@@ -116,9 +116,7 @@ Explicitly disallow creation of IAM users since development team users do not us
 ```
         {
             "Effect": "Allow",
-            "Action": [
-                "account:ListRegions"
-            ],
+            "Action": "account:ListRegions",
             "Resource": "*"
         },
 ```
@@ -135,7 +133,6 @@ An immediate next step is to introduce AWS IAM Permissions Boundaries to ensure 
 ---
 
 ```
-        {
             "Sid": "AllowWriteAccessAppRoles",
             "Effect": "Allow",
             "Action": [
@@ -143,7 +140,7 @@ An immediate next step is to introduce AWS IAM Permissions Boundaries to ensure 
                 "iam:ListRoles",
                 "iam:UpdateRole"
             ],
-            "Resource": "arn:aws:iam::*:role/*"
+            "Resource": "*"
         },
 ```
 

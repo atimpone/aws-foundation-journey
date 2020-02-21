@@ -35,9 +35,7 @@
         },
         {
             "Effect": "Allow",
-            "Action": [
-                "account:ListRegions"
-            ],
+            "Action": "account:ListRegions",
             "Resource": "*"
         },
         {
@@ -48,7 +46,7 @@
                 "iam:ListRoles",
                 "iam:UpdateRole"
             ],
-            "Resource": "arn:aws:iam::*:role/*"
+            "Resource": "*"
         },
         {
             "Sid": "DenyWriteAccessFoundationRoles",
