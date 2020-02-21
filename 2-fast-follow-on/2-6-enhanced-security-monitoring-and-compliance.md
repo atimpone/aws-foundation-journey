@@ -7,8 +7,6 @@ Support for [custom AWS account baselines](./2-3-custom-account-baselines.md) ca
 ## Examples
 
 * An application requires a named IAM user to access the AWS platform with an API key and secret, configure additional alarms and logs when these credentials are used.
-* Restricting the AWS regions in which your teams can deploy resources.
-* Restricting the set of AWS services that are accessible to development teams.
 * Expunge default VPCs from all AWS accounts and AWS regions in those accounts.
 * Restrict access to AWS services to only the enterprise’s IP addresses.
 
