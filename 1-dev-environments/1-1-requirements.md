@@ -31,20 +31,22 @@ The following requirements are organized based on a series of perspectives defin
   * An isolated environment for each team to carry out initial experiments and formal development work.
   * Access from corporate desktops to AWS services and AWS-hosted workloads.
   * Access to a broad set of AWS services to enable experimentation and development.
-      * Including broad access to create and manage application-oriented AWS IAM resources in support of experimenting and developing application and data services.
+    * Including broad access to create and manage application-oriented AWS IAM resources in support of experimenting and developing application and data services.
   * Access to an AWS network environment in support of those AWS services for which networking is either required or desirable.
   * Access to Internet-hosted code and package repositories so that 3rd party packages and code can be downloaded to VMs hosted in AWS.
   * Use of corporate source code management services to manage code used in support of experiments and development.
   * Insight into the costs of AWS services consumed in their development environments so that teams can make informed decisions.
+  * Sufficient documentation to enable developers to get started in the new AWS environment.
 * The initial cloud platform team needs an isolated environment in which they can develop and test foundation capabilities.
 
 ### Security
 * Sufficient isolation between cloud development environments and existing corporate resources.
 * Sufficient auditing of cloud access and activity.
 * Use of per user identities to separate access and ensure sufficient auditing.
-* Use of Multi-Factor Authentication for all human user access to the AWS platform.
+* Use of Multi-Factor Authentication (MFA) for all human user access to the AWS platform.
 
 ### Operations
+* Sufficient access controls and permissions to protect the cloud foundation resources from inadvertent and intentional modification by unauthorized users.
 * Clearly defined roles and responsibilities for managing the use of AWS.
 * A sufficient set of runbooks and playbooks to support common operational needs and scenarios.
 
