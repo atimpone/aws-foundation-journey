@@ -39,14 +39,7 @@ Later, after your organization has demonstrated success with the initial few pro
 
 # 1. Establish Initial Development Environments
 
----
-**Review Note: Current focus is to complete the first guide: "Establish Initial Development Environments"**
-
-As the authors encounter best practices and resources associated with the subjects of the other guides outlined below, they will continue to add notes and links in those remaining guides.
-
----
-
-By following this guide, your organization can establish an initial secure foundation and development environments in AWS in less than a day.
+By following this guide, your organization can quickly establish an initial secure foundation and development environments in AWS.
 
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-initial.png "Initial Development Environment")
 
@@ -114,7 +107,7 @@ Foundation Management
 
 # 3. Establish Initial Test and Production Environments
 
-The next guide that is under development helps you extend your foundation by introducting a set of capabilities organizations typically require before moving any workload into production.
+Once you've establihed your initial foundation and delivered the initial set of development environments to teams, your next step is to extend your foundation by introducting a set of capabilities that organizations typically require before moving workloads into production.
 
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/test-prod-single-region.png "Initial Test and Production Environments in Single AWS Region")
 
