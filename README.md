@@ -146,7 +146,7 @@ Initially, they will hold a series of notes and links to existing best practices
 * Identify Data Classification and Compliance Requirements
 * Establish Your Initial Cloud Operating Model
 * Define Your Test and Production AWS Account Tenancy Model
-* Establish Your Initial Release Management Process
+* Define Your Initial Promotion and Release Management Process
 
 ### Build Out the Environments
 
@@ -155,7 +155,7 @@ Initially, they will hold a series of notes and links to existing best practices
 * Onboard Foundation Team
 * Set Up Test and Production Networks
 * Establish Secure Internet Integration
-* Establish Release Pipeline (not necesarily a CD pipeline at this stage. Likely just a documented process/workflow.)
+* Establish Promotion and Release Management Process
 * Onboard Development Team to Release Pipeline
 * ...
 
