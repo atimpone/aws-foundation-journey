@@ -7,7 +7,7 @@ Content in this repository is in a preliminary draft form and should not be used
 
 The documentation is currently undergoing rapid changes as it is reviewed and tested.  
 
-If you'd like to contribute via feedback, bug fixes, and/or enhanced content, see [CONTRIBUTING](CONTRIBUTING.md)
+If you'd like to contribute via feedback, bug fixes, and/or enhanced content, see [CONTRIBUTING](CONTRIBUTING.md).
 
 ---
 
