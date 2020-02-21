@@ -41,8 +41,6 @@ Since you have the ability to move AWS accounts between OUs and modify OUs, you 
 ---
 ### Create the `infrastructure` OU
 
-Moving forward, your organization will likely want to apply particular policies or guardrails to all AWS development accounts within your enterprise.  To enable you to easily target such policies across all development AWS accounts, it's recommended that you create a new Organizational Unit (OU) to represent development AWS accounts.
-
 1. As a Cloud Administrator, use your personal user to log into AWS SSO.
 2. Select the AWS **master** account.
 3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
@@ -54,8 +52,6 @@ Moving forward, your organization will likely want to apply particular policies 
 In the next step when you create the new Network AWS account, you'll specify this new OU.
 
 ### Create the `development` OU
-
-Moving forward, your organization will likely want to apply particular policies or guardrails to all AWS development accounts within your enterprise.  To enable you to easily target such policies across all development AWS accounts, it's recommended that you create a new Organizational Unit (OU) to represent development AWS accounts.
 
 1. Within the AWS Control Tower dashboard select `Add organizational units`.  
 2. Follow the prompts to create a new OU named **`development`**.
