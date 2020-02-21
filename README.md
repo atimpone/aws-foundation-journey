@@ -139,14 +139,22 @@ Initially, they will hold a series of notes and links to existing best practices
 
 ---
 
-### Review and Refine Requirements and Solution Design
+### Perform Up-front Tasks
 
 * [Review and Refine Initial Test and Production Environment Requirements](3-test-production/1-1-requirements.md)
 * [Review and Refine Initial Test and Production Environment Solution](3-test-production/1-2-solution.md)
+* Identify Data Classification and Compliance Requirements
+* Establish Your Initial Cloud Operating Model
+* Define Your Test and Production AWS Account Tenancy Model
+* Establish Your Initial Release Management Process
 
 ### Build Out the Environments
 
-* TBD
+* Build Test and Production AWS Accounts
+* Onboard Foundation Team
+* Establish Release Pipeline
+* Onboard Development Team to Release Pipeline
+* ...
 
 ## Contributing
 
