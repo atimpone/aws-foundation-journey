@@ -37,11 +37,6 @@ Later, after your organization has demonstrated success with the initial few pro
 
 <img src="images/foundation.png" alt="Cloud Foundation" width="700"/>
 
-# Project Tenets and FAQs
-
-* [Project Tenets](0-common/1-tenets.md)
-* [Frequently Asked Questions (FAQs)](0-common/2-faq.md)
-
 # 1. Establish Initial Development Environments
 
 ---
@@ -149,3 +144,8 @@ Initially, they will hold a series of notes and links to existing best practices
 * Establish Promotion and Release Management Process
 * Onboard Development Team to Release Pipeline
 * ...
+
+# Project Tenets and FAQs
+
+* [Project Tenets](0-common/1-tenets.md)
+* [Frequently Asked Questions (FAQs)](0-common/2-faq.md)
