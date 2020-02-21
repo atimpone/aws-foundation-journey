@@ -112,6 +112,8 @@ Security and Compliance
 * [Enable Secure Terminal Access to OS Instances](2-fast-follow-on/2-11-secure-terminal-access-to-os.md)
 * [Enhance Access Controls](2-fast-follow-on/2-7-enhanced-access-controls.md)
   * Constrain Set of AWS Services in Development AWS Accounts
+  * Constrain Available AWS Regions
+* Restricting the set of AWS services that are accessible to development teams.
 * [Enhance Security Monitoring and Compliance](2-fast-follow-on/2-6-enhanced-security-monitoring-and-compliance.md)
 * [Integrate Security Information and Event Management (SIEM) Solution](2-fast-follow-on/2-5-siem-integration.md)
 
