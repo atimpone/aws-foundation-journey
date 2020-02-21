@@ -181,7 +181,7 @@ If your Network team has supplied a relatively large non-overlapping CIDR block,
 If you need to break down a larger block:
 
 1. Acess the [Visual Subnet Calculator](http://www.davidc.net/sites/default/subnets/subnets.html). 
-2. Enter your network address without the mask portion `/nn` the `Network Address` field.
+2. Enter your network address without the mask portion `/nn` in the `Network Address` field.
 3. Enter the size of allocated block in the `Mask bits` field.
 4. Click `Update`.  
 5. In the table at the bottom, click the `Divide` link to break down the block into smaller blocks.  
