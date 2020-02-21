@@ -145,7 +145,7 @@ Now you've enabled all users who are part of the Cloud Administrator group in AW
 
 ## 6. Determine IP Address CIDR Blocks
 
-If you're just experimenting and don't care which CIDR block is used to build the VPC, you can move to the next step, [7. Provision the VPC](#7-provision-the-vpc).
+If you're just experimenting and don't care which CIDR block is used to build the VPC, you can move to the next step, [7. Provision Development VPC](#7-provision-development-vpc).
 
 Otherwise, if you have a formally assigned CIDR block to use, in this step you'll:
 
