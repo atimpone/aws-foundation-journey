@@ -51,10 +51,11 @@ Add a payment method and contact information for the billing method.  You’ll g
 
 ### Select a Support Plan
 
-On the Select a Support Plan page, choose one of the available support plans.  Since your organization is going to be using AWS for formal development and eventually production purposes, we recommend that you start by selecting “Developer” support. 
+On the Select a Support Plan page, choose one of the available support plans.  Since your organization is going to be using AWS for formal development and eventually production purposes, we recommend that you start by selecting at least “Developer” support. 
 
-Before you transition any applications or data services to production, we strongly recommend upgrading to Business support.  
-Once you are preparing to host business critical workloads and data in the cloud, you should consider upgrading to Enterprise support levels. 
+Before you transition any applications or data services to production, it's strongly recommended that you upgrade to "Business" support.  
+
+Once you are preparing to host business critical workloads and data in the cloud, you should consider upgrading to "Enterprise" support levels. 
 
 See [AWS Support Plans](https://aws.amazon.com/premiumsupport/plans/) for a description of features and benefits of each level of support.
 
