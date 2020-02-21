@@ -21,6 +21,8 @@ The guides provided in this repository are part of an ongoing project to share A
 
 These guides are intended be used by your organization's technology teams that will be responsible for establishing and maintaining your inital AWS environment.
 
+---
+
 # Table of Contents
 
 ## Background
@@ -35,6 +37,10 @@ These guides are intended be used by your organization's technology teams that w
 1. [Establish Initial Development Environments](#1-establish-initial-development-environments)
 2. [Establish Fast Follow-On Capabilities](#2-establish-fast-follow-on-capabilities)
 3. [Establish Initial Test and Production Environments](#3-establish-initial-test-and-production-environments)
+
+---
+
+# Background
 
 ## Stages of Cloud Adoption
 
@@ -57,6 +63,8 @@ Later, after your organization has demonstrated success with the initial few pro
 <img src="images/foundation.png" alt="Cloud Foundation" width="700"/>
 
 ---
+
+# Guides
 
 ---
 **Review Note: Current focus is to complete the first guide: "Establish Initial Development Environments"**
@@ -169,7 +177,9 @@ Initially, they will hold a series of notes and links to existing best practices
 * Onboard Development Team to Release Pipeline
 * ...
 
-## Contributing
+---
+
+# Contributing
 
 1. See the issues in this GitHub repository for outstanding enhancements and bugs.
 2. See [CONTRIBUTING.md](./CONTRIBUTING.md) for the contribution process.
