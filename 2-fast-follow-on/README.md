@@ -1,4 +1,4 @@
-# 2. Establish Fast Follow-On Capabilities
+# Establish Fast Follow-On Capabilities
 
 Depending on your organizations needs, additional capabilities may be required either as part of your initial build out of development environments or shortly thereafter. The following guides address the most common "fast follow-on" capabilities and provide references to current best practices to establish these capabilities.
 
@@ -38,4 +38,4 @@ Currently, they contain a series of notes and links to existing best practices a
 
 ## Next Steps
 
-[3. Establish Initial Test and Production Environments](../3-test-production/README.md)
+[Establish Initial Test and Production Environments](../3-test-production/README.md)
