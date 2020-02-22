@@ -7,13 +7,17 @@ In this step the few people who are leading the effort to establish the initial 
 
 ## 1. Create Email Distribution Lists for New AWS Accounts
 
-Prepare a set of email distribution lists to represent the root user of each of the new AWS accounts that will be created. In this step you'll be referring to only the email distribution list for the master AWS account. In later steps, when you create other AWS accounts, you'll be referring to the email distribution lists for those other AWS accounts.
+Prepare a set of email distribution lists (DLs) to represent the root user of each of the new AWS accounts that will be created. In later steps, when you create AWS accounts, you'll be referring to these email distribution lists.
 
-The following table includes the minimum set of distribution lists to get started. Each AWS account must have a globally unique email address. 
+Instead of using a person"s email address, a distribution list enables you to enable at least several trusted people in your organization, for example, your Cloud Administators, with access to messages associated with the root user account.
+
+An alternative to using DLs is to use shared mailboxes through which multiple people in your organization have access to the same email account.
+
+The following table includes the minimum set of email addresses to get started. Each AWS account must have a globally unique email address. 
 
 If your organization already has a naming standard for mail addresses associated with services, you should use that standard format and include references to at least "aws" and and an abbreviation of the unique role or purpose of each account.
 
-|AWS Account	|Example Distribution List|Example with "+" Style Email Address|
+|AWS Account	|Example Email Address|Example with "+" Style Email Address|
 |---|---|---|
 |**Foundation AWS Accounts**||
 |Master|aws-account-master@acme.com|aws-account+master@acme.com|
