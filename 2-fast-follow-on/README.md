@@ -17,23 +17,23 @@ Currently, they contain a series of notes and links to existing best practices a
 
 ## Security and Compliance
 
-* [Establish Federated Access to Your AWS Environment](2-fast-follow-on/2-1-federated-access-to-aws.md)
-* [Enable Secure Terminal Access to OS Instances](2-fast-follow-on/2-11-secure-terminal-access-to-os.md)
-* [Enhance Access Controls](2-fast-follow-on/2-7-enhanced-access-controls.md)
+* [Establish Federated Access to Your AWS Environment](2-1-federated-access-to-aws.md)
+* [Enable Secure Terminal Access to OS Instances](2-11-secure-terminal-access-to-os.md)
+* [Enhance Access Controls](2-7-enhanced-access-controls.md)
   * Constrain Set of AWS Services in Development AWS Accounts
   * Constrain Available AWS Regions
-* [Enhance Security Monitoring and Compliance](2-fast-follow-on/2-6-enhanced-security-monitoring-and-compliance.md)
-* [Integrate Security Information and Event Management (SIEM) Solution](2-fast-follow-on/2-5-siem-integration.md)
+* [Enhance Security Monitoring and Compliance](2-6-enhanced-security-monitoring-and-compliance.md)
+* [Integrate Security Information and Event Management (SIEM) Solution](2-5-siem-integration.md)
 
 ## Network Integration
 
-* [Design and Set Up On-Premises Network Integration](2-fast-follow-on/2-2-on-premises-network-integration.md)
-* [Establish Secure Internet Integration](2-fast-follow-on/2-4-secure-internet-integration.md)
+* [Design and Set Up On-Premises Network Integration](2-2-on-premises-network-integration.md)
+* [Establish Secure Internet Integration](2-4-secure-internet-integration.md)
 
 ## Foundation Management
 
-* [Begin Adopting Infrastructure as Code (IaC)](2-fast-follow-on/2-9-infrastructure-as-code.md)
-* [Enable Custom AWS Account Baselines](2-fast-follow-on/2-3-custom-account-baselines.md)
+* [Begin Adopting Infrastructure as Code (IaC)](2-9-infrastructure-as-code.md)
+* [Enable Custom AWS Account Baselines](2-3-custom-account-baselines.md)
 * Bring Other AWS Accounts Into Your AWS Account Structure
 
 ## Next Steps
