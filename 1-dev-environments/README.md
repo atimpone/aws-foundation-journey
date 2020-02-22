@@ -6,8 +6,8 @@ By following this guide, your organization can quickly establish an initial secu
 
 ## Perform Up-front Tasks
 
-1. [Review Initial Foundation and Development Environment Requirements](1-1-requirements.md)
-2. [Review Development Environment Solution](1-2-solution.md)
+1. [Review Requirements](1-1-requirements.md)
+2. [Review Solution](1-2-solution.md)
 3. [Map People to Foundation Functional Roles](1-3-map-people-to-foundation-roles.md)
 4. [Address Pre-Requisites](1-4-address-pre-requisites.md)
 
