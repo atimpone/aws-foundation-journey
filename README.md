@@ -15,7 +15,7 @@ At this early stage of cloud adootion, your organization may be motivated to use
 
 # Intended Audience
 
-Regardless of your organization's motivation for adopting AWS, these guides are intended be used by your organization's technology teams that will be responsible for establishing and maintaining your inital AWS environment.
+Regardless of your organization's motivation for adopting AWS, these guides are intended be used by your organization's technology team that will be responsible for establishing and maintaining your inital AWS environment.
 
 Although these guides are intended to help organizations establish an initial formal foundation on their own, you may benefit from working with your AWS sales team and AWS partners to help you navigate through this early stage of adoption.
 
