@@ -174,9 +174,7 @@ Since IAM resources named with `AWS` and `aws` are not inherently modifiable by 
             "Action": [
                 "iam:CreatePolicy",
                 "iam:DeletePolicy",
-                "iam:DeletePolicyVersion",
-                "iam:UpdatePolicy",
-                "iam:UpdatePolicyVersion"
+                "iam:DeletePolicyVersion"
             ],
             "Resource": "arn:aws:iam::*:policy/acme-infra-*"
         },
