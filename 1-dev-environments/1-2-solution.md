@@ -2,7 +2,7 @@
 
 The following diagram represents a typical team development environment as a distinct AWS account supported by an initial set of foundation capabilities managed via a set of shared AWS accounts to meet the typical requirements outlined above. 
 
-Since your specific requirements may include some of the optional [fast follow-on capabilities](../README.md#2-establish-fast-follow-on-capabilities), aspects of your initial solution may be different than shown in this diagram.
+Since your specific requirements may include some of the optional [fast follow-on capabilities](../2-fast-follow-on/README.md), aspects of your initial solution may be different than shown in this diagram.
 
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-initial.png "Initial Development Environment")
 
