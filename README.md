@@ -45,7 +45,7 @@ Later, after your organization has demonstrated success with the initial few pro
 
 |     |     |     |
 |:---:|:---:|:---:|
-|<img src="images/number-1.png" alt="1. Establish Initial Development Environments"/><br>**[Establish Initial Foundation and Development Environments](1-dev-environments/README.md)**|<img src="images/number-2.png" alt="2. Establish Fast Follow-On Capabilities"/><br>**[Establish Fast Follow-On Capabilities](2-fast-follow-on/README.md)**|<img src="images/number-3.png" alt="3. Establish Initial Test and Production Environments"/><br>**[Expand Foundation and Establish Test and Production Environments](3-test-production/README.md)**|
+|<a href="1-dev-environments/README.md"><img src="images/number-1.png"/></a><br>**[Establish Initial Foundation and Development Environments](1-dev-environments/README.md)**|<a href="2-fast-follow-on/README.md"><img src="images/number-2.png"/></a><br>**[Establish Fast Follow-On Capabilities](2-fast-follow-on/README.md)**|<a href="3-test-production/README.md"><img src="images/number-3.png"/></a><br>**[Expand Foundation and Establish Test and Production Environments](3-test-production/README.md)**|
 
 # Project Tenets and FAQs
 
