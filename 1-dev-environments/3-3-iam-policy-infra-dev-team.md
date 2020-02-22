@@ -121,7 +121,7 @@ Explicitly disallow creation of IAM users since development team users do not us
         },
 ```
 
-### Allow Creation of IAM Roles
+### Allow Creation of IAM Roles Subject to Use of Permissions Boundary
 
 Allow development team members to create, list, and update IAM roles so that they can experiment, develop, and perform early testing of IAM roles that are required to support their workloads.
 
