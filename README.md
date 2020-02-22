@@ -5,9 +5,7 @@
 
 Content in this repository is in a preliminary draft form and should not be used for formal build outs of AWS environments unless an AWS specialist is working with you.  
 
-The documentation is currently undergoing rapid changes as it is reviewed and tested.  
-
-If you'd like to contribute via feedback, bug fixes, and/or enhancements, see [CONTRIBUTING](CONTRIBUTING.md).
+The documentation is currently undergoing rapid changes as it is reviewed and tested. If you'd like to contribute via feedback, bug fixes, and/or enhancements, see [CONTRIBUTING](CONTRIBUTING.md).
 
 ---
 
