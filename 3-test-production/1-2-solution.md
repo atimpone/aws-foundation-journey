@@ -18,10 +18,6 @@ Similarly, AWS best practices recommend that one or more separate AWS accounts a
 
 If your test and production workloads need to integrate with on-premises resources and services, the AWS Transit Gateway configuration can be extended to enable routing between those environments.
 
-## Shared Development VPCs
-
-An optional means of simplifying development environments is to consolidate management of the underlying VPCs into a common shared VPC hosted in the Network AWS account. Each development team will be able to use the shared development VPC, but won’t be able to see and manage other team’s resources.
-
 ## Cloud Hosted Internet Ingress and Egress Security Services
 
 If your organization has strict requirements for securing Internet access, then hosting your enterprise standard security services in a dedicated set of VPCs managed within the Network AWS account is a common pattern.  This cloud hosted approach to securing Internet integration is more performant than depending on routing traffic back on-premises.
