@@ -6,7 +6,7 @@
 
 ## Review the Work in Progress and Backlog
 
-See the project [Kanban board](https://github.com/ckamps/aws-foundation-journey/projects/1?add_cards_query=is%3Aopen) for the set of already files issues and work in progress.
+See the project [Kanban board](https://github.com/ckamps/aws-foundation-journey/projects/1?fullscreen=true) for the set of already files issues and work in progress.
 
 ## Providing Feedback
 
