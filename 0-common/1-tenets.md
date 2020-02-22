@@ -2,9 +2,13 @@
 
 The following tenets or principles help the team make decisions about this collection of guides.
 
-# 1. Customer self-service.
+# 1. Customer oriented with a goal of self-service.
+
+The primary audience of these guides are organizations adopting AWS.
 
 Although it's often helpful for customers to have AWS experienced people working with them in this early stage of adoption, our goal is to enable customers to be able to follow these guides on their own.
+
+AWS and AWS partners should also benefit from these guides as they assist customers in this early stage of the cloud adoption journey.
 
 # 2. Work in the open.
 
