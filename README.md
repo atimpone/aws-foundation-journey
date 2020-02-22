@@ -11,15 +11,15 @@ If you'd like to contribute via feedback, bug fixes, and/or enhanced content, se
 
 ---
 
-Some Amazon Web Services (AWS) customers have expressed the need to have a perscriptive guide to help their organizations better understand how they can get started with the AWS platform when they are ready to move from the informal stage of using personal AWS accounts to the next stage of doing the formal work to bring a few workloads to production on AWS.
+Some Amazon Web Services (AWS) customers have expressed the need to have a perscriptive guide to help their organizations better understand how they can get started with the AWS platform when they are ready to move from the informal stage of using personal AWS accounts to the next stage of formally bringing a few workloads to production on AWS.
 
-Your organization may be motivated to use AWS in support of migrating existing on-premises applications, delivering new data services, and/or developing new applications. 
+At this early stage of cloud adootion, your organization may be motivated to use AWS in support of migrating existing on-premises applications, delivering new data services, and/or developing new applications. 
 
 # Intended Audience
 
 Regardless of your organization's motivation for adopting AWS, these guides are intended be used by your organization's technology teams that will be responsible for establishing and maintaining your inital AWS environment.
 
-Although the guides are intended to be self-service, depending on your organization's experience with cloud technologies and AWS, you may benefit from the assistance of your AWS sales team and AWS partners as you establish your initial foundation.
+Although these guides are intended to help organizations establish an initial formal foundation on their own, you may benefit from working with your AWS sales team and AWS partners to help you navigate through this early stage of adoption.
 
 # Background
 
