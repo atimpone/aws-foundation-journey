@@ -135,4 +135,4 @@ Take a few minutes and create an initial basic budget by following this guide [C
 
 ## Next Steps
 
-Review the other guides including Establishing Fast Follow-on Capabilities and Establishing Initial Test and Production Environments in the [main documentation](../README.md)
+[Review Fast Follow-on capabilities](../2-fast-follow-on/README.md)
