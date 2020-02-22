@@ -24,7 +24,7 @@ In the near future, the sample policy will be updated with the requirement for a
 
 ## Intent of the Policy
 
-The overall intent of the policy is to enable development teams to have broad freedom to innovate, experiment, develop, and perform early testing in their team-based development AWS accounts yet be contrained so that development team members are unable to adversely impact the overall security posture and the stability of the underlying foundation of the development team AWS accounts.
+The overall intent of the policy is to enable your technologists to have broad freedom to innovate, experiment, develop, and perform early testing in their team development AWS accounts while being prevented from adversely impacting the overall security and the stability of the underlying foundation of their development AWS accounts.
 
 This policy is not intended to be applied beyond development AWS accounts.  For example, it's a best practice for organizations to apply strict policies for the creation and management of cloud resources in formal test and production environments and the associated AWS accounts.
 
