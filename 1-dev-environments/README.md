@@ -23,7 +23,7 @@ By following this guide, your organization can quickly establish an initial secu
 
 ## Reference
 
-* [Getting Started Guide for Foundation Team Members](3-1-getting-started-foundation-team-members.md)
+* [Getting Started Guide for Foundation Team Members](3-1-getting-started-guide-foundation-team-members.md)
 * [Getting Started Guide for Development Team Members](3-2-getting-started-guide-dev-team-members.md)
 * [Cloud Platform System AWS Users](3-3-cloud-platform-system-users.md)
 * [Sample IAM Policy for Developmemt Teams](3-4-iam-policy-infra-dev-team.md)
