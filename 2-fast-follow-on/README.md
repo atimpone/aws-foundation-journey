@@ -13,7 +13,7 @@ Currently, they contain a series of notes and links to existing best practices a
 
 ## Cost Management and Billing
 
-* [Move to Invoice Billing](2-fast-follow-on/2-8-invoice-billing.md)
+* [Move to Invoice Billing](2-8-invoice-billing.md)
 
 ## Security and Compliance
 
