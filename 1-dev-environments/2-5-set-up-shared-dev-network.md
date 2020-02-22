@@ -36,6 +36,8 @@ Using AWS Control Tower, create several Organizational Units (OUs) that will act
 ---
 **Note: Your OU design will evolve** 
 
+Contrary to what's implied by the name "OU", AWS Organizations OUs are not meant to be used to reflect your enterprise's organizational structure. Instead, they are intended to provide a means to group AWS accounts witn similar security and operational requirements.
+
 Since you have the ability to move AWS accounts between OUs and modify OUs, you don't need to perform a complete OU design at this early stage. As you progress on your journey, you will evolve your OU design to suit your emerging needs.  If you'd like to learn more about OUs, see [AWS Organizations in Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/organizations.html).
 
 ---
