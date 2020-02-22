@@ -4,9 +4,13 @@
 * [Fixing Bugs and Making Enhancements](#fixing-bugs-and-making-enhancements)
 * [Working with Content](#working-with-content)
 
+## Review the Work in Progress and Backlog
+
+See the project [Kanban board](https://github.com/ckamps/aws-foundation-journey/projects/1?add_cards_query=is%3Aopen) for the set of already files issues and work in progress.
+
 ## Providing Feedback
 
-File issues in the GitHub repository when you either encounter bugs in the documentation or have suggestions for enhancements.  The maintainers will review issues periodically, tag them as either bug reports or enhancements, and provide comments.
+Either comment on existing issues or file new issues in the GitHub repository when you either encounter bugs in the documentation or have suggestions for enhancements.  The maintainers will review issues periodically, tag them as either bug reports or enhancements, and provide comments.
 
 ## Fixing Bugs and Making Enhancements
 
