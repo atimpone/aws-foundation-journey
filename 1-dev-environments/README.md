@@ -1,4 +1,4 @@
-# 1. Establish Initial Foundation and Development Environments
+# Establish Initial Foundation and Development Environments
 
 By following this guide, your organization can quickly establish an initial secure foundation and development environments in AWS similar to the following architecture.
 
@@ -30,4 +30,4 @@ By following this guide, your organization can quickly establish an initial secu
 
 ## Next Step
 
-[2. Establish Fast Follow-On Capabilities](../2-fast-follow-on/README.md)
+[Establish Fast Follow-On Capabilities](../2-fast-follow-on/README.md)
