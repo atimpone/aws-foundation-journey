@@ -11,13 +11,13 @@ The documentation is currently undergoing rapid changes as it is reviewed and te
 
 Some Amazon Web Services (AWS) customers have expressed the need to have a perscriptive guide to help their organizations better understand how they can get started with the AWS platform when they are ready to move from the informal stage of using personal AWS accounts to the next stage of formally bringing a few workloads to production on AWS.
 
-At this early stage of cloud adoption, your organization may be motivated to use AWS in support of migrating existing on-premises applications, delivering new data services, and/or developing new applications. 
+At this early stage of cloud adoption, your organization may be motivated to use AWS in support of migrating applications and data from on-premises to the cloud, delivering new data services, and/or developing new applications. Regardless of your organization's motivation for adopting AWS, these guides are intended to help your organization establish the initial phase of your cloud foundation that can grow along with your cloud adoption.
 
 # Intended Audience
 
-Regardless of your organization's motivation for adopting AWS, these guides are intended be used by your organization's technology team that will be responsible for establishing and maintaining your inital AWS environment.
+These guides are intended be used by your organization's technology team that will be responsible for establishing and maintaining your inital AWS environment.
 
-Although these guides are intended to help organizations establish an initial formal foundation on their own, you may benefit from working with your AWS sales team and AWS partners to help you navigate through this early stage of adoption.
+Although the guides are developed with a goal of enabling customers to establish an initial cloud foundation and development environments on their own, depending on your organization's cloud skills and readiness, you may benefit from working with your AWS sales team and AWS partners to help you navigate through this early stage of adoption.
 
 # Stages of Cloud Adoption
 
