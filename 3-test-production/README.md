@@ -1,4 +1,4 @@
-# 3. Establish Initial Test and Production Environments
+# Establish Initial Test and Production Environments
 
 Once you've establihed your initial foundation and delivered the initial set of development environments to teams, your next step is to extend your foundation by introducting a set of capabilities that organizations typically require before moving workloads into production.
 
