@@ -47,9 +47,9 @@ The first guide in this series helps your organization establish an initial foun
 
 Setting up a development environment in AWS enables your technologists to experiment with, “develop”, and perform early testing of migration and data integration solutions in flexible and safe environments that are isolated from your more formally controlled test and production environments.
 
-Unlike the costs involved in setting up development environments in physical data centers, carving out virtual development environments in AWS is relatively easy and low-cost.
+Compared to the cost and complexity of setting up and maintaining development environments in physical data centers, carving out virtual development environments in AWS is relatively low-cost and straightforward.
 
-As your organization's use of the cloud matures, your teams will benefit from starting to treat Infrastructure as Code (IaC) and gaining the benefits of greater automation. Adoption of IaC practices means that your traditional infrastructure teams evolve to become development teams in their own right.
+As your organization's use of the cloud matures, your teams should begin to treat Infrastructure as Code (IaC) and gain the benefits of greater automation. Adoption of IaC practices means that at least some of  your traditional infrastructure teams will evolve to become development teams in their own right.
 
 # Guides
 
