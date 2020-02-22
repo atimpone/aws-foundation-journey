@@ -2,9 +2,9 @@
 
 The following tenets or principles help the team make decisions about this collection of guides.
 
-# 1. Customer self-service and scale.
+# 1. Customer self-service.
 
-Although it's helpful for many customers to have AWS experienced people working with them in this early stage of adoption, position the detailed guidance so that interested customers can follow it on their own.
+Although it's often helpful for customers to have AWS experienced people working with them in this early stage of adoption, our goal is to enable customers to be able to follow these guides on their own.
 
 # 2. Work in the open.
 
@@ -30,10 +30,14 @@ Don't boil the ocean. Focus on the early "project" stage of formal adoption of A
 
 Address the most common scnearios first.
 
-# 7. Work with AWS to continually improve the customer experience.
+# 7. Avoid temporary solutions and accrual of technical debt.
+
+Help bias customers toward making incremental, additive investments in their AWS environments. Avoid investments that involve substantial rework in later stages of the cloud adoption journey.
+
+# 8. Work with AWS to continually improve the customer experience.
 
 Over time, the detailed guidance should continually reduce in scope as more features are built into the platform.
 
-# 8. Keep apace with latest best practices and AWS capabilities.
+# 9. Keep apace with latest best practices and AWS capabilities.
 
 As more capabilities are built into the AWS platform and additional best practices are developed, ensure that this guidance is kept up-to-date.
