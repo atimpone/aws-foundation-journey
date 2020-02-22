@@ -102,9 +102,9 @@ Explicitly disallow creation of IAM users since development team users do not us
             "Sid": "DenyWriteBillingAccount",
             "Effect": "Deny",
             "Action": [
-                "billing:ModifyAccount",
-                "billing:ModifyBilling",
-                "billing:ModifyPaymentMethods",
+                "aws-portal:ModifyAccount",
+                "aws-portal:ModifyBilling",
+                "aws-portal:ModifyPaymentMethods",
                 "account:*"
             ],
             "Resource": "*"

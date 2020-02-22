@@ -26,9 +26,9 @@
             "Sid": "DenyWriteBillingAccount",
             "Effect": "Deny",
             "Action": [
-                "billing:ModifyAccount",
-                "billing:ModifyBilling",
-                "billing:ModifyPaymentMethods",
+                "aws-portal:ModifyAccount",
+                "aws-portal:ModifyBilling",
+                "aws-portal:ModifyPaymentMethods",
                 "account:*"
             ],
             "Resource": "*"
