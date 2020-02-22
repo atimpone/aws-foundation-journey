@@ -142,7 +142,7 @@ Later, when you onboard the development teams to their development AWS accounts,
 
 This is only an initial iteration of the policies to associate with development teams.  Before you use this sample policy, you should review it in detail with a person skilled in AWS IAM to ensure that it aligns with your needs and modify it as necessary.
 
-See [IAM Policy Sample - acme-infra-dev-team.json](3-3-iam-policy-infra-dev-team.md) for more details on this sample policy.
+See [IAM Policy Sample - acme-infra-dev-team.json](3-4-iam-policy-infra-dev-team.md) for more details on this sample policy.
 
 ---
 

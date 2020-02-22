@@ -7,6 +7,7 @@ This step should take about 20 minutes to complete.
 1. [Create AWS SSO Users for Foundation Team Users](#1-create-aws-sso-users-for-foundation-team-users)
 2. [Onboard Your Foundation Team Members](#2-onboard-your-foundation-team-members)
 3. [Stop Using the AWS Control Tower Administrative User](#3-stop-using-the-aws-control-tower-administrative-user)
+4. [Brief Foundation Team Members](#4-brief-foundation-team-members)
 
 ## 1. Create AWS SSO Users for Foundation Team Users
 
@@ -45,6 +46,10 @@ Inform the foundation team members that use of MFA is required and how they can 
 Since you've onboarded foundation team members with the appropriate permissions, as a security and compliance best practice, there's no longer any reason for your Cloud Administrators to use the AWS Control Tower Administrator user. 
 
 From this point forward, the vast majority of your work to administer and manage your AWS environment should be done via your personal users that are defined in AWS SSO.  By using personal users, all operations will be auditable and tied to specific individuals.
+
+## 4. Brief Foundation Team Members
+
+Meet with the foundation team members to brief them on their access, responsibilities, and other topics covered in the [Example Getting Started Guide for Foundation Team Members](3-1-getting-started-guide-foundation-team-members.md). 
 
 ## Next Steps
 

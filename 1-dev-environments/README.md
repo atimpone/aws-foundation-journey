@@ -20,13 +20,13 @@ By following this guide, your organization can quickly establish an initial secu
 5. [Set Up Shared Development Network](2-5-set-up-shared-dev-network.md)
 6. [Create Initial Team Development Environments](2-6-create-team-dev-environments.md)
 7. [Onboard Development Teams](2-7-onboard-dev-teams.md)
-8. [Manage and Monitor Your AWS Environment](2-8-manage-and-monitor-aws-environment.md)
 
 ## Reference
 
-* [Getting Started Guide for Development Teams](3-1-getting-started-guide-dev-teams.md)
-* [Cloud Platform System AWS Users](3-2-cloud-platform-system-users.md)
-* [Sample IAM Policy for Developmemt Teams](3-3-iam-policy-infra-dev-team.md)
+* [Getting Started Guide for Foundation Team Members](3-1-getting-started-foundation-team-members.md)
+* [Getting Started Guide for Development Team Members](3-2-getting-started-guide-dev-team-members.md)
+* [Cloud Platform System AWS Users](3-3-cloud-platform-system-users.md)
+* [Sample IAM Policy for Developmemt Teams](3-4-iam-policy-infra-dev-team.md)
 
 ## Next Step
 

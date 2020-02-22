@@ -14,7 +14,7 @@ This step should take about 60 minutes to complete.
 
 Work with your cross-functional colleagues in Security, Compliance, and Finance to assemble the basic form of a getting started document and share it with the members of the initial development teams so that they understand the fundamentals of their responsibilities, access permissions, and how to access and begin using their development AWS accounts. 
 
-See the [Example Getting Started Guide](3-1-getting-started-guide-dev-teams.md) as a recommended starting point.
+See the [Example Getting Started Guide fro Development Team Members](3-2-getting-started-guide-dev-team-members.md) as a recommended starting point.
 
 ## 2. Create Development Team Groups in AWS SSO
 
@@ -83,7 +83,7 @@ The foundation team members now have access to the foundation team development A
 
 ## 5. Brief Development Team Members
 
-Meet with the development team members to brief them on their access and other topics covered in the  [Example Getting Started Guide](3-1-getting-started-guide-dev-teams.md). 
+Meet with the development team members to brief them on their access and other topics covered in the [Example Getting Started Guide for Development Team Members](3-2-getting-started-guide-dev-team-members.md). 
 
 ## Next Steps
 

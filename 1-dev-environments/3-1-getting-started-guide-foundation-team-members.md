@@ -1,8 +1,19 @@
-# 8. Manage and Monitor Your AWS Environment
+# Getting Started Guide for Foundation Team Members
 
-In this step your Cloud and Security Administrators and Cost Managers will review the typical day-to-day tasks and supporting methods, tools, and AWS services to help them manage and monitor your new AWS environment.
+This document represents an example that can help your organization develop and publish internally your own getting started guide for cloud foundation team members that are onboarding to your AWS environment.  You are free to copy this content into your own internal wiki or other system and modify it to meet your needs.
 
-This step should take about 60 minutes to complete.
+This guide is intended to provide foundation team members with awareness of the typical day-to-day tasks and supporting methods, tools, and AWS services to help them manage and monitor your new AWS environment.
+
+As your organization progresses on its cloud adoption journey, you will likely significantly expand your internal documentation to help communicate additional and increasingly sophisticated capabilities and associated best practices that are available to teams.
+
+---
+***Review Note: Help add useful day 1 topics for new foundation teams and members***
+
+What is the minimum knowledge a foundation team member would need for day 1?
+
+Don't overload the initial doc with more advanced capabilities. Focus on the "crawl" level of knowledge that they need.
+
+----
 
 * [Cloud Administrators](#cloud-administrators)
 * [Security Administrators](#security-administrators)
@@ -132,7 +143,3 @@ For more proactive management of your AWS costs, set up budgets within the Billi
 * Create alerts based on a budget to notify you or others as budget thresholds are reached. Each budget alert notification can be sent to up to 10 email addresses and 1 SNS topic for subscribers.
 
 Take a few minutes and create an initial basic budget by following this guide [Create your first Budget](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-create.html).
-
-## Next Steps
-
-[Review Fast Follow-on capabilities](../2-fast-follow-on/README.md)
