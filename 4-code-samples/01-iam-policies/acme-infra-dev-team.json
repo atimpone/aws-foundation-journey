@@ -43,8 +43,8 @@
             "Effect": "Allow",
             "Action": [
                 "iam:CreateRole",
-                "iam:ListRoles",
-                "iam:UpdateRole"
+                "iam:AttachRolePolicy",
+                "iam:DetachRolePolicy"
             ],
             "Resource": "*"
         },

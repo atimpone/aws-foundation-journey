@@ -133,12 +133,13 @@ An immediate next step is to introduce AWS IAM Permissions Boundaries to ensure 
 ---
 
 ```
+        {
             "Sid": "AllowWriteAccessAppRoles",
             "Effect": "Allow",
             "Action": [
                 "iam:CreateRole",
-                "iam:ListRoles",
-                "iam:UpdateRole"
+                "iam:AttachRolePolicy",
+                "iam:DetachRolePolicy"
             ],
             "Resource": "*"
         },
