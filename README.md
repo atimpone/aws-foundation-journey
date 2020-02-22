@@ -61,3 +61,4 @@ As your organization's use of the cloud matures, your teams will benefit from st
 
 * [Project Tenets](0-common/1-tenets.md)
 * [Frequently Asked Questions (FAQs)](0-common/2-faq.md)
+* [Contributing](CONTRIBUTING.md).
