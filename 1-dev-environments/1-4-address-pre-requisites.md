@@ -2,16 +2,14 @@
 
 In this step the few people who are leading the effort to establish the initial development environment and supporting foundation will address a few technical pre-requsites before the build out of the environment begins.
 
-1. [Create Email Distribution Lists for New AWS Accounts](#1-create-email-distribution-lists-for-new-aws-accounts)
+1. [Create Email Addresses for New AWS Accounts](#1-create-email-addresses-for-new-aws-accounts)
 2. [Obtain Non-Overlapping IP Address Range](#2-obtain-non-overlapping-ip-address-range)
 
-## 1. Create Email Distribution Lists for New AWS Accounts
+## 1. Create Email Addresses for New AWS Accounts
 
-Prepare a set of email distribution lists (DLs) to represent the root user of each of the new AWS accounts that will be created. In later steps, when you create AWS accounts, you'll be referring to these email distribution lists.
+Prepare a set of email addresses to represent the root user of each of the new AWS accounts that will be created. In later steps, when you create AWS accounts, you'll be referring to these email addresses. Each AWS account must have a unique emaio address associated with it.
 
-Instead of using a person"s email address, a distribution list enables you to associate at least several trusted people in your organization, for example, your Cloud Administrators, with access to messages associated with the root user account.
-
-An alternative to using DLs is to use shared mailboxes through which multiple people in your organization have access to the same email account.
+Instead of using a person's email address, it's recommended that you use either email distribution lists (DLs) or shared mailboxes so that you can enable at least several trusted people in your organization, for example, your Cloud Administrators, access to email messages associated with each AWS account.
 
 The following table includes the minimum set of email addresses to get started. Each AWS account must have a globally unique email address. 
 
