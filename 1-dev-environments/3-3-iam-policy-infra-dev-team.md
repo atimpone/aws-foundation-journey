@@ -48,7 +48,7 @@ This policy is not intended to be applied beyond development AWS accounts.  For 
 
 **Wide Range of AWS Services Subject to Organizational Policies:**  Allow for use of any AWS service with the expectation that AWS Organizations Service Control Policies (SCP) will be used to restrict the overall set of AWS services that are accessible for any AWS account in the `development` organization.
 
-**Creation of IAM Roles and Policies:** Subject to the constraints that development team members must not be able to escalate their privileges to circumvent other policies.
+**Creation of IAM Roles and Policies:** In development environments your technologists should be able to experiment, develop, and test solutions without depending on other teams to get things done. Since this work often entails creation of wokrkload specific IAM roles and policies, your technologists should be able to create and manage roles and policies on their own subject to the constraint that development team members must not be able to escalate their privileges to circumvent other policies.
 
 ### User Experience
 
