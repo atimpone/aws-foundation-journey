@@ -9,7 +9,7 @@ In this step the few people who are leading the effort to establish the initial 
 
 Prepare a set of email distribution lists (DLs) to represent the root user of each of the new AWS accounts that will be created. In later steps, when you create AWS accounts, you'll be referring to these email distribution lists.
 
-Instead of using a person"s email address, a distribution list enables you to associate at least several trusted people in your organization, for example, your Cloud Administators, with access to messages associated with the root user account.
+Instead of using a person"s email address, a distribution list enables you to associate at least several trusted people in your organization, for example, your Cloud Administrators, with access to messages associated with the root user account.
 
 An alternative to using DLs is to use shared mailboxes through which multiple people in your organization have access to the same email account.
 
