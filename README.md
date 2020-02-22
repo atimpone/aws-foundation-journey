@@ -1,4 +1,4 @@
-# Get Started with AWS for Initial Formal Projects
+# Get Started with AWS for Formal Projects
 
 ---
 ***DRAFT CONTENT***
