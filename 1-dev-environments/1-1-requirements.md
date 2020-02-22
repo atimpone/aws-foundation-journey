@@ -29,21 +29,28 @@ The following requirements are organized based on a series of perspectives defin
 ### Platform
 * Development Team Requirements
   * An isolated environment for each team to carry out initial experiments and formal development work.
-  * Access from corporate desktops to AWS services and AWS-hosted workloads.
+  * Isolation from other develpment teams being able to inadvertently impact a team's cloud resources.
+  * Ability to access other develpment teams' resources via networking.
+  * Access to AWS services and AWS-hosted workloads from the corporate desktops on the corporate network.
+    * CLI and API access to AWS services.
   * Access to a broad set of AWS services to enable experimentation and development.
-    * Including broad access to create and manage application-oriented AWS IAM resources in support of experimenting and developing application and data services.
+    * Including broad access to create and manage application-oriented AWS IAM role and policy resources in support of experimenting and developing application and data services.
   * Access to an AWS network environment in support of those AWS services for which networking is either required or desirable.
   * Access to Internet-hosted code and package repositories so that 3rd party packages and code can be downloaded to VMs hosted in AWS.
   * Use of corporate source code management services to manage code used in support of experiments and development.
   * Insight into the costs of AWS services consumed in their development environments so that teams can make informed decisions.
   * Sufficient documentation to enable developers to get started in the new AWS environment.
 * The initial cloud platform team needs an isolated environment in which they can develop and test foundation capabilities.
+  * Separate from other development teams and environments.
+  * Potentially with wider access permissions than typical development teams to enable deeper foundation development work.
 
 ### Security
 * Sufficient isolation between cloud development environments and existing corporate resources.
 * Sufficient auditing of cloud access and activity.
 * Use of per user identities to separate access and ensure sufficient auditing.
 * Use of Multi-Factor Authentication (MFA) for all human user access to the AWS platform.
+* Inhibit use of IAM users for human access.
+* Inhibit use of long-term access keys to access AWS services.
 
 ### Operations
 * Sufficient access controls and permissions to protect the cloud foundation resources from inadvertent and intentional modification by unauthorized users.
