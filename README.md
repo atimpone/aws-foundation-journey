@@ -21,9 +21,7 @@ Regardless of your organization's motivation for adopting AWS, these guides are 
 
 Although these guides are intended to help organizations establish an initial formal foundation on their own, you may benefit from working with your AWS sales team and AWS partners to help you navigate through this early stage of adoption.
 
-# Background
-
-## Stages of Cloud Adoption
+# Stages of Cloud Adoption
 
 Based on years of experience in helping customers obtain business benefits of cloud adoption, AWS has identified the following mental model to represent the [stages of cloud adoption](https://aws.amazon.com/blogs/enterprise-strategy/the-journey-toward-cloud-first-the-stages-of-adoption/).  
 
@@ -33,7 +31,7 @@ Organizations leveraging these guides are typically in the “Project” stage o
 
 Once an enterprise has gained some benefit from the cloud by taking a few projects to production, an organization tends to move toward a "Foundation" stage in which the organization makes more extensive investments in boths its people and its cloud foundation in support of scaling cloud adoption across the organization with the goal of gaining more extensive business benefits. 
 
-## Initial Cloud Foundation in Project Stage
+# Initial Cloud Foundation in Project Stage
 
 Even in the initial project stage of adoption, AWS recommends that an initial foundation be established that can be extended over time as organizations transition into the foundation stage to prepare for larger scale cloud adoption. These guides help organizations establish the beginning of a secure foundation on AWS in support of their initial few projects.
 
