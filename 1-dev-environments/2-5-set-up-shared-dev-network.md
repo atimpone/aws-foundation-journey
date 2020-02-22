@@ -18,7 +18,7 @@ This step should take about 60 minutes to complete.
 
 As mentioned in the [Initial Development Environment Solution Overview](1-2-solution.md#vpc-network-for-each-development-team-aws-account), it's recommended that you start with a single development VPC that you will share across all development team AWS accounts. 
 
-The shared development VPC will have a set of public and private subnets. In those AWS regions in which at least 3 Availability Zones (AZs) are availabkle for customer use, it's recommended that your initial set of VPCs have subnets in each of 3 AZs so that your development teams can experiment with and perform early testing of workloads and AWS services that can take advantage of 3 AZs.
+The shared development VPC will initially have a set of both public and private subnets. In those AWS regions in which at least 3 Availability Zones (AZs) are availabkle for customer use, it's recommended that your initial set of VPCs have subnets in each of 3 AZs so that your development teams can experiment with and perform early testing of workloads and AWS services that can take advantage of 3 AZs.
 
 At least one public subnet will have a NAT Gateway that enables workloads in any of the private subnets to send traffic outbound to the Internet. For example, to enable workloads to download content from Internet accessible source code and package repositories.
 
