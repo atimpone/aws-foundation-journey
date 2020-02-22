@@ -45,7 +45,7 @@ Later, after your organization has demonstrated success with the initial few pro
 
 |     |     |     |
 |:---:|:---:|:---:|
-|<img src="images/number-1.png" alt="1. Establish Initial Development Environments"/><br>**Establish Initial Development Environments**|<img src="images/number-2.png" alt="2. Establish Fast Follow-On Capabilities"/><br>**Establish Fast Follow-On Capabilities**|<img src="images/number-3.png" alt="3. Establish Initial Test and Production Environments"/><br>**Establish Initial Test and Production Environments**|
+|<img src="images/number-1.png" alt="1. Establish Initial Development Environments"/><br>**Establish Initial Foundation and Development Environments**|<img src="images/number-2.png" alt="2. Establish Fast Follow-On Capabilities"/><br>**Establish Fast Follow-On Capabilities**|<img src="images/number-3.png" alt="3. Establish Initial Test and Production Environments"/><br>**Expand Foundation and Establish Test and Production Environments**|
 
 # 1. Establish Initial Development Environments
 
