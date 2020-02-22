@@ -30,4 +30,4 @@ By following this guide, your organization can quickly establish an initial secu
 
 ## Next Step
 
-[2. Establish Fast Follow-On Capabilities](../2-fast-follow-on/0-main.md)
+[2. Establish Fast Follow-On Capabilities](../2-fast-follow-on/README.md)
