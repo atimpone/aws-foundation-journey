@@ -72,4 +72,4 @@ In the future, when you need to interconnect a portion of your existing on-premi
 
 ## Next Steps
 
-[Build Out the Environment](../README.md#build-out-the-environment)
+[Build Out the Environment](README.md#build-out-the-environment)
