@@ -11,7 +11,7 @@ The documentation is currently undergoing rapid changes as it is reviewed and te
 
 Some Amazon Web Services (AWS) customers have expressed the need to have a perscriptive guide to help their organizations better understand how they can get started with the AWS platform when they are ready to move from the informal stage of using personal AWS accounts to the next stage of formally bringing a few workloads to production on AWS.
 
-At this early stage of cloud adootion, your organization may be motivated to use AWS in support of migrating existing on-premises applications, delivering new data services, and/or developing new applications. 
+At this early stage of cloud adoption, your organization may be motivated to use AWS in support of migrating existing on-premises applications, delivering new data services, and/or developing new applications. 
 
 # Intended Audience
 
