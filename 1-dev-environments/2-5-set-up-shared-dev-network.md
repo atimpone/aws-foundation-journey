@@ -160,23 +160,15 @@ The default parameters of the CloudFormation template will result in a VPC with:
   * Public tier
   * Private tier
 * 3 subnets for each tier.
-* Subnets are mapped across 3 Availability Zone (AZ).
+* Subnets are mapped across 3 Availability Zones (AZs).
+
+The AWS CloudFormation template that you'll use in the next step to provision the VPC will require you to supply CIDR blocks for each of the following:
+
+* Overall VPC
+* Public subnets 1, 2, and 3
+* Private subnets 1, 2, and 3
 
 To keep things simple, you can size the subnets identically.
-
-The AWS CloudFormation template that you'll use in the next step to provision the VPC supports the following CIDR block related parameters.
-
-|CIDR Block    |CloudFormation Parameter Name|Purpose|
-|--------------|-----------------------------|-------|
-|VPC|`pCidr`|The overall CIDR block for the VPC. Although you cannot change this assignment later, you can add another CIDR block to augment the original block.|
-|**Public Subnets**||
-|Public Subnet 1|`pTier1Subnet1Cidr`|A subset of the VPC CIDR block.|
-|Public Subnet 2|`pTier1Subnet2Cidr`|A subset of the VPC CIDR block.|
-|Public Subnet 3|`pTier1Subnet3Cidr`|A subset of the VPC CIDR block.|
-|**Private Subnets**||
-|Private Subnet 1|`pTier2Subnet1Cidr`|A subset of the VPC CIDR block.|
-|Private Subnet 2|`pTier2Subnet2Cidr`|A subset of the VPC CIDR block.|
-|Private Subnet 3|`pTier2Subnet3Cidr`|A subset of the VPC CIDR block.|
 
 ### Determine VPC CIDR Block
 
@@ -208,13 +200,6 @@ Once you've determined the VPC CIDR block, breaking it down into an equal size b
 You can use this [sample AWS CloudFormation template](https://github.com/ckamps/infra-aws-vpc-multi-tier) to easily deploy your shared development network.
 
 Download the sample AWS CloudFormation template [infra-multi-tier-vpc.yml](https://raw.githubusercontent.com/ckamps/infra-aws-vpc-multi-tier/master/infra-vpc-multi-tier.yml) to your desktop.
-
----
-**Review Note:  Better VPC CloudFormation example?**
-
-If you're aware of a better CloudFormation template example that is maintained in the `aws-samples` or similar AWS-managed GitHub organizations, provide that feedback. In the meantime, we've started the process to get this example introduced into the `aws-samples` organization.
-
----
 
 Next, access the new Network AWS account:
 
