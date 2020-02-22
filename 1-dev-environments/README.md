@@ -1,4 +1,4 @@
-# 1. Establish Initial Development Environments
+# 1. Establish Initial Foundation and Development Environments
 
 By following this guide, your organization can quickly establish an initial secure foundation and development environments in AWS similar to the following architecture.
 
