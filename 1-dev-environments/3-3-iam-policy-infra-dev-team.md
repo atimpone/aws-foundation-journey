@@ -1,6 +1,6 @@
 # IAM Policy Sample - `acme-infra-dev-team.json`
 
-This sample IAM policy is intended to be used as a starting point for access control as it applies to development team members accessing their development AWS accounts. 
+This sample IAM policy is intended to be used as a starting point for access control as it applies to development team members creating and managing cloud resources their development AWS accounts. 
 
 Your organization is expected to understand this sample policy in detail before potentially applying it.  
 
