@@ -49,7 +49,7 @@ Setting up a development environment in AWS enables your technologists to experi
 
 Unlike the costs involved in setting up development environments in physical data centers, carving out virtual development environments in AWS is relatively easy and low-cost.
 
-As your organization's use of the cloud matures, your teams will benefit from starting to treat Infrastructure as Code (IaC) so that you achieve the benefits of greater automation. Adoption of IaC practices means that your traditional infrastructure teams evolve to become development teams in their own right.
+As your organization's use of the cloud matures, your teams will benefit from starting to treat Infrastructure as Code (IaC) and gaining the benefits of greater automation. Adoption of IaC practices means that your traditional infrastructure teams evolve to become development teams in their own right.
 
 # Guides
 
