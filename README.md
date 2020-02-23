@@ -31,7 +31,7 @@ Once an enterprise has gained some benefit from the cloud by taking a few projec
 
 # Initial Cloud Foundation in Project Stage
 
-Even in the initial project stage of adoption, AWS recommends that an initial foundation be established that can be extended over time as organizations transition into the foundation stage to prepare for larger scale cloud adoption. These guides help organizations establish the beginning of a secure foundation on AWS in support of their initial few projects.
+Even in the early project stage of adoption, AWS recommends that an initial foundation be established that can be extended over time as organizations transition into the foundation stage to prepare for larger scale cloud adoption. These guides help organizations establish the beginning of a secure foundation on AWS in support of their initial few projects.
 
 The guides start with establishing an initial foundation and several development environments before they address how to extend your foundation to support deploying your first few workloads to test and production environments.  
 
