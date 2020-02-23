@@ -17,7 +17,7 @@ At this early stage of cloud adoption, your organization may be motivated to use
 
 These guides are intended be used by your organization's technology team that will be responsible for establishing and maintaining your inital AWS environment.
 
-These guides are developed with a goal of enabling customers to establish an initial cloud foundation and development environments on their own. However, depending on your organization's cloud skills and readiness, you may benefit from working with your AWS sales team and AWS partners to help you navigate through this early stage of adoption.
+The guides are developed with a goal of enabling customers to establish an initial cloud foundation and development environments on their own. However, depending on your organization's cloud skills and readiness, you may benefit from working with your AWS sales team and AWS partners to help you navigate through this early stage of adoption.
 
 # Stages of Cloud Adoption
 
