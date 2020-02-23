@@ -87,4 +87,4 @@ Meet with the development team members to brief them on their access and other t
 
 ## Next Steps
 
-[8. Manage and Monitor Your AWS Environment](2-8-manage-and-monitor-aws-environment.md)
+[Establish Fast Follow-Ons](../2-establish-fast-follow-on/README.md)
