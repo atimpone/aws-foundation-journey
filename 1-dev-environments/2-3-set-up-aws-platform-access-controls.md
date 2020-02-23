@@ -82,7 +82,7 @@ Since Cloud Administrators don't have administrator access to newly created AWS 
 
 1. Access `Groups` in AWS SSO.
 2. Select `Create group`.
-3. Provide a group name. For example `acme-cloud-admin`. Where you should replace `acme` with a common abbreviation for your organization.
+3. Provide a group name. For example **`acme-cloud-admin`**. Where you should replace `acme` with a common abbreviation for your organization.
 4. Provide a description. For example, `Cloud administration`.
 5. Select `Create`.
 
@@ -105,7 +105,7 @@ In the spirit of least privilege access, the resulting permissions will enable c
 
 1. Access `Groups` in AWS SSO.
 2. Select `Create group`.
-3. Provide a group name. For example `acme-cost-mgmt`. Where you should replace `acme` with a common abbreviation for your organization.
+3. Provide a group name. For example **`acme-cost-mgmt`**. Where you should replace `acme` with a common abbreviation for your organization.
 4. Provide a description. For example, 'Cost management and billing`.
 5. Select `Create`.
 
@@ -115,7 +115,7 @@ In the spirit of least privilege access, the resulting permissions will enable c
 2. Select the checkbox next to your **master** AWS account.
 3. Select `Assign users`.
 4. Select `Groups`.
-5. Select the checkbox next to `acme-cost-mgmt` or similar.
+5. Select the checkbox next to **`acme-cost-mgmt`** or similar.
 6. Select `Next: Permission sets`.
 7. Select the checkbox next to `Billing`.
 8. Select `Finish`.
