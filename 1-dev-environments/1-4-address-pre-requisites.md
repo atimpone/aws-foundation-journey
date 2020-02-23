@@ -7,13 +7,20 @@ In this step the few people who are leading the effort to establish the initial 
 
 ## 1. Create Email Addresses for New AWS Accounts
 
-Prepare a set of email addresses to represent the root user of each of the new AWS accounts that will be created. In later steps, when you create AWS accounts, you'll be referring to these email addresses. Each AWS account must have a unique emaio address associated with it.
+Prepare a set of email addresses to represent the root user of each of the new AWS accounts that will be created. In later steps, when you create AWS accounts, you'll be referring to these email addresses. Each AWS account must have a unique email address associated with it.
 
+### Use Either Email Distribution Lists (DLs) or Shared Mailboxes
 Instead of using a person's email address, it's recommended that you use either email distribution lists (DLs) or shared mailboxes so that you can enable at least several trusted people in your organization, for example, your Cloud Administrators, access to email messages associated with each AWS account.
 
+### Controlling Access to Root User Email Accounts
+Since the email address associated with an AWS account is used as the [root user login for the account](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html), anyone with access to that email account will have access to password reset process for the account. 
+
+### Define and Request DLs or Shared Mailboxes
 The following table includes the minimum set of email addresses to get started. Each AWS account must have a globally unique email address. 
 
 If your organization already has a naming standard for mail addresses associated with services, you should use that standard format and include references to at least "aws" and and an abbreviation of the unique role or purpose of each account.
+
+Use your organization's process to request either DLs or shared mailboxes based on set of addresses you identify.
 
 |AWS Account	|Example Email Address|Example with "+" Style Email Address|
 |---|---|---|
@@ -36,10 +43,7 @@ For example: [aws-account1+master@acme.com](mailto:aws-account1+master@acme.com)
 
 It appears that plus style addressing is on the [Office 365 roadmap for 2020](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-transport-news-from-microsoft-ignite-2019/ba-p/993417).
 
----
-
-### Controlling Access to Root User Email Accounts
-Since the email address associated with an AWS account is used as the [root user login for the account](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html), anyone with access to that email account will have access to password reset process for the account.  
+--- 
 
 ## 2. Obtain Non-Overlapping IP Address Range
 
