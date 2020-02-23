@@ -35,7 +35,7 @@ Even in the early project stage of adoption, AWS recommends that an initial foun
 
 The guides start with establishing an initial foundation and several development environments before they address how to extend your foundation to support deploying your first few workloads to test and production environments.  
 
-The guides also address a set of "fast follow-on" capabilities that, for some organizations, are required before your organization performs formal experiments and development in the cloud. At a minimum, the fast follow-on capabilities are typicall required before you deploy your first workloads to production.
+The guides also address a set of "fast follow-on" capabilities that, for some organizations, are required before your organization performs formal experiments and development in the cloud. At a minimum, the fast follow-on capabilities are typically useful to address before you deploy your first workloads to production.
 
 Later, after your organization has demonstrated success with the initial few projects, you will likely make larger investments during the foundation stage of your journey to support cloud adoption at scale.
 
