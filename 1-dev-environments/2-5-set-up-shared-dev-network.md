@@ -293,7 +293,7 @@ While you're in the master AWS account, obtain and record the resource ID of the
 
 If you were to list the shared VPC subnets from within the development AWS accounts, you would notice that the subnet names are blank.  Currently, sharing of subnets does not include automatic propagation of resource tags, including the `Name` tag. 
 
-As a workaround, in a subsequent section where you provision the development AWS accounts, you can manually assign names to the shared subnets so that it will be easier for the development teams to understand the role of each subnet. For example, more readily distinguishing between public and private subnets.
+As a workaround, in a subsequent section where you provision the development AWS accounts, you can manually assign names to the shared subnets so that it will be easier for the development teams to understand the role of each subnet. For example, by including "public" and "private" in the subnet names, development teams will be able to readily distinguish between public and private subnets.
 
 ---
 
