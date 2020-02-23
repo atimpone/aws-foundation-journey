@@ -26,12 +26,16 @@ As the degree of customization and extent of your foundation resources expands o
 
 *...position AWS Control Tower's guardrails feature in this context...*
 
+### Customizations for AWS Control Tower
+
+See [AWS Solutions Customizations for AWS Control Tower](https://aws.amazon.com/solutions/customizations-for-aws-control-tower/)
+
+### AWS Deployment Framework
+
+[AWS Deployment Framework](https://github.com/awslabs/aws-deployment-framework/)
+
 ### AWS CloudFormation StackSets
 
 [AWS CloudFormation StackSets with AWS Organizations](https://aws.amazon.com/blogs/aws/new-use-aws-cloudformation-stacksets-for-multiple-accounts-in-an-aws-organization/) introduced the ability to automatically apply stacksets as member accounts join and leave OUs.
 
 [AWS Control Tower Lifecycle Event Notifications](https://aws.amazon.com/about-aws/whats-new/2020/01/aws-control-tower-introduces-lifecycle-event-notifications/) can help trigger automation to manage the lifecyle of baselines.
-
-### AWS Deployment Framework
-
-[AWS Deployment Framework](https://github.com/awslabs/aws-deployment-framework/)
