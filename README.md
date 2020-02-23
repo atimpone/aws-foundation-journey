@@ -43,13 +43,13 @@ Later, after your organization has demonstrated success with the initial few pro
 
 # Value of "Development" Environments
 
-The first guide in this series helps your organization establish an initial foundation and a set of development environments. If your organization currently focuses mainly integrates commercial off the shelf (COTS) software products and Software as a Service (SaaS) offerings and doesn't have teams developing custom applications, your organization will still benefit from establishing development environments in AWS.
+The first guide in this series helps your organization establish an initial foundation and a set of development environments. If your organization mainly focuses on integrating commercial off the shelf (COTS) software products and Software as a Service (SaaS) offerings and doesn't have teams developing custom applications, your organization will still benefit from establishing development environments in AWS.
 
 Setting up a development environment in AWS enables your technologists to experiment with and perform early testing of migration and application and data integration solutions in flexible and safe environments that are isolated from your more formally controlled test and production environments.
 
 Compared to the cost and complexity of setting up and maintaining development environments in physical data centers, carving out virtual development environments in AWS is relatively low-cost and straightforward.
 
-As your organization's use of the cloud matures, your teams should begin to treat Infrastructure as Code (IaC) and gain the benefits of greater automation. Adoption of IaC practices means that at least some of  your traditional infrastructure teams will evolve to become development teams in their own right.
+As your organization's use of the cloud matures, your teams should begin to use Infrastructure as Code (IaC) to gain the benefits of greater automation. Adoption of IaC practices means that at least some of  your traditional infrastructure teams will evolve to become development teams in their own right.
 
 # Guides
 
