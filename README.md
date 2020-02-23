@@ -41,7 +41,7 @@ Later, after your organization has demonstrated success with the initial few pro
 
 <img src="images/foundation.png" alt="Cloud Foundation" width="900"/>
 
-# Value of "Development" Environments
+# Value of Development Environments
 
 The first guide in this series helps your organization establish an initial foundation and a set of development environments. If your organization mainly focuses on integrating commercial off the shelf (COTS) software products and Software as a Service (SaaS) offerings and doesn't have teams developing custom applications, your organization will still benefit from establishing development environments in AWS.
 
