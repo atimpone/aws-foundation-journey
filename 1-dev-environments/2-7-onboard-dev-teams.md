@@ -87,4 +87,4 @@ Meet with the development team members to brief them on their access and other t
 
 ## Next Steps
 
-[Establish Fast Follow-Ons](../2-fast-follow-on/README.md)
+[Establish Fast Follow-On Capabilities](../2-fast-follow-on/README.md)
