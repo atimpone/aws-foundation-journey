@@ -53,6 +53,13 @@ As your organization's use of the cloud matures, your teams should begin to trea
 
 # Guides
 
+---
+**Review Note: Current Focus - Step 1 - Establish Initial Foundation and Development Environemnts**
+
+The first guide is currently in the final draft stages and being reviewed before our attention will shift toward addressing guidance for the most common and highest priority fast follow-on capabilities.  After addressing the highest priority fast follow-on capabilities, we'll move on to the third guide, preparing for and building out the initial test and production environments. In the meantime, if you have comments and suggestions on any of the guides, regardless of their state of completion, see [CONTRIBUTING](CONTRIBUTING.md).
+
+---
+
 |     |     |     |
 |:---:|:---:|:---:|
 |<a href="1-dev-environments/README.md"><img src="images/number-1.png"/></a><br>**[Establish Initial Foundation and Development Environments](1-dev-environments/README.md)**|<a href="2-fast-follow-on/README.md"><img src="images/number-2.png"/></a><br>**[Establish Fast Follow-On Capabilities](2-fast-follow-on/README.md)**|<a href="3-test-production/README.md"><img src="images/number-3.png"/></a><br>**[Expand Foundation and Establish Test and Production Environments](3-test-production/README.md)**|
