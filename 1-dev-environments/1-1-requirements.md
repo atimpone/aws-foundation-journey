@@ -2,9 +2,7 @@
 
 This document introduces the typical requirements for your inital formal development environments and the supporting foundation.
 
-Based on AWS’ extensive experience with customers progressing on their journey to the cloud, customers typically require the following capabilities when establishing their initial formal development environments.
-
-These are the typical bare minimum requirements to address when setting up formally managed development environments.
+Organizations typically require at least the following capabilities when establishing their initial formal development environments.
 
 A separate set of guides address a series of [fast follow-on capabilities](../2-fast-follow-ons/README.md) that might be required up front depending on your organization's needs.
 
@@ -19,10 +17,10 @@ The following requirements are organized based on a series of perspectives defin
 * Transparent and frequent cost reporting with alerts for greater than expected consumption.
 
 ### People
-* The customer must have at least several technologists who are assigned to and capable of configuring and managing the initial phases of the enterprise’s use of AWS.
+* The organization must have at least several technologists who are assigned to and capable of configuring and managing the initial phases of the enterprise’s use of AWS.
 
 ### Governance
-* Cross-functional organizations such as Security, Compliance, Operations, and Finance are key stakeholders in the use of the AWS platform even in these early stages and must be part of the initial planning, design, and implementation effort.
+* Cross-functional departments such as Security, Compliance, Operations, and Finance are important stakeholders in the use of the AWS platform and must be part of the initial planning, design, and implementation effort.
 
 ## Technical Perspectives
 
@@ -30,7 +28,7 @@ The following requirements are organized based on a series of perspectives defin
 * Development Team Requirements
   * An isolated environment for each team to carry out initial experiments and formal development work.
   * Isolation from other develpment teams being able to inadvertently impact a team's cloud resources.
-  * Ability to access other develpment teams' resources via networking.
+  * Ability to access other develpment teams' deployed servies via networking.
   * Access to AWS services and AWS-hosted workloads from the corporate desktops on the corporate network.
     * CLI and API access to AWS services.
   * Access to a broad set of AWS services to enable experimentation and development.
