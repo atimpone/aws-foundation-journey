@@ -5,19 +5,19 @@
 
 Content in this repository is in a preliminary draft form and should not be used for formal build outs of AWS environments unless an AWS specialist is working with you.  
 
-The documentation is currently undergoing rapid changes as it is reviewed and tested. If you'd like to contribute via feedback, bug fixes, and/or enhancements, see [How to Contribute](CONTRIBUTING.md).
+The documentation is currently undergoing frequent changes as it is reviewed and tested. If you'd like to contribute via feedback, bug fixes, and/or enhancements, see [How to Contribute](CONTRIBUTING.md).
 
 ---
 
-Amazon Web Services (AWS) customers have expressed the need to have a perscriptive guide to help their organizations better understand how they can get started with the AWS platform when they are ready to move from the informal stage of using personal AWS accounts to the next stage of formally bringing a few workloads to production on AWS.
+Amazon Web Services (AWS) customers have expressed the need to have a perscriptive guide to help their organizations better understand how they can get started with the AWS platform when they are ready to move from the informal stage of using personal AWS accounts to the next stage of formally bringing a few workloads to production.
 
 Regardless of your organization's motivation for adopting AWS, be it migrating applications and data from on-premises to the cloud, delivering new data services, and/or developing new applications, these guides are intended to help you establish the initial phase of your cloud foundation that can grow along with your cloud adoption.
 
 # Intended Audience
 
-These guides are intended be used by your organization's technology team that will be responsible for establishing and maintaining your inital AWS environment.
+These guides are intended be used by your organization's technology teams that will be responsible for establishing and maintaining your inital AWS environment.
 
-The guides are developed with a goal of helping customers establish an initial cloud foundation and development environments on their own. However, depending on your organization's cloud skills and readiness, you may benefit from working with your AWS sales team and AWS partners to help you navigate through this early stage of adoption.
+The guides are developed with a goal of helping you establish an initial cloud foundation and development environments on your own. However, depending on your organization's cloud skills and readiness, you may benefit from working with your AWS sales team and AWS partners to help you navigate through this early stage of adoption.
 
 # Stages of Cloud Adoption
 
