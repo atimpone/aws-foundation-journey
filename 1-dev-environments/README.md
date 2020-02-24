@@ -1,6 +1,6 @@
 # Establish Initial Foundation and Development Environments
 
-By following this guide, your organization can quickly establish an initial secure foundation and development environments in AWS similar to the following architecture.
+After you've addressed a few up front tasks, your organization can establish an initial secure foundation and development environments in AWS similar to the following architecture in about a day.
 
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-initial.png "Initial Development Environment")
 
