@@ -21,7 +21,7 @@ The guides are developed with a goal of helping you establish an initial cloud f
 
 # Stages of Cloud Adoption
 
-Based on years of experience in helping customers obtain business benefits of cloud adoption, AWS has identified the following mental model to represent the [stages of cloud adoption](https://aws.amazon.com/blogs/enterprise-strategy/the-journey-toward-cloud-first-the-stages-of-adoption/).  
+Based on almost 14 years of experience in helping customers obtain business benefits of cloud adoption, AWS has identified the following mental model to represent the [stages of cloud adoption](https://aws.amazon.com/blogs/enterprise-strategy/the-journey-toward-cloud-first-the-stages-of-adoption/).  
 
 <img src="images/cloud-adoption-framework.png" alt="Cloud Adoption Framework" width="500"/>
 
