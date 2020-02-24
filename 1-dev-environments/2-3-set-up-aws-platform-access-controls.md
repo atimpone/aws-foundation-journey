@@ -97,7 +97,7 @@ Since Cloud Administrators don't have administrator access to newly created AWS 
 
 ## 5. Add a Cost Management Group and Assign Permissions in AWS SSO
 
-In order to fill a gap of a dedicated AWS SSO group for your cost management team members, you need to add a new group in AWS SSO and associate the necessary permissions with that group. In a subsequent step, you'll add cost management team members to the new group. 
+Since there's no suitable predefined AWS SSO group for cost management team members, you need to add a new group in AWS SSO and associate the necessary permissions with that group. In a subsequent step, you'll add cost management team members to the new group. 
 
 In the spirit of least privilege access, the resulting permissions will enable cost management team members to access only your master AWS account and only the cost management and billing resources and data accessible within that AWS account.
 
