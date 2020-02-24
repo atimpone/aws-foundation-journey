@@ -5,7 +5,7 @@
 
 Content in this repository is in a preliminary draft form and should not be used for formal build outs of AWS environments unless an AWS specialist is working with you.  
 
-The documentation is currently undergoing rapid changes as it is reviewed and tested. If you'd like to contribute via feedback, bug fixes, and/or enhancements, see [CONTRIBUTING](CONTRIBUTING.md).
+The documentation is currently undergoing rapid changes as it is reviewed and tested. If you'd like to contribute via feedback, bug fixes, and/or enhancements, see [How to Contribute](CONTRIBUTING.md).
 
 ---
 
@@ -56,7 +56,7 @@ As your organization's use of the cloud matures, your teams should begin to use 
 ---
 **Review Note: Current Focus - Guide 1: Establish Initial Foundation and Development Environemnts**
 
-The first guide is currently in the final draft stages and being reviewed before our attention will shift toward addressing guidance for the most common and highest priority fast follow-on capabilities.  After addressing the highest priority fast follow-on capabilities, we'll move on to the third guide, preparing for and building out the initial test and production environments. In the meantime, if you have comments and suggestions on any of the guides, regardless of their state of completion, see [CONTRIBUTING](CONTRIBUTING.md).
+The first guide is currently in the final draft stages and being reviewed before our attention will shift toward addressing guidance for the most common and highest priority fast follow-on capabilities.  After addressing the highest priority fast follow-on capabilities, we'll move on to the third guide, preparing for and building out the initial test and production environments. In the meantime, if you have comments and suggestions on any of the guides, regardless of their state of completion, see [How to Contribute](CONTRIBUTING.md).
 
 ---
 
@@ -68,4 +68,4 @@ The first guide is currently in the final draft stages and being reviewed before
 
 * [Project Tenets](0-common/1-tenets.md)
 * [Frequently Asked Questions (FAQs)](0-common/2-faq.md)
-* [Contributing](CONTRIBUTING.md)
+* [How to Contribute](CONTRIBUTING.md)
