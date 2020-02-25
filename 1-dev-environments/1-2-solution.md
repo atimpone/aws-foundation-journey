@@ -30,7 +30,7 @@ Benefits of using a shared VPC for development team include:
 * The organization needs to manage and pay for only one set of common shared VPC resources for all development teams. For example, one set of NAT Gateways - which are billed on an hourly basis.
 * Configuration of organization standard newtork services such as AWS VPC endpoints is easier to manage in a single VPC.
 * Development teams reuse centrally managed VPC resources for multiple development teams.
-* Development teams still manage security groups, ec2 instances, etc.
+* Development teams still manage security groups, EC2 instances, etc.
 * Development teams have inherent connectivity to other teams' services given that they are in the same VPC.
 * Development teams cannot see and manage other teams' workloads even though they're sharing the same VPCs.
 * Development teams cannot modify the VPC and related resources that are centally hosted and managed in a separate network AWS account. No additional IAM policies are required.
