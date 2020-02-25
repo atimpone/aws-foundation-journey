@@ -53,4 +53,4 @@ Meet with the foundation team members to brief them on their access, responsibil
 
 ## Next Steps
 
-[5. Set Up Shared Dev Network](2-5-set-up-shared-dev-network.md)
+[5. Set Up Shared Development Network](2-5-set-up-shared-dev-network.md)
