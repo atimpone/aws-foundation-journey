@@ -106,7 +106,7 @@ Now you've enabled all users who are part of the Cloud Administrator group in AW
 
 ## 5. Apply Names to Shared VPC Resources
 
-Since the names of shared subnets are not currently propagated to AWS accounts, as a Cloud Administrator, you can optionally apply names to the shared subnets within each development AWS account so that it's easier for the development teams to understand the role of each subnet. For example, more readily distinguising between public and private subnets.
+Since the names of shared subnets are not currently propagated to AWS accounts, as a Cloud Administrator, you can optionally apply names to the shared subnets within each development AWS account so that it's easier for the development teams to understand the role of each subnet. For example, developers will often need to be able to readily distinguish between public and private subnets.
 
 1. As a Cloud Administrator, use your personal user to log into AWS SSO.
 2. Select the development AWS account of interest.
