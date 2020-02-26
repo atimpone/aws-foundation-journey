@@ -9,7 +9,7 @@ After you've addressed a few up front tasks, this guide helps your organization 
 1. [Review Requirements](1-1-requirements.md)
 2. [Review Solution](1-2-solution.md)
 3. [Map People to Foundation Functional Roles](1-3-map-people-to-foundation-roles.md)
-4. [Address Pre-Requisites](1-4-address-pre-requisites.md)
+4. [Address Prerequisites](1-4-address-prerequisites.md)
 
 ## Build Out the Environment
 
