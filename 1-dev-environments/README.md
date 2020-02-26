@@ -18,7 +18,7 @@ After you've addressed a few up front tasks, this guide helps your organization 
 3. [Set Up Initial AWS Platform Access Controls](2-3-set-up-aws-platform-access-controls.md)
 4. [Onboard Foundation Team](2-4-onboard-foundation-team.md)
 5. [Set Up Shared Development Network](2-5-set-up-shared-dev-network.md)
-6. [Create Initial Team Development Environments](2-6-create-team-dev-environments.md)
+6. [Create Team Development Environments](2-6-create-team-dev-environments.md)
 7. [Onboard Development Teams](2-7-onboard-dev-teams.md)
 
 ## Reference
