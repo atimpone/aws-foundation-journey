@@ -299,4 +299,4 @@ As a workaround, in a subsequent section where you provision the development AWS
 
  ## Next Steps
 
-[6. Create Initial Team Development Environments](2-6-create-team-dev-environments.md)
+[6. Create Team Development Environments](2-6-create-team-dev-environments.md)
