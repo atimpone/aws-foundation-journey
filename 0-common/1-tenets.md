@@ -22,7 +22,7 @@ Incorporate all guidance into a contiguous experience. Avoid inclusion of guidan
 
 # 4. Crawl, walk, and then run.
 
-Don't overload customers with sophisticated and more complicated capabilities prematurely in their journey when those capabilties aren't useful in the early stage.
+Don't overload customers with sophisticated and complicated capabilities prematurely in their journey when those capabilties aren't useful in the early stage.
 
 Balance this tenet with the interest in avoiding significant rework later in the journey.
 
