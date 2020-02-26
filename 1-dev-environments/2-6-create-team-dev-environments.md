@@ -1,4 +1,4 @@
-# 6. Create Initial Team Development Environments
+# 6. Create Team Development Environments
 
 In this step your Cloud Administrators will create several new team development AWS accounts via AWS Control Tower's Account Factory.
 
