@@ -34,63 +34,26 @@
             "Resource": "*"
         },
         {
-            "Effect": "Allow",
-            "Action": "account:ListRegions",
-            "Resource": "*"
-        },
-        {
             "Sid": "DenyWriteRoles",
             "Effect": "Deny",
             "Action": [
                 "iam:CreateRole",
-                "iam:AttachRolePolicy",
-                "iam:DetachRolePolicy"
-            ],
-            "Resource": "*",
-            "Condition": {
-                "StringNotLike": {
-                    "iam:PermissionsBoundary": "arn:aws:iam::*:policy/acme-infra-dev-team-boundary"
-                }
-            }
-        },
-        {
-            "Sid": "AllowWriteRolesWithBoundary",
-            "Effect": "Allow",
-            "Action": [
-                "iam:CreateRole",
-                "iam:AttachRolePolicy",
-                "iam:DetachRolePolicy"
-            ],
-            "Resource": "*",
-            "Condition": {
-                "StringLike": {
-                    "iam:PermissionsBoundary": "arn:aws:iam::*:policy/acme-infra-dev-team-boundary"
-                }
-            }
-        },
-        {
-            "Sid": "DenyWriteAccessFoundationRoles",
-            "Effect": "Deny",
-            "Action": [
-                "iam:CreateRole",
                 "iam:DeleteRole",
-                "iam:UpdateRole"
+                "iam:UpdateRole",
+                "iam:AttachRolePolicy",
+                "iam:DetachRolePolicy"
             ],
-            "Resource": [
-                "arn:aws:iam::*:role/AWS*",
-                "arn:aws:iam::*:role/aws*",
-                "arn:aws:iam::*:role/acme-infra-*"
-            ]
+            "Resource": "*"
         },
         {
-            "Sid": "DenyWriteAccessFoundationPolicies",
+            "Sid": "DenyWritePolicies",
             "Effect": "Deny",
             "Action": [
                 "iam:CreatePolicy",
                 "iam:DeletePolicy",
                 "iam:DeletePolicyVersion"
             ],
-            "Resource": "arn:aws:iam::*:policy/acme-infra-*"
+            "Resource": "*"
         },
         {
             "Sid": "DenyWriteAccessStackSets",
