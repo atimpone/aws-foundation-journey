@@ -155,6 +155,13 @@ In this step you'll use AWS CloudFormation StackSets to distribute an IAM permis
 
 In a later section, when you create several development team AWS accounts, you will associate the AWS accounts with the "development" OU. Any AWS account that is added to that OU will automatically be configured with the IAM permissions boundary policy resource.  Similarly, when an AWS account is removed from the OU, the IAM permissions boundary policy resource will be automatically removed from the AWS account.
 
+---
+**Note: Review the sample development team access controls**
+
+See [Controlling Development Team Access](3-3-controlling-dev-team-access.md) for a detailed explanation of the requirements and sample implementation of how you can provide freedom to your development teams in their development team AWS accounts, but inhibit them from adversely impacting the security of your overall AWS environment.
+
+---
+
 ### Enable Trusted Access in AWS Organizations
 
 First, enable the AWS CloudFormation service to automatically configure permissions required to deploy to AWS accounts in your AWS organization.
@@ -216,15 +223,6 @@ Next, you'll create a custom permission set in AWS SSO to represent the initial 
 10. Select **`Create`**.
 
 Later, when you onboard the development teams to their development AWS accounts, you'll reference this permission set.
-
----
-**Note: Review the sample policy**
-
-This is only an initial iteration of the policies to associate with development teams.  Before you use this sample policy, you should review it in detail with a person skilled in AWS IAM to ensure that it aligns with your needs and modify it as necessary.
-
-See [IAM Policy Sample - acme-infra-dev-team.json](3-4-iam-policy-infra-dev-team.md) for more details on this sample policy.
-
----
 
 ## 9. Configure Multi-Factor Authentication (MFA) Requirements
 
