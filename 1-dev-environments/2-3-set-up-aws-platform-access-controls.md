@@ -1,8 +1,8 @@
 # 3. Set Up Initial AWS Platform Access Controls
 
-In this step your Security and Cloud Administrators will decide on and implement the initial approach to controlling access to the AWS platform and onboard the foundation team members with the appropriate permissions so that they can begin to access and manage your AWS environment.
+In this step your Security and Cloud Administrators will decide on and implement the initial approach to controlling access to the AWS platform.
 
-This step should take about 30 minutes to complete.
+This step should take about 45 minutes to complete.
 
 1. [Temporarily Use AWS SSO Locally Managed Users and Groups](#1-temporarily-use-aws-sso-locally-managed-users-and-groups)
 2. [Map Foundation Functional Roles to Existing AWS Groups](#2-map-foundation-functional-roles-to-existing-aws-groups)
@@ -181,7 +181,7 @@ Create a StackSet to deploy the permissions boundary policy to all AWS accounts 
 2. Select **`Upload a template file`**.
 3. Select **`Choose file`** to select the downloaded template file from your desktop.
 5. Select **`Next`**.
-6. Enter a **`StackSet name`**. For example, **`acme-infra-dev-team-permissions-boundary`**. It's useful to prefix your custom cloud resources that live in a larger name space with your organization identifier and a qualifier such as **`infra`** to represent foundation resources. As an alternative to **`infra`**, you might choose **`base`** or similar.  The important consideration is to be consistent with naming of foundation cloud resources so that you can apply IAM policies that will inhibited unauthorized modification of those resources.
+6. Enter a **`StackSet name`**. For example, **`acme-infra-dev-team-permissions-boundary`**. It's useful to prefix your custom cloud resources that live in a larger name space with your organization identifier and a qualifier such as **`infra`** to represent foundation resources. As an alternative to **`infra`**, you might choose **`base`** or similar.  The important consideration is to be consistent with naming of foundation cloud resources so that you can apply IAM policies that will inhibit unauthorized modification of those resources.
 7. In **`Parameters`**:
 
 |Parameter|Guidance|
