@@ -24,33 +24,33 @@ Create a new group in AWS SSO for each of the development teams and associate th
 
 1. As a Cloud Administrator, use your personal user to log into AWS SSO.
 2. Select the AWS **master** account.
-3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
+3. Select **`Management console`** associated with the **`AWSAdministratorAccess`** role.
 4. Select the appropriate AWS region.
 5. Navigate to AWS SSO.
-6. Access `Groups` in AWS SSO.
-7. Select `Create group`.
+6. Access **`Groups`** in AWS SSO.
+7. Select **`Create group`**.
 8. Provide a group name. For example, replacing `acme` with your organization's identifier:
   * `acme-team-a-dev`
   * `acme-foundation-dev`
 9. Provide a description. For example:
   * `Team A development`
   * `Foundation team development`
-10. Select `Create`.
+10. Select **`Create`**.
 
 ### Associate Groups with Permissions and Development AWS Accounts
 
-1. Access `AWS accounts` in AWS SSO.
+1. Access **`AWS accounts`** in AWS SSO.
 2. Select the checkbox next to the development AWS account of interest. For example:
   * `Team A - Dev`
   * `Foundation - Dev`
-3. Select `Assgn users`.
-4. Select `Groups`.
+3. Select **`Assgn users`**.
+4. Select **`Groups`**.
 5. Select the checkbox next to the group of interest. For example:
   * `acme-team-a-dev`
   * `acme-foundation-dev`
-6. Select `Next: Permission sets`.
+6. Select **`Next: Permission sets`**.
 7. Select the checkbox next to **`acme-infra-dev-team`**.
-8. Select `Finish`.
+8. Select **`Finish`**.
 
 Repeat the process above to create a group for your foundation team and enable this group to access their development AWS account.
 
@@ -62,22 +62,22 @@ Typically, the user name will simply be the user's corporate email address that 
 
 Next, access the AWS SSO service to begin adding an AWS SSO user for each foundation team member:
 
-1. Access `Users` in AWS SSO.
-2. Select `Add user`.
+1. Access **`Users`** in AWS SSO.
+2. Select **`Add user`**.
 4. Specify a user name and complete at least the other required fields.
-5. Select `Next: Groups`.
+5. Select **`Next: Groups`**.
 6. Select `acme-team-a-dev` or similar.
-7. Select `Add user`.
+7. Select **`Add user`**.
 
 ## 4. Enable Foundation Team Members Access to Their Development AWS Account
 
 Since you've already created users in AWS SSO for foundation team members, all you need to do to at this stage is to add the foundation team member users to the newly created foundation development group in AWS SSO.
 
-1. Access `Groups` in AWS SSO.
+1. Access **`Groups`** in AWS SSO.
 2. Select `acme-foundation-dev`.
-3. Select `Add users`.
+3. Select **`Add users`**.
 4. Select the checkbox for each foundation team member.
-5. Select `Add users`.
+5. Select **`Add users`**.
 
 The foundation team members now have access to the foundation team development AWS account.
 

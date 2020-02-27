@@ -17,15 +17,15 @@ Next, access the AWS SSO service to begin adding an AWS SSO user for each founda
 
 1. If you don't already have a personal user account with administrator access, sign in to the AWS SSO URL for your environment using the **AWS Control Tower Administrator** user.
 2. Select the AWS **master** account.
-3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
+3. Select **`Management console`** associated with the **`AWSAdministratorAccess`** role.
 4. Select the appropriate AWS region.
-5. Navigate to `AWS SSO`.
-6. Access `Users` in AWS SSO.
-7. Select `Add user`.
+5. Navigate to **`AWS SSO`**.
+6. Access **`Users`** in AWS SSO.
+7. Select **`Add user`**.
 8. Specify a user name and complete at least the other required fields.
-9. Select `Next: Groups`.
+9. Select **`Next: Groups`**.
 10. Select the checkbox for each corresponding AWS SSO group based on [Mapping of Functional Roles to AWS SSO Groups](2-3-set-up-aws-platform-access-controls.md#2-map-foundation-functional-roles-to-existing-aws-groups).
-11. Select `Add user`.
+11. Select **`Add user`**.
 
 ## 2. Onboard Your Foundation Team Members 
 
@@ -34,7 +34,7 @@ Reach out to each foundation team member to inform them of the context of the em
 Their initial sign on experience will consist of:
 
 1. Receiving the email invitation to the AWS SSO service.
-1. Clicking on the `Accept invitation` link to set their initial password.
+1. Clicking on the **`Accept invitation`** link to set their initial password.
 3. Being directed to AWS SSO landing page where they can select from the set of AWS accounts for which they have access.
 4. Selecting from the permissions that they can assume for each AWS account.
 5. Using either the AWS Management Console or AWS CLI/API to access each AWS account.
