@@ -9,7 +9,7 @@ As you progress on your journey, managing and controlling changes to these types
 * [Goals](#goals)
 * [Requirements](#requirements)
 * [Common Scenarios](#common-scenarios)
-* [Sample Policy Implementation](#sample-implementation)
+* [Sample Implementation](#sample-implementation)
   * [Overview of the Implementation](#overview-of-the-implementation)
   * [Sample Policy Code](#sample-policy-code)
   * [Base Policy Walkthrough](#base-policy-walkthrough)
@@ -77,7 +77,7 @@ Create custom, workload-specific IAM roles and policies that are used with AWS s
 * Deploy a Lambda function and associate a custom role to enable the Lambda function to access other AWS services.
 * ...
 
-## Sample Policy Implementation
+## Sample Implementation
 
 ### Overview of the Implementation
 
