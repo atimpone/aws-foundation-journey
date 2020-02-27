@@ -23,9 +23,9 @@ These policies are not intended to be applied beyond development AWS accounts.  
 
 ## Requirements
 
-The following requirements attempt to provide a practical sense of the access that you may consider providing to development teams.
+The following requirements are intended to provide a practical sense of the access that you may consider providing to development teams.
 
-### Disallow
+### Disallow Access
 
 **Disallow Modification of Foundation Resources:** For example:
 * AWS Control Tower CloudFormation StackSet stack instances.
@@ -39,7 +39,7 @@ The following requirements attempt to provide a practical sense of the access th
 
 **Disallow Creation and Management of VPC Resources:** Since development teams already have read only access to a shared development VPC and supporting network resources, teams should not generally need to create and manage VPC resources. 
 
-### Allow
+### Allow Access
 
 **Allow Wide Range of AWS Services Subject to Organizational Policies:**  Allow for use of any AWS service with the expectation that AWS Organizations Service Control Policies (SCP) will be used to restrict the overall set of AWS services that are accessible for any AWS account in the "development" organization.
 
@@ -61,9 +61,21 @@ However, it is important that foundation resources adhere to a naming convention
 
 ...
 
-### Developers Creating IAM Roles and Policies
+### Developers Creating Custom IAM Roles and Policies
 
-...
+Create custom, workload-specific IAM roles and policies that are used with AWS services.
+
+#### Creating Custom IAM Roles
+
+* Create custom IAM roles via the AWS Management Console.
+* Create custom IAM roles via the AWS CLI or SDKs.
+* Create custom IAM roles via AWS CloudFormation or other Infrastucture as Code (IaC) tools such as Terraform.
+
+#### Using Custom IAM Roles
+
+* Deploy EC2 instance and associate an instance profile and IAM role through which the EC2 instance has access to other AWS resources.
+* Deploy a Lambda function and associate a custom role to enable the Lambda function to access other AWS services.
+* ...
 
 ## Sample Policy Implementation
 
