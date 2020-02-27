@@ -17,13 +17,13 @@ As you progress on your journey, managing and controlling changes to these types
 
 ## Goals
 
-The overall intent of the policies are to enable your technologists to have broad freedom to innovate, experiment, develop, and perform early testing in their development team AWS accounts while being prevented from adversely impacting the overall security and the stability of the underlying foundation of those AWS accounts.
+The overall intent of the policies is to enable your technologists to have broad freedom to innovate, experiment, develop, and perform early testing in their development team AWS accounts while being prevented from adversely impacting the overall security and the stability of the underlying foundation of those AWS accounts.
 
 These policies are not intended to be applied beyond development AWS accounts.  For example, it's a best practice for organizations to apply strict policies for the creation and management of cloud resources in formal test and production environments and the associated AWS accounts.
 
 ## Requirements
 
-Given the overall intent of these policies, here's a more detailed list of practical requirements.
+The following requirements attempt to provide a practical sense of the access that you may consider providing to development teams.
 
 ### Disallow
 
@@ -37,7 +37,7 @@ Given the overall intent of these policies, here's a more detailed list of pract
 
 **Disallow Privilege Escalation:** Inhibit the ability for development team members to create and use IAM roles that circumvent these requirements.
 
-**Disallow Creation and Management of VPC Resources:** Since development teams already have read access to a shared development VPC and supporting network resources, teams should not generally need to create and manage VPC resources. 
+**Disallow Creation and Management of VPC Resources:** Since development teams already have read only access to a shared development VPC and supporting network resources, teams should not generally need to create and manage VPC resources. 
 
 ### Allow
 
@@ -53,7 +53,7 @@ However, it is important that foundation resources adhere to a naming convention
 
 ### Assumptions
 
-**Separate Policy for Foundation Team Development:** Since your cloud foundation team members will likely need additional acccess in their foundation team development AWS account, a derivative of this sample policy may be warranted.  As a best practice, when foundation team members are doing day-to-day development of Infrastructure as Code (IaC), they should not be using administrative access roles and permissions.  Instead, they should drop into the Cloud Administrator and similar roles only when they need to perform their administrative duties.
+**Consider Separate Policy for Foundation Team Development:** Since your cloud foundation team members will likely need additional acccess in their foundation team development AWS account, a derivative of this sample policy may be warranted.  As a best practice, when foundation team members are doing day-to-day development of Infrastructure as Code (IaC), they should not be using administrative access roles and permissions.  Instead, they should drop into the Cloud Administrator and similar roles only when they need to perform their administrative duties.
 
 ## Common Scenarios
 
