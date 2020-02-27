@@ -25,7 +25,7 @@ After you've addressed a few up front tasks, in about a day, this guide will hel
 
 * [Getting Started Guide for Foundation Team Members](3-1-getting-started-guide-foundation-team-members.md)
 * [Getting Started Guide for Development Team Members](3-2-getting-started-guide-dev-team-members.md)
-* [Controlling Development Team Access](3-3-controlling-dev-team-access.md)
+* [Enabling Developer Freedom with Guardrails](3-3-controlling-dev-team-access.md)
 * [Cloud Platform System AWS Users](3-4-cloud-platform-system-users.md)
 
 ## Next Step

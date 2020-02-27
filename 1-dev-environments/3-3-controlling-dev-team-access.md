@@ -1,6 +1,6 @@
-# Controlling Development Team Access
+# Enabling Developer Freedom with Guardrails
 
-The sample IAM policies described in this document are intended to be used as a starting point for how you might control development team access in their development team AWS accounts so that development teams have the freedom to get many things done on their own yet be constrained from adversely impacting the security and stability of development team AWS accounts. 
+The sample IAM policies described in this document are intended to be used as a starting point for how you might control development team access in their development team AWS accounts so that development teams have the freedom to get many things done on their own yet be constrained from adversely impacting the security and stability of development team AWS accounts.
 
 Your organization is expected to understand these sample policies in detail before potentially applying them.  
 
@@ -11,7 +11,6 @@ As you progress on your journey, managing and controlling changes to these types
 * [Common Scenarios](#common-scenarios)
 * [Sample Implementation](#sample-implementation)
   * [Overview of the Implementation](#overview-of-the-implementation)
-  * [Sample Policy Code](#sample-policy-code)
   * [Base Policy Walkthrough](#base-policy-walkthrough)
   * [Permissions Boundary Walkthrough](#permissions-boundary-walkthrough)
 
@@ -57,42 +56,61 @@ However, it is important that foundation resources adhere to a naming convention
 
 ## Common Scenarios
 
+There are two common scenarios that the access requirements are intended to address:
+
+* Developers working directly with AWS services.
+* Developers creating customer managed IAM roles and policies.
+
 ### Developers Working Directly with AWS Services
 
-...
+When your technologists experiment and formally develop with AWS services, the IAM role under which they work in their development team AWS account needs access to a variety of AWS services.
 
-### Developers Creating Custom IAM Roles and Policies
+### Developers Creating Customer Managed IAM Roles and Policies
 
-Create custom, workload-specific IAM roles and policies that are used with AWS services.
+When developers are formally building out working configurations of AWS services, they often need to define and configure customer managed IAM roles and policies that are specific to their workloads. Once the workload specific IAM roles and policies are created, they are associated with AWS services so that those services can operate with the appropriate permissions.  This work to development and initially test workload specific IAM roles and policies is best performed by the development teams that are also developing the workloads.
 
-#### Creating Custom IAM Roles
+Typically, before workload specific IAM roles and policies are used in more strictly controlled test and production environments and associated AWS accounts, customers implement processes and, in more advanced cases, code pipelines to review and test workload specific IAM roles and policies.
 
-* Create custom IAM roles via the AWS Management Console.
-* Create custom IAM roles via the AWS CLI or SDKs.
-* Create custom IAM roles via AWS CloudFormation or other Infrastucture as Code (IaC) tools such as Terraform.
+#### Creating Customer Managed IAM Roles
 
-#### Using Custom IAM Roles
+When experimenting, developing, and testing workload specific IAM roles and policies, developers use a variety of tools including:
 
-* Deploy EC2 instance and associate an instance profile and IAM role through which the EC2 instance has access to other AWS resources.
-* Deploy a Lambda function and associate a custom role to enable the Lambda function to access other AWS services.
-* ...
+* AWS Management Console.
+* AWS CLI or SDKs.
+* AWS CloudFormation or other Infrastucture as Code (IaC) tools such as Terraform.
+
+The IaC tools are typically used before workload specific IAM roles and policies are promoted to test and production environments.
+
+#### Using Customer Managed IAM Roles
+
+The following scenarios are just a few examples of when a development team would associate a customer managed IAM role with an AWS service:
+
+* Deploy EC2 instance and associate an instance profile.
+* Deploy a Lambda function.
+* Deploy a Cloud9 IDE workspace.
+* Deploy a Redshift cluster to support data warehousing use cases.
+* Deploy containers to Amazon ECS and EKS container orchestration services.
 
 ## Sample Implementation
 
+This section provides an overview of the sample policies implementation and then walks through each set of policies in detail.
+
 ### Overview of the Implementation
 
-...
-
-### Sample Policy Code
-
-The following sample policies are described in detail later in this document.
+In support of the requirements described above, two sets of IAM policies are used:
 
 |Policy|Purpose|Usage|Sample Code|
 |------|-------|-----|-----------|
-|**Development Team IAM Policy**|A JSON format IAM policy used for control human user access to development AWS accounts.|This policy is used to create a customer permission set in AWS SSO that is associated with development team groups and development team AWS accounts.|[acme-infra-dev-team.json](../4-code-samples/01-iam-policies/acme-infra-dev-team.json)|
+|**Development Team IAM Policy**|A JSON format IAM policy used for control human user access to development AWS accounts.|This policy is used to create a custom permission set in AWS SSO that is associated with development team groups and development team AWS accounts.|[acme-infra-dev-team.json](../4-code-samples/01-iam-policies/acme-infra-dev-team.json)|
 |**Development Team IAM Permissions Boundary**|An IAM customer managed permissions boundary policy that is used to control permissions of IAM roles created by development team users in their development team AWS accounts.|This AWS CloudFormation template forms the basis of a CloudFormation StackSet that is applied to all development team AWS accounts.|[acme-infra-dev-team-boundary.yml](../4-code-samples/01-iam-policies/acme-infra-dev-team-boundary.yml)|
 
+...insert diagram here...
+
+AWS IAM Permissions Boundaries is a feature that enables delegation of permissions management to trusted employees, but with the ability to constrain the overall scope of their access.  In this scenario, we're delegating a degree of permissions management to development team members in their development AWS accounts so tha
+
 ### Base Policy Walkthrough
+
+[acme-infra-dev-team.json](../4-code-samples/01-iam-policies/acme-infra-dev-team.json)
 
 Each section of the sample policy is explained here.
 
@@ -153,20 +171,47 @@ Explicitly disallow creation of IAM users since development team users do not us
         },
 ```
 
-### Allow Creation of IAM Roles Subject to Use of Permissions Boundary
+### Deny Creation of IAM Roles When Permissions Boundary is Not Attached
 
-Allow development team members to create, list, and update IAM roles so that they can experiment, develop, and perform early testing of IAM roles that are required to support their workloads.
+Disallow IAM roles created by developers to create new IAM roles unless the permissions boundary policy is attached at role creation time.
 
 ```
         {
-            "Sid": "AllowWriteAccessAppRoles",
+            "Sid": "DenyWriteRoles",
+            "Effect": "Deny",
+            "Action": [
+                "iam:CreateRole",
+                "iam:AttachRolePolicy",
+                "iam:DetachRolePolicy"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "StringNotLike": {
+                    "iam:PermissionsBoundary": "arn:aws:iam::*:policy/acme-infra-dev-team-boundary"
+                }
+            }
+        },
+```
+
+### Allow Creation of IAM Roles Only When Permissions Boundary is Attached
+
+Allow development team members to create, list, and update IAM roles so that they can experiment, develop, and perform early testing of IAM roles that are required to support their workloads as long as the permissions boundary policy is attached at role creation time.
+
+```
+        {
+            "Sid": "AllowWriteRolesWithBoundary",
             "Effect": "Allow",
             "Action": [
                 "iam:CreateRole",
                 "iam:AttachRolePolicy",
                 "iam:DetachRolePolicy"
             ],
-            "Resource": "*"
+            "Resource": "*",
+            "Condition": {
+                "StringLike": {
+                    "iam:PermissionsBoundary": "arn:aws:iam::*:policy/acme-infra-dev-team-boundary"
+                }
+            }
         },
 ```
 
@@ -269,4 +314,33 @@ Note that both EC2 VM related resources and VPC related networking resources sha
 ```
 ### Permissions Boundary Walkthrough
 
-...
+[acme-infra-dev-team-boundary.yml](../4-code-samples/01-iam-policies/acme-infra-dev-team-boundary.yml)
+
+Since the overall intent in this development environment scenario is to enable AWS services acting on behalf of the developers to have similar access permissions as the developers themselves, the permissions boundary policy looks very similar to the development team policy described above.  
+
+The main difference is that creation of IAM roles and policies is disallowed in the sample permissions boundary policy. Since there was no requirement to enable AWS services to create roles and policies on behalf of developmemt team members, disallowing role creation inhibits development team members from creating roles that could circumvent the policies.
+
+```
+            {
+              "Sid": "DenyWriteRoles",
+              "Effect": "Deny",
+              "Action": [
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:UpdateRole",
+                "iam:AttachRolePolicy",
+                "iam:DetachRolePolicy"
+              ],
+              "Resource": "*"
+            },
+            {
+              "Sid": "DenyWritePolicies",
+              "Effect": "Deny",
+              "Action": [
+                "iam:CreatePolicy",
+                "iam:DeletePolicy",
+                "iam:DeletePolicyVersion"
+              ],
+              "Resource": "*"
+            },
+```
