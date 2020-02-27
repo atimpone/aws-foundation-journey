@@ -93,7 +93,7 @@ In the following steps, it's important that you select the correct role when acc
 
 |Field|Recommendation|
 |-----|---------------|
-|`SSOUserEmail`|Consult the [set of AWS account root user email addresses](1-4-address-pre-requisites.md#1-create-email-addresses-for-new-aws-accounts) that you established earlier.|
+|`SSOUserEmail`|Consult the [set of AWS account root user email addresses](1-4-address-prerequisites.md#1-create-email-addresses-for-new-aws-accounts) that you established earlier.|
 |`AccountEmail`|Use the same value as `SSOUserEmail`.|
 |`SSOUserFirstName`|Use a part of your account name. For example, `Network`.|
 |`SSOUserLastName`|Use the remaining part of the account name. For example, `Infrastructure`|
@@ -299,4 +299,4 @@ As a workaround, in a subsequent section where you provision the development AWS
 
  ## Next Steps
 
-[6. Create Initial Team Development Environments](2-6-create-team-dev-environments.md)
+[6. Create Team Development Environments](2-6-create-team-dev-environments.md)
