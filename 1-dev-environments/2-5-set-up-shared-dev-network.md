@@ -5,14 +5,13 @@ In this step your Cloud Administrators will review the initial network design, c
 This step should take about 60 minutes to complete.
 
 1. [Review Initial Network Design](#1-review-initial-network-design)
-2. [Create Organizational Units](#2-create-organizational-units)
-3. [Disable Account Factory VPC Provisioning](#3-disable-account-factory-vpc-provisioning)
-4. [Create Network AWS Account](#4-create-network-aws-account)
-5. [Enable Foundation Team Members Access](#5-enable-foundation-team-members-access)
-6. [Determine IP Address CIDR Blocks](#6-determine-ip-address-cidr-blocks)
-7. [Provision Development VPC](#7-provision-development-vpc)
-8. [Review Development VPC](#8-review-development-vpc)
-9. [Share Development VPC with Development OU](#9-share-development-VPC-with-development-ou)
+2. [Disable Account Factory VPC Provisioning](#2-disable-account-factory-vpc-provisioning)
+3. [Create Network AWS Account](#3-create-network-aws-account)
+4. [Enable Foundation Team Members Access](#4-enable-foundation-team-members-access)
+5. [Determine IP Address CIDR Blocks](#5-determine-ip-address-cidr-blocks)
+6. [Provision Development VPC](#6-provision-development-vpc)
+7. [Review Development VPC](#7-review-development-vpc)
+8. [Share Development VPC with Development OU](#8-share-development-VPC-with-development-ou)
 
 ## 1. Review Initial Network Design
 
@@ -26,47 +25,13 @@ As you progress in your journey, you may transition from this initial approach o
 
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-network-initial-details.png "Initial Network Details")
 
-## 2. Create Organizational Units
-
-Using AWS Control Tower, create several Organizational Units (OUs) that will act as a mechanism to group AWS accounts that have similar security and management needs.  Initially, the OU structure will simply consist of two custom OUs:
-
-* **`infrastructure`** - For foundation infrastructure related AWS accounts including the Network AWS account that you will create later in this section.
-* **`development`** - For development team AWS accounts that you'll create in the next section.
-
----
-**Note: Your OU design will evolve** 
-
-Contrary to what's implied by the name "OU", AWS Organizations OUs are not meant to be used to reflect your enterprise's organizational structure. Instead, they are intended to provide a means to group AWS accounts witn similar security and operational requirements.
-
-Since you have the ability to move AWS accounts between OUs and modify OUs, you don't need to perform a complete OU design at this early stage. As you progress on your journey, you will evolve your OU design to suit your emerging needs.  If you'd like to learn more about OUs, see [AWS Organizations in Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/organizations.html).
-
----
-### Create the `infrastructure` OU
-
-1. As a Cloud Administrator, use your personal user to log into AWS SSO.
-2. Select the AWS **master** account.
-3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
-4. Select the appropriate AWS region.
-5. Navigate to **`AWS Control Tower`**.
-6. Within the AWS Control Tower dashboard select `Add organizational units`.  
-7. Follow the prompts to create a new OU named **`infrastructure`**.
-
-In the a subsequent step when you create the new Network AWS account, you'll specify this new OU.
-
-### Create the `development` OU
-
-1. Within the AWS Control Tower dashboard select `Add organizational units`.  
-2. Follow the prompts to create a new OU named **`development`**.
-
-In the next section when you create the new development AWS accounts, you'll specify this new OU.
-
-## 3. Disable Account Factory VPC Provisioning
+## 2. Disable Account Factory VPC Provisioning
 
 Since you will be provisioning the shared development VPC directly using AWS CloudFormation, you need to ensure that the AWS Control Tower Account Factory network configuration is set to disable creation of a VPC when creating a new AWS account.  Otherwise, the Account Factory will attempt to create a VPC each time you provision a new AWS account.
 
 See [Configuring AWS Control Tower Without a VPC](https://docs.aws.amazon.com/controltower/latest/userguide/configure-without-vpc.html) for details on disabling automatic creation of VPCs.
 
-## 4. Create Network AWS Account
+## 3. Create Network AWS Account
 
 In AWS Control Tower, provision a new Network AWS account that will initially contain the shared development VPC. 
 
@@ -123,7 +88,7 @@ We need to verify that this is the default behavior and, if it is, enhance this 
 
 ---
 
-## 5. Enable Foundation Team Members Access
+## 4. Enable Foundation Team Members Access
 
 Since Cloud Administrators won't automatically be granted sufficient access to newly created AWS account, you need to enable this access each time you create a new AWS account via AWS Control Tower's Account Factory.
 
@@ -143,7 +108,7 @@ Since Cloud Administrators won't automatically be granted sufficient access to n
 
 Now you've enabled all users who are part of the Cloud Administrator group in AWS SSO administrator access to the Network AWS account.
 
-## 6. Determine IP Address CIDR Blocks
+## 5. Determine IP Address CIDR Blocks
 
 If you're just experimenting and don't care which IP address CIDR block is used to build the shared development VPC, you can move to the next step, [7. Provision Development VPC](#7-provision-development-vpc).
 
@@ -195,7 +160,7 @@ Once you've determined the VPC CIDR block, breaking it down into an equal size b
 5. In the table at the bottom, click the `Divide` links to start subdividing the larger block into 6 blocks of equal size.
 6. Note the first 6 blocks and supply them as the subnet CIDR blocks in the next step.
 
-## 7. Provision Development VPC
+## 6. Provision Development VPC
 
 You can use this [sample AWS CloudFormation template](https://github.com/ckamps/infra-aws-vpc-multi-tier) to easily deploy your shared development network.
 
@@ -233,7 +198,7 @@ Leave all of the other parameters at their default settings unless you're comfor
 
 In the `Events` tab, monitor the progress of the stack creation process. After 5 or so minutes, creation of the stack should complete.
 
-## 8. Review Development VPC
+## 7. Review Development VPC
 
 Review the newly created VPC and associated resources.
 
@@ -248,7 +213,7 @@ Review the newly created VPC and associated resources.
 9. Select the log group associated with the VPC Flow Logs. For example, `/infra/shared/flowlogs`.
 10. Explore the log streams. You should see a log stream for each Elastic Network Interface (ENI) used in the VPC. For example, each NAT Gateway has one ENI. Each entry in a log stream represents a the source, destination, and other overall information about the network traffic flowing through the ENI.
 
-## 9. Share Development VPC With Development OU
+## 8. Share Development VPC With Development OU
 
 Now that the development VPC has been provisioned, you need to share the subnets of the VPC with all of the AWS accounts that will become part of the `development` OU that you created earlier.  
 
