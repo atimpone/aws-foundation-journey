@@ -26,7 +26,7 @@ Create a new group in AWS SSO for each of the development teams and associate th
 2. Select the AWS **master** account.
 3. Select **`Management console`** associated with the **`AWSAdministratorAccess`** role.
 4. Select the appropriate AWS region.
-5. Navigate to AWS SSO.
+5. Navigate to **`AWS SSO`**.
 6. Access **`Groups`** in AWS SSO.
 7. Select **`Create group`**.
 8. Provide a group name. For example, replacing `acme` with your organization's identifier:
