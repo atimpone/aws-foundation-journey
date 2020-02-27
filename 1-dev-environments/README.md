@@ -1,6 +1,6 @@
 # Establish Initial Foundation and Development Environments
 
-After you've addressed a few up front tasks, this guide helps your organization establish an initial secure foundation and development environment similar to the following architecture in about a day.
+After you've addressed a few up front tasks, in about a day, this guide will help you establish an initial secure foundation and a set of development environments based on the following architecture.
 
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-initial.png "Initial Development Environment")
 
