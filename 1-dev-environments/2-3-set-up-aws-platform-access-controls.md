@@ -171,7 +171,7 @@ If you'd like more background, see [Enabling Trusted Access with AWS Organizatio
 
 ### Download AWS CloudFormation Template
 
-Next, download the sample AWS CloudFormation template [acme-infra-dev-team-boundary.yml](https://raw.githubusercontent.com/ckamps/aws-foundation-journey/master/4-code-samples/01-iam-policies/acme-infra-dev-team-boundary.yml) to your desktop.
+Next, download the sample AWS CloudFormation template [acme-infra-dev-team-boundary.yml](../4-code-samples/01-iam-policies/acme-infra-dev-team-boundary.yml) to your desktop.
 
 ### Deploy Permissions Boundary as a StackSet
 
