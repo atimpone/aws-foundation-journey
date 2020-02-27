@@ -90,7 +90,7 @@ The following sample policies are described in detail later in this document.
 |Policy|Purpose|Usage|Sample Code|
 |------|-------|-----|-----------|
 |Development Team IAM Policy|A JSON format IAM policy used for control human user access to development AWS accounts.|This policy is used to create a customer permission set in AWS SSO that is associated with development team groups and development team AWS accounts.|[acme-infra-dev-team.json](../4-code-samples/01-iam-policies/acme-infra-dev-team.json)|
-|Development Team IAM Permissions Boundary|An IAM customer managed permissions boundary policy that is used to control permissions of IAM roles created by development team users in their development team AWS accounts.|This AWS CloudFormation template forms the basis of a CloudFormation StackSet that is applied to all development team AWS accounts.|[acme-infra-dev-team.json](../4-code-samples/01-iam-policies/acme-infra-dev-team-boundary.yml)|
+|Development Team IAM Permissions Boundary|An IAM customer managed permissions boundary policy that is used to control permissions of IAM roles created by development team users in their development team AWS accounts.|This AWS CloudFormation template forms the basis of a CloudFormation StackSet that is applied to all development team AWS accounts.|[acme-infra-dev-team-boundary.yml](../4-code-samples/01-iam-policies/acme-infra-dev-team-boundary.yml)|
 
 ### Base Policy Walkthrough
 
