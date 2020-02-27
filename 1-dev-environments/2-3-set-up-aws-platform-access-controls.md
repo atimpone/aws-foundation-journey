@@ -139,14 +139,10 @@ Since you have the ability to move AWS accounts between OUs and modify OUs, you 
 ---
 ### Create the `infrastructure` OU
 
-1. As a Cloud Administrator, use your personal user to log into AWS SSO.
-2. Select the AWS **master** account.
-3. Select **`Management console`** associated with the **`AWSAdministratorAccess`** role.
-4. Select the appropriate AWS region.
-5. Navigate to **`AWS Control Tower`**.
-6. Select **`Organizational units`**.
-7. Select **`Add an OU`**.  
-8. Follow the prompts to create a new OU named **`infrastructure`**.
+1. Navigate to **`AWS Control Tower`**.
+2. Select **`Organizational units`**.
+3. Select **`Add an OU`**.  
+4. Follow the prompts to create a new OU named **`infrastructure`**.
 
 ### Create the `development` OU
 
