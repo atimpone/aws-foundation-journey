@@ -1,5 +1,5 @@
 # Enhanced Security Monitoring and Compliance
-se
+
 This section addresses requirements, options, and resources to enable your Security and Cloud Administrators to extend the degree of preventative, detective, and corrective controls.
 
 Support for [custom AWS account baselines](./2-3-custom-account-baselines.md) can be the means to roll out such controls, but this section focuses on what controls are of most interest.
