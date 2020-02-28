@@ -54,7 +54,9 @@ However, it is important that foundation resources adhere to a naming convention
 
 ### Assumptions
 
-**Consider Separate Policy for Foundation Team Development:** Since your cloud foundation team members will likely need additional acccess in their foundation team development AWS account, a derivative of this sample policy may be warranted.  As a best practice, when foundation team members are doing day-to-day development of Infrastructure as Code (IaC), they should not be using administrative access roles and permissions.  Instead, they should drop into the Cloud Administrator and similar roles only when they need to perform their administrative duties.
+**Consider Similar but Different Policies for Foundation Team Development:** Since your cloud foundation team members will likely need additional acccess in their foundation team development AWS account to develop and test chnges to the foundation, a derivative of these sample policies may be warranted for this group of technologists.  
+
+As a best practice, when foundation team members are doing day-to-day development of Infrastructure as Code (IaC), they should not be using their administrative access roles and permissions.  Instead, they should use their development oriented role and assume the escalated privileges of their Cloud Administrator and similar roles only when they need to perform their administrative duties.
 
 ## Common Scenarios
 
