@@ -44,6 +44,8 @@ The following requirements are intended to provide a practical sense of the acce
 
 **Allow Creation of IAM Roles and Policies:** In development environments your technologists should be able to experiment, develop, and test solutions without depending on other teams to get things done. Since this work often entails creation of wokrkload specific IAM roles and policies, your technologists should be able to create and manage roles and policies on their own subject to the constraint that development team members must not be able to escalate their privileges to circumvent other policies. For example, it's a common need to be able to define custom IAM roles and policies and attach the roles to Amazon EC2 instances and Lambda functions.
 
+**Allow Read Only Access to IAM Roles and Policies:** Allow developers to browse and review IAM resources.
+
 ### User Experience
 
 **Avoid Prematurely Requiring Standard Resource Naming and Tagging:** Although your organization will find value in the introduction of cloud resource naming and tagging standards in support of a variety of needs, these standards are not necessary to impose sufficient constraints on development teams at this early stage in your journey.
