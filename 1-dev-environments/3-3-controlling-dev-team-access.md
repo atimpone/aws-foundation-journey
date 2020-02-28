@@ -40,11 +40,11 @@ The following requirements are intended to provide a practical sense of the acce
 
 ### Allow Access
 
-**Allow Wide Range of AWS Services Subject to Organizational Policies:**  Allow for use of any AWS service with the expectation that AWS Organizations Service Control Policies (SCP) will be used to restrict the overall set of AWS services that are accessible for any AWS account in the "development" organization.
+**Allow Wide Range of AWS Services Subject to Organizational Policies:**  Allow for use of a wide range of AWS services with the expectation that AWS Organizations Service Control Policies (SCPs) will be used to restrict the overall set of AWS services that are accessible for any AWS account in the "development" organization.
 
-**Allow Creation of IAM Roles and Policies:** In development environments your technologists should be able to experiment, develop, and test solutions without depending on other teams to get things done. Since this work often entails creation of wokrkload specific IAM roles and policies, your technologists should be able to create and manage roles and policies on their own subject to the constraint that development team members must not be able to escalate their privileges to circumvent other policies. For example, it's a common need to be able to define custom IAM roles and policies and attach the roles to Amazon EC2 instances and Lambda functions.
+**Allow Creation of IAM Roles and Policies:** In development environments developers should be able to experiment, develop, and test solutions without depending on other teams to get things done. Since this work often entails creation of workload specific IAM roles and policies, your developers should be able to create and manage roles and policies on their own subject to the constraint that development team members must not be able to escalate their privileges to circumvent other policies. For example, it's a common need to be able to define custom IAM roles and policies and attach the roles to Amazon EC2 instances and Lambda functions.
 
-**Allow Read Only Access to IAM Roles and Policies:** Allow developers to browse and review IAM resources.
+**Allow Read Only Access to IAM Roles and Policies:** Allow developers to browse and review IAM resources so that they know what is available to potentially reuse and can learn from existing examples.
 
 ### User Experience
 
