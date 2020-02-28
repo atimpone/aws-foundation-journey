@@ -95,7 +95,7 @@ The following scenarios are just a few examples of when a development team would
 * Deploy a Redshift cluster to support data warehousing use cases.
 * Deploy containers to Amazon ECS and EKS container orchestration services.
 
-In all of these examples, it's common to use customer managed IAM roles and policies to permit access to the associated resources as a more managable and secure approach as compared to the complexity and risks associated with managing and using customer managed service or system IAM users and long duration AWS access keys.
+In all of these examples, it's a best practice to use customer managed IAM roles and policies to permit the workload cloud resources access to other cloud resources on which they depend. This approach is more managable and secure than the complexity and risks associated with managing and using customer managed service or system IAM users and long duration AWS access keys.
 
 ## Sample Implementation
 
