@@ -34,7 +34,7 @@ The following requirements are intended to provide a practical sense of the acce
 * IAM Users: Given the use of AWS SSO for human user login, there's generally no need for IAM users.
 * SAML Providers: Creation of these resources could enable external entities to access your AWS account.
 
-**Disallow Privilege Escalation:** Inhibit the ability for development team members to create and use IAM roles that circumvent these requirements.
+**Disallow Privilege Escalation:** Inhibit development team members from creating and using IAM roles that circumvent these requirements.
 
 **Disallow Creation and Management of VPC Resources:** Since development teams already have read only access to a shared development VPC and supporting network resources, teams should not generally need to create and manage VPC resources. 
 
