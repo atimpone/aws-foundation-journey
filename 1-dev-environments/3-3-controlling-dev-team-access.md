@@ -376,10 +376,32 @@ The main difference is that creation of IAM roles and policies is disallowed in 
 
 ### Example Test Cases
 
-**Creating and Managing IAM Roles**
+#### Developers Working Directly with AWS Services
 
-...
+This set of test cases depends on the development team's IAM SAML role's policies.
 
-**Using IAM Roles**
+As a developer, attempt to perform actions with a variety of AWS services.
 
-...
+Only those explicitly disallowed actions listed earlier in this document should be inhibited.
+
+#### Developers Creating and Using Customer Managed IAM Roles and Policies for Their Workloads
+
+This set of test cases depends on the AWS IAM permissions boundary being deployed and referenced in the development team IAM SAML role's policies.
+
+##### Creating Customer Managed IAM Roles
+
+Developers create customer managed IAM roles and policies via the following tools.  Developers attempt to create IAM roles with and without the permissions boundary. All attempts to create IAM roles without the permissions boundary should fail.
+
+* AWS Management Console.
+* AWS CLI or SDKs.
+* AWS CloudFormation or other Infrastucture as Code (IaC) tools such as Terraform.
+
+##### Using Customer Managed IAM Roles
+
+Developers associate customer managed IAM roles to AWS resources and then attempt to access allowed and disallowed actions on resources.
+
+* Deploy EC2 instance and associate an instance profile.
+* Deploy a Lambda function.
+* Deploy a Cloud9 IDE workspace.
+* Deploy a Redshift cluster to support data warehousing use cases.
+* Deploy containers to Amazon ECS and EKS container orchestration services.
