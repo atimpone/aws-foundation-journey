@@ -69,7 +69,7 @@ When your technologists experiment and formally develop with AWS services, the I
 
 When developers are formally building out working configurations of AWS services, they often need to define and configure customer managed IAM roles and policies that are specific to their workloads. Once the workload specific IAM roles and policies are created, they are associated with AWS services so that those services can operate with the appropriate permissions.  This work to development and initially test workload specific IAM roles and policies is best performed by the development teams that are also developing the workloads.
 
-Typically, before workload specific IAM roles and policies are used in more strictly controlled test and production environments and associated AWS accounts, customers implement processes and, in more advanced cases, code pipelines to review and test workload specific IAM roles and policies.
+Typically, before workload specific IAM roles and policies are used in more strictly controlled test and production environments and associated AWS accounts, customers implement human powered workflows and, in more advanced cases, highly automated code pipelines to review and test workload specific IAM roles and policies.
 
 #### Creating Customer Managed IAM Roles
 
