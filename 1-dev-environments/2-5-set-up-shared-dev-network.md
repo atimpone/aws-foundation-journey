@@ -24,7 +24,7 @@ At least one public subnet will have a NAT Gateway that enables workloads in any
 ---
 **Note: Option to disallow direct Internet integration**
 
-As you progress in your journey, you may transition from this initial approach of providing development teams with direct Internet access via the initial set of public subnets and NAT Gateway to a more secure architecture where all Internet egress and ingress traffic is routed through your standard enterprise edge security services. In this future state, development teams would not have access direct to public subnets. This capability is highlighted in the optional [fast follow-on capabilities](../2-fast-follow-ons/README.md).
+As you progress in your journey, you may transition from this initial approach of providing development teams with direct Internet access via the initial set of public subnets and NAT Gateway to a more secure architecture where all Internet egress and ingress traffic is routed through your standard enterprise edge security services. In this future state, development teams would not have direct access to deploy workloads to public subnets. This capability is highlighted in the optional [fast follow-on capabilities](../2-fast-follow-ons/README.md).
 
 ---
 
