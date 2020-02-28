@@ -18,7 +18,7 @@ As you progress on your journey, managing and controlling changes to these types
 
 The overall intent of the policies is to enable your technologists to have broad freedom to innovate, experiment, develop, and perform early testing in their development team AWS accounts while being prevented from adversely impacting the overall security and the stability of the underlying foundation of those AWS accounts.
 
-These policies are not intended to be applied beyond development AWS accounts.  For example, it's a best practice for organizations to apply strict policies for the creation and management of cloud resources in formal test and production environments and the associated AWS accounts.
+These policies are not intended to be applied beyond development AWS accounts.  For example, it's a best practice for organizations to apply strict policies for the creation and management of cloud resources in formal test and production AWS accounts.
 
 ## Requirements
 
