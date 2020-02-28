@@ -13,6 +13,7 @@ As you progress on your journey, managing and controlling changes to these types
   * [Overview of the Implementation](#overview-of-the-implementation)
   * [Base Policy Walkthrough](#base-policy-walkthrough)
   * [Permissions Boundary Walkthrough](#permissions-boundary-walkthrough)
+  * [Example Test Cases](#example-test-cases)
 
 ## Goals
 
@@ -354,3 +355,13 @@ The main difference is that creation of IAM roles and policies is disallowed in 
               "Resource": "*"
             },
 ```
+
+### Example Test Cases
+
+**Creating and Managing IAM Roles**
+
+...
+
+**Using IAM Roles**
+
+...
