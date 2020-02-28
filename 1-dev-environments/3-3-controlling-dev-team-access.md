@@ -93,7 +93,7 @@ The following scenarios are just a few examples of when a development team would
 
 ## Sample Implementation
 
-This section provides an overview of the sample policies implementation and then walks through each set of policies in detail.
+This section provides an overview of the sample policies and then walks through each set of policies in detail.
 
 ### Overview of the Implementation
 
