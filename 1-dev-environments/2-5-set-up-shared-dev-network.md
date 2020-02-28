@@ -1,6 +1,6 @@
 # 5. Set Up Shared Development Network
 
-In this step your Cloud Administrators will review the initial network design, create a new Network AWS account, provision a shared development network, and share that network will all development AWS accounts in your AWS organization.
+In this step your Cloud Administrators will review the initial development network design, create a new Network AWS account, provision a shared development network, and share that network will all development AWS accounts in your AWS organization.
 
 This step should take about 60 minutes to complete.
 
