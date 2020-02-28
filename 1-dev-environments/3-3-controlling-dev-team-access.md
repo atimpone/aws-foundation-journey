@@ -199,7 +199,7 @@ Disallow developers creating new IAM roles unless the permissions boundary polic
 
 ### Allow Creation of IAM Roles Only When Permissions Boundary is Attached
 
-Allow development team members to create, list, and update IAM roles so that they can experiment, develop, and perform early testing of IAM roles that are required to support their workloads as long as the permissions boundary policy is attached at role creation time.
+Allow development team members to create IAM roles as long as the permissions boundary policy is attached at role creation time.
 
 ```
         {
