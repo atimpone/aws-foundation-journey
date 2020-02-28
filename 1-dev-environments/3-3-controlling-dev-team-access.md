@@ -60,30 +60,30 @@ As a best practice, when foundation team members are doing day-to-day developmen
 
 ## Common Scenarios
 
-There are two common scenarios that the access requirements are intended to address:
+There are two common scenarios that these access requirements are intended to address:
 
 * Developers working directly with AWS services.
 * Developers creating customer managed IAM roles and policies.
 
 ### Developers Working Directly with AWS Services
 
-When your technologists experiment and formally develop with AWS services, the IAM role under which they work in their development team AWS account needs access to a variety of AWS services.
+When your developers experiment and formally develop with AWS services, the IAM role and policies under which they work in their development team AWS account needs access to a variety of AWS services.
 
 ### Developers Creating Customer Managed IAM Roles and Policies
 
-When developers are formally building out working configurations of AWS services, they often need to define and configure customer managed IAM roles and policies that are specific to their workloads. Once the workload specific IAM roles and policies are created, they are associated with AWS services so that those services can operate with the appropriate permissions.  This work to development and initially test workload specific IAM roles and policies is best performed by the development teams that are also developing the workloads.
+When developers are formally building out ans performing preliminary testing of AWS service configurations, they often need to define and configure customer managed IAM roles and policies that are specific to their workloads. Once the workload specific IAM roles and policies are created, they are associated with AWS services so that those services can operate with the appropriate permissions. Instead of relying on a central team to develop and test workload specific IAM roles and policies, this workload specific work is best performed by the development teams that are also developing the workloads.
 
 Typically, before workload specific IAM roles and policies are used in more strictly controlled test and production environments and associated AWS accounts, customers implement human powered workflows and, in more advanced cases, highly automated code pipelines to review and test workload specific IAM roles and policies.
 
 #### Creating Customer Managed IAM Roles
 
-When experimenting, developing, and testing workload specific IAM roles and policies, developers use a variety of tools including:
+When experimenting, developing, and testing workload specific customer managed IAM roles and policies, developers use a variety of tools including:
 
 * AWS Management Console.
 * AWS CLI or SDKs.
 * AWS CloudFormation or other Infrastucture as Code (IaC) tools such as Terraform.
 
-The IaC tools are typically used before workload specific IAM roles and policies are promoted to test and production environments.
+IaC tools are typically used before workload specific IAM roles and policies can be promoted to test and production environments.
 
 #### Using Customer Managed IAM Roles
 
@@ -94,6 +94,8 @@ The following scenarios are just a few examples of when a development team would
 * Deploy a Cloud9 IDE workspace.
 * Deploy a Redshift cluster to support data warehousing use cases.
 * Deploy containers to Amazon ECS and EKS container orchestration services.
+
+In all of these examples, it's common to use customer managed IAM roles and policies to permit access to the associated resources as a more managable and secure approach as compared to the complexity and risks associated with managing and using customer managed service or system IAM users and long duration AWS access keys.
 
 ## Sample Implementation
 
