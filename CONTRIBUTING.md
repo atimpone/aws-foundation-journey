@@ -28,7 +28,7 @@ Beyond filing issues, we welcome your bug fixes and enhacenments.
 
 When there's modular, to-the-point official documentation that can be linked to, we prefer that route vs duplicating lengthy instructions within these guides.  
 
-However, when any of the following conditions apply, in the interest of providing a cohesive user experience, we don't hesitate to embed instructions in line:
+However, when any of the following conditions apply, in the interest of providing a cohesive user experience, we don't hesitate to embed instructions inline:
   * Steps are so few and simple that it's not worth distracting the reader by forcing them to go to another document.
   * The instructions require context or specific data to be used that other more general purpose guides don't include.
   * Instructions in other docs cannot be directly accessed via a link. For example, linking to a large PDF document and asking the reader to find a section for specific instructions is a non-starter in terms of the user experience.
