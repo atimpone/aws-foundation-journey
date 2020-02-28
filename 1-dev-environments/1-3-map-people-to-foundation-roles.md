@@ -45,4 +45,4 @@ People playing foundation functional roles will also be granted access to develo
 
 ## Next Steps
 
-[Address Pre-Requisites](1-4-address-pre-requisites.md)
+[Address Prerequisites](1-4-address-prerequisites.md)
