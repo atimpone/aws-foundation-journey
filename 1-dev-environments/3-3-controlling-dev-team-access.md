@@ -177,7 +177,7 @@ Explicitly disallow creation of IAM users since development team users do not us
 
 ### Deny Creation of IAM Roles When Permissions Boundary is Not Attached
 
-Disallow IAM roles created by developers to create new IAM roles unless the permissions boundary policy is attached at role creation time.
+Disallow developers creating new IAM roles unless the permissions boundary policy is attached at role creation time.
 
 ```
         {
