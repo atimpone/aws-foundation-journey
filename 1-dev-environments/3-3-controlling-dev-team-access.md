@@ -1,6 +1,6 @@
 # Controlling Development Team Access
 
-The sample IAM policies described in this document are intended to be used as a starting point for how you might control development team access in their development team AWS accounts so that development teams have the freedom to get many things done on their own yet be constrained from adversely impacting the security and stability of development team AWS accounts.
+The sample IAM policies described in this document are intended to be used as a starting point for how you might control development team access in development team AWS accounts so that development teams have the freedom to get many things done on their own yet be constrained from adversely impacting the security and stability of development team AWS accounts.
 
 Your organization is expected to understand these sample policies in detail before potentially applying them.  
 
