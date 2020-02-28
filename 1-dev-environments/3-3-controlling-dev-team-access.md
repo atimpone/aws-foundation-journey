@@ -47,6 +47,8 @@ The following requirements are intended to provide a practical sense of the acce
 
 **Allow Read Only Access to IAM Roles and Policies:** Allow developers to browse and review IAM resources so that they know what is available to potentially reuse and can learn from existing examples.
 
+**Allow Read Access to Billing and Cost Information** So that development teams can monitor and manage their cloud spend.
+
 ### User Experience
 
 **Avoid Prematurely Requiring Standard Resource Naming and Tagging:** Although your organization will find value in the introduction of cloud resource naming and tagging standards in support of a variety of needs, these standards are not necessary to impose sufficient constraints on development teams at this early stage in your journey.
