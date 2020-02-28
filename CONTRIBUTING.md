@@ -37,7 +37,7 @@ However, when any of the following conditions apply, in the interest of providin
 
 The `.png` drawings used in this repository are created in the following manner:
 
-1. Open the `.drawio` file of interest using either the free online version or your internal instance the draw.io.
+1. Open the `.drawio` file of interest using either the free online version or your internal instance of draw.io.
 1. Select the tab of interst.
 1. Select "Edit -> Select All"
 1. Select "File -> Export As -> PNG..."
