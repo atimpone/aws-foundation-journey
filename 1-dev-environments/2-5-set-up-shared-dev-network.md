@@ -162,7 +162,7 @@ Once you've determined the VPC CIDR block, breaking it down into an equal size b
 
 ## 6. Provision Development VPC
 
-You can use this [sample AWS CloudFormation template](https://github.com/ckamps/infra-aws-vpc-multi-tier) to easily deploy your shared development network.
+You can use this [sample AWS CloudFormation template](https://github.com/aws-samples/vpc-multi-tier) to easily deploy your shared development network.
 
 Download the sample AWS CloudFormation template [vpc-multi-tier.yml](https://raw.githubusercontent.com/aws-samples/vpc-multi-tier/master/vpc-multi-tier.yml) to your desktop. You can review the [README](https://github.com/aws-samples/vpc-multi-tier/blob/master/README.md) to understand the role of this template.
 
