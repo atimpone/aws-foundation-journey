@@ -116,11 +116,26 @@ In support of the requirements described above, two sets of IAM policies are use
 
 #### Provisioning the Policies
 
+If you already followed the section [3. Set Up Initial AWS Platform Access Controls](2-3-set-up-aws-platform-access-controls.md), you've provisioned both the development team IAM policy as an AWS SSO permission set and the permissions boundary policy via an AWS CloudFormation StackSet.  These two steps ensure that the supporting policies are available in each of the development team AWS accounts.
+
 <img src="../images/dev-team-access-provisioning.png" alt="Dev Team Access Policy Provisioning" width="1200"/>
 
 #### Using the Policies
 
-AWS IAM Permissions Boundaries is a feature that enables delegation of permissions management to trusted employees, but with the ability to constrain the overall scope of their access.  In this scenario, we're delegating a degree of permissions management to development team members in their development AWS accounts so tha
+The following diagram depicts how a development team member accesses their development team AWS account, interacts with AWS services and is contrained by what they can do through both the IAM SAML role under which they are working and the permissions boundary policy under which AWS services are working on their behalf.
+
+A key element of this sample solution is the use of AWS IAM Permissions Boundaries to enable delegation of permissions management to developer, but also constrain the overall scope of their access.  In this scenario, we're delegating a degree of permissions management to development team members in their development AWS accounts so that they can create and manage workload specific IAM roles, but at the same time using a permissions boundary to constrain what those role can do.
+
+<img src="../images/dev-team-access-usage.png" alt="Dev Team Access Policy Provisioning" width="1200"/>
+
+1. Developer authenticates via AWS SSO.
+2. Via the AWS SSO portal, the developer selects their authorized combination of development team AWS account and development team IAM SAML role.
+3. Once the developer has been authenticated and gained access to their AWS development account, they are working under the constraints of the development team IAM SAML role. They can interact with AWS services and create and manage resources subject to those constraints.
+4. When a developer needs to create a workload specific IAM role, the permissions boundary policy referenced in their IAM SAML role requires that they associate the permission boundary with any newly created IAM role.
+5. The developer associates a newly created workload specific IAM role with an AWS resource.
+6. Since the workload specific IAM role has an attached boundary policy, AWS will constrain the resource to being able to access only those services and resources that are the intersection of the boundary policy and other policies that the developer associated the workload specific IAM role.
+
+Learn more about [AWS IAM Permissions Boundaries](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html).
 
 ### Base Policy Walkthrough
 
