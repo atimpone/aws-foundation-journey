@@ -35,6 +35,7 @@ Currently, they contain a series of notes and links to existing best practices a
 * [Begin Adopting Infrastructure as Code (IaC)](2-9-infrastructure-as-code.md)
 * [Enable Custom AWS Account Baselines](2-3-custom-account-baselines.md)
 * Bring Other AWS Accounts Into Your AWS Account Structure
+* Establish Second Master AWS Account for Foundation Testing
 
 ## Next Steps
 
