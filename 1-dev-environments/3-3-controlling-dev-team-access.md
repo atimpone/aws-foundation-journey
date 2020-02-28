@@ -32,7 +32,7 @@ The following requirements are intended to provide a practical sense of the acce
 
 **Disallow Creation of Sensitive IAM Resources:**  For example:
 * IAM Users: Given the use of AWS SSO for human user login, there's generally no need for IAM users.
-* SAML Providers: Creation of these resources could enable external entities to access your AWS account.
+* IAM SAML Providers: Creation of these resources could enable external entities to access your AWS account.
 
 **Disallow Privilege Escalation:** Inhibit development team members from creating and using IAM roles that circumvent these requirements.
 
