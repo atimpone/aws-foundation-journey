@@ -1,4 +1,4 @@
-# Enabling Developer Freedom with Guardrails
+# Controlling Development Team Access
 
 The sample IAM policies described in this document are intended to be used as a starting point for how you might control development team access in their development team AWS accounts so that development teams have the freedom to get many things done on their own yet be constrained from adversely impacting the security and stability of development team AWS accounts.
 
@@ -104,7 +104,11 @@ In support of the requirements described above, two sets of IAM policies are use
 |**Development Team IAM Policy**|A JSON format IAM policy used for control human user access to development AWS accounts.|This policy is used to create a custom permission set in AWS SSO that is associated with development team groups and development team AWS accounts.|[acme-infra-dev-team.json](../4-code-samples/01-iam-policies/acme-infra-dev-team.json)|
 |**Development Team IAM Permissions Boundary**|An IAM customer managed permissions boundary policy that is used to control permissions of IAM roles created by development team users in their development team AWS accounts.|This AWS CloudFormation template forms the basis of a CloudFormation StackSet that is applied to all development team AWS accounts.|[acme-infra-dev-team-boundary.yml](../4-code-samples/01-iam-policies/acme-infra-dev-team-boundary.yml)|
 
-...insert diagram here...
+#### Provisioning the Policies
+
+<img src="../images/dev-team-access-provisioning.png" alt="Dev Team Access Policy Provisioning" width="1200"/>
+
+#### Using the Policies
 
 AWS IAM Permissions Boundaries is a feature that enables delegation of permissions management to trusted employees, but with the ability to constrain the overall scope of their access.  In this scenario, we're delegating a degree of permissions management to development team members in their development AWS accounts so tha
 
