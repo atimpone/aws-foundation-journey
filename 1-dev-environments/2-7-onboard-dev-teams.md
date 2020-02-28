@@ -8,7 +8,7 @@ This step should take about 60 minutes to complete.
 2. [Create Development Team Groups in AWS SSO](#2-create-development-team-groups-in-aws-sso)
 3. [Grant Development Groups Access to Development AWS Acoounts](#3-grant-development-groups-access-to-development-aws-accounts)
 4. [Create Development Team Users in AWS SSO](#4-create-development-team-users-in-aws-sso)
-5. [Enable Foundation Team Members Access to Their Development AWS Account](#5-enable-foundation-team-members-access-to-their-development-aws-account)
+5. [Add Foundation Team Members to Development Group](#5-add-foundation-team-members-to-development-group)
 6. [Brief Development Team Members](#6-brief-development-team-members)
 
 ## 1. Assemble Onboarding Documentation
@@ -68,7 +68,7 @@ Next, access the AWS SSO service to begin adding an AWS SSO user for each founda
 6. Select `acme-team-a-dev` or similar.
 7. Select **`Add user`**.
 
-## 5. Enable Foundation Team Members Access to Their Development AWS Account
+## 5. Add Foundation Team Members to Development Group
 
 Since you've already created users in AWS SSO for foundation team members, all you need to do to at this stage is to add the foundation team member users to the newly created foundation development group in AWS SSO.
 
