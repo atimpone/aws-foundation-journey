@@ -90,7 +90,7 @@ We need to verify that this is the default behavior and, if it is, enhance this 
 
 ## 4. Enable Foundation Team Members Access
 
-Since Cloud Administrators won't automatically be granted sufficient access to newly created AWS account, you need to enable this access each time you create a new AWS account via AWS Control Tower's Account Factory.
+Since Cloud Administrators won't automatically be granted sufficient access to the newly created AWS account, you need to enable this access each time you create a new AWS account via AWS Control Tower's Account Factory.
 
 1. As a Cloud Administrator, use your personal user to log into AWS SSO.
 2. Select the AWS **master** account.
