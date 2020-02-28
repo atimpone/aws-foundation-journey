@@ -30,6 +30,7 @@ The following requirements are intended to provide a practical sense of the acce
 **Disallow Modification of Foundation Resources:** For example:
 * AWS Control Tower CloudFormation StackSet stack instances.
 * Foundation IAM roles and policies.
+* AWS account settings.
 
 **Disallow Creation of Sensitive IAM Resources:**  For example:
 * IAM Users: Given the use of AWS SSO for human user login, there's generally no need for IAM users.
@@ -47,7 +48,7 @@ The following requirements are intended to provide a practical sense of the acce
 
 **Allow Read Only Access to IAM Roles and Policies:** Allow developers to browse and review IAM resources so that they know what is available to potentially reuse and can learn from existing examples.
 
-**Allow Read Access to Billing and Cost Information** So that development teams can monitor and manage their cloud spend.
+**Allow Access to Billing and Cost Information** So that development teams can monitor and manage their cloud spend.
 
 ### User Experience
 
