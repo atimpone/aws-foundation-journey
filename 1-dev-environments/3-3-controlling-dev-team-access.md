@@ -63,7 +63,7 @@ As a best practice, when foundation team members are doing day-to-day developmen
 There are two common scenarios that these access requirements are intended to address:
 
 * Developers working directly with AWS services.
-* Developers creating customer managed IAM roles and policies.
+* Developers creating and using customer managed IAM roles and policies.
 
 ### Developers Working Directly with AWS Services
 
