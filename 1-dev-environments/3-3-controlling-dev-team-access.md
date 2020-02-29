@@ -121,7 +121,7 @@ In support of the requirements described above, two sets of IAM policies are use
 
 #### Provisioning the Policies
 
-If you already followed the section [3. Set Up Initial AWS Platform Access Controls](2-3-set-up-aws-platform-access-controls.md), you've provisioned both the development team IAM policy as an AWS SSO permission set and the permissions boundary policy via an AWS CloudFormation StackSet.  These two steps ensure that the supporting policies are available in each of the development team AWS accounts.
+If you already followed the section [3. Set Up Initial AWS Platform Access Controls](2-3-set-up-aws-platform-access-controls.md), you've provisioned both the development team IAM policy as an AWS SSO permission set and the permissions boundary policy via an AWS CloudFormation StackSet.  The result of those steps is that the supporting policies are available in each of the development team AWS accounts.
 
 <img src="../images/dev-team-access-provisioning.png" alt="Dev Team Access Policy Provisioning" width="1200"/>
 
