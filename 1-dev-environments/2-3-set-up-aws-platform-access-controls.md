@@ -164,7 +164,7 @@ See [Controlling Development Team Access](3-3-controlling-dev-team-access.md) fo
 
 ### Enable Trusted Access in AWS Organizations
 
-First, enable the AWS CloudFormation service to automatically configure permissions required to deploy to AWS accounts in your AWS organization.
+First, enable the AWS CloudFormation service to automatically configure permissions required to use the CloudFormation StackSets feature to deploy stacks to AWS accounts in your AWS organization.
 
 1. Navigate to **`AWS CloudFormation`**.
 2. Select **`StackSets`**.
