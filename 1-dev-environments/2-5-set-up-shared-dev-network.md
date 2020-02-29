@@ -125,14 +125,14 @@ Otherwise, if you have a formally assigned CIDR block to use, in this step you'l
 
 ### Review Default VPC Topology
 
-The default parameters of the CloudFormation template will result in a VPC with:
+The default parameters of the AWS CloudFormation template that you will use in the next step will result in a VPC with:
 * 2 tiers of subnets: 
   * Public tier
   * Private tier
 * 3 subnets for each tier.
 * Subnets are mapped across 3 Availability Zones (AZs).
 
-The AWS CloudFormation template that you'll use in the next step to provision the VPC will require you to supply CIDR blocks for each of the following:
+The CloudFormation template requires you to supply a CIDR block for each of the following:
 
 * Overall VPC
 * Public subnets 1, 2, and 3
@@ -142,7 +142,7 @@ To keep things simple, you can size the subnets identically.
 
 ### Determine VPC CIDR Block
 
-If your Network team has supplied a relatively large non-overlapping CIDR block, for example a `/16` - `/20`, you should consider using only a subset of that block for your shared development VPC.  Otherwise, if you've been allocated a `/21` - `/22`, then you should use the entire block for the VPC.
+If your Network team has supplied a relatively large non-overlapping CIDR block, for example a `/16` - `/20`, you should consider using only a subset of that block for your shared development VPC so that the remaining address space can be used in support of test and production networks.  Otherwise, if you've been allocated a `/21` - `/22`, then you should use the entire block for the shared development VPC.
 
 If you need to break down a larger block:
 
