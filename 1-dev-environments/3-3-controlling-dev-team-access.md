@@ -67,31 +67,31 @@ As a best practice, when foundation team members are doing day-to-day developmen
 There are two common scenarios that these access requirements are intended to address:
 
 * Developers working directly with AWS services.
-* Developers creating and using customer managed IAM roles and policies for their workloads.
+* Developers creating and using IAM service roles and policies for their workloads.
 
 ### Developers Working Directly with AWS Services
 
-When your developers experiment and formally develop with AWS services, the IAM role and policies under which they work in their development team AWS account needs access to a variety of AWS services.
+When your developers experiment and formally develop with AWS services, the IAM SAML role and policies under which they work in their development team AWS account needs access to a variety of AWS services.
 
-### Developers Creating and Using Customer Managed IAM Roles and Policies for Their Workloads
+### Developers Creating and Using IAM Roles and Policies for Their Workloads
 
-When developers are formally building out ans performing preliminary testing of AWS service configurations, they often need to define and configure customer managed IAM roles and policies that are specific to their workloads. Once the workload specific IAM roles and policies are created, they are associated with AWS services so that those services can operate with the appropriate permissions. Instead of relying on a central team to develop and test workload specific IAM roles and policies, this workload specific work is best performed by the development teams that are also developing the workloads.
+When developers are formally building out ans performing preliminary testing of AWS service configurations, they often need to define and configure IAM service roles and customer managed policies that are specific to their workloads. Once the workload specific IAM service roles and policies are created, they are associated with AWS services so that those services can operate with the appropriate permissions. Instead of relying on a central team to develop and test workload specific IAM service roles and policies, this workload specific work is best performed by the development teams that are also developing the workloads.
 
-Typically, before workload specific IAM roles and policies are used in more strictly controlled test and production environments and associated AWS accounts, customers implement human powered workflows and, in more advanced cases, highly automated code pipelines to review and test workload specific IAM roles and policies.
+Typically, before workload specific IAM service roles and policies are used in more strictly controlled test and production environments and associated AWS accounts, customers implement either human powered workflows or, in more advanced cases, highly automated code pipelines to review and test workload specific IAM service roles and policies.
 
-#### Creating Customer Managed IAM Roles
+#### Creating IAM Service Roles
 
-When experimenting, developing, and testing workload specific customer managed IAM roles and policies, developers use a variety of tools including:
+When experimenting, developing, and testing workload specific IAM service roles and policies, developers use a variety of tools including:
 
 * AWS Management Console.
 * AWS CLI or SDKs.
 * AWS CloudFormation or other Infrastucture as Code (IaC) tools such as Terraform.
 
-IaC tools are typically used before workload specific IAM roles and policies can be promoted to test and production environments.
+IaC tools are typically used before workload specific IAM service roles and policies can be promoted to test and production environments.
 
-#### Using Customer Managed IAM Roles
+#### Using IAM Service Roles
 
-The following scenarios are just a few examples of when a development team would associate a customer managed IAM role with an AWS service:
+The following scenarios are just a few examples of when a development team would associate an IAM service role with an AWS service:
 
 * Deploy EC2 instance and associate an instance profile.
 * Deploy a Lambda function.
@@ -99,7 +99,12 @@ The following scenarios are just a few examples of when a development team would
 * Deploy a Redshift cluster to support data warehousing use cases.
 * Deploy containers to Amazon ECS and EKS container orchestration services.
 
-In all of these examples, it's a best practice to use customer managed IAM roles and policies to permit the workload cloud resources access to other cloud resources on which they depend. This approach is more managable and secure than the complexity and risks associated with managing and using customer managed service or system IAM users and long duration AWS access keys.
+---
+**Note: Best practice to use IAM service roles vs "service accounts"**
+
+In all of these examples, it's a best practice to use customer IAM service roles and policies and the associated short term credentials to permit the workload access to other cloud resources on which they depend. This approach is more managable and secure than the complexity and risks associated with managing and using workload specific "service accounts" in the form of IAM users and long ter  AWS access keys.
+
+---
 
 ## Sample Implementation
 
@@ -112,7 +117,7 @@ In support of the requirements described above, two sets of IAM policies are use
 |Policy|Purpose|Usage|Sample Code|
 |------|-------|-----|-----------|
 |**Development Team IAM Policy**|A JSON format IAM policy used for control human user access to development AWS accounts.|This policy is used to create a custom permission set in AWS SSO that is associated with development team groups and development team AWS accounts.|[acme-infra-dev-team.json](../4-code-samples/01-iam-policies/acme-infra-dev-team.json)|
-|**Development Team IAM Permissions Boundary**|An IAM customer managed permissions boundary policy that is used to control permissions of IAM roles created by development team users in their development team AWS accounts.|This AWS CloudFormation template forms the basis of a CloudFormation StackSet that is applied to all development team AWS accounts.|[acme-infra-dev-team-boundary.yml](../4-code-samples/01-iam-policies/acme-infra-dev-team-boundary.yml)|
+|**Development Team IAM Permissions Boundary**|A customer managed permissions boundary IAM policy that is used to control permissions of IAM service roles created by development team users in their development team AWS accounts.|This AWS CloudFormation template forms the basis of a CloudFormation StackSet that is applied to all development team AWS accounts.|[acme-infra-dev-team-boundary.yml](../4-code-samples/01-iam-policies/acme-infra-dev-team-boundary.yml)|
 
 #### Provisioning the Policies
 
@@ -122,18 +127,18 @@ If you already followed the section [3. Set Up Initial AWS Platform Access Contr
 
 #### Using the Policies
 
-The following diagram depicts how a development team member accesses their development team AWS account, interacts with AWS services and is contrained by what they can do through both the IAM SAML role under which they are working and the permissions boundary policy under which AWS services are working on their behalf.
+The following diagram depicts how a development team member accesses their development team AWS account, interacts with AWS services and is contrained by what they can do through both the IAM SAML role under which they are working and the permissions boundary policy and IAM service roles under which AWS services are working on their behalf.
 
-A key element of this sample solution is the use of AWS IAM Permissions Boundaries to enable delegation of permissions management to developer, but also constrain the overall scope of their access.  In this scenario, we're delegating a degree of permissions management to development team members in their development AWS accounts so that they can create and manage workload specific IAM roles, but at the same time using a permissions boundary to constrain what those role can do.
+A key element of this sample solution is the use of AWS IAM Permissions Boundaries to enable delegation of permissions management to developers, but also constrain the overall scope of their access and the access of AWS services working on their behalf.  In this scenario, we're delegating a degree of permissions management to development team members in their development AWS accounts so that they can create and manage workload specific IAM servce roles, but at the same time using a permissions boundary to constrain what those role can do.
 
 <img src="../images/dev-team-access-usage.png" alt="Dev Team Access Policy Provisioning" width="1200"/>
 
 1. Developer authenticates via AWS SSO.
 2. Via the AWS SSO portal, the developer selects their authorized combination of development team AWS account and development team IAM SAML role.
 3. Once the developer has been authenticated and gained access to their AWS development account, they are working under the constraints of the development team IAM SAML role. They can interact with AWS services and create and manage resources subject to those constraints.
-4. When a developer needs to create a workload specific IAM role, the permissions boundary policy referenced in their IAM SAML role requires that they associate the permission boundary with any newly created IAM role.
-5. The developer associates a newly created workload specific IAM role with an AWS resource.
-6. Since the workload specific IAM role has an attached boundary policy, AWS will constrain the resource to being able to access only those services and resources that are the intersection of the boundary policy and other policies that the developer associated the workload specific IAM role.
+4. When a developer needs to create a workload specific IAM service role, the permissions boundary policy referenced in their IAM SAML role requires that they associate the permission boundary with any newly created IAM service role.
+5. The developer passes a newly created workload specific IAM service role to an AWS service and resource.
+6. Since the workload specific IAM service role has an attached boundary policy, AWS will constrain the resource to being able to access only those services and resources that are the intersection of the boundary policy and other policies that the developer associated the workload specific IAM service role.
 
 Learn more about [AWS IAM Permissions Boundaries](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html).
 
@@ -384,21 +389,21 @@ As a developer, attempt to perform actions with a variety of AWS services.
 
 Only those explicitly disallowed actions listed earlier in this document should be inhibited.
 
-#### Developers Creating and Using Customer Managed IAM Roles and Policies for Their Workloads
+#### Developers Creating and Using IAM Service Roles and Policies for Their Workloads
 
 This set of test cases depends on the AWS IAM permissions boundary being deployed and referenced in the development team IAM SAML role's policies.
 
-##### Creating Customer Managed IAM Roles
+##### Creating IAM Service Roles
 
-Developers create customer managed IAM roles and policies via the following tools.  Developers attempt to create IAM roles with and without the permissions boundary. All attempts to create IAM roles without the permissions boundary should fail.
+Developers create IAM service roles and policies via the following tools.  Developers attempt to create IAM service roles with and without the permissions boundary. All attempts to create IAM service roles without the permissions boundary will fail.
 
 * AWS Management Console.
 * AWS CLI or SDKs.
 * AWS CloudFormation or other Infrastucture as Code (IaC) tools such as Terraform.
 
-##### Using Customer Managed IAM Roles
+##### Using IAM Service Roles
 
-Developers associate customer managed IAM roles to AWS resources and then attempt to access allowed and disallowed actions on resources.
+Developers associate IAM service roles to AWS resources and then attempt to access allowed and disallowed actions on resources.
 
 * Deploy EC2 instance and associate an instance profile.
 * Deploy a Lambda function.
