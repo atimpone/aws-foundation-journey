@@ -129,7 +129,7 @@ If you already followed the section [3. Set Up Initial AWS Platform Access Contr
 
 The following diagram depicts how a development team member accesses their development team AWS account, interacts with AWS services and is contrained by what they can do through both the IAM SAML role under which they are working and the permissions boundary policy and IAM service roles under which AWS services are working on their behalf.
 
-A key element of this sample solution is the use of AWS IAM Permissions Boundaries to enable delegation of permissions management to developers, but also constrain the overall scope of their access and the access of AWS services working on their behalf.  In this scenario, we're delegating a degree of permissions management to development team members in their development AWS accounts so that they can create and manage workload specific IAM service roles, but at the same time using a permissions boundary to constrain what those role can do.
+A key element of this sample solution is the use of AWS IAM Permissions Boundaries to enable delegation of permissions management to developers, but also constrain the overall scope of their access and the access of AWS services working on their behalf.  In this scenario, we're delegating a degree of permissions management to development team members in their development AWS accounts so that they can create and manage workload specific IAM service roles, but at the same time using a permissions boundary to constrain what actions services associated with those roles can perform and the resources that can be affected.
 
 <img src="../images/dev-team-access-usage.png" alt="Dev Team Access Policy Provisioning" width="1200"/>
 
