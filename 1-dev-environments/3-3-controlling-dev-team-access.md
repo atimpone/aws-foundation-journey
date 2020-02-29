@@ -138,7 +138,7 @@ A key element of this sample solution is the use of AWS IAM Permissions Boundari
 3. Once the developer has been authenticated and gained access to their AWS development account, they are working based on the permissions of the development team IAM SAML role. They can interact with AWS services and create and manage resources subject to those permissions.
 4. When a developer needs to create a workload specific IAM service role, the permissions boundary policy referenced in the IAM SAML role under which they are working requires that they attach the permission boundary with any newly created IAM service role. If the permissions boundary is not attached, creation of the role will fail.
 5. The developer passes a newly created workload specific IAM service role to an AWS service and resource.
-6. Since the workload specific IAM service role has an attached boundary policy, AWS will constrain the resource to being able to access only those services and resources that are the intersection of the permissions allowed by the boundary policy and the permissions of the IAM service role.
+6. Since the workload specific IAM service role has an attached boundary policy, AWS will constrain the resource to being able to access only those services and resources that are the intersection of the permissions allowed by the boundary policy and the IAM service role.
 
 Learn more about [AWS IAM Permissions Boundaries](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html).
 
