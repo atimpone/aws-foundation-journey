@@ -1,5 +1,16 @@
 # Establish Initial Foundation and Development Environments
 
+---
+***DRAFT CONTENT***
+
+Content in this repository is in a preliminary draft form and should not be used for formal build outs of AWS environments unless an AWS specialist is working with you.  
+
+The documentation is currently undergoing frequent changes as it is reviewed and tested. See the [Change Log](../CHANGELOG.md) for notable changes.
+
+If you'd like to contribute to this effort via feedback, bug fixes, and/or enhancements, see [How to Contribute](../CONTRIBUTING.md). 
+
+---
+
 After you've addressed a few up front tasks, in about a day, this guide will help you establish an initial secure foundation and a set of development environments based on the following architecture.
 
 ![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-initial.png "Initial Development Environment")
