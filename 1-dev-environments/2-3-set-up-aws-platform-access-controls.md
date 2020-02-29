@@ -147,7 +147,7 @@ Since you have the ability to move AWS accounts between OUs and modify OUs, you 
 ### Create the `development` OU
 
 1. Create another OU named **`development`**.
-2. Once the OU has been created, select the **`development`** OU and record the ID of the form **`ou-....`** so that you can use it in the step.
+2. Once the OU has been created, select the **`development`** OU and record the ID of the form **`ou-....`** so that you can use it in the next step.
 
 ## 7. Distribute Permissions Boundary to Development OU
 
