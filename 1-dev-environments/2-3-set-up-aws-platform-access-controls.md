@@ -184,7 +184,8 @@ Create a StackSet to deploy the permissions boundary policy to all AWS accounts 
 2. Select **`Upload a template file`**.
 3. Select **`Choose file`** to select the downloaded template file from your desktop.
 5. Select **`Next`**.
-6. Enter a **`StackSet name`**. For example, **`acme-infra-dev-team-boundary`**. It's useful to prefix your custom cloud resources that live in a larger name space with your organization identifier and a qualifier such as **`infra`** to represent foundation resources. As an alternative to **`infra`**, you might choose **`base`** or similar.  The important consideration is to be consistent with naming of foundation cloud resources so that you can apply IAM policies that will inhibit unauthorized modification of those resources.
+6. Enter a **`StackSet name`**. For example, **`acme-infra-dev-team-boundary`**. 
+  * It's useful to prefix your custom cloud resources that live in a larger name space with your organization identifier and a qualifier such as **`infra`** to represent foundation resources. As an alternative to **`infra`**, you might choose **`base`** or similar.  The important consideration is to be consistent with naming of foundation cloud resources so that you can apply IAM policies that will inhibit unauthorized modification of those resources.
 7. In **`Parameters`**:
 
 |Parameter|Guidance|
@@ -203,7 +204,7 @@ Leave the other parameters at their default settings.
 14. Scrolls to the bottom and mark the checkbox to acknowledge that IAM resources will be created.
 15. Select **`Submit`**.
 
-Since there are no AWS accounts associated with the "development" OU at this time, the permissions boundary policy will not be created.
+Since you have not yet created the development team AWS accounts, this CloudFormation StackSet won't create CloudFormation stacks in the development team AWS accounts until those AWS accounts are created in a subsequent section.
 
 Proceed to the next step.
 
