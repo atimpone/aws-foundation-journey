@@ -73,7 +73,7 @@ There are two common scenarios that these access requirements are intended to ad
 
 When your developers experiment and formally develop with AWS services, the IAM SAML role and policies under which they work in their development team AWS account needs access to a variety of AWS services.
 
-### Developers Creating and Using IAM Roles and Policies for Their Workloads
+### Developers Creating and Using IAM Service Roles and Policies for Their Workloads
 
 When developers are formally building out and performing preliminary testing of AWS service configurations, they often need to define and configure IAM service roles and customer managed policies that are specific to their workloads. Once the workload specific IAM service roles and policies are created, they are associated with AWS services so that those services can operate with the appropriate permissions. Instead of relying on a central team to develop and test workload specific IAM service roles and policies, this workload specific work is best performed by the development teams that are also developing the workloads.
 
