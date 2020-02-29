@@ -39,14 +39,34 @@
             "Resource": "*"
         },
         {
-            "Sid": "AllowWriteAccessAppRoles",
+            "Sid": "DenyWriteRoles",
+            "Effect": "Deny",
+            "Action": [
+                "iam:CreateRole",
+                "iam:AttachRolePolicy",
+                "iam:DetachRolePolicy"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "StringNotLike": {
+                    "iam:PermissionsBoundary": "arn:aws:iam::*:policy/acme-infra-dev-team-boundary"
+                }
+            }
+        },
+        {
+            "Sid": "AllowWriteRolesWithBoundary",
             "Effect": "Allow",
             "Action": [
                 "iam:CreateRole",
                 "iam:AttachRolePolicy",
                 "iam:DetachRolePolicy"
             ],
-            "Resource": "*"
+            "Resource": "*",
+            "Condition": {
+                "StringLike": {
+                    "iam:PermissionsBoundary": "arn:aws:iam::*:policy/acme-infra-dev-team-boundary"
+                }
+            }
         },
         {
             "Sid": "DenyWriteAccessFoundationRoles",

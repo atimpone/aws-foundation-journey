@@ -1,16 +1,18 @@
 # 3. Set Up Initial AWS Platform Access Controls
 
-In this step your Security and Cloud Administrators will decide on and implement the initial approach to controlling access to the AWS platform and onboard the foundation team members with the appropriate permissions so that they can begin to access and manage your AWS environment.
+In this step your Security and Cloud Administrators will decide on and implement the initial approach to controlling access to the AWS platform.
 
-This step should take about 30 minutes to complete.
+This step should take about 45 minutes to complete.
 
 1. [Temporarily Use AWS SSO Locally Managed Users and Groups](#1-temporarily-use-aws-sso-locally-managed-users-and-groups)
 2. [Map Foundation Functional Roles to Existing AWS Groups](#2-map-foundation-functional-roles-to-existing-aws-groups)
 3. [Access AWS SSO Using Your AWS Control Tower Administrator User](#3-access-aws-sso-using-your-aws-control-tower-administrator-user)
 4. [Add a Cloud Admin Group in AWS SSO](#4-add-a-cloud-admin-group-in-aws-sso)
 5. [Add a Cost Management Group and Assign Permissions in AWS SSO](#5-add-a-cost-management-group-and-assign-permissions-in-aws-sso)
-6. [Create Development Team Permission Set in AWS SSO](#6-create-development-team-permission-set-in-aws-sso)
-7. [Configure Multi-Factor Authentication (MFA) Requirements](#7-configure-multi-factor-authentication-mfa-requirements)
+6. [Create Organizational Units](#6-create-organizational-units)
+7. [Distribute Permissions Boundary to Development OU](#7-distribute-permissions-boundary-to-development-ou)
+8. [Create Development Team Permission Set in AWS SSO](#8-create-development-team-permission-set-in-aws-sso)
+9. [Configure Multi-Factor Authentication (MFA) Requirements](#9-configure-multi-factor-authentication-mfa-requirements)
 
 ## 1. Temporarily Use AWS SSO Locally Managed Users and Groups
 
@@ -64,9 +66,9 @@ Access the AWS SSO service:
 
 1. Sign in to the AWS SSO URL for your environment using the **AWS Control Tower Administrator** user.
 2. Select the AWS **master** account.
-3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
+3. Select **`Management console`** associated with the **`AWSAdministratorAccess`** role.
 4. Select the appropriate AWS region.
-5. Navigate to `AWS SSO`.
+5. Navigate to **`AWS SSO`**.
 
 ---
 
@@ -80,11 +82,11 @@ If you encounter a permissions error when attempting to access AWS SSO via the A
 
 Since Cloud Administrators don't have administrator access to newly created AWS accounts, you'll need to start laying the groundwork for this access by adding a new group in AWS SSO. In a subsequent step, you'll add Cloud Administrator team members to the new group. Later on, after the initial set of development team AWS account are created, you will assign this group and a permission set to each of those new accounts so that the Cloud Administrators can gain administrator level access to manage those accounts. 
 
-1. Access `Groups` in AWS SSO.
-2. Select `Create group`.
+1. Access **`Groups`** in AWS SSO.
+2. Select **`Create group`**.
 3. Provide a group name. For example **`acme-cloud-admin`**. Where you should replace `acme` with a common abbreviation for your organization.
-4. Provide a description. For example, `Cloud administration`.
-5. Select `Create`.
+4. Provide a description. For example, **`Cloud administration`**.
+5. Select **`Create`**.
 
 ---
 **Note: Cloud resource naming**
@@ -103,50 +105,127 @@ In the spirit of least privilege access, the resulting permissions will enable c
 
 ### Add Cost Management Group in AWS SSO
 
-1. Access `Groups` in AWS SSO.
-2. Select `Create group`.
+1. Access **`Groups`** in AWS SSO.
+2. Select **`Create group`**.
 3. Provide a group name. For example **`acme-cost-mgmt`**. Where you should replace `acme` with a common abbreviation for your organization.
 4. Provide a description. For example, 'Cost management and billing`.
-5. Select `Create`.
+5. Select **`Create`**.
 
 ### Associate Group and Permission Set with AWS Master Account
 
-1. Access `AWS accounts` in AWS SSO.
+1. Access **`AWS accounts`** in AWS SSO.
 2. Select the checkbox next to your **master** AWS account.
-3. Select `Assign users`.
-4. Select `Groups`.
+3. Select **`Assign users`**.
+4. Select **`Groups`**.
 5. Select the checkbox next to **`acme-cost-mgmt`** or similar.
-6. Select `Next: Permission sets`.
-7. Select the checkbox next to `Billing`.
-8. Select `Finish`.
+6. Select **`Next: Permission sets`**.
+7. Select the checkbox next to **`Billing`**.
+8. Select **`Finish`**.
 
-## 6. Create Development Team Permission Set in AWS SSO
+## 6. Create Organizational Units
+
+Using AWS Control Tower, create several Organizational Units (OUs) that will act as a mechanism to group AWS accounts that have similar security and management needs.  Initially, the OU structure will simply consist of two custom OUs:
+
+* **`infrastructure`** - For foundation infrastructure related AWS accounts including the Network AWS account that you will create later in this section.
+* **`development`** - For development team AWS accounts that you'll create in the next section.
+
+---
+**Note: Your OU design will evolve** 
+
+Contrary to what's implied by the name "OU", AWS Organizations OUs are not meant to be used to reflect your enterprise's organizational structure. Instead, they are intended to provide a means to group AWS accounts witn similar security and operational requirements.
+
+Since you have the ability to move AWS accounts between OUs and modify OUs, you don't need to perform a complete OU design at this early stage. As you progress on your journey, you will evolve your OU design to suit your emerging needs.  If you'd like to learn more about OUs, see [AWS Organizations in Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/organizations.html).
+
+---
+### Create the `infrastructure` OU
+
+1. Navigate to **`AWS Control Tower`**.
+2. Select **`Organizational units`**.
+3. Select **`Add an OU`**.  
+4. Follow the prompts to create a new OU named **`infrastructure`**.
+
+### Create the `development` OU
+
+1. Create another OU named **`development`**.
+2. Once the OU has been created, select the **`development`** OU and record the ID of the form **`ou-....`** so that you can use it in the step.
+
+## 7. Distribute Permissions Boundary to Development OU
+
+In this step you'll use AWS CloudFormation StackSets to distribute an IAM permissions boundary policy to the "development" OU that you just created.  This boundary policy will help ensure that development teams can't modify your foundation cloud resources.
+
+In a later section, when you create several development team AWS accounts, you will associate the AWS accounts with the "development" OU. Any AWS account that is added to that OU will automatically be configured with the IAM permissions boundary policy resource.  Similarly, when an AWS account is removed from the OU, the IAM permissions boundary policy resource will be automatically removed from the AWS account.
+
+---
+**Note: Review the sample development team access controls**
+
+See [Controlling Development Team Access](3-3-controlling-dev-team-access.md) for a detailed explanation of the requirements and sample implementation of how you can provide freedom to your development teams in their development team AWS accounts, but inhibit them from adversely impacting the security of your overall AWS environment.
+
+---
+
+### Enable Trusted Access in AWS Organizations
+
+First, enable the AWS CloudFormation service to automatically configure permissions required to use the CloudFormation StackSets feature to deploy stacks to AWS accounts in your AWS organization.
+
+1. Navigate to **`AWS CloudFormation`**.
+2. Select **`StackSets`**.
+3. Select **`Enable trusted access`**.
+
+If you'd like more background, see [Enabling Trusted Access with AWS Organizations](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-orgs-enable-trusted-access.html).
+
+### Download AWS CloudFormation Template
+
+Next, download the sample AWS CloudFormation template [acme-infra-dev-team-boundary.yml](../4-code-samples/01-iam-policies/acme-infra-dev-team-boundary.yml) to your desktop.
+
+### Deploy Permissions Boundary as a StackSet
+
+Create a StackSet to deploy the permissions boundary policy to all AWS accounts associated with the "development" OU. 
+
+1. Select **`Create StackSet`**.
+2. Select **`Upload a template file`**.
+3. Select **`Choose file`** to select the downloaded template file from your desktop.
+5. Select **`Next`**.
+6. Enter a **`StackSet name`**. For example, **`acme-infra-dev-team-boundary`**. 
+  * It's useful to prefix your custom cloud resources that live in a larger name space with your organization identifier and a qualifier such as **`infra`** to represent foundation resources. As an alternative to **`infra`**, you might choose **`base`** or similar.  The important consideration is to be consistent with naming of foundation cloud resources so that you can apply IAM policies that will inhibit unauthorized modification of those resources.
+7. In **`Parameters`**:
+
+|Parameter|Guidance|
+|---------|--------|
+|**`pOrg`**|Replace **`acme`** with your organization identifier or stock ticker if that applies. This value is used as a prefix in the name of IAM managed policy that is created by the template.|
+
+Leave the other parameters at their default settings.
+
+7. Select **`Next`**.
+8. Leave the **`Permissions`** set to **`Service managed permissions`**.
+9. Select **`Next`**.
+10. In **`Deployment targets`**, select **`Deploy to organizational units (OUs)`**.
+11. Enter the OU ID of the "development" OU that you created in the previous step.
+12. In **`Specify regions`**, select your home AWS region.
+13. Select **`Next`**.
+14. Scrolls to the bottom and mark the checkbox to acknowledge that IAM resources will be created.
+15. Select **`Submit`**.
+
+Since you have not yet created the development team AWS accounts, this CloudFormation StackSet won't create CloudFormation stacks in the development team AWS accounts until those AWS accounts are created in a subsequent section.
+
+Proceed to the next step.
+
+## 8. Create Development Team Permission Set in AWS SSO
 
 Next, you'll create a custom permission set in AWS SSO to represent the initial iteration of an AWS IAM policy under which development team members will work in their development AWS accounts.
 
-1. Access `AWS accounts` in AWS SSO.
-2. Select `Permission sets`.
-3. Select `Create permission set`.
-4. Select `Create a customer permission set`.
-5. Enter a `Name`. For example **`acme-infra-dev-team`**. It's useful to prefix your custom cloud resources that live in a larger name space with your organization identifier and a qualifier such as `infra` to represent foundation resources.
-6. Enter a `Description`. For example, `Day-to-day permission used by developers in their development AWS accounts.`.
-7. Set the `Session duration` to the desired value.
-8. Select the checkbox `Create a custom permissions policy`.
+1. Access **`AWS accounts`** in AWS SSO.
+2. Select **`Permission sets`**.
+3. Select **`Create permission set`**.
+4. Select **`Create a customer permission set`**.
+5. Enter a **`Name`**. For example **`acme-infra-dev-team`**. 
+6. Enter a **`Description`**. For example, **`Day-to-day permission used by developers in their development AWS accounts.`**.
+7. Set the **`Session duration`** to the desired value.
+8. Select the checkbox **`Create a custom permissions policy`**.
 9. Open the [sample policy](../4-code-samples/01-iam-policies/acme-infra-dev-team.json) in a text editor, copy, and paste the content.
-10. Select `Create`.
+10. Select **`Create`**.
 
 Later, when you onboard the development teams to their development AWS accounts, you'll reference this permission set.
 
----
-**Note: Review the sample policy**
-
-This is only an initial iteration of the policies to associate with development teams.  Before you use this sample policy, you should review it in detail with a person skilled in AWS IAM to ensure that it aligns with your needs and modify it as necessary.
-
-See [IAM Policy Sample - acme-infra-dev-team.json](3-4-iam-policy-infra-dev-team.md) for more details on this sample policy.
-
----
-
-## 7. Configure Multi-Factor Authentication (MFA) Requirements
+## 9. Configure Multi-Factor Authentication (MFA) Requirements
 
 Before adding any human users to AWS SSO and enabling the users to access your AWS environment, it's a best practice to configure AWS SSO to require multi-factor authentication (MFA).
 
@@ -154,12 +233,12 @@ In the following steps, you will modify your AWS SSO configuration to align with
 
 Follow these steps to make the MFA related changes:
 
-1. Access `Settings` in AWS SSO.
-2. Under `Multifactor authentication` select `Configure`.
-3. Under `Users should be prompted for multi-factor authentication (MFA)`, select `Every time they sign in (always-on)`.
-4. Under `When prompted for a MFA code` select `Require them to provide a one-time password sent by email`.
-5. Under `Who can manage MFA devices` select `Users and administrators can add and manage MFA devices`.
-6. Select `Save changes`.
+1. Access **`Settings`** in AWS SSO.
+2. Under **`Multifactor authentication`** select **`Configure`**.
+3. Under **`Users should be prompted for multi-factor authentication (MFA)`**, select **`Every time they sign in (always-on)`**.
+4. Under **`When prompted for a MFA code` select `Require them to provide a one-time password sent by email`**.
+5. Under **`Who can manage MFA devices` select `Users and administrators can add and manage MFA devices`**.
+6. Select **`Save changes`**.
 
 ---
 **Note: Auditing use of MFA**

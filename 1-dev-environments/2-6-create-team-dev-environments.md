@@ -33,31 +33,31 @@ You'll follow these steps twice: Once to create the initial deveopment team's AW
 
 1. As a Cloud Administrator, use your personal user to log into AWS SSO.
 2. Select the AWS **master** account.
-3. Select `Management console` associated with the **`AWSServiceCatalogEndUserAccess`** role.
+3. Select **`Management console`** associated with the **`AWSServiceCatalogEndUserAccess`** role.
 4. Select the appropriate AWS region.
 5. Navigate to **`AWS Service Catalog`**.
-6. Select `Products list`.
-7. Select `AWS Control Tower Account Factory`.
-8. Select `Launch Product`.
-9. Under `Product Version`, specify a `Name`. This will be the name of the provisioned product in AWS Service Catalog and will not be the name of the new AWS account. For example:
+6. Select **`Products list`**.
+7. Select **`AWS Control Tower Account Factory`**.
+8. Select **`Launch Product`**.
+9. Under **`Product Version`**, specify a **`Name`**. This will be the name of the provisioned product in AWS Service Catalog and will not be the name of the new AWS account. For example:
   * **`member-account-team-a-dev`**
   * **`member-account-foundation-dev`**
-10. Select `Next`.
-11. In `Parameters`, consider the following recommendations:
+10. Select **`Next`**.
+11. In **`Parameters`**, consider the following recommendations:
 
 |Field|Recommendation|
 |-----|---------------|
-|`SSOUserEmail`|Consult the [set of AWS account root user email addresses](1-4-address-prerequisites.md#1-create-email-addresses-for-new-aws-accounts) that you established earlier.|
-|`AccountEmail`|Use the same value as `SSOUserEmail`.|
-|`SSOUserFirstName`|Use a part of your account name. For example, `Team A` or `Foundation` for the foundation team's development AWS account.|
-|`SSOUserLastName`|Use the remaining part of the account name. For example, `Development`|
-|`ManagedOrganizationalUnit`|Select the development OU you created earlier. For example, **`development`**|
-|`AccountName`|`Team A Development` or `Foundation Development`|
+|**`SSOUserEmail`**|Consult the [set of AWS account root user email addresses](1-4-address-prerequisites.md#1-create-email-addresses-for-new-aws-accounts) that you established earlier.|
+|**`AccountEmail`**|Use the same value as `SSOUserEmail`.|
+|**`SSOUserFirstName`**|Use a part of your account name. For example, `Team A` or `Foundation` for the foundation team's development AWS account.|
+|**`SSOUserLastName`**|Use the remaining part of the account name. For example, `Development`|
+|**`ManagedOrganizationalUnit`**|Select the development OU you created earlier. For example, **`development`**|
+|**`AccountName`**|`Team A Development` or `Foundation Development`|
 
-12. Select `Next`.
-13. On `Tag Options`, select `Next`.
-14. On `Notifications`, select `Next`.
-15. Review your account settings, and then select `Launch`. Do not create a resource plan, otherwise the account will fail to be provisioned.
+12. Select **`Next`**.
+13. On **`Tag Options`**, select **`Next`**.
+14. On **`Notifications`**, select **`Next`**.
+15. Review your account settings, and then select **`Launch`**. Do not create a resource plan, otherwise the account will fail to be provisioned.
 
 The AWS account is now being provisioned. It can take a few minutes to complete. You can refresh the page to update the displayed status information.
 
@@ -88,19 +88,19 @@ Since Cloud Administrators won't automatically be granted sufficient access to n
 
 1. As a Cloud Administrator, use your personal user to log into AWS SSO.
 2. Select the AWS **master** account.
-3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
+3. Select **`Management console`** associated with the **`AWSAdministratorAccess`** role.
 4. Select the appropriate AWS region.
 5. Navigate to **`AWS SSO`**.
-6. Access `AWS accounts` in AWS SSO.
+6. Access **`AWS accounts`** in AWS SSO.
 7. Select the checkboxes next both development AWS accounts. For example:
   * `Team A - Dev`
   * `Foundation - Dev`
-8. Select `Assign users`.
-9. Select `Groups`.
+8. Select **`Assign users`**.
+9. Select **`Groups`**.
 10. Select the checkbox next to the group `acme-cloud-admin` or similar.
-11. Select `Next: Permission sets`.
-12. Select the checkbox next to `AWSAdministratorAccess`.
-13. Select `Finish`.
+11. Select **`Next: Permission sets`**.
+12. Select the checkbox next to **`AWSAdministratorAccess`**.
+13. Select **`Finish`**.
 
 Now you've enabled all users who are part of the Cloud Administrator group in AWS SSO administrator access to the selected AWS accounts.
 
@@ -110,13 +110,13 @@ Since the names of shared subnets are not currently propagated to AWS accounts, 
 
 1. As a Cloud Administrator, use your personal user to log into AWS SSO.
 2. Select the development AWS account of interest.
-3. Select `Management console` associated with the **`AWSAdministratorAccess`** role.
+3. Select **`Management console`** associated with the **`AWSAdministratorAccess`** role.
 4. Select the appropriate AWS region.
 5. Navigate to **`VPC`**.
-6. Select `Your VPCs`.
+6. Select **`Your VPCs`**.
 7. Select the unamed VPC and assign the same name as used in the Network AWS account. For example, **`shared`**.
-8. Select `Subnets`.
-9. Update the `Name` field of each subnet to match the name of the subnet as it's configured in the `Network` AWS account. You can open another icognito or similar browser session to view the `Network` account's resources. **Caution:** The subnets may not be listed in the same order in both AWS accounts by default.
+8. Select **`Subnets`**.
+9. Update the **`Name`** field of each subnet to match the name of the subnet as it's configured in the `Network` AWS account. You can open another icognito or similar browser session to view the `Network` account's resources. **Caution:** The subnets may not be listed in the same order in both AWS accounts by default.
 10. You can optionally apply the same naming alignment for route tables.
 
 ---

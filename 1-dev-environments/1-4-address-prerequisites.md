@@ -1,4 +1,4 @@
-# Address Pre-Requisites
+# Address Prerequisites
 
 In this step the few people who are leading the effort to establish the initial development environment and supporting foundation will address a few technical pre-requsites before the build out of the environment begins.
 

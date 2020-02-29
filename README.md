@@ -5,7 +5,9 @@
 
 Content in this repository is in a preliminary draft form and should not be used for formal build outs of AWS environments unless an AWS specialist is working with you.  
 
-The documentation is currently undergoing frequent changes as it is reviewed and tested. If you'd like to contribute via feedback, bug fixes, and/or enhancements, see [How to Contribute](CONTRIBUTING.md).
+The documentation is currently undergoing frequent changes as it is reviewed and tested. See the [Change Log](CHANGELOG.md) for notable changes.
+
+If you'd like to contribute to this effort via feedback, bug fixes, and/or enhancements, see [How to Contribute](CONTRIBUTING.md). 
 
 ---
 
@@ -69,3 +71,4 @@ The first guide is currently in the final draft stages and being reviewed before
 * [Project Tenets](0-common/1-tenets.md)
 * [Frequently Asked Questions (FAQs)](0-common/2-faq.md)
 * [How to Contribute](CONTRIBUTING.md)
+* [Change Log](CHANGELOG.md)
