@@ -16,9 +16,7 @@
                 "iam:DeleteSAMLProvider",
                 "iam:UpdateSAMLProvider",
                 "iam:DeleteAccountPasswordPolicy",
-                "iam:UpdateAccountPasswordPolicy",
-                "iam:DeleteUserPermissionsBoundary",
-                "iam:DeleteRolePermissionsBoundary"
+                "iam:UpdateAccountPasswordPolicy"
             ],
             "Resource": "*"
         },
@@ -74,7 +72,8 @@
             "Action": [
                 "iam:CreateRole",
                 "iam:DeleteRole",
-                "iam:UpdateRole"
+                "iam:UpdateRole",
+                "iam:PutRolePermissionsBoundary"
             ],
             "Resource": [
                 "arn:aws:iam::*:role/AWS*",
