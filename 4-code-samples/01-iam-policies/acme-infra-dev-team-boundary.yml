@@ -66,9 +66,7 @@ Resources:
                 "iam:DeleteSAMLProvider",
                 "iam:UpdateSAMLProvider",
                 "iam:DeleteAccountPasswordPolicy",
-                "iam:UpdateAccountPasswordPolicy",
-                "iam:DeleteUserPermissionsBoundary",
-                "iam:DeleteRolePermissionsBoundary"
+                "iam:UpdateAccountPasswordPolicy"
               ],
               "Resource": "*"
             },
@@ -94,6 +92,7 @@ Resources:
                 "iam:DetachRolePolicy",
                 "iam:UpdateAssumeRolePolicy",
                 "iam:PutRolePermissionsBoundary",
+                "iam:DeleteRolePermissionsBoundary",
                 "iam:TagRole",
                 "iam:UntagRole"
               ],
