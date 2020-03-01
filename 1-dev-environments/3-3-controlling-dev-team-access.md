@@ -286,6 +286,7 @@ Since IAM resources named with `AWS` and `aws` are not inherently modifiable by 
             "Action": [
                 "iam:CreatePolicy",
                 "iam:DeletePolicy",
+                "iam:CreatePolicyVersion",
                 "iam:DeletePolicyVersion"
             ],
             "Resource": "arn:aws:iam::*:policy/acme-infra-*"
@@ -379,13 +380,13 @@ The main difference is that creation of IAM roles and policies is disallowed in 
                 "iam:UntagRole"
               ],
               "Resource": "*"
-            },
             {
               "Sid": "DenyWritePolicies",
               "Effect": "Deny",
               "Action": [
                 "iam:CreatePolicy",
                 "iam:DeletePolicy",
+                "iam:CreatePolicyVersion",
                 "iam:DeletePolicyVersion"
               ],
               "Resource": "*"
