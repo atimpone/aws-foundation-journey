@@ -132,7 +132,11 @@ To see more detailed cost information for the entire organization of AWS account
 5. Select `Cost Explorer`.
 6. Choose `Enable Cost Explorer`.
 
-### 3. Create a Budget
+### 3. Enable EC2 Right Sizing Recommendations
+
+Enable [Amazon EC2 Right Sizing Recommendations](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-rightsizing.html) so that the foundation and development teams can gain insight into recommendedations for downsizing and terminating EC2 instances.
+
+### 4. Create a Budget
 
 For more proactive management of your AWS costs, set up budgets within the Billing and Management console. Budgets allow you to:
 
