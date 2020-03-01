@@ -73,7 +73,10 @@
                 "iam:CreateRole",
                 "iam:DeleteRole",
                 "iam:UpdateRole",
-                "iam:PutRolePermissionsBoundary"
+                "iam:UpdateAssumeRolePolicy",
+                "iam:PutRolePermissionsBoundary",
+                "iam:TagRole",
+                "iam:UntagRole"
             ],
             "Resource": [
                 "arn:aws:iam::*:role/AWS*",
