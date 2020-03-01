@@ -176,9 +176,7 @@ Explicitly disallow creation of IAM users since development team users do not us
                 "iam:DeleteSAMLProvider",
                 "iam:UpdateSAMLProvider",
                 "iam:DeleteAccountPasswordPolicy",
-                "iam:UpdateAccountPasswordPolicy",
-                "iam:DeleteUserPermissionsBoundary",
-                "iam:DeleteRolePermissionsBoundary"
+                "iam:UpdateAccountPasswordPolicy"
             ],
             "Resource": "*"
         },
@@ -266,9 +264,19 @@ Since IAM resources named with `AWS` and `aws` are not inherently modifiable by 
             "Action": [
                 "iam:CreateRole",
                 "iam:DeleteRole",
-                "iam:UpdateRole"
+                "iam:UpdateRole",
+                "iam:AttachRolePolicy",
+                "iam:DetachRolePolicy",
+                "iam:UpdateAssumeRolePolicy",
+                "iam:PutRolePermissionsBoundary",
+                "iam:DeleteRolePermissionsBoundary",
+                "iam:TagRole",
+                "iam:UntagRole"
             ],
             "Resource": [
+                "arn:aws:iam::*:role/AWS*",
+                "arn:aws:iam::*:role/aws*",
+                "arn:aws:iam::*:role/stacksets*",
                 "arn:aws:iam::*:role/acme-infra-*"
             ]
         },
