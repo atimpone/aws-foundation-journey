@@ -74,7 +74,7 @@
                 "iam:DeleteRole",
                 "iam:UpdateRole",
                 "iam:AttachRolePolicy",
-                "iam:DetachRolePolicy"
+                "iam:DetachRolePolicy",
                 "iam:UpdateAssumeRolePolicy",
                 "iam:PutRolePermissionsBoundary",
                 "iam:TagRole",
