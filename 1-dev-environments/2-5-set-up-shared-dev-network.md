@@ -191,7 +191,7 @@ Now create a new AWS CloudFormation stack using the sample template you download
 |Parameter|Guidance|
 |---------|--------|
 |**`Business Scope`**|Replace `acme` with your organization identifier or stock ticker if that applies. This value is used as a prefix in the name of some of the VPC-related cloud resources. For example, in the name of the IAM role used to support VPC flow logs.|
-|**`VPC Name`**|Change to **`dev`**.|
+|**`VPC Name`**|Change to **`dev-shared`**.|
 |**`*Cidr`**|**Just Experimenting**<br>If you want to just experiment at this point and don't care about using formally assigned IP address ranges, you can leave the CIDR block parameters at their default values.<br><br>**You Have Your Own CIDR Blocks**<br>Enter values for the `pVpcCidr`, `pTier1..`, and `pTier2...` CIDR blocks from the prior step. You can ignore the `pTier3...` parameters because only two tiers - public and private - are being provisioned by default.|
 
 Leave all of the other parameters at their default settings unless you're comfortable changing them.  You can always easily create another stack to experiment with other parameter values. Review the [README](https://github.com/aws-samples/vpc-multi-tier/blob/master/README.md) for details on parameters.
