@@ -215,7 +215,7 @@ Review the newly created VPC and associated resources.
 6. Select **`Elastic IPs`** and review.  You will see one EIP allocated for each NAT Gateway.
 7. Navigate to **`CloudWatch`**.
 8. Select **`Log groups`**.
-9. Select the log group associated with the VPC Flow Logs. For example, `/infra/shared/flowlogs`.
+9. Select the log group associated with the VPC Flow Logs. For example, `/base/dev-shared/flowlogs`.
 10. Explore the log streams. You should see a log stream for each Elastic Network Interface (ENI) used in the VPC. For example, each NAT Gateway has one ENI. Each entry in a log stream represents a the source, destination, and other overall information about the network traffic flowing through the ENI.
 
 ## 8. Share Development VPC With Development OU
@@ -250,7 +250,7 @@ While you're in the master AWS account, obtain and record the resource ID of the
 4. Select the appropriate AWS region.
 5. Navigate to **`Resource Access Manager`**.
 6. Select **`Create a resource share`**.
-7. Enter a **`Name`** of **`dev-vpc`**.
+7. Enter a **`Name`** of **`base-dev-shared-vpc`**.
 8. Under **`Resources`**, by default, the subnets that were just provisioned should be listed.
 9. Select the checkbox to select all of the subnets.
 10. Under **`Principals`**, uncheck **`Allow external accounts`** given that we're sharing the subnets only with other AWS accounts within this AWS organization.
