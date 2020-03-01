@@ -12,7 +12,7 @@ Prepare a set of email addresses to represent the root user of each of the new A
 ### Use Either Email Distribution Lists (DLs) or Shared Mailboxes
 Instead of using a person's email address, it's recommended that you use either email distribution lists (DLs) or shared mailboxes so that you can enable at least several trusted people in your organization, for example, your Cloud Administrators, access to email messages associated with each AWS account.
 
-### Carefully Control Access to the Associated Email Accounts
+### Carefully Control Access to the Email Accounts
 Since the email address associated with an AWS account is used as the [root user login for the account](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html), anyone with access to that email account will have access to password reset process for the account. 
 
 ### Define and Request DLs or Shared Mailboxes
