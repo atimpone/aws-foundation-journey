@@ -92,6 +92,10 @@ Resources:
                 "iam:UpdateRole",
                 "iam:AttachRolePolicy",
                 "iam:DetachRolePolicy"
+                "iam:UpdateAssumeRolePolicy",
+                "iam:PutRolePermissionsBoundary",
+                "iam:TagRole",
+                "iam:UntagRole"
               ],
               "Resource": "*"
             },
