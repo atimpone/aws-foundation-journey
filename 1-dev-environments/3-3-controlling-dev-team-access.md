@@ -148,7 +148,7 @@ Learn more about [AWS IAM Permissions Boundaries](https://docs.aws.amazon.com/IA
 
 Each section of the sample policy is explained here.
 
-### Allow Virtually All AWS Services
+#### Allow Virtually All AWS Services
 
 Start by allowing access to all AWS service resources and actions.  
 
@@ -161,7 +161,7 @@ As mentioned above, it's a best practice to use AWS Organizations SCPs to provid
             "Resource": "*"
         },
 ```
-### Disallow Key IAM, Account, and Billing Write Access
+#### Disallow Key IAM, Account, and Billing Write Access
 
 Explicitly disallow creation of IAM users since development team users do not use IAM users to access their development AWS accounts.
 
@@ -193,7 +193,7 @@ Explicitly disallow creation of IAM users since development team users do not us
         },
 ```
 
-### Allow Listing of AWS Regions
+#### Allow Listing of AWS Regions
 
 ```
         {
@@ -203,7 +203,7 @@ Explicitly disallow creation of IAM users since development team users do not us
         },
 ```
 
-### Deny Creation of IAM Roles When Permissions Boundary is Not Attached
+#### Deny Creation of IAM Roles When Permissions Boundary is Not Attached
 
 Disallow developers creating new IAM roles unless the permissions boundary policy is attached at role creation time.
 
@@ -225,7 +225,7 @@ Disallow developers creating new IAM roles unless the permissions boundary polic
         },
 ```
 
-### Allow Creation of IAM Roles Only When Permissions Boundary is Attached
+#### Allow Creation of IAM Roles Only When Permissions Boundary is Attached
 
 Allow development team members to create IAM roles as long as the permissions boundary policy is attached at role creation time.
 
@@ -437,3 +437,8 @@ Developers associate IAM service roles to AWS resources and then attempt to acce
 * Deploy a Cloud9 IDE workspace.
 * Deploy a Redshift cluster to support data warehousing use cases.
 * Deploy containers to Amazon ECS and EKS container orchestration services.
+
+#### Disallowed Actions
+
+* Deleting permissions boundary policy from existing IAM service role.
+* Modifying foundation and AWS IAM roles.
