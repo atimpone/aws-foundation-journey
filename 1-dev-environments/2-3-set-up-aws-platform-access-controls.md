@@ -228,6 +228,20 @@ Proceed to the next step.
 
 Next, you'll create a custom permission set in AWS SSO to represent the initial iteration of an AWS IAM policy under which development team members will work in their development AWS accounts.
 
+### Download and Customize Sample IAM Policy
+
+1. Download the [sample policy](../4-code-samples/01-iam-policies/acme-base-dev-team.json) to your desktop.
+2. Open the file and replace all occurrences of **`aceme`** with a reference to your own organization's identifier.
+
+---
+**Note: Infrastructure as Code (IaC) Opportunity**
+
+Since you've just modified "code" that represents an important security policy for your AWS environment, it's a best practice to manage that source code file in a version control system such as a Git-based system and control who can modify this file moving forward. If your organization is not already using Git-based version control, see the [Fast Follow-on Capabilities](../2-fast-follow-ons/) for assistance on how to get started using Git-based version control.
+
+---
+
+### Create Permission Set in AWS SSO
+
 1. Access **`AWS accounts`** in AWS SSO.
 2. Select **`Permission sets`**.
 3. Select **`Create permission set`**.
@@ -236,7 +250,7 @@ Next, you'll create a custom permission set in AWS SSO to represent the initial 
 6. Enter a **`Description`**. For example, **`Day-to-day permission used by developers in their development AWS accounts.`**.
 7. Set the **`Session duration`** to the desired value.
 8. Select the checkbox **`Create a custom permissions policy`**.
-9. Open the [sample policy](../4-code-samples/01-iam-policies/acme-base-dev-team.json) in a text editor, copy, and paste the content.
+9. Open the sample policy file that you just customized in a text editor, copy, and paste the content.
 10. Select **`Create`**.
 
 Later, when you onboard the development teams to their development AWS accounts, you'll reference this permission set.
