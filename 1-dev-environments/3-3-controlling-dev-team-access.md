@@ -249,7 +249,7 @@ Allow development team members to create IAM roles as long as the permissions bo
 
 #### Deny Deletion of Permissions Boundary Policies
 
-Ensure that once a permissions boundary policy has been attached to a role, developers cannot delete it.  Developers can still delete the role itself which will inhrently remove the attached permissions boundary policy.
+Ensure that once a permissions boundary policy has been attached to a role, developers cannot delete it.  Developers can still delete the role itself which will automatically remove the attached permissions boundary policy.
 
 ```
         {
