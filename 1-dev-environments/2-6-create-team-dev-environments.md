@@ -114,7 +114,7 @@ Since the names of shared subnets are not currently propagated to AWS accounts, 
 4. Select the appropriate AWS region.
 5. Navigate to **`VPC`**.
 6. Select **`Your VPCs`**.
-7. Select the unamed VPC and assign the same name as used in the Network AWS account. For example, **`shared`**.
+7. Select the unamed VPC and assign the same name as used in the Network AWS account. For example, **`base-dev-shared`**.
 8. Select **`Subnets`**.
 9. Update the **`Name`** field of each subnet to match the name of the subnet as it's configured in the `Network` AWS account. You can open another icognito or similar browser session to view the `Network` account's resources. **Caution:** The subnets may not be listed in the same order in both AWS accounts by default.
 10. You can optionally apply the same naming alignment for route tables.
