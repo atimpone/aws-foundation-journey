@@ -79,6 +79,7 @@
             "Resource": [
                 "arn:aws:iam::*:role/AWS*",
                 "arn:aws:iam::*:role/aws*",
+                "arn:aws:iam::*:role/stacksets*",
                 "arn:aws:iam::*:role/acme-infra-*"
             ]
         },
