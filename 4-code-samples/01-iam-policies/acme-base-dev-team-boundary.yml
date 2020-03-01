@@ -35,7 +35,7 @@ Parameters:
   pSystem:
     Type: String
     Description: Used to qualify IAM policy resource name
-    Default: infra
+    Default: base
 
   pPolicyNameQualifier:
     Type: String

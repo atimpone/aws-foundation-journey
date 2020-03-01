@@ -116,8 +116,8 @@ In support of the requirements described above, two sets of IAM policies are use
 
 |Policy|Purpose|Usage|Sample Code|
 |------|-------|-----|-----------|
-|**Development Team IAM Policy**|A JSON format IAM policy used for control human user access to development AWS accounts.|This policy is used to create a custom permission set in AWS SSO that is associated with development team groups and development team AWS accounts.|[acme-infra-dev-team.json](../4-code-samples/01-iam-policies/acme-infra-dev-team.json)|
-|**Development Team IAM Permissions Boundary**|A customer managed permissions boundary IAM policy that is used to control permissions of IAM service roles created by development team users in their development team AWS accounts.|This AWS CloudFormation template forms the basis of a CloudFormation StackSet that is applied to all development team AWS accounts.|[acme-infra-dev-team-boundary.yml](../4-code-samples/01-iam-policies/acme-infra-dev-team-boundary.yml)|
+|**Development Team IAM Policy**|A JSON format IAM policy used for control human user access to development AWS accounts.|This policy is used to create a custom permission set in AWS SSO that is associated with development team groups and development team AWS accounts.|[acme-base-dev-team.json](../4-code-samples/01-iam-policies/acme-base-dev-team.json)|
+|**Development Team IAM Permissions Boundary**|A customer managed permissions boundary IAM policy that is used to control permissions of IAM service roles created by development team users in their development team AWS accounts.|This AWS CloudFormation template forms the basis of a CloudFormation StackSet that is applied to all development team AWS accounts.|[acme-base-dev-team-boundary.yml](../4-code-samples/01-iam-policies/acme-base-dev-team-boundary.yml)|
 
 #### Provisioning the Policies
 
@@ -144,7 +144,7 @@ Learn more about [AWS IAM Permissions Boundaries](https://docs.aws.amazon.com/IA
 
 ### Base Policy Walkthrough
 
-[acme-infra-dev-team.json](../4-code-samples/01-iam-policies/acme-infra-dev-team.json)
+[acme-base-dev-team.json](../4-code-samples/01-iam-policies/acme-base-dev-team.json)
 
 Each section of the sample policy is explained here.
 
@@ -219,7 +219,7 @@ Disallow developers creating new IAM roles unless the permissions boundary polic
             "Resource": "*",
             "Condition": {
                 "StringNotLike": {
-                    "iam:PermissionsBoundary": "arn:aws:iam::*:policy/acme-infra-dev-team-boundary"
+                    "iam:PermissionsBoundary": "arn:aws:iam::*:policy/acme-base-dev-team-boundary"
                 }
             }
         },
@@ -241,9 +241,22 @@ Allow development team members to create IAM roles as long as the permissions bo
             "Resource": "*",
             "Condition": {
                 "StringLike": {
-                    "iam:PermissionsBoundary": "arn:aws:iam::*:policy/acme-infra-dev-team-boundary"
+                    "iam:PermissionsBoundary": "arn:aws:iam::*:policy/acme-base-dev-team-boundary"
                 }
             }
+        },
+```
+
+#### Deny Deletion of Permissions Boundary Policies
+
+Ensure that once a permissions boundary policy has been attached to a role, developers cannot delete it.  Developers can still delete the role itself which will inhrently remove the attached permissions boundary policy.
+
+```
+        {
+            "Sid": "DenyDeletePermissionsBoundary",
+            "Effect": "Deny",
+            "Action": "iam:DeleteRolePermissionsBoundary",
+            "Resource": "*"
         },
 ```
 
@@ -253,7 +266,7 @@ Do not allow development team members to disrupt the foundation resources.
 
 **Foundation IAM Roles and Policies**
 
-Note the use of a naming convention for customer-managed roles and policies below.  The sample naming convention shown below is simply `<org identifier>-infra-...` where `infra` is shorthand for "foundation".
+Note the use of a naming convention for customer-managed roles and policies below.  The sample naming convention shown below is simply `<org identifier>-base-...` where `base` is shorthand for "foundation".
 
 Since IAM resources named with `AWS` and `aws` are not inherently modifiable by customers, they are not included in the following section.
 
@@ -277,7 +290,7 @@ Since IAM resources named with `AWS` and `aws` are not inherently modifiable by 
                 "arn:aws:iam::*:role/AWS*",
                 "arn:aws:iam::*:role/aws*",
                 "arn:aws:iam::*:role/stacksets*",
-                "arn:aws:iam::*:role/acme-infra-*"
+                "arn:aws:iam::*:role/acme-base-*"
             ]
         },
         {
@@ -289,7 +302,7 @@ Since IAM resources named with `AWS` and `aws` are not inherently modifiable by 
                 "iam:CreatePolicyVersion",
                 "iam:DeletePolicyVersion"
             ],
-            "Resource": "arn:aws:iam::*:policy/acme-infra-*"
+            "Resource": "arn:aws:iam::*:policy/acme-base-*"
         },
 ```
 
@@ -357,7 +370,7 @@ Note that both EC2 VM related resources and VPC related networking resources sha
 ```
 ### Permissions Boundary Walkthrough
 
-[acme-infra-dev-team-boundary.yml](../4-code-samples/01-iam-policies/acme-infra-dev-team-boundary.yml)
+[acme-base-dev-team-boundary.yml](../4-code-samples/01-iam-policies/acme-base-dev-team-boundary.yml)
 
 Since the overall intent in this development environment scenario is to enable AWS services acting on behalf of the developers to have similar access permissions as the developers themselves, the permissions boundary policy looks very similar to the development team policy described above.  
 

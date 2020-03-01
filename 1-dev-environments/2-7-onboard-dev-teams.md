@@ -48,7 +48,7 @@ Create a new group in AWS SSO for each of the development teams and associate th
   * `acme-team-a-dev`
   * `acme-foundation-dev`
 6. Select **`Next: Permission sets`**.
-7. Select the checkbox next to **`acme-infra-dev-team`**.
+7. Select the checkbox next to **`acme-base-dev-team`**.
 8. Select **`Finish`**.
 
 Repeat the process above to create a group for your foundation team and enable this group to access their development AWS account.

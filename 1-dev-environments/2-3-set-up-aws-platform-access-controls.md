@@ -188,7 +188,7 @@ If you'd like more background, see [Enabling Trusted Access with AWS Organizatio
 
 ### Download AWS CloudFormation Template
 
-Next, download the sample AWS CloudFormation template [acme-infra-dev-team-boundary.yml](../4-code-samples/01-iam-policies/acme-infra-dev-team-boundary.yml) to your desktop.
+Next, download the sample AWS CloudFormation template [acme-base-dev-team-boundary.yml](../4-code-samples/01-iam-policies/acme-base-dev-team-boundary.yml) to your desktop.
 
 ### Deploy Permissions Boundary as a StackSet
 
@@ -198,8 +198,10 @@ Create a StackSet to deploy the permissions boundary policy to all AWS accounts 
 2. Select **`Upload a template file`**.
 3. Select **`Choose file`** to select the downloaded template file from your desktop.
 5. Select **`Next`**.
-6. Enter a **`StackSet name`**. For example, **`acme-infra-dev-team-boundary`**. 
-  * It's useful to prefix your custom cloud resources that live in a larger name space with your organization identifier and a qualifier such as **`infra`** to represent foundation resources. As an alternative to **`infra`**, you might choose **`base`** or similar.  The important consideration is to be consistent with naming of foundation cloud resources so that you can apply IAM policies that will inhibit unauthorized modification of those resources.
+6. Enter a **`StackSet name`**. For example, **`acme-base-dev-team-boundary`**. 
+
+It's useful to prefix your custom cloud resources that live in a larger name space with your organization identifier and a qualifier such as **`base`** to represent foundation resources. The important consideration is to be consistent with naming of foundation cloud resources so that you can apply IAM policies that will inhibit unauthorized modification of those resources.
+
 7. In **`Parameters`**:
 
 |Parameter|Guidance|
@@ -230,11 +232,11 @@ Next, you'll create a custom permission set in AWS SSO to represent the initial 
 2. Select **`Permission sets`**.
 3. Select **`Create permission set`**.
 4. Select **`Create a customer permission set`**.
-5. Enter a **`Name`**. For example **`acme-infra-dev-team`**. 
+5. Enter a **`Name`**. For example **`acme-base-dev-team`**. 
 6. Enter a **`Description`**. For example, **`Day-to-day permission used by developers in their development AWS accounts.`**.
 7. Set the **`Session duration`** to the desired value.
 8. Select the checkbox **`Create a custom permissions policy`**.
-9. Open the [sample policy](../4-code-samples/01-iam-policies/acme-infra-dev-team.json) in a text editor, copy, and paste the content.
+9. Open the [sample policy](../4-code-samples/01-iam-policies/acme-base-dev-team.json) in a text editor, copy, and paste the content.
 10. Select **`Create`**.
 
 Later, when you onboard the development teams to their development AWS accounts, you'll reference this permission set.

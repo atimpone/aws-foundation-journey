@@ -47,7 +47,7 @@
             "Resource": "*",
             "Condition": {
                 "StringNotLike": {
-                    "iam:PermissionsBoundary": "arn:aws:iam::*:policy/acme-infra-dev-team-boundary"
+                    "iam:PermissionsBoundary": "arn:aws:iam::*:policy/acme-base-dev-team-boundary"
                 }
             }
         },
@@ -62,9 +62,15 @@
             "Resource": "*",
             "Condition": {
                 "StringLike": {
-                    "iam:PermissionsBoundary": "arn:aws:iam::*:policy/acme-infra-dev-team-boundary"
+                    "iam:PermissionsBoundary": "arn:aws:iam::*:policy/acme-base-dev-team-boundary"
                 }
             }
+        },
+        {
+            "Sid": "DenyDeletePermissionsBoundary",
+            "Effect": "Deny",
+            "Action": "iam:DeleteRolePermissionsBoundary",
+            "Resource": "*"
         },
         {
             "Sid": "DenyWriteAccessFoundationRoles",
@@ -85,7 +91,7 @@
                 "arn:aws:iam::*:role/AWS*",
                 "arn:aws:iam::*:role/aws*",
                 "arn:aws:iam::*:role/stacksets*",
-                "arn:aws:iam::*:role/acme-infra-*"
+                "arn:aws:iam::*:role/acme-base-*"
             ]
         },
         {
@@ -97,7 +103,7 @@
                 "iam:CreatePolicyVersion",
                 "iam:DeletePolicyVersion"
             ],
-            "Resource": "arn:aws:iam::*:policy/acme-infra-*"
+            "Resource": "arn:aws:iam::*:policy/acme-base-*"
         },
         {
             "Sid": "DenyWriteAccessStackSets",

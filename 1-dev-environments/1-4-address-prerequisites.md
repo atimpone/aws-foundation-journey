@@ -4,6 +4,7 @@ In this step the few people who are leading the effort to establish the initial 
 
 1. [Create Email Addresses for New AWS Accounts](#1-create-email-addresses-for-new-aws-accounts)
 2. [Obtain Non-Overlapping IP Address Range](#2-obtain-non-overlapping-ip-address-range)
+3. [Decide on Organizational Identifier](#3-decide-on-organizational-identifier)
 
 ## 1. Create Email Addresses for New AWS Accounts
 
@@ -75,6 +76,25 @@ In the future, when you need to interconnect a portion of your existing on-premi
 * [VPC and Subnet Sizing for IPv4](https://docs.aws.amazon.com/vpc/latest/userguide//VPC_Subnets.html#vpc-sizing-ipv4)
 
 * [Visual Subnet Calculator](http://www.davidc.net/sites/default/subnets/subnets.html)
+
+## 3. Decide on Organizational Identifier
+
+Since you will be assigning names to several cloud resources while you follow the steps in this guide, it's useful for you to decide on a unique organizational identifier to assign as a prefix to those names so that:
+* Names of your resources won't collide with other names when working in global namespaces.
+* You'll be able to create security policies to restrict access based on resources with that prefix.
+
+Your organization is likely already using a stock ticker or other similar abbreviation to represent your organization in a abbreviated manner in support of current business and IT processes.  These existing identifiers might be appropriate to carry forward as you build out your cloud environment.
+
+You should limit the length of the abbeviated organization identifier to a handful of characters. For example, keeping the identifier to no longer than 4-5 characters is a good guide.
+
+As an example, this guide uses the prefix **`acme`** throughout. As you progress through the guide, you're expected to replace this example prefix with your organization's own identifier.
+
+---
+**Note: More Extensive Resource Naming Standards**
+
+As you progress on your journey, you will find it useful to adopt more extensive cloud resource naming standards.
+
+---
 
 ## Next Steps
 
