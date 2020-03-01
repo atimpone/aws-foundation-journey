@@ -371,7 +371,12 @@ The main difference is that creation of IAM roles and policies is disallowed in 
                 "iam:DeleteRole",
                 "iam:UpdateRole",
                 "iam:AttachRolePolicy",
-                "iam:DetachRolePolicy"
+                "iam:DetachRolePolicy",
+                "iam:UpdateAssumeRolePolicy",
+                "iam:PutRolePermissionsBoundary",
+                "iam:DeleteRolePermissionsBoundary",
+                "iam:TagRole",
+                "iam:UntagRole"
               ],
               "Resource": "*"
             },
