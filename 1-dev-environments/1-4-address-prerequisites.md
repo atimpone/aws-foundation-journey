@@ -83,9 +83,9 @@ Since you will be assigning names to several cloud resources while you follow th
 * Names of your resources won't collide with other names when working in global namespaces.
 * You'll be able to create security policies to restrict access based on resources with that prefix.
 
-Your organization is likely already using a stock ticker or other similar abbreviation to represent your organization in a abbreviated manner in support of current business and IT processes.  These existing identifiers might be appropriate to carry forward as you build out your cloud environment.
+Your organization is likely already using a stock ticker or other similar abbreviation to represent your organization in support of current business and IT processes.  One of these existing identifiers might be appropriate to carry forward as you build out your cloud environment.
 
-You should limit the length of the abbeviated organization identifier to a handful of characters. For example, keeping the identifier to no longer than 4-5 characters is a good guide.
+You should limit the length of the abbeviated organization identifier to a handful of characters. Using no more than 4-5 characters is a good guide.
 
 As an example, this guide uses the prefix **`acme`** throughout. As you progress through the guide, you're expected to replace this example prefix with your organization's own identifier.
 
