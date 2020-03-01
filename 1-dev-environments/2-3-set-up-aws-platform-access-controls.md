@@ -7,12 +7,13 @@ This step should take about 45 minutes to complete.
 1. [Temporarily Use AWS SSO Locally Managed Users and Groups](#1-temporarily-use-aws-sso-locally-managed-users-and-groups)
 2. [Map Foundation Functional Roles to Existing AWS Groups](#2-map-foundation-functional-roles-to-existing-aws-groups)
 3. [Access AWS SSO Using Your AWS Control Tower Administrator User](#3-access-aws-sso-using-your-aws-control-tower-administrator-user)
-4. [Add a Cloud Admin Group in AWS SSO](#4-add-a-cloud-admin-group-in-aws-sso)
-5. [Add a Cost Management Group and Assign Permissions in AWS SSO](#5-add-a-cost-management-group-and-assign-permissions-in-aws-sso)
-6. [Create Organizational Units](#6-create-organizational-units)
-7. [Distribute Permissions Boundary to Development OU](#7-distribute-permissions-boundary-to-development-ou)
-8. [Create Development Team Permission Set in AWS SSO](#8-create-development-team-permission-set-in-aws-sso)
-9. [Configure Multi-Factor Authentication (MFA) Requirements](#9-configure-multi-factor-authentication-mfa-requirements)
+4. [Customize AWS SSO Portal URL](#4-customize-aws-sso-portal-url)
+5. [Add a Cloud Admin Group in AWS SSO](#5-add-a-cloud-admin-group-in-aws-sso)
+6. [Add a Cost Management Group and Assign Permissions in AWS SSO](#6-add-a-cost-management-group-and-assign-permissions-in-aws-sso)
+7. [Create Organizational Units](#7-create-organizational-units)
+8. [Distribute Permissions Boundary to Development OU](#8-distribute-permissions-boundary-to-development-ou)
+9. [Create Development Team Permission Set in AWS SSO](#9-create-development-team-permission-set-in-aws-sso)
+10. [Configure Multi-Factor Authentication (MFA) Requirements](#10-configure-multi-factor-authentication-mfa-requirements)
 
 ## 1. Temporarily Use AWS SSO Locally Managed Users and Groups
 
@@ -78,7 +79,20 @@ If you encounter a permissions error when attempting to access AWS SSO via the A
 
 ---
 
-## 4. Add a Cloud Admin Group in AWS SSO
+## 4. Customize AWS SSO Portal URL
+
+As an optional step, you may want to customize the URL that your organization uses to access the AWS SSO portal.  
+
+If you have plans to implement your own internal DNS alias for the portal, you can skip this step.
+
+The default form the portal URL is similar to this example of: `https://d-3a274d5e7d.awsapps.com/start`. Via the AWS SSO settings, you can customize the `d-3a274d5e7d` portion of the URL shown in the example.
+
+1. Access **`Groups`** in AWS SSO.
+2. Select **`Settings`**.
+3. Under **`User portal`**, select **`Customize`**.
+4. Set the first portion of the URL to a unique value.  Use your organization identifier, stock ticker symbol, or another identier that you use as an abbreviated reference to your organization.
+
+## 5. Add a Cloud Admin Group in AWS SSO
 
 Since Cloud Administrators don't have administrator access to newly created AWS accounts, you'll need to start laying the groundwork for this access by adding a new group in AWS SSO. In a subsequent step, you'll add Cloud Administrator team members to the new group. Later on, after the initial set of development team AWS account are created, you will assign this group and a permission set to each of those new accounts so that the Cloud Administrators can gain administrator level access to manage those accounts. 
 
@@ -97,7 +111,7 @@ Since Cloud Administrators don't have administrator access to newly created AWS 
 
 ---
 
-## 5. Add a Cost Management Group and Assign Permissions in AWS SSO
+## 6. Add a Cost Management Group and Assign Permissions in AWS SSO
 
 Since there's no suitable predefined AWS SSO group for cost management team members, you need to add a new group in AWS SSO and associate the necessary permissions with that group. In a subsequent step, you'll add cost management team members to the new group. 
 
@@ -122,7 +136,7 @@ In the spirit of least privilege access, the resulting permissions will enable c
 7. Select the checkbox next to **`Billing`**.
 8. Select **`Finish`**.
 
-## 6. Create Organizational Units
+## 7. Create Organizational Units
 
 Using AWS Control Tower, create several Organizational Units (OUs) that will act as a mechanism to group AWS accounts that have similar security and management needs.  Initially, the OU structure will simply consist of two custom OUs:
 
@@ -149,7 +163,7 @@ Since you have the ability to move AWS accounts between OUs and modify OUs, you 
 1. Create another OU named **`development`**.
 2. Once the OU has been created, select the **`development`** OU and record the ID of the form **`ou-....`** so that you can use it in the next step.
 
-## 7. Distribute Permissions Boundary to Development OU
+## 8. Distribute Permissions Boundary to Development OU
 
 In this step you'll use AWS CloudFormation StackSets to distribute an IAM permissions boundary policy to the "development" OU that you just created.  This boundary policy will help ensure that development teams can't modify your foundation cloud resources.
 
@@ -208,7 +222,7 @@ Since you have not yet created the development team AWS accounts, this CloudForm
 
 Proceed to the next step.
 
-## 8. Create Development Team Permission Set in AWS SSO
+## 9. Create Development Team Permission Set in AWS SSO
 
 Next, you'll create a custom permission set in AWS SSO to represent the initial iteration of an AWS IAM policy under which development team members will work in their development AWS accounts.
 
@@ -225,7 +239,7 @@ Next, you'll create a custom permission set in AWS SSO to represent the initial 
 
 Later, when you onboard the development teams to their development AWS accounts, you'll reference this permission set.
 
-## 9. Configure Multi-Factor Authentication (MFA) Requirements
+## 10. Configure Multi-Factor Authentication (MFA) Requirements
 
 Before adding any human users to AWS SSO and enabling the users to access your AWS environment, it's a best practice to configure AWS SSO to require multi-factor authentication (MFA).
 
