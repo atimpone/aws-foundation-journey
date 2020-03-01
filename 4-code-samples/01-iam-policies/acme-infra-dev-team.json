@@ -94,6 +94,7 @@
             "Action": [
                 "iam:CreatePolicy",
                 "iam:DeletePolicy",
+                "iam:CreatePolicyVersion",
                 "iam:DeletePolicyVersion"
             ],
             "Resource": "arn:aws:iam::*:policy/acme-infra-*"
