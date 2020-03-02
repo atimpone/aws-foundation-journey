@@ -236,7 +236,7 @@ Next, you'll create a custom permission set in AWS SSO to represent the initial 
 ---
 **Note: Infrastructure as Code (IaC) Opportunity**
 
-Since you've just modified "code" that represents an important security policy for your AWS environment, it's a best practice to manage that source code file in a version control system such as a Git-based system and control who can modify this file moving forward. If your organization is not already using Git-based version control, see the [Fast Follow-on Capabilities](../2-fast-follow-ons/) for assistance on how to get started using Git-based version control.
+Since you've just modified "code" that represents an important security policy for your AWS environment, it's a best practice to manage that source code file in a version control system such as a Git repository and control who can modify this file moving forward. If your organization is not already using Git-based version control, see the [Fast Follow-on Capabilities](../2-fast-follow-ons/) for assistance on how to get started using Git-based version control.
 
 ---
 
