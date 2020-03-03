@@ -72,7 +72,7 @@ Any production workloads should be managed with infrastructure as code.
 ### Access Via AWS Management Console
 When you log into your AWS SSO portal ([add your company's link here]()), you'll be shown a list of AWS accounts you have access to.  Initially, each development team is provided a single development AWS account.
 
-### Access Via AWS CLI, AWS SDKs, and AWS APIs
+### From Your Corporate Desktop - Access Via AWS CLI, AWS SDKs, and AWS APIs
 
 AWS SSO supports CLI access via the AWS CLI.  
 
@@ -86,23 +86,21 @@ If you have challenges getting the AWS CLI and other tools installed on your cor
 
 Each Cloud9 environment is an Amazon EC2 Linux instance that includes a browser-based IDE. You deploy a Cloud9 environment in one of your public subnets and access it via the Cloud9 service.
 
-See [AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html) for set up details.
-
-#### Tips for Using Cloud9 in Your Development AWS Account
-
 **Creating Cloud9 Environment**
 
-Ensure that you select one of the public subnets given that the Cloud9 service currently requires your environment to be deployed in a public subnet. Since Cloud9 doesn't list the name tag of subnets during the creation process, you may need to access the **`VPC`** service of the AWS Management Console to list the subnets and their names.
+See [AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html) for set up details.
 
-**Configuring Your Cloud9 Environment**
+**Select Public Subnet:** Ensure that you select one of the public subnets given that the Cloud9 service currently requires your environment to be deployed in a public subnet. Since Cloud9 doesn't list the name tag of subnets during the creation process, you may need to access the **`VPC`** service of the AWS Management Console to list the subnets and their names.
 
-* Once you've created your Cloud9 environment, you can associate an instance profile with your Cloud9 EC2 instance so that your work in your IDE can have similar access permissions as your regular AWS session. See [Create and Use an Instance Profile](https://docs.aws.amazon.com/cloud9/latest/user-guide/credentials.html#credentials-temporary). If you create an IAM role for this purpose, you'll need to attach the permisssions boundary policy.
+**Use EC2 Instance Profile:** Once you've created your Cloud9 environment, you can associate an instance profile with your Cloud9 EC2 instance so that your work in your IDE can have similar access permissions as your regular AWS session. See [Create and Use an Instance Profile](https://docs.aws.amazon.com/cloud9/latest/user-guide/credentials.html#credentials-temporary). If you create an IAM role for this purpose, you'll need to attach the permisssions boundary policy.
 
-* If you find that your bash terminal prompt is too long, you can set it to just the current directory:
+**Update Your Bash Prompt:** If you find that your bash terminal prompt is too long, you can set it to just the current directory:
 
 ```
 export PS1="\w $ "
 ```
+
+**Install Latest AWS CLI:** Although a version of the AWS CLI is preinstalled in your Cloud9 environment, you should consider installing version 2.  See [Install the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html).
 
 ### Other Tools
 
