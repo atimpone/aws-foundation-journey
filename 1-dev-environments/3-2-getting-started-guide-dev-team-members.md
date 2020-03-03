@@ -88,6 +88,22 @@ Each Cloud9 environment is an Amazon EC2 Linux instance that includes a browser-
 
 See [AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html) for set up details.
 
+#### Tips for Using Cloud9 in Your Development AWS Account
+
+**Creating Cloud9 Environment**
+
+Ensure that you select one of the public subnets given that the Cloud9 service currently requires your environment to be deployed in a public subnet. Since Cloud9 doesn't list the name tag of subnets during the creation process, you may need to access the **`VPC`** service of the AWS Management Console to list the subnets and their names.
+
+**Configuring Your Cloud9 Environment**
+
+* Once you've created your Cloud9 environment, you can associate an instance profile with your Cloud9 EC2 instance so that your work in your IDE can have similar access permissions as your regular AWS session. See [Create and Use an Instance Profile](https://docs.aws.amazon.com/cloud9/latest/user-guide/credentials.html#credentials-temporary). If you create an IAM role for this purpose, you'll need to attach the permisssions boundary policy.
+
+* If you find that your bash terminal prompt is too long, you can set it to just the current directory:
+
+```
+export PS1="\w $ "
+```
+
 ### Other Tools
 
 See [Tools on AWS](https://aws.amazon.com/tools/) for a list of tools and SDKs that AWS supports.
