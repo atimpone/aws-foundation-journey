@@ -152,7 +152,12 @@ Each section of the sample policy is explained here.
 
 Start by allowing access to all AWS service resources and actions.  
 
+---
+**Note: Depend on AWS Organizations Service Control Policies (SCPs) for AWS Account-wide Constraints**
+
 As mentioned above, it's a best practice to use AWS Organizations SCPs to provide an overarching constraint on which AWS services can be used in a given AWS ccount. Instead of over complicating the following policy with fine grained lists of allowed or disallowed AWS services, it's best practice to defer to SCPs.
+
+---
 
 ```
         {
@@ -164,6 +169,15 @@ As mentioned above, it's a best practice to use AWS Organizations SCPs to provid
 #### Disallow Key IAM, Account, and Billing Write Access
 
 Explicitly disallow creation of IAM users since development team users do not use IAM users to access their development AWS accounts.
+
+---
+**Review Note: Constraints impacting Cognito and EKS use cases?**
+
+Currently, creation of OIDC providers is not currently constrained. How much of a risk does this present in this development environment context?
+
+OIDC comes into play as part of both Cognito and some configurations of EKS.
+
+---
 
 ```
         {
@@ -206,6 +220,13 @@ Explicitly disallow creation of IAM users since development team users do not us
 #### Deny Creation of IAM Roles When Permissions Boundary is Not Attached
 
 Disallow developers creating new IAM roles unless the permissions boundary policy is attached at role creation time.
+
+---
+**Review Note: Do IAM Service-Linked Roles need to be constrained?**
+
+In this development environment context, is there a gap if service-linked roles are not constrained?
+
+---
 
 ```
         {
