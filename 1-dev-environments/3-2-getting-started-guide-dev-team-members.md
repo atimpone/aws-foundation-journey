@@ -94,10 +94,10 @@ See [AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.ht
 
 **Use EC2 Instance Profile:** Once you've created your Cloud9 environment, you can associate an instance profile with your Cloud9 EC2 instance so that your work in your IDE can have similar access permissions as your regular AWS session. See [Create and Use an Instance Profile](https://docs.aws.amazon.com/cloud9/latest/user-guide/credentials.html#credentials-temporary). If you create an IAM role for this purpose, you'll need to attach the permisssions boundary policy.
 
-**Update Your Bash Prompt:** If you find that your bash terminal prompt is too long, you can set it to just the current directory:
+**Update Your Bash Prompt:** If you find that your bash terminal prompt is too long, you can set it to just the Linux user, IP address, and current directory. Either edit your `~/.bashrc` file and replace the `PS1` setting or export the setting as follows:
 
 ```
-export PS1="\w $ "
+export PS1="[\u@\h \W]\$ "
 ```
 
 **Install Latest AWS CLI:** Although a version of the AWS CLI is preinstalled in your Cloud9 environment, you should consider installing version 2.  See [Install the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html).
