@@ -40,7 +40,7 @@ See [Configuring AWS Control Tower Without a VPC](https://docs.aws.amazon.com/co
 
 In AWS Control Tower, provision a new Network AWS account that will initially contain the shared development VPC. 
 
-Later in your journey, you'll deploy more network related resources to this AWS account. For example, you will likely configure  and manage [AWS Transit Gateway](https://aws.amazon.com/transit-gateway/) resources in this dedicated AWS account when you start integrating on-premises newtork connectivity in your overall AWS environment.
+Later in your journey, you'll deploy more network related resources to this AWS account. For example, you will likely configure  and manage [AWS Transit Gateway](https://aws.amazon.com/transit-gateway/) resources in this dedicated AWS account when you start integrating on-premises network connectivity in your overall AWS environment.
 
 ---
 **Note: Use the `AWSServiceCatalogEndUserAccess` role**
