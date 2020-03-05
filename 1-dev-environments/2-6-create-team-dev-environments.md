@@ -16,7 +16,7 @@ As highlighted previously, an AWS best practice is to isolate the work of distin
 
 * **Inherent Per Team Cost Allocation:** Since AWS resource costs are, by default, attributable to each AWS account in which the resources are provisioned, at this early stage in your adoption, you don't need to force development teams to use cost allocation tags on their resources.
 
-* **Inherent Isolation Between Teams:** Since cloud resources managed by development teams using different AWS accounts are, by default, completely isolated from each other, complicated AWS Identity and Access Management (IAM) configurations are not needed to ensure that development teams don't inadvertently impact each other's cloud resources.
+* **Inherent Isolation Between Teams:** Since cloud resources managed by development teams using different AWS accounts are, by default, completely isolated from each other, more advanced AWS Identity and Access Management (IAM) configurations are not needed to ensure that development teams don't inadvertently impact each other's cloud resources.
 
 Initially, you will likely need AWS accounts for the following teams:
 
