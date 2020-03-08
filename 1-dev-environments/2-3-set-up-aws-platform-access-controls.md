@@ -83,7 +83,7 @@ If you encounter a permissions error when attempting to access AWS SSO via the A
 
 As an optional step, you may want to customize the URL that your organization uses to access the AWS SSO portal.  
 
-If you have plans to implement your own internal DNS alias for the portal, you can skip this step.
+If you have plans to implement your own vanity URL for the portal, you can skip this step.
 
 The default form the portal URL is similar to this example of: `https://d-3a274d5e7d.awsapps.com/start`. Via the AWS SSO settings, you can customize the `d-3a274d5e7d` portion of the URL shown in the example.
 
