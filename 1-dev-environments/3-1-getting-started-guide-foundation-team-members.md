@@ -25,7 +25,7 @@ Don't overload the initial doc with more advanced capabilities. Focus on the "cr
 
 Consider starting with the following list:
 
-* Applying AWS Control Tower updates.
+* Applying [AWS Control Tower updates](https://docs.aws.amazon.com/controltower/latest/userguide/configuration-updates.html).
 * Responding to alerts from AWS Control Tower guardrails and other AWS platform monitoring services.
 * Monitoring costs across accounts on at least a weekly basis.
 
