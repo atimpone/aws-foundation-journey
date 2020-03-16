@@ -7,8 +7,11 @@ This step should take about 90 minutes to complete.
 1. [Log In as Administrator IAM User](#1-log-in-as-administrator-iam-user)
 2. [Create Landing Zone Using AWS Control Tower](#2-create-landing-zone-using-aws-control-tower)
 3. [Set AWS Account Root User Password and Enable MFA](#3-set-aws-account-root-user-password-and-enable-mfa)
-4. [Enable MFA via AWS SSO for the Admin User Created via Control Tower](#4-enable-mfa-via-aws-sso-for-the-admin-user-created-via-control-tower)
-5. [Review AWS Control Tower Best Practices for Administrators](#5-review-aws-control-tower-best-practices-for-administrators)
+4. [Log In Via Control Tower Administrator User](#4-log-in-via-control-tower-administrator-user)
+5. [Configure Multi-Factor Authentication (MFA) Requirements](#5-configure-multi-factor-authentication-mfa-requirements)
+6. [Enable MFA via AWS SSO for Control Tower Administrator User](#6-enable-mfa-via-aws-sso-for-control-tower-administrator-user)
+7. [Receive and Process AWS Email Messages](#7-receive-and-process-aws-email-messages)
+8. [Review AWS Control Tower Best Practices for Administrators](#5-review-aws-control-tower-best-practices-for-administrators)
 
 ## 1. Log In as Administrator IAM User
 
@@ -37,33 +40,61 @@ See [Log In as Root User](https://docs.aws.amazon.com/controltower/latest/usergu
 
 See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user_manage_mfa) for instructions to enable MFA.
 
-## 4. Enable MFA via AWS SSO for the Admin User Created via Control Tower
+## 4. Log In Via Control Tower Administrator User
 
-As part of the landing zone set up, AWS Control Tower creates a Control Tower Administrator user in the AWS Single-Sign On ( AWS SSO) service in your master account.  As a best practice, you should enable MFA for this user.
+As part of the landing zone set up, AWS Control Tower creates a Control Tower Administrator user in the AWS Single-Sign On ( AWS SSO) service in your master account. 
 
-### Accept Invitation for this User
-
-The email address associated with the AWS master account’s root user will receive an email message containing an invite to activate this user account.  Review the invitation and accept it.
+The email address associated with the AWS master account’s root user will receive an email message containing an invite to activate the Control Tower Administrator user account.  Review the invitation and accept it.
 
 <img src="../images/accept-aws-sso-invitation.png" alt="Accept SSO Invitation" width="400"/>
 
-The email message you recieved also contains a User portal URL that you should bookmar given that it represents the URL to use SSO to access your new AWS environment., we will use it to access the AWS environment throughout the labs.
+When accepting the invite, you will be directed to set the password for the Control Tower Administrator user.
 
-### Set Password and Activate MFA for the User
+The email message you recieved contains a portal URL that you should bookmark given that it will be used by human users to access your new AWS accounts.
 
-On selecting Accept Invitation, you will be redirected to the AWS Single Sign-On page and from where you could set New Password to your master account. Repeat Password and Update User to proceed.
+## 5. Configure Multi-Factor Authentication (MFA) Requirements
+
+Before adding any human users to AWS SSO and enabling the users to access your AWS environment in later sections, it's a best practice to configure AWS SSO to require multi-factor authentication (MFA).
+
+In the following steps, you will modify your AWS SSO configuration to align with typical security best practices.
+
+1. Since you just set the password for the **`Control Tower Administrator`** user, you should already be logged into the AWS SSO portal.
+2. From within the portal, select **`AWS Account`** icon to expand the current list of AWS accounts.
+3. Select the AWS **master** account.
+4. Select **`Management console`** associated with the **`AWSAdministratorAccess`** role.
+5. Select the appropriate AWS region.
+6. Navigate to **`AWS Single Sign-on`**.
+7. Select **`Settings`** in AWS SSO.
+8. Under **`Multifactor authentication`** select **`Configure`**.
+9. Under **`Users should be prompted for multi-factor authentication (MFA)`**, select **`Every time they sign in (always-on)`**.
+10. Under **`When prompted for a MFA code` select `Require them to provide a one-time password sent by email`**.
+11. Under **`Who can manage MFA devices` select `Users and administrators can add and manage MFA devices`**.
+12. Select **`Save changes`**.
+
+---
+**Note: Auditing use of MFA**
+
+The configuration shown above does not force the use of MFA, but it does impose an additional overhead of a one-time password sent via email for users that have not yet registered an MFA device.
+
+You will likely want to establish either manual or automatic recurring audits to ensure that your users have registered an MFA device.
+
+---
+
+## 6. Enable MFA via AWS SSO for Control Tower Administrator User
 
 Follow the instruction in [How to Register a Device for Use with Multi-Factor Authentication](https://docs.aws.amazon.com/singlesignon/latest/userguide/user-device-registration.html).
 
-### Receive and Process AWS Organizations Email Message
+## 7. Receive and Process AWS Email Messages
+
+### AWS Organizations Email Message
 
 You will receive one more email with subject AWS Organizations email verification request to the master account email address. Click on Verify your email address to continue with inviting newly created accounts into AWS Organization.
 
-### Receive and Process AWS Notification Email Messages for Each Region
+### AWS Notification Email Messages for Each Region
 
 The email address you provided for the audit account will receive AWS Notification - Subscription Confirmation emails from every AWS Region supported by AWS Control Tower. To receive compliance emails in your audit account, you must choose the Confirm subscription link within each email from each AWS Region supported by AWS Control Tower.
 
-## 5. Review AWS Control Tower Best Practices for Administrators
+## 8. Review AWS Control Tower Best Practices for Administrators
 
 Now that you've set up your initial landing zone, take a few minutes to review [Best Practices for Account Administrators](https://docs.aws.amazon.com/controltower/latest/userguide/best-practices.html#tips-for-admin-maint) so that you understand temporary limitations and other considerations when working with AWS Control Tower.
 
