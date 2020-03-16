@@ -121,7 +121,7 @@ In the spirit of least privilege access, the resulting permissions will enable c
 1. Access **`Groups`** in AWS SSO.
 2. Select **`Create group`**.
 3. Provide a group name. For example **`acme-cost-mgmt`**. Where you should replace `acme` with a common abbreviation for your organization.
-4. Provide a description. For example, 'Cost management and billing`.
+4. Provide a description. For example, **'Cost management and billing`**.
 5. Select **`Create`**.
 
 ### Associate Group and Permission Set with AWS Master Account
