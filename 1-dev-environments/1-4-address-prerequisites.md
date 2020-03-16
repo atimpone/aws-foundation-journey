@@ -1,6 +1,6 @@
 # Address Prerequisites
 
-In this step the few people who are leading the effort to establish the initial development environment and supporting foundation will address a few technical pre-requsites before you build out the environment.
+In this step your foundation team will address several pre-requsites before you build out the environment.
 
 1. [Create Email Addresses for New AWS Accounts](#1-create-email-addresses-for-new-aws-accounts)
 2. [Obtain Non-Overlapping IP Address Range](#2-obtain-non-overlapping-ip-address-range)
