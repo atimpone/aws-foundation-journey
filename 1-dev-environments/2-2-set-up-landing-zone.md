@@ -11,7 +11,7 @@ This step should take about 90 minutes to complete.
 5. [Configure Multi-Factor Authentication (MFA) Requirements](#5-configure-multi-factor-authentication-mfa-requirements)
 6. [Enable MFA via AWS SSO for Control Tower Administrator User](#6-enable-mfa-via-aws-sso-for-control-tower-administrator-user)
 7. [Receive and Process AWS Email Messages](#7-receive-and-process-aws-email-messages)
-8. [Review AWS Control Tower Best Practices for Administrators](#5-review-aws-control-tower-best-practices-for-administrators)
+8. [Review AWS Control Tower Best Practices for Administrators](#8-review-aws-control-tower-best-practices-for-administrators)
 
 ## 1. Log In as Administrator IAM User
 
