@@ -255,7 +255,7 @@ Since you've just modified "code" that represents an important security policy f
 1. Access **`AWS accounts`** in AWS SSO.
 2. Select **`Permission sets`**.
 3. Select **`Create permission set`**.
-4. Select **`Create a customer permission set`**.
+4. Select **`Create a custom permission set`**.
 5. Enter a **`Name`**. For example **`acme-base-dev-team`**. 
 6. Enter a **`Description`**. For example, **`Day-to-day permission used by developers in their development AWS accounts.`**.
 7. Set the **`Session duration`** to the desired value.
