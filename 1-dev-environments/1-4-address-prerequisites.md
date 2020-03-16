@@ -1,10 +1,11 @@
 # Address Prerequisites
 
-In this step the few people who are leading the effort to establish the initial development environment and supporting foundation will address a few technical pre-requsites before the build out of the environment begins.
+In this step the few people who are leading the effort to establish the initial development environment and supporting foundation will address a few technical pre-requsites before you build out the environment.
 
 1. [Create Email Addresses for New AWS Accounts](#1-create-email-addresses-for-new-aws-accounts)
 2. [Obtain Non-Overlapping IP Address Range](#2-obtain-non-overlapping-ip-address-range)
 3. [Decide on Organizational Identifier](#3-decide-on-organizational-identifier)
+4. [Identify Your Preferred AWS Region](#4-identify-your-preferred-aws-region)
 
 ## 1. Create Email Addresses for New AWS Accounts
 
@@ -95,6 +96,10 @@ As an example, this guide uses the prefix **`acme`** throughout. As you progress
 As you progress on your journey, you will find it useful to adopt more extensive cloud resource naming standards.
 
 ---
+
+## 4. Identify Your Preferred AWS Region
+
+When you build out the foundation of your AWS environment using the AWS Control Tower service, you will need to specify a “home” AWS region in which AWS Control Tower will configure a set of resources. Typically, this AWS region will be the AWS region in which you expect to host most of your workloads.  See [AWS Regions and Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) for a list of the current regions.
 
 ## Next Steps
 
