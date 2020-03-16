@@ -4,22 +4,17 @@ In this step your Cloud Administrators will use the AWS Control Tower service in
 
 This step should take about 90 minutes to complete.
 
-1. [Identify Your Preferred AWS Region](#1-identify-your-preferred-aws-region)
-2. [Log In as Administrator IAM User](#2-log-in-as-administrator-iam-user)
-3. [Create Landing Zone Using AWS Control Tower](#3-create-landing-zone-using-aws-control-tower)
-4. [Set AWS Account Root User Password and Enable MFA](#4-set-aws-account-root-user-password-and-enable-mfa)
-5. [Enable MFA via AWS SSO for the Admin User Created via Control Tower](#5-enable-mfa-via-aws-sso-for-the-admin-user-created-via-control-tower)
-6. [Review AWS Control Tower Best Practices for Administrators](#6-review-aws-control-tower-best-practices-for-administrators)
+1. [Log In as Administrator IAM User](#1-log-in-as-administrator-iam-user)
+2. [Create Landing Zone Using AWS Control Tower](#2-create-landing-zone-using-aws-control-tower)
+3. [Set AWS Account Root User Password and Enable MFA](#3-set-aws-account-root-user-password-and-enable-mfa)
+4. [Enable MFA via AWS SSO for the Admin User Created via Control Tower](#4-enable-mfa-via-aws-sso-for-the-admin-user-created-via-control-tower)
+5. [Review AWS Control Tower Best Practices for Administrators](#5-review-aws-control-tower-best-practices-for-administrators)
 
-## 1. Identify Your Preferred AWS Region
-
-Since AWS Control Tower will establish a set of management resources in a “home” AWS region, you need to identify which AWS region you expect to host most of your AWS management resources. You will select this region in the next step.
-
-## 2. Log In as Administrator IAM User
+## 1. Log In as Administrator IAM User
 
 Log in as the Administrator IAM user that you created in the last section before you use AWS Control Tower to set up your initial landing zone.
 
-## 3. Create Landing Zone Using AWS Control Tower
+## 2. Create Landing Zone Using AWS Control Tower
 
 Before using AWS Control Tower to create an initial landing zone, ensure that you review these considerations:
 
@@ -31,7 +26,7 @@ Follow the steps in [Getting Started with AWS Control Tower](https://docs.aws.am
 
 The set up process can take 20-60 minutes to complete.
 
-## 4. Set AWS Account Root User Password and Enable MFA
+## 3. Set AWS Account Root User Password and Enable MFA
 
 Since AWS Control Tower creates two new member accounts while setting up the initial landing zone, you should follow AWS security best practices by setting the password and enabling MFA for the root user of each of the following accounts:
 
@@ -42,7 +37,7 @@ See [Log In as Root User](https://docs.aws.amazon.com/controltower/latest/usergu
 
 See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user_manage_mfa) for instructions to enable MFA.
 
-## 5. Enable MFA via AWS SSO for the Admin User Created via Control Tower
+## 4. Enable MFA via AWS SSO for the Admin User Created via Control Tower
 
 As part of the landing zone set up, AWS Control Tower creates a Control Tower Administrator user in the AWS Single-Sign On ( AWS SSO) service in your master account.  As a best practice, you should enable MFA for this user.
 
@@ -68,7 +63,7 @@ You will receive one more email with subject AWS Organizations email verificatio
 
 The email address you provided for the audit account will receive AWS Notification - Subscription Confirmation emails from every AWS Region supported by AWS Control Tower. To receive compliance emails in your audit account, you must choose the Confirm subscription link within each email from each AWS Region supported by AWS Control Tower.
 
-## 6. Review AWS Control Tower Best Practices for Administrators
+## 5. Review AWS Control Tower Best Practices for Administrators
 
 Now that you've set up your initial landing zone, take a few minutes to review [Best Practices for Account Administrators](https://docs.aws.amazon.com/controltower/latest/userguide/best-practices.html#tips-for-admin-maint) so that you understand temporary limitations and other considerations when working with AWS Control Tower.
 
