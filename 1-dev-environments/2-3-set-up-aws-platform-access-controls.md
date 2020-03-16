@@ -13,7 +13,6 @@ This step should take about 45 minutes to complete.
 7. [Create Organizational Units](#7-create-organizational-units)
 8. [Distribute Permissions Boundary to Development OU](#8-distribute-permissions-boundary-to-development-ou)
 9. [Create Development Team Permission Set in AWS SSO](#9-create-development-team-permission-set-in-aws-sso)
-10. [Configure Multi-Factor Authentication (MFA) Requirements](#10-configure-multi-factor-authentication-mfa-requirements)
 
 ## 1. Temporarily Use AWS SSO Locally Managed Users and Groups
 
@@ -254,30 +253,6 @@ Since you've just modified "code" that represents an important security policy f
 10. Select **`Create`**.
 
 Later, when you onboard the development teams to their development AWS accounts, you'll reference this permission set.
-
-## 10. Configure Multi-Factor Authentication (MFA) Requirements
-
-Before adding any human users to AWS SSO and enabling the users to access your AWS environment, it's a best practice to configure AWS SSO to require multi-factor authentication (MFA).
-
-In the following steps, you will modify your AWS SSO configuration to align with typical security best practices.
-
-Follow these steps to make the MFA related changes:
-
-1. Access **`Settings`** in AWS SSO.
-2. Under **`Multifactor authentication`** select **`Configure`**.
-3. Under **`Users should be prompted for multi-factor authentication (MFA)`**, select **`Every time they sign in (always-on)`**.
-4. Under **`When prompted for a MFA code` select `Require them to provide a one-time password sent by email`**.
-5. Under **`Who can manage MFA devices` select `Users and administrators can add and manage MFA devices`**.
-6. Select **`Save changes`**.
-
----
-**Note: Auditing use of MFA**
-
-The configuration shown above does not force the use of MFA, but it does impose an additional overhead of a one-time password sent via email for users that have not yet registered an MFA device.
-
-You will likely want to establish either manual or automatic recurring audits to ensure that your users have registered an MFA device.
-
----
 
 ## Next Steps
 
