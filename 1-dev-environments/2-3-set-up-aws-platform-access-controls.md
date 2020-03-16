@@ -127,13 +127,24 @@ In the spirit of least privilege access, the resulting permissions will enable c
 ### Associate Group and Permission Set with AWS Master Account
 
 1. Access **`AWS accounts`** in AWS SSO.
-2. Select the checkbox next to your **master** AWS account.
+2. Select the checkbox next to your **`master`** AWS account.
 3. Select **`Assign users`**.
 4. Select **`Groups`**.
 5. Select the checkbox next to **`acme-cost-mgmt`** or similar.
 6. Select **`Next: Permission sets`**.
-7. Select the checkbox next to **`Billing`**.
-8. Select **`Finish`**.
+
+#### Create New Permission Set for Billing
+
+7. Select **`Create new permission set`**.
+8. Select **`Billing`**.
+9. Select **`Create`**.
+
+#### Associate Billing Permission Set 
+
+10. Select the checkbox next to **`Billing`**.
+11. Select **`Finish`**.
+
+AWS SSO deploys the selected permission set to the selected AWS account.
 
 ## 7. Create Organizational Units
 
