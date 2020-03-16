@@ -9,8 +9,8 @@ This step should take about 20 minutes.
 3. [Create a New AWS Master Account](#3-create-a-new-aws-master-account)
 4. [Receive Confirmation Email](#4-receive-confirmation-email)
 5. [Secure Your AWS Account Root User](#5-secure-your-aws-account-root-user)
-6. [Create an IAM user for Administrative Bootstrap Purposes](#6-create-an-iam-user-for-administrative-bootstrap-purposes)
-7. [Set Alternate Contacts](#7-set-alternate-contacts)
+6. [Set Alternate Contacts](#6-set-alternate-contacts)
+7. [Create an IAM user for Administrative Bootstrap Purposes](#7-create-an-iam-user-for-administrative-bootstrap-purposes)
 
 ## 1. Review the Benefits of Using Multiple AWS Accounts
 
@@ -69,7 +69,13 @@ It’s strongly recommended and an AWS security best practice to enable multi-fa
 
 See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user_manage_mfa) for instructions.
 
-## 6. Create an IAM user for Administrative Bootstrap Purposes
+## 6. Set Alternate Contacts
+
+Using the root user, set the Alternate Contacts for your account so that notifications of billing, operations, and security events are routed to the proper teams.  As a best practice, you can use email distribution lists so that notifications are set to multiple people in the same team.
+
+Access [Account  Settings](https://console.aws.amazon.com/billing/home?#/account) in the AWS Management Console to set the Alternate Contacts.
+
+## 7. Create an IAM user for Administrative Bootstrap Purposes
 
 ---
 **Review Note: Is creating a admin bootstrap user necessary?**
@@ -96,12 +102,6 @@ This administrative user should be only used to complete your initial foundation
 While logged in as the root user, follow the instructions in [Create an IAM user](https://docs.aws.amazon.com/controltower/latest/userguide/setting-up.html#setting-up-iam) to create this administrative user.
 
 Once the user has been created, sign into the AWS Management Console as the user and enable MFA to help secure the account. See [Enable a Virtual MFA Device fo an IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html#enable-virt-mfa-for-iam-user).
-
-## 7. Set Alternate Contacts
-
-Once you’ve set up your bootstrap administrative IAM user, log in as that user and set the Alternate Contacts for your account so that notifications of billing, operations, and security events are routed to the proper teams.  As a best practice, you can use email distribution lists so that notifications are set to multiple people in the same team.
-
-Access [Account  Settings](https://console.aws.amazon.com/billing/home?#/account) in the AWS Management Console to set the Alternate Contacts.
 
 ## Next Steps
 
