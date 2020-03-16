@@ -86,7 +86,7 @@ Follow the instruction in [How to Register a Device for Use with Multi-Factor Au
 
 ## 7. Receive and Process AWS Email Messages
 
-### AWS Organizations Email Message
+### AWS Organizations Email Verification Request
 
 You will receive one more email with subject AWS Organizations email verification request to the master account email address. Click on Verify your email address to continue with inviting newly created accounts into AWS Organization.
 
