@@ -30,8 +30,9 @@ Initially, they will hold a series of notes and links to existing best practices
   * Internet Integration
 * Initial Iteration of Workload Promotion and Release Management
 * Evolved Foundation Baseline Management
-* Cloud Operating Model and Identity and Access Management
+* Cloud Operating Model
   * Defining who does what in terms of promotion and production operations
+* Identity and Access Management
   * Enhanced Service Control Policies (SCPs)
   * IAM for:
     * Workloads
