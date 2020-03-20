@@ -1,4 +1,4 @@
-# Secure Internet Integration
+# Enhanced Internet Security for Development Environments
 
 This section addresses options and resources to enable you to further secure Internet integration in support of your initial development environments and in preparation for establishing test and production hosting environments on AWS.
 
