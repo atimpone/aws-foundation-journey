@@ -21,6 +21,8 @@ Initially, they will hold a series of notes and links to existing best practices
   * Certificate Management
 * Multi-Region
 * Test and Production AWS Account Design and Tenancy Model
+  * Test, Production, and Builder Services AWS Accounts
+  * Grouping like workloads together in same AWS accounts
 * Test and Production Networks
   * VPC Design
   * On-premises Network Integration
@@ -57,8 +59,10 @@ Initially, they will hold a series of notes and links to existing best practices
   * Promotion and Release Management
   * Operational Monitoringa and Support
   
-## Fast Follow-on Capabilities
+## Follow-on Capabilities
 
-* Cloud Resurce Tagging and Naming
+* AWS Account Design
+* Cloud Hosted Internet Integration Security Services
+* Cloud Resource Tagging and Naming
 * CD Pipeline Management
 * Infrastructure as Code (IaC)
