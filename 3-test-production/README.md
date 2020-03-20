@@ -16,6 +16,7 @@ Initially, they will hold a series of notes and links to existing best practices
 * [Review Requirements](1-1-requirements.md)
 * [Review Solution](1-2-solution.md)
 * Identify Data Classification and Compliance Requirements
+* Identify Multi-Region Requirements
 * Establish Your Initial Cloud Operating Model
 * Define Your Test and Production AWS Account Tenancy Model
 * Define Your Initial Promotion and Release Management Process
