@@ -17,7 +17,7 @@ Under these circumstances, it is often most expedient to reuse your existing on-
 
 ### Longer Term Cloud Hosted Ingress and Egress Security Services
 
-See [Nick Matthews' re:Invent 2019 talk](https://youtu.be/9Nikqn_02Oc) on the role that AWS Transit Gateway can play in this regard.
+See [Nick Matthews' re:Invent 2019 talk](https://youtu.be/9Nikqn_02Oc?t=2304) on the role that AWS Transit Gateway can play in this regard.
 
 ### Impact to Development VPC Design
 
