@@ -11,23 +11,54 @@ Initially, they will hold a series of notes and links to existing best practices
 
 ---
 
-## Perform Up-front Tasks
+## Define Requirements and Identify Solutions
 
-* [Review Requirements](1-1-requirements.md)
-* [Review Solution](1-2-solution.md)
-* Identify Data Classification and Compliance Requirements
-* Identify Multi-Region Requirements
-* Establish Your Initial Cloud Operating Model
-* Define Your Test and Production AWS Account Tenancy Model
-* Define Your Initial Promotion and Release Management Process
+* Data Classification and Compliance
+* Encryption
+  * At Rest
+  * In Transit
+  * Key Management 
+  * Certificate Management
+* Multi-Region
+* Test and Production AWS Account Design and Tenancy Model
+* Test and Production Networks
+  * VPC Design
+  * On-premises Network Integration
+  * DNS Integration
+  * Internet Integration
+* Initial Iteration of Workload Promotion and Release Management
+* Evolved Foundation Baseline Management
+* Cloud Operating Model and Identity and Access Management
+  * Defining who does what in terms of promotion and production operations
+  * Enhanced Service Control Policies (SCPs)
+  * IAM for:
+    * Workloads
+      * Runtimes
+      * Lifecycle management
+      * Operations and monitoring
+    * Foundation
+      * Runtimes
+      * Lifecycle management
+      * Operations and monitoring
 
 ## Build Out the Environments
 
 * Build Test and Production AWS Accounts
 * Establish Test and Product AWS Account Access Controls
+* Enhance Development AWS Accounts with Production-like Access Controls (for early testing)
+* Build Test and Production Networks
 * Onboard Foundation Team
-* Set Up Test and Production Networks
-* Establish Secure Internet Integration
+  * Promotion and Release Management
+  * Operational Monitoring and Support
+* Establish Encryption Support
 * Establish Promotion and Release Management Process
-* Onboard Development Team to Release Pipeline
-* ...
+* Onboard Development Teams
+  * Ability to Perform Early Testing of Production-like Access Controls in Development
+  * Promotion and Release Management
+  * Operational Monitoringa and Support
+  
+## Fast Follow-on Capabilities
+
+* Cloud Resurce Tagging and Naming
+* CD Pipeline Management
+* Infrastructure as Code (IaC)
