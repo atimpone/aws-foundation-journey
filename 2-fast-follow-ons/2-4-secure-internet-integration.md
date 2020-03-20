@@ -15,6 +15,10 @@ In the initial solution, each development team’s account and VPC includes a se
 ### Tactical Routing of Ingress and Egress Traffic Through Existing On-Premises Security Services
 Under these circumstances, it is often most expedient to reuse your existing on-premises Internet security filtering capabilities to minimize the risk of IP and other information being leaked from your development environments to the Internet.   For example, as a tactical step, all egress traffic destined for the Internet from the cloud hosted development environments can be routed back on-premises over a site-to-site VPN connection and through existing network and security layers before being sent to the Internet.
 
+The primary downsides of this tactical approach are:
+* Increased in latency.
+* Increased dependency on on-premises infrastructure.
+
 ### Longer Term Cloud Hosted Ingress and Egress Security Services
 
 See [Nick Matthews' re:Invent 2019 talk](https://youtu.be/9Nikqn_02Oc?t=2304) on the role that AWS Transit Gateway can play in this regard.
