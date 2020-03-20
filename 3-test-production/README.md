@@ -62,8 +62,8 @@ Initially, they will hold a series of notes and links to existing best practices
   
 ## Follow-on Capabilities
 
-* AWS Account Design
+* Further Evolution of AWS Account Design
 * Cloud Hosted Internet Integration Security Services
 * Cloud Resource Tagging and Naming
-* CD Pipeline Management
-* Infrastructure as Code (IaC)
+* More Advanced CD Pipeline Management
+* More Advanced Infrastructure as Code (IaC)
