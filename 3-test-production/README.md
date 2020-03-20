@@ -67,3 +67,5 @@ Initially, they will hold a series of notes and links to existing best practices
 * Cloud Resource Tagging and Naming
 * More Advanced CD Pipeline Management
 * More Advanced Infrastructure as Code (IaC)
+* Managed Operational Services
+  * e.g. Role of AWS Managed Services (AMS)
