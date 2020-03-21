@@ -58,7 +58,7 @@ Initially, they will hold a series of notes and links to existing best practices
 * Onboard Development Teams
   * Ability to Perform Early Testing of Production-like Access Controls in Development
   * Promotion and Release Management
-  * Operational Monitoringa and Support
+  * Operational Monitoring and Support
   
 ## Follow-on Capabilities
 
