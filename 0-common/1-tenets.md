@@ -8,7 +8,9 @@ The primary audience of these guides are organizations adopting AWS.
 
 Although it's often helpful for customers to have AWS experienced people working with them in this early stage of adoption, our goal is to enable customers to be able to follow these guides on their own.
 
-AWS and partners should also benefit from these guides as they assist customers in this early stage of the cloud adoption journey. As a byproduct, the guides should serve as a means to help train new AWS and partner people as they begin to become familiar with the initial practical steps of customer adoption. 
+AWS and partners should also benefit from these guides as they assist customers in this early stage of the cloud adoption journey. 
+
+As a byproduct, the guides should serve as a means to help train new AWS and partner people as they begin to become familiar with the initial practical steps of customer adoption. 
 
 # 2. Work in the open.
 
