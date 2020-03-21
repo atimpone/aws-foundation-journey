@@ -20,7 +20,7 @@ See [Tenets](1-tenets.md).
 
 ### Q: Why aren't Sandbox AWS accounts included in the initial build out?
 
-Since the premise of the initial guides is to help your organizations quickly establish a formal development environment in which experimentation, integration, development, and early testing of the first few application and/or data services can take place before they are rapidly moved through formal testing environments and into production, the traditional role of completely isolated and disconnected sandbox AWS accounts in which your organization's intellectual propertly (IP) including source code is not allowed does not yet apply to this overall scenario.
+Since the premise of the initial guides is to help customers quickly establish a formal development environment in which experimentation, integration, development, and early testing of the first few application and/or data services can take place before they are rapidly moved through formal testing environments and into production, the traditional role of completely isolated and disconnected sandbox AWS accounts in which your organization's intellectual propertly (IP) including source code is not allowed does not yet apply to this overall scenario.
 
 Instead, a focus of the guides is to establish development team AWS accounts to enable the formal work in support of the first few projects to progress rapidly.
 
