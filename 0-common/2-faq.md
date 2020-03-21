@@ -45,6 +45,6 @@ Based on our experience, it can commonly take several weeks for an organization 
 
 ## Cloud Resource Naming and Tagging
 
-### Q: Shouldn't we define and implement tagging standards early on in the journey?
+### Q: Shouldn't we define and implement tagging standards early on in our journey?
 
 ...
