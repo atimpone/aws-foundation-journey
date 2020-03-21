@@ -22,8 +22,8 @@ Initially, you will likely need AWS accounts for the following teams:
 
 |Dev Team Account|Purpose|
 |----------------|-------|
-|**Application or Data Services Development Team AWS Account**|A development AWS account for the initial application or data services development team.|
-|**Foundation Team AWS Account**|A development AWS account for the initial few Cloud and Security Administrators to experiment, develop, and perform early testing of changes to the foundation.|
+|**Application or Data Services Development Team**|A development AWS account for the initial application or data services development team.|
+|**Foundation Team**|A development AWS account for the initial few Cloud and Security Administrators to experiment, develop, and perform early testing of changes to the foundation.|
 
 ## 2. Create Development Team AWS Accounts
 
