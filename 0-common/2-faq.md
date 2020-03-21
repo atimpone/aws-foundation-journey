@@ -33,7 +33,7 @@ We expect that in most cases the initially provisioned developemnt team AWS acco
 The notion of ["governed sandboxes"](https://www.flux7.com/blog/aws-best-practice-sandbox-accounts-provide-secure-middle-ground/) is similar to the approach taken in these guides where development teams are provided wide latitude within a set of overall guardrails.
 
 #### Future Role for Traditional Sandboxes
-Similar to other aspects of overall AWS account design, the guide intentionally avoids overloading your organization with the fuller "to be" state too early in your cloud adoption journey. Depending on your needs, in the future and perhaps in the larger "foundation" stage of adoption or even earlier as a parallel workstream, the capability to provide truly isolated and ephemeral sandbox AWS accounts to support a specific set of use cases may be addressed.
+Similar to other aspects of overall AWS account design, the guide intentionally avoids overloading your organization with the fuller "to be" state of capabilities too early in your cloud adoption journey. Depending on your needs, in the future and perhaps in the larger "foundation" stage of adoption or even earlier as a parallel workstream, the capability to provide truly isolated and ephemeral sandbox AWS accounts to support a specific set of use cases may be addressed.
 
 ## Federated Access to AWS Platform
 
