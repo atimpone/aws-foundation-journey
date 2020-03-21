@@ -8,7 +8,7 @@ The primary audience of these guides are organizations adopting AWS.
 
 Although it's often helpful for customers to have AWS experienced people working with them in this early stage of adoption, our goal is to enable customers to be able to follow these guides on their own.
 
-AWS and AWS partners should also benefit from these guides as they assist customers in this early stage of the cloud adoption journey.
+AWS and partners should also benefit from these guides as they assist customers in this early stage of the cloud adoption journey. As a byproduct, the guides should serve as a means to help train new AWS and partner people as they begin to become familiar with the initial practical steps of customer adoption. 
 
 # 2. Work in the open.
 
@@ -28,7 +28,7 @@ Balance this tenet with the interest in avoiding significant rework later in the
 
 # 5. Focus on the common underpinnings or "foundation" aspects of the journey
 
-That apply largely independent of specific workload types and industry verticals.
+Focus on the common underpinnings or foundational aspects of the journey that apply largely independent of specific workload types and industry verticals.
 
 At least in the early stages of developing this guidance, defer to other resources to address workload- and industry-specific needs.
 
@@ -38,7 +38,7 @@ Don't boil the ocean. Focus on the early "project" stage of formal adoption of A
 
 # 7. Focus on the 80% part of 80/20.
 
-Address the most common scnearios first.
+Address the most common scenarios first.
 
 # 8. Avoid temporary solutions and accrual of technical debt.
 
