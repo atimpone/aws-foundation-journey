@@ -12,7 +12,7 @@ Additionally, since the scope of the initial stage of customers' adoption of AWS
 
 Moving forward there's an opportunity to introduce this type of documentation and knowlege into more mainstream AWS documentation.
 
-### Q: What are the tenets for principles behind this project?
+### Q: What are the tenets or principles behind this project?
 
 See [Tenets](1-tenets.md).
 
