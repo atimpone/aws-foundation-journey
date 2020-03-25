@@ -24,6 +24,10 @@ Beyond filing issues, we welcome your bug fixes and enhacenments.
 
 ## Working with Content
 
+### Use of Hugo Static Site Generator
+
+...provide instructions of how to locally render the content using Hugo so that contributors can test changes before issuing PRs...
+
 ### Defer to External Docs Where Feasible
 
 When there's modular, to-the-point official documentation that can be linked to, we prefer that route vs duplicating lengthy instructions within these guides.  
@@ -35,6 +39,8 @@ However, when any of the following conditions apply, in the interest of providin
 
 ### Working with draw.io Files
 
+See the `drawings/` directory for the draw.io source files used for pictures and diagrams. 
+
 The `.png` drawings used in this repository are created in the following manner:
 
 1. Open the `.drawio` file of interest using either the free online version or your internal instance of draw.io.
@@ -45,7 +51,7 @@ The `.png` drawings used in this repository are created in the following manner:
 1. Select "Export"
 1. Select "Download"
 
-Copy the exported PNG file to the `images/` folder and rename it to suit your needs.
+Copy the exported PNG file to the approprite directory under `static/images/` and rename it to suit your needs.
 
 #### Tab Names in drawio Files
 
@@ -53,23 +59,4 @@ Since the file name and tab name are used to create the file names of exported i
 
 ### Linking to Images
 
-#### Relative Linking
-
-Normally, when an image is easy to read inline, we use relative links:
-
-```
-<img src="images/cloud-adoption-framework.png" alt="Cloud Adoption Framework" width="400"/>
-```
-
-The downside of this approach is that clicking on the image does not immediately expand it. See the following approach when direct, immediate expansion is important.
-
-#### Fully Qualified Linking
-
-Although not preferred due to the awkwardness of testing changes in your local repositories, sometimes when the image is too hard to see inline, readers will benefit from being to click on the image to immediately explode it.
-
-The least worst approach we've found is the following:
-
-```
-![alt text](https://github.com/ckamps/aws-foundation-journey/raw/master/images/dev-network-initial-details.png "Initial Network Details")
-```
-
+Since the project uses the [Hugo](https://gohugo.io/) static web site generation tool, see the Hugo documentation for examples of how to include images in content pages.
