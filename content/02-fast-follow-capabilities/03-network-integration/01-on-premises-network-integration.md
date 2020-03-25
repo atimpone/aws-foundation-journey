@@ -7,12 +7,9 @@ weight: 10
 
 This section addresses options and resources to enable network connectivity between your on-premises networks and AWS environment.
 
----
-**Review Notes: For now add ideas and references to existing publicly available resources**
-
-Let's build up ideas and refine as we go.
-
----
+{{% notice note %}}
+**Review Note: For now add ideas and references to existing publicly available resources:** Let's build up ideas and refine as we go.
+{{% /notice %}}
 
 ## Requirements
 

@@ -24,7 +24,7 @@ Once you're able to login, you'll need to [register an MFA device](https://docs.
 
 ### Environment Overview
 
-Review the [Initial Development Environment Solution Overview](1-2-solution.md) for an introduction to the overall environment.
+Review the [Initial Development Environment Solution Overview]({{< relref "02-review-dev-environment-solution" >}}) for an introduction to the overall environment.
 
 ### Network Overview
 

@@ -36,10 +36,9 @@ Use your organization's process to request either DLs or shared mailboxes based 
 |Foundation Team Development|aws-account-foundation-dev@acme.com|aws-account+foundation-dev@acme.com|
 |Builder Team 1 Development|aws-account-team-a-dev@acme.com|aws-account+team-a-dev@acme.com|
 
-### Use of “+” Style Email Addresses
-If your organization’s email system supports the use of “+” style email addresses in which email multiple email addresses are aliased to the same email account, then you might find it beneficial to use this form to consolidate the root user email addresses for either all or collections of AWS accounts to either one or a few actual email accounts.
-
-For example: [aws-account1+master@acme.com](mailto:aws-account1+master@acme.com) and [aws-account1+audit@acme.com](mailto:aws-account1+audit@acme.com) will be treated as unique addresses in AWS but your mail system may deliver the mail to the same [aws-account1@acme.com](mailto:aws-account1@acme.com) email address.
+{{% notice tip %}}
+**Use of “+” style email addresses:** If your organization’s email system supports the use of “+” style email addresses in which email multiple email addresses are aliased to the same email account, then you might find it beneficial to use this form to consolidate the root user email addresses for either all or collections of AWS accounts to either one or a few actual email accounts. For example: [aws-account1+master@acme.com](mailto:aws-account1+master@acme.com) and [aws-account1+audit@acme.com](mailto:aws-account1+audit@acme.com) will be treated as unique addresses in AWS but your mail system may deliver the mail to the same [aws-account1@acme.com](mailto:aws-account1@acme.com) email address.
+{{% /notice %}}
 
 {{% notice tip %}}
 **Office 365 Customers:** It appears that plus style addressing is on the [Office 365 roadmap for 2020](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-transport-news-from-microsoft-ignite-2019/ba-p/993417).
