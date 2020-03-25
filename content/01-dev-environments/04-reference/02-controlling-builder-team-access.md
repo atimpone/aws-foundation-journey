@@ -1,5 +1,5 @@
 ---
-title: "Controlling Builder Team Access to Team Development Environments"
+title: "Controlling Builder Team Access to Development Environments"
 menuTitle: "Controlling Builder Team Access"
 date: 2020-03-22T10:18:20-07:00
 draft: false

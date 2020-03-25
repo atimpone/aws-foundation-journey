@@ -49,8 +49,8 @@ https://github.com/matcornic/hugo-theme-learn/pull/195
 
 # Publish Draft and Obtain Feedback
 
-* Push branch.
-* Generate site and publish to S3 with CloudFront distro.
+* DONE - Push branch.
+* DONE - Generate site and publish to S3 with CloudFront distro.
 * Ask for feedback.
 
 # Backlog / Nice to Have
