@@ -1,14 +1,21 @@
 ---
-title: "Using AWS Cloud9"
+title: "Using AWS Cloud9 in Team Development Environments"
 menuTitle: "AWS Cloud9"
 date: 2020-03-22T10:18:20-07:00
 draft: false
 weight: 10
 ---
 
+This document highlights special considerations when using the AWS Cloud9 IDE in your team development AWS accounts.
+
+## Why Use AWS Cloud9?
 If you have challenges getting the AWS CLI and other tools installed on your corporate desktop, you may find it useful to use AWS Cloud9, a web-based IDE that enables you to deploy a development environment in your AWS account.  
 
 Each Cloud9 environment is an Amazon EC2 Linux instance that includes a browser-based IDE. You deploy a Cloud9 environment in one of your public subnets and access it via the Cloud9 service.
+
+{{% notice info %}}
+**Cloud9 Environments Require Public Subnets:** Currently, AWS Cloud9 development environments must be deployed to public subnets. If your organization chooses to not provide public subnets in the shared development network, then Cloud9 will not be applicable until Cloud9 environments are supported in private subnets.
+{{% /notice %}}
 
 ## Creating a Cloud9 Environment
 
@@ -20,7 +27,9 @@ Ensure that you select one of the public subnets given that the Cloud9 service c
 
 ### Use an EC2 Instance Profile
 
-Once you've created your Cloud9 environment, you can associate an instance profile with your Cloud9 EC2 instance so that your work in your IDE can have similar access permissions as your regular AWS session. See [Create and Use an Instance Profile](https://docs.aws.amazon.com/cloud9/latest/user-guide/credentials.html#credentials-temporary).  For example, you could associate the managed IAM policy `AdministratorAccess` with your new EC2 service role for Cloud9.  Since in your team development AWS account you're required to attach the permissions boundary whenever you create a role, your overall access will be constrained by the permissions boundary policy.
+Once you've created your Cloud9 environment, you can associate an instance profile with your Cloud9 EC2 instance so that your work in your IDE can have similar access permissions as your regular AWS session. See [Create and Use an Instance Profile](https://docs.aws.amazon.com/cloud9/latest/user-guide/credentials.html#credentials-temporary).  
+
+For example, you could associate the managed IAM policy `AdministratorAccess` with your new EC2 service role for Cloud9.  Since in your team development AWS account you're required to attach the permissions boundary whenever you create a role, your overall access will be constrained by the permissions boundary policy.
 
 After you attach an EC2 instance profile and IAM role to your Cloud9 instance, you can verify which role is being used by issuing the following command from a terminal session in your Cloud9 environment:
 

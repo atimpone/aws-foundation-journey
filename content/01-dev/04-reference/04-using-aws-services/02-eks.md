@@ -1,15 +1,16 @@
 ---
-title: "Using Amazon EKS"
+title: "Using Amazon EKS in Team Development Environments"
 menuTitle: "Amazon EKS"
 date: 2020-03-22T10:18:20-07:00
 draft: false
 weight: 20
 ---
 
----
-**Review Note: Draft under development**
+{{% notice note %}}
+**Review Note:** This is a draft document.
+{{% /notice %}}
 
----
+This document highlights special considerations when using Amazon EKS in your team development AWS accounts.
 
 ## Using `eksctl` CLI to Create a Cluster
 

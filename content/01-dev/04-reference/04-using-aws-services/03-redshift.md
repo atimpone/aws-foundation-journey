@@ -1,15 +1,16 @@
 ---
-title: "Using Amazon Redshift"
+title: "Using Amazon Redshift in Team Development Environments"
 menuTitle: "Amazon Redshift"
 date: 2020-03-22T10:18:20-07:00
 draft: false
 weight: 30
 ---
 
----
-**Review Note: Draft under development**
+{{% notice note %}}
+**Review Note:** This is a draft document.
+{{% /notice %}}
 
----
+This document highlights special considerations when using Amazon Redshift in your team development AWS accounts.
 
 ## Resources
 
