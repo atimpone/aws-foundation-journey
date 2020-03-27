@@ -43,9 +43,9 @@ The following requirements are intended to provide a practical sense of the acce
 
 **Allow Creation of IAM Service Roles and Policies:** In development environments builders should be able to experiment, develop, and test solutions without depending on other teams to get things done.
 
-Since this work often entails creation of workload specific IAM service roles and policies, builders should be able to create and manage IAM service roles and policies on their own subject to the constraint that builders must not be able to escalate their privileges to circumvent other policies.
+Since this work often entails creation of workload specific IAM service roles and policies, builders should be able to create and manage these resources on their own subject to the constraint that builders must not be able to escalate their privileges to circumvent other policies.
 
-For example, it's a common need to be able to define custom IAM service roles and policies and attach the roles to Amazon EC2 instances and Lambda functions.
+For example, it's a common need to be able to define workload specific IAM service roles and policies and attach the roles to Amazon EC2 instances and Lambda functions.
 
 **Allow Read Only Access to IAM Roles and Policies:** Allow builders to browse and review IAM resources so that they know what is available to potentially reuse and can learn from existing examples.
 
