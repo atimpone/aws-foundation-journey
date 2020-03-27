@@ -173,6 +173,7 @@ However, in support of this use case where the intent is to provide builders in 
 
 ```
         {
+            "Sid": "AllowAllWithExceptions",
             "Effect": "Allow",
             "NotAction": [
                 "iam:*",
@@ -188,7 +189,7 @@ However, in support of this use case where the intent is to provide builders in 
 A subset of the following prmissions is taken from the AWS managed Developer Power User policy, except with the addition of being able to list and get any IAM resource, pass IAM roles to AWS services, and manage EC2 instance profiles.
 
 ```
-        {
+            "Sid": "AllowCommonOps",
             "Effect": "Allow",
             "Action": [
                 "iam:Get*",
@@ -217,6 +218,7 @@ Allow builders to develop and test customer managed policies as long as the name
 
 ```
         {
+            "Sid": "AllowPolicyCrud",
             "Effect": "Allow",
             "Action": [
                 "iam:CreatePolicy",
@@ -233,7 +235,8 @@ Allow builders to develop and test customer managed policies as long as the name
 Allow builders to create IAM roles as long as the permissions boundary policy is attached at role creation time and the role name does not overlap with the foundation namespace.
 
 ```
-        {
+       {
+            "Sid": "AllowRoleWithPBs",
             "Effect": "Allow",
             "Action": [
                 "iam:CreateRole",
@@ -257,6 +260,7 @@ Allow builders to further modify non-foundation IAM roles.
 
 ```
         {
+            "Sid": "AllowRoleOther",
             "Effect": "Allow",
             "Action": [
                 "iam:DeleteRole",
@@ -268,7 +272,7 @@ Allow builders to further modify non-foundation IAM roles.
                 "iam:UntagRole"
             ],
             "NotResource": "arn:aws:iam::*:role/acme-base-*"
-        },  
+        },
 ```
 
 #### Deny Deletion of Permissions Boundary Policies
@@ -276,18 +280,19 @@ Allow builders to further modify non-foundation IAM roles.
 Ensure that once a permissions boundary policy has been attached to a role, builders cannot delete it.  Builders can still delete the role itself which will automatically remove the attached permissions boundary policy.
 
 ```
-        {
-            "Sid": "DenyDeletePermissionsBoundary",
+       {
+            "Sid": "DenyDeletionPBs",
             "Effect": "Deny",
             "Action": "iam:DeleteRolePermissionsBoundary",
             "Resource": "*"
-        },
+        }, 
 ```
 
 #### Deny Write Access to Billing Resources
 
 ```
         {
+            "Sid": "DenyBillingWrite",
             "Effect": "Deny",
             "Action": [
                 "aws-portal:ModifyAccount",
@@ -295,7 +300,7 @@ Ensure that once a permissions boundary policy has been attached to a role, buil
                 "aws-portal:ModifyPaymentMethods"
             ],
             "Resource": "*"
-        },
+        },   
 ```
 
 #### Deny Write Access to AWS Platform Roles
@@ -306,6 +311,7 @@ Ensure that once a permissions boundary policy has been attached to a role, buil
 
 ```
         {
+            "Sid": "DenyFoundationIamRoleWrite",
             "Effect": "Deny",
             "Action": [
                 "iam:CreateRole",
@@ -329,7 +335,9 @@ Ensure that once a permissions boundary policy has been attached to a role, buil
         },
 ```
 
-#### Deny Write Access to AWS ControlTower CloudFormation StackSet Stacks
+#### Deny Write Access to CloudFormation StackSet Stacks
+
+Ensure that foundation related CloudFormation stack instances that have been created via CloudFormation StackSets cannot not be modified.
 
 {{% notice info %}}
 **Review Note:** Is an explicit deny required or is there built-in protection against deletion of these resources?
@@ -337,7 +345,7 @@ Ensure that once a permissions boundary policy has been attached to a role, buil
 
 ```
         {
-            "Sid": "DenyWriteAccessStackSets",
+            "Sid": "DenyStackSetWrite",
             "Effect": "Deny",
             "Action": [
                 "cloudformation:DeleteStack",
@@ -401,38 +409,51 @@ Note that both EC2 VM related resources and VPC related networking resources sha
 
 [`acme-base-team-dev-boundary.yml`](/code-samples/01-iam-policies/acme-base-team-dev-boundary.yml)
 
-Since the overall intent in this development environment scenario is to enable AWS services acting on behalf of the builders to have similar access permissions as the builders themselves, the permissions boundary policy looks very similar to the team development policy described above.  
+Since the overall intent in this development environment scenario is to enable AWS services acting on behalf of the builders to have similar access permissions as the builders themselves, the permissions boundary policy has similar permissions as the IAM SAML policy for builder team members.  
 
 The main difference is that creation of IAM roles and policies is disallowed in the sample permissions boundary policy. Since there was no requirement to enable AWS services to create roles and policies on behalf of builders, disallowing role creation inhibits builders from creating roles that could circumvent the policies.
 
+{{% notice info %}}
+**Review Note:** Once again, the same set of deny permissions for write access to VPC resources as used in the IAM SAML policy could be moved to an SCP to simplify the boundary policy.
+{{% /notice %}}
+
 ```
             {
-              "Sid": "DenyWriteRoles",
-              "Effect": "Deny",
-              "Action": [
-                "iam:CreateRole",
-                "iam:DeleteRole",
-                "iam:UpdateRole",
-                "iam:AttachRolePolicy",
-                "iam:DetachRolePolicy",
-                "iam:UpdateAssumeRolePolicy",
-                "iam:PutRolePermissionsBoundary",
-                "iam:DeleteRolePermissionsBoundary",
-                "iam:TagRole",
-                "iam:UntagRole"
-              ],
-              "Resource": "*"
-            {
-              "Sid": "DenyWritePolicies",
-              "Effect": "Deny",
-              "Action": [
-                "iam:CreatePolicy",
-                "iam:DeletePolicy",
-                "iam:CreatePolicyVersion",
-                "iam:DeletePolicyVersion"
+              "Sid": "AllowAllWithExceptions",
+              "Effect": "Allow",
+              "NotAction": [
+                "iam:*",
+                "organizations:*",
+                "account:*"
               ],
               "Resource": "*"
             },
+            {
+              "Sid": "AllowIamReadOnly",
+              "Effect": "Allow",
+              "Action": [
+                "iam:Get*",
+                "iam:List*"
+              ],
+              "Resource": "*"
+            },
+            {
+              "Sid": "DenyWriteAccessStackSets",
+              "Effect": "Deny",
+              "Action": [
+                "cloudformation:DeleteStack",
+                "cloudformation:UpdateStack"
+              ],
+              "Resource": "arn:aws:cloudformation::*:stack/StackSet-*"
+            },
+            {
+              "Sid": "DenyVPCWrite",
+              "Effect": "Deny",
+              "Action": [
+                ...see CloudFormation templated linked to above for details...
+              ],
+              "Resource": "*"
+            }
 ```
 
 ### Example Test Cases

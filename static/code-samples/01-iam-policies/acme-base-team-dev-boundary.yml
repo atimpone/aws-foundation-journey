@@ -52,60 +52,21 @@ Resources:
           "Version": "2012-10-17",
           "Statement": [
             {
+              "Sid": "AllowAllWithExceptions",
               "Effect": "Allow",
-              "Action": "*",
-              "Resource": "*"
-            },
-            {
-              "Sid": "DenyUnnecessaryIam",
-              "Effect": "Deny",
-              "Action": [
-                "iam:CreateUser",
-                "iam:CreateGroup",
-                "iam:CreateSAMLProvider",
-                "iam:DeleteSAMLProvider",
-                "iam:UpdateSAMLProvider",
-                "iam:DeleteAccountPasswordPolicy",
-                "iam:UpdateAccountPasswordPolicy"
-              ],
-              "Resource": "*"
-            },
-            {
-              "Sid": "DenyWriteBillingAccount",
-              "Effect": "Deny",
-              "Action": [
-                "aws-portal:ModifyAccount",
-                "aws-portal:ModifyBilling",
-                "aws-portal:ModifyPaymentMethods",
+              "NotAction": [
+                "iam:*",
+                "organizations:*",
                 "account:*"
               ],
               "Resource": "*"
             },
             {
-              "Sid": "DenyWriteRoles",
-              "Effect": "Deny",
+              "Sid": "AllowIamReadOnly",
+              "Effect": "Allow",
               "Action": [
-                "iam:CreateRole",
-                "iam:DeleteRole",
-                "iam:UpdateRole",
-                "iam:AttachRolePolicy",
-                "iam:DetachRolePolicy",
-                "iam:UpdateAssumeRolePolicy",
-                "iam:PutRolePermissionsBoundary",
-                "iam:DeleteRolePermissionsBoundary",
-                "iam:TagRole",
-                "iam:UntagRole"
-              ],
-              "Resource": "*"
-            },
-            {
-              "Sid": "DenyWritePolicies",
-              "Effect": "Deny",
-              "Action": [
-                "iam:CreatePolicy",
-                "iam:DeletePolicy",
-                "iam:CreatePolicyVersion",
-                "iam:DeletePolicyVersion"
+                "iam:Get*",
+                "iam:List*"
               ],
               "Resource": "*"
             },
