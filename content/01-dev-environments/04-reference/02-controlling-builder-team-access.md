@@ -131,18 +131,22 @@ If you followed the steps in section [3. Set Up Initial AWS Platform Access Cont
 
 The following diagram depicts how a builder team member accesses their team development AWS account, interacts with AWS services and is contrained by what they can do through both the IAM SAML role under which they are working and the permissions boundary policy and IAM service roles under which AWS services are working on their behalf.
 
-A key element of this sample solution is the use of [AWS IAM Permissions Boundaries](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html) to enable delegation of permissions management to builders, but also constrain the overall scope of their access and the access of AWS services working on their behalf.  In this scenario, we're delegating a degree of permissions management to builder team members in their team development AWS accounts so that they can create and manage workload specific IAM service roles, but at the same time using a permissions boundary to constrain what actions services associated with those roles can perform and the resources that can be affected.
+A key element of this sample solution is the use of [AWS IAM Permissions Boundaries](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html) to enable delegation of permissions management to builders, but also constrain the overall scope of their access and the access of AWS services working on their behalf.  
+
+In this scenario, we're delegating a degree of permissions management to builder team members in their team development AWS accounts so that they can create and manage workload specific IAM service roles, but at the same time using a permissions boundary to constrain what actions services associated with those roles can perform and the resources that can be affected.
 
 [![Team Development Access Policy Usage](/images/01-dev/team-dev-access-usage.png)](/images/01-dev/team-dev-access-usage.png)
 
 1. Builder authenticates via AWS SSO.
 2. Via the AWS SSO portal, the builder selects their authorized combination of team development AWS account and team development IAM SAML role.
-3. Once the builder has been authenticated and gained access to their team development AWS account, they are working based on the permissions of the team development IAM SAML role. They can interact with AWS services and create and manage resources subject to those permissions.
+3. Once the builder has been authenticated and gained access to their team development AWS account, they are working based on the permissions of the team development IAM SAML role. They can interact with AWS services and create and manage resources subject to those permissions and tge intersection of permissions set forth in Service Control Policies (SCPs) associated with team development AWS accounts.
 4. When a builder needs to create a workload specific IAM service role, the permissions boundary policy referenced in the IAM SAML role under which they are working requires that they attach the permission boundary with any newly created IAM service role. If the permissions boundary is not attached, creation of the role will fail.
 5. The builder passes a newly created workload specific IAM service role to an AWS service and resource.
-6. Since the workload specific IAM service role has an attached boundary policy, AWS will constrain the resource to being able to access only those services and resources that are the intersection of the permissions allowed by the boundary policy and the IAM service role.
+6. Since the workload specific IAM service role has an attached boundary policy, AWS will constrain the resource to being able to access only those services and resources that are the intersection of the permissions allowed by the boundary policy and the IAM service role. Additionally, applicable SCPs are factored in to further constrain actions.
 
-Learn more about [AWS IAM Permissions Boundaries](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html).
+{{% notice info %}}
+**Learn more about permissions boundaries:** [AWS IAM Permissions Boundaries](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html).
+{{% /notice %}}
 
 ### Base Policy Walkthrough
 
