@@ -10,7 +10,7 @@ In this step your Cloud Administrators will create several new team development 
 
 This step should take about 30 minutes to complete.
 
-## 1. Use at Least Two Development AWS Accounts from the Start
+## 1. Use at Least Two Team Development AWS Accounts from the Start
 
 As highlighted previously, an AWS best practice is to isolate the work of distinct builder teams by assigning a different development AWS account to each team. Benefits of this approach include:
 
@@ -22,7 +22,7 @@ Initially, you will likely need AWS accounts for the following teams:
 
 |Team Development Account|Purpose|
 |----------------|-------|
-|**Application or Data Services Builder Team**|A team development AWS account for the initial application or data services builder team.|
+|**Workload Builder Team**|A team development AWS account for the team that will be doing the workload specific work for your first formal workload on AWS.|
 |**Foundation Team**|A team development AWS account for the initial few Cloud and Security Administrators to experiment, develop, and perform early testing of changes to the foundation.|
 
 ## 2. Create Development Team AWS Accounts
@@ -106,7 +106,7 @@ Now you've enabled all users who are part of the Cloud Administrator group in AW
 
 ## 5. Apply Names to Shared VPC Resources
 
-Since the names of shared subnets are not currently propagated to AWS accounts, as a Cloud Administrator, you can optionally apply names to the shared subnets within each team development AWS account so that it's easier for the builder teams to understand the role of each subnet. For example, builders will often need to be able to readily distinguish between public and private subnets.
+Since the names of shared subnets are not currently propagated to AWS accounts, as a Cloud Administrator, you should apply names to the shared subnets within each team development AWS account so that it's easier for the builder teams to understand the role of each subnet as they configure resources for AWS services.
 
 1. As a Cloud Administrator, use your personal user to log into AWS SSO.
 2. Select the team development AWS account of interest.
