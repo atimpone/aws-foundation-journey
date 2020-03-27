@@ -20,7 +20,13 @@ Ensure that you select one of the public subnets given that the Cloud9 service c
 
 ### Use an EC2 Instance Profile
 
-Once you've created your Cloud9 environment, you can associate an instance profile with your Cloud9 EC2 instance so that your work in your IDE can have similar access permissions as your regular AWS session. See [Create and Use an Instance Profile](https://docs.aws.amazon.com/cloud9/latest/user-guide/credentials.html#credentials-temporary). If you create an IAM role for this purpose, you'll need to attach the permisssions boundary policy.
+Once you've created your Cloud9 environment, you can associate an instance profile with your Cloud9 EC2 instance so that your work in your IDE can have similar access permissions as your regular AWS session. See [Create and Use an Instance Profile](https://docs.aws.amazon.com/cloud9/latest/user-guide/credentials.html#credentials-temporary).  For example, you could associate the managed IAM policy `AdministratorAccess` with your new EC2 service role for Cloud9.  Since in your team development AWS account you're required to attach the permissions boundary whenever you create a role, your overall access will be constrained by the permissions boundary policy.
+
+After you attach an EC2 instance profile and IAM role to your Cloud9 instance, you can verify which role is being used by issuing the following command from a terminal session in your Cloud9 environment:
+
+```
+$ aws sts get-caller-identity
+```
 
 ### Update Your Bash Prompt
 

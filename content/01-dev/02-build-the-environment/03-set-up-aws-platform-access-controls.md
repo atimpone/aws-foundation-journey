@@ -170,7 +170,9 @@ First, enable the AWS CloudFormation service to automatically configure permissi
 2. Select **`StackSets`**.
 3. Select **`Enable trusted access`**.
 
-If you'd like more background, see [Enabling Trusted Access with AWS Organizations](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-orgs-enable-trusted-access.html).
+{{% notice info %}}
+**This is a one time operation:** If you'd like more background, see [Enabling Trusted Access with AWS Organizations](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-orgs-enable-trusted-access.html).
+{{% /notice %}}
 
 ### Download AWS CloudFormation Template
 
@@ -183,12 +185,12 @@ Create a StackSet to deploy the permissions boundary policy to all AWS accounts 
 1. Select **`Create StackSet`**.
 2. Select **`Upload a template file`**.
 3. Select **`Choose file`** to select the downloaded template file from your desktop.
-5. Select **`Next`**.
-6. Enter a **`StackSet name`**. For example, **`acme-base-team-dev-boundary`**. 
+4. Select **`Next`**.
+5. Enter a **`StackSet name`**. For example, **`acme-base-team-dev-boundary`**. 
 
 It's useful to prefix your custom cloud resources that live in a larger name space with your organization identifier and a qualifier such as **`base`** to represent foundation resources. The important consideration is to be consistent with naming of foundation cloud resources so that you can apply IAM policies that will inhibit unauthorized modification of those resources.
 
-7. In **`Parameters`**:
+6. In **`Parameters`**:
 
 |Parameter|Guidance|
 |---------|--------|
@@ -196,15 +198,15 @@ It's useful to prefix your custom cloud resources that live in a larger name spa
 
 Leave the other parameters at their default settings.
 
-8. Select **`Next`**.
-9. Leave the **`Permissions`** set to **`Service managed permissions`**.
-10. Select **`Next`**.
-11. In **`Deployment targets`**, select **`Deploy to organizational units (OUs)`**.
-12. Enter the OU ID of the "development" OU that you created in the previous step.
-13. In **`Specify regions`**, select your home AWS region.
-14. Select **`Next`**.
-15. Scrolls to the bottom and mark the checkbox to acknowledge that IAM resources will be created.
-16. Select **`Submit`**.
+7. Select **`Next`**.
+8. Leave the **`Permissions`** set to **`Service managed permissions`**.
+9. Select **`Next`**.
+10. In **`Deployment targets`**, select **`Deploy to organizational units (OUs)`**.
+11. Enter the OU ID of the "development" OU that you created in the previous step.
+12. In **`Specify regions`**, select your home AWS region.
+13. Select **`Next`**.
+14. Scrolls to the bottom and mark the checkbox to acknowledge that IAM resources will be created.
+15. Select **`Submit`**.
 
 Since you have not yet created the team development AWS accounts, this CloudFormation StackSet won't create CloudFormation stacks in the team development AWS accounts until those AWS accounts are created in a subsequent section.
 
@@ -220,7 +222,7 @@ Next, you'll create a custom permission set in AWS SSO to represent the initial 
 2. Open the file and replace all occurrences of **`acme`** with a reference to your own organization's identifier.
 
 {{% notice tip %}}
-**Infrastructure as Code (IaC) Opportunity:** Since you've just modified "code" that represents an important security policy for your AWS environment, it's a best practice to manage that source code file in a version control system such as a Git repository and control who can modify this file moving forward. If your organization is not already using Git-based version control, see the [Fast Follow Capabilities]({{< relref "02-fast-follow-capabilities" >}}) for assistance on how to get started using Git-based version control.
+**Infrastructure as Code (IaC) Opportunity:** Since you've just modified "code" that represents an important security policy for your AWS environment, it's a best practice to manage that source code file in a version control system such as a Git repository and control who can modify this file moving forward. If your organization is not already using Git-based version control, see the [Fast Follow Capabilities]({{< relref "02-fast-follow" >}}) for assistance on how to get started using Git-based version control.
 {{% /notice %}}
 
 ### Create Permission Set in AWS SSO

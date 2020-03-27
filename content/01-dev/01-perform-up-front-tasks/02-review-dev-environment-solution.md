@@ -8,7 +8,7 @@ weight: 20
 
 The following diagram represents a typical team development environment as a distinct AWS account supported by an initial set of foundation capabilities managed via a set of shared AWS accounts to meet the typical requirements outlined above. 
 
-Since your specific requirements may include some of the optional [fast follow capabilities]({{< relref "02-fast-follow-capabilities" >}}), aspects of your initial solution may be different than shown in this diagram.
+Since your specific requirements may include some of the optional [fast follow capabilities]({{< relref "02-fast-follow" >}}), aspects of your initial solution may be different than shown in this diagram.
 
 [![Initial Development Environment](/images/01-dev/dev-initial.png)](/images/01-dev/dev-initial.png)
 

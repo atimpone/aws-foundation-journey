@@ -16,7 +16,7 @@ Since you may come across examples and documentation that includes creation of V
 
 **Creation of AWS Service IAM Roles**
 
-Since the use of many AWS services entails the cretion of AWS service specific IAM roles and your ability to create IAM roles requires that you associate the development IAM boundary policy to all roles, the process for configuring IAM service roles needs to be addressed.
+Since the use of many AWS services entails the creation of AWS service specific IAM roles and your ability to create IAM roles requires that you associate the development IAM boundary policy to all roles, the process for configuring IAM service roles needs to be addressed.
 
 Refer to [Controlling Development Team Access]({{< relref "02-controlling-builder-team-access" >}}) for more background on permissions provided to builder teams in development AWS accounts and the role of AWS IAM boundary policies.
 

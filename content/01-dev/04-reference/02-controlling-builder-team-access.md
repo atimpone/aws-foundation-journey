@@ -138,11 +138,16 @@ In this scenario, we're delegating a degree of permissions management to builder
 [![Team Development Access Policy Usage](/images/01-dev/team-dev-access-usage.png)](/images/01-dev/team-dev-access-usage.png)
 
 1. Builder authenticates via AWS SSO.
+
 2. Via the AWS SSO portal, the builder selects their authorized combination of team development AWS account and team development IAM SAML role.
-3. Once the builder has been authenticated and gained access to their team development AWS account, they are working based on the permissions of the team development IAM SAML role. They can interact with AWS services and create and manage resources subject to those permissions and tge intersection of permissions set forth in Service Control Policies (SCPs) associated with team development AWS accounts.
+
+3. Once the builder has been authenticated and gained access to their team development AWS account, they are working based on the intersection of the permissions of the team development IAM SAML role and any applicable Service Control Policies (SCPs) associated with team development AWS accounts. They can interact with AWS services and create and manage resources subject to those permissions.
+
 4. When a builder needs to create a workload specific IAM service role, the permissions boundary policy referenced in the IAM SAML role under which they are working requires that they attach the permission boundary with any newly created IAM service role. If the permissions boundary is not attached, creation of the role will fail.
+
 5. The builder passes a newly created workload specific IAM service role to an AWS service and resource.
-6. Since the workload specific IAM service role has an attached boundary policy, AWS will constrain the resource to being able to access only those services and resources that are the intersection of the permissions allowed by the boundary policy and the IAM service role. Additionally, applicable SCPs are factored in to further constrain actions.
+
+6. Since the workload specific IAM service role has an attached boundary policy, AWS will constrain the resource to being able to access only those services and resources that are the intersection of the permissions allowed by the boundary policy, applicable SCPs, and the IAM service role.
 
 {{% notice info %}}
 **Learn more about permissions boundaries:** [AWS IAM Permissions Boundaries](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html).

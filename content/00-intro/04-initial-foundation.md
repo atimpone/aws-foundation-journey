@@ -13,4 +13,4 @@ The guide also address a set of "fast follow" capabilities that, for some organi
 
 Later, after your organization has demonstrated success with the initial few projects, you will likely make larger investments during the foundation stage of your journey to support cloud adoption at scale.
 
-![Cloud Foundation](/images/00-introduction/foundation.png)
+![Cloud Foundation](/images/00-intro/foundation.png)
