@@ -6,7 +6,7 @@ draft: false
 weight: 10
 ---
 
-This document highlights special considerations when using the AWS Cloud9 IDE in your team development AWS accounts.
+This document highlights special considerations when using the [AWS Cloud9](https://aws.amazon.com/cloud9/) IDE in your team development AWS accounts.
 
 ## Why Use AWS Cloud9?
 If you have challenges getting the AWS CLI and other tools installed on your corporate desktop, you may find it useful to use AWS Cloud9, a web-based IDE that enables you to deploy a development environment in your AWS account.  

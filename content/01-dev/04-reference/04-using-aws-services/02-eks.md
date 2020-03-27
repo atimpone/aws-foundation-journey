@@ -10,7 +10,7 @@ weight: 20
 **Review Note:** This is a draft document.
 {{% /notice %}}
 
-This document highlights special considerations when using Amazon EKS in your team development AWS accounts.
+This document highlights special considerations when using [Amazon Elastic Kubernetes Service (EKS)](https://aws.amazon.com/eks/) in your team development AWS accounts.
 
 ## Using `eksctl` CLI to Create a Cluster
 
