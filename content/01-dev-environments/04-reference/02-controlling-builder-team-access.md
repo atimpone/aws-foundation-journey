@@ -25,9 +25,9 @@ The following requirements are intended to provide a practical sense of the acce
 ### Disallow Access
 
 **Disallow Modification of Foundation Resources:** For example:
-* AWS Control Tower CloudFormation StackSet stack instances.
 * Foundation IAM roles and policies.
 * AWS account settings.
+* AWS Control Tower CloudFormation StackSet stack instances.
 
 **Disallow Creation of Sensitive IAM Resources:**  For example:
 * IAM Users: Given the use of AWS SSO for human user login, there's generally no need for IAM users.
