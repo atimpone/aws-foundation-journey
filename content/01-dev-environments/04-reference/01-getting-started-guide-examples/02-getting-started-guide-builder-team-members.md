@@ -77,7 +77,7 @@ See [Tools on AWS](https://aws.amazon.com/tools/) for a list of tools and SDKs t
 
 ## Working with AWS Services
 
-Since there are some constraints in using AWS services in your team development AWS account, refer to the [Using AWS Services]({{< relref "04-use-aws-services" >}}) for more details on both general considerations and AWS service specific considerations. 
+Since there are some constraints in using AWS services in your team development AWS account, refer to  [Using AWS Services]({{< relref "04-use-aws-services" >}}) for more details on both general considerations and AWS service specific considerations. 
 
 ## Monitoring and Managing Costs
 
