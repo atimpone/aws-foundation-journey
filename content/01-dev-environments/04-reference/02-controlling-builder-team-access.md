@@ -119,7 +119,7 @@ In support of the requirements described above, two sets of IAM policies are use
 |Policy|Purpose|Usage|Sample Code|
 |------|-------|-----|-----------|
 |**Team Development IAM Policy**|A JSON format IAM policy used for control human user access to team development AWS accounts.|This policy is used to create a custom permission set in AWS SSO that is associated with team development groups and team development AWS accounts.|[`acme-base-team-dev.json`](/code-samples/01-iam-policies/acme-base-team-dev.json)|
-|**Team Development IAM Permissions Boundary**|A customer managed permissions boundary IAM policy that is used to control permissions of IAM service roles created by team development users in their team development AWS accounts.|This AWS CloudFormation template forms the basis of a CloudFormation StackSet that is applied to all team development AWS accounts.|[`acme-base-team-dev-boundary.yml`](/code-samples/01-iam-policies/acme-base-team-dev-boundary.yml)|
+|**Team Development IAM Permissions Boundary**|A customer managed IAM permissions boundary policy that is used to control permissions of IAM service roles created by team development users in their team development AWS accounts.|This AWS CloudFormation template forms the basis of a CloudFormation StackSet that is applied to all team development AWS accounts.|[`acme-base-team-dev-boundary.yml`](/code-samples/01-iam-policies/acme-base-team-dev-boundary.yml)|
 
 #### Provisioning the Policies
 
@@ -131,7 +131,7 @@ If you followed the steps in section [3. Set Up Initial AWS Platform Access Cont
 
 The following diagram depicts how a builder team member accesses their team development AWS account, interacts with AWS services and is contrained by what they can do through both the IAM SAML role under which they are working and the permissions boundary policy and IAM service roles under which AWS services are working on their behalf.
 
-A key element of this sample solution is the use of AWS IAM Permissions Boundaries to enable delegation of permissions management to builders, but also constrain the overall scope of their access and the access of AWS services working on their behalf.  In this scenario, we're delegating a degree of permissions management to builder team members in their team development AWS accounts so that they can create and manage workload specific IAM service roles, but at the same time using a permissions boundary to constrain what actions services associated with those roles can perform and the resources that can be affected.
+A key element of this sample solution is the use of [AWS IAM Permissions Boundaries](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html) to enable delegation of permissions management to builders, but also constrain the overall scope of their access and the access of AWS services working on their behalf.  In this scenario, we're delegating a degree of permissions management to builder team members in their team development AWS accounts so that they can create and manage workload specific IAM service roles, but at the same time using a permissions boundary to constrain what actions services associated with those roles can perform and the resources that can be affected.
 
 [![Team Development Access Policy Usage](/images/01-dev/team-dev-access-usage.png)](/images/01-dev/team-dev-access-usage.png)
 
