@@ -5,7 +5,7 @@ draft: false
 weight: 20
 ---
 {{% notice tip %}}
-**An Example Getting Started Guide:** This document represents an example that can help your organization develop and publish internally your own getting started guide for builder teams that are onboarding to your AWS environment.  You are free to copy this content into your own internal wiki or other system and modify it to meet your needs. As your organization progresses on its cloud adoption journey, you will likely significantly expand your internal documentation to help communicate additional and increasingly sophisticated capabilities and associated best practices that are available to teams.
+**An Example Getting Started Guide:** This document represents an example that can help your organization develop and publish your own getting started guide internally for builder teams that are onboarding to your AWS environment.  You are free to copy this content into your own internal wiki or other system and modify it to meet your needs. As your organization progresses on its cloud adoption journey, you will likely significantly expand your internal documentation to help communicate additional and increasingly sophisticated capabilities and associated best practices that are available to teams.
 {{% /notice %}}
 
 {{% notice note %}}
