@@ -1,5 +1,6 @@
 ---
-title: "Using AWS Services"
+title: "Using AWS Services in Team Development Environments"
+menuTitle: "Using AWS Services"
 weight: 40
 draft: false
 ---
