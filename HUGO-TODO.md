@@ -67,6 +67,7 @@ Select the checkbox for each corresponding AWS SSO group based on [Mapping of Fu
 
 # Backlog / Nice to Have
 
+* Get the link icons next to each section header so that people can easily copy links to anchors.
 * Reduce the size of the real estate used for the site logo and search box.
 * Reduce chapter headings in left menu font sizes.
 * Inline TOCs

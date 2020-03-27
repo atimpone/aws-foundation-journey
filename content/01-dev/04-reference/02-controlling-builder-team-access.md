@@ -163,7 +163,7 @@ Each section of the sample policy is explained here.
 
 Start by allowing full access to all AWS service resources and actions, but disallow access to actions for all "iam", "organizations", and "account" resources.  
 
-This first permission is patterned after a portion of the [AWS Managed Policy Developer Power User]("https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_developer-power-user").  
+This first permission is patterned after a portion of the [AWS Managed Policy Developer Power User](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_developer-power-user).  
 
 However, in support of this use case where the intent is to provide builders in their team development AWS accounts a limited degree of self-service write access to create, update, and delete their workload specific IAM service roles, additional permissions have been added.
 
@@ -186,7 +186,7 @@ However, in support of this use case where the intent is to provide builders in 
 
 #### Allow Typical IAM and Read Only Organizations and Account Actions
 
-A subset of the following prmissions is taken from the AWS managed Developer Power User policy, except with the addition of being able to list and get any IAM resource, pass IAM roles to AWS services, and manage EC2 instance profiles.
+A subset of the following permissions is taken from the AWS managed Developer Power User policy, except with the addition of being able to list and get any IAM resource, pass IAM roles to AWS services, and manage EC2 instance profiles.
 
 ```
             "Sid": "AllowCommonOps",
