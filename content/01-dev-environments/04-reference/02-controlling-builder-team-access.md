@@ -170,7 +170,7 @@ Start by allowing access to all AWS service resources and actions.
 Explicitly disallow creation of IAM users since builder team users do not use IAM users to access their team development AWS accounts.
 
 {{% notice info %}}
-**Review Note: Constraints impacting Cognito and EKS use cases?:** Currently, creation of OIDC providers is not currently constrained. How much of a risk does this present in this development environment context? OIDC comes into play as part of both Cognito and some configurations of EKS.
+**Review Note: Constraints impacting Cognito and EKS use cases?:** Currently, creation of OIDC providers is not disallowed. How much of a risk does this present in this development environment context? OIDC comes into play as part of both Cognito and some configurations of EKS.
 {{% /notice %}}
 
 ```
