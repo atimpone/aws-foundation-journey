@@ -3,56 +3,41 @@
     "Statement": [
         {
             "Effect": "Allow",
-            "Action": "*",
-            "Resource": "*"
-        },
-        {
-            "Sid": "DenyUnnecessaryIam",
-            "Effect": "Deny",
-            "Action": [
-                "iam:CreateUser",
-                "iam:CreateGroup",
-                "iam:CreateSAMLProvider",
-                "iam:DeleteSAMLProvider",
-                "iam:UpdateSAMLProvider",
-                "iam:DeleteAccountPasswordPolicy",
-                "iam:UpdateAccountPasswordPolicy"
-            ],
-            "Resource": "*"
-        },
-        {
-            "Sid": "DenyWriteBillingAccount",
-            "Effect": "Deny",
-            "Action": [
-                "aws-portal:ModifyAccount",
-                "aws-portal:ModifyBilling",
-                "aws-portal:ModifyPaymentMethods",
+            "NotAction": [
+                "iam:*",
+                "organizations:*",
                 "account:*"
             ],
             "Resource": "*"
         },
         {
             "Effect": "Allow",
-            "Action": "account:ListRegions",
+            "Action": [
+                "iam:Get*",
+                "iam:List*",
+                "iam:PassRole",
+                "iam:CreateServiceLinkedRole",
+                "iam:DeleteServiceLinkedRole",
+                "iam:CreateInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "organizations:DescribeOrganization",
+                "account:ListRegions"
+            ],
             "Resource": "*"
         },
         {
-            "Sid": "DenyWriteRoles",
-            "Effect": "Deny",
+            "Effect": "Allow",
             "Action": [
-                "iam:CreateRole",
-                "iam:AttachRolePolicy",
-                "iam:DetachRolePolicy"
+                "iam:CreatePolicy",
+                "iam:DeletePolicy",
+                "iam:CreatePolicyVersion",
+                "iam:DeletePolicyVersion"
             ],
-            "Resource": "*",
-            "Condition": {
-                "StringNotLike": {
-                    "iam:PermissionsBoundary": "arn:aws:iam::*:policy/acme-base-team-dev-boundary"
-                }
-            }
+            "NotResource": "arn:aws:iam::*:policy/acme-base-*"
         },
         {
-            "Sid": "AllowWriteRolesWithBoundary",
             "Effect": "Allow",
             "Action": [
                 "iam:CreateRole",
@@ -67,13 +52,28 @@
             }
         },
         {
-            "Sid": "DenyDeletePermissionsBoundary",
-            "Effect": "Deny",
-            "Action": "iam:DeleteRolePermissionsBoundary",
+            "Effect": "Allow",
+            "Action": [
+                "iam:DeleteRole",
+                "iam:UpdateRole",
+                "iam:UpdateAssumeRolePolicy",
+                "iam:PutRolePermissionsBoundary",
+                "iam:DeleteRolePermissionsBoundary",
+                "iam:TagRole",
+                "iam:UntagRole"
+            ],
             "Resource": "*"
-        },
+        },  
         {
-            "Sid": "DenyWriteAccessFoundationRoles",
+            "Effect": "Deny",
+            "Action": [
+                "aws-portal:ModifyAccount",
+                "aws-portal:ModifyBilling",
+                "aws-portal:ModifyPaymentMethods"
+            ],
+            "Resource": "*"
+        },      
+        {
             "Effect": "Deny",
             "Action": [
                 "iam:CreateRole",
@@ -88,25 +88,13 @@
                 "iam:UntagRole"
             ],
             "Resource": [
-                "arn:aws:iam::*:role/AWS*",
-                "arn:aws:iam::*:role/aws*",
+                "arn:aws:iam::*:role/acme-base-*",
                 "arn:aws:iam::*:role/stacksets*",
-                "arn:aws:iam::*:role/acme-base-*"
+                "arn:aws:iam::*:role/AWS*",
+                "arn:aws:iam::*:role/aws*"
             ]
         },
         {
-            "Sid": "DenyWriteAccessFoundationPolicies",
-            "Effect": "Deny",
-            "Action": [
-                "iam:CreatePolicy",
-                "iam:DeletePolicy",
-                "iam:CreatePolicyVersion",
-                "iam:DeletePolicyVersion"
-            ],
-            "Resource": "arn:aws:iam::*:policy/acme-base-*"
-        },
-        {
-            "Sid": "DenyWriteAccessStackSets",
             "Effect": "Deny",
             "Action": [
                 "cloudformation:DeleteStack",
@@ -115,7 +103,6 @@
             "Resource": "arn:aws:cloudformation::*:stack/StackSet-*"
         },
         {
-            "Sid": "DenyVPCWrite",
             "Effect": "Deny",
             "Action": [
                 "ec2:CreateCustomerGateway",

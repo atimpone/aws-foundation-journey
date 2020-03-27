@@ -441,6 +441,14 @@ Only those explicitly disallowed actions listed earlier in this document should 
 
 This set of test cases depends on the AWS IAM permissions boundary being deployed and referenced in the team development IAM SAML role's policies.
 
+##### Creating IAM Managed Policies
+
+Builders create IAM managed policies via the following tools:
+
+* AWS Management Console.
+* AWS CLI or SDKs.
+* AWS CloudFormation or other Infrastucture as Code (IaC) tools such as Terraform.
+
 ##### Creating IAM Service Roles
 
 Builders create IAM service roles and policies via the following tools.  Builders attempt to create IAM service roles with and without the permissions boundary. All attempts to create IAM service roles without the permissions boundary will fail.
@@ -448,6 +456,8 @@ Builders create IAM service roles and policies via the following tools.  Builder
 * AWS Management Console.
 * AWS CLI or SDKs.
 * AWS CloudFormation or other Infrastucture as Code (IaC) tools such as Terraform.
+
+Builders also attempt to attached both AWS and customer managed IAM policies to their IAM service roles.
 
 ##### Using IAM Service Roles
 
@@ -458,6 +468,14 @@ Builders associate IAM service roles to AWS resources and then attempt to access
 * Deploy a Cloud9 IDE workspace.
 * Deploy a Redshift cluster to support data warehousing use cases.
 * Deploy containers to Amazon ECS and EKS container orchestration services.
+
+##### Using the IAM Policy Simulator
+
+Builders testing IAM policies via the [IAM Policy Simulator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html) in the AWS Management Console.
+
+{{% notice info %}}
+**Review Note: Might need to expand permissions:** We might need to open up read permissions further to enable builders to effectively use the Policy Simulator. See [Permissions Required](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html#permissions-required_policy-simulator)
+{{% /notice %}}
 
 #### Disallowed Actions
 

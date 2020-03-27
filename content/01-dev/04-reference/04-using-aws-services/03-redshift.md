@@ -6,11 +6,11 @@ draft: false
 weight: 30
 ---
 
+This document highlights special considerations when using [Amazon Redshift](https://aws.amazon.com/redshift/) in your team development AWS accounts.
+
 {{% notice note %}}
 **Review Note:** This is a draft document.
 {{% /notice %}}
-
-This document highlights special considerations when using [Amazon Redshift](https://aws.amazon.com/redshift/) in your team development AWS accounts.
 
 ## Resources
 
