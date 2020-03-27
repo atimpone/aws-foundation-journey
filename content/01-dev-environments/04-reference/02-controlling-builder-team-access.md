@@ -41,7 +41,11 @@ The following requirements are intended to provide a practical sense of the acce
 
 **Allow Wide Range of AWS Services Subject to Organizational Policies:**  Allow for use of a wide range of AWS services with the expectation that AWS Organizations Service Control Policies (SCPs) will be used to restrict the overall set of AWS services that are accessible for any AWS account in the "development" organization.
 
-**Allow Creation of IAM Service Roles and Policies:** In development environments builders should be able to experiment, develop, and test solutions without depending on other teams to get things done. Since this work often entails creation of workload specific IAM service roles and policies, builders should be able to create and manage IAM service roles and policies on their own subject to the constraint that builders must not be able to escalate their privileges to circumvent other policies. For example, it's a common need to be able to define custom IAM service roles and policies and attach the roles to Amazon EC2 instances and Lambda functions.
+**Allow Creation of IAM Service Roles and Policies:** In development environments builders should be able to experiment, develop, and test solutions without depending on other teams to get things done.
+
+Since this work often entails creation of workload specific IAM service roles and policies, builders should be able to create and manage IAM service roles and policies on their own subject to the constraint that builders must not be able to escalate their privileges to circumvent other policies.
+
+For example, it's a common need to be able to define custom IAM service roles and policies and attach the roles to Amazon EC2 instances and Lambda functions.
 
 **Allow Read Only Access to IAM Roles and Policies:** Allow builders to browse and review IAM resources so that they know what is available to potentially reuse and can learn from existing examples.
 
@@ -57,7 +61,9 @@ However, it is important that foundation resources adhere to a naming convention
 
 **Consider Similar but Different Policies for Foundation Team Development:** Since your cloud foundation team members are also builders and they will need additional acccess in their foundation team development AWS account to develop and test chnges to the foundation, a derivative of these sample policies may be warranted for this group of builders.  
 
-As a best practice, when foundation team members are doing day-to-day development of Infrastructure as Code (IaC), they should not be using their administrative access roles and permissions.  Instead, they should use their team development oriented role for their day-to-day development and only assume the escalated privileges of their Cloud Administrator and similar roles when they need to perform their cloud administration duties.
+As a best practice, when foundation team members are doing day-to-day development of Infrastructure as Code (IaC), they should not be using their administrative access roles and permissions.  
+
+Instead, foundation team members should use their team development oriented role for their day-to-day development and only assume the escalated privileges of their Cloud Administrator and similar roles when they need to perform their cloud administration duties.
 
 ## Common Scenarios
 
