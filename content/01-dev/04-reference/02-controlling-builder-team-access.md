@@ -161,111 +161,114 @@ Each section of the sample policy is explained here.
 
 #### Allow Virtually All AWS Services
 
-Start by allowing access to all AWS service resources and actions.  
+Start by allowing full access to all AWS service resources and actions, but disallow access to actions for all "iam", "organizations", and "account" resources.  
+
+This first permission is patterned after a portion of the [AWS Managed Policy Developer Power User]("https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_developer-power-user").  
+
+However, in support of this use case where the intent is to provide builders in their team development AWS accounts a limited degree of self-service write access to create, update, and delete their workload specific IAM service roles, additional permissions have been added.
 
 {{% notice tip %}}
-**Depend on AWS Organizations Service Control Policies (SCPs) for AWS Account-wide Constraints:** As mentioned above, it's a best practice to use AWS Organizations SCPs to provide an overarching constraint on which AWS services can be used in a given AWS ccount. Instead of over complicating the following policy with fine grained lists of allowed or disallowed AWS services, it's best practice to defer to SCPs.
+**Depend on AWS Organizations Service Control Policies (SCPs) for AWS Account-wide Constraints:** As mentioned above, it's a best practice to use AWS Organizations SCPs to provide an overarching constraint on which AWS services can be used in a given AWS ccount. Instead of over complicating the following policy with fine grained lists of allowed or disallowed AWS services, it's best practice to defer to SCPs to control which AWS services can be used at all in the team development AWS accounts.
 {{% /notice %}}
 
 ```
         {
             "Effect": "Allow",
-            "Action": "*",
-            "Resource": "*"
-        },
-```
-#### Disallow Key IAM, Account, and Billing Write Access
-
-Explicitly disallow creation of IAM users since builder team users do not use IAM users to access their team development AWS accounts.
-
-{{% notice info %}}
-**Review Note: Constraints impacting Cognito and EKS use cases?:** Currently, creation of OIDC providers is not disallowed. How much of a risk does this present in this development environment context? OIDC comes into play as part of both Cognito and some configurations of EKS.
-{{% /notice %}}
-
-```
-        {
-            "Sid": "DenyUnnecessaryIam",
-            "Effect": "Deny",
-            "Action": [
-                "iam:CreateUser",
-                "iam:CreateGroup",
-                "iam:CreateSAMLProvider",
-                "iam:DeleteSAMLProvider",
-                "iam:UpdateSAMLProvider",
-                "iam:DeleteAccountPasswordPolicy",
-                "iam:UpdateAccountPasswordPolicy"
-            ],
-            "Resource": "*"
-        },
-        {
-            "Sid": "DenyWriteBillingAccount",
-            "Effect": "Deny",
-            "Action": [
-                "aws-portal:ModifyAccount",
-                "aws-portal:ModifyBilling",
-                "aws-portal:ModifyPaymentMethods",
+            "NotAction": [
+                "iam:*",
+                "organizations:*",
                 "account:*"
             ],
             "Resource": "*"
         },
 ```
 
-#### Allow Listing of AWS Regions
+#### Allow Typical IAM and Read Only Organizations and Account Actions
+
+A subset of the following prmissions is taken from the AWS managed Developer Power User policy, except with the addition of being able to list and get any IAM resource, pass IAM roles to AWS services, and manage EC2 instance profiles.
 
 ```
         {
             "Effect": "Allow",
-            "Action": "account:ListRegions",
+            "Action": [
+                "iam:Get*",
+                "iam:List*",
+                "iam:PassRole",
+                "iam:CreateServiceLinkedRole",
+                "iam:DeleteServiceLinkedRole",
+                "iam:CreateInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "organizations:DescribeOrganization",
+                "account:ListRegions"
+            ],
             "Resource": "*"
         },
 ```
 
-#### Deny Creation of IAM Roles When Permissions Boundary is Not Attached
+#### Allow Creation of Customer Managed Policies
 
-Inhibit builders from creating new IAM roles unless the permissions boundary policy is attached at role creation time.
+Allow builders to develop and test customer managed policies as long as the name of the policies don't conflict with the foundation policies.
 
 {{% notice info %}}
-**Review Note: Do IAM Service-Linked Roles need to be constrained?:** In this development environment context, is there a gap if service-linked roles are not constrained?
+**Importance of Standardized Naming of Foundation Resources:** In several of the following permissions examples, note the use of a naming convention for customer-managed foundation policies and roles.  The example naming convention shown below is simply `<org identifier>-base-...` where `base` is shorthand for "foundation".
 {{% /notice %}}
 
 ```
         {
-            "Sid": "DenyWriteRoles",
-            "Effect": "Deny",
+            "Effect": "Allow",
             "Action": [
-                "iam:CreateRole",
-                "iam:AttachRolePolicy",
-                "iam:DetachRolePolicy"
+                "iam:CreatePolicy",
+                "iam:DeletePolicy",
+                "iam:CreatePolicyVersion",
+                "iam:DeletePolicyVersion"
             ],
-            "Resource": "*",
-            "Condition": {
-                "StringNotLike": {
-                    "iam:PermissionsBoundary": "arn:aws:iam::*:policy/acme-base-team-dev-boundary"
-                }
-            }
+            "NotResource": "arn:aws:iam::*:policy/acme-base-*"
         },
 ```
 
 #### Allow Creation of IAM Roles Only When Permissions Boundary is Attached
 
-Allow builder team members to create IAM roles as long as the permissions boundary policy is attached at role creation time.
+Allow builders to create IAM roles as long as the permissions boundary policy is attached at role creation time and the role name does not overlap with the foundation namespace.
 
 ```
         {
-            "Sid": "AllowWriteRolesWithBoundary",
             "Effect": "Allow",
             "Action": [
                 "iam:CreateRole",
                 "iam:AttachRolePolicy",
-                "iam:DetachRolePolicy"
+                "iam:DetachRolePolicy",
+                "iam:PutRolePolicy",
+                "iam:DeleteRolePolicy"
             ],
-            "Resource": "*",
+            "NotResource": "arn:aws:iam::*:role/acme-base-*",
             "Condition": {
                 "StringLike": {
                     "iam:PermissionsBoundary": "arn:aws:iam::*:policy/acme-base-team-dev-boundary"
                 }
             }
         },
+```
+
+#### Allow Write Access to Non-Foundation Roles
+
+Allow builders to further modify non-foundation IAM roles.
+
+```
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:DeleteRole",
+                "iam:UpdateRole",
+                "iam:UpdateAssumeRolePolicy",
+                "iam:PutRolePermissionsBoundary",
+                "iam:DeleteRolePermissionsBoundary",
+                "iam:TagRole",
+                "iam:UntagRole"
+            ],
+            "NotResource": "arn:aws:iam::*:role/acme-base-*"
+        },  
 ```
 
 #### Deny Deletion of Permissions Boundary Policies
@@ -281,19 +284,28 @@ Ensure that once a permissions boundary policy has been attached to a role, buil
         },
 ```
 
-#### Deny Modification of Foundation Resources
-
-Do not allow builder team members to disrupt the foundation resources.
-
-**Foundation IAM Roles and Policies**
-
-Note the use of a naming convention for customer-managed roles and policies below.  The sample naming convention shown below is simply `<org identifier>-base-...` where `base` is shorthand for "foundation".
-
-Since IAM resources named with `AWS` and `aws` are not inherently modifiable by customers, they are not included in the following section.
+#### Deny Write Access to Billing Resources
 
 ```
         {
-            "Sid": "DenyWriteAccessFoundationRoles",
+            "Effect": "Deny",
+            "Action": [
+                "aws-portal:ModifyAccount",
+                "aws-portal:ModifyBilling",
+                "aws-portal:ModifyPaymentMethods"
+            ],
+            "Resource": "*"
+        },
+```
+
+#### Deny Write Access to AWS Platform Roles
+
+{{% notice info %}}
+**Review Note:** Is an explicit deny required or is there built-in protection against deletion of these resources?
+{{% /notice %}}
+
+```
+        {
             "Effect": "Deny",
             "Action": [
                 "iam:CreateRole",
@@ -301,6 +313,8 @@ Since IAM resources named with `AWS` and `aws` are not inherently modifiable by 
                 "iam:UpdateRole",
                 "iam:AttachRolePolicy",
                 "iam:DetachRolePolicy",
+                "iam:PutRolePolicy",
+                "iam:DeleteRolePolicy",
                 "iam:UpdateAssumeRolePolicy",
                 "iam:PutRolePermissionsBoundary",
                 "iam:DeleteRolePermissionsBoundary",
@@ -308,28 +322,18 @@ Since IAM resources named with `AWS` and `aws` are not inherently modifiable by 
                 "iam:UntagRole"
             ],
             "Resource": [
-                "arn:aws:iam::*:role/AWS*",
-                "arn:aws:iam::*:role/aws*",
                 "arn:aws:iam::*:role/stacksets*",
-                "arn:aws:iam::*:role/acme-base-*"
+                "arn:aws:iam::*:role/AWS*",
+                "arn:aws:iam::*:role/aws*"
             ]
-        },
-        {
-            "Sid": "DenyWriteAccessFoundationPolicies",
-            "Effect": "Deny",
-            "Action": [
-                "iam:CreatePolicy",
-                "iam:DeletePolicy",
-                "iam:CreatePolicyVersion",
-                "iam:DeletePolicyVersion"
-            ],
-            "Resource": "arn:aws:iam::*:policy/acme-base-*"
         },
 ```
 
-**AWS ControlTower CloudFormation StackSet Stacks**
+#### Deny Write Access to AWS ControlTower CloudFormation StackSet Stacks
 
-Since the AWS Control Tower services uses the AWS CloudFormation StackSet feature to configure resources in each AWS account that is managed by AWS Control Tower, we need to ensure that builders cannot modify these foundation resources,
+{{% notice info %}}
+**Review Note:** Is an explicit deny required or is there built-in protection against deletion of these resources?
+{{% /notice %}}
 
 ```
         {
@@ -348,6 +352,10 @@ Since the AWS Control Tower services uses the AWS CloudFormation StackSet featur
 Since a centrally managed VPC is shared with team development AWS accounts in a read only manner and it's a best practice to delegate ownership and management of VPC resources to your central foundation team, typically, builders don't need to have write access to VPC resources.
 
 Note that both EC2 VM related resources and VPC related networking resources share the same IAM `ec2:` namespace. In their team development AWS accounts, builders are allowed to create EC2 VM related resources.
+
+{{% notice info %}}
+**Review Note:** An alternative approach to including this permission here is to move the following permission to a Service Control Policy (SCP) and attach it to the `development` OU so that none of these actions can be performed in any of the team development AWS accounts by any authorized user - including builder team members and Cloud Administrators.
+{{% /notice %}}
 
 ```
         {
@@ -457,7 +465,9 @@ Builders create IAM service roles and policies via the following tools.  Builder
 * AWS CLI or SDKs.
 * AWS CloudFormation or other Infrastucture as Code (IaC) tools such as Terraform.
 
-Builders also attempt to attached both AWS and customer managed IAM policies to their IAM service roles.
+Variations:
+* Use include inline policies.
+* Attach both AWS and customer managed IAM policies.
 
 ##### Using IAM Service Roles
 
@@ -465,7 +475,7 @@ Builders associate IAM service roles to AWS resources and then attempt to access
 
 * Deploy EC2 instance and associate an instance profile.
 * Deploy a Lambda function.
-* Deploy a Cloud9 IDE workspace.
+* Deploy a Cloud9 IDE workspace (same as EC2 use case).
 * Deploy a Redshift cluster to support data warehousing use cases.
 * Deploy containers to Amazon ECS and EKS container orchestration services.
 
@@ -481,3 +491,8 @@ Builders testing IAM policies via the [IAM Policy Simulator](https://docs.aws.am
 
 * Deleting permissions boundary policy from existing IAM service role.
 * Modifying foundation and AWS IAM roles.
+  * Delete foundation and AWS IAM roles.
+  * Attaching and detaching managed policies.
+  * Adding and removing inline policies.
+* Creating and deleting IAM SAML providers.
+* Creating, updating, and deleting IAM users and groups.

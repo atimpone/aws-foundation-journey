@@ -42,9 +42,11 @@
             "Action": [
                 "iam:CreateRole",
                 "iam:AttachRolePolicy",
-                "iam:DetachRolePolicy"
+                "iam:DetachRolePolicy",
+                "iam:PutRolePolicy",
+                "iam:DeleteRolePolicy"
             ],
-            "Resource": "*",
+            "NotResource": "arn:aws:iam::*:role/acme-base-*",
             "Condition": {
                 "StringLike": {
                     "iam:PermissionsBoundary": "arn:aws:iam::*:policy/acme-base-team-dev-boundary"
@@ -62,8 +64,14 @@
                 "iam:TagRole",
                 "iam:UntagRole"
             ],
+            "NotResource": "arn:aws:iam::*:role/acme-base-*"
+        },
+        {
+            "Sid": "DenyDeletePermissionsBoundary",
+            "Effect": "Deny",
+            "Action": "iam:DeleteRolePermissionsBoundary",
             "Resource": "*"
-        },  
+        }, 
         {
             "Effect": "Deny",
             "Action": [
@@ -81,6 +89,8 @@
                 "iam:UpdateRole",
                 "iam:AttachRolePolicy",
                 "iam:DetachRolePolicy",
+                "iam:PutRolePolicy",
+                "iam:DeleteRolePolicy",
                 "iam:UpdateAssumeRolePolicy",
                 "iam:PutRolePermissionsBoundary",
                 "iam:DeleteRolePermissionsBoundary",
@@ -88,7 +98,6 @@
                 "iam:UntagRole"
             ],
             "Resource": [
-                "arn:aws:iam::*:role/acme-base-*",
                 "arn:aws:iam::*:role/stacksets*",
                 "arn:aws:iam::*:role/AWS*",
                 "arn:aws:iam::*:role/aws*"
