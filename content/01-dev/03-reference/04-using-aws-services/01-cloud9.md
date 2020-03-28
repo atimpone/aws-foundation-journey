@@ -21,7 +21,7 @@ See [AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.ht
 
 Ensure that you select one of the public subnets given that the Cloud9 service currently requires your environment to be deployed in a public subnet. Since Cloud9 doesn't list the name tag of subnets during the creation process, you may need to access the **`VPC`** service of the AWS Management Console to list the subnets and their names.
 
-## Confifguring Your Environment
+## Configuring Your Environment
 
 ### Use an EC2 Instance Profile
 
