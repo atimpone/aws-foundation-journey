@@ -165,8 +165,6 @@ Start by allowing full access to all AWS service resources and actions, but disa
 
 This first permission is patterned after a portion of the [AWS Managed Policy Developer Power User](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_developer-power-user).  
 
-However, in support of this use case where the intent is to provide builders in their team development AWS accounts a limited degree of self-service write access to create, update, and delete their workload specific IAM service roles, additional permissions have been added.
-
 {{% notice tip %}}
 **Depend on AWS Organizations Service Control Policies (SCPs) for AWS Account-wide Constraints:** As mentioned above, it's a best practice to use AWS Organizations SCPs to provide an overarching constraint on which AWS services can be used in a given AWS ccount. Instead of over complicating the following policy with fine grained lists of allowed or disallowed AWS services, it's best practice to defer to SCPs to control which AWS services can be used at all in the team development AWS accounts.
 {{% /notice %}}
@@ -186,7 +184,7 @@ However, in support of this use case where the intent is to provide builders in 
 
 #### Allow Typical IAM and Read Only Organizations and Account Actions
 
-A subset of the following permissions is taken from the AWS managed Developer Power User policy, except with the addition of being able to list and get any IAM resource, pass IAM roles to AWS services, and manage EC2 instance profiles.
+A subset of the following permissions is taken from the AWS managed Developer Power User policy. In support of this use case where the intent is to provide builders in their team development AWS accounts a limited degree of self-service write access to create, update, and delete their workload specific IAM service roles, additional permissions have been added.
 
 ```
             "Sid": "AllowCommonOps",
@@ -212,7 +210,7 @@ A subset of the following permissions is taken from the AWS managed Developer Po
 
 Allow builders to develop and test customer managed policies as long as the name of the policies don't conflict with the foundation policies.
 
-{{% notice info %}}
+{{% notice tip %}}
 **Importance of Standardized Naming of Foundation Resources:** In several of the following permissions examples, note the use of a naming convention for customer-managed foundation policies and roles.  The example naming convention shown below is simply `<org identifier>-base-...` where `base` is shorthand for "foundation".
 {{% /notice %}}
 
@@ -232,7 +230,7 @@ Allow builders to develop and test customer managed policies as long as the name
 
 #### Allow Creation of IAM Roles Only When Permissions Boundary is Attached
 
-Allow builders to create IAM roles as long as the permissions boundary policy is attached at role creation time and the role name does not overlap with the foundation namespace.
+Allow builders to create IAM roles only if the standard team development permissions boundary policy is attached at role creation time and the role name does not overlap with the foundation namespace.
 
 ```
        {
@@ -305,8 +303,8 @@ Ensure that once a permissions boundary policy has been attached to a role, buil
 
 #### Deny Write Access to AWS Platform Roles
 
-{{% notice info %}}
-**Review Note:** Is an explicit deny required or is there built-in protection against deletion of these resources?
+{{% notice note %}}
+**Review Note:** Validate whether or not an explicit deny is required for the following resources. For example, based on testing via a role with administrative access, it appears that the `arn:aws:iam::*:role/stacksets*` resource is not protected by default.  The CloudFormation feature to [Enable Trusted Access](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-orgs-enable-trusted-access.html) creates and manages this role.
 {{% /notice %}}
 
 ```
@@ -339,8 +337,8 @@ Ensure that once a permissions boundary policy has been attached to a role, buil
 
 Ensure that foundation related CloudFormation stack instances that have been created via CloudFormation StackSets cannot not be modified.
 
-{{% notice info %}}
-**Review Note:** Is an explicit deny required or is there built-in protection against deletion of these resources?
+{{% notice note %}}
+**Review Note:** Validate whether or not an explicit deny is required for the following resources.
 {{% /notice %}}
 
 ```
@@ -359,9 +357,11 @@ Ensure that foundation related CloudFormation stack instances that have been cre
 
 Since a centrally managed VPC is shared with team development AWS accounts in a read only manner and it's a best practice to delegate ownership and management of VPC resources to your central foundation team, typically, builders don't need to have write access to VPC resources.
 
-Note that both EC2 VM related resources and VPC related networking resources share the same IAM `ec2:` namespace. In their team development AWS accounts, builders are allowed to create EC2 VM related resources.
-
 {{% notice info %}}
+**`ec2:` namespace:** Note that both EC2 VM resources and VPC networking resources share the same IAM `ec2:` namespace. In their team development AWS accounts, builders are allowed to create EC2 VM related resources, but are not allowed to have write access to VPC resources.
+{{% /notice %}}
+
+{{% notice note %}}
 **Review Note:** An alternative approach to including this permission here is to move the following permission to a Service Control Policy (SCP) and attach it to the `development` OU so that none of these actions can be performed in any of the team development AWS accounts by any authorized user - including builder team members and Cloud Administrators.
 {{% /notice %}}
 
@@ -411,10 +411,10 @@ Note that both EC2 VM related resources and VPC related networking resources sha
 
 Since the overall intent in this development environment scenario is to enable AWS services acting on behalf of the builders to have similar access permissions as the builders themselves, the permissions boundary policy has similar permissions as the IAM SAML policy for builder team members.  
 
-The main difference is that creation of IAM roles and policies is disallowed in the sample permissions boundary policy. Since there was no requirement to enable AWS services to create roles and policies on behalf of builders, disallowing role creation inhibits builders from creating roles that could circumvent the policies.
+The main difference is that write access to all IAM resources is disallowed in the sample permissions boundary policy. For example, since there was no requirement to enable AWS services to create roles and policies on behalf of builders, disallowing role creation inhibits builders from creating roles that could circumvent the policies.
 
-{{% notice info %}}
-**Review Note:** Once again, the same set of deny permissions for write access to VPC resources as used in the IAM SAML policy could be moved to an SCP to simplify the boundary policy.
+{{% notice note %}}
+**Review Note:** Deny permissions for write access to VPC resources as used in the IAM SAML policy could be moved to an SCP to simplify the boundary policy.
 {{% /notice %}}
 
 ```

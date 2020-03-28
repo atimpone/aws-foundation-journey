@@ -68,6 +68,11 @@ Select the checkbox for each corresponding AWS SSO group based on [Mapping of Fu
 # Backlog / Nice to Have
 
 * Get the link icons next to each section header so that people can easily copy links to anchors.
+  * Odd behavior on the site given that the hover works on many, but not all pages.
+```
+https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/14
+```
+
 * Reduce the size of the real estate used for the site logo and search box.
 * Reduce chapter headings in left menu font sizes.
 * Inline TOCs
