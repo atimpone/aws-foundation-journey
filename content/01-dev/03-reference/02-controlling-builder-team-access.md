@@ -68,13 +68,13 @@ Instead, foundation team members should use their team development oriented role
 There are two common scenarios that these access requirements are intended to address:
 
 * Builders working directly with AWS services.
-* Builders creating and using IAM service roles and policies for their workloads.
+* Builders creating and using workload specific IAM service roles and policies.
 
 ### Builders Working Directly with AWS Services
 
 When your builders experiment and formally develop with AWS services, the IAM SAML role and policies under which they work in their team development AWS account needs access to a variety of AWS services.
 
-### Builders Creating and Using IAM Service Roles and Policies for Their Workloads
+### Builders Creating and Using Workload Specific IAM Service Roles and Policies
 
 When builders are formally developing and performing preliminary testing of AWS service configurations, they often need to define and configure IAM service roles and customer managed policies that are specific to their workloads. 
 
