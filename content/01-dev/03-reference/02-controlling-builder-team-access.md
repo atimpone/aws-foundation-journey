@@ -412,7 +412,7 @@ Since the overall intent in this development environment scenario is to enable A
 The main difference is that write access to all IAM resources is disallowed in the sample permissions boundary policy. For example, since there was no requirement to enable AWS services to create roles and policies on behalf of builders, disallowing role creation inhibits builders from creating roles that could circumvent the policies.
 
 {{% notice note %}}
-**Review Note:** Deny permissions for write access to VPC resources as used in the IAM SAML policy could be moved to an SCP to simplify the boundary policy.
+**Review Note:** If a decision is made to move write access deny permissions for VPC resources to an SCP, then the following permissions settings would be removed from this permissions boundary.
 {{% /notice %}}
 
 ```
