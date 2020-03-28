@@ -13,6 +13,8 @@ uglyurls = true
 
 #relativeURLs = true # Need to research: https://gohugo.io/content-management/urls/
 
+enableGitInfo = true
+
 enableEmoji = true
 
 # Code Syntax Highlighting

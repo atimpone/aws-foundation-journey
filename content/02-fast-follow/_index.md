@@ -1,7 +1,6 @@
 ---
 title: 'Establish Fast Follow Capabilities'
 weight: 20
-draft: false
 ---
 {{% notice note %}}
 **Review Note:** The fast follow capabilities are only sketched out topically at this stage. We expect to begin addressing them after the [Introduction]({{< relref "00-intro" >}}) and [Establish Development Environments]({{< relref "01-dev" >}}) sections are completed from a draft perspective. If you have comments and suggestions about this guide, see [Contributing]({{< relref "08-contributing" >}}).

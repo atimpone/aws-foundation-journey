@@ -2,7 +2,6 @@
 title: 'Linux Workloads on Amazon EC2'
 menuTitle: 'Linux Workloads'
 weight: 50
-draft: false
 ---
 
 {{% notice note %}}

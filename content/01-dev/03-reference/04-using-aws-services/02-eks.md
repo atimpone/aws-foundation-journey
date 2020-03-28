@@ -1,8 +1,6 @@
 ---
 title: "Using Amazon EKS in Team Development Environments"
 menuTitle: "Amazon EKS"
-date: 2020-03-22T10:18:20-07:00
-draft: false
 weight: 20
 ---
 

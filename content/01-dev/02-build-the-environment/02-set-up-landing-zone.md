@@ -1,8 +1,6 @@
 ---
 title: "Set Up Landing Zone Using AWS Control Tower"
 menuTitle: "2. Set Up Landing Zone"
-date: 2020-03-22T10:18:20-07:00
-draft: false
 weight: 20
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: "Controlling Builder Team Access to Development Environments"
 menuTitle: "Controlling Builder Team Access"
-date: 2020-03-22T10:18:20-07:00
-draft: false
 weight: 20
 ---
 
@@ -503,10 +501,6 @@ Builders associate IAM service roles to AWS resources and then attempt to access
 ##### Using the IAM Policy Simulator
 
 Builders testing IAM policies via the [IAM Policy Simulator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html) in the AWS Management Console.
-
-{{% notice info %}}
-**Review Note: Might need to expand permissions:** We might need to open up read permissions further to enable builders to effectively use the Policy Simulator. See [Permissions Required](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html#permissions-required_policy-simulator)
-{{% /notice %}}
 
 #### Disallowed Actions
 

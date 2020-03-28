@@ -1,8 +1,6 @@
 ---
 title: "Using AWS Cloud9 in Team Development Environments"
 menuTitle: "AWS Cloud9"
-date: 2020-03-22T10:18:20-07:00
-draft: false
 weight: 10
 ---
 

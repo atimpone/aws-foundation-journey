@@ -1,7 +1,6 @@
 ---
 title: "Introduction"
 weight: 05
-draft: false
 ---
 
 Amazon Web Services (AWS) customers have expressed the need for a prescriptive guide to help their organizations better understand how they can get started with the AWS platform when they are ready to move from the informal stage of using personal AWS accounts to the next stage of formally bringing a few workloads to production.

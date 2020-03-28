@@ -1,7 +1,6 @@
 ---
 title: 'Establish Test and Production Environments'
 weight: 30
-draft: false
 ---
 
 {{% notice note %}}

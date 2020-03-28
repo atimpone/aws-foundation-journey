@@ -1,7 +1,6 @@
 ---
 title: 'Establish Development Environments'
 weight: 10
-draft: false
 ---
 
 After you've addressed a few up front tasks, in about a day, this guide will help you establish an initial secure foundation and a set of development environments based on the following architecture.

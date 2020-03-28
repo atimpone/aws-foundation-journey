@@ -2,7 +2,6 @@
 title: 'Windows Workloads on Amazon EC2'
 menuTitle: 'Windows Workloads'
 weight: 50
-draft: false
 ---
 
 {{% notice note %}}

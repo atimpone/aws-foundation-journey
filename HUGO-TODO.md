@@ -8,7 +8,7 @@
 * DONE - Move notices to a more appropriate style.
 * DONE - Make images linkable.
 * DONE - List children on pages as appropriate.
-* Understand how the `date` field in frontmatter is used by Hugo. 
+* IN PROGRESS - Understand how the `date` field in frontmatter is used by Hugo. 
   * Currently these dates are hardcoded.
   * How does Hugo or the Learn theme represent page modification dates?
   * Is the `date` field used?

@@ -1,8 +1,6 @@
 ---
 title: "Onboard Builder Teams to Their Team Development AWS Accounts"
 menuTitle: "7. Onboard Builder Teams"
-date: 2020-03-22T10:18:20-07:00
-draft: false
 weight: 70
 ---
 
