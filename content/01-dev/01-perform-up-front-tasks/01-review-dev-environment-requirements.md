@@ -39,7 +39,7 @@ The following requirements are organized based on a series of perspectives defin
   * Insight into the costs of AWS services consumed in their development environments so that teams can make informed decisions.
   * Sufficient documentation to enable builders to get started in the new AWS environment.
 * The initial cloud platform team needs an isolated environment in which they can develop and test foundation capabilities.
-  * Separate from other development teams and environments.
+  * Separate from other builder teams and environments.
   * Potentially with wider access permissions than typical development teams to enable deeper foundation development work.
 
 ### Security
