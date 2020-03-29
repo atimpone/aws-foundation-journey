@@ -25,10 +25,10 @@ The following requirements are organized based on a series of perspectives defin
 ## Technical Perspectives
 
 ### Platform
-* Development Team Requirements
+* Builder Team Requirements
   * An isolated environment for each team to carry out initial experiments and formal development work.
-  * Isolation from other develpment teams being able to inadvertently impact a team's cloud resources.
-  * Ability to access other develpment teams' deployed servies via networking.
+  * Isolation from other builder teams being able to inadvertently impact a team's cloud resources.
+  * Ability to access other builder teams' deployed servies via networking.
   * Access to AWS services and AWS-hosted workloads from the corporate desktops on the corporate network.
     * CLI and API access to AWS services.
   * Access to a broad set of AWS services to enable experimentation and development.
