@@ -14,4 +14,4 @@ This guide is intended to help your organization move from using informal person
 
 | | | |
 |-|-|-|
-|{{< figure src="/images/01-dev/dev-initial.png" title="Development Environments" alt="Development Environments" >}}|{{< figure src="http://localhost:1313/images/02-fast-follow/dev-fast-follow.png" title="Fast Follow Capabilities" alt="Fast Follow Capabilities" >}}|{{< figure src="/images/03-test-prod/test-prod-single-region.png" title="Initial Test and Production Environments" alt="Initial Test and Production Environments" >}}|
+|{{< figure src="/images/01-dev/dev-initial.png" title="1. Development Environments" alt="Development Environments" >}}|{{< figure src="http://localhost:1313/images/02-fast-follow/dev-fast-follow.png" title="2. Fast Follow Capabilities" alt="Fast Follow Capabilities" >}}|{{< figure src="/images/03-test-prod/test-prod-single-region.png" title="3. Initial Test and Production Environments" alt="Initial Test and Production Environments" >}}|
