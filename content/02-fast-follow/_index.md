@@ -1,5 +1,6 @@
 ---
 title: 'Establish Fast Follow Capabilities'
+menuTitle: '2. Establish Fast Follows'
 weight: 20
 ---
 {{% notice note %}}

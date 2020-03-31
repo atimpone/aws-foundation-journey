@@ -1,5 +1,6 @@
 ---
 title: 'Establish Development Environments'
+menuTitle: '1. Establish Development'
 weight: 10
 ---
 

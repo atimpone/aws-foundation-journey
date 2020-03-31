@@ -1,5 +1,6 @@
 ---
 title: 'Establish Test and Production Environments'
+menuTitle: '3. Establish Test and Prod'
 weight: 30
 ---
 
