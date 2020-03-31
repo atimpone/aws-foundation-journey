@@ -15,6 +15,3 @@ This guide is intended to help your organization move from using informal person
 | | | |
 |-|-|-|
 |[![Initial Development Environment](/images/01-dev/dev-initial.png)](/images/01-dev/dev-initial.png)|[![Fast Follow Capabilities](/images/02-fast-follow/dev-fast-follow.png)](/images/02-fast-follow/dev-fast-follow.png)|[![Initial Test and Production Environments in Single AWS Region](/images/03-test-prod/test-prod-single-region.png)](/images/03-test-prod/test-prod-single-region.png)|
-
-
-{{< figure src="/images/01-dev/dev-initial.png" title="Development Environments" caption="hello" alt="Development Environments" >}}

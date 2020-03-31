@@ -41,6 +41,10 @@ $ cd <root of the repository>
 
 $ git submodule add https://github.com/matcornic/hugo-theme-learn.git themes/learn
 ```
+---
+**Note: Learn theme left menu hierarchy expansion issue**
+The current version of the Learn theme can be improved in terms of how...
+---
 
 #### Start Hugo Locally for Testing
 
