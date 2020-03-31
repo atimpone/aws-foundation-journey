@@ -26,7 +26,29 @@ Beyond filing issues, we welcome your bug fixes and enhacenments.
 
 ### Use of Hugo Static Site Generator
 
-...provide instructions of how to locally render the content using Hugo so that contributors can test changes before issuing PRs...
+The [Hugo](https://gohugo.io/) static site generator is used to render the content managed in this repository.  You can install and use Hugo locally to render and review the content.
+
+#### Install Hugo
+
+See [Install Hugo](https://gohugo.io/getting-started/installing/).
+
+#### Install Learn Theme
+
+Once you have the repository cloned locally, install the "Learn" Hugo theme
+
+```
+$ cd <root of the repository>
+
+$ git submodule add https://github.com/matcornic/hugo-theme-learn.git themes/learn
+```
+
+#### Start Hugo Locally for Testing
+
+```
+$ hugo server -D
+```
+
+Access http://localhost:1313/
 
 ### Defer to External Docs Where Feasible
 
