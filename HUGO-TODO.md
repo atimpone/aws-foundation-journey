@@ -8,6 +8,7 @@
 * DONE - Move notices to a more appropriate style.
 * DONE - Make images linkable.
 * DONE - List children on pages as appropriate.
+* Selectively include inline TOC after intro paragraphs.
 * IN PROGRESS - Understand how the `date` field in frontmatter is used by Hugo. 
   * Currently these dates are hardcoded.
   * How does Hugo or the Learn theme represent page modification dates?
@@ -24,16 +25,9 @@ weight: 20
 ---
 ```
 
-* Debug using anchors with `relref` shortcode. 
-  * For example, the following does not work.
-
-```
-Select the checkbox for each corresponding AWS SSO group based on [Mapping of Functional Roles to AWS SSO Groups]({{< relref "03-set-up-aws-platform-access-controls.md#2-map-foundation-functional-roles-to-existing-aws-groups" >}}).
-```
-
 # Learn Theme Mods
 
-* Figure out a clean means of getting the following menu depth fix into the mainstream static content build process:
+* DONE - Included in local CSS - Figure out a clean means of getting the following menu depth fix into the mainstream static content build process:
   * https://github.com/matcornic/hugo-theme-learn/issues/88#issuecomment-437523806
   * https://github.com/matcornic/hugo-theme-learn/pull/195
 
@@ -46,9 +40,9 @@ Select the checkbox for each corresponding AWS SSO group based on [Mapping of Fu
 * DONE - Add content to blank pages.
 * DONE - Move future capabilities to new section at the end.
 * DONE - Update README.md to:
-  * Introduce the project.
+  * DONE - Introduce the project.
   * Provide link to live web site.
-  * Provide link to how to contribute.
+  * DONE - Provide link to how to contribute.
 
 # Look and Feel
 
@@ -65,9 +59,34 @@ Select the checkbox for each corresponding AWS SSO group based on [Mapping of Fu
 * DONE - Generate site and publish to S3 with CloudFront distro.
 * Ask for feedback.
 
+# Automation
+
+* Develop IaC CloudFormation templates for:
+  * Web site: S3 + CloudFront distribution
+  * CD Pipeline
+    * Detect changes to master branch.
+    * Rebuild, deploy locally, sanity test
+    * Publish to S3 and invalidate via CloudFront
+    * Post deployment sanity test.
+* Formal vanity FQDN
+* Support branches other than master
+
+Resources / Examples:
+
+* https://github.com/aws-samples/aws-modernization-workshop-sample/tree/master/modules/webhosting
+* https://github.com/aws-samples/aws-modernization-workshop-sample/blob/master/webspec.yml
+* https://github.com/aws-samples/eks-workshop/blob/master/codebuild-deploy.sh
+
 # Backlog / Nice to Have
 
-* Get the link icons next to each section header so that people can easily copy links to anchors.
+* BUG - Debug using anchors with `relref` shortcode. 
+  * For example, the following does not work.
+
+```
+Select the checkbox for each corresponding AWS SSO group based on [Mapping of Functional Roles to AWS SSO Groups]({{< relref "03-set-up-aws-platform-access-controls.md#2-map-foundation-functional-roles-to-existing-aws-groups" >}}).
+```
+
+* BUG - Get the link icons next to each section header so that people can easily copy links to anchors.
   * Odd behavior on the site given that the hover works on many, but not all pages.
 ```
 https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/14
