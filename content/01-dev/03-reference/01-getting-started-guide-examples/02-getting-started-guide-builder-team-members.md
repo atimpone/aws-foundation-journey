@@ -28,15 +28,21 @@ Review the [Initial Development Environment Solution Overview]({{< relref "02-re
 
 The following diagram provides a more detailed view of the initial network environment that is available to your team development AWS account:
 
-[![Initial Shared Development Network Details](/images/01-dev/dev-network-initial-details.png)](/images/01-dev/dev-network-initial-details.png)
+[![Common Development Network Details](/images/01-dev/dev-network-initial-details.png)](/images/01-dev/dev-network-initial-details.png)
 
-When you access your team development AWS account via the the AWS Management Console and review the Virtual Private Cloud (VPC) resources, you will see a series of subnets that have been shared with your AWS account.  These subnets and other VPC resources are hosted in the central Network AWS account that is managed by your Cloud Administrators.  All team development AWS accounts have read only access to these VPC resources.
+When you access your team development AWS account via the the AWS Management Console and review the Virtual Private Cloud (VPC) resources, you will see a series of private subnets that have been shared with your AWS account.  
+
+The private subnets and other VPC resources are hosted in a Network AWS account that is managed by your Cloud Administrators.  All team development AWS accounts have read only access to these VPC resources.
 
 By design, your team does not have permissions to create and modify VPC resources in your own team development AWS account.
 
+{{% notice info %}}
+**What is a "private" subnet?** Workloads deployed to private subnets cannot be directly accessed from the Internet.  i.e. unsolicited traffic from the Internet is not allowed. In the initial configuration of the common set of shared private subnets for team development AWS accounts, your workloads are able to connect outbound to services on the Internet via NAT Gateway services that are hosted in a set of centrally managed public subnets.
+{{% /notice %}}
+
 ### Where should my team deploy resources?
 
-All AWS resources that your team creates and manages are constrained to your team development AWS account.  In support of workloads requiring access to VPC resources, your team can deploy those workloads in the shared development VPC.
+All AWS resources that your team creates and manages are constrained to your team development AWS account.  In support of workloads requiring access to VPC resources, your team can deploy those workloads in the private subnets of the centrally managed development VPC.
 
 ## Understanding Your Team's Access Permissions and Responsibilities
 
@@ -109,7 +115,7 @@ See additional getting started with AWS information:
 
 ### Consuming Another Team's APIs or Resources
 
-*... Connectivity options ...probably not a super high priority given that the initial context is where the customer is focusing on one or several workloads in this project stage...i.e. might not be very many teams in play at the start...but sharing services across dev teams is another reason to move soon/fast follow-on to either a shared dev VPC or using TGW to help provide relatively open connectivity across separate dev VPCs (I vote for the former at least for dev AWS accounts)...* 
+Since a common set of private subnets are shared across team development AWS accounts, any workloads you deploy to these subnets have the potential to connect to each other.
 
 ### Working With External AWS Accounts
 

@@ -24,13 +24,15 @@ Each builder team is allocated a distinct team development AWS account to act as
 
 In addition to your initial application and data engineering teams that need access to the AWS platform, you should view your initial cloud and security administrators as a team of builders in its own right that should have its own AWS account for its own work to iterate on, develop, and perform early testing of changes to the foundation..
 
-## Shared Development VPC Network
+## Common Development Network
 
-A shared development network in the form of an AWS Virtual Private Cloud (VPC) will be used to support the networking needs of builder teams for their development tasks.  Your Cloud Administrators will provision this shared development VPC to a new "Network" AWS account and share it with all future team development AWS accounts.
+A centrally managed development network in the form of an AWS Virtual Private Cloud (VPC) will be used to support the networking needs of builder teams for their development tasks.  Your Cloud Administrators will provision this shared development VPC to a new "Network" AWS account and share a common set of private subnets with team development AWS accounts.
 
-The shared VPC will support cases in which a builder team needs to deploy AWS resources that reside in VPCs. For example, deploying Amazon EC2 Virtual Machines (VMs) and Amazon Relational Database Service (RDS) instances. The shared development VPC provides both public and private subnets across multiple Availability Zones (AZs) to both mimic typical production topologies and enable teams to access Internet-based resources such as package repositories and publicly available APIs during their experiment and development work.
+The common development VPC will support cases in which a builder team needs to deploy AWS resources that reside in VPCs. For example, deploying Amazon EC2 Virtual Machines (VMs) and Amazon Relational Database Service (RDS) instances. The common development VPC provides private subnets across multiple Availability Zones (AZs) to both mimic typical production topologies and enable teams to access Internet-based resources such as package repositories and publicly available APIs during their experiment and development work.
 
-Benefits of using a shared VPC for builder team's development needs include:
+The common development VPC includes a set of public subnets that host one or more NAT Gateways to enable outbound connectivity from the shared private subnets to the Internet.  The public subnets are not shared to the team development AWS accounts.
+
+Benefits of using a common VPC for builder team's development needs include:
 
 + The organization needs to manage and pay for only one set of common shared VPC resources for all builder teams. For example, one set of NAT Gateways - which are billed on an hourly basis.
 
@@ -50,11 +52,9 @@ Benefits of using a shared VPC for builder team's development needs include:
 
 + Costs for shared VPC foundation resources are allocated to the network AWS account.
 
-## Direct Internet Access
+## Access AWS Services via Internet
 
-In this initial stage of your foundation, your builders’ existing access to the Internet via the corporate network is used both to enable all users to access the AWS platform and to enable builders to access their workloads and data services hosted in their team development AWS accounts.
-
-In this initial stage, there’s no network connectivity between your AWS accounts and your on-premises data center.
+In this initial stage of your foundation, your builders’ existing access to the Internet via the corporate network is used to enable all users to access the AWS platform and to enable builders to access their workloads and data services hosted in their team development AWS accounts.
 
 ## AWS Single Sign-On (SSO)
 
@@ -64,7 +64,7 @@ As a best practice, it’s strongly recommended that all users managed via AWS S
 
 AWS SSO includes the ability to manage permission sets that define which groups of users can access which AWS accounts and the fine grained AWS Identity and Access Management (IAM) permissions associated with this access.  AWS SSO automatically propagates these permissions to each member AWS account in your AWS organization.
 
-## Shared AWS Accounts
+## Foundation AWS Accounts
 
 Once you’ve signed up for a new AWS account, the “master” account, your cloud administrators will use AWS Control Tower via the Master AWS account to establish a “landing zone” of conventional shared AWS accounts and resources to help provide an initial foundation for your use of AWS. 
 

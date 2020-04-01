@@ -9,9 +9,9 @@ The following documents address how builders can access a variety of AWS service
 
 Why do buider teams need special instructions to use AWS services in their team development AWS accounts?
 
-**Use of Existing Shared Development VPC**
+**Use of Shared Private Subnets**
 
-Since you may come across examples and documentation that includes creation of VPC resources and you don't have permissions to create VPC resources in team development AWS accounts, you will need to understand how to reuse the existing shared development VPC resources.
+Since you may come across examples and documentation that includes creation of VPC resources and you don't have permissions to create VPC resources in team development AWS accounts, you will need to understand how to reuse the existing shared private subnets to which your teams have access in your team development AWS accounts.
 
 **Creation of AWS Service IAM Roles**
 

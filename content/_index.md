@@ -12,6 +12,7 @@ This guide is intended to help your organization move from using informal person
 **Draft Content** Content in this repository is in a preliminary draft form and should not be used to formally build out AWS environments unless an AWS specialist is working with you. The documentation is currently undergoing frequent changes as it is reviewed and tested.
 {{% /notice %}}
 
-| | | |
-|-|-|-|
-|{{< figure src="/images/01-dev/dev-initial.png" title="1. Development Environments" alt="Development Environments" >}}|{{< figure src="http://localhost:1313/images/02-fast-follow/dev-fast-follow.png" title="2. Fast Follow Capabilities" alt="Fast Follow Capabilities" >}}|{{< figure src="/images/03-test-prod/test-prod-single-region.png" title="3. Initial Test and Production Environments" alt="Initial Test and Production Environments" >}}|
+|   |   |   |
+|:-:|:-:|:-:|
+|{{< figure src="/images/01-dev/dev-initial.png" alt="Development Environments" >}}|{{< figure src="/images/02-fast-follow/dev-fast-follow.png" alt="Fast Follow Capabilities" >}}|{{< figure src="/images/03-test-prod/test-prod-single-region.png" alt="Initial Test and Production Environments" >}}|
+|[**1. Establish Development Environments**]({{< relref "01-dev" >}})|[**2. Establish Fast Follow Capabilities**]({{< relref "02-fast-follow" >}})|[**3. Establish Test and Production Environments**]({{< relref "03-test-prod" >}})|

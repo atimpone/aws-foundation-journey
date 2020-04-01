@@ -1,26 +1,26 @@
 ---
-title: "Set Up Shared Development Network"
+title: "Set Up Common Development Network"
 menuTitle: "5. Set Up Network"
 weight: 50
 ---
 
-In this step your Cloud Administrators will review the initial development network design, create a new Network AWS account, provision a shared development network, and share that network will all team development AWS accounts in your AWS organization.
+In this step your Cloud Administrators will review the initial development network design, create a new Network AWS account, provision a common centrally managed development network, and share the private subnets will all team development AWS accounts in your AWS organization.
 
 This step should take about 60 minutes to complete.
 
 ## 1. Review Initial Network Design
 
-As mentioned in the [Initial Development Environment Solution Overview]({{< relref "02-review-dev-environment-solution.md#shared-development-vpc-network" >}}), it's recommended that you start with a single development VPC that you will share across all team development AWS accounts. 
+As mentioned in the [Initial Development Environment Solution Overview]({{< relref "02-review-dev-environment-solution.md#common-development-network" >}}), it's recommended that you start with a single development VPC the prirvate subnets of which will be shared across all team development AWS accounts. 
 
-The shared development VPC will initially have a set of both public and private subnets. In those AWS regions in which at least 3 Availability Zones (AZs) are available for customer use, it's recommended that your initial set of VPCs have subnets in each of 3 AZs so that your builder teams can experiment with and perform early testing of workloads and AWS services that can take advantage of 3 AZs.
+The centrally managed development VPC will have a set of both public and private subnets. In those AWS regions in which at least 3 Availability Zones (AZs) are available for customer use, it's recommended that your initial set of VPCs have subnets in each of 3 AZs so that your builder teams can experiment with and perform early testing of workloads and AWS services that can take advantage of 3 AZs.
 
 At least one public subnet will have a NAT Gateway that enables workloads in any of the private subnets to send traffic outbound to the Internet. For example, to enable workloads to download content from Internet accessible source code and package repositories.
 
 {{% notice tip %}}
-**Option to disallow direct Internet integration:** As you progress in your journey, you may transition from this initial approach of providing builder teams with direct Internet access via the initial set of public subnets and NAT Gateway to a more secure architecture where all Internet egress and ingress traffic is routed through your standard enterprise edge security services. In this future state, builder teams would not have direct access to deploy workloads to public subnets. This capability is highlighted in the optional [fast follow capabilities]({{< relref "02-fast-follow" >}}).
+**Option to filter outbound Internet traffic:** As you progress in your journey, you may transition from this initial approach of providing builder teams with unfiltered outbound or egress Internet access via the initial set of public subnets and NAT Gateway to a more secure architecture where all Internet egress traffic is routed through your standard enterprise edge security services so that all egress traffic is inspected for compliance. This capability is highlighted in the optional [fast follow capabilities]({{< relref "02-fast-follow" >}}).
 {{% /notice %}}
 
-[![Initial Shared Development Network Details](/images/01-dev/dev-network-initial-details.png)](/images/01-dev/dev-network-initial-details.png)
+[![Centrally Managed Development Network Details](/images/01-dev/dev-network-initial-details.png)](/images/01-dev/dev-network-initial-details.png)
 
 ## 2. Disable Account Factory VPC Provisioning
 
@@ -30,7 +30,7 @@ See [Configuring AWS Control Tower Without a VPC](https://docs.aws.amazon.com/co
 
 ## 3. Create Network AWS Account
 
-In AWS Control Tower, provision a new Network AWS account that will initially contain the shared development VPC. 
+In AWS Control Tower, provision a new Network AWS account that will initially contain the centrally managed development VPC. 
 
 Later in your journey, you'll deploy more network related resources to this AWS account. For example, you will likely configure  and manage [AWS Transit Gateway](https://aws.amazon.com/transit-gateway/) resources in this dedicated AWS account when you start integrating on-premises network connectivity in your overall AWS environment.
 
@@ -96,7 +96,7 @@ Now you've enabled all users who are part of the Cloud Administrator group in AW
 
 ## 5. Determine IP Address CIDR Blocks
 
-If you're just experimenting and don't care which IP address CIDR block is used to build the shared development VPC, you can move to the next step, [6. Provision Development VPC](#6-provision-development-vpc).
+If you're just experimenting and don't care which IP address CIDR block is used to build the centrally managed development VPC, you can move to the next step, [6. Provision Development VPC](#6-provision-development-vpc).
 
 Otherwise, if you have a formally assigned CIDR block to use, in this step you'll:
 
@@ -123,7 +123,7 @@ To keep things simple, you can size the subnets identically.
 
 ### Determine VPC CIDR Block
 
-If your Network team has supplied a relatively large non-overlapping CIDR block, for example a `/16` - `/20`, you should consider using only a subset of that block for your shared development VPC so that the remaining address space can be used in support of test and production networks.  Otherwise, if you've been allocated a `/21` - `/22`, then you should use the entire block for the shared development VPC.
+If your Network team has supplied a relatively large non-overlapping CIDR block, for example a `/16` - `/20`, you should consider using only a subset of that block for your centrally managed development VPC so that the remaining address space can be used in support of test and production networks.  Otherwise, if you've been allocated a `/21` - `/22`, then you should use the entire block for the centrally managed development VPC.
 
 If you need to break down a larger block:
 
@@ -148,7 +148,7 @@ Once you've determined the VPC CIDR block, breaking it down into an equal size b
 
 ## 6. Provision Development VPC
 
-You can use this [sample AWS CloudFormation template](https://github.com/aws-samples/vpc-multi-tier) to easily deploy your shared development network.
+You can use this [sample AWS CloudFormation template](https://github.com/aws-samples/vpc-multi-tier) to easily deploy your centrally managed development network.
 
 Download the sample AWS CloudFormation template [vpc-multi-tier.yml](https://raw.githubusercontent.com/aws-samples/vpc-multi-tier/master/vpc-multi-tier.yml) to your desktop. You can review the [README](https://github.com/aws-samples/vpc-multi-tier/blob/master/README.md) to understand the role of this template.
 
@@ -166,13 +166,13 @@ Now create a new AWS CloudFormation stack using the sample template you download
 3. Select **`Upload a template file`**.
 4. Select **`Choose file`** to select the downloaded template file from your desktop.
 5. Select **`Next`**.
-6. Enter a **`Stack name`**. For example, **`dev-vpc`**.
+6. Enter a **`Stack name`**. For example, **`base-dev-vpc`**.
 7. In **`Parameters`**:
 
 |Parameter|Guidance|
 |---------|--------|
 |**`Business Scope`**|Replace `acme` with your organization identifier or stock ticker if that applies. This value is used as a prefix in the name of some of the VPC-related cloud resources. For example, in the name of the IAM role used to support VPC flow logs.|
-|**`VPC Name`**|Change to **`dev-shared`**.|
+|**`VPC Name`**|Change to **`dev`**.|
 |**`*Cidr`**|**Just Experimenting**<br>If you want to just experiment at this point and don't care about using formally assigned IP address ranges, you can leave the CIDR block parameters at their default values.<br><br>**You Have Your Own CIDR Blocks**<br>Enter values for the `pVpcCidr`, `pTier1..`, and `pTier2...` CIDR blocks from the prior step. You can ignore the `pTier3...` parameters because only two tiers - public and private - are being provisioned by default.|
 
 Leave all of the other parameters at their default settings unless you're comfortable changing them.  You can always easily create another stack to experiment with other parameter values. Review the [README](https://github.com/aws-samples/vpc-multi-tier/blob/master/README.md) for details on parameters.
@@ -196,12 +196,12 @@ Review the newly created VPC and associated resources.
 6. Select **`Elastic IPs`** and review.  You will see one EIP allocated for each NAT Gateway.
 7. Navigate to **`CloudWatch`**.
 8. Select **`Log groups`**.
-9. Select the log group associated with the VPC Flow Logs. For example, `/base/dev-shared/flowlogs`.
+9. Select the log group associated with the VPC Flow Logs. For example, `/base/dev/flowlogs`.
 10. Explore the log streams. You should see a log stream for each Elastic Network Interface (ENI) used in the VPC. For example, each NAT Gateway has one ENI. Each entry in a log stream represents a the source, destination, and other overall information about the network traffic flowing through the ENI.
 
-## 8. Share Development VPC With Development OU
+## 8. Share Public Subnets With Development OU
 
-Now that the shared development VPC has been provisioned, you need to share the subnets of the VPC with all of the AWS accounts that will become part of the `development` OU that you created earlier.  
+Now that the centrally managed development VPC has been provisioned, your next step is to share the public subnets with all of the AWS accounts that will become part of the `development` OU that you created earlier.  
 
 ### Enable Resource Sharing in AWS Organizations
 
@@ -231,7 +231,7 @@ While you're in the master AWS account, obtain and record the resource ID of the
 4. Select the appropriate AWS region.
 5. Navigate to **`Resource Access Manager`**.
 6. Select **`Create a resource share`**.
-7. Enter a **`Name`** of **`base-dev-shared-vpc`**.
+7. Enter a **`Name`** of **`base-dev-vpc-public-subnets`**.
 8. Under **`Resources`**, by default, the subnets that were just provisioned should be listed.
 9. Select the checkbox to select all of the subnets.
 10. Under **`Principals`**, uncheck **`Allow external accounts`** given that we're sharing the subnets only with other AWS accounts within this AWS organization.
@@ -240,5 +240,5 @@ While you're in the master AWS account, obtain and record the resource ID of the
 13. Select **`Create resource share`**.
 
 {{% notice info %}}
-**Sharing names of VPC subnets:** If you were to list the shared VPC subnets from within the team development AWS accounts, you would notice that the subnet names are blank.  Currently, sharing of subnets does not include automatic propagation of resource tags, including the `Name` tag. As a workaround, in a subsequent section where you provision the team development AWS accounts, you can manually assign names to the shared subnets so that it will be easier for the builder teams to understand the role of each subnet. For example, by including "public" and "private" in the subnet names, builder teams will be able to readily distinguish between public and private subnets.
+**Sharing names of VPC subnets:** If you were to list the shared subnets from within the team development AWS accounts, you would notice that the subnet names are blank.  Currently, sharing of subnets does not include automatic propagation of resource tags, including the `Name` tag. As a workaround, in a subsequent section where you provision the team development AWS accounts, you can manually assign names to the shared subnets so that it will be easier for the builder teams to understand the role of each subnet. For example, by including the word "private" in the subnet names, builder teams will be able to more readily understand the role of the shared private subnets.
 {{% /notice %}}

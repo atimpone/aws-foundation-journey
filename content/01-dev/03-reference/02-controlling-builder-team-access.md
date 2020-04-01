@@ -33,7 +33,7 @@ The following requirements are intended to provide a practical sense of the acce
 
 **Disallow Privilege Escalation:** Inhibit builders from creating and using IAM roles that circumvent these requirements.
 
-**Disallow Creation and Management of VPC Resources:** Since builders already have read only access to a shared development VPC and supporting network resources, builders should not generally need to create and manage VPC resources. 
+**Disallow Creation and Management of VPC Resources:** Since builders already have read only access to the centrally managed development VPC and supporting network resources, builders should not generally need to create and manage VPC resources. 
 
 ### Allow Access
 
@@ -353,7 +353,7 @@ Ensure that foundation related CloudFormation stack instances that have been cre
 
 #### Deny Creation and Management of VPC Resources
 
-Since a centrally managed VPC is shared with team development AWS accounts in a read only manner and it's a best practice to delegate ownership and management of VPC resources to your central foundation team, typically, builders don't need to have write access to VPC resources.
+Since the private subnets of the centrally managed VPC are shared with team development AWS accounts in a read only manner and it's a best practice to delegate ownership and management of VPC resources to your central foundation team, typically, builders don't need to have write access to VPC resources.
 
 {{% notice info %}}
 **`ec2:` namespace:** Note that both EC2 VM resources and VPC networking resources share the same IAM `ec2:` namespace. In their team development AWS accounts, builders are allowed to create EC2 VM related resources, but are not allowed to have write access to VPC resources.

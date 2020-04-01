@@ -4,6 +4,10 @@ menuTitle: "AWS Cloud9"
 weight: 10
 ---
 
+{{% notice note %}}
+**Review Note:** Since we recently changed the guidance to disallow use of public subnets in team development AWS accounts and AWS Cloud9 does not currently support deployment of Cloud9 environments in private subnets, we need to remove this section from the guide.
+{{% /notice %}}
+
 This document highlights special considerations when using the [AWS Cloud9](https://aws.amazon.com/cloud9/) IDE in your team development AWS accounts.
 
 ## Why Use AWS Cloud9?

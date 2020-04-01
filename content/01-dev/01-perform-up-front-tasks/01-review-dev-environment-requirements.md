@@ -44,6 +44,7 @@ The following requirements are organized based on a series of perspectives defin
 
 ### Security
 * Sufficient isolation between cloud development environments and existing corporate resources.
+* Inhibit builder teams from hosting workloads in publicly accessible subnets in their development environments.
 * Sufficient auditing of cloud access and activity.
 * Use of per user identities to separate access and ensure sufficient auditing.
 * Use of Multi-Factor Authentication (MFA) for all human user access to the AWS platform.

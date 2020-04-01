@@ -102,7 +102,7 @@ Since Cloud Administrators won't automatically be granted sufficient access to n
 
 Now you've enabled all users who are part of the Cloud Administrator group in AWS SSO administrator access to the selected AWS accounts.
 
-## 5. Apply Names to Shared VPC Resources
+## 5. Apply Names to Shared Private Subnets
 
 Since the names of shared subnets are not currently propagated to AWS accounts, as a Cloud Administrator, you should apply names to the shared subnets within each team development AWS account so that it's easier for the builder teams to understand the role of each subnet as they configure resources for AWS services.
 
@@ -112,9 +112,9 @@ Since the names of shared subnets are not currently propagated to AWS accounts, 
 4. Select the appropriate AWS region.
 5. Navigate to **`VPC`**.
 6. Select **`Your VPCs`**.
-7. Select the unamed VPC and assign the same name as used in the Network AWS account. For example, **`base-dev-shared`**.
+7. Select the unnamed VPC and assign the same name as used in the Network AWS account. For example, **`base-dev`**.
 8. Select **`Subnets`**.
-9. Update the **`Name`** field of each subnet to match the name of the subnet as it's configured in the `Network` AWS account. You can open another icognito or similar browser session to view the `Network` account's resources. **Caution:** The subnets may not be listed in the same order in both AWS accounts by default.
+9. Update the **`Name`** field of each private subnet to match the name of the private subnet as it's configured in the `Network` AWS account. You can open another icognito or similar browser session to view the `Network` account's resources. **Caution:** The subnets may not be listed in the same order in both AWS accounts by default.
 10. You can optionally apply the same naming alignment for route tables.
 
 {{% notice note %}}
