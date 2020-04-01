@@ -1,0 +1,17 @@
+---
+title: "Intended Audience"
+weight: 10
+---
+
+## Your Initial Cloud Foundation Team
+This guide is primarily intended to be used by your organization's technologists who will be responsible for establishing and maintaining your inital AWS environment. These technologists will make up the initial form of your "cloud foundation" or "cloud platform" team.
+
+## Your Workload Owners
+
+Typically, you'll have another set of technologists who are responsible for owning the first few "workloads" to be hosted on AWS.  Examples of workloads include existing applications or data that are to be migrated from on-premises to the cloud or new data and application services.
+
+Your workload owners are customers of your cloud foundation team and will benefit from the environments and documentation the foundation team establishes by following this guide.
+
+## Collectively: "Builders"
+
+At AWS we refer to both your workload oriented technologists and your cloud foundation team members as ["builders"](https://aws.amazon.com/campaigns/build-on-aws/) in the sense that they are both "building" out value on the AWS platform.
