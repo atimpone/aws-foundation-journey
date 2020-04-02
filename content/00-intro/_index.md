@@ -1,5 +1,6 @@
 ---
 title: "Introduction"
+disableToc: true
 weight: 05
 ---
 

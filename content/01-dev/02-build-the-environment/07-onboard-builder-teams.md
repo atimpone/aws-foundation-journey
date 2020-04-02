@@ -1,12 +1,15 @@
 ---
 title: "Onboard Builder Teams to Their Team Development AWS Accounts"
 menuTitle: "7. Onboard Builder Teams"
+disableToc: true
 weight: 70
 ---
 
 In this step either Security or Cloud Administrators will onboard a limited set of initial builders who will have access to their team development environments. The outcome is that a small team of builders has the knowledge to start using their team development AWS accounts, where to find basic usage documentation, and who to contact for support.
 
 This step should take about 60 minutes to complete.
+
+{{< toc >}}
 
 ## 1. Assemble Onboarding Documentation
 

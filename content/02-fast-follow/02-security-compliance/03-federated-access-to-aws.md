@@ -1,5 +1,6 @@
 ---
 title: "Federated Access to AWS Platform"
+disableToc: true
 weight: 30
 ---
 

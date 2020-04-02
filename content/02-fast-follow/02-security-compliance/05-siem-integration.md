@@ -1,5 +1,6 @@
 ---
 title: "SIEM Integration"
+disableToc: true
 weight: 50
 ---
 

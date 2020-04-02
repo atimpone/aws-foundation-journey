@@ -1,6 +1,7 @@
 ---
 title: 'Establish Fast Follow Capabilities'
 menuTitle: '2. Establish Fast Follows'
+disableToc: true
 weight: 20
 ---
 {{% notice note %}}

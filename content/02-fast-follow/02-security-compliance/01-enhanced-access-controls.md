@@ -1,5 +1,6 @@
 ---
 title: "Enhanced AWS Platform Access Controls"
+disableToc: true
 weight: 10
 ---
 

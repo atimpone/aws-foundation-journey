@@ -1,12 +1,15 @@
 ---
 title: "Onboard Foundation Team"
 pre: "4. "
+disableToc: true
 weight: 40
 ---
 
 In this step either your Security or Cloud Administrators will onboard the few people that make up the initial foundation team so that they can stop using system users and start using their own user accounts to manage the foundation.
 
 This step should take about 20 minutes to complete.
+
+{{< toc >}}
 
 ## 1. Create AWS SSO Users for Foundation Team Users
 

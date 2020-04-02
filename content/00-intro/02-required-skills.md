@@ -1,5 +1,6 @@
 ---
 title: "Required Skills"
+disableToc: true
 weight: 20
 ---  
 

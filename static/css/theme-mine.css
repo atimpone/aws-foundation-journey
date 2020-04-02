@@ -26,6 +26,17 @@
 
 }
 
+.toc ul {
+    list-style: none;
+    text-align: left;
+    padding: 0px 0px;
+    font-weight: normal;
+    font-size: 140%;
+}
+#TableOfContents {
+    padding: 0px;
+}
+
 body {
     color: var(--MAIN-TEXT-color) !important;
 }

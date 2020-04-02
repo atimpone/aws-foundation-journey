@@ -1,5 +1,6 @@
 ---
 title: "Initial Foundation"
+disableToc: true
 weight: 40
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Using AWS Cloud9 in Team Development Environments"
 menuTitle: "AWS Cloud9"
+disableToc: true
 weight: 10
 ---
 

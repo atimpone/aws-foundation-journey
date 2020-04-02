@@ -1,10 +1,13 @@
 ---
 title: "Address Prerequisites"
 pre: "4. "
+disableToc: true
 weight: 40
 ---
 
 In this step your foundation team will address several prerequsites before you build out the environment.
+
+{{< toc >}}
 
 ## 1. Create Email Addresses for New AWS Accounts
 

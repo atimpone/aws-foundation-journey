@@ -1,5 +1,6 @@
 ---
 title: "Infrastructure as Code (IaC)"
+disableToc: true
 weight: 10
 ---
 

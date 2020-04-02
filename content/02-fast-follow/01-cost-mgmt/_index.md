@@ -1,5 +1,6 @@
 ---
 title: 'Cost Management'
+disableToc: true
 weight: 10
 ---
 

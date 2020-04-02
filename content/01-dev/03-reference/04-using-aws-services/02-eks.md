@@ -1,6 +1,7 @@
 ---
 title: "Using Amazon EKS in Team Development Environments"
 menuTitle: "Amazon EKS"
+disableToc: true
 weight: 20
 ---
 

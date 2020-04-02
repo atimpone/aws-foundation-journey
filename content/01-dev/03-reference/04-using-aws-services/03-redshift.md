@@ -1,6 +1,7 @@
 ---
 title: "Using Amazon Redshift in Team Development Environments"
 menuTitle: "Amazon Redshift"
+disableToc: true
 weight: 30
 ---
 

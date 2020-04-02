@@ -1,12 +1,15 @@
 ---
 title: "Set Up AWS Platform Access Controls"
 menuTitle: "3. Set Up Access Controls"
+disableToc: true
 weight: 30
 ---
 
 In this step your Security and Cloud Administrators will decide on and implement the initial approach to controlling access to the AWS platform.
 
 This step should take about 45 minutes to complete.
+
+{{< toc >}}
 
 ## 1. Temporarily Use AWS SSO Locally Managed Users and Groups
 

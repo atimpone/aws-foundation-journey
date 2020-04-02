@@ -1,5 +1,6 @@
 ---
 title: "Enhanced Security Monitoring and Compliance"
+disableToc: true
 weight: 20
 ---
 

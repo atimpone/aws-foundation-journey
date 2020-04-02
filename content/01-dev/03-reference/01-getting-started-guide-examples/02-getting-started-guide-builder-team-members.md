@@ -1,5 +1,7 @@
 ---
 title: "Getting Started Guide for Builder Teams"
+menuTitle: 'Gettting Started: Builders'
+disableToc: true
 weight: 20
 ---
 {{% notice tip %}}
@@ -11,6 +13,8 @@ weight: 20
 {{% /notice %}}
 
 This document is intended to provide builder team members with awareness of the typical day-to-day tasks and supporting methods, tools, and AWS services to help them experiment, develop, and perform early testing in their team development AWS accounts.
+
+{{< toc >}}
 
 ## Accepting Invite to Join AWS SSO
 

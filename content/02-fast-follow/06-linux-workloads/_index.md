@@ -1,6 +1,7 @@
 ---
 title: 'Linux Workloads on Amazon EC2'
 menuTitle: 'Linux Workloads'
+disableToc: true
 weight: 50
 ---
 

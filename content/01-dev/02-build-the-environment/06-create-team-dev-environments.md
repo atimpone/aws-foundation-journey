@@ -1,12 +1,15 @@
 ---
 title: "Create Team Development AWS Accounts"
 menuTitle: "6. Create Development AWS Accounts"
+disableToc: true
 weight: 60
 ---
 
 In this step your Cloud Administrators will create several new team development AWS accounts via AWS Control Tower's Account Factory.
 
 This step should take about 30 minutes to complete.
+
+{{< toc >}}
 
 ## 1. Use at Least Two Team Development AWS Accounts from the Start
 

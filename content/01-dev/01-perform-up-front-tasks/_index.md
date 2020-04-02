@@ -1,5 +1,6 @@
 ---
 title: "Perform Up Front Tasks"
+disableToc: true
 weight: 10
 ---
 

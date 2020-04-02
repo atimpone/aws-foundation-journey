@@ -1,5 +1,6 @@
 ---
 title: "Progression of Capabilities"
+disableToc: true
 weight: 50
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Stages of Cloud Adoption"
+disableToc: true
 weight: 30
 ---
 

@@ -1,5 +1,7 @@
 ---
-title: "Getting Started Guide for Foundation Team"
+title: 'Getting Started Guide for Foundation Team'
+menuTitle: 'Gettting Started: Foundation'
+disableToc: true
 weight: 10
 ---
 
@@ -12,6 +14,8 @@ weight: 10
 {{% /notice %}}
 
 This document is intended to provide foundation team members with awareness of the typical day-to-day tasks and supporting methods, tools, and AWS services to help them manage and monitor your new AWS environment.
+
+{{< toc >}}
 
 ## Cloud Administrators
 

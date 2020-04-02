@@ -1,12 +1,15 @@
 ---
 title: "Create Master AWS Account"
 pre: "1. "
+disableToc: true
 weight: 10
 ---
 
 In this step your Cloud Administrators will use the standard AWS new account creation process to create a new “master” AWS account. 
 
 This step should take about 20 minutes.
+
+{{< toc >}}
 
 ## 1. Review the Benefits of Using Multiple AWS Accounts
 

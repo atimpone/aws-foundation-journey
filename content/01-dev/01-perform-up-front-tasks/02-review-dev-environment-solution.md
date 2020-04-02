@@ -1,6 +1,7 @@
 ---
 title: "Review Development Environment Solution"
 menuTitle: "2. Review Solution"
+disableToc: true
 weight: 20
 ---
 

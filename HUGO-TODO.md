@@ -8,7 +8,7 @@
 * DONE - Move notices to a more appropriate style.
 * DONE - Make images linkable.
 * DONE - List children on pages as appropriate.
-* Selectively include inline TOC after intro paragraphs.
+* DONE - Selectively include inline TOC after intro paragraphs.
 * IN PROGRESS - Understand how the `date` field in frontmatter is used by Hugo. 
   * Currently these dates are hardcoded.
   * How does Hugo or the Learn theme represent page modification dates?
@@ -27,7 +27,7 @@ weight: 20
 
 # Learn Theme Mods
 
-* DONE - Included in local CSS - Figure out a clean means of getting the following menu depth fix into the mainstream static content build process:
+* DONE - Included in local CSSFigure out a clean means of getting the following menu depth fix into the mainstream static content build process:
   * https://github.com/matcornic/hugo-theme-learn/issues/88#issuecomment-437523806
   * https://github.com/matcornic/hugo-theme-learn/pull/195
 
@@ -94,7 +94,6 @@ https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/14
 
 * Reduce the size of the real estate used for the site logo and search box.
 * Reduce chapter headings in left menu font sizes.
-* Inline TOCs
 * Can children shortcode render ordered list? i.e. with numbers.
 * Breadcrumbs
   * Long length of site title makes the breadcrumbs hard to use.

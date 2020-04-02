@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with AWS for Formal Projects"
+title: "Getting Started"
 chapter: true
 weight: 1
 ---

@@ -1,9 +1,12 @@
 ---
 title: "Project Tenets"
+disableToc: true
 weight: 70
 ---
 
 The following tenets help the team make decisions about the content of this guide.
+
+{{< toc >}}
 
 ## 1. Customer oriented with a goal of self-service
 

@@ -1,7 +1,10 @@
 ---
 title: "Frequently Asked Questions (FAQs)"
+disableToc: true
 weight: 60
 ---
+
+{{< toc >}}
 
 ## General
 

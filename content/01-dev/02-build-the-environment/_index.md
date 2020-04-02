@@ -1,6 +1,7 @@
 ---
 title: "Build the Initial Foundation and Development Environments"
 menuTitle: "Build the Environments"
+disableToc: true
 weight: 20
 ---
 

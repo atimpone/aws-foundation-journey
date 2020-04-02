@@ -1,6 +1,7 @@
 ---
 title: "Outbound Internet Content Filtering for Development Environments"
-menuTitle: "Outbound Internet Content Filtering"
+menuTitle: "Outbound Internet Filtering"
+disableToc: true
 weight: 20
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: 'Windows Workloads on Amazon EC2'
 menuTitle: 'Windows Workloads'
+disableToc: true
 weight: 50
 ---
 

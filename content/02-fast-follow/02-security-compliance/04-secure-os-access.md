@@ -1,5 +1,6 @@
 ---
 title: "Secure OS Access"
+disableToc: true
 weight: 40
 ---
 

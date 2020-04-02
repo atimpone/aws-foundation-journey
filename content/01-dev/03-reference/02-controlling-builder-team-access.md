@@ -1,6 +1,7 @@
 ---
 title: "Controlling Builder Team Access to Development Environments"
-menuTitle: "Controlling Builder Team Access"
+menuTitle: "Controlling Builder Access"
+disableToc: true
 weight: 20
 ---
 

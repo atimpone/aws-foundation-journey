@@ -1,6 +1,7 @@
 ---
 title: "Using AWS Services in Team Development Environments"
 menuTitle: "Using AWS Services"
+disableToc: true
 weight: 40
 ---
 The following documents address how builders can access a variety of AWS services in a self-service manner in their team development AWS accounts.
