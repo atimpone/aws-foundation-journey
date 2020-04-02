@@ -8,19 +8,19 @@ Beyond supporting initial development and early testing within the development e
 
 [![Initial Test and Production Environments in Single AWS Region](/images/03-preprod-prod/preprod-prod-single-region.png)](/images/03-preprod-prod/preprod-prod-single-region.png)
 
-Key aspects of a solution that supports a typical transition toward support for several projects and their workloads progressing toward formal testing and production include:
+Key aspects of a solution that supports a typical transition toward support for several projects and their workloads progressing toward formal pre-production testing and production include:
 
-## Separate AWS Accounts for Hosting Test and Production Workloads
+## Separate AWS Accounts for Hosting Pre-Production Test and Production Workloads
 
-AWS best practices recommend isolating test and production workloads, data, and supporting cloud resources from each other and from development environments through the use of distinct AWS accounts.  Whether your organization chooses to define test and production AWS hosting accounts based on the owning delivery teams, collections of related services, or another basis, will depend on your requirements.  Typically some analysis and design is needed to define the specific approach.
+AWS best practices recommend isolating pre-production test and production workloads, data, and supporting cloud resources from each other and from development environments through the use of distinct AWS accounts.  Whether your organization chooses to define pre-production test and production AWS hosting accounts based on the owning delivery teams, collections of related services, or another basis, will depend on your requirements.  Typically some analysis and design is needed to define the specific approach.
 
 ## Separate AWS Accounts for Shared Builder Services
 
-Similarly, AWS best practices recommend that one or more separate AWS accounts are established to host shared builder services that are used to help build, test, and release your applications and cloud resources to the test and production hosting environments. Since CI/CD pipelines, source code management, artifact repositories, and other builder resources are considered production resources, they are not typically managed in development environments. Again, some degree of analysis and design is typically needed to identify the specific approach that best suits your requirements.
+Similarly, AWS best practices recommend that one or more separate AWS accounts are established to host shared builder services that are used to help build, test, and release your applications and cloud resources to the pre-production test and production hosting environments. Since CI/CD pipelines, source code management, artifact repositories, and other builder resources are considered production resources, they are not typically managed in development environments. Again, some degree of analysis and design is typically needed to identify the specific approach that best suits your requirements.
 
 ## Expanded Use of AWS Transit Gateway to Support Test and Production VPCs
 
-If your test and production workloads need to integrate with on-premises resources and services, the AWS Transit Gateway configuration can be extended to enable routing between those environments.
+If your pre-productuction test and production workloads need to integrate with on-premises resources and services, the AWS Transit Gateway configuration can be extended to enable routing between those environments.
 
 ## Cloud Hosted Internet Ingress and Egress Security Services
 
