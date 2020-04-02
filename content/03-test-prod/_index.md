@@ -10,7 +10,7 @@ weight: 30
 
 Once you've establihed your initial foundation and delivered the initial set of development environments to teams, your next step is to extend your foundation by introducting a set of capabilities that organizations typically require before moving workloads into production.
 
-[![Initial Test and Production Environments in Single AWS Region](/images/03-test-prod/test-prod-single-region.png)](/images/03-test-prod/test-prod-single-region.png)
+[![Initial Test and Production Environments in Single AWS Region](/images/03-preprod-prod/preprod-prod-single-region.png)](/images/03-preprod-prod/preprod-prod-single-region.png)
 
 ## Refine Requirements and Identify Solutions
 
@@ -21,10 +21,10 @@ Once you've establihed your initial foundation and delivered the initial set of 
   * Key Management 
   * Certificate Management
 * Multi-Region
-* Test and Production AWS Account Design and Tenancy Model
-  * Test, Production, and Builder Services AWS Accounts
+* Pre-Production Test and Production AWS Account Design and Tenancy Model
+  * Pre-Production Test, Production, and Builder Services AWS Accounts
   * Grouping like workloads together in same AWS accounts
-* Test and Production Networks
+* Pre-Production Test and Production Networks
   * VPC Design
   * On-premises Network Integration
   * DNS Integration
@@ -47,10 +47,10 @@ Once you've establihed your initial foundation and delivered the initial set of 
 
 ## Build Out the Environments
 
-* Build Test and Production AWS Accounts
-* Establish Test and Product AWS Account Access Controls
+* Build Pre-Production Test and Production AWS Accounts
+* Establish Pre-Production Test and Product AWS Account Access Controls
 * Enhance Development AWS Accounts with Production-like Access Controls (for early testing)
-* Build Test and Production Networks
+* Build Pre-Production Test and Production Networks
 * Onboard Foundation Team
   * Promotion and Release Management
   * Operational Monitoring and Support

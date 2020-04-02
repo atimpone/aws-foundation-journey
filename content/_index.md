@@ -14,5 +14,5 @@ This guide is intended to help your organization move from using informal person
 
 |   |   |   |
 |:-:|:-:|:-:|
-|{{< figure src="/images/01-dev/dev-initial.png" alt="Development Environments" >}}|{{< figure src="/images/02-fast-follow/dev-fast-follow.png" alt="Fast Follow Capabilities" >}}|{{< figure src="/images/03-test-prod/test-prod-single-region.png" alt="Initial Test and Production Environments" >}}|
-|[**1. Establish Development Environments**]({{< relref "01-dev" >}})|[**2. Establish Fast Follow Capabilities**]({{< relref "02-fast-follow" >}})|[**3. Establish Test and Production Environments**]({{< relref "03-test-prod" >}})|
+|{{< figure src="/images/01-dev/dev-initial.png" alt="Development Environments" >}}|{{< figure src="/images/02-fast-follow/dev-fast-follow.png" alt="Fast Follow Capabilities" >}}|{{< figure src="/images/03-preprod-prod/preprod-prod-single-region.png" alt="Initial Pre-Production Test and Production Environments" >}}|
+|[**1. Establish Development Environments**]({{< relref "01-dev" >}})|[**2. Establish Fast Follow Capabilities**]({{< relref "02-fast-follow" >}})|[**3. Establish Pre-Production Test and Production Environments**]({{< relref "03-preprod-prod" >}})|

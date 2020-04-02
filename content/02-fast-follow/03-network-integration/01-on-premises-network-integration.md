@@ -14,7 +14,7 @@ This section addresses options and resources to enable network connectivity betw
 In many cases, organizations require that applications and workloads hosted in AWS can connect to workloads and shared services hosted on-premises and vice versa.  
 
 * Cloud client access to defined non-prod application and data services.
-* On-premises access to newly deployed cloud hosted dev, test, prod workloads and services.
+* On-premises access to newly deployed cloud hosted development, pre-production test, prod workloads and services.
 * Cloud client access to on-premises source code management access.
 * Hybrid DNS resolution:
   * On-premises clients resolve custom FQDNs for cloud hosted services.
@@ -39,4 +39,4 @@ If you didn’t use a non-overlapping range from the start, you will need to rep
 
 *...defer to existing documentation including decision trees, blog posts, formal AWS docs, etc. as much as feasible...*
 
-*...if the customer started with the use of temporary VPCs in support of their first few development environments, highlight considerations when migrating to the use of a set of new networks to support their development, test, and production environments...*
+*...if the customer started with the use of temporary VPCs in support of their first few development environments, highlight considerations when migrating to the use of a set of new networks to support their development,pre-production test, and production environments...*
