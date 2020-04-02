@@ -1,16 +1,16 @@
 ---
-title: 'Establish Test and Production Environments'
+title: 'Establish Pre-Production Test and Production Environments'
 menuTitle: '3. Establish Test and Prod'
 weight: 30
 ---
 
 {{% notice note %}}
-**Review Note:** The test and production envrionment section is only sketched out topically at this stage. We expect to begin addressing this section after drafting the higher priority [Fast Follow Capabilities]({{< relref "02-fast-follow" >}}) section. If you have comments and suggestions about this guide, see [Contributing]({{< relref "08-contributing" >}}).
+**Review Note:** The pre-production test and production envrionment section is only sketched out topically at this stage. We expect to begin addressing this section after drafting the higher priority [Fast Follow Capabilities]({{< relref "02-fast-follow" >}}) section. If you have comments and suggestions about this guide, see [Contributing]({{< relref "08-contributing" >}}).
 {{% /notice %}}
 
 Once you've establihed your initial foundation and delivered the initial set of development environments to teams, your next step is to extend your foundation by introducting a set of capabilities that organizations typically require before moving workloads into production.
 
-[![Initial Test and Production Environments in Single AWS Region](/images/03-preprod-prod/preprod-prod-single-region.png)](/images/03-preprod-prod/preprod-prod-single-region.png)
+[![Initial Pre-Production Test and Production Environments in Single AWS Region](/images/03-preprod-prod/preprod-prod-single-region.png)](/images/03-preprod-prod/preprod-prod-single-region.png)
 
 ## Refine Requirements and Identify Solutions
 
