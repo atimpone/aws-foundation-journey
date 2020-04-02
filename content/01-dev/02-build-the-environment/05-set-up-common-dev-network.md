@@ -24,7 +24,7 @@ At least one public subnet will have a NAT Gateway that enables workloads in any
 
 ## 2. Disable Account Factory VPC Provisioning
 
-Since you will be provisioning the shared development VPC directly using AWS CloudFormation, you need to ensure that the AWS Control Tower Account Factory network configuration is set to disable creation of a VPC when creating a new AWS account.  Otherwise, the Account Factory will attempt to create a VPC each time you provision a new AWS account.
+Since you will be provisioning the centrally managed development VPC directly using AWS CloudFormation, you need to ensure that the AWS Control Tower Account Factory network configuration is set to disable creation of a VPC when creating a new AWS account.  Otherwise, the Account Factory will attempt to create a VPC each time you provision a new AWS account.
 
 See [Configuring AWS Control Tower Without a VPC](https://docs.aws.amazon.com/controltower/latest/userguide/configure-without-vpc.html) for details on disabling automatic creation of VPCs.
 
