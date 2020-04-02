@@ -11,6 +11,8 @@ Your organization is expected to understand these sample policies in detail befo
 
 As you progress on your journey, managing and controlling changes to these types of policies will be a critical responsibility of your foundation team.  Typically, only your Cloud Security team would have the permissions needed to create and update such policies.
 
+{{< toc >}}
+
 ## Goals
 
 The overall intent of the policies is to enable your builders to have broad permissions to innovate, experiment, develop, and perform early testing in their team development AWS accounts while being prevented from adversely impacting the overall security and the stability of the underlying foundation of those AWS accounts.

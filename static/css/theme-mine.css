@@ -26,15 +26,30 @@
 
 }
 
+.toc {
+    display: inline;
+}
 .toc ul {
     list-style: none;
-    text-align: left;
     padding: 0px 0px;
-    font-weight: normal;
-    font-size: 140%;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
+
+#TableOfContents > ul > li > a {
+    margin: 0 0px;
+    font-weight: 300;
+}
+
 #TableOfContents {
-    padding: 0px;
+    font-size: 18px !important;
+    max-height: 80vh !important;
+    overflow: auto;
+    padding: 0px !important;
+    padding-top: 0px !important ;
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 0px !important;
 }
 
 body {
