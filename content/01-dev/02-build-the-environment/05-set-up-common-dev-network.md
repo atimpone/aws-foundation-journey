@@ -236,12 +236,12 @@ While you're in the master AWS account, obtain and record the resource ID of the
 6. Select **`Create a resource share`**.
 7. Enter a **`Name`** of **`base-dev-vpc-private-subnets`**.
 8. Under **`Resources`**, by default, the subnets that were just provisioned should be listed.
-9. Select the checkbox to select all of the private subnets.
+9. Select only the private subnets.
 10. Under **`Principals`**, uncheck **`Allow external accounts`** given that we're sharing the subnets only with other AWS accounts within this AWS organization.
 11. In the search field, copy the organization ID of the **`development`** OU. 
 12. Select the matched OU.
 13. Select **`Create resource share`**.
 
 {{% notice info %}}
-**Sharing names of VPC subnets:** If you were to list the shared subnets from within the team development AWS accounts, you would notice that the subnet names are blank.  Currently, sharing of subnets does not include automatic propagation of resource tags, including the `Name` tag. As a workaround, in a subsequent section where you provision the team development AWS accounts, you can manually assign names to the shared subnets so that it will be easier for the builder teams to understand the role of each subnet. For example, by including the word "private" in the subnet names, builder teams will be able to more readily understand the role of the shared private subnets.
+**Sharing names of VPC subnets:** If you were to list the shared private subnets from within the team development AWS accounts, you would notice that the subnet names are blank.  Currently, sharing of subnets does not include automatic propagation of resource tags, including the `Name` tag. As a workaround, in a subsequent section where you provision the team development AWS accounts, you can manually assign names to the shared private subnets so that it will be easier for the builder teams to understand the role of each subnet. For example, by including the word "private" in the subnet names, builder teams will be able to more readily understand the role of the shared subnets.
 {{% /notice %}}
