@@ -93,7 +93,7 @@ https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/14
 ```
 
 * Reduce the size of the real estate used for the site logo and search box.
-* Reduce chapter headings in left menu font sizes.
-* Can children shortcode render ordered list? i.e. with numbers.
-* Breadcrumbs
+* TOCs
+  * Enhance toc shortcode to use bullets or not. For pages that don't have numbered headings, we will typically want bullets.
+* DONE - Breadcrumbs
   * Long length of site title makes the breadcrumbs hard to use.

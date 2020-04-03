@@ -50,11 +50,6 @@ dateformat = "" # default "2 Jan 2006"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
-[[menu.shortcuts]]
-name = "<i class='fab fa-github'></i> GitHub Project"
-url = "https://github.com/ckamps/aws-foundation-journey"
-weight = 30
-
 # Markup configure section
 # See https://gohugo.io/getting-started/configuration-markup/
 [markup]

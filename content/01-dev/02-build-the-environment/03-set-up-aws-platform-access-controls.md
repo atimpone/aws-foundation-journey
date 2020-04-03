@@ -223,7 +223,7 @@ Next, you'll create a custom permission set in AWS SSO to represent the initial 
 2. Open the file and replace all occurrences of **`acme`** with a reference to your own organization's identifier.
 
 {{% notice tip %}}
-**Infrastructure as Code (IaC) Opportunity:** Since you've just modified "code" that represents an important security policy for your AWS environment, it's a best practice to manage that source code file in a version control system such as a Git repository and control who can modify this file moving forward. If your organization is not already using Git-based version control, see the [Fast Follow Capabilities]({{< relref "02-fast-follow" >}}) for assistance on how to get started using Git-based version control.
+**Infrastructure as Code (IaC) Opportunity:** Since you've just modified "code" that represents an important security policy for your AWS environment, it's a best practice to manage that source code file in a version control system such as a Git repository and control who can modify this file moving forward. If your organization is not already using Git-based version control, see the [Development Fast Follow Capabilities]({{< relref "02-dev-fast-follow" >}}) for assistance on how to get started using Git-based version control.
 {{% /notice %}}
 
 ### Create Permission Set in AWS SSO

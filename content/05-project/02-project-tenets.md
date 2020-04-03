@@ -1,7 +1,7 @@
 ---
 title: "Project Tenets"
 disableToc: true
-weight: 70
+weight: 20
 ---
 
 The following tenets help the team make decisions about the content of this guide.

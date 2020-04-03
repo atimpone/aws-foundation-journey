@@ -5,7 +5,7 @@ disableToc: true
 weight: 10
 ---
 
-This section introduces the typical requirements for your inital formal development environments and the supporting foundation. Organizations typically require at least the following capabilities when establishing their initial formal development environments. A separate set of sections address a series of [fast follow capabilities]({{< relref "02-fast-follow" >}}) that might be required up front depending on your organization's needs.
+This section introduces the typical requirements for your inital formal development environments and the supporting foundation. Organizations typically require at least the following capabilities when establishing their initial formal development environments. A separate set of sections address a series of [development fast follow capabilities]({{< relref "02-dev-fast-follow" >}}) that might be required up front depending on your organization's needs.
 
 ## Cloud Adoption Framework Perspectives
 

@@ -1,5 +1,6 @@
 ---
 title: "Frequently Asked Questions (FAQs)"
+menuTitle: "FAQs"
 disableToc: true
 weight: 60
 ---
@@ -8,21 +9,17 @@ weight: 60
 
 ## General
 
-### Q: Isn't this information already addressed in formal AWS documentation?
+### Q: Where can I learn more about this project including who's involved and how I can contribute?
 
-No, not to our knowledge. This guide take an experience journey based approach to introducing customers to the overall use case, the set of typical requirements, and an overall solution before leading customers through the actual steps to realize a set team development environments built on top of the initial form of their AWS foundation.
+See [Project Information]({{< relref "05-project" >}})
 
-Wherever feasible, the guide defers to existing AWS documentation for detailed instructions.
+## Federated Access to AWS Platform
 
-Additionally, since the scope of the initial stage of customers' adoption of AWS extends beyond the domain of any single AWS service, it's difficult for any one AWS service to document such a wide ranging experience.
+### Q: Why isn't federated access addressed from the start?
 
-Moving forward there's an opportunity to introduce this type of journey based documentation and into more mainstream AWS documentation.
+Based on our experience, it can commonly take several weeks for an organization to go through the necessary preparation and execution to get true federated access into place. The minimal form of the foundation uses locally managed groups and users in AWS SSO for the first few weeks until a more desirable federated access capability is established as a fast follow-on capability.
 
-### Q: What are the tenets or principles behind this project?
-
-See [Project Tenets]({{< relref "07-project-tenets.md" >}})
-
-## AWS Account Design
+## AWS Accounts Design
 
 ### Q: Shouldn't we develop a comprehensive design of our AWS account structure before we do any build out?
 
@@ -44,12 +41,6 @@ The notion of ["governed sandboxes"](https://www.flux7.com/blog/aws-best-practic
 
 #### Future Role for Traditional Sandboxes
 Similar to other aspects of overall AWS account design, the guide intentionally avoids overloading your organization with the fuller "to be" state of capabilities too early in your cloud adoption journey. Depending on your needs, in the future and perhaps in the larger "foundation" stage of adoption or even earlier as a parallel workstream, the capability to provide truly isolated and ephemeral sandbox AWS accounts to support a specific set of use cases may be addressed.
-
-## Federated Access to AWS Platform
-
-### Q: Why isn't federated access addressed from the start?
-
-Based on our experience, it can commonly take several weeks for an organization to go through the necessary preparation and execution to get true federated access into place. The minimal form of the foundation uses locally managed groups and users in AWS SSO for the first few weeks until a more desirable federated access capability is established as a fast follow-on capability.
 
 ## Cloud Resource Naming and Tagging
 
