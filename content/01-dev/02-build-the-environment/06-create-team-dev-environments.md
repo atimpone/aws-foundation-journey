@@ -26,7 +26,7 @@ Initially, you will likely need AWS accounts for the following teams:
 |**Workload Builder Team**|A team development AWS account for the team that will be doing the workload specific work for your first formal workload on AWS.|
 |**Foundation Team**|A team development AWS account for the initial few Cloud and Security Administrators to experiment, develop, and perform early testing of changes to the foundation.|
 
-## 2. Create Development Team AWS Accounts
+## 2. Create Team Development AWS Accounts
 
 In AWS Control Tower, provision the initial set of team development AWS accounts for early experimentation, development, and testing. 
 
