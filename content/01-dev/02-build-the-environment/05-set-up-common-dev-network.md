@@ -234,7 +234,7 @@ While you're in the master AWS account, obtain and record the resource ID of the
 4. Select the appropriate AWS region.
 5. Navigate to **`Resource Access Manager`**.
 6. Select **`Create a resource share`**.
-7. Enter a **`Name`** of **`base-dev-vpc-public-subnets`**.
+7. Enter a **`Name`** of **`base-dev-vpc-private-subnets`**.
 8. Under **`Resources`**, by default, the subnets that were just provisioned should be listed.
 9. Select the checkbox to select all of the private subnets.
 10. Under **`Principals`**, uncheck **`Allow external accounts`** given that we're sharing the subnets only with other AWS accounts within this AWS organization.
