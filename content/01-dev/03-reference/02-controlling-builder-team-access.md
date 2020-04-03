@@ -274,7 +274,7 @@ Allow builders to further modify non-foundation IAM roles.
         },
 ```
 
-#### Deny Deletion of Permissions Boundary Policies
+#### Deny Deletion of Permissions Boundary Policies from IAM Roles
 
 Ensure that once a permissions boundary policy has been attached to a role, builders cannot delete it.  Builders can still delete the role itself which will automatically remove the attached permissions boundary policy.
 
