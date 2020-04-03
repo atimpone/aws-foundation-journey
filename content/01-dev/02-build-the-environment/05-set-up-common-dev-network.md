@@ -202,9 +202,9 @@ Review the newly created VPC and associated resources.
 9. Select the log group associated with the VPC Flow Logs. For example, `/base/dev/flowlogs`.
 10. Explore the log streams. You should see a log stream for each Elastic Network Interface (ENI) used in the VPC. For example, each NAT Gateway has one ENI. Each entry in a log stream represents a the source, destination, and other overall information about the network traffic flowing through the ENI.
 
-## 8. Share Public Subnets With Development OU
+## 8. Share Private Subnets With Development OU
 
-Now that the centrally managed development VPC has been provisioned, your next step is to share the public subnets with all of the AWS accounts that will become part of the `development` OU that you created earlier.  
+Now that the centrally managed development VPC has been provisioned, your next step is to share the private subnets with all of the AWS accounts that will become part of the `development` OU that you created earlier.  
 
 ### Enable Resource Sharing in AWS Organizations
 
@@ -236,7 +236,7 @@ While you're in the master AWS account, obtain and record the resource ID of the
 6. Select **`Create a resource share`**.
 7. Enter a **`Name`** of **`base-dev-vpc-public-subnets`**.
 8. Under **`Resources`**, by default, the subnets that were just provisioned should be listed.
-9. Select the checkbox to select all of the subnets.
+9. Select the checkbox to select all of the private subnets.
 10. Under **`Principals`**, uncheck **`Allow external accounts`** given that we're sharing the subnets only with other AWS accounts within this AWS organization.
 11. In the search field, copy the organization ID of the **`development`** OU. 
 12. Select the matched OU.
