@@ -115,7 +115,7 @@ This section provides an overview of the sample policies and then walks through 
 
 ### Overview of the Implementation
 
-In support of the requirements described above, two sets of IAM policies are used:
+In support of the requirements described above, two IAM policies are used:
 
 |Policy|Purpose|Usage|Sample Code|
 |------|-------|-----|-----------|
