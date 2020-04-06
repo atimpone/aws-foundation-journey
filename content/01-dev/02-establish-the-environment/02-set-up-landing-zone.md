@@ -94,7 +94,16 @@ You will receive one more email with subject AWS Organizations email verificatio
 
 The email address you provided for the audit account will receive AWS Notification - Subscription Confirmation emails from every AWS Region supported by AWS Control Tower. To receive compliance emails in your audit account, you must choose the Confirm subscription link within each email from each AWS Region supported by AWS Control Tower.
 
-## 8. Review AWS Control Tower Best Practices for Administrators
+## 8. Review Role of New AWS Accounts
+
+AWS Control Tower created several new AWS accounts when it set up the landing zone.
+
+|AWS Account|Purpose|
+|-----------|-------|
+|**Audit**|For the time being, it's recommended that you not use this AWS account. Once guidance is developed so that you can use it as a security oriented break glass account, you can repurpose this AWS account.|
+|**Log archive**|Centrally located AWS CloudTrail and AWS Config logs.|
+
+## 9. Review AWS Control Tower Best Practices for Administrators
 
 Now that you've set up your initial landing zone, take a few minutes to review [Best Practices for Account Administrators](https://docs.aws.amazon.com/controltower/latest/userguide/best-practices.html#tips-for-admin-maint) so that you understand temporary limitations and other considerations when working with AWS Control Tower.
 

@@ -36,7 +36,7 @@ Introduction of a new Network AWS account is a common approach in which shared n
 
 Longer term, as your on-premises to AWS network connectivity needs expand, you will typically transition from using site-to-site VPN connections to AWS Direct Connect.  When using AWS Transit Gateway as the termination point for VPN and AWS Direct Connect connections, a migration from using VPN to AWS Direct Connect has no impact on the VPCs behind the Transit Gateway.
 
-If you didn’t use a non-overlapping range from the start, you will need to replace your initial set of development VPCs with VPCs that use non-overlapping IP addresses 
+If you didn’t use a non-overlapping range from the start, you will need to either replace your initial set of development VPCs with VPCs that use non-overlapping IP addresses or implement Network Address Translation (NAT).
 
 *...defer to existing documentation including decision trees, blog posts, formal AWS docs, etc. as much as feasible...*
 

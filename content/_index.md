@@ -4,7 +4,7 @@ chapter: true
 weight: 1
 ---
 
-# Getting Started with AWS for Formal Projects
+# Getting Started with AWS for Formal Workloads
 
 This guide is intended to help your organization move from using informal personal AWS accounts used to experiment with AWS to establishing an initial foundation so that you can quickly demonstrate business value via the production deployment of an initial few workloads before making further foundational investments and using AWS at a much greater scale.
 

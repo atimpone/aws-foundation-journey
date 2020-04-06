@@ -29,12 +29,12 @@ The following requirements are organized based on a series of perspectives defin
 * Builder Team Requirements
   * An isolated environment for each team to carry out initial experiments and formal development work.
   * Isolation from other builder teams being able to inadvertently impact a team's cloud resources.
-  * Ability to access other builder teams' deployed servies via networking.
+  * Ability to access other builder teams' deployed servies via networking where agreed and explicitly configured.
   * Access to AWS services and AWS-hosted workloads from the corporate desktops on the corporate network.
     * CLI and API access to AWS services.
   * Access to a broad set of AWS services to enable experimentation and development.
     * Including broad access to create and manage application-oriented AWS IAM role and policy resources in support of experimenting and developing application and data services.
-  * Access to an AWS network environment in support of those AWS services for which networking is either required or desirable.
+  * Access to an AWS network environment in support of those AWS services for which private networking is either required or desirable.
   * Access to Internet-hosted code and package repositories so that 3rd party packages and code can be downloaded to VMs hosted in AWS.
   * Use of corporate source code management services to manage code used in support of experiments and development.
   * Insight into the costs of AWS services consumed in their development environments so that teams can make informed decisions.
@@ -45,9 +45,9 @@ The following requirements are organized based on a series of perspectives defin
 
 ### Security
 * Sufficient isolation between cloud development environments and existing corporate resources.
-* Inhibit builder teams from hosting workloads in publicly accessible subnets in their development environments.
-* Sufficient auditing of cloud access and activity.
-* Use of per user identities to separate access and ensure sufficient auditing.
+* Inhibit builder teams from making workloads publicly accessible from their development environments.
+* Sufficient auditing of cloud access and activity and separation of duty for access to audit data.
+ * Use of per user identities to separate access and ensure sufficient auditing.
 * Use of Multi-Factor Authentication (MFA) for all human user access to the AWS platform.
 * Inhibit use of IAM users for human access.
 * Inhibit use of long-term access keys to access AWS services.

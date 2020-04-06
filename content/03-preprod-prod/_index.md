@@ -15,6 +15,7 @@ Once you've established your initial foundation and delivered the initial set of
 
 ## Refine Requirements and Identify Solutions
 
+* Governance
 * Data Classification and Compliance
 * Encryption
   * At Rest
@@ -46,12 +47,12 @@ Once you've established your initial foundation and delivered the initial set of
       * Lifecycle management
       * Operations and monitoring
 
-## Build Out the Environments
+## Establish the Environments
 
-* Build Pre-Production Test and Production AWS Accounts
+* Establich Pre-Production Test and Production AWS Accounts
 * Establish Pre-Production Test and Product AWS Account Access Controls
 * Enhance Development AWS Accounts with Production-like Access Controls (for early testing)
-* Build Pre-Production Test and Production Networks
+* Establish Pre-Production Test and Production Networks
 * Onboard Foundation Team
   * Promotion and Release Management
   * Operational Monitoring and Support

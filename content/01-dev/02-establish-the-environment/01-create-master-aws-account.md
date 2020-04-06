@@ -68,6 +68,10 @@ It’s strongly recommended and an AWS security best practice to enable multi-fa
 
 See [Enable MFA on the AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user_manage_mfa) for instructions.
 
+{{% notice warning %}}
+**Do not create administrative access keys for the root user:** Under no circumstances create programmatic access keys for your AWS account root user and admininistrative bootstrap users.
+{{% /notice %}}
+
 ## 6. Set Alternate Contacts
 
 Using the root user, set the Alternate Contacts for your account so that notifications of billing, operations, and security events are routed to the proper teams.  As a best practice, you can use email distribution lists so that notifications are set to multiple people in the same team.

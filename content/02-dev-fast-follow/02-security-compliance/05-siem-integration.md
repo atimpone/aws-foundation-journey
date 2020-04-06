@@ -12,6 +12,8 @@ Even in this early development stage, your Security and Compliance requirements 
 
 *...In the context of the overall set of Security and Compliance requirements, highlight the typical role and value of integrating AWS CloudTrail and other event sources with SIEM services...*
 
+*...incorporate AWS SecurityHub...*
+
 * AWS API usage (e.g. AWS CloudTrail logs)
 * AWS Resource Configuration changes (e.g. AWS Config)
 * Network traffic monitoring (e.g. partly based on capture of VPC Flow Logs)
