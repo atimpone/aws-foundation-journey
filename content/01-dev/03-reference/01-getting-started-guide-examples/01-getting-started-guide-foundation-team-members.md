@@ -76,7 +76,7 @@ AWS CloudTrail is an AWS service that helps you enable governance, compliance, a
 
 ## Auditors
 
-### Perform Periodic Aaudits of the AWS Security Configuration.
+### Perform Periodic Audits of the AWS Security Configuration.
 
 Although some of the detective guardrails deployed through AWS Control Tower help continuously monitor and audit aspects of your AWS environment, it’s a best practice to periodically audit your security configuration to make sure that it meets your current business needs. See AWS [Security Audit Guidelines](https://docs.aws.amazon.com/general/latest/gr/aws-security-audit-guide.html) for best practices.
 
