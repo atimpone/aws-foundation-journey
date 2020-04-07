@@ -33,7 +33,7 @@ The following table represents a mapping of those functional roles to a set of A
 |Foundation Functional Role|AWS SSO Groups|Effective Permissions|
 |---	|---	|--- |
 |**Cloud Administration**|`AWSControlTowerAdmins`|[Administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) access in the master, log archive, and audit accounts.|
-| |`AWSAccountFactory`|Abilty to use the Account Factory product via AWS Service Catalog.|
+| |`AWSAccountFactory`|Ability to use the Account Factory product via AWS Service Catalog.|
 | |`acme-cloud-admin`|[Administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) access in all other AWS accounts.
 |**Security Administration**|`AWSAuditAccountAdmins`|[Administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) access in the audit account.|
 | |`AWSLogArchiveAdmins`|[Administrator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) access in the log archive account.|
