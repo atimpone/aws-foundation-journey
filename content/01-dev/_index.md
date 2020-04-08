@@ -1,6 +1,6 @@
 ---
-title: 'Establish Development Environments'
-menuTitle: '1. Establish Development'
+title: 'Establish Foundation for Development Environments'
+menuTitle: '1. Establish Foundation for Dev'
 disableToc: true
 weight: 10
 ---
