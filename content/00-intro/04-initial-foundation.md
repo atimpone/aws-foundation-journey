@@ -6,7 +6,7 @@ weight: 40
 
 Even in the early project stage of adoption, AWS recommends that an initial foundation be established that can be extended over time as your organization transitions into the foundation stage to prepare for larger scale cloud adoption. This guide will help you establish the beginning of a secure foundation on AWS in support of your initial few projects.
 
-The guide starts with establishing an initial foundation and several development environments before it addresses how to extend your foundation to support deploying your first few workloads to pre-production test and production environments.  
+The guide starts with establishing an initial foundation in support of several development environments before it addresses how to extend your foundation to support deploying your first few workloads to pre-production test and production environments.  
 
 The guide also address a set of "fast follow" capabilities that, for some organizations, are required before those organizations either perform formal experiments and development in the cloud or move an initial set of workloads into production.
 
