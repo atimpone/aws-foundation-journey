@@ -5,7 +5,7 @@ disableToc: true
 weight: 10
 ---
 
-After you've addressed a few up front tasks, in about a day, this guide will help you establish an initial secure foundation and a set of development environments based on the following architecture.
+After you've addressed a few up front tasks, in about a day, this guide will help you establish an initial secure foundation and in support of a set of development environments based on the following architecture.
 
 [![Initial Development Environment](/images/01-dev/dev-initial.png)](/images/01-dev/dev-initial.png)
 
