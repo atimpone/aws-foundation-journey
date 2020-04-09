@@ -1,7 +1,7 @@
 ---
-title: "Initial Foundation"
+title: 'Initial Foundation'
 disableToc: true
-weight: 40
+weight: 50
 ---
 
 Even in the early project stage of adoption, AWS recommends that an initial foundation be established that can be extended over time as your organization transitions into the foundation stage to prepare for larger scale cloud adoption. This guide will help you establish the beginning of a secure foundation on AWS in support of your initial few projects.

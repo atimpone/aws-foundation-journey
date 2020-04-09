@@ -1,7 +1,7 @@
 ---
-title: "Required Skills"
+title: 'Required Skills'
 disableToc: true
-weight: 20
+weight: 30
 ---  
 
 ## Assistance from AWS and Partners

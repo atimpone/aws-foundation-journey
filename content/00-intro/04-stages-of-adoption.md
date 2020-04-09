@@ -1,7 +1,7 @@
 ---
-title: "Stages of Cloud Adoption"
+title: 'Stages of Cloud Adoption'
 disableToc: true
-weight: 30
+weight: 40
 ---
 
 Based on almost 14 years of experience in helping customers obtain business benefits of cloud adoption, AWS has identified the following mental model to represent the [stages of cloud adoption](https://aws.amazon.com/blogs/enterprise-strategy/the-journey-toward-cloud-first-the-stages-of-adoption/).  

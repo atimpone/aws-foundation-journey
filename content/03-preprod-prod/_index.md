@@ -1,6 +1,6 @@
 ---
-title: 'Establish Pre-Production Test and Production Environments'
-menuTitle: '3. Establish Test and Prod'
+title: 'Expanding Your Foundation to Support Pre-Production Test and Production Environments'
+menuTitle: '3. Foundation for Test and Prod'
 disableToc: true
 weight: 30
 ---

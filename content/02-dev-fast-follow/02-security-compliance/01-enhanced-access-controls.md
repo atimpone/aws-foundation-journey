@@ -8,3 +8,4 @@ This section addresses requirements, options, and resources to enable your Secur
 
 * Constrain Set of AWS Services in Builder AWS Accounts
 * Constrain Available AWS Regions
+  * See Dave's example.

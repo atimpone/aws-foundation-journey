@@ -1,6 +1,6 @@
 ---
-title: "Frequently Asked Questions (FAQs)"
-menuTitle: "FAQs"
+title: 'Frequently Asked Questions (FAQs)'
+menuTitle: 'FAQs'
 disableToc: true
 weight: 60
 ---
@@ -12,6 +12,10 @@ weight: 60
 ### Q: Where can I learn more about this project including who's involved and how I can contribute?
 
 See [Project Information]({{< relref "05-project" >}})
+
+### Q: How can I see what has materially changed in the guide?
+
+See [Change History]({{< relref "05-change-history.md" >}})
 
 ## Federated Access to AWS Platform
 
