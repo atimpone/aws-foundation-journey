@@ -153,7 +153,30 @@ Using AWS Control Tower, create several Organizational Units (OUs) that will act
 1. Create another OU named **`development`**.
 2. Once the OU has been created, select the **`development`** OU and record the ID of the form **`ou-....`** so that you can use it in the next step.
 
-## 8. Distribute Permissions Boundary to Development OU
+## 8. Apply Service Control Policies to `development` OU
+
+Using AWS Organizations, create a new Service Control Policy (SCP) that will be specific for the `development` OU.  This SCP will restrict the permissions of the developer user in regards to VPC/EC2, Direct Connect, and Global Accelerator related services.
+
+{{% notice tip %}}
+**For Development Accounts:** For accounts which require their VPC boundary configurations (in terms of ingress / egress) to remain immutable, the SCP ([`acme-base-team-dev-scp-vpc-boundaries.json`](/code-samples/02-scps/acme-base-team-dev-scp-vpc-boundaries.json)) can enforce this.  If you'd like to learn more about SCPs, see [Managing AWS Organizations policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies.html).
+{{% /notice %}}
+
+### Create the `development` VPC SCP
+
+1. Navigate to **`AWS Organizations`**.
+2. Select **`Policies`**.
+3. Select **`Create policy`**.
+4. Follow the prompts to create a new SCP named **`DevImmutableVPCBoundariesSCP`**
+
+### Apply the SCP to the `development` OU
+
+1. Navigate to **`AWS Organizations`**.
+2. Select **`Organize accounts`**.
+3. In the Organization tree on the left, select the **`development`** OU
+4. On the right side of the console, select **`Service control policies`**
+5. On the right side of the console, select the **`Attach`** link next to the SCP **`DevImmutableVPCBoundariesSCP`**
+
+## 9. Distribute Permissions Boundary to Development OU
 
 In this step you'll use AWS CloudFormation StackSets to distribute an IAM permissions boundary policy to the "development" OU that you just created.  This boundary policy will help ensure that builder teams using team development AWS accounts can't modify your foundation cloud resources.
 
@@ -213,7 +236,7 @@ Since you have not yet created the team development AWS accounts, this CloudForm
 
 Proceed to the next step.
 
-## 9. Create Team Development Permission Set in AWS SSO
+## 10. Create Team Development Permission Set in AWS SSO
 
 Next, you'll create a custom permission set in AWS SSO to represent the initial iteration of an AWS IAM policy under which builder team members will work in their team development AWS accounts.
 
